@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
-    @include('layouts.head')
+    @include('layouts.admin.head')
     @yield('title')
     @yield('description')
     @yield('meta')
