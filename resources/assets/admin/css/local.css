@@ -17,8 +17,8 @@
     font-size: 16px;
 }
 
-.nav-main a:hover, .nav-main a:focus {
-    border-right: #1b8bf9 5px solid ;
+.nav-main a:hover, .nav-main a:focus ,.nav-main ul {
+    border-right: #1b8bf9 8px solid ;
 }
 
 
