@@ -3,42 +3,42 @@
     <ul class="nav-header pull-right">
         <li>
             <div class="btn-group">
-               
+                @if(Auth::user()->img == null)
                     <img class="img-circle dropdown-toggle"
-                         src="https://static.contapp.com.co/user/1/mauriciosuarezvega.jpg"
+                         src="{{url('img/default.png')}}"
                          alt="Avatar" data-toggle="dropdown" height="36">
-             
-                
+                    
+                    @else
+                    
+                    <img class="img-circle dropdown-toggle"
+                         src="{{url(Auth::user()->img)}}"
+                         alt="Avatar" data-toggle="dropdown" height="36">
+                @endif
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li class="dropdown-header">Profile</li>
                     <li>
-                        <a tabindex="-1" href="base_pages_inbox.php">
-                            <i class="si si-envelope-open pull-right"></i>
-                            <span class="badge badge-primary pull-right">3</span>Inbox
-                        </a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="base_pages_profile.php">
+                        <a tabindex="-1" href="{{url('/')}}">
                             <i class="si si-user pull-right"></i>
                             <span class="badge badge-success pull-right">1</span>Profile
                         </a>
                     </li>
                     <li>
-                        <a tabindex="-1" href="javascript:void(0)">
+                        <a tabindex="-1" href="{{url('/')}}">
                             <i class="si si-settings pull-right"></i>Settings
                         </a>
                     </li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Actions</li>
                     <li>
-                        <a tabindex="-1" href="base_pages_lock.php">
-                            <i class="si si-lock pull-right"></i>Lock Account
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
                         </a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="base_pages_login.php">
-                            <i class="si si-logout pull-right"></i>Log out
-                        </a>
+        
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </li>
                 </ul>
             </div>

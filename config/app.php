@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        HttpOz\Roles\RolesServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -13,6 +13,10 @@
 @stop
 
 @section('contenido')
+    
+    <div class="content">
+        
+    </div>
   
 @stop
 
