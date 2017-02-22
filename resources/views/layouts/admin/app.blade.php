@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
+   
     @include('layouts.admin.head')
     @yield('title')
     @yield('description')
     @yield('meta')
-    @yield('styles')
+    @yield('style')
+   
 </head>
 <body>
 <div id="page-container" class="enable-cookies sidebar-l sidebar-o side-scroll header-navbar-fixed">
@@ -27,6 +29,7 @@
     
     <!-- END Footer -->
 </div>
+
 @include('layouts.scripts')
 @yield('scripts')
 </body>

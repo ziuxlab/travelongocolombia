@@ -73,17 +73,17 @@
                     </li>
                     <li class="tutorial-menu-productos">
                         <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span
-                                    class="sidebar-mini-hide">Productos</span></a>
+                                    class="sidebar-mini-hide">Páginas</span></a>
                         <ul>
                             <li class="tutorial-sub-productos">
-                                <a href="{{Url('productos')}}">Productos</a>
+                                <a href="{{Url('productos')}}">Pages</a>
                             </li>
                             <li class="tutorial-sub-servicios">
-                                <a href="{{Url('servicios')}}">Servicios</a>
+                                <a href="{{Url('servicios')}}">Users</a>
                             </li>
                            
                             <li class="tutorial-sub-atributos">
-                                <a href="{{Url('atributos')}}">Atributos</a>
+                                <a href="{{Url('atributos')}}">Settin</a>
                             </li>
                             <li class="tutorial-sub-carga">
                                 <a href="{{Url('productos/carga_masiva')}}">Carga Masiva</a>
@@ -94,26 +94,9 @@
                             </li>
                         </ul>
                     </li>
-                    
                     <li class="tutorial-menu-contactos">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-users"></i><span
-                                    class="sidebar-mini-hide">Contactos</span></a>
-                        <ul>
-                            
-                            <li class="tutorial-menu-contactos-proveedores">
-                                <a href="{{Url('proveedores')}}">Proveedores</a>
-                            </li>
-                            <li class="tutorial-menu-contactos-transportadoras">
-                                <a href="{{Url('transportadoras')}}">Transportadoras</a>
-                            </li>
-                            
-                            <li class="tutorial-menu-clientes">
-                                <a href="{{Url('clientes')}}">Clientes</a>
-                            </li>
-                            <li class="tutorial-menu-contactos-informes">
-                                <a href="{{Url('contactos/informes')}}">Informes</a>
-                            </li>
-                        </ul>
+                        <a  href="{{url('admin/users')}}"><i class="si si-users"></i><span
+                                    class="sidebar-mini-hide">Usuarios</span></a>
                     </li>
                     <li class="tutorial-menu-bodegas">
                         <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-home"></i><span

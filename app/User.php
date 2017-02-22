@@ -17,7 +17,7 @@ class User extends Authenticatable implements HasRoleContract
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','img'
     ];
 
     /**
@@ -28,4 +28,6 @@ class User extends Authenticatable implements HasRoleContract
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+   
 }

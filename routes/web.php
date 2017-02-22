@@ -16,6 +16,11 @@
         return view('proximamente');
     });
     
+    Route::get('/login', function () {
+        //return view('welcome');
+        return redirect('admin/login');
+    });
+    
     
     Route::get('/home', 'HomeController@index');
     
@@ -23,5 +28,7 @@
     
         Auth::routes();
         Route::get('home', 'AdminController@index');
+        Route::resource('users', 'UsersController');
+        
         
     });

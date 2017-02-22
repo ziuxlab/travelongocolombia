@@ -6,13 +6,13 @@
                 @if(Auth::user()->img == null)
                     <img class="img-circle dropdown-toggle"
                          src="{{url('img/default.png')}}"
-                         alt="Avatar" data-toggle="dropdown" height="36">
+                         alt="Avatar" data-toggle="dropdown" width="36" height="36">
                     
                     @else
                     
                     <img class="img-circle dropdown-toggle"
-                         src="{{url(Auth::user()->img)}}"
-                         alt="Avatar" data-toggle="dropdown" height="36">
+                         src="{{url('storage/'.Auth::user()->img)}}"
+                         alt="Avatar" data-toggle="dropdown" width="36" height="36">
                 @endif
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li class="dropdown-header">Profile</li>
