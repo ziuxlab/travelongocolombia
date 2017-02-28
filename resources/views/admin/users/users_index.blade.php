@@ -14,12 +14,9 @@
 @stop
 
 @section('contenido')
-    <div class="content bg-primary overflow-hidden">
-        <div class="push-20-t push-15">
-            <h1 class="h2 text-white animated zoomIn">Usuarios</h1>
-            <h2 class="h5 text-white-op animated zoomIn">Crear, Editar y Eliminar Usuarios</h2>
-        </div>
-    </div>
+    
+    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Usuarios','h2'=>'Crear, Editar y Eliminar Usuarios'])
+    
     <div CLASS="block">
         <div class="block-content">
             <a href="{{url('admin/users/create')}}" class="btn btn-primary push"> + Crear usuario</a>

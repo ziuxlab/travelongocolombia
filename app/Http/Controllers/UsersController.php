@@ -6,9 +6,15 @@
     use HttpOz\Roles\Models\Role;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Storage;
-    
+    use Intervention\Image\Facades\Image;
+
     class UsersController extends Controller
     {
+        public function __construct()
+        {
+            $this->middleware('auth');
+        }
+        
         /**
          * Display a listing of the resource.
          *
@@ -56,7 +62,10 @@
             
             
             if ($request->hasFile('img')){
-                $path = $request->file('img')->store('avatars');
+                
+                $path = 'img/avatars/'.str_random(10).'.png';
+                Image::make($request->file('img'))->fit(300, 300)->save($path,50);
+               
             }else{
                 $path = null;
             }
@@ -129,8 +138,10 @@
             
             //se verifica si tiene imagen y se sube al storage
             if ($request->hasFile('img')) {
-                $user->img = $request->file('img')
-                                     ->store('avatars');
+    
+                $path = 'img/avatars/'.str_random(10).'.png';
+                Image::make($request->file('img'))->fit(300, 300)->save($path,50);
+                $user->img = $path;
             }
             
             //se verifica si cambiaron la contraseña y se actualiza de ser cierto

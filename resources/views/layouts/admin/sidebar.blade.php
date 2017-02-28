@@ -60,7 +60,7 @@
                     <img class="" src="{{ asset('img/logo.svg') }}" alt="Ziuxlab"
                          height="50">
                 </a>
-                
+            
             </div>
             <!-- END Side Header -->
             
@@ -71,150 +71,34 @@
                         <a class="active tutorial-dashboard" href="{{Url('/')}}"><i class="si si-speedometer"></i><span
                                     class="sidebar-mini-hide">Dashboard</span></a>
                     </li>
-                    <li class="tutorial-menu-productos">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span
+                    <li>
+                        <a href="{{url('admin/pages')}}"><i class="si si-docs"></i><span
                                     class="sidebar-mini-hide">Páginas</span></a>
-                        <ul>
-                            <li class="tutorial-sub-productos">
-                                <a href="{{Url('productos')}}">Pages</a>
-                            </li>
-                            <li class="tutorial-sub-servicios">
-                                <a href="{{Url('servicios')}}">Users</a>
-                            </li>
-                           
-                            <li class="tutorial-sub-atributos">
-                                <a href="{{Url('atributos')}}">Settin</a>
-                            </li>
-                            <li class="tutorial-sub-carga">
-                                <a href="{{Url('productos/carga_masiva')}}">Carga Masiva</a>
-                            </li>
-                           
-                            <li class="tutorial-sub-informes">
-                                <a href="{{Url('productos/informes')}}">Informes</a>
-                            </li>
-                        </ul>
                     </li>
-                    <li class="tutorial-menu-contactos">
-                        <a  href="{{url('admin/users')}}"><i class="si si-users"></i><span
+                   
+                    <li>
+                        <a href="{{url('admin/components')}}"><i class="si si-grid"></i><span
+                                    class="sidebar-mini-hide">Componentes</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span
+                                    class="sidebar-mini-hide">Multimedia</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/users')}}"><i class="si si-users"></i><span
                                     class="sidebar-mini-hide">Usuarios</span></a>
                     </li>
-                    <li class="tutorial-menu-bodegas">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-home"></i><span
-                                    class="sidebar-mini-hide">Bodegas</span></a>
-                        <ul>
-                            
-                            <li class="tutorial-menu-bodegas-inventarios">
-                                <a href="{{Url('inventarios')}}">Inventarios</a>
-                            </li>
-                           
-                            <li class="tutorial-menu-bodegas-bodegas">
-                                <a href="{{Url('bodegas')}}">Bodegas</a>
-                            </li>
-                           
-                            <li class="tutorial-menu-bodegas-traslados">
-                                <a href="{{Url('traslados')}}">Traslados</a>
-                            </li>
-                          
-                            <li class="tutorial-menu-bodegas-informes">
-                                <a href="{{Url('bodegas/informes')}}">Informes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="tutorial-menu-ventas">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="{{Url('productos')}}"><i
-                                    class="si si-basket"></i><span class="sidebar-mini-hide">Ventas</span></a>
-                        <ul>
-                            <li class="tutorial-menu-ventas-pos">
-                                <a href="{{Url('ventas/pos')}}">POS</a>
-                            </li>
-                            <li class="tutorial-menu-ventas-ventas">
-                                <a href="{{Url('ventas')}}">Ventas</a>
-                            </li>
-                            <li class="tutorial-menu-ventas-remisiones">
-                                <a href="{{Url('remision')}}">Remisiones</a>
-                            </li>
-                            <li class="tutorial-menu-ventas-despachos">
-                                <a href="{{Url('despachos')}}">Despachos</a>
-                            </li>
-                            <li class="tutorial-menu-ventas-informes">
-                                <a href="{{Url('ventas/informes')}}">Informes</a>
-                            </li>
-                        </ul>
-                    </li>
                     
-                    <li class="tutorial-menu-compras">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-handbag"></i><span
-                                    class="sidebar-mini-hide">Compras</span></a>
-                        <ul>
-                            <li class="tutorial-menu-compras-compras">
-                                <a href="{{Url('compras')}}">Compras</a>
-                            </li>
-                            <li class="tutorial-menu-compras-informes">
-                                <a href="{{Url('compras/informes')}}">Informes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="tutorial-menu-gastos">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-wallet"></i><span
-                                    class="sidebar-mini-hide">Gastos</span></a>
-                        <ul>
-                            <li class="tutorial-menu-gastos-gastos">
-                                <a href="{{Url('gastos')}}">Gastos</a>
-                            </li>
-                            <li class="tutorial-menu-gastos-informes">
-                                <a href="{{Url('gastos/informes')}}">Informes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="tutorial-menu-caja">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-wallet"></i><span
-                                    class="sidebar-mini-hide">Caja</span></a>
-                        <ul>
-                            <li class="tutorial-menu-caja-caja">
-                                <a href="{{Url('caja')}}">Cajas</a>
-                            </li>
-                            <li tutorial-menu-caja-ingresos>
-                                <a href="{{Url('ingresos')}}">Ingresos</a>
-                            </li>
-                            <li class="tutorial-menu-caja-egresos">
-                                <a href="{{Url('egresos')}}">Egresos</a>
-                            </li>
-                            <li class="tutorial-menu-caja-informes">
-                                <a href="{{Url('caja')}}">Informes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="tutorial-menu-finanzas">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="{{Url('finanzas')}}">
-                            <i class="fa fa-bank"></i>
-                            <span class="sidebar-mini-hide">Finanzas</span></a>
-                        <ul>
-                            <li class="tutorial-menu-finanzas-bancos">
-                                <a href="{{Url('finanzas/bancos')}}">Cuentas Bancarias</a>
-                            </li>
-                            <li class="tutorial-menu-finanzas-pagos">
-                                <a href="{{Url('configuracion/formas-pago')}}">Formas de pago</a>
-                            </li>
-                            <li class="tutorial-menu-finanzas-transferencias">
-                                <a href="{{Url('transferencias')}}">Tranferencias</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="tutorial-menu-configuraciones">
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-cog"></i><span
-                                    class="sidebar-mini-hide">General</span></a>
+                    <li class="">
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-settings"></i><span
+                                    class="sidebar-mini-hide">Configuraciones</span></a>
                         <ul>
                             <li class="tutorial-menu-configuraciones-usuarios">
-                                <a href="{{Url('usuarios')}}">Usuarios</a>
+                                <a href="{{Url('admin/html')}}">html</a>
                             </li>
-                            <li class="tutorial-menu-configuraciones-tiendas">
-                                <a href="{{Url('tiendas')}}">Tiendas</a>
-                            </li>
-                            @role('administrador|superadmin')
+                            @role('admin')
                             <li class="tutorial-menu-configuraciones-general">
-                                <a href="{{Url('configuracion')}}">General</a>
+                                <a href="{{Url('admin/general')}}">General</a>
                             </li>
                             <li class="tutorial-menu-configuraciones-general">
                                 <a href="{{Url('bill')}}">Facturación</a>
@@ -222,6 +106,7 @@
                             @endrole
                         </ul>
                     </li>
+                
                 </ul>
             </div>
             <!-- END Side Content -->

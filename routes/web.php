@@ -29,6 +29,7 @@
         Auth::routes();
         Route::get('home', 'AdminController@index');
         Route::resource('users', 'UsersController');
+        Route::resource('pages', 'PagesController');
         
         
     });

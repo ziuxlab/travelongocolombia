@@ -11,7 +11,7 @@
                     @else
                     
                     <img class="img-circle dropdown-toggle"
-                         src="{{url('storage/'.Auth::user()->img)}}"
+                         src="{{url(Auth::user()->img)}}"
                          alt="Avatar" data-toggle="dropdown" width="36" height="36">
                 @endif
                 <ul class="dropdown-menu dropdown-menu-right">

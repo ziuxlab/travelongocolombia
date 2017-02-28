@@ -13,12 +13,8 @@
 @stop
 
 @section('contenido')
-    <div class="content bg-primary overflow-hidden">
-        <div class="push-20-t push-15">
-            <h1 class="h2 text-white animated zoomIn">Usuarios</h1>
-            <h2 class="h5 text-white-op animated zoomIn">Crear Usuarios</h2>
-        </div>
-    </div>
+    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Usuarios','h2'=>'Crear Usuarios'])
+    
     <div class="content overflow-hidden">
         <div class="col-sm-8 col-sm-offset-2">
             <div CLASS="block block-bordered block-rounded block-themed ">
