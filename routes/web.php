@@ -30,6 +30,7 @@
         Route::get('home', 'AdminController@index');
         Route::resource('users', 'UsersController');
         Route::resource('pages', 'PagesController');
+        Route::resource('settings', 'ConfigController');
         
         
     });

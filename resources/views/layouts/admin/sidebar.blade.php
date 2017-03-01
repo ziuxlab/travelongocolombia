@@ -93,16 +93,17 @@
                         <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-settings"></i><span
                                     class="sidebar-mini-hide">Configuraciones</span></a>
                         <ul>
-                            <li class="tutorial-menu-configuraciones-usuarios">
-                                <a href="{{Url('admin/html')}}">html</a>
+                            <li class="">
+                                <a href="{{Url('admin/settings/html')}}">Html</a>
                             </li>
                             @role('admin')
-                            <li class="tutorial-menu-configuraciones-general">
-                                <a href="{{Url('admin/general')}}">General</a>
+                            <li class="">
+                                <a href="{{Url('admin/settings/general')}}">General</a>
                             </li>
-                            <li class="tutorial-menu-configuraciones-general">
-                                <a href="{{Url('bill')}}">Facturación</a>
+                            <li class="">
+                                <a href="{{Url('admin/settings/social')}}">Social</a>
                             </li>
+                           
                             @endrole
                         </ul>
                     </li>
