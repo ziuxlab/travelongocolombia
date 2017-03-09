@@ -87,23 +87,29 @@
             //
             $config = Config::first();
             
-            if ()
-            $config->css = $request->css;
-            $config->scripts_header = $request->scripts_header;
-            $config->scripts_footer = $request->scripts_footer;
-            $config->tittle = $request->scripts_footer;
-            $config->meta_description = $request->meta_description;
-            $config->keywords = $request->keywords;
-            $config->status = $request->status;
-            $config->email = $request->email;
-            $config->phone = $request->phone;
-            $config->address = $request->address;
-            $config->facebook = $request->facebook;
-            $config->twitter = $request->twitter;
-            $config->google = $request->google;
-            $config->youtube = $request->youtube;
-            $config->instagram = $request->instagram;
-            $config->pinterest = $request->pinterest;
+            if ($id=='html'){
+                $config->css = $request->css;
+                $config->scripts_header = $request->scripts_header;
+                $config->scripts_footer = $request->scripts_footer;
+            }
+            if ($id=='general'){
+                $config->tittle = $request->scripts_footer;
+                $config->meta_description = $request->meta_description;
+                $config->keywords = $request->keywords;
+                $config->status = $request->status;
+                $config->email = $request->email;
+                $config->phone = $request->phone;
+                $config->address = $request->address;
+            }
+            if ($id=='social'){
+                $config->facebook = $request->facebook;
+                $config->twitter = $request->twitter;
+                $config->google = $request->google;
+                $config->youtube = $request->youtube;
+                $config->instagram = $request->instagram;
+                $config->pinterest = $request->pinterest;
+            }
+            
             $config->save();
             
             return redirect('admin/home');

@@ -30,7 +30,11 @@
         Route::get('home', 'AdminController@index');
         Route::resource('users', 'UsersController');
         Route::resource('pages', 'PagesController');
+        Route::resource('components', 'ComponentController');
         Route::resource('settings', 'ConfigController');
-        
+    
+    
+        Route::get('flights/buscar/{term}', 'FlightController@buscar');
+        Route::resource('flights', 'FlightController');
         
     });

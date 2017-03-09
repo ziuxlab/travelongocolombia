@@ -1,6 +1,12 @@
 
-
-
+.autosugest{
+    width: 300px;
+    z-index: 1000;
+    position: fixed;
+}
+.autosugest a.list-group-item{
+    padding: 5px 15px;
+}
 
 /********* basics  *******/
 
@@ -43,6 +49,10 @@
 
 .bg-primary-darkest{
     background-color: #16203b;
+}
+
+.vcenter {
+    vertical-align: middle;
 }
 
 .flex{

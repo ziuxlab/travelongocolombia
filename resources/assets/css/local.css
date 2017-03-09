@@ -1,9 +1,29 @@
+nav{
+    height: 60px;
+}
 
-.bg-secondary{
-    
+.logo{
+    max-height: 50px;
 }
 
 
+.bg-secondary {
+    background: #4A4A4A;
+}
+
+.btn-secondary {
+    background: #4A4A4A;
+}
+
+
+.autosugest{
+    width: 300px;
+    z-index: 1000;
+    position: fixed;
+}
+.autosugest a.list-group-item{
+    padding: 5px 15px;
+}
 
 /********* basics  *******/
 
@@ -19,7 +39,6 @@
 .nav-main-header ul a{
     font-size: 16px;
 }
-
 
 
 .img-container .img-options{
@@ -212,6 +231,12 @@ footer{
   display: inline-block !important;
   text-align: right;
 }
+.padding-5{
+    padding: 5px;
+}
+.padding-10{
+    padding: 10px;
+}
 .padding-20{
     padding: 20px !important;
 }
@@ -244,12 +269,11 @@ color: #f5f5f5 !important;
 .formulario .br2{
   border-radius: .25rem;
 }
-.flex{
-  display: flex;
-}
 
-.flex .v-center{
-  align-self: center !important;
+
+.v-center {
+    display: flex;
+    align-items: center;
 }
 
 /*************** cursor typed ************/

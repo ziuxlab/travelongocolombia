@@ -81,6 +81,10 @@
                                     class="sidebar-mini-hide">Componentes</span></a>
                     </li>
                     <li>
+                        <a href="{{url('admin/flights')}}"><i class="si si-users"></i><span
+                                    class="sidebar-mini-hide">Vuelos</span></a>
+                    </li>
+                    <li>
                         <a href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span
                                     class="sidebar-mini-hide">Multimedia</span></a>
                     </li>
