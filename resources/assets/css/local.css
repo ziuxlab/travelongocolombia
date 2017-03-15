@@ -117,7 +117,7 @@ nav {
 }
 
 .content-boxed {
-    overflow: hidden;
+    overflow: inherit;
 }
 
 .bg-radial-gradient-blue {

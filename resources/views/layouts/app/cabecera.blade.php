@@ -70,10 +70,13 @@
                         </div>
                     </li>
                     <li class="hidden-xs hidden-sm"><a class="text-white" href="">Hi, {{ Auth::user()->name }}</a></li>
-                    <li class="hidden-xs">
+                   
+                
+                @endif
+                    <li class="hidden-xs hidden-sm">
                         Lang
                         <div class="btn-group">
-                            
+            
                             <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret"></span>
                             </button>
@@ -84,8 +87,6 @@
                             </ul>
                         </div>
                     </li>
-                
-                @endif
                 
                 <li class="visible-xs visible-sm pull-right">
                     <button class="btn btn-link text-white pull-right" data-toggle="class-toggle"
@@ -127,14 +128,7 @@
             <li class="v-center">
                 <a href="{{url('/')}}">About Us</a>
             </li>
-            <li class="v-center visible-xs">
-                <a class="nav-submenu" href="#">Language</a>
-                <ul>
-                    <li class="v-center"><a href="{{url('/')}}">Español</a></li>
-                    <li class="v-center"><a href="{{url('/')}}">English</a></li>
-                </ul>
             
-            </li>
             @if (Auth::guest())
                 <li class="v-center hidden-md hidden-lg">
                     <a href="{{ route('login') }}">Login</a>
@@ -175,6 +169,13 @@
                     </div>
                 </li>
             @endif
+            <li class="v-center hidden-md hidden-lg">
+                <a class="nav-submenu" href="#">Language</a>
+                <ul>
+                    <li class="v-center"><a href="{{url('/')}}">Español</a></li>
+                    <li class="v-center"><a href="{{url('/')}}">English</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

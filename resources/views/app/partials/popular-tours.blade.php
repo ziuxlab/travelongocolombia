@@ -1,6 +1,6 @@
 <div class="bg-white">
     <div class="content-boxed ">
-        <div class="col-sm-12 content text-center">
+        <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">Popular Tours Packages</h2>
             <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
         </div>
