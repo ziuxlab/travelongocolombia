@@ -1,5 +1,5 @@
 <div class="bg-white">
-    <div class=" overflow-hidden">
+    <div class="content-boxed overflow-hidden">
         <div class="col-sm-12 col-md-10 col-md-offset-1 push-20">
             <div class="col-sm-4 push-15-t">
                 <div class="content text-center " >

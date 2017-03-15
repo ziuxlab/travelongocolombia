@@ -1,153 +1,102 @@
-<div class="col-sm-10 col-sm-offset-1" id="popular-activities">
-    <p class="h3 center-b text-white font-w600">POPULAR ACTIVITIES</p>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding mheight-200">
-                <img src="http://2.bp.blogspot.com/-4v5I1L8P3ic/TbU3A2h0zBI/AAAAAAAAABQ/838phVyTssw/s400/mariposario.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                             <b class="text-gray-dark remove-margin">Description</b>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                         <b class="text-gray-dark remove-margin">
-                             <span class="si si-clock"></span> 2 Days
-                         </b>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </a>
+
+<div class="bg-primary-darkest">
+    <div class="content-boxed text-white">
+        <div class="col-sm-12 content text-center">
+            <h2 class="h2">Popular Activities</h2>
+            <h4 class="h5 push-15-t">"We have a unique way at meeting your adventures expectational" </h4>
+        </div>
     </div>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding">
-                <img src="http://www.parquedelcafearmenia.com/images/galeria/parque-del-cafe-1.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                            <b class="text-gray-dark remove-margin">Description</b>
+    <div class="content-boxed ">
+        <div class="row content content-full text-center">
+            <div class="col-sm-6 col-md-4">
+                <a class="block block-sombra block-rounded" href="#">
+                    <div class="bg-image img-rounded-t "
+                         style="background-image: url('{{asset("img/banner/activities/mariposario.jpg")}}');">
+                        <div class="mheight-200">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="block-content">
+                        <div class="row items-push text-center">
+                            <div class="col-xs-8">
+                                <div class=" text-left">
+                                    <div class="h4 font-w600 text-info">Mariposario</div>
+                                    <b class="text-gray-dark remove-margin">Etiam porta sem malesuada magna mollis euismod.</b>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class=" text-right">
+                                    <div class="h4 font-w600 text-primary">$199.99</div>
+                                    <b class="text-gray-dark remove-margin">
+                                        <span class="si si-clock"></span> 1 Day
+                                    </b>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                            <b class="text-gray-dark remove-margin">
-                                <span class="si si-clock"></span> 2 Days
-                            </b>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="block block-sombra block-rounded " href="#">
+                    <div class="bg-image img-rounded-t "
+                         style="background-image: url('{{asset("img/banner/activities/parapente.jpg")}}');">
+                        <div class="mheight-200">
+        
+                        </div>
+    
+                    </div>
+                    <div class="block-content">
+                        <div class="row items-push text-center">
+                            <div class="col-xs-8">
+                                <div class=" text-left">
+                                    <div class="h4 font-w600 text-info">Parapente</div>
+                                    <b class="text-gray-dark remove-margin">Etiam porta sem malesuada magna mollis.</b>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class=" text-right">
+                                    <div class="h4 font-w600 text-primary">$99.99</div>
+                                    <b class="text-gray-dark remove-margin">
+                                        <span class="si si-clock"></span> 1 Day
+                                    </b>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding">
-                <img src="http://www.parquedelcafearmenia.com/images/galeria/parque-del-cafe-1.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                            <b class="text-gray-dark remove-margin">Description</b>
+            <div class="col-sm-6 col-md-4">
+                <a class="block block-sombra block-rounded " href="#">
+                    <div class="bg-image img-rounded-t "
+                         style="background-image: url('{{asset("img/banner/activities/canopi.jpg")}}');">
+                        <div class="mheight-200">
+        
+                        </div>
+    
+                    </div>
+                    <div class="block-content">
+                        <div class="row items-push text-center">
+                            <div class="col-xs-8">
+                                <div class=" text-left">
+                                    <div class="h4 font-w600 text-info">Canopi</div>
+                                    <b class="text-gray-dark remove-margin">Etiam porta sem malesuada magna mollis des metinus prengata acumulus.</b>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class=" text-right">
+                                    <div class="h4 font-w600 text-primary">$99.99</div>
+                                    <b class="text-gray-dark remove-margin">
+                                        <span class="si si-clock"></span> 1 Day
+                                    </b>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                            <b class="text-gray-dark remove-margin">
-                                <span class="si si-clock"></span> 2 Days
-                            </b>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-        </a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding">
-                <img src="http://www.parquedelcafearmenia.com/images/galeria/parque-del-cafe-1.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                            <b class="text-gray-dark remove-margin">Description</b>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                            <b class="text-gray-dark remove-margin">
-                                <span class="si si-clock"></span> 2 Days
-                            </b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding">
-                <img src="http://www.parquedelcafearmenia.com/images/galeria/parque-del-cafe-1.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                            <b class="text-gray-dark remove-margin">Description</b>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                            <b class="text-gray-dark remove-margin">
-                                <span class="si si-clock"></span> 2 Days
-                            </b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-        <a class="block block-rounded push-20-t" href="#">
-            <div class="block-content block-content-full remove-padding">
-                <img src="http://www.parquedelcafearmenia.com/images/galeria/parque-del-cafe-1.jpg" class="img-responsive">
-            </div>
-            <div class="block-content">
-                <div class="row items-push text-center">
-                    <div class="col-xs-6">
-                        <div class=" text-left">
-                            <div class="h4 font-w600 text-info">Activity</div>
-                            <b class="text-gray-dark remove-margin">Description</b>
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class=" text-right">
-                            <div class="h4 font-w600 text-primary">$99.99</div>
-                            <b class="text-gray-dark remove-margin">
-                                <span class="si si-clock"></span> 2 Days
-                            </b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
+           
+        </div>
     </div>
 </div>
+

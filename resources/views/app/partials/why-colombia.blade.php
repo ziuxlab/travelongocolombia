@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="content content-full">
-            <div class="block  ">
+            <div class="block block-rounded ">
                 <div class="block-content bg-primary">
                     <h2 class="h3 text-white font-w600">¿Why Coffee Area?</h2>
                 </div>
@@ -88,7 +88,6 @@
                         outstanding destinations in the world. </p>
                 </div>
             </div>
-        
         </div>
     </div>
 </div>

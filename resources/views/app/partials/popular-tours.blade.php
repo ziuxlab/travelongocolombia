@@ -1,17 +1,24 @@
-<div class="bg-primary">
+<div class="bg-white">
     <div class="content-boxed ">
-        <div class="col-sm-12 text-white content text-center">
-            <h2 class="h2">Popular Tours</h2>
-            <h4 class="h5 push-15-t">"We have a unique way at meeting your adventures expectational" </h4>
+        <div class="col-sm-12 content text-center">
+            <h2 class="h2">Popular Tours Packages</h2>
+            <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
         </div>
     </div>
     <div class="content-boxed ">
         <div class="row text-white content content-full text-center">
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-sm-6">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
-                    <div class="bg-image"
+                    <div class="bg-image "
                          style="background-image: url('{{asset("img/banner/activities/cabalgata.jpeg")}}');">
-                        <div class="mheight-150"></div>
+                        <div class="mheight-150">
+                            <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                                <div class="ribbon-box font-w600">
+                                    $1.200
+                                </div>
+                            </div>
+                        </div>
+                       
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
                                 <div class="col-sm-12  push-15 text-white">
@@ -29,17 +36,23 @@
                                     eligendi eum laudantium nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit.
                                 </p>
-                                <button class="btn push-20 btn-minw text-white btn-primary-darkest ">Ver mas</button>
+                                <button class="btn push-20 btn-minw text-white btn-primary ">Ver mas</button>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-sm-6">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/panaca.jpeg")}}');">
-                        <div class="mheight-150"></div>
+                        <div class="mheight-150">
+                            <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                                <div class="ribbon-box font-w600">
+                                    $1.200
+                                </div>
+                            </div>
+                        </div>
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
                                 <div class="col-sm-12  push-15 text-white">
@@ -63,11 +76,17 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-4 col-sm-6">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/parque-cafe.jpeg")}}');">
-                        <div class="mheight-150"></div>
+                        <div class="mheight-150">
+                            <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                                <div class="ribbon-box font-w600">
+                                    $1.200
+                                </div>
+                            </div>
+                        </div>
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
                                 <div class="col-sm-12  push-15 text-white">

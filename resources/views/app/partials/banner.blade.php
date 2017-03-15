@@ -3,7 +3,7 @@
     <div class="baner-overlay">
         <div class="img-options-content">
             <div class="col-sm-12">
-                <h1 class="h2 font-w700 text-white push-20 push-150-t animated fadeInDown"
+                <h1 class="h1 font-w700 text-white push-20 push-150-t animated fadeInDown"
                     data-class="animated fadeInDown">
                     "ONE STOP PLANNING FOR VACATION TO COLOMBIA "
                 </h1>

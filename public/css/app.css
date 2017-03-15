@@ -19730,6 +19730,10 @@ nav {
     
 }
 
+.bg-black-op {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .baner-overlay{
     position: absolute;
     top: 0;
@@ -19740,6 +19744,11 @@ nav {
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out;
 
+}
+
+.img-rounded-t{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .item-social a:hover {
@@ -19826,7 +19835,7 @@ nav {
 }
 
 .content-boxed {
-    display: flex;
+    overflow: hidden;
 }
 
 .bg-radial-gradient-blue {
