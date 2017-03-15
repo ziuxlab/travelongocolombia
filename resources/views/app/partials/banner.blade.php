@@ -21,7 +21,7 @@
                         </a>
                     
                    
-                    <a class="btn  btn-primary  animated fadeInRight" href="#">
+                    <a class="btn  btn-primary btn-minw150  animated fadeInRight" href="#">
                         Design your plan
                     </a>
                 </div>
