@@ -10,7 +10,7 @@
             <div class="col-md-4 col-xs-12">
                 <a class="block block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
-                         style="background-image: url('http://linhd.es/wp-content/uploads/2014/03/inicio2-300x200.jpg');">
+                         style="background-image: url('{{asset("img/banner/activities/cabalgata.jpeg")}}');">
                         <div class="mheight-150"></div>
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
@@ -38,7 +38,7 @@
             <div class="col-md-4 col-xs-12">
                 <a class="block block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
-                         style="background-image: url('http://linhd.es/wp-content/uploads/2014/03/inicio2-300x200.jpg');">
+                         style="background-image: url('{{asset("img/banner/activities/panaca.jpeg")}}');">
                         <div class="mheight-150"></div>
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
@@ -66,7 +66,7 @@
             <div class="col-md-4 col-xs-12">
                 <a class="block block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
-                         style="background-image: url('http://linhd.es/wp-content/uploads/2014/03/inicio2-300x200.jpg');">
+                         style="background-image: url('{{asset("img/banner/activities/parque-cafe.jpeg")}}');">
                         <div class="mheight-150"></div>
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
