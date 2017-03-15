@@ -54,7 +54,7 @@
             
             $this->validate($request, [
                 'checkin'  => 'required|date|after:today',
-                'checkout' => 'required|date|after:checkin'
+                'checkout' => 'required|date'
             ]);
             
             

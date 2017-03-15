@@ -19838,6 +19838,10 @@ nav {
     overflow: inherit;
 }
 
+.btn-minw150{
+    min-width: 150px;
+}
+
 .bg-radial-gradient-blue {
     background-image: -webkit-radial-gradient(circle closest-corner at 50% 70%, #00a1f1, #0275d8 99%);
     background-image: radial-gradient(circle closest-corner at 50% 70%, #00a1f1, #0275d8 99%);

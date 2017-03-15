@@ -1,5 +1,5 @@
 
-<div class="content-boxed">
+<div class="content-boxed border-black-op">
     <div class="col-sm-6 content content-full    text-center">
         <div class="block block-transparent">
             <div class="block-content">

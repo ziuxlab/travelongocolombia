@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
         $admin = \App\User::create([
             'name' => 'Administrador',
             'email' => 'admin@ziuxlab.com',
-            'password' => bcrypt('caremico')
+            'password' => bcrypt('travelongo')
         ]);
     
         

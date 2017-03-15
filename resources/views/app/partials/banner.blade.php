@@ -15,10 +15,13 @@
                 
                 
                 <div class="push-50-t push-20 text-center">
-                    <a class="btn btn-primary-darkest push-20-r btn-minw text-white animated fadeInLeft" href="#">
-                        Pick a Plan
-                    </a>
-                    <a class="btn  btn-primary btn-minw animated fadeInRight" href="#">
+                    
+                        <a class="btn btn-primary push-20-r btn-minw150  text-white animated fadeInLeft" href="#">
+                            Pick a Plan
+                        </a>
+                    
+                   
+                    <a class="btn  btn-primary  animated fadeInRight" href="#">
                         Design your plan
                     </a>
                 </div>
