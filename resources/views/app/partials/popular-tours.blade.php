@@ -6,8 +6,8 @@
         </div>
     </div>
     <div class="content-boxed ">
-        <div class="row text-white content content-full text-center">
-            <div class="col-md-4 col-sm-6">
+        <div class="row text-white text-center">
+            <div class="col-md-4 col-sm-6 push-15">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image "
                          style="background-image: url('{{asset("img/banner/activities/cabalgata.jpeg")}}');">
@@ -42,7 +42,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 push-15">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/panaca.jpeg")}}');">
@@ -76,7 +76,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6 push-15">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/parque-cafe.jpeg")}}');">

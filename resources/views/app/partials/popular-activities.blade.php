@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="content-boxed ">
-        <div class="row content content-full text-center">
+        <div class="row  text-center">
             <div class="col-sm-6 col-md-4">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image img-rounded-t "
