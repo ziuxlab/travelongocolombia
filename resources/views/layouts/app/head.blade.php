@@ -19,7 +19,6 @@
 <meta name="theme-color" content="#ffffff">
 
 
-
 <!-- precarga de url que se van a utilizar despues -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//fonts.gstatic.com">

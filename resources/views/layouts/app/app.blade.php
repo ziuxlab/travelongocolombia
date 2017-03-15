@@ -18,13 +18,13 @@
     </header>
     <!-- END Header -->
     <!-- Main Container -->
-    <main id="main-container">
+    <main id="main-container" >
         @yield('contenido')
     </main>
     <!-- END Main Container -->
     
     <!-- Footer -->
-    <footer id="page-footer">
+    <footer id="page-footer" class="bg-secondary">
         @include('layouts.app.footer')
     </footer>
     <!-- END Footer -->

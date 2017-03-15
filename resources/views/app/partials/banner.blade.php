@@ -1,21 +1,30 @@
-<div class="col-xs-12 remove-padding banner">
-    <div class="push-150-t text-center">
-        <h1 class="h2 font-w700 text-white push-20 animated fadeInDown" data-class="animated fadeInDown">
-            "Everything you need"
-        </h1>
-        <h2 class="h4 text-white-op animated fadeIn">
-            Enjoy the wonderful experience of discovering a whole new culture in english.
-            <br>
-            Quick, simple, unforgettable.
-        </h2>
-        <div class="push-50-t push-20 text-center">
-            <a class="btn btn-lg btn-info push-10-r push-5 animated fadeInLeft">
-                <i class="fa fa-shopping-cart push-10-r"></i>
-                Paquetes
-            </a>
-            <a class="btn btn-lg btn-primary push-5 animated fadeInRight" href="#">
-                Arma tu plan
-            </a>
+<div class="img-container banner">
+    <img class="img-responsive" src="{{asset('img/banner/banner4.jpg')}}" alt="">
+    <div class="baner-overlay">
+        <div class="img-options-content">
+            <div class="col-sm-12">
+                <h1 class="h2 font-w700 text-white push-20 push-150-t animated fadeInDown"
+                    data-class="animated fadeInDown">
+                    "ONE STOP PLANNING FOR VACATION TO COLOMBIA "
+                </h1>
+                <h2 class="h4 text-white-op animated fadeIn">
+                    Discover a rich Latin Culture with English language guidance throughout your stay.
+                    <br>
+                    Quick, simple, unforgettable.
+                </h2>
+                
+                
+                <div class="push-50-t push-20 text-center">
+                    <a class="btn btn-primary-darkest push-20-r btn-minw text-white animated fadeInLeft" href="#">
+                        Pick a Plan
+                    </a>
+                    <a class="btn  btn-primary btn-minw animated fadeInRight" href="#">
+                        Design your plan
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+
+
 </div>
