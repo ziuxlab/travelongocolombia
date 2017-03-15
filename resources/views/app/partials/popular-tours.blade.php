@@ -1,4 +1,4 @@
-<div class="bg-primary-darkest ">
+<div class="bg-primary">
     <div class="content-boxed ">
         <div class="col-sm-12 text-white content text-center">
             <h2 class="h2">Popular Tours</h2>
@@ -8,7 +8,7 @@
     <div class="content-boxed ">
         <div class="row text-white content content-full text-center">
             <div class="col-md-4 col-xs-12">
-                <a class="block block-rounded block-link-hover2" href="#">
+                <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/cabalgata.jpeg")}}');">
                         <div class="mheight-150"></div>
@@ -29,14 +29,14 @@
                                     eligendi eum laudantium nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit.
                                 </p>
-                                <button class="btn push-20 btn-minw btn-primary ">Ver mas</button>
+                                <button class="btn push-20 btn-minw text-white btn-primary-darkest ">Ver mas</button>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-xs-12">
-                <a class="block block-rounded block-link-hover2" href="#">
+                <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/panaca.jpeg")}}');">
                         <div class="mheight-150"></div>
@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="col-md-4 col-xs-12">
-                <a class="block block-rounded block-link-hover2" href="#">
+                <a class="block block-sombra block-rounded block-link-hover2" href="#">
                     <div class="bg-image"
                          style="background-image: url('{{asset("img/banner/activities/parque-cafe.jpeg")}}');">
                         <div class="mheight-150"></div>
