@@ -13,7 +13,7 @@
 @stop
 
 @section('contenido')
-  @include('app.partials.banner')
+  @include('app.partials.banner-home')
   @include('app.partials.articulos')
   @include('app.partials.why-colombia')
   @include('app.partials.popular-tours')

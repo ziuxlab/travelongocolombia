@@ -5,8 +5,9 @@
     @include('layouts.app.head')
     
     @yield('title')
+    @yield('keywords')
     @yield('description')
-    @yield('meta')
+    @yield('meta') <!-- SEO -->
     @yield('style')
 
 </head>

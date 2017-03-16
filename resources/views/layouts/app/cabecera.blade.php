@@ -126,7 +126,10 @@
                 <a href="{{url('/')}}">Hotels</a>
             </li>
             <li class="v-center">
-                <a href="{{url('/')}}">About Us</a>
+                <a href="{{url('about-us')}}">About Us</a>
+            </li>
+            <li class="v-center">
+                <a href="{{url('sustainability-policy')}}">Sustainability Policy</a>
             </li>
             
             @if (Auth::guest())

@@ -31,21 +31,21 @@
                 enim est explicabo fugiat maxime necessitatibus nemo nisi non obcaecati, odio quam quas quos ullam ut.
             </p>
             <div class="item-social">
-                <a class="item item-social push-10-r item-circle bg-gray-lighter">
+                <a class="item item-social push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
                     <i class="fa fa-facebook text-gray-dark"></i>
                 </a>
                 
-                <a class="item item-circle push-10-r bg-gray-lighter">
+                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->twitter}}">
                     <i class="fa fa-twitter text-gray-dark"></i>
                 </a>
-                <a class="item item-circle push-10-r bg-gray-lighter">
+                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->google}}">
                     <i class="fa fa-google-plus text-gray-dark"></i>
                 </a>
-                <a class="item item-circle push-10-r bg-gray-lighter">
+                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->youtbe}}">
                     <i class="fa fa-youtube text-gray-dark"></i>
                 </a>
-                <a class="item item-circle  bg-gray-lighter">
-                    <i class="fa fa-envelope-o text-gray-dark"></i>
+                <a class="item item-circle  bg-gray-lighter" href="{{$Config->instagram}}">
+                    <i class="fa fa-instagram text-gray-dark"></i>
                 </a>
             </div>
         
@@ -82,11 +82,11 @@
             <span class="item push-20-t item-circle bg-gray-lighter">
             <i class="fa fa-phone text-gray-dark"></i>
         </span>
-            <p class="push-20-t h3">+1-202-555-0173</p>
+            <p class="push-20-t h3">{{$Config->phone}}</p>
             <p class="">
-                info@travelongocolombia.com
+                {{$Config->email}}
                 <br>
-                Monday to Friday <br> 9.00am - 7.30pm
+                {{$Config->address}}
             </p>
         </div>
     </div>

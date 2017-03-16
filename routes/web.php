@@ -24,6 +24,8 @@
     
     Route::get('/home', 'HomeController@index');
     
+    Route::get('{pages}', 'PagesController@show');
+    
     Route::group(['prefix' => 'admin'], function () {
     
         Auth::routes();

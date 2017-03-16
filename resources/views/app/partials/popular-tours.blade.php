@@ -5,7 +5,7 @@
             <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
         </div>
     </div>
-    <div class="content-boxed ">
+    <div class="content-boxed content content-full">
         <div class="row text-white text-center">
             <div class="col-md-4 col-sm-6 push-15">
                 <a class="block block-sombra block-rounded block-link-hover2" href="#">

@@ -12,7 +12,7 @@
         //
         public function __construct()
         {
-            $this->middleware('auth');
+            $this->middleware('auth', ['except' => ['show']]);
         }
         
         /**
@@ -78,12 +78,12 @@
          *
          * @return \Illuminate\Http\Response
          */
-        public function show($id)
+        public function show($url)
         {
             //
-            Page::find($id);
+            $page = Page::where('slug_url',$url)->firstOrFail();
             
-            return view('admin.pages.pages_edit');
+            return view('app.page', compact('page'));
         }
         
         /**

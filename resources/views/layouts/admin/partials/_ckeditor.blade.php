@@ -1,4 +1,5 @@
-<script src="{{url('vendor/unisharp/laravel-ckeditor/ckeditor.js')}}"></script>
+
+<script src="{{asset('js/plugins/ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace( 'js-ckeditor', {
         filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',

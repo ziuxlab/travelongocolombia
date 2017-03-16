@@ -1,6 +1,13 @@
 nav {
     height: 60px;
 }
+.img-container .img-options-content-about {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+}
+
 
 .max-height-150{
     max-height: 150px;
@@ -9,6 +16,7 @@ nav {
 
 .banner{
     max-height: 600px;
+    min-height: 300px;
     
 }
 
@@ -144,6 +152,7 @@ nav {
 
 .flex {
     flex-wrap: wrap;
+    display: flex;
 }
 
 .div-full {
@@ -701,6 +710,11 @@ footer {
     
     .border-black {
         border-top: 1px solid #2a2a2a;
+    }
+    
+    .img-fixed-xs{
+        height: 100%;
+        position: absolute;
     }
 }
 
