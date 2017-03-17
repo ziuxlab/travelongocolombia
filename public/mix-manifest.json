@@ -1,7 +1,7 @@
 {
-  "/mix.js": "/mix.js",
-  "/admin/css/main.css": "/admin/css/main.css",
-  "/css/main.css": "/css/main.css",
-  "/css/app.css": "/css/app.css",
-  "/admin/css/app.css": "/admin/css/app.css"
+  "/mix.js": "/mix.5f7f16a82a4f91544984.js",
+  "/admin/css/main.css": "/admin/css/main.eba41cfa771ad9bb1261.css",
+  "/css/main.css": "/css/main.eba41cfa771ad9bb1261.css",
+  "/css/app.css": "/css/app.18b781571b5f2e0404bb6320da7a4901.css",
+  "/admin/css/app.css": "/admin/css/app.363deeb9312da2ab4a6a04edb65550fb.css"
 }
