@@ -24,11 +24,11 @@
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
 <!-- carga de css mientras entra a produccion, eliminar despues -->
-<link href="{{ url('css/app.css') }}" rel="stylesheet">
+<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 
 <!-- CSS Print -->
-<link rel="stylesheet" type="text/css" media="print" href="{{ asset('css/app.css') }}">
+<link rel="stylesheet" type="text/css" media="print" href="{{ mix('css/app.css') }}">
 
 <!-- Scripts -->
 <script>
