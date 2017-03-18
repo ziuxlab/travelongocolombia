@@ -1,16 +1,16 @@
 
-<div class="content-boxed border-black-op">
+<div class="content-boxed flex border-black-op">
     <div class="col-sm-6 content content-full    text-center">
         <div class="block block-transparent">
             <div class="block-content">
-                <h2 class="h3 font-w600">¿Why Colombia?</h2>
+                <h3>¿Why Colombia?</h3>
             </div>
             <div class="block-content">
                 <img src="{{asset('img/banner/banner2.jpg')}}" class="img-responsive push-30-t">
             
             </div>
-            <div class="block-content">
-                <p class="text-justify push-20-t ">
+            <div class="block-content text-justify push-20-t ">
+                <p>
                     Strategically located on the northern coast of the South American continent, Colombia is the perfect
                     quick getaway from the US (3.5 hours from Ft Lauderdale) - a paradise of perfectly consistent
                     year-round semi-tropical climate; virtually no seasons but with plenty of biodiversity and
@@ -39,14 +39,14 @@
     <div class=" col-sm-6 remove-padding bg-secondary   text-center ">
         <div class="content ">
             <div class="block block-transparent">
-                <div class="block-content">
-                    <h2 class="h3 text-white font-w600">¿Why Quindio?</h2>
+                <div class="block-content text-white font-w600">
+                    <h3>¿Why Quindio?</h3>
                 </div>
                 <div class="block-content">
                     <img src="{{asset('img/banner/banner1.png')}}" class="img-responsive push-30-t">
                 </div>
-                <div class="block-content block-content-full">
-                    <p class="text-justify push-20-t text-white ">
+                <div class="block-content block-content-full text-justify push-20-t text-white ">
+                    <p>
                         Lying in the “Cordillera Central”, the central highlands of Colombia, is the Quindío department,
                         one
                         of the smallest “departments” (known as counties in the US) in Colombia, which in contrast to
@@ -68,23 +68,23 @@
                         is a totally gratifying experience, one that your heart will want to repeat over and over again.
                     </p>
                 </div>
-                <div class="block block-rounded ">
-        
-                    <div class="block-content bg-primary">
-                        <h2 class="h3 text-white font-w600">¿Why Coffee Area?</h2>
+                <div class="block block-rounded  ">
+                    <div class="block-content text-white bg-primary font-w600">
+                        <h3>¿Why Coffee Area?</h3>
+                        <div class="text-justify push-20-t ">
+                            <p>
+                                “An exceptional example of a sustainable and productive cultural landscape that is unique and
+                                representative of a tradition that is a strong symbol for coffee growing areas
+                                worldwide…” This quotation was extracted from the official
+                                recognition given to the Coffee Cultural Landscape of
+                                Colombia in 2011 by UNESCO. This Colombian territory was
+                                subsequently included in its prestigious “World Heritage
+                                List”, yet more reason that you should not hesitate to
+                                vacation here with Travelongo Colombia and enjoy of one of
+                                outstanding destinations in the world. </p>
+                        </div>
                     </div>
-                    <div class="block-content bg-primary">
-                        <p class="text-justify push-20-t text-white ">
-                            “An exceptional example of a sustainable and productive cultural landscape that is unique and
-                            representative of a tradition that is a strong symbol for coffee growing areas
-                            worldwide…” This quotation was extracted from the official
-                            recognition given to the Coffee Cultural Landscape of
-                            Colombia in 2011 by UNESCO. This Colombian territory was
-                            subsequently included in its prestigious “World Heritage
-                            List”, yet more reason that you should not hesitate to
-                            vacation here with Travelongo Colombia and enjoy of one of
-                            outstanding destinations in the world. </p>
-                    </div>
+                   
                 </div>
             </div>
         </div>
