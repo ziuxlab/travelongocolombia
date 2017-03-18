@@ -83,7 +83,7 @@
                                 <a href="{{Url('admin/components/banner')}}">Banner Home</a>
                             </li>
                             <li class="">
-                                <a href="{{Url('admin/components/why-colombia')}}">Why Colombia</a>
+                                <a href="{{Url('admin/components')}}">Components</a>
                             </li>
                         </ul>
                     </li>
