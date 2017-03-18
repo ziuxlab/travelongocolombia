@@ -29,6 +29,12 @@ class Page extends Model
         'tipo',
     ];
     
+    
+    public function components()
+    {
+        return $this->hasMany('App\Components','page_id');
+    }
+    
     public static function extract_views($page){
         $inicial = strpos($page->body, '{') + 1;
         $final = strpos($page->body, '}');

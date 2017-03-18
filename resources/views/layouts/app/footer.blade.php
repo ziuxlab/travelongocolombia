@@ -23,12 +23,18 @@
 </div>
 <div class="content-boxed">
     <div class="col-sm-12 text-gray">
-        <div class="col-lg-4 col-sm-4 push-10-t text-center">
+        <div class="col-md-6 push-10-t text-center">
             <img class="logo img-responsive" src="{{asset('img/logo-naranja.svg')}}">
             <p class="push-15-t text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, architecto earum? Aspernatur cumque
-                eaque,
-                enim est explicabo fugiat maxime necessitatibus nemo nisi non obcaecati, odio quam quas quos ullam ut.
+                Travelongo está comprometida con el cumplimiento de la ley 679 del 2001, y rechaza todo tipo de
+                explotación, pornográfica, turismo sexual y violencia sexual a los menores de edad*
+                Ley 17 de 1981 - Resolución Ministerial No. 1367 de 2000 (Trafico ilícito de especies de fauna y flora
+                silvestre)*
+                Ley 103 de 1991, Decreto 904 de 1941, Ley 397 de 1997 Decreto 833 de 2002, Ley 1185 de 2008 (Trafico
+                ilícito de bienes culturales)*
+                Rechaza la explotación laboral infantil y rechaza toda forma de discriminación racial*
+                Los datos personales que se han recogido por medio de este canal serán tratados de conformidad con lo
+                establecido en la ley 1581 2012 y sus decretos reglamentarios.
             </p>
             <div class="item-social">
                 <a class="item item-social push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
@@ -48,36 +54,20 @@
                     <i class="fa fa-instagram text-gray-dark"></i>
                 </a>
             </div>
-        
-        
-        
         </div>
-        <div class="col-lg-2 col-sm-2 text-left  push-20-t">
+        <div class="col-md-2 col-sm-6 text-left  push-20-t">
             <p class="h3 text-white "> About</p>
             <br>
             <ul class="list-unstyled">
-                <li> <a>About us</a></li>
-                <li> <a>Resposability Child</a></li>
-                <li> <a>FAQ</a></li>
-                <li> <a>Login</a></li>
+                <li><a>About us</a></li>
+                <li><a>Resposability Child</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Login</a></li>
                 <li><a>Register</a></li>
-                <li> <a>Terms and conditions</a></li>
+                <li><a>Terms and conditions</a></li>
             </ul>
         </div>
-        <div class="col-lg-2 col-sm-2 text-left  push-20-t">
-            <p class="h3 text-white "> About</p>
-            <br>
-            <ul class="list-unstyled">
-                <li> <a>About us</a></li>
-                <li> <a>Resposability Child</a></li>
-                <li> <a>FAQ</a></li>
-                <li> <a>Login</a></li>
-                <li><a>Register</a></li>
-                <li> <a>Terms and conditions</a></li>
-            </ul>
-            
-        </div>
-        <div class="col-lg-4 col-sm-4 text-center push-20-t">
+        <div class="col-md-4 col-sm-6 text-center push-20-t">
             <h4 class="h3 text-white font-w600">Have Questions?</h4>
             <span class="item push-20-t item-circle bg-gray-lighter">
             <i class="fa fa-phone text-gray-dark"></i>

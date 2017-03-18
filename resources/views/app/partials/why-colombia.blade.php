@@ -45,7 +45,7 @@
                 <div class="block-content">
                     <img src="{{asset('img/banner/banner1.png')}}" class="img-responsive push-30-t">
                 </div>
-                <div class="block-content">
+                <div class="block-content block-content-full">
                     <p class="text-justify push-20-t text-white ">
                         Lying in the “Cordillera Central”, the central highlands of Colombia, is the Quindío department,
                         one
@@ -68,24 +68,23 @@
                         is a totally gratifying experience, one that your heart will want to repeat over and over again.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="content content-full">
-            <div class="block block-rounded ">
-                <div class="block-content bg-primary">
-                    <h2 class="h3 text-white font-w600">¿Why Coffee Area?</h2>
-                </div>
-                <div class="block-content bg-primary">
-                    <p class="text-justify push-20-t text-white ">
-                        “An exceptional example of a sustainable and productive cultural landscape that is unique and
-                        representative of a tradition that is a strong symbol for coffee growing areas
-                        worldwide…” This quotation was extracted from the official
-                        recognition given to the Coffee Cultural Landscape of
-                        Colombia in 2011 by UNESCO. This Colombian territory was
-                        subsequently included in its prestigious “World Heritage
-                        List”, yet more reason that you should not hesitate to
-                        vacation here with Travelongo Colombia and enjoy of one of
-                        outstanding destinations in the world. </p>
+                <div class="block block-rounded ">
+        
+                    <div class="block-content bg-primary">
+                        <h2 class="h3 text-white font-w600">¿Why Coffee Area?</h2>
+                    </div>
+                    <div class="block-content bg-primary">
+                        <p class="text-justify push-20-t text-white ">
+                            “An exceptional example of a sustainable and productive cultural landscape that is unique and
+                            representative of a tradition that is a strong symbol for coffee growing areas
+                            worldwide…” This quotation was extracted from the official
+                            recognition given to the Coffee Cultural Landscape of
+                            Colombia in 2011 by UNESCO. This Colombian territory was
+                            subsequently included in its prestigious “World Heritage
+                            List”, yet more reason that you should not hesitate to
+                            vacation here with Travelongo Colombia and enjoy of one of
+                            outstanding destinations in the world. </p>
+                    </div>
                 </div>
             </div>
         </div>

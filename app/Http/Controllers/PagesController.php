@@ -2,6 +2,7 @@
     
     namespace App\Http\Controllers;
     
+    use App\Components;
     use App\Page;
     use App\User;
     use HttpOz\Roles\Models\Role;
@@ -87,14 +88,14 @@
         public function show($url)
         {
             //
-            $menu =  Page::whereLocal(App::getLocale())->orderBy('menu_order')->get();
-            
             $page = Page::where('slug_url', $url)->firstOrFail();
+            
             if ($page->tipo == 0){
-                return view('app.page', compact('page','menu'));
+                return view('app.page', compact('page'));
             }else{
                 $view = Page::extract_views($page);
-                return view($view, compact('page','menu'));
+                
+                return view($view, compact('page'));
             }
         }
         

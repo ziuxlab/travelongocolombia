@@ -15,8 +15,13 @@ class CreateComponentsTable extends Migration
     {
         Schema::create('components', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tittle');
-            $table->string('body');
+            $table->string('name');
+            $table->text('body');
+            $table->tinyInteger('page_id')->unsigned();
+            $table->tinyInteger('order_component')->unsigned()->default(200);
+            $table->string('local',5);
+            $table->boolean('status')->default(true);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

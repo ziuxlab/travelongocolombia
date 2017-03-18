@@ -2,9 +2,11 @@
 
 namespace App\Exceptions;
 
+use App\Page;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\App;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
@@ -46,7 +48,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if ($exception instanceof NotFoundHttpException) {
-            return response()->view('errors.404', [], 404);
+            return response()->view('errors.404', compact('menu'), 404);
         }
         return parent::render($request, $exception);
     }

@@ -7,10 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 class Components extends Model
 {
     //
-    protected $table = 'settings';
+    protected $table = 'components';
     
     protected $fillable = [
-        'tittle',
+        'name',
         'body',
+        'page_id',
+        'order_component',
+        'local',
+        'status',
     ];
+    
+    public function page()
+    {
+        return $this->belongsTo('App\Page','page_id');
+    }
+    
 }

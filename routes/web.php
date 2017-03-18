@@ -13,7 +13,7 @@
     
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Route;
-    use Illuminate\Support\Facades\Session;
+
     
     
     Route::get('/login', function () {
@@ -24,6 +24,10 @@
     Route::get('language/{locale}', function ($locale){
         App::setLocale($locale);
         session(['locale'=>$locale]);
+        
+        if ($locale == 'es'){
+            return redirect('inicio');
+        }
         return redirect('/');
     });
     

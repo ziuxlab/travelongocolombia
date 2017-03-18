@@ -109,14 +109,11 @@
                     <i class="fa fa-times"></i>
                 </button>
             </li>
-            @foreach($menu as $item)
+            @foreach($menu->where('local',App::getLocale()) as $item)
                 <li class="v-center">
-                    <a class="active text-capitalize" href="{{url($item->slug_url)}}">{{$item->name}}</a>
+                    <a class="{{Request::is($item->slug_url ?: '/') ? 'active' : ''}} text-capitalize" href="{{url($item->slug_url)}}">{{$item->name}}</a>
                 </li>
             @endforeach
-            <li class="v-center">
-                <a href="{{url('/')}}">Why Colombia?</a>
-            </li>
             <li class="v-center">
                 <a href="{{url('/')}}">Activities</a>
             </li>

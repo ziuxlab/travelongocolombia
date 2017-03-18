@@ -60,7 +60,6 @@
                     <img class="" src="{{ asset('img/logo.svg') }}" alt="Ziuxlab"
                          height="50">
                 </a>
-            
             </div>
             <!-- END Side Header -->
             
@@ -77,8 +76,16 @@
                     </li>
                    
                     <li>
-                        <a href="{{url('admin/components')}}"><i class="si si-grid"></i><span
+                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span
                                     class="sidebar-mini-hide">Componentes</span></a>
+                        <ul>
+                            <li class="">
+                                <a href="{{Url('admin/components/banner')}}">Banner Home</a>
+                            </li>
+                            <li class="">
+                                <a href="{{Url('admin/components/why-colombia')}}">Why Colombia</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="{{url('admin/flights')}}"><i class="si si-users"></i><span
