@@ -1,7 +1,6 @@
-<div class="img-container banner">
-    <img class="img-responsive img-fixed-xs" src="{{asset('img/banner/banner4.jpg')}}" alt="">
-    <div class="baner-overlay">
-        <div class="img-options-content">
+<div class="bg-image text-center " style="background-image: url('{{asset('img/banner/banner4.jpg')}}');">
+    <div class="content content-full overflow-hidden bg-black-op">
+        <div class="">
             <div class="col-sm-12">
                 <h1 class="h1 font-w700 text-white push-20 push-150-t animated fadeInDown"
                     data-class="animated fadeInDown">
@@ -12,17 +11,15 @@
                     <br>
                     Quick, simple, unforgettable.
                 </h2>
-                
-                
-                <div class="push-50-t push-20 text-center">
+                <div class="push-50-t push-20 text-center flex-center">
                     
-                        <a class="btn btn-primary push-20-r btn-minw150  text-white animated fadeInLeft" href="#">
-                            Pick a Plan
+                        <a class="col-sm-3 btn btn-primary push-20-r btn-minw150  text-white animated fadeInLeft" href="#">
+                            @lang('cabecera.Pick')
                         </a>
                     
                    
-                    <a class="btn  btn-primary btn-minw150  animated fadeInRight" href="#">
-                        Design your plan
+                    <a class="col-sm-3 btn  btn-primary btn-minw150  animated fadeInRight" href="#">
+                        @lang('cabecera.Design')
                     </a>
                 </div>
             </div>

@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ session('locale') ?: config('app.locale') }}">
 <head>
-    
     @include('layouts.app.head')
     
-    @yield('title')
-    @yield('keywords')
-    @yield('description')
-    @yield('meta') <!-- SEO -->
-    @yield('style')
-
 </head>
 <body>
 <div id="page-container" class="">
@@ -31,7 +24,6 @@
     <!-- END Footer -->
 
 </div>
-
 
 <!-- Scripts -->
 @include('layouts.scripts')

@@ -7,8 +7,10 @@
 
 <meta name="author" content="Ziuxlab">
 <meta name="robots" content="index, follow">
-
-
+<meta name="keywords" content="@yield('keywords')">
+<link rel="canonical" href="{{url()->current()}}">
+<title>@yield('title')</title>
+<meta name="description" content="@yield('description')">
 <!-- Real Favicon Generator -->
 
 <link rel="apple-touch-icon" sizes="120x120" href="{{url('favicons/apple-touch-icon.png')}}">
@@ -25,14 +27,20 @@
 
 <!-- carga de css mientras entra a produccion, eliminar despues -->
 <link href="{{ asset(mix('/css/app-home.css')) }}" rel="stylesheet">
+<style type="text/css">
+    @yield('style')
+</style>
 
 
 <!-- CSS Print -->
 <link rel="stylesheet" type="text/css" media="print" href="{{ asset(mix('/css/app-home.css')) }}">
+
 
 <!-- Scripts -->
 <script>
     window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
         ]) !!};
+    
+    @yield('scripts_header')
 </script>

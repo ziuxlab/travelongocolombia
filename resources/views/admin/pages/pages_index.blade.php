@@ -24,6 +24,8 @@
                     <th>Nombre</th>
                     <th class="hidden-xs">Url</th>
                     <th class="" style="width: 15%;">Estado</th>
+                    <th class="">Ubicación</th>
+                    <th class="">Idioma</th>
                     <th class="text-center" style="width: 100px;">Control</th>
                 </tr>
                 </thead>
@@ -39,6 +41,8 @@
                                     <span class="label label-success">Habilitado</span>
                                 @endif
                         </td>
+                        <td>{{$page->menu_order}}</td>
+                        <td>{{$page->local}}</td>
                         <td class="text-center">
                             <div class="btn-group">
                                 <a href="{{url('admin/pages/'. $page->id . '/edit')}}" class="btn btn-xs btn-default"

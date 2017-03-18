@@ -6,13 +6,16 @@
     use App\User;
     use HttpOz\Roles\Models\Role;
     use Illuminate\Http\Request;
-    
+    use Illuminate\Support\Facades\App;
+    use Illuminate\Support\Facades\Session;
+    use Illuminate\Support\Facades\View;
+
     class PagesController extends Controller
     {
         //
         public function __construct()
         {
-            $this->middleware('auth', ['except' => ['show']]);
+            $this->middleware('auth');
         }
         
         /**
@@ -49,7 +52,7 @@
         public function store(Request $request)
         {
             $this->validate($request, [
-                'slug_url'   => 'required|unique:pages',
+                'slug_url'   => 'unique:pages',
                 'menu_order' => 'numeric'
             ]);
             
@@ -64,6 +67,9 @@
                 'status'           => $request->status,
                 'menu'             => $request->menu,
                 'menu_order'       => $request->menu_order,
+                'local'            => $request->local,
+                'img'            => $request->img,
+                'tipo'            => $request->tipo,
             
             ]);
             
@@ -81,9 +87,15 @@
         public function show($url)
         {
             //
-            $page = Page::where('slug_url',$url)->firstOrFail();
+            $menu =  Page::whereLocal(App::getLocale())->orderBy('menu_order')->get();
             
-            return view('app.page', compact('page'));
+            $page = Page::where('slug_url', $url)->firstOrFail();
+            if ($page->tipo == 0){
+                return view('app.page', compact('page','menu'));
+            }else{
+                $view = Page::extract_views($page);
+                return view($view, compact('page','menu'));
+            }
         }
         
         /**
@@ -114,10 +126,10 @@
             //
             $page = Page::find($id);
             
-            if (! $page->slug_url == str_slug($request->slug_url, '-')){
-               
+            if ( ! $page->slug_url == str_slug($request->slug_url, '-')) {
+                
                 $this->validate($request, [
-                    'slug_url'   => 'required|unique:pages',
+                    'slug_url'   => 'unique:pages',
                     'menu_order' => 'numeric'
                 ]);
                 $page->slug_url = str_slug($request->slug_url, '-');

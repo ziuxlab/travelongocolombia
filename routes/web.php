@@ -11,18 +11,24 @@
     |
     */
     
-    Route::get('/', function () {
-        //return view('welcome');
-        return view('proximamente');
-    });
+    use Illuminate\Support\Facades\App;
+    use Illuminate\Support\Facades\Route;
+    use Illuminate\Support\Facades\Session;
+    
     
     Route::get('/login', function () {
         //return view('welcome');
         return redirect('admin/login');
     });
     
+    Route::get('language/{locale}', function ($locale){
+        App::setLocale($locale);
+        session(['locale'=>$locale]);
+        return redirect('/');
+    });
     
-    Route::get('/home', 'HomeController@index');
+    
+    Route::get('/', 'HomeController@index');
     
     Route::get('{pages}', 'PagesController@show');
     
