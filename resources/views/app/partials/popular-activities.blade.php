@@ -2,7 +2,7 @@
 <div class="bg-primary-darkest">
     <div class="content-boxed text-white">
         <div class="col-sm-12 content content-full text-center">
-            <h2 class="h2">Popular Activities</h2>
+            <h2 class="h2">@lang('general.Popular Activities')</h2>
             <h3 class="h5 ">"We have a unique way at meeting your adventures expectational" </h3>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <div class="form-group {{ $errors->has('tittle') ? ' has-error' : '' }}">
-    {!! Form::label('title:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Titulo:', null, ['class' => 'control-label']) !!}
     {!! Form::text('tittle', old('tittle'), ['class' => 'form-control','placeholder'=>'Ingrese aquí los estilos que desea agregar, todos quedarán dentro de las etiquetas "styles"','rows'=>'4']) !!}
     @if ($errors->has('tittle'))
         <span class="help-block">
