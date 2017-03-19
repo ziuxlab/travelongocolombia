@@ -114,16 +114,7 @@
                     <a class="{{Request::is($item->slug_url ?: '/') ? 'active' : ''}} text-capitalize" href="{{url($item->slug_url)}}">{{$item->name}}</a>
                 </li>
             @endforeach
-            <li class="v-center">
-                <a href="{{url('/')}}">Activities</a>
-            </li>
-            <li class="v-center">
-                <a href="{{url('/')}}">Tours</a>
-            </li>
-            <li class="v-center">
-                <a href="{{url('/')}}">Hotels</a>
-            </li>
-            
+           
             
             @if (Auth::guest())
                 <li class="v-center hidden-md hidden-lg">

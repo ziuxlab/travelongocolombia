@@ -10,7 +10,7 @@
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Session;
     use Illuminate\Support\Facades\View;
-
+    
     class PagesController extends Controller
     {
         //
@@ -69,8 +69,8 @@
                 'menu'             => $request->menu,
                 'menu_order'       => $request->menu_order,
                 'local'            => $request->local,
-                'img'            => $request->img,
-                'tipo'            => $request->tipo,
+                'img'              => $request->img,
+                'tipo'             => $request->tipo,
             
             ]);
             
@@ -88,11 +88,13 @@
         public function show($url)
         {
             //
-            $page = Page::where('slug_url', $url)->firstOrFail();
+            $page = Page::where('slug_url', $url)
+                        ->firstOrFail()
+            ;
             
-            if ($page->tipo == 0){
+            if ($page->tipo == 0) {
                 return view('app.page', compact('page'));
-            }else{
+            } else {
                 $view = Page::extract_views($page);
                 
                 return view($view, compact('page'));
@@ -145,6 +147,9 @@
             $page->status = $request->status;
             $page->menu = $request->menu;
             $page->menu_order = $request->menu_order;
+            $page->local = $request->local;
+            $page->img = $request->img;
+            $page->tipo = $request->tipo;
             
             $page->save();
             
