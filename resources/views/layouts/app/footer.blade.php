@@ -12,7 +12,7 @@
                         <div class="input-group">
                             <input class="form-control" type="email" name="email" placeholder="Email">
                             <span class="input-group-btn">
-                                <button class="btn btn-minw btn-primary-darkest" type="button">Submit</button>
+                                <button class="btn btn-minw btn-primary-darkest" type="button">@lang('general.Submit')</button>
                             </span>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="col-md-2 col-sm-6 text-left  push-20-t">
-            <p class="h3 text-white "> About</p>
+            <p class="h3 text-white "> @lang('general.about')</p>
             <br>
             <ul class="list-unstyled">
                 <li><a>About us</a></li>
@@ -68,7 +68,7 @@
             </ul>
         </div>
         <div class="col-md-4 col-sm-6 text-center push-20-t">
-            <h4 class="h3 text-white font-w600">Have Questions?</h4>
+            <h4 class="h3 text-white font-w600">@lang('general.Questions')</h4>
             <span class="item push-20-t item-circle bg-gray-lighter">
             <i class="fa fa-phone text-gray-dark"></i>
         </span>

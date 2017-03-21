@@ -14,9 +14,9 @@ return [
     */
 
     'Questions' => '¿Tienes Preguntas?',
-    'Submit' => 'enviar',
+    'Submit' => 'Enviar',
     'Popular Activities' => 'Actividades populares',
-    'Popular Tours' => 'paquetes turísticos populares',
+    'Popular Tours' => 'Paquetes turísticos populares',
     'view details' => 'ver más',
     'pages' => 'página|páginas',
     'tittle' => 'título',
@@ -52,4 +52,6 @@ return [
     'email'=>'correo electrónico',
     'address'=>'dirección',
     'role'=>'acceso',
+    'about'=>'Nosotros',
+    'close'=>'Cerrar',
 ];

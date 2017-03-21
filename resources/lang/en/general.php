@@ -52,6 +52,8 @@ return [
     'email'=>'email',
     'address'=>'address',
     'role'=>'role',
+    'close'=>'close',
+    'about'=>'About',
    
     
    
