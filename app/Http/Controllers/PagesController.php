@@ -10,6 +10,7 @@
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Session;
     use Illuminate\Support\Facades\View;
+    use Intervention\Image\Facades\Image;
     
     class PagesController extends Controller
     {
@@ -54,9 +55,20 @@
         {
             $this->validate($request, [
                 'slug_url'   => 'unique:pages',
+                'img'        => 'mimes:jpeg,jpg,png',
                 'menu_order' => 'numeric'
             ]);
             
+            if ($request->hasFile('img')) {
+                
+                $path = 'img/banner/' . str_random(10) . '.png';
+                Image::make($request->file('img'))
+                     ->save($path, 50)
+                ;
+                
+            } else {
+                $path = null;
+            }
             
             $page = Page::create([
                 'slug_url'         => str_slug($request->slug_url, '-'),
@@ -69,7 +81,7 @@
                 'menu'             => $request->menu,
                 'menu_order'       => $request->menu_order,
                 'local'            => $request->local,
-                'img'              => $request->img,
+                'img'              => $path,
                 'tipo'             => $request->tipo,
             
             ]);
@@ -96,7 +108,6 @@
                 return view('app.page', compact('page'));
             } else {
                 $view = Page::extract_views($page);
-                
                 return view($view, compact('page'));
             }
         }
@@ -133,9 +144,20 @@
                 
                 $this->validate($request, [
                     'slug_url'   => 'unique:pages',
+                    'img'        => 'mimes:jpeg,jpg,png',
                     'menu_order' => 'numeric'
                 ]);
                 $page->slug_url = str_slug($request->slug_url, '-');
+            }
+            
+            if ($request->hasFile('img')) {
+                
+                $path = 'img/banner/' . str_random(10) . '.png';
+                Image::make($request->file('img'))
+                     ->fit(300, 300)
+                     ->save($path, 50)
+                ;
+                $page->img = $path;
             }
             
             
@@ -148,7 +170,6 @@
             $page->menu = $request->menu;
             $page->menu_order = $request->menu_order;
             $page->local = $request->local;
-            $page->img = $request->img;
             $page->tipo = $request->tipo;
             
             $page->save();
