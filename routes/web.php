@@ -13,7 +13,6 @@
     
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Route;
-
     
     
     Route::get('/login', function () {
@@ -21,13 +20,14 @@
         return redirect('admin/login');
     });
     
-    Route::get('language/{locale}', function ($locale){
+    Route::get('language/{locale}', function ($locale) {
         App::setLocale($locale);
-        session(['locale'=>$locale]);
+        session(['locale' => $locale]);
         
-        if ($locale == 'es'){
+        if ($locale == 'es') {
             return redirect('inicio');
         }
+        
         return redirect('/');
     });
     
@@ -37,15 +37,19 @@
     Route::get('{pages}', 'PagesController@show');
     
     Route::group(['prefix' => 'admin'], function () {
-    
+        
         Auth::routes();
         Route::get('home', 'AdminController@index');
         Route::resource('users', 'UsersController');
         Route::resource('pages', 'PagesController');
         Route::resource('components', 'ComponentController');
+        Route::delete('packages/{id}', 'PackagesController@delete_photo');
+        Route::put('packages/{id}', 'PackagesController@update_order_photo');
+        Route::resource('packages', 'PackagesController', ['except' => ['delete_photo','update_order_photo']]);
+        Route::resource('activities', 'ActivitiesController');
         Route::resource('settings', 'ConfigController');
-    
-    
+        
+        
         Route::get('flights/buscar/{term}', 'FlightController@buscar');
         Route::resource('flights', 'FlightController');
         

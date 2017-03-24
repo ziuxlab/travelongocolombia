@@ -30,8 +30,6 @@
         {!! $item->body !!}
     @endforeach
     
-   
-
 
 @stop
 

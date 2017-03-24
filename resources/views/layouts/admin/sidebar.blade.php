@@ -88,6 +88,14 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="{{url('admin/packages')}}"><i class="si si-docs"></i><span
+                                    class="sidebar-mini-hide">Paquetes</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/activities')}}"><i class="si si-docs"></i><span
+                                    class="sidebar-mini-hide">Actividades</span></a>
+                    </li>
+                    <li>
                         <a href="{{url('admin/flights')}}"><i class="si si-users"></i><span
                                     class="sidebar-mini-hide">Vuelos</span></a>
                     </li>

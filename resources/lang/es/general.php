@@ -54,4 +54,5 @@ return [
     'role'=>'acceso',
     'about'=>'Nosotros',
     'close'=>'Cerrar',
+    'days'=>'Días',
 ];

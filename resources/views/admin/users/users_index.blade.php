@@ -51,7 +51,7 @@
                                <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                                         data-toggle="tooltip" data-id="{{ $user->id }}" title=""
                                         data-original-title="Eliminar usuario"><i class="fa fa-times"></i>
-                                   {!! Form::open(['action'=> ['UsersController@destroy',$user->id],'method'=>'delete','id'=>'usuario_'.$user->id]) !!}
+                                   {!! Form::open(['action'=> ['UsersController@destroy',$user->id],'method'=>'delete','id'=>'item_'.$user->id]) !!}
                                    {!! Form::close() !!}
                                </button>
                                
@@ -67,53 +67,6 @@
 @stop
 
 @section('scripts')
-    
-    <script src="{{ asset('js/plugins/sweetalert2/es6-promise.auto.min.js') }}"></script>
-    <script src="{{ asset('js/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            jQuery(".js-swal-confirm").on("click", function (e) {
-                e.preventDefault();
-                id = $(this).attr("data-id");
-                data = $('#usuario_'+id).serialize();
-                url = $('#usuario_'+id).attr('action');
-                swal({
-                    title: "¿Estás Seguro?",
-                    text: "EL Usuario se eliminará de la base de datos!",
-                    type: "warning",
-                    showCancelButton: !0,
-                    confirmButtonColor: "#1b8bf9",
-                    cancelButtonColor: '#f55',
-                    confirmButtonText: "Sí, Eliminar!",
-                    cancelButtonText: 'No, Cancelar!',
-                    html: !1,
-                }).then(function (n) {
-                    $.ajax({
-                        url: url,
-                        type: 'POST',
-                        data: data,
-                        success: function( msg ) {
-                            swal({
-                                title: "Confirmado!",
-                                text: "El Usuario ha sido Borrado de la base de datos.",
-                                type: "success",
-                                confirmButtonColor: "#1b8bf9"
-                            })
-                            $('#'+id).remove();
-                            
-                        },
-                        error: function( data ) {
-                            swal({
-                                title: "Error!",
-                                text: "El Usuario no ha sido Borrado de la base de datos.",
-                                type: "error",
-                                confirmButtonColor: "#1b8bf9"
-                            })
-                        }
-                    });
-                })
-            })
-        })
-    </script>
+    @include('layouts.admin.partials._sweetalert', ['name'=>'El Usuario'])
 
 @stop
