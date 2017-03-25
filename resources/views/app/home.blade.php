@@ -13,8 +13,8 @@
 @stop
 
 @section('contenido')
-    @foreach($page->components()->orderBy('order_component')->get() as $item)
-        {!! $item->body !!}
+    @foreach($item->components()->orderBy('order_component')->get() as $component)
+        {!! $component->body !!}
     @endforeach
     @include('app.partials.popular-tours')
     @include('app.partials.popular-activities')

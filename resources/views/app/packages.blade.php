@@ -93,7 +93,7 @@
                                     ${{number_format($package->price_adults * ( 1 + ($package->discount/100)))}}*
                                 </div>
                                 <div>*@lang('general.person')</div>
-                                <a href="{{url('packages/'.$package->slug_url)}}" class="btn btn-primary push-20-t ">@lang('general.view details')</a>
+                                <a href="{{url(trans('general.packages').'/'.$package->slug_url)}}" class="btn btn-primary push-20-t ">@lang('general.view details')</a>
                             </div>
                            
                         </div>

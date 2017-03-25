@@ -33,6 +33,8 @@
     
     
     Route::get('/', 'HomeController@index');
+    Route::get('packages/{slug}', 'PackagesController@show');
+    Route::get('paquetes/{slug}', 'PackagesController@show');
     
     Route::get('{pages}', 'PagesController@show');
     

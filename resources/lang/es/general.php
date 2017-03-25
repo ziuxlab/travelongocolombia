@@ -56,4 +56,5 @@ return [
     'close'=>'Cerrar',
     'days'=>'Días',
     'person'=>'Persona',
+    'packages'=>'paquetes',
 ];

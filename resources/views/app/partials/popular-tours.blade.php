@@ -7,9 +7,9 @@
     </div>
     <div class="content-boxed content content-full">
         <div class="row text-white text-center">
-            @foreach($packages->where('local',App::getLocale()) as $package)
+            @foreach($packages->where('local',App::getLocale())->random(3) as $package)
             <div class="col-md-4 col-sm-6 push-15">
-                <a class="block block-sombra block-rounded block-link-hover2" href="{{url('packages/'.$package->slug_url)}}">
+                <a class="block block-sombra block-rounded block-link-hover2" href="{{url(trans('general.packages').'/'.$package->slug_url)}}">
                     <div class="bg-image "
                          style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}');">
                         <div class="mheight-150">
@@ -32,7 +32,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <p class="text-justify">
-                                    {{$package->meta_description}}.
+                                    {{substr($package->meta_description,0,170)}} [...]
                                 </p>
                                 <button class="btn push-20 btn-minw text-white btn-primary ">@lang('general.view details')</button>
                             </div>

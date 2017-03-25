@@ -110,7 +110,7 @@
             } else {
                
                 $view = Page::extract_views($item);
-                return view('app.packages', compact('item'));
+                return view($view, compact('item'));
             }
         }
         

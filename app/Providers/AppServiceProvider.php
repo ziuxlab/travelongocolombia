@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191); //
         View::share('Config', Config::find(1));
         View::share('menu', Page::whereMenu(1)->orderBy('menu_order')->get());
-        View::share('packages', Packages::with('photos')->get()->random(2));
+        View::share('packages', Packages::with('photos')->get());
     
         //Page::whereLocal(App::getLocale())->orderBy('menu_order')->get()
         

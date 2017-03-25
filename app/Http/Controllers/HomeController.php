@@ -32,9 +32,9 @@ class HomeController extends Controller
         $config = Config::findorfail(1);
         if ($config->status == 1){
     
-            $page = Page::where('slug_url', '')->firstOrFail();
+            $item = Page::where('slug_url', '')->firstOrFail();
             
-            return view('app.home', compact('page','menu'));
+            return view('app.home', compact('item','menu'));
             
         }
         

@@ -95,9 +95,16 @@
          *
          * @return \Illuminate\Http\Response
          */
-        public function show($id)
+        public function show($url)
         {
             //
+            $item = Packages::where('slug_url', $url)
+                        ->firstOrFail()
+                
+            ;
+            
+            dd($item);
+            
         }
         
         /**
