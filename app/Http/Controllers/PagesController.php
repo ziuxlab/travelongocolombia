@@ -100,15 +100,17 @@
         public function show($url)
         {
             //
-            $page = Page::where('slug_url', $url)
+            
+            $item = Page::where('slug_url', $url)
                         ->firstOrFail()
             ;
             
-            if ($page->tipo == 0) {
-                return view('app.page', compact('page'));
+            if ($item->tipo == 0) {
+                return view('app.page', compact('item'));
             } else {
-                $view = Page::extract_views($page);
-                return view($view, compact('page'));
+               
+                $view = Page::extract_views($item);
+                return view('app.packages', compact('item'));
             }
         }
         

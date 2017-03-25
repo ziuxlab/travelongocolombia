@@ -19,7 +19,7 @@ class CreatePagesTable extends Migration
             $table->string('name'); //nombre de la pagina
             $table->string('tittle'); //titulo de la apgina h1
             $table->longText('body')->nullable(); //contenido
-            $table->string('meta_description')->nullable();
+            $table->mediumText('meta_description')->nullable();
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
             $table->boolean('menu')->default(true);

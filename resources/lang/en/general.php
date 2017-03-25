@@ -55,6 +55,7 @@ return [
     'close'=>'close',
     'about'=>'About',
     'days'=>'days',
+    'person'=>'Person',
    
     
    

@@ -55,4 +55,5 @@ return [
     'about'=>'Nosotros',
     'close'=>'Cerrar',
     'days'=>'Días',
+    'person'=>'Persona',
 ];

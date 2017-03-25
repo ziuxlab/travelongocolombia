@@ -37,20 +37,20 @@
                 establecido en la ley 1581 2012 y sus decretos reglamentarios.
             </p>
             <div class="item-social">
-                <a class="item item-social push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
+                <a class="item-circle-small push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
                     <i class="fa fa-facebook text-gray-dark"></i>
                 </a>
                 
-                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->twitter}}">
+                <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->twitter}}">
                     <i class="fa fa-twitter text-gray-dark"></i>
                 </a>
-                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->google}}">
+                <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->google}}">
                     <i class="fa fa-google-plus text-gray-dark"></i>
                 </a>
-                <a class="item item-circle push-10-r bg-gray-lighter" href="{{$Config->youtbe}}">
+                <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->youtbe}}">
                     <i class="fa fa-youtube text-gray-dark"></i>
                 </a>
-                <a class="item item-circle  bg-gray-lighter" href="{{$Config->instagram}}">
+                <a class="item-circle-small  bg-gray-lighter" href="{{$Config->instagram}}">
                     <i class="fa fa-instagram text-gray-dark"></i>
                 </a>
             </div>

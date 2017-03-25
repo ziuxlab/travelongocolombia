@@ -7,23 +7,23 @@
     </div>
     <div class="content-boxed content content-full">
         <div class="row text-white text-center">
+            @foreach($packages->where('local',App::getLocale()) as $package)
             <div class="col-md-4 col-sm-6 push-15">
-                <a class="block block-sombra block-rounded block-link-hover2" href="#">
+                <a class="block block-sombra block-rounded block-link-hover2" href="{{url('packages/'.$package->slug_url)}}">
                     <div class="bg-image "
-                         style="background-image: url('{{asset("img/banner/activities/cabalgata.jpeg")}}');">
+                         style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}');">
                         <div class="mheight-150">
                             <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
                                 <div class="ribbon-box font-w600">
-                                    $1.200
+                                   ${{number_format($package->price_adults * ( 1 + ($package->discount/100)))}}
                                 </div>
                             </div>
                         </div>
-                       
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
                                 <div class="col-sm-12  push-15 text-white">
-                                    <span class="pull-left  font-w600 h5">Adventure Tour</span>
-                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> 7 Days</span>
+                                    <span class="pull-left  font-w600 h5">{{$package->tittle}}</span>
+                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> {{$package->days}} @lang('general.days')</span>
                                 </div>
                             </div>
                         </div>
@@ -32,86 +32,16 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <p class="text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate
-                                    eligendi eum laudantium nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
+                                    {{$package->meta_description}}.
                                 </p>
-                                <button class="btn push-20 btn-minw text-white btn-primary ">Ver mas</button>
+                                <button class="btn push-20 btn-minw text-white btn-primary ">@lang('general.view details')</button>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 col-sm-6 push-15">
-                <a class="block block-sombra block-rounded block-link-hover2" href="#">
-                    <div class="bg-image"
-                         style="background-image: url('{{asset("img/banner/activities/panaca.jpeg")}}');">
-                        <div class="mheight-150">
-                            <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
-                                <div class="ribbon-box font-w600">
-                                    $1.200
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content  text-center bg-black-op">
-                            <div class="row ">
-                                <div class="col-sm-12  push-15 text-white">
-                                    <span class="pull-left  font-w600 h5">Adventure Tour</span>
-                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> 7 Days</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-content">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p class="text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate
-                                    eligendi eum laudantium nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                </p>
-                                <button class="btn push-20 btn-minw btn-primary ">Ver mas</button>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 push-15">
-                <a class="block block-sombra block-rounded block-link-hover2" href="#">
-                    <div class="bg-image"
-                         style="background-image: url('{{asset("img/banner/activities/parque-cafe.jpeg")}}');">
-                        <div class="mheight-150">
-                            <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
-                                <div class="ribbon-box font-w600">
-                                    $1.200
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-content  text-center bg-black-op">
-                            <div class="row ">
-                                <div class="col-sm-12  push-15 text-white">
-                                    <span class="pull-left  font-w600 h5">Adventure Tour</span>
-                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> 7 Days</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-content">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p class="text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate
-                                    eligendi eum laudantium nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                </p>
-                                <button class="btn push-20 btn-minw btn-primary ">Ver mas</button>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            @endforeach
         </div>
-    
     </div>
 </div>
 

@@ -183,7 +183,6 @@
         public function update_order_photo(Request $request, $id)
         {
             //
-           
             $photo = Photos_Package::find($id );
             $photo->order = $request->order;
             $photo->save();

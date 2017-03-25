@@ -20,9 +20,9 @@ class CreatePackagesTable extends Migration
             $table->tinyInteger('days')->unsigned(); //titulo de la apgina h1
             $table->Integer('price_adults')->unsigned()->nullable();
             $table->Integer('price_children')->unsigned()->nullable();
-            $table->tinyInteger('discount')->unsigned()->nullable();
+            $table->tinyInteger('discount')->unsigned()->default(0);
             $table->longText('itinerary')->nullable(); //contenido
-            $table->string('meta_description')->nullable();
+            $table->mediumText('meta_description')->nullable();
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
             $table->string('local',5);

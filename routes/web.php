@@ -44,7 +44,7 @@
         Route::resource('pages', 'PagesController');
         Route::resource('components', 'ComponentController');
         Route::delete('packages/{id}', 'PackagesController@delete_photo');
-        Route::put('packages/{id}', 'PackagesController@update_order_photo');
+        Route::post('packages/{id}', 'PackagesController@update_order_photo');
         Route::resource('packages', 'PackagesController', ['except' => ['delete_photo','update_order_photo']]);
         Route::resource('activities', 'ActivitiesController');
         Route::resource('settings', 'ConfigController');

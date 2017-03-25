@@ -14,7 +14,7 @@
 @stop
 
 @section('contenido')
-    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Páginas','h2'=>'Editar Páginas'])
+    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Paquete','h2'=>'Editar Paquete'])
     <div class="content overflow-hidden">
         
         <div class="col-sm-12">
