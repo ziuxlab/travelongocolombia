@@ -27,9 +27,9 @@
 
 <!-- carga de css mientras entra a produccion, eliminar despues -->
 <link href="{{ asset(mix('/css/app-home.css')) }}" rel="stylesheet">
-<style type="text/css">
-    @yield('style')
-</style>
+
+@yield('style')
+
 
 
 <!-- CSS Print -->

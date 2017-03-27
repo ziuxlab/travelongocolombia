@@ -103,7 +103,8 @@
                 
             ;
             
-            dd($item);
+            return view('app.packages-item', compact('item'));
+            
             
         }
         
