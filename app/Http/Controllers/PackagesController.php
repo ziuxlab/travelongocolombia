@@ -5,6 +5,8 @@
     use App\Packages;
     use App\Photos_Package;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\File;
+    use Illuminate\Support\Facades\Storage;
     use Intervention\Image\Facades\Image;
     
     class PackagesController extends Controller
@@ -76,7 +78,7 @@
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
-                        ->fit(1000, 600)
+                        ->fit(1200, 600)
                          ->save($path, 50)
                     ;
                     Photos_Package::create([
@@ -163,7 +165,7 @@
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
-                        ->fit(1000, 600)
+                        ->fit(1200, 600)
                          ->save($path, 50)
                     ;
                     Photos_Package::create([
@@ -193,7 +195,10 @@
         public function delete_photo($id)
         {
             //
-            Photos_Package::destroy($id);
+            $photo = Photos_Package::findorfail($id);
+            File::delete($photo->img);
+            
+            $photo->delete();
         }
         
         public function update_order_photo(Request $request, $id)

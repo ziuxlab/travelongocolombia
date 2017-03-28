@@ -33,24 +33,24 @@
         <div class="row">
             <div class="col-md-8 bg-white">
                 <div class="col-xs-12 content content-full text-center">
-                    <ul class="list-icon-item flex-between">
-                        <li class=" text-gray h2   ">
+                    <ul class="list-icon-item text-muted flex-between">
+                        <li class="  h2   ">
                             <i class="fa fa-wifi"></i>
                             <div class="h5">wifi</div>
                         </li>
-                        <li class=" text-gray  h2   push-20-l">
+                        <li class="h2   push-20-l">
                             <i class="fa fa-bullhorn"></i>
                             <div class="h5">traductor</div>
                         </li>
-                        <li class=" text-gray h2   push-20-l">
+                        <li class="  h2   push-20-l">
                             <i class="fa h2 fa-support"></i>
                             <div class="h5">pool</div>
                         </li>
-                        <li class=" text-gray h2   push-20-l">
+                        <li class="  h2   push-20-l">
                             <i class="fa fa-tv"></i>
                             <div class="h5">plasma tv</div>
                         </li>
-                        <li class=" text-gray  h2   push-20-l">
+                        <li class="   h2   push-20-l">
                             <i class="fa fa-coffee"></i>
                             <div class="h5">breakfast</div>
                         </li>
@@ -60,57 +60,87 @@
                 
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 remove-padding">
-                        <!-- Slider -->
-                        <div class="js-slider">
-                            @foreach($item->photos->sortBy('order') as $photo)
-                                <div>
-                                    <img src="{{asset($photo->img)}}">
-                                </div>
-                            @endforeach
+                    @if(count($item->photos)>0)
+                        <div class="col-xs-12 remove-padding">
+                            <!-- Slider -->
+                            <div class="js-slider">
+                                @foreach($item->photos as $photo)
+                                    <div>
+                                        <img class="img-responsive" src="{{asset($photo->img)}}">
+                                    </div>
+                                @endforeach
+                            </div>
+                        
+                        </div>
+                        <div class="col-xs-12 remove-padding ">
+                            <div class="slider-nav">
+                                @foreach($item->photos as $photo)
+                                    
+                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+                </div>
+                <div>
+                    <div class=" bg-white content content-narrow ">
+                        <div class="">
+                            <h3 class="h3 push-15 "><i class=" text-primary fa fa-file-text-o"></i> Package Details</h3>
+                            <p class="text-muted">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras
+                                                  mattis consectetur
+                                                  purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi
+                                                  erat porttitor
+                                                  ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta
+                                                  gravida at eget metus.
+                                                  Donec id elit non mi porta gravida at eget metus.
+                            
+                                                  Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
+                                                  mollis interdum. Cras
+                                                  mattis consectetur purus sit amet fermentum. Curabitur blandit tempus
+                                                  porttitor. Nulla
+                                                  vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue
+                                                  laoreet rutrum.</p>
+                        </div>
+                        <div class="row content-mini content-mini-full border-t">
+                            <h4 class=" h5 col-sm-6">Duration</h4>
+                            <div class="text-muted col-sm-6">9 Days</div>
+                        </div>
+                        <div class="row content-mini content-mini-full border-t">
+                            <h4 class=" h5 col-sm-6">Price Include</h4>
+                            <div class="text-muted col-sm-6">
+                                <ul class="fa-ul">
+                                    <li><i class="fa text-success fa-check fa-li"></i>First item</li>
+                                    <li><i class="fa text-success fa-check fa-li"></i>Second item</li>
+                                    <li><i class="fa text-success fa-check fa-li"></i>Sublist</li>
+                                    <li><i class="fa text-success fa-check fa-li"></i>Third item</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content-mini content-mini-full border-t border-b">
+                            <h4 class=" h5 col-sm-6">Price exclude</h4>
+                            <div class="text-muted col-sm-6">
+                                <ul class="fa-ul">
+                                    <li><i class="fa text-danger fa-close fa-li"></i>First item</li>
+                                    <li><i class="fa text-danger fa-close fa-li"></i>Second item</li>
+                                    <li><i class="fa text-danger fa-close fa-li"></i>Sublist</li>
+                                    <li><i class="fa  text-danger fa-close fa-li"></i>Third item</li>
+                                </ul>
+                            </div>
                         </div>
                     
                     </div>
-                    <div class="col-xs-12 remove-padding">
-                        <div class="slider-nav">
-                            @foreach($item->photos->sortBy('order') as $photo)
-                                <div>
-                                    <img height="150" class="img-thumb" src="{{asset($photo->img)}}">
-                                </div>
-                            @endforeach
+                    <div class=" bg-white content content-narrow ">
+                        <div class="">
+                            <h3 class="h3 push-15 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
+                        
                         </div>
                     </div>
+                
+                
+                
                 </div>
-                <div class=" bg-white padding-20 div-bordered push-15-t">
-                    <p class="col-md-2">
-                        <b>Description</b>
-                    </p>
-                    <p class="col-md-10">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    
-                    </p>
-                </div>
-                <div class=" bg-white padding-20 div-bordered push-15-t ">
-                </div>
+            
             </div>
             <div class="col-md-4 ">
                 <div class="col-xs-12 padding-20 bg-white div-bordered">
