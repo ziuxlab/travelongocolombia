@@ -8,6 +8,15 @@ nav {
     bottom: 0px;
 }
 
+.list-icon-item{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.list-icon-item li{
+    display: inline;
+}
+
 .item-circle-small {
     display: inline-block;
     width: 50px;

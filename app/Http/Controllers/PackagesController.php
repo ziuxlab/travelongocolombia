@@ -9,12 +9,14 @@
     
     class PackagesController extends Controller
     {
-    
+        
         public function __construct()
         {
-            $this->middleware('auth')->except('show');
+            $this->middleware('auth')
+                 ->except('show')
+            ;
         }
-       
+        
         /**
          * Display a listing of the resource.
          *
@@ -55,7 +57,6 @@
             
             ]);
             
-           
             
             $package = Packages::create([
                 'tittle'           => $request->tittle,
@@ -70,17 +71,18 @@
                 'local'            => $request->local,
                 'itinerary'        => $request->itinerary,
             ]);
-    
+            
             if ($request->hasFile('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
-                           ->save($path, 50)
+                        ->fit(1000, 600)
+                         ->save($path, 50)
                     ;
                     Photos_Package::create([
                         'package_id' => $package->id,
-                        'img' => $path,
-                        'order' => $key,
+                        'img'        => $path,
+                        'order'      => $key,
                     ]);
                 }
             }
@@ -99,8 +101,7 @@
         {
             //
             $item = Packages::where('slug_url', $url)
-                        ->firstOrFail()
-                
+                            ->firstOrFail()
             ;
             
             return view('app.packages-item', compact('item'));
@@ -118,7 +119,11 @@
         public function edit($id)
         {
             //
-            $package = Packages::with('photos')->whereId($id)->first();
+            $package = Packages::with('photos')
+                               ->whereId($id)
+                               ->first()
+            ;
+            
             return view('admin.packages.packages_edit', compact('package'));
         }
         
@@ -134,38 +139,41 @@
         {
             //
             $this->validate($request, [
-                'days'     => 'numeric|required'
+                'days' => 'numeric|required'
             ]);
             
-           
-            $package = Packages::find($id)->update([
-                'tittle'           => $request->tittle,
-                'slug_url'         => str_slug($request->slug_url, '-'),
-                'days'             => $request->days,
-                'price_adults'     => $request->price_adults,
-                'price_children'   => $request->price_children,
-                'discount'         => $request->discount,
-                'meta_description' => $request->meta_description,
-                'keywords'         => $request->keywords,
-                'status'           => $request->status,
-                'local'            => $request->local,
-                'itinerary'        => $request->itinerary,
-            ]);
-    
+            
+            $package = Packages::find($id)
+                               ->update([
+                                   'tittle'           => $request->tittle,
+                                   'slug_url'         => str_slug($request->slug_url, '-'),
+                                   'days'             => $request->days,
+                                   'price_adults'     => $request->price_adults,
+                                   'price_children'   => $request->price_children,
+                                   'discount'         => $request->discount,
+                                   'meta_description' => $request->meta_description,
+                                   'keywords'         => $request->keywords,
+                                   'status'           => $request->status,
+                                   'local'            => $request->local,
+                                   'itinerary'        => $request->itinerary,
+                               ])
+            ;
+            
             if ($request->hasFile('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
+                        ->fit(1000, 600)
                          ->save($path, 50)
                     ;
                     Photos_Package::create([
                         'package_id' => $id,
-                        'img' => $path,
-                        'order' => $key,
+                        'img'        => $path,
+                        'order'      => $key,
                     ]);
                 }
             }
-    
+            
             return redirect('admin/packages');
         }
         
@@ -181,19 +189,20 @@
             //
             Packages::destroy($id);
         }
-    
+        
         public function delete_photo($id)
         {
             //
             Photos_Package::destroy($id);
         }
-    
+        
         public function update_order_photo(Request $request, $id)
         {
             //
-            $photo = Photos_Package::find($id );
+            $photo = Photos_Package::find($id);
             $photo->order = $request->order;
             $photo->save();
+            
             return $request->order;
         }
     }

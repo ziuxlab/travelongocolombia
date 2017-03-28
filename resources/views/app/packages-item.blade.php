@@ -31,81 +31,55 @@
     @include('app.partials.banner-item')
     <div class="content-boxed content content-full">
         <div class="row">
-            <div class="col-md-8 bg-white div-bordered ">
-                <div class="push-10-t text-black center-b">
-                    <div class="col-xs-12 remove-padding ">
-                        <div class="padding-20 text-gray  h1 col-xs-3 col-sm-2 ">
-                            <span class="fa fa-wifi"></span>
-                        </div>
-                        <div class="padding-20 text-gray  h1 col-xs-3 col-sm-2  push-20-l">
-                            <span class="fa fa-bullhorn"></span>
-                        </div>
-                        <div class="padding-20 text-gray  h1 col-xs-3 col-sm-2  push-20-l">
-                            <span class="fa fa-support"></span>
-                        </div>
-                        <div class="padding-20 text-gray  h1 col-xs-3 col-sm-2  push-20-l">
-                            <span class="fa fa-tv"></span>
-                        </div>
-                        <div class="padding-20 text-gray  h1 col-xs-3 col-sm-2  push-20-l">
-                            <span class="fa fa-coffee"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 remove-padding hidden-xs">
-                        <div class="padding-20 text-gray  h5 col-xs-3 col-sm-2">
-                            WiFi
-                        </div>
-                        <div class="padding-20 text-gray  h5 col-xs-3 col-sm-2 push-20-l">
-                            Traductor
-                        </div>
-                        <div class="padding-20 text-gray  h5 col-xs-3 col-sm-2 push-20-l">
-                            Pool
-                        </div>
-                        <div class="padding-20 text-gray  h5 col-xs-3 col-sm-2 push-20-l">
-                            Plasma TV
-                        </div>
-                        <div class="padding-20 text-gray  h5 col-xs-3 col-sm-2 push-20-l">
-                            Brakfast
-                        </div>
-                    </div>
+            <div class="col-md-8 bg-white">
+                <div class="col-xs-12 content content-full text-center">
+                    <ul class="list-icon-item flex-between">
+                        <li class=" text-gray h2   ">
+                            <i class="fa fa-wifi"></i>
+                            <div class="h5">wifi</div>
+                        </li>
+                        <li class=" text-gray  h2   push-20-l">
+                            <i class="fa fa-bullhorn"></i>
+                            <div class="h5">traductor</div>
+                        </li>
+                        <li class=" text-gray h2   push-20-l">
+                            <i class="fa h2 fa-support"></i>
+                            <div class="h5">pool</div>
+                        </li>
+                        <li class=" text-gray h2   push-20-l">
+                            <i class="fa fa-tv"></i>
+                            <div class="h5">plasma tv</div>
+                        </li>
+                        <li class=" text-gray  h2   push-20-l">
+                            <i class="fa fa-coffee"></i>
+                            <div class="h5">breakfast</div>
+                        </li>
+                    
+                    </ul>
+                
+                
                 </div>
-                <div id="main_area">
-                    <!-- Slider -->
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="js-slider">
-                                
+                <div class="row">
+                    <div class="col-xs-12 remove-padding">
+                        <!-- Slider -->
+                        <div class="js-slider">
+                            @foreach($item->photos->sortBy('order') as $photo)
                                 <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
+                                    <img src="{{asset($photo->img)}}">
                                 </div>
-                                <div>
-                                    <img src="http://wowslider.com/sliders/demo-10/data/images/dock.jpg">
-                                </div>
-                                <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
-                                </div>
-                                
-                                <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
-                                </div>
-                            </div>
-                            <div class="slider-nav">
-                                
-                                <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
-                                </div>
-                                <div>
-                                    <img src="http://wowslider.com/sliders/demo-10/data/images/dock.jpg">
-                                </div>
-                                <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
-                                </div>
-                                
-                                <div>
-                                    <img src="http://www.college-hotel.com/client/cache/contenu/_500____college-hotelp1diapo1_718.jpg">
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-                    </div><!--/Slider-->
+                    
+                    </div>
+                    <div class="col-xs-12 remove-padding">
+                        <div class="slider-nav">
+                            @foreach($item->photos->sortBy('order') as $photo)
+                                <div>
+                                    <img height="150" class="img-thumb" src="{{asset($photo->img)}}">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
                 <div class=" bg-white padding-20 div-bordered push-15-t">
                     <p class="col-md-2">
@@ -210,13 +184,11 @@
             fade: true,
             asNavFor: '.slider-nav'
         });
-        
         $('.slider-nav').slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: '.js-slider',
-            centerMode: true,
-            focusOnSelect: true
+            focusOnSelect: true,
         });
     
     
