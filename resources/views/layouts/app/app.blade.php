@@ -5,7 +5,11 @@
     
 </head>
 <body>
-<div id="page-container" class="">
+<div id="page-container" class="sidebar-l  ">
+    
+    <aside id="side-overlay">
+        @include('layouts.app.sidebar')
+    </aside>
     <!-- Header -->
     <header id="header-navbar" class="">
         @include('layouts.app.cabecera')
@@ -22,7 +26,6 @@
         @include('layouts.app.footer')
     </footer>
     <!-- END Footer -->
-
 </div>
 
 <!-- Scripts -->

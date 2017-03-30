@@ -25,6 +25,7 @@ class CreatePackagesTable extends Migration
             $table->mediumText('meta_description')->nullable();
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
+            $table->tinyInteger('type')->unsigned()->default(0);
             $table->string('local',5);
             $table->softDeletes();
             $table->timestamps();

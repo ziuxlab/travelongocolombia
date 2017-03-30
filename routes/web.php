@@ -33,8 +33,15 @@
     
     
     Route::get('/', 'HomeController@index');
+    Route::get('checkout', function (){
+        return view('app.checkout');
+    });
+    
+    //
+    Route::get('activities/{slug}', 'ActivitiesController@show');
     Route::get('packages/{slug}', 'PackagesController@show');
     Route::get('paquetes/{slug}', 'PackagesController@show');
+    Route::resource('cart', 'CartController');
     
     Route::get('{pages}', 'PagesController@show');
     

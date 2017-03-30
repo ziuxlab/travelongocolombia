@@ -7,8 +7,6 @@
             @else
                 <div class="bg-image text-center  overflow-hidden"
                      style="background-image: url('{{asset('img/banner/about-us.jpg')}}');">
-                    
-                    
                     @endif
                     
                     <div class=" bg-black-op overflow-hidden">
@@ -21,14 +19,13 @@
                             </div>
                             <div class="content pull-right text-white push-30  animated fadeInDown">
                                 <h2 class="h1 font-w700   ">
-                                    <span class="text-primary">$</span> {{number_format($item->price_adults)}}*
+                                    <span class="text-primary">$</span> {{number_format($item->price_adults * (1 - ($item->discount/100)))}}*
                                 </h2>
-                                <div class="h5">*Per Person</div>
+                                <div class="h5">*Per Adult</div>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
-
-
+        
 

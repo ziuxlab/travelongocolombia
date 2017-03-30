@@ -16,6 +16,7 @@
     <style type="text/css">
         {{$Config->css}}
     </style>
+    <link rel="stylesheet" href="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css')}}">
     <link rel="stylesheet" href="{{asset('js/plugins/slick/slick.min.css')}}">
     <link rel="stylesheet" href="{{asset('js/plugins/slick/slick-theme.min.css')}}">
 @stop
@@ -32,25 +33,25 @@
     <div class="content-boxed content content-full">
         <div class="row">
             <div class="col-md-8 bg-white">
-                <div class="col-xs-12 content content-full text-center">
-                    <ul class="list-icon-item text-muted flex-between">
-                        <li class="  h2   ">
+                <div class="col-xs-12 content-mini content-mini-full text-center">
+                    <ul class="list-icon-item h3 text-muted flex-between">
+                        <li class="     ">
                             <i class="fa fa-wifi"></i>
                             <div class="h5">wifi</div>
                         </li>
-                        <li class="h2   push-20-l">
+                        <li class="  push-20-l">
                             <i class="fa fa-bullhorn"></i>
                             <div class="h5">traductor</div>
                         </li>
-                        <li class="  h2   push-20-l">
-                            <i class="fa h2 fa-support"></i>
+                        <li class="     push-20-l">
+                            <i class="fa  fa-support"></i>
                             <div class="h5">pool</div>
                         </li>
-                        <li class="  h2   push-20-l">
+                        <li class="    push-20-l">
                             <i class="fa fa-tv"></i>
                             <div class="h5">plasma tv</div>
                         </li>
-                        <li class="   h2   push-20-l">
+                        <li class="      push-20-l">
                             <i class="fa fa-coffee"></i>
                             <div class="h5">breakfast</div>
                         </li>
@@ -83,6 +84,7 @@
                         </div>
                     @endif
                 </div>
+              
                 <div>
                     <div class=" bg-white content content-narrow ">
                         <div class="">
@@ -131,71 +133,51 @@
                     
                     </div>
                     <div class=" bg-white content content-narrow ">
-                        <div class="">
-                            <h3 class="h3 push-15 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
+                        <div>
+                            <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
+                        </div>
                         
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title ">
+                                        <span class="text-primary">Day 1</span> Arrive in Zürich, Switzerland
+                                    </h3>
+                                </div>
+                                <div class="panel-body text-muted">
+                                    <p>welcome at the airport with fresh juice and cookies
+                                       transportation to accommodations
+                                       check into accommodations and rest for the night
+                                       dinner/drinks at accommodation 7pm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <span class="text-primary">Day 1</span> Arrive in Zürich, Switzerland
+                                    </h3>
+                                </div>
+                                <div class="panel-body text-muted">
+                                    <ul class="fa-ul">
+                                        <li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+                                        <li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
+                                        <li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
+                                        <li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
+                                        <li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
+                                    </ul>
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>
-                
-                
-                
                 </div>
             
             </div>
             <div class="col-md-4 ">
-                <div class="col-xs-12 padding-20 bg-white div-bordered">
-                    <div class="block">
-                        <div class="block-header bg-primary center-b h3 text-white">
-                            - Booking -
-                        </div>
-                        <div class="block-content block-content-full col-xs-12">
-                            <div class="col-xs-12 remove-padding push-15-t">
-                                <div class="col-md-6 form-group">
-                                    <div class="h6">Check-in date</div>
-                                    <div class="js-datetimepicker input-group date push-10-t">
-                                        <input class="form-control" type="text" name=" "
-                                               placeholder="Choose a date..">
-                                        <span class="input-group-addon">
-                                    <span class="fa fa-calendar"></span>
-                                </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <div class="h6">Check-in date</div>
-                                    <div class="js-datetimepicker input-group date push-10-t">
-                                        <input class="form-control" type="text" name=" "
-                                               placeholder="Choose a date..">
-                                        <span class="input-group-addon">
-                                    <span class="fa fa-calendar"></span>
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 remove-padding push-30-t center-b">
-                                <div class="col-md-4 form-group">
-                                    <div class="h6">Adults</div>
-                                    <input class="form-control col-xs-12" type="number">
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <div class="h6">Infants</div>
-                                    <input class="form-control col-xs-12" type="number">
-                                </div>
-                                <div class="col-md-4 form-group">
-                                    <div class="h6">Children</div>
-                                    <input class="form-control col-xs-12" type="number">
-                                </div>
-                                <p class="h4 col-xs-6 remove-padding push-30-t">
-                                    TOTAL COST
-                                </p>
-                                <p class="h4 col-xs-6 remove-padding push-30-t">
-                                    $1.400
-                                </p>
-                                <button class="btn btn-lg btn-primary push-10">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @include('app.partials.needhelp')
+                @include('app.partials.book')
             </div>
         </div>
     </div>
@@ -206,6 +188,32 @@
 @section('scripts')
     {{$Config->scripts_footer}}
     <script src="{{asset('js/plugins/slick/slick.min.js')}}"></script>
+    <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+    <script>
+        $(function () {
+            App.initHelper('datepicker');
+        });
+
+        $('#adults').change(function () {
+            costos()
+        });
+        $('#children').change(function () {
+            costos()
+        });
+        
+        function costos() {
+            var price_adults   = '{{$item->price_adults * (1 - ($item->discount/100))}}';
+            var price_children = '{{$item->price_children * (1 - ($item->discount/100))}}';
+            var adults         = $('#adults').val();
+            var children       = $('#children').val();
+            var total          = adults * price_adults + children * price_children;
+            $('#total').html(total);
+            console.log(total)
+        }
+    
+    
+    
+    </script>
     <script>
         $('.js-slider').slick({
             slidesToShow: 1,

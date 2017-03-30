@@ -1,102 +1,109 @@
 <nav class="bg-primary v-center">
-    <div class="content-boxed flex-between">
-        <div class="col-sm-4 col-lg-3 v-center flex-left">
-            <a href="{{ url('/') }}">
-                <img class="logo " alt="logo travelongo" src="{{asset('img/logo-blanco.svg')}}">
-            </a>
-        </div>
-        <div class="col-sm-4 col-lg-6 v-center hidden-xs">
-            <div class=" text-center">
-                <form class=" ">
-                    <div class=" input-group">
-                        <input class="form-control">
-                        <span class="input-group-addon"><i class="si si-magnifier"></i></span>
-                    </div>
-                </form>
+    <div class="content-boxed ">
+        <div class="row flex-between">
+            <div class="col-sm-4 col-lg-3 v-center flex-left push-10-l">
+                <a href="{{ url('/') }}">
+                    <img class="logo " alt="logo travelongo" src="{{asset('img/logo-blanco.svg')}}">
+                </a>
             </div>
-        </div>
-        <div class="col-sm-4 col-lg-3 v-center flex-right">
-            <ul class="nav-header v-center">
-                @if (Auth::guest())
-                    <div class=" hidden-xs">
-                        <a href="{{ route('login') }}" class=" text-white push-20-r">@lang('cabecera.Login')</a>
-                        
-                        <a href="{{ route('register') }}" class=" text-white push-20-r">@lang('cabecera.Register')</a>
-                    </div>
-                
-                @else
-                    <li class=" hidden-xs">
-                        <div class="btn-group">
-                            @if(Auth::user()->img == null)
-                                <img class="img-circle dropdown-toggle"
-                                     src="{{url('img/default.png')}}"
-                                     alt="Avatar" data-toggle="dropdown" width="36" height="36">
-                            @else
-                                
-                                <img class="img-circle dropdown-toggle"
-                                     src="{{url(Auth::user()->img)}}"
-                                     alt="user travelongo" data-toggle="dropdown" width="36" height="36">
-                            @endif
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li class="dropdown-header">@lang('cabecera.Profile')</li>
-                                <li>
-                                    <a tabindex="-1" href="{{url('profile')}}">
-                                        <i class="si si-user pull-right"></i>
-                                        @lang('cabecera.Profile')
-                                    </a>
-                                </li>
-                                <li>
-                                    <a tabindex="-1" href="{{url('/')}}">
-                                        <i class="si si-settings pull-right"></i> @lang('cabecera.Settings')
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">@lang('cabecera.Actions')</li>
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        @lang('cabecera.Logout')
-                                    </a>
+            <div class="col-sm-4 col-lg-6  v-center hidden-xs ">
+                <div class=" text-center">
+                    <form class=" ">
+                        <div class=" input-group">
+                            <input class="form-control">
+                            <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-3 col-xs-5 v-center flex-right push-10-r">
+                <ul class="nav-header v-center">
+                    @if (Auth::guest())
+                        <div class=" hidden-xs">
+                            <a href="{{ route('login') }}" class=" text-white push-10-r">@lang('cabecera.Login')</a>
+                            <a href="{{ route('register') }}"
+                               class=" text-white push-10-r">@lang('cabecera.Register')</a>
+                        </div>
+                    @else
+                        <div class="push-10-r  hidden-xs">
+                            <div class="btn-group">
+                                @if(Auth::user()->img == null)
+                                    <img class="img-circle dropdown-toggle"
+                                         src="{{url('img/default.png')}}"
+                                         alt="Avatar" data-toggle="dropdown" width="36" height="36">
+                                @else
                                     
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
+                                    <img class="img-circle dropdown-toggle"
+                                         src="{{url(Auth::user()->img)}}"
+                                         alt="user travelongo" data-toggle="dropdown" width="36" height="36">
+                                @endif
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-header">@lang('cabecera.Profile')</li>
+                                    <li>
+                                        <a tabindex="-1" href="{{url('profile')}}">
+                                            <i class="si si-user pull-right"></i>
+                                            @lang('cabecera.Profile')
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="{{url('/')}}">
+                                            <i class="si si-settings pull-right"></i> @lang('cabecera.Settings')
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">@lang('cabecera.Actions')</li>
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            @lang('cabecera.Logout')
+                                        </a>
+                                        
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                              style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            
+                            </div>
+                        </div>
+                        <div class="push-10-r hidden-xs ">
+                            <a class="text-white" href="">@lang('cabecera.Hi',['name'=> Auth::user()->name])</a>
+                        </div>
+                    @endif
+                    <div class="push-15-r">
+                        <a class="text-white h5 flex-center " type="button" data-toggle="layout" data-action="side_overlay_toggle">
+                            <i class="fa fa-shopping-cart"></i>
+                            @if(!Cart::isEmpty())
+                                <span class="badge pull-right">{{Cart::getTotalQuantity()}}</span>
+                            @endif
+                        </a>
+                    </div>
+                    <li class="hidden-xs hidden-sm flex-center">
+                        <span class="push-5-r">Lang</span>
+                        <div class="btn-group ">
+                            
+                            <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-header"> @lang('cabecera.Language')</li>
+                                <li><a tabindex="-1" href="{{url('language/es')}}">Español</a></li>
+                                <li><a tabindex="-1" href="{{url('language/en')}}">English</a></li>
                             </ul>
-                        
                         </div>
                     </li>
-                    <li class="hidden-xs hidden-sm">
-                        <a class="text-white" href="">@lang('cabecera.Hi',['name'=> Auth::user()->name])</a>
-                    </li>
-                
-                
-                @endif
-                <li class="hidden-xs hidden-sm">
-                    Lang
-                    <div class="btn-group">
-                        
-                        <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span class="caret"></span>
+                    <div class="visible-xs visible-sm pull-right">
+                        <button class="btn btn-link text-white pull-right" data-toggle="class-toggle"
+                                data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                            <i class="fa fa-navicon"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header"> @lang('cabecera.Language')</li>
-                            <li><a tabindex="-1" href="{{url('language/es')}}">Español</a></li>
-                            <li><a tabindex="-1" href="{{url('language/en')}}">English</a></li>
-                        </ul>
                     </div>
-                </li>
-                
-                <li class="visible-xs visible-sm pull-right">
-                    <button class="btn btn-link text-white pull-right" data-toggle="class-toggle"
-                            data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
-                        <i class="fa fa-navicon"></i>
-                    </button>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
+    
     </div>
 </nav>
 
@@ -111,10 +118,10 @@
             </li>
             @foreach($menu->where('local',App::getLocale()) as $item)
                 <li class="v-center">
-                    <a class="{{Request::is($item->slug_url ?: '/') ? 'active' : ''}} text-capitalize" href="{{url($item->slug_url)}}">{{$item->name}}</a>
+                    <a class="{{Request::is($item->slug_url ?: '/') ? 'active' : ''}} text-capitalize"
+                       href="{{url($item->slug_url)}}">{{$item->name}}</a>
                 </li>
             @endforeach
-           
             
             @if (Auth::guest())
                 <li class="v-center hidden-md hidden-lg">
@@ -144,7 +151,8 @@
                         <div class="block-content border-black-op-t">
                             <div class="row items-push text-center">
                                 <div class="col-xs-6 border-black-op-r">
-                                    <a class=" font-w600 text-muted" href="{{url('profile')}}">@lang('cabecera.Profile')</a>
+                                    <a class=" font-w600 text-muted"
+                                       href="{{url('profile')}}">@lang('cabecera.Profile')</a>
                                 </div>
                                 <div class="col-xs-6">
                                     <a class=" font-w600 text-muted" href="{{ route('logout') }}"

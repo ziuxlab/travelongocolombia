@@ -24,6 +24,7 @@ class Packages extends Model
         'status',
         'local',
         'itinerary',
+        'type', //package,activity
         
     ];
     
