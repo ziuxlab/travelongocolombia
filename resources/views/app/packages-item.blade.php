@@ -33,7 +33,7 @@
     <div class="content-boxed content content-full">
         <div class="row">
             <div class="col-md-8 bg-white">
-                <div class="col-xs-12 content-mini content-mini-full text-center">
+                <div class="content-mini content-mini-full border-b text-center overflow-hidden">
                     <ul class="list-icon-item h3 text-muted flex-between">
                         <li class="     ">
                             <i class="fa fa-wifi"></i>
@@ -60,33 +60,8 @@
                 
                 
                 </div>
-                <div class="row">
-                    @if(count($item->photos)>0)
-                        <div class="col-xs-12 remove-padding">
-                            <!-- Slider -->
-                            <div class="js-slider">
-                                @foreach($item->photos as $photo)
-                                    <div>
-                                        <img class="img-responsive" src="{{asset($photo->img)}}">
-                                    </div>
-                                @endforeach
-                            </div>
-                        
-                        </div>
-                        <div class="col-xs-12 remove-padding ">
-                            <div class="slider-nav">
-                                @foreach($item->photos as $photo)
-                                    
-                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
-                                
-                                @endforeach
-                            </div>
-                        </div>
-                    @endif
-                </div>
-              
-                <div>
-                    <div class=" bg-white content content-narrow ">
+                <div class="bg-white content content-narrow">
+                    <div class=" push-20  ">
                         <div class="">
                             <h3 class="h3 push-15 "><i class=" text-primary fa fa-file-text-o"></i> Package Details</h3>
                             <p class="text-muted">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras
@@ -132,7 +107,7 @@
                         </div>
                     
                     </div>
-                    <div class=" bg-white content content-narrow ">
+                    <div class="   ">
                         <div>
                             <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
                         </div>
@@ -174,7 +149,30 @@
                         </div>
                     </div>
                 </div>
-            
+                <div class="bg-white content content-full content-narrow">
+                    <h3 class="h3 push-15 "><i class=" text-primary fa fa-camera-retro"></i> Photos</h3>
+                @if(count($item->photos)>0)
+                        <div class="">
+                            <!-- Slider -->
+                            <div class="js-slider">
+                                @foreach($item->photos as $photo)
+                                    <div>
+                                        <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="slider-nav">
+                                @foreach($item->photos as $photo)
+                        
+                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                    
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
+                </div>
             </div>
             <div class="col-md-4 ">
                 @include('app.partials.book')
@@ -190,26 +188,7 @@
     <script src="{{asset('js/plugins/slick/slick.min.js')}}"></script>
     <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
     <script>
-        $(function () {
-            App.initHelper('datepicker');
-        });
-
-        $('#adults').change(function () {
-            costos()
-        });
-        $('#children').change(function () {
-            costos()
-        });
-        
-        function costos() {
-            var price_adults   = '{{$item->price_adults * (1 - ($item->discount/100))}}';
-            var price_children = '{{$item->price_children * (1 - ($item->discount/100))}}';
-            var adults         = $('#adults').val();
-            var children       = $('#children').val();
-            var total          = adults * price_adults + children * price_children;
-            $('#total').html(total);
-            console.log(total)
-        }
+       
     
     
     

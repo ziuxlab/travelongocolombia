@@ -33,9 +33,8 @@
     
     
     Route::get('/', 'HomeController@index');
-    Route::get('checkout', function (){
-        return view('app.checkout');
-    });
+    Route::get('checkout/clear', 'CartController@clear');
+    Route::resource('checkout','CartController', ['except'=>['clear']]);
     
     //
     Route::get('activities/{slug}', 'ActivitiesController@show');

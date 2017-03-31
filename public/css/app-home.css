@@ -19726,6 +19726,29 @@ nav {
     bottom: 0px;
 }
 
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-rounded{
+    border-radius: 5px;
+}
+
 .list-icon-item{
     list-style: none;
     padding-left: 0px;
@@ -20296,9 +20319,15 @@ footer {
         max-width: 2500px !important;
     }
     
-    .modal-dialog {
-        width: 500px !important;
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 20%;
+        vertical-align: middle;
+        margin-right: -4px;
     }
+    
+   
     
     .tc {
         display: inline-block !important;

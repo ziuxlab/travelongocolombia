@@ -1,7 +1,7 @@
 <nav class="bg-primary v-center">
     <div class="content-boxed ">
-        <div class="row flex-between">
-            <div class="col-sm-4 col-lg-3 v-center flex-left push-10-l">
+        <div class="flex-between">
+            <div class="col-sm-4 col-lg-3 v-center flex-left ">
                 <a href="{{ url('/') }}">
                     <img class="logo " alt="logo travelongo" src="{{asset('img/logo-blanco.svg')}}">
                 </a>
@@ -16,7 +16,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-sm-4 col-lg-3 col-xs-5 v-center flex-right push-10-r">
+            <div class="col-sm-4 col-lg-3 col-xs-5 v-center flex-right">
                 <ul class="nav-header v-center">
                     @if (Auth::guest())
                         <div class=" hidden-xs">

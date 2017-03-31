@@ -65,12 +65,12 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-right" colspan="3">
-                                    <a class="btn btn-sm btn-warning" href="frontend_ecom_checkout.php">
-                                        <i class="fa fa-refresh push-5-r"></i> Reset
+                                <td class="text-center" colspan="4">
+                                    <a class="btn btn-minw  btn-default push-10-r" href="{{url('checkout/clear')}}">
+                                         Clear
                                     </a>
-                                    <a class="btn btn-sm btn-success" href="{{url('checkout')}}">
-                                        <i class="fa fa-check push-5-r"></i> Checkout
+                                    <a class="btn  btn-minw btn-primary" href="{{url('checkout')}}">
+                                        Checkout
                                     </a>
                                 </td>
                             </tr>
