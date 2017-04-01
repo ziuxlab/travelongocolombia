@@ -15,7 +15,7 @@
             //
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('prueba titleee', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
@@ -30,7 +30,7 @@
     
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('pruebae titlee', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
@@ -45,12 +45,12 @@
     
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('prueba titlee', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
+                'meta_description' => 'prueba tittle3',
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'en',
@@ -59,7 +59,7 @@
             ]);
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('prueba title4', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
@@ -74,7 +74,7 @@
     
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('prueba title5', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
@@ -89,7 +89,7 @@
     
             Packages::create([
                 'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title', '-'),
+                'slug_url'         => str_slug('prueba title6', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
