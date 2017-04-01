@@ -103,7 +103,7 @@
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('menu_order') ? ' has-error' : '' }}">
             {!! Form::label('Ubicación:', null, ['class' => 'control-label']) !!}
-            {!! Form::number('menu_order', old('menu_order'), ['class' => 'form-control','placeholder'=>'Ingrese el número de ubicación en el menú  ','required']) !!}
+            {!! Form::number('menu_order', 0, ['class' => 'form-control','placeholder'=>'Ingrese el número de ubicación en el menú']) !!}
             @if ($errors->has('menu_order'))
                 <span class="help-block">
                 <strong>{{ $errors->first('menu_order') }}</strong>

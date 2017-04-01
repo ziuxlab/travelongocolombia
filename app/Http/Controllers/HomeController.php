@@ -26,12 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $menu =  Page::whereLocal(App::getLocale())->orderBy('menu_order')->get();
+        
         
         
         $config = Config::findorfail(1);
         if ($config->status == 1){
     
+            $menu =  Page::whereLocal(App::getLocale())->whereMenu(1)->orderBy('menu_order')->get();
+            
             $item = Page::where('slug_url', '')->firstOrFail();
             
             return view('app.home', compact('item','menu'));

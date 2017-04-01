@@ -12,7 +12,9 @@
          */
         public function run()
         {
-            //
+            //debe relacionarse las imagenes parque no aparezca un error despues en los paquetes
+            
+            
             Packages::create([
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba titleee', '-'),
