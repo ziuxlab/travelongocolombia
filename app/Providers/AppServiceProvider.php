@@ -26,7 +26,6 @@ class AppServiceProvider extends ServiceProvider
         View::share('packages', Packages::with('photos')->get());
     
         //Page::whereLocal(App::getLocale())->orderBy('menu_order')->get()
-        
     }
 
     /**

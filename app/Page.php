@@ -21,12 +21,12 @@ class Page extends Model
         'body',
         'meta_description',
         'keywords',
-        'status',
-        'menu',
+        'status', // 0 o 1
+        'menu', // 0 o 1
         'menu_order',
-        'local',
+        'local', // 'en' o 'es'
         'img',
-        'tipo',
+        'tipo', //0 paginas , 1 para grupo de componentes
     ];
     
     

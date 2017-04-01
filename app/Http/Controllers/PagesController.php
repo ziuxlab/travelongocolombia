@@ -17,7 +17,9 @@
         //
         public function __construct()
         {
-            $this->middleware('auth')->except('show');
+            $this->middleware('auth')
+                 ->except('show')
+            ;
         }
         
         /**
@@ -108,8 +110,9 @@
             if ($item->tipo == 0) {
                 return view('app.page', compact('item'));
             } else {
-               
+                
                 $view = Page::extract_views($item);
+                
                 return view($view, compact('item'));
             }
         }
@@ -142,15 +145,19 @@
             //
             $page = Page::find($id);
             
-            if ( ! $page->slug_url == str_slug($request->slug_url, '-')) {
+            
+            if ($page->slug_url <> str_slug($request->slug_url, '-')) {
                 
                 $this->validate($request, [
-                    'slug_url'   => 'unique:pages',
-                    'img'        => 'mimes:jpeg,jpg,png',
-                    'menu_order' => 'numeric'
+                    'slug_url' => 'unique:pages'
                 ]);
                 $page->slug_url = str_slug($request->slug_url, '-');
             }
+            
+            $this->validate($request, [
+                'img'        => 'mimes:jpeg,jpg,png',
+                'menu_order' => 'numeric'
+            ]);
             
             if ($request->hasFile('img')) {
                 
