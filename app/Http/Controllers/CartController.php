@@ -5,6 +5,7 @@
     use App\Packages;
     use Cart;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Session;
     
     class CartController extends Controller
     {
@@ -16,7 +17,8 @@
         public function index()
         {
             //
-            return view('app.checkout');
+            return view('app.cart');
+            
         }
         
         /**
@@ -47,15 +49,42 @@
                 'price'      => ($request->adults * $item->price_adults * (1 - ($item->discount / 100))) +
                                 ($request->children * $item->price_children * (1 - ($item->discount / 100))),
                 'quantity'   => 1,
-                'attributes' => ['adults'   => $request->adults,
-                                 'children' => $request->children,
-                                 'img'      => $item->photos->sortBy('order')
-                                                            ->first()->img
+                'attributes' => [
+                    'adults'   => $request->adults,
+                    'children' => $request->children,
+                    'infants' => $request->infants,
+                    'type'     => $request->type,
+                    'img'      => $item->photos->sortBy('order')
+                                               ->first()->img
                 ]
             ]);
             
+            if (Session::has('adults')) {
+                if (Session::get('adults') < $request->adults) {
+                    Session::put('adults', $request->adults);
+                }
+            } else {
+                Session::put('adults', $request->adults);
+            }
+            
+            if (Session::has('children')) {
+                if (Session::get('children') < $request->children) {
+                    Session::put('children', $request->children);
+                }
+            } else {
+                Session::put('children', $request->children);
+            }
+    
+            if (Session::has('infants')) {
+                if (Session::get('infants') < $request->infants) {
+                    Session::put('infants', $request->infants);
+                }
+            } else {
+                Session::put('infants', $request->infants);
+            }
+            
             if ($request->choice == 0) {
-                return redirect('checkout');
+                return redirect('cart');
             }
             
             if ($request->choice == 1) {
@@ -116,11 +145,17 @@
             //
             Cart::remove($id);
             
+            
             return back();
         }
         
-        public function clear(){
+        public function clear()
+        {
             Cart::clear();
+            Session::put('adults', 0);
+            Session::put('children', 0);
+            Session::put('infants', 0);
+            
             return back();
         }
     }

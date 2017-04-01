@@ -33,14 +33,16 @@
     
     
     Route::get('/', 'HomeController@index');
-    Route::get('checkout/clear', 'CartController@clear');
-    Route::resource('checkout','CartController', ['except'=>['clear']]);
+
+    Route::resource('checkout','CheckoutController');
     
     //
     Route::get('activities/{slug}', 'ActivitiesController@show');
     Route::get('packages/{slug}', 'PackagesController@show');
     Route::get('paquetes/{slug}', 'PackagesController@show');
-    Route::resource('cart', 'CartController');
+    
+    Route::get('cart/clear', 'CartController@clear');
+    Route::resource('cart', 'CartController', ['except'=>['clear']]);
     
     Route::get('{pages}', 'PagesController@show');
     

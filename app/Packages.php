@@ -21,11 +21,10 @@ class Packages extends Model
         'discount', //porcentaje
         'meta_description',
         'keywords',
-        'status',
-        'local',
+        'status',// 0 => deshabilitado, 1 => habilitado
+        'local', // 'en' or 'es'
         'itinerary',
-        'type', //package,activity
-        
+        'type', //'0'=>package,'1'=>activity,'2'=>hotel
     ];
     
     public function photos()

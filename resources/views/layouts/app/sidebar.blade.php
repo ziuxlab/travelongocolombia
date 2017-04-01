@@ -66,10 +66,10 @@
                             </tr>
                             <tr>
                                 <td class="text-center" colspan="4">
-                                    <a class="btn btn-minw  btn-default push-10-r" href="{{url('checkout/clear')}}">
+                                    <a class="btn btn-minw  btn-default push-10-r" href="{{url('cart/clear')}}">
                                          Clear
                                     </a>
-                                    <a class="btn  btn-minw btn-primary" href="{{url('checkout')}}">
+                                    <a class="btn  btn-minw btn-primary" href="{{url('cart')}}">
                                         Checkout
                                     </a>
                                 </td>
