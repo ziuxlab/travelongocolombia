@@ -57,6 +57,7 @@ return [
     'days'=>'days',
     'person'=>'Person',
     'packages'=>'packages',
+    'activities'=>'activities',
    
     
    

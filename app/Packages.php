@@ -29,6 +29,6 @@ class Packages extends Model
     
     public function photos()
     {
-        return $this->hasMany('App\Photos_Package','package_id');
+        return $this->hasMany('App\Photo','package_id');
     }
 }

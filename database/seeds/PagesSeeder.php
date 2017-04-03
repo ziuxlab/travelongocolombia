@@ -1,10 +1,10 @@
 <?php
-    
-    use App\Page;
-    use Illuminate\Database\Seeder;
-    
-    class PagesSeeder extends Seeder
-    {
+
+use App\Page;
+use Illuminate\Database\Seeder;
+
+class PagesSeeder extends Seeder
+{
         /**
          * Run the database seeds.
          *
@@ -21,7 +21,7 @@
                 'menu_order' => 1,
                 'local'      => 'en',
                 'tipo'       => 1,
-            ]);
+                ]);
             
             Page::create([
                 'slug_url'   => 'inicio',
@@ -31,8 +31,28 @@
                 'menu_order' => 1,
                 'local'      => 'es',
                 'tipo'       => 1,
-            ]);
-            
+                ]);
+
+            Page::create([
+                'slug_url'   => 'packages',
+                'name'       => 'Packages',
+                'tittle'     => 'packages',
+                'body'       => '{packages}',
+                'menu_order' => 2,
+                'local'      => 'en',
+                'tipo'       => 1,
+                ]);
+
+            Page::create([
+                'slug_url'   => 'activities',
+                'name'       => 'Activities',
+                'tittle'     => 'activities',
+                'body'       => '{activities}',
+                'menu_order' =>  3,
+                'local'      => 'en',
+                'tipo'       => 1,
+                ]);
+
             Page::create([
                 'slug_url'   => 'about-us',
                 'name'       => 'About Us',
@@ -41,6 +61,6 @@
                 'menu_order' => 6,
                 'local'      => 'en',
                 'tipo'       => 1,
-            ]);
-        }
-    }
+                ]);
+}
+}

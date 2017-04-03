@@ -3,7 +3,7 @@
     namespace App\Http\Controllers;
     
     use App\Packages;
-    use App\Photos_Package;
+    use App\Photo;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\File;
     use Illuminate\Support\Facades\Storage;
@@ -81,7 +81,7 @@
                         ->fit(1200, 600)
                          ->save($path, 50)
                     ;
-                    Photos_Package::create([
+                    Photo::create([
                         'package_id' => $package->id,
                         'img'        => $path,
                         'order'      => $key,
@@ -168,7 +168,7 @@
                         ->fit(1200, 600)
                          ->save($path, 50)
                     ;
-                    Photos_Package::create([
+                    Photo::create([
                         'package_id' => $id,
                         'img'        => $path,
                         'order'      => $key,
@@ -195,7 +195,7 @@
         public function delete_photo($id)
         {
             //
-            $photo = Photos_Package::findorfail($id);
+            $photo = Photo::findorfail($id);
             File::delete($photo->img);
             
             $photo->delete();
@@ -204,7 +204,7 @@
         public function update_order_photo(Request $request, $id)
         {
             //
-            $photo = Photos_Package::find($id);
+            $photo = Photo::find($id);
             $photo->order = $request->order;
             $photo->save();
             

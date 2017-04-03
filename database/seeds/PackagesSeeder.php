@@ -16,6 +16,7 @@
             
             
             Packages::create([
+                'id'               => 1,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba titleee', '-'),
                 'days'             => 9,
@@ -31,6 +32,7 @@
             ]);
     
             Packages::create([
+                'id'               => 2, 
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('pruebae titlee', '-'),
                 'days'             => 9,
@@ -46,6 +48,7 @@
             ]);
     
             Packages::create([
+                'id'               => 3,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba titlee', '-'),
                 'days'             => 9,
@@ -60,6 +63,7 @@
                 'type'             => 0, //package,activity
             ]);
             Packages::create([
+                'id'               => 4,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title4', '-'),
                 'days'             => 9,
@@ -75,6 +79,7 @@
             ]);
     
             Packages::create([
+                'id'               => 5,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title5', '-'),
                 'days'             => 9,
@@ -90,6 +95,7 @@
             ]);
     
             Packages::create([
+                'id'               => 6,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title6', '-'),
                 'days'             => 9,

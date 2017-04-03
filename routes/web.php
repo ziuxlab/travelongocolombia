@@ -1,66 +1,102 @@
 <?php
-    
-    /*
-    |--------------------------------------------------------------------------
-    | Web Routes
-    |--------------------------------------------------------------------------
-    |
-    | Here is where you can register web routes for your application. These
-    | routes are loaded by the RouteServiceProvider within a group which
-    | contains the "web" middleware group. Now create something great!
-    |
-    */
-    
-    use Illuminate\Support\Facades\App;
-    use Illuminate\Support\Facades\Route;
-    
-    
-    Route::get('/login', function () {
-        //return view('welcome');
-        return redirect('admin/login');
-    });
-    
-    Route::get('language/{locale}', function ($locale) {
-        App::setLocale($locale);
-        session(['locale' => $locale]);
-        
-        if ($locale == 'es') {
-            return redirect('inicio');
-        }
-        
-        return redirect('/');
-    });
-    
-    
-    Route::get('/', 'HomeController@index');
 
-    Route::resource('checkout','CheckoutController');
-    
-    //
-    Route::get('activities/{slug}', 'ActivitiesController@show');
-    Route::get('packages/{slug}', 'PackagesController@show');
-    Route::get('paquetes/{slug}', 'PackagesController@show');
-    
-    Route::get('cart/clear', 'CartController@clear');
-    Route::resource('cart', 'CartController', ['except'=>['clear']]);
-    
-    Route::get('{pages}', 'PagesController@show');
-    
-    Route::group(['prefix' => 'admin'], function () {
-        
-        Auth::routes();
-        Route::get('home', 'AdminController@index');
-        Route::resource('users', 'UsersController');
-        Route::resource('pages', 'PagesController');
-        Route::resource('components', 'ComponentController');
-        Route::delete('packages/{id}', 'PackagesController@delete_photo');
-        Route::post('packages/{id}', 'PackagesController@update_order_photo');
-        Route::resource('packages', 'PackagesController', ['except' => ['delete_photo','update_order_photo']]);
-        Route::resource('activities', 'ActivitiesController');
-        Route::resource('settings', 'ConfigController');
-        
-        
-        Route::get('flights/buscar/{term}', 'FlightController@buscar');
-        Route::resource('flights', 'FlightController');
-        
-    });
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------
+| Public routes
+|--------------------------------------------------------------------
+|
+| These routes are accessible to both non-authenticated users and
+| authenticated users.
+|
+*/
+
+// Login-related routes ==============================================.
+Route::get('/login', function () {
+    //return view('welcome');
+    return redirect('admin/login');
+});
+
+// Languaje-related routes ==============================================.
+Route::get('language/{locale}', function ($locale) {
+    App::setLocale($locale);
+    session([ 'locale' => $locale ]);
+
+    if ($locale == 'es') {
+        return redirect('inicio');
+    }
+
+    return redirect('/');
+});
+
+// Menu-related routes ==============================================.
+Route::get('/', 'HomeController@index');
+Route::get('packages', 'HomeController@indexPackages');
+Route::get('activities', 'HomeController@indexActivities');
+
+// Cart-related routes ==============================================.
+Route::resource('checkout','CheckoutController');
+Route::get('cart/clear', 'CartController@clear');
+Route::resource('cart', 'CartController', [ 'except' => [ 'clear' ] ]);
+Route::resource('cart', 'CartController');
+
+// Pages-related routes ==============================================.
+Route::get('{pages}', 'PagesController@show');
+
+// Packages-related routes ==========================================.
+Route::get('packages/{slug}', 'PackagesController@show');
+Route::get('paquetes/{slug}', 'PackagesController@show');
+
+// Activities-related routes ========================================.
+Route::get('activities/{slug}', 'ActivityController@show');
+Route::get('actividades/{slug}', 'ActivityController@show');
+
+/*
+|--------------------------------------------------------------------
+| Administrator role routes
+|--------------------------------------------------------------------
+*/
+Route::group([ 'prefix' => 'admin' ], function () {
+
+    Auth::routes();
+    Route::get('home', 'AdminController@index');
+
+   
+    // Users-related routes =========================================.
+    Route::resource('users', 'UsersController');
+
+    // Pages-related routes =========================================.
+    Route::resource('pages', 'PagesController');
+    Route::resource('components', 'ComponentController');
+
+    // Packages-related routes ======================================.
+    Route::delete('packages/{id}', 'PackagesController@delete_photo');
+    Route::post('packages/{id}', 'PackagesController@update_order_photo');
+    Route::resource('packages', 'PackagesController', [ 'except' => [ 'delete_photo', 'update_order_photo' ] ]);
+
+    // Activities-related routes ====================================.
+    Route::delete('activities/{id}', 'ActivityController@delete_photo');
+    Route::post('activities/{id}', 'ActivityController@update_order_photo');
+    Route::resource('activities', 'ActivityController', [ 'except' => [ 'delete_photo', 'update_order_photo' ] ]);
+     
+     // System-related routes ========================================.
+    Route::resource('settings', 'ConfigController');
+
+    // Flights-related routes =======================================.
+    Route::get('flights/buscar/{term}', 'FlightController@buscar');
+    Route::resource('flights', 'FlightController');
+
+});

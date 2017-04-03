@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Config;
 use App\Packages;
+use App\Activity;
 use App\Page;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Schema;
@@ -20,10 +21,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        Schema::defaultStringLength(191); //
+        Schema::defaultStringLength(191); 
         View::share('Config', Config::find(1));
         View::share('menu', Page::whereMenu(1)->orderBy('menu_order')->get());
         View::share('packages', Packages::with('photos')->get());
+        View::share('activities', Activity::with('photos')->get());
     
         //Page::whereLocal(App::getLocale())->orderBy('menu_order')->get()
     }
