@@ -2,14 +2,13 @@
     
     namespace App\Http\Controllers;
     
-    use App\Packages;
+    use App\Product;
     use App\Photo;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\File;
-    use Illuminate\Support\Facades\Storage;
     use Intervention\Image\Facades\Image;
     
-    class PackagesController extends Controller
+    class ProductController extends Controller
     {
         
         public function __construct()
@@ -27,7 +26,7 @@
         public function index()
         {
             //
-            $packages = Packages::all();
+            $packages = Product::all();
             
             return view('admin.packages.packages_index', compact('packages'));
         }
@@ -60,7 +59,7 @@
             ]);
             
             
-            $package = Packages::create([
+            $package = Product::create([
                 'tittle'           => $request->tittle,
                 'slug_url'         => str_slug($request->slug_url, '-'),
                 'days'             => $request->days,
@@ -102,7 +101,7 @@
         public function show($url)
         {
             //
-            $item = Packages::where('slug_url', $url)
+            $item = Product::where('slug_url', $url)
                             ->firstOrFail()
             ;
             
@@ -121,7 +120,7 @@
         public function edit($id)
         {
             //
-            $package = Packages::with('photos')
+            $package = Product::with('photos')
                                ->whereId($id)
                                ->first()
             ;
@@ -145,7 +144,7 @@
             ]);
             
             
-            $package = Packages::find($id)
+            $package = Product::find($id)
                                ->update([
                                    'tittle'           => $request->tittle,
                                    'slug_url'         => str_slug($request->slug_url, '-'),
@@ -189,7 +188,7 @@
         public function destroy($id)
         {
             //
-            Packages::destroy($id);
+            Product::destroy($id);
         }
         
         public function delete_photo($id)

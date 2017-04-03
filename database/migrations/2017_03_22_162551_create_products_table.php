@@ -13,7 +13,7 @@ class CreatePackagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('packages', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('tittle'); //url de la pagina
             $table->string('slug_url')->unique(); //url de la pagina
@@ -25,8 +25,8 @@ class CreatePackagesTable extends Migration
             $table->mediumText('meta_description')->nullable();
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
-            $table->tinyInteger('type')->unsigned()->default(0);
-            $table->string('local',5);
+            $table->tinyInteger('type')->unsigned()->default(0); //0 packages, 1 activities, 2 hotels
+            $table->string('local',5); //en or es
             $table->softDeletes();
             $table->timestamps();
         });

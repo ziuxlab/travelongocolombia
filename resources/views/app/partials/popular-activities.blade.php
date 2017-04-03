@@ -7,7 +7,7 @@
     </div>
     <div class="content-boxed content content-full">
         <div class="row  text-center">
-            @foreach($activities->where('local',App::getLocale())->random(3) as $activity)
+            @foreach($products->where('local',App::getLocale())->where('type',1)->random(3) as $activity)
                 <div class="col-sm-6 col-md-4">
                     <a class="block block-sombra block-rounded block-link-hover2"
                        href="{{url(trans('general.activities').'/'.$activity->slug_url)}}">

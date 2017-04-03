@@ -136,7 +136,7 @@
                 
                 foreach ($itineraries as $flight) {
                     $flight['PricingOptions']['Price'] = $flight['PricingOptions']['Price'] + $num_usd;
-                   
+                    
                     $response = $response . '<div class="row"><div class="col-sm-12 table-responsive"><table class="table text-center">
                                  <tr class="border"><td style="vertical-align: middle;" class="text-success padding-20">
                                  <i class="fa fa-2x fa-plane"></i><div class="text-muted">Outbound</div></td><td> <div class="h5 text-muted ">' .

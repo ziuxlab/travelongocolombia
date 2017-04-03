@@ -15,6 +15,7 @@ class CreateFlightsTable extends Migration
     {
         Schema::create('flights', function (Blueprint $table) {
             $table->increments('id');
+            //agregar campos
             $table->timestamps();
         });
     }

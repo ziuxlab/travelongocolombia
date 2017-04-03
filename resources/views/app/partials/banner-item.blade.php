@@ -2,13 +2,10 @@
     @if(count($item->photos) > 0)
         <div class="bg-image text-center  overflow-hidden"
              style="background-image: url('{{asset($item->photos->sortBy('order')->first()->img)}}');">
-            
-            
             @else
                 <div class="bg-image text-center  overflow-hidden"
                      style="background-image: url('{{asset('img/banner/about-us.jpg')}}');">
                     @endif
-                    
                     <div class=" bg-black-op overflow-hidden">
                         <div class="content-boxed push-200-t  ">
                             <div class="content pull-left text-white content-full  animated fadeInDown">

@@ -16,13 +16,9 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->increments('id');
-            $table->tinyInteger('type'); // 0 for package, 1 for activity.
             // If the photo belongs to a package.
-            $table->integer('package_id')->unsigned()->nullable();
-            $table->foreign('package_id')->references('id')->on('packages');
-            // If the photo belongs to an activity.
-            $table->integer('activity_id')->unsigned()->nullable();
-            $table->foreign('activity_id')->references('id')->on('activities');
+            $table->integer('product_id')->unsigned()->nullable();
+            $table->foreign('product_id')->references('id')->on('products');
             $table->string('img');
             $table->tinyInteger('order');
             $table->softDeletes();

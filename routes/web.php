@@ -57,8 +57,8 @@ Route::resource('cart', 'CartController');
 Route::get('{pages}', 'PagesController@show');
 
 // Packages-related routes ==========================================.
-Route::get('packages/{slug}', 'PackagesController@show');
-Route::get('paquetes/{slug}', 'PackagesController@show');
+Route::get('packages/{slug}', 'ProductController@show');
+Route::get('paquetes/{slug}', 'ProductController@show');
 
 // Activities-related routes ========================================.
 Route::get('activities/{slug}', 'ActivityController@show');
@@ -83,9 +83,9 @@ Route::group([ 'prefix' => 'admin' ], function () {
     Route::resource('components', 'ComponentController');
 
     // Packages-related routes ======================================.
-    Route::delete('packages/{id}', 'PackagesController@delete_photo');
-    Route::post('packages/{id}', 'PackagesController@update_order_photo');
-    Route::resource('packages', 'PackagesController', [ 'except' => [ 'delete_photo', 'update_order_photo' ] ]);
+    Route::delete('packages/{id}', 'ProductController@delete_photo');
+    Route::post('packages/{id}', 'ProductController@update_order_photo');
+    Route::resource('packages', 'ProductController', [ 'except' => [ 'delete_photo', 'update_order_photo' ] ]);
 
     // Activities-related routes ====================================.
     Route::delete('activities/{id}', 'ActivityController@delete_photo');

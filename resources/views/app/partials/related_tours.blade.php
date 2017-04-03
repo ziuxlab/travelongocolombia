@@ -4,7 +4,7 @@
             - Related Tour -
         </div>
         <div class="block-content  ">
-            @foreach($packages->where('local',App::getLocale())->where('id','<>',$item->id)->random(2) as $package)
+            @foreach($products->where('local',App::getLocale())->where('id','<>',$item->id)->random(2) as $package)
                 <div class=" ">
                     <a class="block  block-rounded" href="{{url(trans('general.packages').'/'.$package->slug_url)}}">
                         <div class="bg-image img-rounded-t"
