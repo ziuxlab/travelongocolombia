@@ -13,13 +13,15 @@ class Photo extends Model
     protected $table = 'photos';
 
     protected $fillable = [
-        'package_id',
-        'activity_id',
-        'type',
+        'product_id',
         'img',
         'order',
     ];
 
+    public function product()
+    {
+        return $this->belongsTo('App\Product', 'product_id');
+    }
 
     /**
      * The package to which the photo belongs.
@@ -27,11 +29,11 @@ class Photo extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function package()
+    /*public function package()
     {
         return $this->belongsTo('App\Packages', 'package_id');
     }
-
+*/
 
     /**
      * The activity to which the photo belongs.
@@ -39,8 +41,8 @@ class Photo extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function activity()
+    /*public function activity()
     {
         return $this->belongsTo('App\Activity', 'activity_id');
-    }
+    }*/
 }

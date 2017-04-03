@@ -41,7 +41,7 @@
             </div>
             <!-- end sider -->
             <div class="col-md-9">
-                @foreach($activities->where('local',App::getLocale()) as $activity)
+                @foreach($products->where('local',App::getLocale())->where('type',1) as $activity)
                     <div class="block block-bordered  flex overflow-hidden">
                         <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
                              style="background-image: url('{{asset($activity->photos->sortBy('order')->first()->img)}}');">

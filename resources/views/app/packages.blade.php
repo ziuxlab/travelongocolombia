@@ -45,7 +45,7 @@
             
             
             <div class="col-md-9">
-                @foreach($packages->where('local',App::getLocale()) as $package)
+                @foreach($products->where('local',App::getLocale())->where('type',0) as $package)
                     <div class="block block-bordered  flex overflow-hidden">
                         <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
                              style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}');">

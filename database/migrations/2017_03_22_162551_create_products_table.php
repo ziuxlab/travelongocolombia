@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePackagesTable extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -23,6 +23,7 @@ class CreatePackagesTable extends Migration
             $table->tinyInteger('discount')->unsigned()->nullable()->default(0);
             $table->longText('itinerary')->nullable(); //contenido
             $table->mediumText('meta_description')->nullable();
+            $table->mediumText('description')->nullable(); // descripcion del sitio de la actividad <mientras tanto>
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
             $table->tinyInteger('type')->unsigned()->default(0); //0 packages, 1 activities, 2 hotels

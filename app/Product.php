@@ -25,10 +25,11 @@ class Product extends Model
         'local', // 'en' or 'es'
         'itinerary',
         'type', //'0'=>package,'1'=>activity,'2'=>hotel
+        'description',
     ];
     
     public function photos()
     {
-        return $this->hasMany('App\Photo','package_id');
+        return $this->hasMany('App\Photo','product_id');
     }
 }
