@@ -24,7 +24,7 @@
             'status',           // 0 => deshabilitado, 1 => habilitado
             'local',            // 'en' or 'es'
             'itinerary',        // Descripcion del hotel actividad o paquete
-            'type',             // '0'=>package,'1'=>activity,'2'=>hotel
+            'type',             // '0'=>package,'1'=>activity,'2'=>hotel,
             'description',      // breve resumen de la actividad, hotel o paquete
             'address',          // ubicacion de la actividad
         ];

@@ -11,7 +11,7 @@ class booking_detail extends Model
     
     protected $fillable = [
         'product_id', //same ID for Flights
-        'type', // 0 = product , 1 = flight
+        'type', // 1 = product , 2 = flight
         'booking_id',
     ];
     

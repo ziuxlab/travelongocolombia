@@ -62,31 +62,34 @@
                                         <div class="form-group">
                                             <div class="col-sm-6">
                                                 <label>Name</label>
-                                                <input class="form-control" type="text"
-                                                       name="full_name['adult'][{{$i}}]"
+                                                <input class="form-control" type="text" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
+                                                       name="adult[full_name][{{$i}}]"
                                                        placeholder="Please enter your name">
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Email</label>
-                                                <input class="form-control" type="email" name="email['adult'][{{$i}}]"
+                                                <input class="form-control" type="email" name="adult[email][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
                                                        placeholder="Please enter your email">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-4">
                                                 <label>Phone</label>
-                                                <input class="form-control" type="text" name="phone['adult'][{{$i}}]"
+                                                <input class="form-control" type="text" name="adult[phone][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
                                                        placeholder="Please enter your phone">
                                             </div>
                                             <div class="col-sm-4">
                                                 <label>City</label>
-                                                <input class="form-control" type="text" name="city['adult'][{{$i}}]"
+                                                <input class="form-control" type="text" name="adult[city][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
                                                        placeholder="Please enter your City">
                                             </div>
                                             <div class="col-sm-4">
                                                 <label>Country</label>
-                                                <input class="form-control" type="text" name="country['adult'][{{$i}}]"
+                                                <input class="form-control" type="text" name="adult[country][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
                                                        placeholder="Please enter your Country">
+                                                @if(!is_null($contacts['adult']))
+                                                    {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -102,13 +105,16 @@
                                             <div class="col-sm-6">
                                                 <label>Name</label>
                                                 <input class="form-control" type="text"
-                                                       name="full_name['child'][{{$i}}]"
+                                                       name="child[full_name][{{$i}}]" value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['name']}}"
                                                        placeholder="Please enter your name">
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Age</label>
-                                                <input class="form-control" type="number" name="age['child'][{{$i}}]"
+                                                <input class="form-control" type="number" name="child[age][{{$i}}]" value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['age']}}"
                                                        placeholder="Please enter your age">
+                                                @if(!is_null($contacts['child']))
+                                                    {!! Form::hidden('child[contact_id]['.$i.']', $contacts['child'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -123,14 +129,17 @@
                                         <div class="form-group">
                                             <div class="col-sm-6">
                                                 <label>Name</label>
-                                                <input class="form-control" type="text"
-                                                       name="full_name['infant'][{{$i}}]"
+                                                <input class="form-control" type="text" value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['name']}}"
+                                                       name="infant[full_name][{{$i}}]"
                                                        placeholder="Please enter your name">
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>Age</label>
-                                                <input class="form-control" type="number" name="age['infant'][{{$i}}]"
+                                                <input class="form-control" type="number" name="infant[age][{{$i}}]" value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['age']}}"
                                                        placeholder="Please enter your age">
+                                                @if(!is_null($contacts['infant']))
+                                                    {!! Form::hidden('infant[contact_id]['.$i.']', $contacts['infant'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -146,7 +155,8 @@
                                         <div class="col-xs-12">
                                             <label>Number</label>
                                             <input class="form-control" id="number" data-stripe="number" name="number"
-                                                   type="text" value="4242424242424242" placeholder="**** **** **** ****">
+                                                   type="text" value="4242424242424242"
+                                                   placeholder="**** **** **** ****">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -235,25 +245,25 @@
                     highlight: function (e) {jQuery(e).closest(".form-group").removeClass("has-error").addClass("has-error"), jQuery(e).closest(".help-block").remove()},
                     success: function (e) {jQuery(e).closest(".form-group").removeClass("has-error"), jQuery(e).closest(".help-block").remove()},
                     rules: {
-                        "full_name['adult'][0]": {required: !0, minlength: 2},
-                        "phone['adult'][0]": {required: !0, minlength: 2},
-                        "email['adult'][0]": {required: !0, email: !0},
-                        "country['adult'][0]": {required: !0},
-                        "city['adult'][0]": {required: !0},
+                        "adult[full_name][0]": {required: !0, minlength: 2},
+                        "adult[phone][0]": {required: !0, minlength: 2},
+                        "adult[email][0]": {required: !0, email: !0},
+                        "adult[country][0]": {required: !0},
+                        "adult[city][0]": {required: !0},
                         
                     },
                     messages: {
-                        "full_name['adult'][0]": {
+                        "adult[full_name][0]": {
                             required: "Please enter a name",
                             minlength: "Your name must consist of at least 2 characters"
                         },
-                        "phone['adult'][0]": {
+                        "adult[phone][0]": {
                             required: "Please enter a phone",
                             minlength: "Your phone must consist of at least 2 numbers"
                         },
-                        "email['adult'][0]": "Please enter a valid email address",
-                        "country['adult'][0]": "Please enter a Country",
-                        "city['adult'][0]": "Please enter a City"
+                        "adult[email][0]": "Please enter a valid email address",
+                        "adult[country][0]": "Please enter a Country",
+                        "adult[city][0]": "Please enter a City"
                     }
                 });
                 jQuery(".js-wizard-classic-validation").bootstrapWizard({
@@ -306,8 +316,8 @@
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script>
         Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
-        jQuery(function($) {
-            $('#form_stripe').submit(function(event) {
+        jQuery(function ($) {
+            $('#form_stripe').submit(function (event) {
                 var $form = $(this);
                 $form.find('#submit').prop('disabled', true);
                 Stripe.card.createToken($form, stripeResponseHandler);
@@ -326,6 +336,7 @@
                 $form.append($('<input type="hidden" name="stripeToken" />').val(token));
                 HTMLFormElement.prototype.submit.call($('#form_stripe')[0]);
             }
-        };
+        }
+        ;
     </script>
 @stop

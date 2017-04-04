@@ -17,6 +17,7 @@ class Contacts extends Migration
             $table->increments('id');
             $table->string('email')->nullable();
             $table->string('name');
+            $table->string('phone')->nullable();
             $table->string('city')->nullable();
             $table->string('country')->nullable();
             $table->string('age')->nullable();

@@ -18,4 +18,9 @@ class booking extends Model
     {
         return $this->belongsTo('App\User', 'user_id');
     }
+    
+    public function contacts()
+    {
+        return $this->belongsToMany('App\Contact','contact_booking');
+    }
 }

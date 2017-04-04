@@ -2,7 +2,7 @@
     
     namespace App\Http\Controllers;
     
-    use App\Packages;
+    use App\Product;
     use Cart;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Session;
@@ -41,7 +41,7 @@
         public function store(Request $request)
         {
             //
-            $item = Packages::findorfail($request->id);
+            $item = Product::findorfail($request->id);
             
             Cart::add([
                 'id'         => $item->id,
