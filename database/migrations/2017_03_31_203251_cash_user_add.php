@@ -50,15 +50,6 @@ class CashUserAdd extends Migration
             $table->dropColumn('trial_ends_at');
         });
     
-        Schema::create('subscriptions', function ($table) {
-            $table->increments('id');
-            $table->integer('user_id');
-            $table->dropColumn('name');
-            $table->dropColumn('stripe_id');
-            $table->dropColumn('stripe_plan');
-            $table->integer('quantity');
-            $table->dropColumn('trial_ends_at');
-            $table->dropColumn('ends_at');
-        });
+        Schema::dropIfExists('subscriptions');
     }
 }

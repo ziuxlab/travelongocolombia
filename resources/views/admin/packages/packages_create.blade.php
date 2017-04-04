@@ -19,7 +19,7 @@
     <div class="content overflow-hidden">
         <div class="col-sm-12">
             <div CLASS="block block-bordered block-rounded block-themed ">
-                {!! Form::open(['action'=> ['PackagesController@store'],'files' => 'true']) !!}
+                {!! Form::open(['action'=> ['ProductController@store'],'files' => 'true']) !!}
                 <div class="block-header bg-primary">
                     <h3 class="h4">@lang('general.form',['name'=>'Paquetes']) </h3>
                 </div>

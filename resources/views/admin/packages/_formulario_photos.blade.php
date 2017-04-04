@@ -28,13 +28,13 @@
                                     <button  class="js-swal-update btn btn-xs btn-default"
                                        type="button" data-id="{{ $item->id }}" data-toggle="tooltip" title=""
                                        data-original-title="Editar Ubicación imagen"><i class="fa fa-pencil"></i>
-                                        {!! Form::open(['action'=> ['PackagesController@update_order_photo',$item->id],'method'=>'post','id'=>'update_'.$item->id]) !!}
+                                        {!! Form::open(['action'=> ['ProductController@update_order_photo',$item->id],'method'=>'post','id'=>'update_'.$item->id]) !!}
                                         {!! Form::close() !!}
                                     </button>
                                     <button class="js-swal-confirm btn btn-xs btn-default"
                                             data-toggle="tooltip" data-id="{{ $item->id }}" title=""
                                             data-original-title="Eliminar imagen"><i class="fa fa-times"></i>
-                                        {!! Form::open(['action'=> ['PackagesController@delete_photo',$item->id],'method'=>'delete','id'=>'item_'.$item->id]) !!}
+                                        {!! Form::open(['action'=> ['ProductController@delete_photo',$item->id],'method'=>'delete','id'=>'item_'.$item->id]) !!}
                                         {!! Form::close() !!}
                                     </button>
                                 </div>

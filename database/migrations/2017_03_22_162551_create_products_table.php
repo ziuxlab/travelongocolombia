@@ -28,6 +28,7 @@ class CreateProductsTable extends Migration
             $table->boolean('status')->default(true);
             $table->tinyInteger('type')->unsigned()->default(0); //0 packages, 1 activities, 2 hotels
             $table->string('local',5); //en or es
+            $table->string('address')->nullable(); //ubicacion de la actividad
             $table->softDeletes();
             $table->timestamps();
         });
@@ -40,6 +41,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('packages');
+        Schema::dropIfExists('products');
     }
 }

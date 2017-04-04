@@ -19,7 +19,7 @@
         
         <div class="col-sm-12">
             <div CLASS="block block-bordered block-rounded block-themed ">
-                {!! Form::model($package,['action'=> ['PackagesController@update',$package->id],'method' => 'put','files' => 'true']) !!}
+                {!! Form::model($package,['action'=> ['ProductController@update',$package->id],'method' => 'put','files' => 'true']) !!}
                 <div class="block-header bg-primary">
                     <h3 class="h4">Formulario para editar un Paquete</h3>
                 </div>

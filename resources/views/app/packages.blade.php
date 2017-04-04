@@ -39,7 +39,6 @@
                             Categories</a>
                     </div>
                 </div>
-                
                 @include('app.partials.needhelp')
             </div>
             <!-- end sider -->

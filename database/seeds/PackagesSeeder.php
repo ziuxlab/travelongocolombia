@@ -1,6 +1,6 @@
 <?php
     
-    use App\Packages;
+    use App\Product;
     use Illuminate\Database\Seeder;
     
     class PackagesSeeder extends Seeder
@@ -15,7 +15,7 @@
             //debe relacionarse las imagenes parque no aparezca un error despues en los paquetes
             
             
-            Packages::create([
+            Product::create([
                 'id'               => 1,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba titleee', '-'),
@@ -31,7 +31,7 @@
                 'type'             => 0, //package,activity
             ]);
     
-            Packages::create([
+            Product::create([
                 'id'               => 2, 
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('pruebae titlee', '-'),
@@ -47,7 +47,7 @@
                 'type'             => 0, //package,activity
             ]);
     
-            Packages::create([
+            Product::create([
                 'id'               => 3,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba titlee', '-'),
@@ -62,7 +62,7 @@
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
             ]);
-            Packages::create([
+            Product::create([
                 'id'               => 4,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title4', '-'),
@@ -78,7 +78,7 @@
                 'type'             => 0, //package,activity
             ]);
     
-            Packages::create([
+            Product::create([
                 'id'               => 5,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title5', '-'),
@@ -94,7 +94,7 @@
                 'type'             => 0, //package,activity
             ]);
     
-            Packages::create([
+            Product::create([
                 'id'               => 6,
                 'tittle'           => 'prueba tittle',
                 'slug_url'         => str_slug('prueba title6', '-'),
