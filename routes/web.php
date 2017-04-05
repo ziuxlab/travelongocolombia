@@ -44,8 +44,6 @@ Route::get('language/{locale}', function ($locale) {
 
 // Menu-related routes ==============================================.
 Route::get('/', 'HomeController@index');
-Route::get('packages', 'HomeController@indexPackages');
-Route::get('activities', 'HomeController@indexActivities');
 Route::get('products/list/{type}', 'ProductController@list'); 
 
 // Cart-related routes ==============================================.

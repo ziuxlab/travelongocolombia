@@ -113,7 +113,6 @@
                 //tipo 1 grupo de componentes
                 
                 $view = Page::extract_views($item);
-                
                 return view($view, compact('item'));
             }
         }

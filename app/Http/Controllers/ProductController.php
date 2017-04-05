@@ -158,7 +158,7 @@ class ProductController extends Controller
         //
         $item = Product::where('slug_url', $url)->firstOrFail();
 
-        return view('app.packages-item', compact('item'));
+        return view('app.product-item', compact('item'));
 
 
     }
