@@ -88,8 +88,6 @@
 </div>
 </div>
 @include('app.partials.needhelp')
-@include('app.partials.related_tours')
-
 
 <div class="modal" id="book-modal">
     <div class="modal-dialog modal-dialog-popin">

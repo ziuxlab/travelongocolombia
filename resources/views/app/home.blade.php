@@ -1,6 +1,7 @@
 @extends('layouts.app.app')
 
 @section('title')
+Home
 @stop
 
 @section('description')

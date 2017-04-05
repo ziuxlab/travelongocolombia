@@ -12,7 +12,11 @@
                                 <h1 class="h1 font-w700 ">
                                     {{$item->tittle}}
                                 </h1>
+                                @if($item->type==0)
                                 <div class="pull-left">@lang('general.packages')</div>
+                                 @elseif($item->type==1)
+                                <div class="pull-left">@lang('general.activities')</div>
+                                @endif
                             </div>
                             <div class="content pull-right text-white push-30  animated fadeInDown">
                                 <h2 class="h1 font-w700   ">

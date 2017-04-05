@@ -46,6 +46,7 @@ Route::get('language/{locale}', function ($locale) {
 Route::get('/', 'HomeController@index');
 Route::get('packages', 'HomeController@indexPackages');
 Route::get('activities', 'HomeController@indexActivities');
+Route::get('products/list/{type}', 'ProductController@list'); 
 
 // Cart-related routes ==============================================.
 Route::resource('checkout','CheckoutController');
@@ -73,7 +74,7 @@ Route::group([ 'prefix' => 'admin' ], function () {
 
     Auth::routes();
     Route::get('home', 'AdminController@index');
-
+    Route::get('products/list/{type}', 'ProductController@listAdmin');
    
     // Users-related routes =========================================.
     Route::resource('users', 'UsersController');

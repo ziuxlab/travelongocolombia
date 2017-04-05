@@ -57,4 +57,17 @@ return [
     'days'=>'Días',
     'person'=>'Persona',
     'packages'=>'paquetes',
+    'activities'=>'actividades',
+    'newf' => 'Nueva :name',
+    'newm' => 'Nuevo :name',
+    'data' => 'Datos del :name',
+    'detailsf' => 'Detalles de la :name',
+    'detailsm' => 'Detalles del :name',
+    'save' => 'guardar',
+    'msjactivityitinerary' => 'Esta actividad está programada para todo un día e incluye:',
+    'relatedactivities' => 'Actividades relacionadas',
+    'update' => 'actualizar',
+    'imagesf' => 'Imágenes de la :name',
+    'imagesm' => 'Imágenes del :name',
+
 ];

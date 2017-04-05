@@ -1,23 +1,23 @@
 <?php
-    
-    namespace App\Http\Controllers;
-    
-    use App\Product;
-    use App\Photo;
-    use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\File;
-    use Intervention\Image\Facades\Image;
-    
-    class ProductController extends Controller
+
+namespace App\Http\Controllers;
+
+use App\Product;
+use App\Photo;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image;
+
+class ProductController extends Controller
+{
+
+    public function __construct()
     {
-        
-        public function __construct()
-        {
-            $this->middleware('auth')
-                 ->except('show')
-            ;
-        }
-        
+        $this->middleware('auth')
+        ->except(['show','list'])
+        ;
+    }
+
         /**
          * Display a listing of the resource.
          *
@@ -26,11 +26,55 @@
         public function index()
         {
             //
-            $packages = Product::all();
+            $packages = Product::where('type', 0)->get();
             
             return view('admin.packages.packages_index', compact('packages'));
         }
         
+         /**
+         * Lista de productos según el tipo especificado.
+         *
+         * @return \Illuminate\Http\Response
+         */
+         public function list($type)
+         {
+            $products = Product::where('type', $type)->paginate(3);
+            
+            $view ='';
+            switch ($type) {
+                case 0:
+                $view = 'app.partials.packages-list';
+                break;
+                case 1:
+                $view = 'app.partials.activities-list';
+                break;
+            }
+
+            return view($view, compact('products'));
+        }
+
+         /**
+         * Lista de productos según el tipo especificado
+         *
+         * @return \Illuminate\Http\Response
+         */
+         public function listAdmin($type)
+         {
+            $products = Product::where('type', $type)->paginate(5);
+            
+            $view ='';
+            switch ($type) {
+                case 0:
+                $view = 'admin.packages._list_packages';
+                break;
+                case 1:
+                $view = 'admin.activities._list_activities';
+                break;
+            }
+
+            return view($view, compact('products'));
+        }
+
         /**
          * Show the form for creating a new resource.
          *
@@ -55,12 +99,13 @@
             $this->validate($request, [
                 'slug_url' => 'unique:packages',
                 'days'     => 'numeric|required'
-            
-            ]);
+
+                ]);
             
             
             $package = Product::create([
                 'tittle'           => $request->tittle,
+                'description'      => $request->description,
                 'slug_url'         => str_slug($request->slug_url, '-'),
                 'days'             => $request->days,
                 'price_adults'     => $request->price_adults,
@@ -71,20 +116,20 @@
                 'status'           => $request->status,
                 'local'            => $request->local,
                 'itinerary'        => $request->itinerary,
-            ]);
+                ]);
             
             if ($request->hasFile('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
-                        ->fit(1200, 600)
-                         ->save($path, 50)
+                    ->fit(1200, 600)
+                    ->save($path, 50)
                     ;
                     Photo::create([
                         'package_id' => $package->id,
                         'img'        => $path,
                         'order'      => $key,
-                    ]);
+                        ]);
                 }
             }
             
@@ -102,7 +147,7 @@
         {
             //
             $item = Product::where('slug_url', $url)
-                            ->firstOrFail()
+            ->firstOrFail()
             ;
             
             return view('app.packages-item', compact('item'));
@@ -121,8 +166,8 @@
         {
             //
             $package = Product::with('photos')
-                               ->whereId($id)
-                               ->first()
+            ->whereId($id)
+            ->first()
             ;
             
             return view('admin.packages.packages_edit', compact('package'));
@@ -141,37 +186,38 @@
             //
             $this->validate($request, [
                 'days' => 'numeric|required'
-            ]);
+                ]);
             
             
             $package = Product::find($id)
-                               ->update([
-                                   'tittle'           => $request->tittle,
-                                   'slug_url'         => str_slug($request->slug_url, '-'),
-                                   'days'             => $request->days,
-                                   'price_adults'     => $request->price_adults,
-                                   'price_children'   => $request->price_children,
-                                   'discount'         => $request->discount,
-                                   'meta_description' => $request->meta_description,
-                                   'keywords'         => $request->keywords,
-                                   'status'           => $request->status,
-                                   'local'            => $request->local,
-                                   'itinerary'        => $request->itinerary,
-                               ])
+            ->update([
+             'tittle'           => $request->tittle,
+              'description'      => $request->description,
+             'slug_url'         => str_slug($request->slug_url, '-'),
+             'days'             => $request->days,
+             'price_adults'     => $request->price_adults,
+             'price_children'   => $request->price_children,
+             'discount'         => $request->discount,
+             'meta_description' => $request->meta_description,
+             'keywords'         => $request->keywords,
+             'status'           => $request->status,
+             'local'            => $request->local,
+             'itinerary'        => $request->itinerary,
+             ])
             ;
             
             if ($request->hasFile('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
-                        ->fit(1200, 600)
-                         ->save($path, 50)
+                    ->fit(1200, 600)
+                    ->save($path, 50)
                     ;
                     Photo::create([
                         'package_id' => $id,
                         'img'        => $path,
                         'order'      => $key,
-                    ]);
+                        ]);
                 }
             }
             

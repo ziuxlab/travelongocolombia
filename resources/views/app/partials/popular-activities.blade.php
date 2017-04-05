@@ -30,7 +30,7 @@
                                         <div class="h4 font-w600 text-primary">
                                             ${{number_format($activity->price_adults * ( 1 + ($activity->discount/100)))}}</div>
                                         <b class="text-gray-dark remove-margin">
-                                            <span class="si si-clock"></span> {{$activity->duration}}
+                                            <span class="si si-clock"></span> {{$activity->days}} day
                                         </b>
                                     </div>
                                 </div>

@@ -58,7 +58,17 @@ return [
     'person'=>'Person',
     'packages'=>'packages',
     'activities'=>'activities',
-   
+    'newf' => 'New :name',
+    'newm'=>'New :name',
+    'data' => ':name data',
+    'detailsf' => ':name Details', 
+    'detailsm' => ':name Details',
+    'save' => 'save',
+    'msjactivityitinerary' => 'This activity is scheduled for all a day and includes:',
+    'relatedactivities' => 'Related Activities',
+    'update' => 'update',
+    'imagesf' => ':name images',
+    'imagesm' => ':name images',
     
    
 ];

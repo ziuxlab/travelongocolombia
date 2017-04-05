@@ -176,6 +176,7 @@
             </div>
             <div class="col-md-4 ">
                 @include('app.partials.book')
+                @include('app.partials.related_tours')
             </div>
         </div>
     </div>

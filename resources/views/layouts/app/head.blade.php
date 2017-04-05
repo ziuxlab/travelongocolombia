@@ -9,7 +9,7 @@
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="@yield('keywords')">
 <link rel="canonical" href="{{url()->current()}}">
-<title>@yield('title')</title>
+<title>@yield('title') | Travelongo</title>
 <meta name="description" content="@yield('description')">
 <!-- Real Favicon Generator -->
 

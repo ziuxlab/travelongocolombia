@@ -7,7 +7,6 @@
 @stop
 
 @section('style')
-    <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
 @stop
 
 @section('breadcrumb')
