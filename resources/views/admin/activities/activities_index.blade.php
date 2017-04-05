@@ -18,11 +18,9 @@
 <div class="block">
     <div class="block-content">
         <a href="{{url('admin/activities/create')}}" class="btn btn-primary push"> + @lang('general.create')</a>
-
         <!-- activities -->
             <div id="content"></div>
         <!-- end activities -->
-
  </div>
 </div>
 @stop
