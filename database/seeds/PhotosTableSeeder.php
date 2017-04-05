@@ -73,5 +73,35 @@
                 'img'        => 'img/packages/package3.png',
                 'order'      => 1,
             ]);
+            Photo::create([
+                'product_id' => 7,
+                'img'        => 'img/activities/parque1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 8,
+                'img'        => 'img/activities/parque2.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 9,
+                'img'        => 'img/activities/panaca1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 10,
+                'img'        => 'img/activities/panaca2.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 11,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 12,
+                'img'        => 'img/activities/recuca2.jpg',
+                'order'      => 2,
+            ]);
         }
     }

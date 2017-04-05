@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('adults')  ? ' has-error' : '' }}">
                             {!! Form::label('Adultos:', null, ['class' => 'control-label']) !!}
                             <div class="input-group">
@@ -57,7 +57,7 @@
                             @endif
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-6 col-lg-4">
                         
                         <div class="form-group {{ $errors->has('children') ? ' has-error' : '' }}">
                             {!! Form::label('Niños:', null, ['class' => 'control-label']) !!}
@@ -83,7 +83,7 @@
                         </div>
                     
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 col-md-6 col-lg-4">
                         
                         <div class="form-group {{ $errors->has('infants') ? ' has-error' : '' }}">
                             {!! Form::label('Bebés:', null, ['class' => 'text-center control-label']) !!}
@@ -94,7 +94,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                                {!! Form::text('infants', 0, ['class' => 'input-number form-control','id'=>'infants','min'=>0,'max'=>10]) !!}
+                                {!! Form::text('infants', 0, ['class' => 'text-center form-control','id'=>'infants','min'=>0,'max'=>10]) !!}
                                 <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control" data-action="plus" data-target="infants">
                                           <span class="glyphicon glyphicon-plus"></span>
