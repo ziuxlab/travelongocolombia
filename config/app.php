@@ -174,6 +174,7 @@ return [
         Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
         Darryldecode\Cart\CartServiceProvider::class,
+        Laravel\Cashier\CashierServiceProvider::class,
 
         /*
          * Application Service Providers...

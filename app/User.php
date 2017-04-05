@@ -7,6 +7,7 @@
     use HttpOz\Roles\Traits\HasRole;
     use HttpOz\Roles\Contracts\HasRole as HasRoleContract;
     use Laravel\Cashier\Billable;
+
     
     class User extends Authenticatable implements HasRoleContract
     {
@@ -23,8 +24,7 @@
             'password',
             'img'
         ];
-    
-        protected $dates = ['trial_ends_at', 'subscription_ends_at'];
+        
         
         /**
          * The attributes that should be hidden for arrays.

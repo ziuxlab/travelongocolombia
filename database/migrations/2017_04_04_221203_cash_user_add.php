@@ -32,7 +32,6 @@ class CashUserAdd extends Migration
             $table->timestamp('ends_at')->nullable();
             $table->timestamps();
         });
-
     }
 
     /**
