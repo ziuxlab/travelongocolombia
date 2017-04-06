@@ -9,7 +9,7 @@
                 <div class=" form-group">
                     <div class="form-group {{ $errors->has('checkout') || $errors->has('checkin') ? ' has-error' : '' }}">
                         @if($item->type==0)
-                            {!! Form::label('Fecha de Ida y de Regreso:', null, ['class' => 'control-label']) !!}
+                                <span>{!! Form::label('Fecha de Ida y de Regreso:', null, ['class' => 'control-label']) !!}</span>
                         @elseif($item->type==1)
                             {!! Form::label('Date:', null, ['class' => 'control-label']) !!}
                         @endif
@@ -43,7 +43,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                                {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
+                                {!! Form::number('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
                                 <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control" data-action="plus" data-target="adults">
                                           <span class="glyphicon glyphicon-plus"></span>
@@ -183,13 +183,6 @@
             $('#checkout').datepicker('setDate', today);
         });
         
-        $('#adults').change(function () {
-            costos()
-        });
-        $('#children').change(function () {
-            costos()
-        });
-        
         function costos() {
             var price_adults   = '{{$item->price_adults * (1 - ($item->discount/100))}}';
             var price_children = '{{$item->price_children * (1 - ($item->discount/100))}}';
@@ -217,6 +210,7 @@
                 value--;
             }
             $('[id="'+target+'"]').val(value)
+            costos()
         })
     
     </script>

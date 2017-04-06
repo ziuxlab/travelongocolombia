@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="text-white font-w700 push-20 push-150-t animated fadeInDown">
                     <h1>
-                        "ONE STOP PLANNING FOR VACATION TO COLOMBIA "
+                        ONE STOP PLANNING FOR VACATION TO COLOMBIA
                     </h1>
                 </div>
                <div class="text-white-op animated fadeIn">

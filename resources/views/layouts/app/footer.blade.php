@@ -12,7 +12,8 @@
                         <div class="input-group">
                             <input class="form-control" type="email" name="email" placeholder="Email">
                             <span class="input-group-btn">
-                                <button class="btn btn-minw btn-primary-darkest" type="button">@lang('general.Submit')</button>
+                                <button class="btn btn-minw btn-primary-darkest"
+                                        type="button">@lang('general.Submit')</button>
                             </span>
                         </div>
                     </div>
@@ -26,15 +27,11 @@
         <div class="col-md-6 push-10-t text-center">
             <img class="logo img-responsive" src="{{asset('img/logo-naranja.svg')}}">
             <p class="push-15-t text-justify">
-                Travelongo está comprometida con el cumplimiento de la ley 679 del 2001, y rechaza todo tipo de
-                explotación, pornográfica, turismo sexual y violencia sexual a los menores de edad*
-                Ley 17 de 1981 - Resolución Ministerial No. 1367 de 2000 (Trafico ilícito de especies de fauna y flora
-                silvestre)*
-                Ley 103 de 1991, Decreto 904 de 1941, Ley 397 de 1997 Decreto 833 de 2002, Ley 1185 de 2008 (Trafico
-                ilícito de bienes culturales)*
-                Rechaza la explotación laboral infantil y rechaza toda forma de discriminación racial*
-                Los datos personales que se han recogido por medio de este canal serán tratados de conformidad con lo
-                establecido en la ley 1581 2012 y sus decretos reglamentarios.
+                Está comprometido con La prevención de la explotación sexual infantil, del turismo sexual y otras formas
+                de abuso a los menores de edad (ley 1336 de 2009), de la explotación laboral infantil Código del
+                Menor (ley 1098 de 2006). La prevención del tráfico de Patrimonio Cultural (ley 397 de 1997). La
+                prevención del tráfico de especies como flora y fauna silvestre (ley 599 de 2000 y Decreto 1608 de
+                1978). Defendemos la igualdad de raza o género (ley 1482 de 2011, modificada por la ley 1752 de 2015).
             </p>
             <div class="item-social">
                 <a class="item-circle-small push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
