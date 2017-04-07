@@ -69,5 +69,6 @@ return [
     'update' => 'actualizar',
     'imagesf' => 'Imágenes de la :name',
     'imagesm' => 'Imágenes del :name',
+    'hotels' => 'hoteles',
 
 ];

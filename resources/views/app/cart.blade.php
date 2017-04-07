@@ -42,7 +42,7 @@
                             <th colspan="2">producto</th>
                             <th class="text-center">cantidad</th>
                             <th class="text-right">precio</th>
-                            <th ></th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody class="content">
@@ -54,7 +54,15 @@
                                 </td>
                                 <td>
                                     <span class="h5">{{$item->name}}</span>
-                                    <div class="font-s12 text-muted">Package Tour</div>
+                                    @if($item->attributes->type == 0)
+                                        <div class="font-s12 text-muted">Package Tour</div>
+                                    @elseif($item->attributes->type == 1)
+                                        <div class="font-s12 text-muted">Activity</div>
+                                    @elseif($item->attributes->type == 2)
+                                        <div class="font-s12 text-muted">Hotel</div>
+                                    @else
+                                        <div class="font-s12 text-muted">Flight</div>
+                                    @endif
                                 </td>
                                 <td class="text-center">
                                     <span class="badge">{{$item->quantity}}</span>
@@ -98,7 +106,7 @@
                         </div>
                         {!! Form::close() !!}
                     </div>
-                   
+                
                 </div>
             
             </div>

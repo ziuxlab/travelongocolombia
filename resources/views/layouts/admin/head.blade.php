@@ -24,6 +24,7 @@
 
 <!-- carga de css mientras entra a produccion, eliminar despues -->
 <link href="{{ url('admin/css/app.css') }}" rel="stylesheet">
+<link href="https://file.myfontastic.com/yCCPuyfvUjUbet8RsGQ43W/icons.css" rel="stylesheet">
 
 
 <!-- CSS Print -->

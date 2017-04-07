@@ -32,9 +32,12 @@
             <div class="block">
                 <div class="list-group">
                     <li class="list-group-item active h5"> Categories</li>
-                    <a href="#" class="list-group-item h5"><span class="fa fa-leaf push-5-r"></span> Nature</a>
-                    <a href="#" class="list-group-item h5"><span class="fa fa-smile-o push-5-r"></span> Actractions</a>
-                    <a href="#" class="list-group-item h5"><span class="fa fa-book push-5-r"></span> History</a>
+                   
+                        @foreach($features->where('type',1) as $item)
+                               <a href="#" class="list-group-item  h5"><i class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
+                        @endforeach
+                 
+                    
                 </div>
             </div>
             @include('app.partials.needhelp')

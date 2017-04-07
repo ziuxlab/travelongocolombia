@@ -193,5 +193,469 @@ class ProductsSeeder extends Seeder
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
             ]);
+            Product::create([
+                'id'               => 13,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title13', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'en',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+            Product::create([
+                'id'               => 14,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title14', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'en',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+            Product::create([
+                'id'               => 15,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title15', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'en',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+            Product::create([
+                'id'               => 16,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title16', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'es',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+            Product::create([
+                'id'               => 17,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title17', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'es',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+            Product::create([
+                'id'               => 18,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title18', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'es',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 2, //package,activity
+            ]);
+    
+            Product::create([
+                'id'             => 19,
+                'tittle'         => 'tour around armenia and meal at geranios restaurant',
+                'description'    => 'tour around armenia and meal at geranios restaurant.',
+                'itinerary'      => 'tour around armenia and meal at geranios restaurant',
+                'slug_url'       => str_slug('tour around armenia and meal at geranios restaurant'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 20,
+                'tittle'         => 'rancho california enjoy since extrem sports to nature walks or fishing ',
+                'description'    => 'rancho california enjoy since extrem sports to nature walks or fishing .',
+                'itinerary'      => 'rancho california enjoy since extrem sports to nature walks or fishing ',
+                'slug_url'       => str_slug('rancho california enjoy since extrem sports to nature walks or fishing '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 21,
+                'tittle'         => 'tour buenavista, pijao -  filandia, enjoy the most beautiful views, crafts and delicious coffee  concorde ',
+                'description'    => 'tour buenavista, pijao -  filandia, enjoy the most beautiful views, crafts and delicious coffee  concorde .',
+                'itinerary'      => 'tour buenavista, pijao -  filandia, enjoy the most beautiful views, crafts and delicious coffee  concorde ',
+                'slug_url'       => str_slug('tour buenavista, pijao -  filandia, enjoy the most beautiful views, crafts and delicious coffee  concorde '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 22,
+                'tittle'         => 'botanical garden',
+                'description'    => 'botanical garden.',
+                'itinerary'      => 'botanical garden',
+                'slug_url'       => str_slug('botanical garden'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 23,
+                'tittle'         => 'salento, valle del cocora  - crafts town ',
+                'description'    => 'salento, valle del cocora  - crafts town .',
+                'itinerary'      => 'salento, valle del cocora  - crafts town ',
+                'slug_url'       => str_slug('salento, valle del cocora  - crafts town '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 24,
+                'tittle'         => 'museo quimbaya ',
+                'description'    => 'museo quimbaya .',
+                'itinerary'      => 'museo quimbaya ',
+                'slug_url'       => str_slug('museo quimbaya '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 25,
+                'tittle'         => 'waterfalls in cordoba (picnic lunch  in platano or congo leaves)',
+                'description'    => 'waterfalls in cordoba (picnic lunch  in platano or congo leaves).',
+                'itinerary'      => 'waterfalls in cordoba (picnic lunch  in platano or congo leaves)',
+                'slug_url'       => str_slug('waterfalls in cordoba (picnic lunch  in platano or congo leaves)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 26,
+                'tittle'         => ' spring water san vicente risaralda (lunch included)',
+                'description'    => ' spring water san vicente risaralda (lunch included).',
+                'itinerary'      => ' spring water san vicente risaralda (lunch included)',
+                'slug_url'       => str_slug(' spring water san vicente risaralda (lunch included)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 27,
+                'tittle'         => 'iced mountain of  santa isabel  risaralda (lunch included)',
+                'description'    => 'iced mountain of  santa isabel  risaralda (lunch included).',
+                'itinerary'      => 'iced mountain of  santa isabel  risaralda (lunch included)',
+                'slug_url'       => str_slug('iced mountain of  santa isabel  risaralda (lunch included)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 28,
+                'tittle'         => 'shopping, down town, dinner at solar restaurant',
+                'description'    => 'shopping, down town, dinner at solar restaurant.',
+                'itinerary'      => 'shopping, down town, dinner at solar restaurant',
+                'slug_url'       => str_slug('shopping, down town, dinner at solar restaurant'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 29,
+                'tittle'         => 'lagoon  of  otun risaralda   (lunch included)',
+                'description'    => 'lagoon  of  otun risaralda   (lunch included).',
+                'itinerary'      => 'lagoon  of  otun risaralda   (lunch included)',
+                'slug_url'       => str_slug('lagoon  of  otun risaralda   (lunch included)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 30,
+                'tittle'         => 'balsaje across a river called "la vieja"  (lunch included)',
+                'description'    => 'balsaje across a river called "la vieja"  (lunch included).',
+                'itinerary'      => 'balsaje across a river called "la vieja"  (lunch included)',
+                'slug_url'       => str_slug('balsaje across a river called "la vieja"  (lunch included)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 31,
+                'tittle'         => 'nature walk calarca (picnic lunch  in platano or congo leaves)',
+                'description'    => 'nature walk calarca (picnic lunch  in platano or congo leaves).',
+                'itinerary'      => 'nature walk calarca (picnic lunch  in platano or congo leaves)',
+                'slug_url'       => str_slug('nature walk calarca (picnic lunch  in platano or congo leaves)'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 32,
+                'tittle'         => 'paintball ',
+                'description'    => 'paintball .',
+                'itinerary'      => 'paintball ',
+                'slug_url'       => str_slug('paintball '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 33,
+                'tittle'         => 'canopy ',
+                'description'    => 'canopy .',
+                'itinerary'      => 'canopy ',
+                'slug_url'       => str_slug('canopy '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 34,
+                'tittle'         => 'camping monteroca',
+                'description'    => 'camping monteroca.',
+                'itinerary'      => 'camping monteroca',
+                'slug_url'       => str_slug('camping monteroca'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 35,
+                'tittle'         => 'ecological park peñas blancas',
+                'description'    => 'ecological park peñas blancas.',
+                'itinerary'      => 'ecological park peñas blancas',
+                'slug_url'       => str_slug('ecological park peñas blancas'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 36,
+                'tittle'         => 'calima lake',
+                'description'    => 'calima lake.',
+                'itinerary'      => 'calima lake',
+                'slug_url'       => str_slug('calima lake'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 37,
+                'tittle'         => ' jeep panoramico',
+                'description'    => ' jeep panoramico.',
+                'itinerary'      => ' jeep panoramico',
+                'slug_url'       => str_slug(' jeep panoramico'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 38,
+                'tittle'         => 'parque de la vida',
+                'description'    => 'parque de la vida.',
+                'itinerary'      => 'parque de la vida',
+                'slug_url'       => str_slug('parque de la vida'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 39,
+                'tittle'         => 'party  (be clear it is just dancing and drinks, no drugs, we don´t know how to say that politely) ',
+                'description'    => 'party  (be clear it is just dancing and drinks, no drugs, we don´t know how to say that politely) .',
+                'itinerary'      => 'party  (be clear it is just dancing and drinks, no drugs, we don´t know how to say that politely) ',
+                'slug_url'       => str_slug('party  (be clear it is just dancing and drinks, no drugs, we don´t know how to say that politely) '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+    
+            Product::create([
+                'id'             => 40,
+                'tittle'         => 'barcelona  (try forcha, kumis, sirope, pandebonos and traditional food) ',
+                'description'    => 'barcelona  (try forcha, kumis, sirope, pandebonos and traditional food) .',
+                'itinerary'      => 'barcelona  (try forcha, kumis, sirope, pandebonos and traditional food) ',
+                'slug_url'       => str_slug('barcelona  (try forcha, kumis, sirope, pandebonos and traditional food) '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            Product::create([
+                'id'             => 41,
+                'tittle'         => 'shopping at mercar  (fruits ang vegetables),  ',
+                'description'    => 'shopping at mercar  (fruits ang vegetables),  .',
+                'itinerary'      => 'shopping at mercar  (fruits ang vegetables),  ',
+                'slug_url'       => str_slug('shopping at mercar  (fruits ang vegetables),  '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            Product::create([
+                'id'             => 42,
+                'tittle'         => 'shopping malls',
+                'description'    => 'shopping malls.',
+                'itinerary'      => 'shopping malls',
+                'slug_url'       => str_slug('shopping malls'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            Product::create([
+                'id'             => 43,
+                'tittle'         => 'down town ',
+                'description'    => 'down town .',
+                'itinerary'      => 'down town ',
+                'slug_url'       => str_slug('down town '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            Product::create([
+                'id'             => 44,
+                'tittle'         => 'genova',
+                'description'    => 'genova.',
+                'itinerary'      => 'genova',
+                'slug_url'       => str_slug('genova'),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            Product::create([
+                'id'             => 45,
+                'tittle'         => 'natural park barbas bremen ',
+                'description'    => 'natural park barbas bremen .',
+                'itinerary'      => 'natural park barbas bremen ',
+                'slug_url'       => str_slug('natural park barbas bremen '),
+                'days'           => 1,
+                'price_adults'   => '125',
+                'price_children' => '62',
+                'local'          => 'en',
+                'type'           => 1, //activity
+                'discount'       => 0, //porcentaje
+            ]);
+            
         }
     }

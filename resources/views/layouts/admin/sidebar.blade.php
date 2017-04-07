@@ -92,11 +92,15 @@
                                     class="sidebar-mini-hide">Paquetes</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/activities')}}"><i class="si si-docs"></i><span
+                        <a href="{{url('admin/activities')}}"><i class="fa fa-bicycle"></i><span
                                     class="sidebar-mini-hide">Actividades</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/flights')}}"><i class="si si-users"></i><span
+                        <a href="{{url('admin/hotels')}}"><i class="fa fa-building-o"></i><span
+                                    class="sidebar-mini-hide">@lang('general.hotels')</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
                                     class="sidebar-mini-hide">Vuelos</span></a>
                     </li>
                     <li>
