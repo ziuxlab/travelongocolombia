@@ -41,6 +41,7 @@ class ProductController extends Controller
      */
     public function list($type)
     {
+        $products = Product::where('type', $type)->where('local', \Lang::getLocale())->paginate(3); // pendiente comprobar con el cambio de idioma
 
         $view = '';
         switch ($type) {
