@@ -41,7 +41,6 @@ class ProductController extends Controller
      */
     public function list($type)
     {
-        $products = Product::where('type', $type)->paginate(3);
 
         $view = '';
         switch ($type) {

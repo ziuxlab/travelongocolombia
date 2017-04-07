@@ -1,4 +1,3 @@
-<!--pendiente, genera excepcion con el ckeditor -->
 <script type="text/javascript">
     var nuevoalias = jQuery.noConflict();
     nuevoalias(document).ready(function() {
@@ -11,12 +10,12 @@
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-              $(wrapper).append('<div>{!! Form::text('itinerary', null, ['class' => 'form-control','name'=>'itinerary[]']) !!}<a href="#" class="remove_field"><i class="fa fa-times text-danger"></i></a></div>'); //add input box
+              $(wrapper).append('<div class="row"><br><div class="col-sm-11">{!! Form::text('itinerary', null, ['class' => 'form-control','name'=>'itinerary[]']) !!}</div><div class="col-sm-1"><a href="#" class="remove_field"><i class="fa fa-times fa-2x text-danger"></i></a></div></div></div>'); //add input box
           }
       });
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
+        e.preventDefault(); $(this).parents('div .row').remove(); x--;
     })
 });
 </script>

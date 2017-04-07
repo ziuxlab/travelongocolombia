@@ -109,8 +109,13 @@
                     {!! Form::text('itinerary', $first, ['class' => 'form-control','placeholder'=>'Breackfast', 'name'=>'itinerary[]']) !!}
                     @foreach($items as $i)
                         @if($i!=null)
-                            <div>{!! Form::text('itinerary', $i, ['class' => 'form-control','name'=>'itinerary[]']) !!}
-                                <a href="#" class="remove_field"><i class="fa fa-times text-danger"></i></a></div>
+                            <div class="row"><br>
+                            <div class="col-sm-11">
+                            {!! Form::text('itinerary', $i, ['class' => 'form-control','name'=>'itinerary[]']) !!}
+                            </div>
+                            <div class="col-sm-1">
+                            <a href="#" class="remove_field"><i class="fa fa-times fa-2x text-danger"></i></a>
+                            </div>
                         @endif
                     @endforeach
                 </div>
@@ -124,9 +129,7 @@
             <div class="panel-body">
                 <div class="input_fields_wrap">
                     <button class="btn btn-default push add_field_button">add field</button>
-                    <div>
                         {!! Form::text('itinerary', null, ['class' => 'form-control','placeholder'=>'Breackfast', 'name'=>'itinerary[]']) !!}
-                    </div>
                 </div>
             </div>
         </div>

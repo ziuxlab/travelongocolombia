@@ -9,7 +9,7 @@
                 $("#" + content).html(data);
             },
             error: function (xhr, status, error) {
-                alert(xhr.responseText);
+                //alert(xhr.responseText);
             }
         });
     }

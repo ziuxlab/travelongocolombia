@@ -8,6 +8,7 @@
 
 @section('style')
 <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 @stop
 
 @section('breadcrumb')
@@ -38,13 +39,10 @@
     </div>
 
     @include('admin.activities._formulario_photos')
-
 </div>
 @stop
 
 @section('scripts')
-@include('layouts.admin.partials._ckeditor')
 @include('layouts.admin.partials._sweetalert', ['name'=>'La imagen'])
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 @include('layouts.admin.partials._itinerary')
 @stop

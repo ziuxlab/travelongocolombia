@@ -9,7 +9,6 @@
                class="glyphicon  {{ Session::get('product_field')=='tittle'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
             </i>
         </th>
-
         <th class="hidden-xs">
             <a href="javascript:ajaxLoad('products/list/1?field=slug_url&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
                 Url
@@ -58,10 +57,10 @@
                     <a href="{{url('admin/activities/'. $activity->id . '/edit')}}"
                        class="btn btn-xs btn-default"
                        type="button" data-toggle="tooltip" title=""
-                       data-original-title="Editar Actividad"><i class="fa fa-pencil"></i></a>
+                       data-original-title="@lang('general.edit')"><i class="fa fa-pencil"></i></a>
                     <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                             data-toggle="tooltip" data-id="{{ $activity->id }}" title=""
-                            data-original-title="Eliminar Actividad"><i class="fa fa-times"></i>
+                            data-original-title="@lang('general.delete')"><i class="fa fa-times"></i>
                         {!! Form::open(['action'=> ['ActivityController@destroy',$activity->id],'method'=>'delete','id'=>'item_'.$activity->id]) !!}
                         {!! Form::close() !!}
                     </button>
@@ -77,5 +76,11 @@
     $('.pagination a').on('click', function (event) {
         event.preventDefault();
         ajaxLoad($(this).attr('href'));
+    });
+</script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
 </script>

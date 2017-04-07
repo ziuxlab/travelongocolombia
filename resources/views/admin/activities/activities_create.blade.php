@@ -38,8 +38,6 @@
 @stop
 
 @section('scripts')
-@include('layouts.admin.partials._ckeditor')
-<!-- pendiente: genera error -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 @include('layouts.admin.partials._itinerary')
 

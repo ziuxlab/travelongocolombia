@@ -70,6 +70,7 @@ return [
     'imagesf' => ':name images',
     'imagesm' => ':name images',
     'hotels' => 'hotels',
+    'categories' => 'Categories',
     
    
 ];
