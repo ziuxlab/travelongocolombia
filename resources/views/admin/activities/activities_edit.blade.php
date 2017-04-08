@@ -22,7 +22,7 @@
         <div CLASS="block block-bordered block-rounded block-themed ">
             {!! Form::model($activity,['action'=> ['ActivityController@update',$activity->id],'method' => 'put','files' => 'true']) !!}
             <div class="block-header bg-primary">
-                <h3 class="h4">@lang('general.detailsf',['name'=>'Activiy'])</h3>
+                <h3 class="h4">@lang('general.detailsf',['name'=>'Activity'])</h3>
             </div>
             <div class="block-content block-content-full block-content-narrow">
                 @php $form = 'edit'; @endphp

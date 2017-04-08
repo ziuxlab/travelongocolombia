@@ -19,7 +19,7 @@
         <div CLASS="block block-bordered block-rounded block-themed ">
             {!! Form::open(['action'=> ['ActivityController@store'],'files' => 'true']) !!}
             <div class="block-header bg-primary">
-                <h3 class="h4">@lang('general.newf',['name'=>'Activiy']) </h3>
+                <h3 class="h4">@lang('general.newf',['name'=>'Activity']) </h3>
             </div>
             <div class="block-content block-content-full block-content-narrow">
                 @php $form = 'create'; @endphp

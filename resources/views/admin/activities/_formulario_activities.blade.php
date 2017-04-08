@@ -116,6 +116,7 @@
                             <div class="col-sm-1">
                             <a href="#" class="remove_field"><i class="fa fa-times fa-2x text-danger"></i></a>
                             </div>
+                            </div>
                         @endif
                     @endforeach
                 </div>

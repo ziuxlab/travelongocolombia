@@ -1,3 +1,24 @@
+<!-- options -->
+<div class="row">
+ <div class="col-lg-6">
+    <a href="{{url('admin/activities/create')}}" class="btn btn-primary push"> + @lang('general.create')</a>
+ </div>
+<div class="col-lg-6">
+    <div class="input-group">  
+      <span class="input-group-addon" id="basic-addon2"><i
+            class="glyphicon glyphicon-search"></i></span>
+      <input type="text" class="form-control" placeholder="@lang('general.tittle')" value="{{ Session::get('product_search')}}" onkeydown="if (event.keyCode == 13) ajaxLoad('products/list/1?ok=1&search='+this.value)">
+    </div>
+</div>
+</div>
+<!-- end options -->
+@if(Session::get('product_search') == '' and count($products) == 0)
+<p>@lang('general.notproductsf',['name'=>'activities'])</p>
+@elseif(Session::get('product_search') != '' and count($products) == 0)
+<p>@lang('general.notresults')</p>
+@else
+<!-- list activities -->
+<div class="table-responsive">
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -26,7 +47,7 @@
             </i>
 
         </th>
-        <th class="">
+        <th class="" style="width: 15%;">
             <a href="javascript:ajaxLoad('products/list/1?field=local&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
                 @lang('general.language')
             </a>
@@ -57,10 +78,10 @@
                     <a href="{{url('admin/activities/'. $activity->id . '/edit')}}"
                        class="btn btn-xs btn-default"
                        type="button" data-toggle="tooltip" title=""
-                       data-original-title="@lang('general.edit')"><i class="fa fa-pencil"></i></a>
+                       data-original-title="Editar"><i class="fa fa-pencil"></i></a>
                     <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                             data-toggle="tooltip" data-id="{{ $activity->id }}" title=""
-                            data-original-title="@lang('general.delete')"><i class="fa fa-times"></i>
+                            data-original-title="Eliminar"><i class="fa fa-times"></i>
                         {!! Form::open(['action'=> ['ActivityController@destroy',$activity->id],'method'=>'delete','id'=>'item_'.$activity->id]) !!}
                         {!! Form::close() !!}
                     </button>
@@ -71,7 +92,11 @@
     </tbody>
 </table>
 <div>{!! str_replace('/?','?',$products->render()) !!}</div>
+</div>
+<!-- end list activities -->
+@endif
 
+@include('layouts.admin.partials._sweetalert', ['name'=>'La actividad'])
 <script>
     $('.pagination a').on('click', function (event) {
         event.preventDefault();
@@ -84,3 +109,4 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
 </script>
+

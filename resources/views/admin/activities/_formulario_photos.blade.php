@@ -1,7 +1,7 @@
 <div class="col-sm-12">
     <div CLASS="block block-bordered block-rounded block-themed ">
         <div class="block-header bg-primary">
-            <h3 class="h4">@lang('general.imagesf',['name'=>'Activiy'])</h3>
+            <h3 class="h4">@lang('general.imagesf',['name'=>'Activity'])</h3>
         </div>
         <div class="block-content block-content-full block-content-narrow">
             <div class="block-content table-responsive">

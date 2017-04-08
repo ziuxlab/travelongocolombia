@@ -52,8 +52,6 @@ class ProductController extends Controller
             $products = Product::where('type', $type)->where('local', \Lang::getLocale())->paginate(3);
         }
         
-        // pendiente comprobar con el cambio de idioma
-
         $view = '';
         switch ($type) {
             case 0:
@@ -78,13 +76,14 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function listAdmin($type)
-    {
+    {   
+        Session::put('product_search', Input::has('ok') ? Input::get('search') : (Session::has('product_search') ? Session::get('product_search') : ''));
         Session::put('product_field',
             Input::has('field') ? Input::get('field') : ( Session::has('product_field') ? Session::get('product_field') : 'slug_url' ));
         Session::put('product_sort',
             Input::has('sort') ? Input::get('sort') : ( Session::has('product_sort') ? Session::get('product_sort') : 'asc' ));
 
-        $products = Product::where('type', $type)->orderBy(Session::get('product_field'),
+        $products = Product::where('type', $type)->where('tittle', 'like', '%' . Session::get('product_search') . '%')->orderBy(Session::get('product_field'),
             Session::get('product_sort'))->paginate(5);
 
         $view = '';

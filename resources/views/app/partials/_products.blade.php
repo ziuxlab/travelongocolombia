@@ -2,7 +2,7 @@
     <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
          style="background-image: url('{{asset($product->photos->sortBy('order')->first()->img)}}');">
         <div class="mheight-150">
-            @if($product->discount > 0 or $product->discoun <> null)
+            @if($product->discount > 0 or $product->discount <> null)
                 <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
                     <div class="ribbon-box font-w600">
                         {{$product->discount}}% Off

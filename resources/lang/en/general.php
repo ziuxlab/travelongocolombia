@@ -71,6 +71,8 @@ return [
     'imagesm' => ':name images',
     'hotels' => 'hotels',
     'categories' => 'Categories',
-    
+    'notresults' => 'No results were found for your search.',
+    'notproductsf' => 'There are no registered :name.',
+    'notproductsm' => 'There are no registered :name.',
    
 ];

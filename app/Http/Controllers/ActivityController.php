@@ -188,7 +188,7 @@ class ActivityController extends Controller
      */
     public function destroy($id)
     {
-        Product::destroy($id);
+       Product::destroy($id);
     }
 
 
