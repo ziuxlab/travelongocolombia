@@ -39,9 +39,20 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function list($type)
+    public function list(Request $request,$type )
     {
-        $products = Product::where('type', $type)->where('local', \Lang::getLocale())->paginate(3); // pendiente comprobar con el cambio de idioma
+        
+        if (isset($request->feature)){
+            
+            $products =Product::with('features')->where('type', $type)->where('local', \Lang::getLocale())
+                      ->whereHas('features', function ($query) use ($request) {
+                          $query->where('feature_id',  $request->feature);
+                      })->paginate(3);
+        }else{
+            $products = Product::where('type', $type)->where('local', \Lang::getLocale())->paginate(3);
+        }
+        
+        // pendiente comprobar con el cambio de idioma
 
         $view = '';
         switch ($type) {
@@ -50,6 +61,9 @@ class ProductController extends Controller
                 break;
             case 1:
                 $view = 'app.partials.activities-list';
+                break;
+            case 2:
+                $view = 'app.partials.activities-list'; //hoteles
                 break;
         }
 

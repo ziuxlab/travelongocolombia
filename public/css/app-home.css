@@ -19726,6 +19726,17 @@ nav {
     bottom: 0px;
 }
 
+.price-banner{
+    bottom: -3px;
+    position: relative;
+    background-color: rgba(204, 86, 18, 0.9) /*#c35413*/;
+}
+
+.book{
+    top: -30px;
+    position: relative;
+}
+
 .modal {
     text-align: center;
     padding: 0!important;
@@ -20306,11 +20317,25 @@ footer {
 
 @media (max-width: 992px) {
     /********* medium **********/
+    .book{
+        top: 0px;
+    }
     
 }
 
 @media (max-width: 768px) {
     /********* small **********/
+    
+    .text-center-xs{
+        text-align: center;
+    }
+    
+    .price-banner{
+        position: relative;
+        margin-top: 20px;
+        background-color: #EB6212 /*#c35413*/;
+    }
+   
     .a {
         order: 2;
     }
@@ -20402,6 +20427,8 @@ footer {
 
 @media screen and (max-width: 576px) {
     /********* extra small **********/
+    
+    
     .h1 {
         font-size: 28px !important;
         letter-spacing: -1px;

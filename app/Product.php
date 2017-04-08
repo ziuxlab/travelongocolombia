@@ -33,4 +33,9 @@
         {
             return $this->hasMany('App\Photo', 'product_id');
         }
+    
+        public function features()
+        {
+            return $this->belongsToMany('App\Feature','feature_products');
+        }
     }

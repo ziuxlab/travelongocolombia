@@ -25,7 +25,6 @@
             View::share('menu', Page::whereMenu(1)->orderBy('menu_order')->get());
             View::share('products', Product::with('photos')->get());
             View::share('features', Feature::all());
-            
         }
         
         /**

@@ -108,7 +108,7 @@ class ActivityController extends Controller
     {
         $item = Product::where('slug_url', $url)->firstOrFail();
 
-        return view('app.activities-item', compact('item'));
+        return view('app.product-item', compact('item'));
     }
 
 

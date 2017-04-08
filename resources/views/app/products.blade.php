@@ -43,16 +43,16 @@
             
             
             <div class="col-md-9">
+                <div id="content"></div>
                 @foreach($products->where('local',App::getLocale())->where('type',0) as $product)
                     @include('app.partials._products')
                 @endforeach
             </div>
         </div>
     </div>
-
-
 @stop
 
 @section('scripts')
     {{$Config->scripts_footer}}
+    @include('layouts.app.partials._list', ['type'=> 0])
 @stop

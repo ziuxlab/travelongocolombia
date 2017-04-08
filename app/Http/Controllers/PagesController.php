@@ -4,6 +4,7 @@
     
     use App\Components;
     use App\Page;
+    use App\Product;
     use App\User;
     use HttpOz\Roles\Models\Role;
     use Illuminate\Http\Request;
@@ -113,6 +114,7 @@
                 //tipo 1 grupo de componentes
                 
                 $view = Page::extract_views($item);
+                
                 return view($view, compact('item'));
             }
         }

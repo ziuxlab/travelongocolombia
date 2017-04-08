@@ -30,35 +30,18 @@
 
 @section('contenido')
     @include('app.partials.banner-item')
-    <div class="content-boxed content content-full">
+    <div class="content-boxed content">
         <div class="row">
-            <div class="col-md-8 bg-white">
+            <div class="col-md-8 push-30 bg-white">
                 <div class="content-mini content-mini-full border-b text-center overflow-hidden">
                     <ul class="list-icon-item h3 text-muted flex-between">
-                        <li class="     ">
-                            <i class="fa fa-wifi"></i>
-                            <div class="h5">wifi</div>
-                        </li>
-                        <li class="  push-20-l">
-                            <i class="fa fa-bullhorn"></i>
-                            <div class="h5">traductor</div>
-                        </li>
-                        <li class="     push-20-l">
-                            <i class="fa  fa-support"></i>
-                            <div class="h5">pool</div>
-                        </li>
-                        <li class="    push-20-l">
-                            <i class="fa fa-tv"></i>
-                            <div class="h5">plasma tv</div>
-                        </li>
-                        <li class="      push-20-l">
-                            <i class="fa fa-coffee"></i>
-                            <div class="h5">breakfast</div>
-                        </li>
-                    
+                        @foreach($item->features->where('type',$item->type) as $feature)
+                            <span class=" push-20-r">
+                                <i class="{{$feature->icon}}"></i>
+                                <div class="h5">{{$feature->feature}}</div>
+                            </span>
+                        @endforeach
                     </ul>
-                
-                
                 </div>
                 <div class="bg-white content content-narrow">
                     <div class=" push-20  ">
@@ -151,7 +134,7 @@
                 </div>
                 <div class="bg-white content content-full content-narrow">
                     <h3 class="h3 push-15 "><i class=" text-primary fa fa-camera-retro"></i> Photos</h3>
-                @if(count($item->photos)>0)
+                    @if(count($item->photos)>0)
                         <div class="">
                             <!-- Slider -->
                             <div class="js-slider">
@@ -165,9 +148,9 @@
                         <div class="">
                             <div class="slider-nav">
                                 @foreach($item->photos as $photo)
-                        
+                                    
                                     <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
-                    
+                                
                                 @endforeach
                             </div>
                         </div>
@@ -189,7 +172,6 @@
     <script src="{{asset('js/plugins/slick/slick.min.js')}}"></script>
     <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
     <script>
-       
     
     
     

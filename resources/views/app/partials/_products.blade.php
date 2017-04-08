@@ -12,24 +12,27 @@
         </div>
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
-        <a href="{{url('/item')}}">
-            <h2 class="h3">{{$product->tittle}}</h2>
-        </a>
+        @if($product->type == 0)
+            <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}">
+                <h2 class="h3">{{$product->tittle}}</h2>
+            </a>
+        @endif
+        @if($product->type == 1)
+            <a href="{{url(trans('general.activities').'/'.$product->slug_url)}}">
+                <h2 class="h3">{{$product->tittle}}</h2></a>
+        @endif
+        @if($product->type == 2)
+            <a href="{{url(trans('general.hotels').'/'.$product->slug_url)}}">
+                <h2 class="text-c h3">{{$product->tittle}}</h2></a>
+        @endif
         <p class="push-15">{{substr($product->meta_description,0,170)}} [...]
         </p>
         <div class="push-20">
-            <button class="btn btn-default ">
-                <span class="glyphicon glyphicon-plane"></span>
-            </button>
-            <button class="btn btn-default  push-10-l">
-                <span class="fa fa-building-o"></span>
-            </button>
-            <button class="btn btn-default push-10-l">
-                <span class="fa fa-calendar"></span>
-            </button>
-            <button class="btn btn-default push-10-l">
-                <span class="fa fa-money"></span>
-            </button>
+            @foreach($product->features->where('type',$product->type)->take(5) as $feature)
+                <span style="cursor: default" class="btn bg-gray-lighter border push-10-r" data-original-title="{{$feature->feature}}" data-toggle="tooltip" data-placement="top">
+                <i class="{{$feature->icon}}"></i>
+                </span>
+            @endforeach
         </div>
     </div>
     <div class="col-md-2 col-sm-3 col-xs-12  content content-full text-center flex-center">

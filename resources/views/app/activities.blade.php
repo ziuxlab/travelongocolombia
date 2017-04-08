@@ -32,12 +32,9 @@
             <div class="block">
                 <div class="list-group">
                     <li class="list-group-item active h5">@lang('general.categories')</li>
-                   
                         @foreach($features->where('type',1) as $item)
-                               <a href="#" class="list-group-item  h5"><i class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
+                               <a href="{{url('products/list/1?feature='.$item->id)}}" class="list-group-item  h5"><i class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
                         @endforeach
-                 
-                    
                 </div>
             </div>
             @include('app.partials.needhelp')

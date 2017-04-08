@@ -98,7 +98,6 @@ class HotelController extends Controller
     public function show($url)
     {
         //
-        
         $item = Product::where('slug_url', $url)->firstOrFail();
         return view('app.product-item', compact('item'));
     }
