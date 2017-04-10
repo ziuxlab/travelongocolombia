@@ -16,4 +16,14 @@
     $(document).ready(function () {
         ajaxLoad('products/list/{{$type}}');
     });
+    $('.list-group a').on('click', function (event) {
+        event.preventDefault();
+        ajaxLoad($(this).attr('href'));
+    });
+    $('.filter').on('click', function (event) {
+        event.preventDefault();
+        var city = $('#city').val()
+        ajaxLoad('products/list/{{$type}}?city='+city);
+    });
 </script>
+

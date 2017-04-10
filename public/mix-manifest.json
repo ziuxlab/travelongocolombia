@@ -1,5 +1,6 @@
 {
   "/mix.js": "/mix.js",
+  "/css/main.css": "/css/main.css",
   "/admin/css/app-admin.css": "/admin/css/app-admin.css",
   "/css/app-home.css": "/css/app-home.css"
 }

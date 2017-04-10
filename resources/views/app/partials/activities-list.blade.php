@@ -17,10 +17,4 @@
         event.preventDefault();
         ajaxLoad($(this).attr('href'));
     });
-
-    $('.list-group a').on('click', function (event) {
-        event.preventDefault();
-        console.log('1')
-        ajaxLoad($(this).attr('href'));
-    });
 </script>

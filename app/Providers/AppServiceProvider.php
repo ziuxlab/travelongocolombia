@@ -2,6 +2,7 @@
     
     namespace App\Providers;
     
+    use App\city;
     use App\Config;
     use App\Feature;
     use App\Page;
@@ -25,6 +26,7 @@
             View::share('menu', Page::whereMenu(1)->orderBy('menu_order')->get());
             View::share('products', Product::with('photos')->get());
             View::share('features', Feature::all());
+            View::share('cities', city::with('products')->get());
         }
         
         /**

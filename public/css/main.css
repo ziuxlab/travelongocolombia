@@ -3,10 +3,10 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "icomoon", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #646464;
-  background-color: #f5f5f5;
+  background-color: #F9F7FA;
 }
 .no-focus *:focus {
   outline: 0 !important;
@@ -550,7 +550,7 @@ a.bg-primary-lighter:focus {
   background-color: #f39a66;
 }
 .bg-body {
-  background-color: #f5f5f5;
+  background-color: #F9F7FA;
 }
 .bg-success {
   background-color: #46c37b;
@@ -5176,7 +5176,7 @@ a.list-group-item:focus {
   overflow-x: hidden;
 }
 #main-container {
-  background-color: #f5f5f5;
+  background-color: #F9F7FA;
 }
 .content {
   margin: 0 auto;
@@ -10931,7 +10931,7 @@ a.bg-smooth-lighter:focus {
 }
 .jvectormap-tip {
   padding: 6px 8px;
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "icomoon", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #2F4781;
   border: none;
   border-radius: 0;
@@ -11075,7 +11075,7 @@ div.tagsinput span.tag {
   height: 22px;
   line-height: 18px;
   color: #fff;
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "icomoon", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   background-color: #EB6212;
   border: none;
@@ -11175,7 +11175,7 @@ div.tagsinput span.tag a:hover {
 .select2-container--default .select2-search--inline .select2-search__field {
   padding-right: 0;
   padding-left: 0;
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "icomoon", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-shadow: none;
 }
 .form-material .select2-container--default .select2-search--inline .select2-search__field {
@@ -11183,7 +11183,7 @@ div.tagsinput span.tag a:hover {
 }
 .select2-search--dropdown .select2-search__field {
   padding: 6px 12px;
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "icomoon", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   box-shadow: none;
 }

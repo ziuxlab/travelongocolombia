@@ -29,6 +29,7 @@ class CreateProductsTable extends Migration
             $table->tinyInteger('type')->unsigned()->default(0); //0 packages, 1 activities, 2 hotels
             $table->string('local',5); //en or es
             $table->string('address')->nullable(); //ubicacion de la actividad
+            $table->integer('city_id')->unsigned()->nullable(); //ubicacion de la actividad
             $table->softDeletes();
             $table->timestamps();
         });

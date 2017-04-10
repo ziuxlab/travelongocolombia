@@ -29,21 +29,12 @@
         <div class="row">
             <!-- sider -->
             <div class="col-md-3 push ">
-                <div class="block">
-                    <div class="list-group">
-                        <li class="list-group-item active h5"> Categories</li>
-                        @foreach($features->where('type',2) as $item)
-                            <a href="#" class="list-group-item  h5"><i class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
-                        @endforeach
-                    </div>
-                </div>
+                @include('app.partials._filters', ['type'=> 2])
                 @include('app.partials.needhelp')
             </div>
             <!-- end sider -->
             <div class="col-md-9">
-                @foreach($products->where('local',App::getLocale())->where('type',2) as $product)
-                    @include('app.partials._products')
-                @endforeach
+                <div id="content"></div>
             </div>
         </div>
     </div>
@@ -53,4 +44,5 @@
 
 @section('scripts')
     {{$Config->scripts_footer}}
+    @include('layouts.app.partials._list', ['type'=> 2])
 @stop

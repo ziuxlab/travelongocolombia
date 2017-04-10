@@ -29,14 +29,7 @@
         <div class="row">
             <!-- sider -->
             <div class="col-md-3 push ">
-                <div class="block">
-                    <div class="list-group">
-                        <li class="list-group-item active h5"> Categories</li>
-                        @foreach($features->where('type',0) as $item)
-                            <a href="#" class="list-group-item  h5"><i class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
-                        @endforeach
-                    </div>
-                </div>
+                @include('app.partials._filters', ['type'=> 0])
                 @include('app.partials.needhelp')
             </div>
             <!-- end sider -->
@@ -44,9 +37,6 @@
             
             <div class="col-md-9">
                 <div id="content"></div>
-                @foreach($products->where('local',App::getLocale())->where('type',0) as $product)
-                    @include('app.partials._products')
-                @endforeach
             </div>
         </div>
     </div>

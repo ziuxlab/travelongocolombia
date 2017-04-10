@@ -1,11 +1,11 @@
 <?php
-
-use App\Product;
-use Illuminate\Database\Seeder;
-
-class ProductsSeeder extends Seeder
-{
-
+    
+    use App\Product;
+    use Illuminate\Database\Seeder;
+    
+    class ProductsSeeder extends Seeder
+    {
+        
         /**
          * Run the database seeds.
          *
@@ -25,7 +25,8 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
-                ]);
+                'city_id'           => 1
+            ]);
             
             Product::create([
                 'id'             => 2,
@@ -39,7 +40,8 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
-                ]);
+                'city_id'           => 1
+            ]);
             
             Product::create([
                 'id'             => 3,
@@ -53,7 +55,8 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
-                ]);
+                'city_id'           => 1
+            ]);
             
             
             Product::create([
@@ -70,7 +73,8 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
-                ]);
+                'city_id'             => 2
+            ]);
             
             Product::create([
                 'id'               => 5,
@@ -86,7 +90,8 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
-                ]);
+                'city_id'             => 3
+            ]);
             
             Product::create([
                 'id'               => 6,
@@ -102,8 +107,9 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
-                ]);
-    
+                'city_id'             => 4
+            ]);
+            
             Product::create([
                 'id'             => 7,
                 'tittle'         => 'Parque del café',
@@ -116,8 +122,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'es',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 8,
                 'tittle'         => 'Panaca',
@@ -130,8 +137,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'es',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 9,
                 'tittle'         => 'Recuca',
@@ -144,8 +152,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'es',
                 'type'           => 1,
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'               => 10,
                 'tittle'           => 'prueba tittle',
@@ -160,8 +169,9 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
+                'city_id'             => 1
             ]);
-    
+            
             Product::create([
                 'id'               => 11,
                 'tittle'           => 'prueba tittle',
@@ -176,8 +186,9 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
+                'city_id'             => 1
             ]);
-    
+            
             Product::create([
                 'id'               => 12,
                 'tittle'           => 'prueba tittle',
@@ -192,6 +203,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
+                'city_id'             => 2
             ]);
             Product::create([
                 'id'               => 13,
@@ -207,6 +219,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 4
             ]);
             Product::create([
                 'id'               => 14,
@@ -222,6 +235,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 4
             ]);
             Product::create([
                 'id'               => 15,
@@ -237,6 +251,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'en',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 3
             ]);
             Product::create([
                 'id'               => 16,
@@ -252,6 +267,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 3
             ]);
             Product::create([
                 'id'               => 17,
@@ -267,6 +283,7 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 3
             ]);
             Product::create([
                 'id'               => 18,
@@ -282,8 +299,9 @@ class ProductsSeeder extends Seeder
                 'local'            => 'es',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
+                'city_id'             => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 19,
                 'tittle'         => 'tour around armenia and meal at geranios restaurant',
@@ -296,8 +314,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 20,
                 'tittle'         => 'rancho california enjoy since extrem sports to nature walks or fishing ',
@@ -310,8 +329,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 21,
                 'tittle'         => 'tour buenavista, pijao -  filandia, enjoy the most beautiful views, crafts and delicious coffee  concorde ',
@@ -324,8 +344,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 22,
                 'tittle'         => 'botanical garden',
@@ -338,8 +359,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 23,
                 'tittle'         => 'salento, valle del cocora  - crafts town ',
@@ -352,8 +374,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 24,
                 'tittle'         => 'museo quimbaya ',
@@ -366,8 +389,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 1
             ]);
-    
+            
             Product::create([
                 'id'             => 25,
                 'tittle'         => 'waterfalls in cordoba (picnic lunch  in platano or congo leaves)',
@@ -380,8 +404,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 26,
                 'tittle'         => ' spring water san vicente risaralda (lunch included)',
@@ -394,8 +419,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 27,
                 'tittle'         => 'iced mountain of  santa isabel  risaralda (lunch included)',
@@ -408,8 +434,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 28,
                 'tittle'         => 'shopping, down town, dinner at solar restaurant',
@@ -422,8 +449,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 29,
                 'tittle'         => 'lagoon  of  otun risaralda   (lunch included)',
@@ -436,8 +464,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 30,
                 'tittle'         => 'balsaje across a river called "la vieja"  (lunch included)',
@@ -450,8 +479,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 31,
                 'tittle'         => 'nature walk calarca (picnic lunch  in platano or congo leaves)',
@@ -464,8 +494,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 4
             ]);
-    
+            
             Product::create([
                 'id'             => 32,
                 'tittle'         => 'paintball ',
@@ -478,8 +509,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 33,
                 'tittle'         => 'canopy ',
@@ -492,8 +524,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 34,
                 'tittle'         => 'camping monteroca',
@@ -506,8 +539,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 35,
                 'tittle'         => 'ecological park peñas blancas',
@@ -520,8 +554,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 36,
                 'tittle'         => 'calima lake',
@@ -534,8 +569,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 37,
                 'tittle'         => ' jeep panoramico',
@@ -548,8 +584,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 2
             ]);
-    
+            
             Product::create([
                 'id'             => 38,
                 'tittle'         => 'parque de la vida',
@@ -562,8 +599,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
-    
+            
             Product::create([
                 'id'             => 39,
                 'tittle'         => 'party  (be clear it is just dancing and drinks, no drugs, we don´t know how to say that politely) ',
@@ -576,8 +614,9 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
-    
+            
             Product::create([
                 'id'             => 40,
                 'tittle'         => 'barcelona  (try forcha, kumis, sirope, pandebonos and traditional food) ',
@@ -590,6 +629,7 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
             Product::create([
                 'id'             => 41,
@@ -603,6 +643,7 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
             Product::create([
                 'id'             => 42,
@@ -616,12 +657,13 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
             Product::create([
                 'id'             => 43,
-                'tittle'         => 'down town ',
-                'description'    => 'down town .',
-                'itinerary'      => 'down town ',
+                'tittle'         => 'down town',
+                'description'    => 'down town.',
+                'itinerary'      => 'down town',
                 'slug_url'       => str_slug('down town '),
                 'days'           => 1,
                 'price_adults'   => '125',
@@ -629,6 +671,7 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
             Product::create([
                 'id'             => 44,
@@ -642,6 +685,7 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 3
             ]);
             Product::create([
                 'id'             => 45,
@@ -655,6 +699,7 @@ class ProductsSeeder extends Seeder
                 'local'          => 'en',
                 'type'           => 1, //activity
                 'discount'       => 0, //porcentaje
+                'city_id'           => 4
             ]);
             
         }

@@ -2,6 +2,7 @@
     
     namespace App;
     
+    use Darryldecode\Cart\Validators\CartItemValidator;
     use Illuminate\Database\Eloquent\Model;
     use Illuminate\Database\Eloquent\SoftDeletes;
     
@@ -27,6 +28,7 @@
             'type',             // '0'=>package,'1'=>activity,'2'=>hotel,
             'description',      // breve resumen de la actividad, hotel o paquete
             'address',          // ubicacion de la actividad
+            'city_id',        // ciudad donde se realiza la actividad o paquete
         ];
         
         public function photos()
@@ -37,5 +39,10 @@
         public function features()
         {
             return $this->belongsToMany('App\Feature','feature_products');
+        }
+    
+        public function city()
+        {
+            return $this->belongsTo(city::class);
         }
     }

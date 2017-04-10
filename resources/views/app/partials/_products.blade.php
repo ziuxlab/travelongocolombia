@@ -14,16 +14,16 @@
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
         @if($product->type == 0)
             <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}">
-                <h2 class="h3">{{$product->tittle}}</h2>
+                <h2 class="h3 text-capitalize">{{$product->tittle}}</h2>
             </a>
         @endif
         @if($product->type == 1)
             <a href="{{url(trans('general.activities').'/'.$product->slug_url)}}">
-                <h2 class="h3">{{$product->tittle}}</h2></a>
+                <h2 class="h4 text-capitalize">{{substr($product->tittle,0,36)}}</h2></a>
         @endif
         @if($product->type == 2)
             <a href="{{url(trans('general.hotels').'/'.$product->slug_url)}}">
-                <h2 class="text-c h3">{{$product->tittle}}</h2></a>
+                <h2 class="text-capitalize h3">{{$product->tittle}}</h2></a>
         @endif
         <p class="push-15">{{substr($product->meta_description,0,170)}} [...]
         </p>
