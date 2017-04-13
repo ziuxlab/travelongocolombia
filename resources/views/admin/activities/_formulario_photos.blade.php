@@ -1,14 +1,14 @@
 <div class="col-sm-12">
     <div CLASS="block block-bordered block-rounded block-themed ">
         <div class="block-header bg-primary">
-            <h3 class="h4">@lang('general.imagesf',['name'=>'Activity'])</h3>
+            <h3 class="h4">@lang('general.imagesf',['name'=>trans('form_product.activity')])</h3>
         </div>
         <div class="block-content block-content-full block-content-narrow">
             <div class="block-content table-responsive">
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th>imagen</th>
+                        <th>@lang('general.image')</th>
                         <th>@lang('general.name')</th>
                         <th class="hidden-xs" style="width: 15%;">@lang('general.order')</th>
                         <th class="text-center" style="width: 100px;">@lang('general.actions')</th>

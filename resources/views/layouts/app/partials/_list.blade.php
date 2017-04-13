@@ -15,7 +15,7 @@
         });
     }
     $(document).ready(function () {
-        ajaxLoad('{{url("products/list/".$type)}}');
+         ajaxLoad('products/list/{{$type}}'); // si se pone url() se toma la ruta absoluta y al admin le aparece el listado público 
     });
     $('.list-group a').on('click', function (event) {
         event.preventDefault();

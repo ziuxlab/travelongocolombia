@@ -40,7 +40,7 @@
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li class="dropdown-header">@lang('cabecera.Profile')</li>
                                     <li>
-                                        <a tabindex="-1" href="{{url('profile')}}">
+                                        <a tabindex="-1" href="{{url('user/account/dashboard')}}">
                                             <i class="si si-user pull-right"></i>
                                             @lang('cabecera.Profile')
                                         </a>

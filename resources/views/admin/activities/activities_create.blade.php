@@ -13,13 +13,13 @@
 @stop
 
 @section('contenido')
-@include('layouts.admin.partials._titulos_CRUD',['h1'=>'Activities','h2'=>'Create'])
+@include('layouts.admin.partials._titulos_CRUD',['h1'=>trans('form_product.activities'),'h2'=>trans('form_product.create')])
 <div class="content overflow-hidden">
     <div class="col-sm-12">
         <div CLASS="block block-bordered block-rounded block-themed ">
             {!! Form::open(['action'=> ['ActivityController@store'],'files' => 'true']) !!}
             <div class="block-header bg-primary">
-                <h3 class="h4">@lang('general.newf',['name'=>'Activity']) </h3>
+                <h3 class="h4">@lang('general.newf',['name'=>trans('form_product.activity')]) </h3>
             </div>
             <div class="block-content block-content-full block-content-narrow">
                 @php $form = 'create'; @endphp

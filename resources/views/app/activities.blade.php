@@ -44,6 +44,6 @@
 @stop
 
 @section('scripts')
-    {{$Config->scripts_footer}}
+    {{$Config->scripts_footer}}  
     @include('layouts.app.partials._list', ['type'=> 1])
 @stop

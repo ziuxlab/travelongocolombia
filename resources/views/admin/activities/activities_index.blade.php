@@ -14,7 +14,7 @@
 @stop
 
 @section('contenido')
-@include('layouts.admin.partials._titulos_CRUD',['h1'=>'Activities','h2'=>'Create, Edit and Delete'])
+@include('layouts.admin.partials._titulos_CRUD',['h1'=>trans('form_product.activities'),'h2'=>trans('form_product.actions_sub')])
 <div class="block">
     <div class="block-content">
         <!-- content -->

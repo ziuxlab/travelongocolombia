@@ -108,3 +108,21 @@
         Route::resource('flights', 'FlightController');
         
     });
+
+    /*
+    |--------------------------------------------------------------------
+    | Traveler role user
+    |--------------------------------------------------------------------
+    */
+      Route::group(['prefix' => 'user'], function () {
+
+          Auth::routes();
+          Route::get('account/dashboard', 'DashboardController@index');
+          Route::get('account/edit-profile', 'DashboardController@editProfile');
+          Route::post('account/store-profile', 'DashboardController@updateProfile');
+          Route::get('account/change-password', 'DashboardController@changePassword');
+          Route::post('account/store-password', 'DashboardController@storePassword');
+          Route::get('bookings/booking-history', 'DashboardController@indexBookingHistory');
+          Route::get('bookings/payments', 'DashboardController@indexPaymentHistory');
+          
+    });

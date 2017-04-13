@@ -55,7 +55,7 @@
                class="glyphicon  {{ Session::get('product_field')=='local'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
             </i>
         </th>
-        <th class="hidden-xs">Days</th>
+        <th class="hidden-xs">@lang('general.days')</th>
         <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
     </tr>
     </thead>
@@ -97,16 +97,12 @@
 @endif
 
 @include('layouts.admin.partials._sweetalert', ['name'=>'La actividad'])
-<script>
+@include('layouts.app.partials._tooltip')
+ <script>
     $('.pagination a').on('click', function (event) {
         event.preventDefault();
         ajaxLoad($(this).attr('href'));
     });
 </script>
 
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
 

@@ -23,7 +23,7 @@ return [
     'status' => 'Estado',
     'order' => 'ubicación',
     'language' => 'idioma',
-    'actions' => 'controles',
+    'actions' => 'acciones',
     'components'=>'componentes',
     'create edit delete'=>'crear, editar y eliminar :name',
     'create'=>'crear',
@@ -74,5 +74,6 @@ return [
     'notresults' => 'No se encontraron resultados para su búsqueda.',
     'notproductsf' => 'No hay :name registradas.',
     'notproductsm' => 'No hay :name registrados.',
+    'image'        => 'imagen',
 
 ];

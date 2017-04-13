@@ -15,14 +15,14 @@
 @stop
 
 @section('contenido')
-@include('layouts.admin.partials._titulos_CRUD',['h1'=>'Activities','h2'=>'Edit'])
+@include('layouts.admin.partials._titulos_CRUD',['h1'=>trans('form_product.activities'),'h2'=>trans('form_product.edit')])
 <div class="content overflow-hidden">
 
     <div class="col-sm-12">
         <div CLASS="block block-bordered block-rounded block-themed ">
             {!! Form::model($activity,['action'=> ['ActivityController@update',$activity->id],'method' => 'put','files' => 'true']) !!}
             <div class="block-header bg-primary">
-                <h3 class="h4">@lang('general.detailsf',['name'=>'Activity'])</h3>
+                <h3 class="h4">@lang('general.detailsf',['name'=>trans('form_product.activity')])</h3>
             </div>
             <div class="block-content block-content-full block-content-narrow">
                 @php $form = 'edit'; @endphp
