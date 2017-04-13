@@ -29,19 +29,22 @@
         <div class="row">
             <!-- sider -->
             <div class="col-md-3 push ">
-                @include('app.partials._filters', ['type'=> 2])
+                @include('app.partials._filters', ['type'=> 1])
                 @include('app.partials.needhelp')
             </div>
             <!-- end sider -->
+            
+            <!-- activities -->
             <div class="col-md-9">
                 <div id="content"></div>
             </div>
+            <!-- end activities -->
+            
         </div>
     </div>
-
 @stop
 
 @section('scripts')
     {{$Config->scripts_footer}}
-    @include('layouts.app.partials._list', ['type'=> 2])
+    @include('layouts.app.partials._list', ['type'=> 1])
 @stop

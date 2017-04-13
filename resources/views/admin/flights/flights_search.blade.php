@@ -155,8 +155,9 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            jQuery(".btn-success").on("click", function (e) {
-                App.blocks('#results', 'refresh_toggle');
+            jQuery(".btn-success").button().click( function (e) {
+                //App.blocks('#results', 'refresh_toggle');
+                console.log(1)
                 e.preventDefault();
                 id    = $(this).attr("data-id");
                 data  = $('#flights').serialize();
@@ -168,11 +169,11 @@
                     type: 'POST',
                     data: data,
                     success: function (data) {
-                        App.blocks('#results', 'refresh_toggle');
+                        //App.blocks('#results', 'refresh_toggle');
                         $('#flights-response').html(data)
                     },
                     error: function (data) {
-                        App.blocks('#results', 'refresh_toggle');
+                        //App.blocks('#results', 'refresh_toggle');
                         swal({
                             title: "Error!",
                             text: "Ha ocurrido un error en la busqueda",

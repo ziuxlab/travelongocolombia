@@ -1,5 +1,6 @@
 <script>
     function ajaxLoad(filename, content) {
+        console.log(filename)
         content = typeof content !== 'undefined' ? content : 'content';
         $.ajax({
             type: "GET",
@@ -14,7 +15,7 @@
         });
     }
     $(document).ready(function () {
-        ajaxLoad('products/list/{{$type}}');
+        ajaxLoad('{{url("products/list/".$type)}}');
     });
     $('.list-group a').on('click', function (event) {
         event.preventDefault();
@@ -23,7 +24,7 @@
     $('.filter').on('click', function (event) {
         event.preventDefault();
         var city = $('#city').val()
-        ajaxLoad('products/list/{{$type}}?city='+city);
+        ajaxLoad('{{url("products/list/".$type."?city=")}}'+city);
     });
 </script>
 
