@@ -44,5 +44,9 @@ return [
     'type'            => 'Tipo',
     'title'           => 'Título',
     'value'           => 'Valor',
+    'activity'        => 'Actividad',
+    'package'         => 'Paquete',
+    'notbookings'     => 'No has realizado reservas aún.',
+    'notpayments'     => 'No has realizado pagos aún.',
 
 ];

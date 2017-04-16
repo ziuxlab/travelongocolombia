@@ -9,7 +9,22 @@
                     data-action="side_overlay_close">
                 <i class="fa fa-times"></i>
             </button>
-            <span class="font-w600 push-10-l">User</span>
+              <span>
+                @if (!Auth::guest())
+                    @if(Auth::user()->img == null)
+                        <img class="img-avatar img-avatar32"
+                             src="{{url('img/default.png')}}"
+                             alt="{{Auth::user()->name}}">
+                    @else
+                        
+                        <img class="img-avatar img-avatar32"
+                             src="{{url(Auth::user()->img)}}"
+                             alt="{{Auth::user()->name}}">
+                    @endif
+                    <span class="font-w600 push-10-l">{{Auth::user()->name}}</span>
+                @endif
+                   
+                </span>
         </div>
         <!-- END Side Header -->
 
@@ -27,10 +42,52 @@
                             <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
                         </li>
                     </ul>
-                    <h3 class="block-title">Block</h3>
+                    <h3 class="block-title">Shopping Cart ({{Cart::getTotalQuantity()}})</h3>
                 </div>
                 <div class="block-content">
-                    <p>...</p>
+                       <div class="pull-r-l">
+                        <table class="table table-borderless table-vcenter">
+                            <tbody>
+                            @foreach(Cart::getContent() as $item)
+                            <tr>
+                                <td class="text-center">
+                                    {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}
+                                    <button class="btn btn-danger btn-xs" type="submit"><i class="fa fa-times"></i></button>
+                                    {!! Form::close() !!}
+                                      </td>
+                                <td class="text-center">
+                                    <span class="badge">{{$item->quantity}}</span>
+                                </td>
+                                <td>
+                                    <span class="h5" >{{$item->name}}</span>
+                                    <div class="font-s12 text-muted">Package Tour</div>
+                                </td>
+                                <td class="text-right">
+                                    <div class="font-w600 text-success">${{number_format($item->price) }}</div>
+                                </td>
+                            </tr>
+                            @endforeach
+                            <tr class="success">
+                                <td class="text-right" colspan="3">
+                                    <span class="h4 font-w600">Total</span>
+                                </td>
+                                <td class="text-right">
+                                    <div class="h4 font-w600 text-success">${{number_format(Cart::getTotal())}}</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" colspan="4">
+                                    <a class="btn btn-minw  btn-default push-10-r" href="{{url('cart/clear')}}">
+                                         Clear
+                                    </a>
+                                    <a class="btn  btn-minw btn-orange" href="{{url('cart')}}">
+                                        Checkout
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <!-- END Block -->
@@ -82,7 +139,7 @@
                     <li class="sideli @if($active=='change-password') active @endif">
                         <a href="{{url('/user/account/change-password')}}" class="sidea">
                             <i class="sidei fa fa-unlock-alt fa-lg"></i>
-                            <span class="sides sidebar-mini-hide">@lang('dashboard_user.change_password')</span>
+                            <span class="lbpd sides sidebar-mini-hide">@lang('dashboard_user.change_password')</span>
                         </a>
                     </li>
                     <hr>

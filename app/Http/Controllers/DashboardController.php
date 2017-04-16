@@ -6,16 +6,19 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
-
+    private $user;
     /**
      * DashboardController constructor.
      */
     public function __construct()
     {
         $this->middleware('auth');
+        $this->user = Auth::user();
     }
 
 
@@ -57,7 +60,7 @@ class DashboardController extends Controller
             'image' => 'mimes:jpeg,png,jpg',
             'name'  => 'required|min:6',
             'email' => 'email|required|min:6'
-        ]);
+            ]);
 
         $auth_user = Auth::user();
 
@@ -103,7 +106,7 @@ class DashboardController extends Controller
             'current'               => 'required|min:6',
             'password'              => 'required|min:6|confirmed',
             'password_confirmation' => 'required|min:6'
-        ]);
+            ]);
 
         $auth_user = Auth::user();
 
@@ -118,20 +121,20 @@ class DashboardController extends Controller
 
 
     /**
-     * Display a listing of the booking history.
-     * Muestra una lista del historial de reservas.
+     * Display the view My bookings.
+     * Muestra la vista Mis reservas.
      *
      * @return \Illuminate\Http\Response
      */
     public function indexBookingHistory()
-    {
+    {        
         return view('user.booking_history');
     }
 
 
     /**
-     * Display a listing of the payment history.
-     * Muestra una lista del historial de pagos.
+     * Display the view My payments.
+     * Muestra la vista Mis pagos.
      *
      * @return \Illuminate\Http\Response
      */
@@ -139,5 +142,37 @@ class DashboardController extends Controller
     {
         return view('user.payment_history');
     }
+
+     /**
+     * Display the listing of the booking history.
+     * Muestra the lista del historial de reservas.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function bookingsList($id=null)
+    {
+        if($id!=null){
+           Session::put('booking_id', $id);
+       }
+
+       $bookings = Auth::user()->bookings; 
+       return view('user._list_bookings', compact('bookings'));
+   }
+
+    /**
+     * Display the listing of the payment history.
+     * Muestra the lista del historial de pagos.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function paymentsList($id=null)
+    {
+        if($id!=null){
+           Session::put('payment_id', $id);
+       }
+
+       $bookings_payments = Auth::user()->bookingsPayments(); 
+       return view('user._list_payments', compact('bookings_payments'));
+   }
 
 }

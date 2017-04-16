@@ -117,6 +117,8 @@
       Route::group(['prefix' => 'user'], function () {
 
           Auth::routes();
+          Route::get('bookings/list-bookings/{id?}', 'DashboardController@bookingsList');
+          Route::get('bookings/list-payments/{id?}', 'DashboardController@paymentsList');
           Route::get('account/dashboard', 'DashboardController@index');
           Route::get('account/edit-profile', 'DashboardController@editProfile');
           Route::post('account/store-profile', 'DashboardController@updateProfile');

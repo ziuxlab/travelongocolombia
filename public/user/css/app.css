@@ -21,6 +21,10 @@ body {
 }
 
 /*!---------- Customizations ----------*/
+.licart{
+    margin-top: 8px;
+}
+
 .bg-orange {
     background-color: #eb6212;
     padding-top: 7px !important;
@@ -22217,7 +22221,7 @@ div.tagsinput span.tag a:hover {
 /********* basics  *******/
 
 #header-navbar {
-    background-color: #4a4a4a;
+    background-color: #eb6212;
 }
 
 .nav-main-header ul {

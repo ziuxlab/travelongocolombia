@@ -15,13 +15,14 @@ class booking_detail extends Model
         'booking_id',
     ];
     
-    public function user()
+     public function booking()
     {
         return $this->belongsTo('App\booking', 'booking_id');
     }
     
-    public function products()
+    public function product()
     {
-        return $this->hasMany('App\Product', 'product_id');
+      return $this->belongsTo('App\Product', 'product_id');
+
     }
 }

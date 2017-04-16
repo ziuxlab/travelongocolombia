@@ -45,4 +45,18 @@
         {
             return $this->belongsTo(city::class);
         }
+
+        public function typeName()
+        {
+            $type = '';
+            switch ($this->type) {
+                case 0:
+                    $type = trans('dashboard_user.package');
+                    break;
+                 case 1:
+                    $type = trans('dashboard_user.activity');
+                    break;
+            }
+            return $type;
+        }
     }

@@ -32,37 +32,8 @@
             <div class="panel-body plby">
                 <div class="col-sm-10 col-sm-offset-1">
                  <!-- list payments -->
-                   <div class="table-responsive">
-                       <table class="table table-bordered">
-                        <thead>
-                            <th class="thtb">@lang('dashboard_user.date')</th>
-                            <th class="thtb">@lang('dashboard_user.status')</th>
-                            <th class="thtb">@lang('dashboard_user.value')</th>
-                            <th class="thtb thactions">@lang('dashboard_user.actions')</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>11/11/2017 22:00</td>
-                            <td>accept</td>
-                            <td>250</td>
-                            <td>
-                             <button class="js-swal-confirm btn btn-xs btn btn-orange" type="button">@lang('dashboard_user.view_details')
-                         </button>
-                     </td>
-                 </tr>
-                 <tr>
-                    <td>01/12/2016 20:00</td>
-                    <td>decline</td>
-                    <td>50</td>
-                    <td>
-                     <button class="js-swal-confirm btn btn-xs btn btn-orange" type="button">@lang('dashboard_user.view_details')
-                 </button>
-             </td>
-         </tr>
-     </tbody>
-           </table>
-       </div>
-        <!-- end list payments -->
+                   <div id="content"></div>
+                <!-- end list payments -->
    </div>
 </div>
 <!-- end panel content -->
@@ -73,5 +44,5 @@
 @stop
 
 @section('scripts')
-@include('layouts.user.partials._sweetalert', ['type'=>'payment'])
+@include('layouts.user.partials._list', ['type'=> 'payments'])
 @stop

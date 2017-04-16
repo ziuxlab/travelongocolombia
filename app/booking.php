@@ -24,4 +24,14 @@ class booking extends Model
     {
         return $this->belongsToMany('App\Contact','contact_booking');
     }
+
+     public function details()
+    {
+        return $this->hasMany('App\booking_detail','booking_id');
+    }
+
+     public function payments()
+    {
+        return $this->hasMany('App\payment','booking_id');
+    }
 }

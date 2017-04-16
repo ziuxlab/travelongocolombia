@@ -1,41 +1,59 @@
 <script src="{{ asset('js/plugins/sweetalert2/es6-promise.auto.min.js') }}"></script>
 <script src="{{ asset('js/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        jQuery(".js-swal-confirm").on("click", function (e) {
-            e.preventDefault();
-            id   = $(this).attr("data-id");
-            data = $('#item_' + id).serialize();
-            url  = $('#item_' + id).attr('action');
-            @if($type=='booking')
-            swal({
-                title: '<div class="headmodal"><h4 class="titlepl text-left">@lang('dashboard_user.booking_details')</h4></div>',
-                html:
-                '<div class="table-responsive"><table class="table table-bordered">' +
-                '<thead><th class="thtb">@lang('dashboard_user.type')</th><th class="thtb">@lang('dashboard_user.title')</th></thead><tbody>'+
-                @for($i = 0; $i < 3; $i++)
-                '<tr><td>Activity</td><td>The Coffee Park</td></tr>'+
-                @endfor
-                '</tbody></table></div>',
-                showCloseButton: true,
-                showCancelButton: false,
-                showConfirmButton: false,
-            })
-            @elseif($type=='payment')
-             swal({
-                title: '<div class="headmodal"><h4 class="titlepl text-left">@lang('dashboard_user.payment_details')</h4></div>',
-                html:
-                '<div class="table-responsive"><table class="table table-bordered">' +
-                '<thead><th class="thtb">detail1</th><th class="thtb">detail2</th></thead><tbody>'+
-                @for($i = 0; $i < 3; $i++)
-                '<tr><td>text1</td><td>text2</td></tr>'+
-                @endfor
-                '</tbody></table></div>',
-                showCloseButton: true,
-                showCancelButton: false,
-                showConfirmButton: false,
-            })
-            @endif
-        })
+  $(document).ready(function () {
+    jQuery(".js-swal-confirm").on("click", function (e,content) {
+      e.preventDefault();
+      id   = $(this).attr("data-id");
+      data = $('#item_' + id).serialize();
+      @if($type=='bookings')
+      url  = 'list-bookings/'+id;
+      @elseif($type=='payments')
+      url  = 'list-payments/'+id
+      @endif
+      content = typeof content !== 'undefined' ? content : 'content';
+      $.ajax({
+        contentType: false,
+        url: url,
+        type: 'GET',
+        success: function (data) {
+              // es necesario recargar la lista de bookings para que Session::get('booking_id') se actualice 
+              $("#" + content).html(data);  
+              @if($type=='bookings')
+              showDetailsBooking();    
+              @elseif($type=='payments')
+              showDetailsPayment();    
+              @endif
+            }
+          });
+
     })
+  });
+
+  function showDetailsBooking(){
+   @php 
+   $id = Session::get('booking_id');
+   $booking_actual = App\booking::find($id);
+   @endphp
+   @if($booking_actual!=null)
+   swal({ 
+     title: '<div class="headmodal"><h4 class="titlepl text-left">@lang('dashboard_user.booking_details')</h4></div>',
+     html:
+     '<div class="table-responsive"><table class="table table-bordered">' +
+     '<thead><th class="thtb">@lang('dashboard_user.type')</th><th class="thtb">@lang('dashboard_user.title')</th></thead><tbody>'+
+     @foreach($booking_actual->details as $detail)
+     '<tr><td>{{$detail->product->typeName()}}</td><td>{{$detail->product->tittle}}</td></tr>'+
+     @endforeach
+     '</tbody></table></div>',
+     showCloseButton: true,
+     showCancelButton: false,
+     showConfirmButton: false,
+
+   }) 
+   @endif
+ }
+
+// en caso de querer mostrar mas detalles del pago
+ function showDetailsPayment(){
+}
 </script>
