@@ -11,16 +11,14 @@ use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
-    private $user;
+    
     /**
      * DashboardController constructor.
      */
     public function __construct()
     {
         $this->middleware('auth');
-        $this->user = Auth::user();
     }
-
 
     /**
      * Display the account dashboard.
