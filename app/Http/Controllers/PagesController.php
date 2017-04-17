@@ -108,8 +108,6 @@
                         ->firstOrFail()
             ;
             
-            
-            
             if ($item->tipo == 0) {
                 return view('app.page', compact('item'));
             } else {

@@ -11,7 +11,7 @@
         
         public function __construct()
         {
-            $this->middleware('auth');
+            $this->middleware('auth')->except('buscar');
         }
         
         /**
@@ -49,15 +49,17 @@
         public function store(Request $request)
         {
             //
-          
+          if($request->option == 'onlyHotel'){
+              return redirect('design');
+          }
             
-            $api = 'AIzaSyAZ1Nh5fI00J9-FS_Ufo2Nkd4L1IqL6xB4';
+            $api = 'AIzaSyAZ1Nh5fI00J9-FS_Ufo2{{Nkd4L1IqL6xB4';
             
             
-            /*$this->validate($request, [
+            $this->validate($request, [
                 'checkin'  => 'required|date|after:today',
                 'checkout' => 'required|date'
-            ]);*/
+            ]);
             
             $postData = [
                 "request" => [
@@ -136,8 +138,7 @@
                         'saleTotal'     =>  floatval(substr($items['saleTotal'],3)) + $num_usd,
                         
                     ];
-                    
-                   
+
                 }
                 
                 

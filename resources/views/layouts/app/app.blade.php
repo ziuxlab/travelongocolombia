@@ -17,6 +17,7 @@
     <!-- END Header -->
     <!-- Main Container -->
     <main id="main-container" >
+        <div id="page-loader"></div>
         @yield('contenido')
     </main>
     <!-- END Main Container -->

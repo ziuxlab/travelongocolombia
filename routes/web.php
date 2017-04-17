@@ -38,7 +38,6 @@
         if ($locale == 'es') {
             return redirect('inicio');
         }
-        
         return redirect('/');
     });
     
@@ -95,7 +94,7 @@
         Route::post('activities/{id}', 'ActivityController@update_order_photo');
         Route::resource('activities', 'ActivityController', ['except' => ['delete_photo', 'update_order_photo']]);
     
-        // Hotels-related routes ====================================.
+        // Hotels-related routes ========================================.
         Route::delete('hotels/{id}', 'HotelsController@delete_photo');
         Route::post('hotels/{id}', 'HotelsController@update_order_photo');
         Route::resource('hotels', 'HotelsController', ['except' => ['delete_photo', 'update_order_photo']]);
