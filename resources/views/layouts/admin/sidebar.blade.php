@@ -119,18 +119,14 @@
                             <li class="">
                                 <a href="{{Url('admin/settings/html')}}">Html</a>
                             </li>
-                            @role('admin')
                             <li class="">
                                 <a href="{{Url('admin/settings/general')}}">General</a>
                             </li>
                             <li class="">
                                 <a href="{{Url('admin/settings/social')}}">Social</a>
                             </li>
-                           
-                            @endrole
                         </ul>
                     </li>
-                
                 </ul>
             </div>
             <!-- END Side Content -->
