@@ -5,7 +5,7 @@ input.loading {
     position: relative;
     top: 55px;
     left: 30px;
-    width: 85%;
+    width: 90%;
 }
 .progress-steps{
     z-index: 2;
@@ -814,6 +814,10 @@ footer {
     .img-fixed-xs{
         height: 100%;
         position: absolute;
+    }
+    
+    .progress{
+        width: 80%;
     }
 }
 

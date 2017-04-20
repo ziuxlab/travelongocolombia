@@ -19,7 +19,7 @@
             //
             $cities = city::pluck('city', 'city_code');
             $step = $request->step;
-            return view('app.design', compact('step','cities'));
+            return view('app.design.design', compact('step', 'cities'));
         }
         
         /**
@@ -43,7 +43,7 @@
         {
             //
             
-            if ($request->step == 1){
+            if ($request->step == 1) {
                 
                 //agrego el vuelo al carrito
                 
@@ -60,12 +60,11 @@
                         'img'      => $request->Carrier
                     ]
                 ]);
-    
+                
                 //TODO guardar el vuelo seleccionado
-    
-                return redirect(str_slug(trans('cabecera.Design')).'?step=2');
+                
+                return redirect(str_slug(trans('cabecera.Design')) . '?step=2');
             }
-            
             
             
         }

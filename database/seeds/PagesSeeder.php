@@ -189,29 +189,5 @@
                 'local'      => 'es',
                 'tipo'       => 1,
             ]);
-            
-            Page::create([
-                'id'         => 17,
-                'slug_url'   => 'design-your-plan',
-                'name'       => 'Design Your Plan',
-                'tittle'     => 'Design Your Plan',
-                'body'       => '{design}',
-                'menu'       => 0,
-                'menu_order' => 1,
-                'local'      => 'en',
-                'tipo'       => 1,
-            ]);
-    
-            Page::create([
-                'id'         => 18,
-                'slug_url'   => 'arma-tu-plan',
-                'name'       => 'Arma Tu Plan',
-                'tittle'     => 'Arma Tu Plan',
-                'body'       => '{design}',
-                'menu'       => 0,
-                'menu_order' => 1,
-                'local'      => 'es',
-                'tipo'       => 1,
-            ]);
         }
     }
