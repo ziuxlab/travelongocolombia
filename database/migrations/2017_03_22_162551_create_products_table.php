@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('tittle'); //url de la pagina
             $table->string('slug_url')->unique(); //url de la pagina
-            $table->tinyInteger('days')->unsigned(); //titulo de la apgina h1
+            $table->string('days')->nullable(); //duracion de la actividad
             $table->Integer('price_adults')->unsigned()->nullable();
             $table->Integer('price_children')->unsigned()->nullable();
             $table->tinyInteger('discount')->unsigned()->nullable()->default(0);

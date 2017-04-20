@@ -35,7 +35,7 @@
             <div class="col-md-8 push-30 bg-white">
                 <div class="content-mini content-mini-full border-b text-center overflow-hidden">
                     <ul class="list-icon-item h3 text-muted flex-between">
-                        @foreach($item->features->where('type',$item->type) as $feature)
+                        @foreach($item->features->where('type',$item->type)->take(6) as $feature)
                             <span class=" push-20-r">
                                 <i class="{{$feature->icon}}"></i>
                                 <div class="h5">{{$feature->feature}}</div>
@@ -46,25 +46,30 @@
                 <div class="bg-white content content-narrow">
                     <div class=" push-20  ">
                         <div class="">
-                            <h3 class="h3 push-15 "><i class=" text-primary fa fa-file-text-o"></i> Package Details</h3>
-                            <p class="text-muted">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras
-                                                  mattis consectetur
-                                                  purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi
-                                                  erat porttitor
-                                                  ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta
-                                                  gravida at eget metus.
-                                                  Donec id elit non mi porta gravida at eget metus.
-                            
-                                                  Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
-                                                  mollis interdum. Cras
-                                                  mattis consectetur purus sit amet fermentum. Curabitur blandit tempus
-                                                  porttitor. Nulla
-                                                  vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue
-                                                  laoreet rutrum.</p>
+                            @if($item->type == 0)
+                                <h3 class="h3 push-15 "><i
+                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.packages')
+                                    Details</h3>
+                            @endif
+                            @if($item->type == 1)
+                                <h3 class="h3 push-15 "><i
+                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.activities')
+                                    Details</h3>
+                            @endif
+                            @if($item->type == 3)
+                                <h3 class="h3 push-15 "><i
+                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
+                                </h3>
+                            @endif
+                            <p class="text-muted">{{$item->description}}</p>
                         </div>
                         <div class="row content-mini content-mini-full border-t">
                             <h4 class=" h5 col-sm-6">Duration</h4>
-                            <div class="text-muted col-sm-6">9 Days</div>
+                            <div class="text-muted col-sm-6">
+                                <ul class="fa-ul ">
+                                    <li><i class="fa text-primary fa-clock-o fa-li"></i>{{$item->days}}</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="row content-mini content-mini-full border-t">
                             <h4 class=" h5 col-sm-6">Price Include</h4>

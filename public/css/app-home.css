@@ -19716,6 +19716,25 @@ div.tagsinput span.tag a:hover {
   color: #aaa;
 }
 
+input.loading {
+    background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
+}
+.progress{
+    position: relative;
+    top: 55px;
+    left: 30px;
+    width: 85%;
+}
+.progress-steps{
+    z-index: 2;
+    position: relative;
+}
+
+.item-bg-primary{
+    box-shadow: 0px 0 0 5px #eb6212;
+}
+
+
 nav {
     height: 60px;
 }

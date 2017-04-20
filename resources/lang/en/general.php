@@ -75,5 +75,6 @@ return [
     'notproductsf' => 'There are no registered :name.',
     'notproductsm' => 'There are no registered :name.',
     'image'        => 'image',
+    'booking'        => 'Booking',
    
 ];

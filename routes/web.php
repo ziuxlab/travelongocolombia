@@ -30,7 +30,7 @@
         return redirect('admin/login');
     });
     
-    // Languaje-related routes ==============================================.
+    // Languaje-related routes ==========================================.
     Route::get('language/{locale}', function ($locale) {
         App::setLocale($locale);
         session(['locale' => $locale]);
@@ -44,6 +44,11 @@
     // Menu-related routes ==============================================.
     Route::get('/', 'HomeController@index');
     Route::get('products/list/{type}', 'ProductController@list');
+    
+    // Design Plan related routes =======================================.
+    Route::resource('design-your-plan', 'DesignController');
+    Route::resource('arma-tu-plan', 'DesignController');
+    
     
     // Cart-related routes ==============================================.
     Route::resource('checkout', 'CheckoutController');

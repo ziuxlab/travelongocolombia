@@ -75,5 +75,6 @@ return [
     'notproductsf' => 'No hay :name registradas.',
     'notproductsm' => 'No hay :name registrados.',
     'image'        => 'imagen',
+    'booking'        => 'Reservar',
 
 ];

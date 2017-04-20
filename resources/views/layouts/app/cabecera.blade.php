@@ -1,8 +1,7 @@
 <!-- Quitar cuendo este en prodcuccion -->
-
 <div class=" text-white-op bg-secondary">
     <div class="content-boxed h4 content-mini content-mini-full flex-center">
-        -- Sitio en Contrucción --
+        -- We are building the Website --
     </div>
 </div>
 

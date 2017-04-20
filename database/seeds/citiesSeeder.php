@@ -15,17 +15,20 @@
             //
             city::create([
                 'id'   => 1,
-                'city' => 'Armenia'
+                'city' => 'Armenia',
+                'city_code'=>'AXM'
             ]);
     
             city::create([
                 'id'   => 2,
-                'city' => 'Pereira'
+                'city' => 'Pereira',
+                'city_code'=>'PEI'
             ]);
     
             city::create([
                 'id'   => 3,
-                'city' => 'Manizales'
+                'city' => 'Manizales',
+                'city_code'=>'MZL'
             ]);
     
             city::create([
