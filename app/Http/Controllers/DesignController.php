@@ -17,9 +17,9 @@
         public function index(Request $request)
         {
             //
-            $cities = city::pluck('city', 'city_code');
+            
             $step = $request->step;
-            return view('app.design.design', compact('step', 'cities'));
+            return view('app.design.design', compact('step'));
         }
         
         /**

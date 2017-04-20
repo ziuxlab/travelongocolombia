@@ -43,7 +43,7 @@
                 'img'        => 'img/activities/parque6.jpg',
                 'order'      => 2,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 2,
                 'img'        => 'img/activities/parque1.jpg',
@@ -76,10 +76,10 @@
             ]);
             
             Photo::create([
-            'product_id' => 3,
-            'img'        => 'img/activities/panaca1.jpg',
-            'order'      => 1,
-        ]);
+                'product_id' => 3,
+                'img'        => 'img/activities/panaca1.jpg',
+                'order'      => 1,
+            ]);
             Photo::create([
                 'product_id' => 3,
                 'img'        => 'img/activities/panaca2.jpg',
@@ -105,7 +105,7 @@
                 'img'        => 'img/activities/panaca6.jpg',
                 'order'      => 2,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 4,
                 'img'        => 'img/activities/panaca1.jpg',
@@ -138,39 +138,38 @@
             ]);
             
             
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca2.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca3.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca4.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca5.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 5,
+                'img'        => 'img/activities/recuca6.jpg',
+                'order'      => 2,
+            ]);
             
             Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca2.jpg',
-                'order'      => 2,
-            ]);
-            Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca3.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca4.jpg',
-                'order'      => 2,
-            ]);
-            Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca5.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 5,
-                'img'        => 'img/activities/recuca6.jpg',
-                'order'      => 2,
-            ]);
-    
-            Photo::create([
                 'product_id' => 6,
                 'img'        => 'img/activities/recuca1.jpg',
                 'order'      => 1,
@@ -200,70 +199,70 @@
                 'img'        => 'img/activities/recuca6.jpg',
                 'order'      => 2,
             ]);
-    
-    
+            
+            
             Photo::create([
                 'product_id' => 7,
                 'img'        => 'img/activities/cascada1.jpg',
                 'order'      => 1,
             ]);
-    
-    
+            
+            
             Photo::create([
                 'product_id' => 7,
                 'img'        => 'img/activities/cascada2.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 7,
                 'img'        => 'img/activities/cascada4.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 7,
                 'img'        => 'img/activities/cascada6.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 7,
                 'img'        => 'img/activities/cascada7.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 8,
                 'img'        => 'img/activities/cascada1.jpg',
                 'order'      => 1,
             ]);
-    
-    
+            
+            
             Photo::create([
                 'product_id' => 8,
                 'img'        => 'img/activities/cascada2.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 8,
                 'img'        => 'img/activities/cascada4.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 8,
                 'img'        => 'img/activities/cascada6.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 8,
                 'img'        => 'img/activities/cascada7.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 9,
                 'img'        => 'img/activities/otun1.jpg',
@@ -309,7 +308,7 @@
                 'img'        => 'img/activities/otun9.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 10,
                 'img'        => 'img/activities/otun1.jpg',
@@ -355,7 +354,7 @@
                 'img'        => 'img/activities/otun9.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 11,
                 'img'        => 'img/activities/museo1.jpg',
@@ -366,7 +365,7 @@
                 'img'        => 'img/activities/museo3.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 12,
                 'img'        => 'img/activities/museo1.jpg',
@@ -377,7 +376,7 @@
                 'img'        => 'img/activities/museo3.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 13,
                 'img'        => 'img/activities/barbas1.jpg',
@@ -413,7 +412,7 @@
                 'img'        => 'img/activities/barbas7.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 14,
                 'img'        => 'img/activities/barbas1.jpg',
@@ -449,13 +448,13 @@
                 'img'        => 'img/activities/barbas7.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 15,
                 'img'        => 'img/activities/tierra1.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 15,
                 'img'        => 'img/activities/tierra1.jpg',
@@ -481,7 +480,7 @@
                 'img'        => 'img/activities/tierra5.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 16,
                 'img'        => 'img/activities/tierra1.jpg',
@@ -507,7 +506,7 @@
                 'img'        => 'img/activities/tierra5.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 17,
                 'img'        => 'img/activities/cordoba3.jpg',
@@ -578,7 +577,7 @@
                 'img'        => 'img/activities/salento21.jpg',
                 'order'      => 1,
             ]);
-    
+            
             Photo::create([
                 'product_id' => 18,
                 'img'        => 'img/activities/cordoba3.jpg',
@@ -649,19 +648,8 @@
                 'img'        => 'img/activities/salento21.jpg',
                 'order'      => 1,
             ]);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            
+            
             Photo::create([
                 'product_id' => 19,
                 'img'        => 'img/packages/package1.png',
@@ -692,20 +680,59 @@
                 'img'        => 'img/packages/package3.png',
                 'order'      => 1,
             ]);
+            
+            
+            //============= Hoteles =============//
+            
             Photo::create([
                 'product_id' => 25,
-                'img'        => 'img/activities/parque1.jpg',
+                'img'        => 'img/hotels/ecohotel-paraiso.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 25,
+                'img'        => 'img/hotels/ecohotel-paraiso-1.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 25,
+                'img'        => 'img/hotels/ecohotel-paraiso-2.jpg',
+                'order'      => 3,
+            ]);
+            Photo::create([
+                'product_id' => 26,
+                'img'        => 'img/hotels/decameron-heliconias-1.jpg',
                 'order'      => 1,
             ]);
             Photo::create([
                 'product_id' => 26,
-                'img'        => 'img/activities/parque2.jpg',
+                'img'        => 'img/hotels/decameron-heliconias-2.jpg',
+                'order'      => 2,
+            ]);
+            Photo::create([
+                'product_id' => 26,
+                'img'        => 'img/hotels/decameron-heliconias-3.jpg',
+                'order'      => 3,
+            ]);
+            Photo::create([
+                'product_id' => 26,
+                'img'        => 'img/hotels/decameron-heliconias-4.jpg',
+                'order'      => 4,
+            ]);
+            Photo::create([
+                'product_id' => 27,
+                'img'        => 'img/hotels/finca-hotel-carmelita-1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 27,
+                'img'        => 'img/hotels/finca-hotel-carmelita-2.jpg',
                 'order'      => 2,
             ]);
             Photo::create([
                 'product_id' => 27,
-                'img'        => 'img/activities/panaca1.jpg',
-                'order'      => 1,
+                'img'        => 'img/hotels/finca-hotel-carmelita-3.jpg',
+                'order'      => 3,
             ]);
             Photo::create([
                 'product_id' => 28,

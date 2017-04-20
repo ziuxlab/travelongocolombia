@@ -341,6 +341,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'en',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 2
@@ -358,6 +359,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'en',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 3
@@ -375,6 +377,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'en',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 4
@@ -393,6 +396,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'es',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 1
@@ -410,6 +414,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'es',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 1
@@ -427,6 +432,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'es',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 0, //package,activity
                 'city_id'          => 2
@@ -437,49 +443,52 @@
             
             Product::create([
                 'id'               => 25,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title13', '-'),
-                'days'             => 9,
+                'tittle'           => 'Ecohotel Spa Paraíso Verde',
+                'slug_url'         => str_slug('Ecohotel Spa Paraíso Verde', '-'),
+                'days'             => 1,
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Ecohotel Spa Paraíso Verde',
+                'keywords'         => 'Ecohotel Spa Paraíso Verde',
                 'status'           => 1,
                 'local'            => 'en',
+                'description'      => 'El Ecohotel Spa Paraíso Verde se encuentra en Quimbaya y alberga una piscina al aire libre y un spa y centro de bienestar. Además, se ofrecen descuentos especiales en parques locales.Las habitaciones disponen de TV de pantalla plana y un baño privado con ducha y aseo. También hay una casa de 2 dormitorios completamente equipada con cocina y zona de estar.El Ecohotel Spa Paraíso Verde alberga un restaurante que sirve platos locales. También encontrará más locales de restauración en el centro de Montenegro, situado a 5 minutos en coche.Este hotel cuenta con una zona para practicar yoga y meditación, así como jardines tropicales con hamacas y zona de estar.Está a 5 minutos en coche del parque Los Arrieros y a 25 minutos en coche del aeropuerto El Edén de Armenia. A las parejas les encanta la ubicación — Le han puesto un 9 para viajes de dos personas.¡Hablamos tu idioma!',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
                 'city_id'          => 4
             ]);
             Product::create([
                 'id'               => 26,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title14', '-'),
+                'tittle'           => 'Decameron Las Heliconias - All Inclusive',
+                'slug_url'         => str_slug('Decameron Las Heliconias All Inclusive', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Decameron Las Heliconias - All Inclusive',
+                'keywords'         => 'Decameron Las Heliconias - All Inclusive',
                 'status'           => 1,
                 'local'            => 'en',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'El Hotel Decameron Las Heliconias se encuentra en Quimbaya-Quindío, en una de las regiones más representativas de la región cafetalera de Colombia. Dispone de piscina exterior, restaurante y WiFi gratuita.Este hotel de todo incluido ofrece habitaciones con TV por cable, caja fuerte y ropa de cama. Incluyen baño privado con artículos de aseo y toallas. Los huéspedes también pueden hacer uso de las instalaciones y servicios del Hotel Decameron Panaca, situado a unos 15 minutos en coche del establecimiento. El servicio de traslado está incluido.El restaurante del Decameron Las Heliconias, La Hacienda, presenta la arquitectura típica de las antiguas haciendas cafetaleras de la zona y sirve un buffet de estilo internacional. Además, el establecimiento alberga 2 restaurantes a la carta, El Rincón de los Recuerdos y La Herrería. También cuenta con 3 bares y un buffet de aperitivos.El hotel tiene pistas de tenis, centro de fitness, discoteca y parque infantil. Además, hay servicio de cambio de divisa, campo de golf y varias pistas de voleibol a disposición de los huéspedes. Los domingos se celebran misas en el hotel. A las parejas les encanta la ubicación — Le han puesto un 9 para viajes de dos personas.¡Hablamos tu idioma!',
+                'itinerary'        => 'Decameron Las Heliconias - All Inclusive',
                 'type'             => 2, //package,activity
                 'city_id'          => 4
             ]);
             Product::create([
                 'id'               => 27,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title15', '-'),
+                'tittle'           => 'Finca Hotel La Nueva Carmelita',
+                'slug_url'         => str_slug('Finca Hotel La Nueva Carmelita', '-'),
                 'days'             => 9,
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Finca Hotel La Nueva Carmelita',
+                'keywords'         => 'Finca Hotel La Nueva Carmelita',
                 'status'           => 1,
                 'local'            => 'en',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'El Finca Hotel La Nueva Carmelita, situado en Quimbaya, a 5 km de Panaca, acepta mascotas y ofrece WiFi gratuita, piscina exterior y solárium. Alberga un bar.Las habitaciones tienen TV de pantalla plana.El establecimiento cuenta con salón compartido.El hotel dispone de mesas de ping pong y billar y proporciona servicio de alquiler de coches. El aeropuerto internacional de El Edén queda a 16 km. ¡Hablamos tu idioma!',
+                'itinerary'        => 'Finca Hotel La Nueva Carmelita',
                 'type'             => 2, //package,activity
                 'city_id'          => 3
             ]);
@@ -495,6 +504,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'es',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
                 'city_id'          => 3
@@ -511,6 +521,7 @@
                 'keywords'         => 'prueba tittle',
                 'status'           => 1,
                 'local'            => 'es',
+                'description'      => '',
                 'itinerary'        => 'prueba tittle',
                 'type'             => 2, //package,activity
                 'city_id'          => 3

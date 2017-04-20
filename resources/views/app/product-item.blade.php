@@ -56,9 +56,9 @@
                                             class=" text-primary fa fa-file-text-o"></i> @lang('general.activities')
                                     Details</h3>
                             @endif
-                            @if($item->type == 3)
+                            @if($item->type == 2)
                                 <h3 class="h3 push-15 "><i
-                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
+                                            class="text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
                                 </h3>
                             @endif
                             <p class="text-muted">{{$item->description}}</p>

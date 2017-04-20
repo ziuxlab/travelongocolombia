@@ -8,8 +8,8 @@
                     'class' => 'js-autocomplete form-control','placeholder'=>'Ingrese su Origen','required','autocomplete'=>'off']) !!}
                     @if ($errors->has('departure'))
                         <span class="help-block">
-                                       <strong>{{ $errors->first('departure') }}</strong>
-                                   </span>
+                            <strong>{{ $errors->first('departure') }}</strong>
+                        </span>
                     @endif
                     {!! Form::hidden('departure_id', old('departure_id'), ['class'=>'airport']) !!}
                 </div>
@@ -17,7 +17,7 @@
             <div class="col-sm-6">
                 <div class="form-group {{ $errors->has('destination') ? ' has-error' : '' }}">
                     {!! Form::label('Destino:', null, ['class' => 'control-label']) !!}
-                    {!! Form::select('destination', $cities, old('destination'), [ 'class' => 'form-control','placeholder'=>'Ingrese su Destino','required']) !!}
+                    {!! Form::select('destination', $cities->pluck('city', 'city_code'), old('destination'), [ 'class' => 'form-control','placeholder'=>'Ingrese su Destino','required']) !!}
                     @if ($errors->has('destination'))
                         <span class="help-block">
                             <strong>{{ $errors->first('destination') }}</strong>
