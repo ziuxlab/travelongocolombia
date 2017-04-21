@@ -18,6 +18,12 @@ body {
   margin: 0;
 }
 
+/*!---------- Customizations ----------*/
+.text-black{
+  color: black;
+}
+/*!---------- End Customizations ------*/
+
 article,
 aside,
 details,

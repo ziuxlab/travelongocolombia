@@ -25,10 +25,11 @@
     */
     
     // Login-related routes ==============================================.
-    Route::get('/login', function () {
+    Auth::routes();
+    /*Route::get('/login', function () {
         //return view('welcome');
         return redirect('admin/login');
-    });
+    });*/
     
     // Languaje-related routes ==========================================.
     Route::get('language/{locale}', function ($locale) {
