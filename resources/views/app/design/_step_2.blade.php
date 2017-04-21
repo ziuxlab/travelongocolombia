@@ -1,5 +1,5 @@
 <div class="content-boxed content">
-    <div class="row">
+    <div class="row steps">
         <div class="col-sm-12">
             <div class="block">
                 <div class="block-content block-content-narrow block-content-full">
@@ -51,7 +51,6 @@
             <div id="content"></div>
         </div>
     </div>
-</div>
 </div>
 
 @section('scripts')

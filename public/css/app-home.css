@@ -19719,13 +19719,13 @@ div.tagsinput span.tag a:hover {
 input.loading {
     background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
 }
-.progress{
+.steps .progress{
     position: relative;
     top: 55px;
     left: 30px;
     width: 90%;
 }
-.progress-steps{
+ .progress-steps{
     z-index: 2;
     position: relative;
 }
@@ -20534,7 +20534,7 @@ footer {
         position: absolute;
     }
     
-    .progress{
+    .steps .progress{
         width: 80%;
     }
 }

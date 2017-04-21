@@ -1,6 +1,6 @@
 
     <div class="content-boxed content">
-        <div class="row">
+        <div class="row steps">
             <div class="col-sm-12">
                 <div class="block">
                     <div class="block-content block-content-narrow block-content-full">
@@ -40,12 +40,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="block block-bordered block-rounded block-themed " >
-                  
-                </div>
-            </div>
-        </div>
+        @include('app.partials._cart')
     </div>
     

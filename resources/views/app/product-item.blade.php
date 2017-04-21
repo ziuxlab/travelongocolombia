@@ -61,7 +61,7 @@
                                             class="text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
                                 </h3>
                             @endif
-                            <p class="text-muted">{{$item->description}}</p>
+                            <p class="text-muted text-justify">{{$item->description}}</p>
                         </div>
                         <div class="row content-mini content-mini-full border-t">
                             <h4 class=" h5 col-sm-6">Duration</h4>
@@ -93,13 +93,13 @@
                                 </ul>
                             </div>
                         </div>
-                    
+                
                     </div>
                     <div class="   ">
                         <div>
                             <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
                         </div>
-                        
+                    
                         <div class="panel-group">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -131,7 +131,7 @@
                                         <li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
                                         <li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
                                     </ul>
-                                
+                            
                                 </div>
                             </div>
                         </div>
@@ -153,9 +153,9 @@
                         <div class="">
                             <div class="slider-nav">
                                 @foreach($item->photos as $photo)
-                                    
-                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
                                 
+                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                            
                                 @endforeach
                             </div>
                         </div>
@@ -168,19 +168,12 @@
             </div>
         </div>
     </div>
-
-
 @stop
 
 @section('scripts')
     {{$Config->scripts_footer}}
     <script src="{{asset('js/plugins/slick/slick.min.js')}}"></script>
     <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
-    <script>
-    
-    
-    
-    </script>
     <script>
         $('.js-slider').slick({
             slidesToShow: 1,
@@ -195,8 +188,5 @@
             asNavFor: '.js-slider',
             focusOnSelect: true,
         });
-    
-    
-    
     </script>
 @stop

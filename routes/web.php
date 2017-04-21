@@ -47,7 +47,7 @@
     
     // Design Plan related routes =======================================.
     Route::resource('design-your-plan', 'DesignController');
-    Route::resource('arma-tu-plan', 'DesignController');
+    Route::get('arma-tu-plan', 'DesignController@index');
     
     
     // Cart-related routes ==============================================.

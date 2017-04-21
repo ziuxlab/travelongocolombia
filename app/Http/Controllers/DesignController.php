@@ -3,6 +3,7 @@
     namespace App\Http\Controllers;
     
     use App\city;
+    use App\Product;
     use Cart;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Session;
@@ -17,9 +18,11 @@
         public function index(Request $request)
         {
             //
+            Session::put('plan', 'design');
+            Session::put('step', $request->step);
+           
             
-            $step = $request->step;
-            return view('app.design.design', compact('step'));
+            return view('app.design.design');
         }
         
         /**
@@ -43,6 +46,7 @@
         {
             //
             
+            
             if ($request->step == 1) {
                 
                 //agrego el vuelo al carrito
@@ -64,6 +68,53 @@
                 //TODO guardar el vuelo seleccionado
                 
                 return redirect(str_slug(trans('cabecera.Design')) . '?step=2');
+            }
+            
+            if ($request->step == 2 or $request->agregate == 1) {
+                
+                $item = Product::findorfail($request->product_id);
+                
+                Cart::add([
+                    'id'         => $item->id,
+                    'name'       => $item->tittle,
+                    'price'      => (Session::get('adults') * $item->price_adults * (1 - ($item->discount / 100))) +
+                                    (Session::get('children') * $item->price_children * (1 - ($item->discount / 100))),
+                    'quantity'   => 1,
+                    'attributes' => [
+                        'adults'   => Session::get('adults'),
+                        'children' => Session::get('children'),
+                        'infants'  => Session::get('infants'),
+                        'type'     => $item->type,
+                        'img'      => $item->photos->sortBy('order')
+                                                   ->first()->img
+                    ]
+                ]);
+    
+                return redirect(str_slug(trans('cabecera.Design')) . '?step=3');
+            }
+    
+            if ($request->step == 3) {
+    
+                $item = Product::findorfail($request->product_id);
+    
+                Cart::add([
+                    'id'         => $item->id,
+                    'name'       => $item->tittle,
+                    'price'      => (Session::get('adults') * $item->price_adults * (1 - ($item->discount / 100))) +
+                                    (Session::get('children') * $item->price_children * (1 - ($item->discount / 100))),
+                    'quantity'   => 1,
+                    'attributes' => [
+                        'adults'   => Session::get('adults'),
+                        'children' => Session::get('children'),
+                        'infants'  => Session::get('infants'),
+                        'type'     => $item->type,
+                        'img'      => $item->photos->sortBy('order')
+                                                   ->first()->img
+                    ]
+                ]);
+    
+                return redirect(str_slug(trans('cabecera.Design')) . '?step=4');
+                
             }
             
             

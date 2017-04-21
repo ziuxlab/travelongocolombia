@@ -17,18 +17,15 @@
             <div class="col-sm-6">
                 <div class="form-group {{ $errors->has('destination') ? ' has-error' : '' }}">
                     {!! Form::label('Destino:', null, ['class' => 'control-label']) !!}
-                    {!! Form::select('destination', $cities->pluck('city', 'city_code'), old('destination'), [ 'class' => 'form-control','placeholder'=>'Ingrese su Destino','required']) !!}
+                    {!! Form::select('destination', $cities->where('city_code','<>',null)->pluck('city', 'city_code'), old('destination'), [ 'class' => 'form-control','placeholder'=>'Ingrese su Destino','required']) !!}
                     @if ($errors->has('destination'))
                         <span class="help-block">
                             <strong>{{ $errors->first('destination') }}</strong>
                         </span>
                     @endif
-                  
                 </div>
             </div>
         </div>
-    
-    
     </div>
     <div class="col-sm-4">
         

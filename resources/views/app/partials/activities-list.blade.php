@@ -1,5 +1,10 @@
 @foreach($products as $product)
-    @include('app.partials._products')
+    <!-- // verificamos si esta en design-you-plan o en pick-you-plan //-->
+    @if(Session::get('plan')=='design')
+        @include('app.partials._products_design_plan')
+    @else
+        @include('app.partials._products')
+    @endif
 @endforeach
 
 @if(count($products) > 4)

@@ -72,8 +72,9 @@
             }
             
             
-            $view = 'app.partials.activities-list';
             
+            
+            $view = 'app.partials.activities-list';
             
             return view($view, compact('products'));
         }

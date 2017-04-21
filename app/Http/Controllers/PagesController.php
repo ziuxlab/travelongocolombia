@@ -109,10 +109,11 @@
             ;
             
             if ($item->tipo == 0) {
+               
                 return view('app.page', compact('item'));
             } else {
                 //tipo 1 grupo de componentes
-                
+                Session::put('plan','pick');
                 $view = Page::extract_views($item);
                 return view($view, compact('item'));
             }
