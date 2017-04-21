@@ -46,7 +46,6 @@ return [
     'value'           => 'Value',
     'activity'        => 'Activity',
     'package'         => 'Package',
-    // comprobar traducción
     'notbookings'     => 'You have not made bookings yet.',
     'notpayments'     => 'You have not made payments yet.',
 

@@ -27,10 +27,12 @@
                 <ul class="nav-header v-center">
                     @if (Auth::guest())
                         <div class=" hidden-xs">
-                            <a href="{{ route('login') }}" class=" text-white push-10-r">@lang('cabecera.Login')</a>
-                            <a href="{{ route('register') }}"
+                            <a href="" data-toggle="modal" data-target="#loginModal"
+                               class="text-white push-10-r">@lang('cabecera.Login')</a>
+                            <a href="#" data-toggle="modal" data-target="#registerModal"
                                class=" text-white push-10-r">@lang('cabecera.Register')</a>
                         </div>
+
                     @else
                         <div class="push-10-r  hidden-xs">
                             <div class="btn-group">
@@ -39,7 +41,7 @@
                                          src="{{url('img/default.png')}}"
                                          alt="Avatar" data-toggle="dropdown" width="36" height="36">
                                 @else
-                                    
+
                                     <img class="img-circle dropdown-toggle"
                                          src="{{url(Auth::user()->img)}}"
                                          alt="user travelongo" data-toggle="dropdown" width="36" height="36">
@@ -62,17 +64,17 @@
                                     <li>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                document.getElementById('logout-form').submit();">
                                             @lang('cabecera.Logout')
                                         </a>
-                                        
+
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                               style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
                                 </ul>
-                            
+
                             </div>
                         </div>
                         <div class="push-10-r hidden-xs ">
@@ -91,7 +93,7 @@
                     <li class="hidden-xs hidden-sm flex-center">
                         <span class="push-5-r">Lang</span>
                         <div class="btn-group ">
-                            
+
                             <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret"></span>
                             </button>
@@ -111,7 +113,7 @@
                 </ul>
             </div>
         </div>
-    
+
     </div>
 </nav>
 
@@ -130,13 +132,15 @@
                        href="{{url($item->slug_url)}}">{{$item->name}}</a>
                 </li>
             @endforeach
-            
+
             @if (Auth::guest())
                 <li class="v-center hidden-md hidden-lg">
-                    <a href="{{ route('login') }}">@lang('cabecera.Login')</a>
+                    <a href="" data-toggle="modal" data-target="#loginModal"
+                       class="text-white push-10-r">@lang('cabecera.Login')</a>
                 </li>
                 <li class="v-center hidden-md hidden-lg">
-                    <a href="{{ route('register') }}">@lang('cabecera.Register')</a>
+                    <a href="#" data-toggle="modal" data-target="#registerModal"
+                       class=" text-white push-10-r">@lang('cabecera.Register')</a>
                 </li>
             @else
                 <li class="v-center hidden-md hidden-lg">
@@ -148,7 +152,7 @@
                                          src="{{url('img/default.png')}}"
                                          alt="usuario travelongo">
                                 @else
-                                    
+
                                     <img class="img-avatar img-avatar48"
                                          src="{{url(Auth::user()->img)}}"
                                          alt="user travelongo">
@@ -165,7 +169,7 @@
                                 <div class="col-xs-6">
                                     <a class=" font-w600 text-muted" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">@lang('cabecera.Logout')</a>
+                            document.getElementById('logout-form').submit();">@lang('cabecera.Logout')</a>
                                 </div>
                             </div>
                         </div>
@@ -182,6 +186,15 @@
         </ul>
     </div>
 </div>
- 
+
+@if (Auth::guest())
+    @include('layouts.app.partials._form_login')
+    @include('layouts.app.partials._form_register')
+    @include('layouts.app.partials._login_register')
+@endif
+
+
+
+
 
 
