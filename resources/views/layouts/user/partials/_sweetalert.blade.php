@@ -1,13 +1,14 @@
 <script src="{{ asset('js/plugins/sweetalert2/es6-promise.auto.min.js') }}"></script>
 <script src="{{ asset('js/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
 <script type="text/javascript">
+var page_actual;
   $(document).ready(function () {
     jQuery(".js-swal-confirm").on("click", function (e,content) {
       e.preventDefault();
       id   = $(this).attr("data-id");
       data = $('#item_' + id).serialize();
       @if($type=='bookings')
-      url  = 'list-bookings/'+id;
+      url  = 'list-bookings/'+id+'?page='+page_actual;
       @elseif($type=='payments')
       url  = 'list-payments/'+id
       @endif
@@ -29,6 +30,12 @@
 
     })
   });
+
+    $('.pagination a').on('click', function (event) {
+        event.preventDefault();
+        page_actual = $(this).attr('href').split('page=')[1];
+        ajaxLoad($(this).attr('href'));
+    });
 
   function showDetailsBooking(){
    @php 

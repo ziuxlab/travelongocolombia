@@ -43,7 +43,10 @@ class User extends Authenticatable implements HasRoleContract
 
         public function bookingsPayments()
         {
-            return  $this->bookings()->with('payments')->get();
+            $bookings = $this->bookings()->select(array('id'))->get();
+            $payments = payment::whereIn('booking_id', $bookings);
+
+            return  $payments; 
         }
         
     }

@@ -9,19 +9,16 @@
       <th class="thtb">@lang('dashboard_user.value')</th>
     </thead>
     <tbody>
-      @foreach($bookings_payments as $booking)
-      @foreach($booking->payments as $payment)
-      @if($payment!=null)
+      @foreach($bookings_payments as $payment)
       <tr>
         <td>{{$payment->created_at}}</td>
         <td>{{$payment->status}}</td>
         <td>{{$payment->value}}</td>
-     </tr>
-     @endif
-     @endforeach
-     @endforeach
-   </tbody>
- </table>
+      </tr>
+      @endforeach
+    </tbody>
+  </table>
+  <div>{!! str_replace('/?','?',$bookings_payments->render()) !!}</div>
 </div>
 @endif
 @include('layouts.user.partials._sweetalert', ['type'=> 'payments'])

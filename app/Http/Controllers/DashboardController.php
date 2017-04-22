@@ -153,7 +153,7 @@ class DashboardController extends Controller
            Session::put('booking_id', $id);
        }
 
-       $bookings = Auth::user()->bookings; 
+       $bookings = Auth::user()->bookings()->paginate(5);
        return view('user._list_bookings', compact('bookings'));
    }
 
@@ -169,7 +169,7 @@ class DashboardController extends Controller
            Session::put('payment_id', $id);
        }
 
-       $bookings_payments = Auth::user()->bookingsPayments(); 
+       $bookings_payments = Auth::user()->bookingsPayments()->paginate(5); 
        return view('user._list_payments', compact('bookings_payments'));
    }
 
