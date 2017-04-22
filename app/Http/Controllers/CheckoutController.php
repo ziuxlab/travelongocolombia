@@ -24,27 +24,41 @@
         public function index()
         {
             //
+            
             if ( ! Auth::guest()) {
                 $contacts['adult'] = Contact::where('user_id', Auth::user()->id)
                                             ->whereType(0)
                                             ->get()
                                             ->toArray()
                 ;
+                
+                if (count($contacts['adult']) == 0){
+                    $contacts['adult'] = null;
+                }
                 $contacts['child'] = Contact::where('user_id', Auth::user()->id)
                                             ->whereType(1)
                                             ->get()
                                             ->toArray()
                 ;
+                if (count($contacts['child']) == 0){
+                    $contacts['child'] = null;
+                }
                 $contacts['infant'] = Contact::where('user_id', Auth::user()->id)
                                              ->whereType(2)
                                              ->get()
                                              ->toArray()
+                    
                 ;
+                if (count($contacts['infant']) == 0){
+                    $contacts['infant'] = null;
+                }
             } else {
                 $contacts['adult'] = null;
                 $contacts['child'] = null;
                 $contacts['infant'] = null;
             }
+            
+            
             
             return view('app.checkout', compact('contacts'));
         }
@@ -70,20 +84,23 @@
         {
             //
             
-            
+            //si el usuario agrega una nota redirige al checkout de lo contrario sigue al proceso de pago
             if (array_has($request, 'note')) {
                 Session::put('note', $request->note);
-                
                 return redirect('checkout');
             }
             
-            
+            //Si el usuario no esta logueado creamos uno con los datos y lo logueamos
             if (Auth::guest()) {
-                $user = User::create([
-                    'name'     => $request->adult['full_name'][0],
-                    'email'    => $request->adult['email'][0],
-                    'password' => bcrypt(str_random(8))
-                ]);
+                //verificamos si el correo existe como usuario, si no lo creamos
+                $user = User::whereEmail($request->adult['email'][0])->first();
+                if(!isset($user->email)){
+                    $user = User::create([
+                        'name'     => $request->adult['full_name'][0],
+                        'email'    => $request->adult['email'][0],
+                        'password' => bcrypt(str_random(8))
+                    ]);
+                }
                 
                 //asignamos el role de usuario
                 $user->attachRole(2);
@@ -98,18 +115,17 @@
                 'price'   => Cart::getTotal(),
             ]);
             
-            //añadimos la infrmacion al booking detail
+            //añadimos la informacion al booking detail
             foreach (Cart::getContent() as $item) {
                 //verificamos si el tipo de producto es vuelo o producto, 3 para vuelo, el resto para los (paquetes, actividades y hoteles)
                 booking_detail::create([
-                    'product_id' => $item->attributes->type <> 3 ? $item->id : $item->attributes->flight_id,
-                    //same ID for Flights
-                    'type',
-                    $item->attributes->type <> 3 ? $item->attributes->type : 3,
+                    
+                    //Si el type del producto es vuelo (3) se debe descontar 2000
+                    'product_id' =>  $item->attributes->type <> 3 ? $item->id : $item->id - 2000,
+                    'type'=> $item->attributes->type,
                     'booking_id' => $booking->id,
                 ]);
             }
-            
             //creamos los contactos para adultos
             for ($i = 0; $i < count($request->adult['full_name']); $i++) {
                 

@@ -3,6 +3,7 @@
     namespace App\Http\Controllers;
     
     use App\city;
+    use App\Flight;
     use App\Product;
     use Cart;
     use Illuminate\Http\Request;
@@ -20,7 +21,7 @@
             //
             Session::put('plan', 'design');
             Session::put('step', $request->step);
-           
+            
             
             return view('app.design.design');
         }
@@ -50,18 +51,34 @@
             if ($request->step == 1) {
                 
                 //agrego el vuelo al carrito
+                $flight = Flight::create([
+                    'adults'           => Session::get('adults'),
+                    'children'         => Session::get('children'),
+                    'infants'          => Session::get('infants'),
+                    'stops'            => $request->Stops,
+                    'img_outbound'     => $request->img_outbound,
+                    'img_inbound'      => $request->img_inbound,
+                    'originplace'      => Session::get('departure'),
+                    'destinationplace' => Session::get('destination'),
+                    'salida_outbound'  => $request->Salida_Outbound,
+                    'llegada_outbound' => $request->Llegada_Outbound,
+                    'salida_inbound'   => $request->Salida_Inbound,
+                    'llegada_inbound'  => $request->Llegada_Inbound,
+                    'total'            => $request->Total,
+                ]);
+                
                 
                 Cart::add([
-                    'id'         => 2000,
+                    'id'         => $flight->id + 2000,
                     'name'       => 'Flight to',
-                    'price'      => $request->Total,
+                    'price'      => $flight->total,
                     'quantity'   => 1,
                     'attributes' => [
-                        'adults'   => Session::get('adults'),
-                        'children' => Session::get('children'),
-                        'infants'  => Session::get('infants'),
+                        'adults'   => $flight->adults,
+                        'children' => $flight->children,
+                        'infants'  => $flight->infants,
                         'type'     => 3, //Vuelo
-                        'img'      => $request->Carrier
+                        'img'      => $flight->img_outbound
                     ]
                 ]);
                 
@@ -89,14 +106,14 @@
                                                    ->first()->img
                     ]
                 ]);
-    
+                
                 return redirect(str_slug(trans('cabecera.Design')) . '?step=3');
             }
-    
+            
             if ($request->step == 3) {
-    
+                
                 $item = Product::findorfail($request->product_id);
-    
+                
                 Cart::add([
                     'id'         => $item->id,
                     'name'       => $item->tittle,
@@ -112,7 +129,7 @@
                                                    ->first()->img
                     ]
                 ]);
-    
+                
                 return redirect(str_slug(trans('cabecera.Design')) . '?step=4');
                 
             }

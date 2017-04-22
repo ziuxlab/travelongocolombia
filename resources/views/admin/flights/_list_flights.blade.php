@@ -43,11 +43,13 @@
                         <div>
                             {!! Form::open(['action'=> ['DesignController@store']]) !!}
                             {!! Form::hidden('step', 1) !!}
-                            {!! Form::hidden('Carrier', url('img/carriers/' . $flight["Outbound"]['Carrier'] . '.png')) !!}
-                            {!! Form::hidden('Salida_Outbound',$flight['Outbound']['DepartureDate']) !!}
-                            {!! Form::hidden('Llegada_Outbound',$flight['Outbound']['ArrivalDate']) !!}
-                            {!! Form::hidden('Salida_Inbound',$flight['Inbound']['DepartureDate']) !!}
-                            {!! Form::hidden('Llegada_Inbound',$flight['Inbound']['ArrivalDate']) !!}
+                            {!! Form::hidden('img_outbound', 'img/carriers/' . $flight["Outbound"]['Carrier'] . '.png') !!}
+                            {!! Form::hidden('img_inbound', 'img/carriers/' . $flight["Inbound"]['Carrier'] . '.png') !!}
+                            {!! Form::hidden('Salida_Outbound',Carbon\Carbon::parse($flight['Outbound']['DepartureDate'])) !!}
+                            {!! Form::hidden('Llegada_Outbound',Carbon\Carbon::parse($flight['Outbound']['ArrivalDate'])) !!}
+                            {!! Form::hidden('Salida_Inbound',Carbon\Carbon::parse($flight['Inbound']['DepartureDate'])) !!}
+                            {!! Form::hidden('Llegada_Inbound',Carbon\Carbon::parse($flight['Inbound']['ArrivalDate'])) !!}
+                            {!! Form::hidden('Stops',$flight['Outbound']['Stops']) !!}
                             {!! Form::hidden('Total',$flight['saleTotal']) !!}
                             {!! Form::submit(trans('general.booking'),['class'=>'btn btn-primary push-10-t']) !!}
                             {!! Form::close() !!}

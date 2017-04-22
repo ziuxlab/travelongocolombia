@@ -94,13 +94,13 @@
                             "origin"      => substr($request->departure_id, 0, 3),
                             "destination" => $destino->city_code,
                             "date"        => date('Y-m-d', strtotime($request->checkin)),
-                            "maxStops"    => 2
+                            "maxStops"    => 4
                         ],
                         [
                             "origin"      => $destino->city_code,
                             "destination" => substr($request->departure_id, 0, 3),
                             "date"        => date('Y-m-d', strtotime($request->checkout)),
-                            "maxStops"    => 2
+                            "maxStops"    => 4
                         ]
                     ]
                 ]

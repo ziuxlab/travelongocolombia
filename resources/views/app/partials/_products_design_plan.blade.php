@@ -58,7 +58,6 @@
                     <button class="btn btn-primary btn-minw" type="submit">@lang('general.booking')</button>
                 @endif
             </div>
-            
             {!! Form::close() !!}
         </div>
     </div>

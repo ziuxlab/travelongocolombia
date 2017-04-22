@@ -13,16 +13,25 @@
             'adults',
             'children',
             'infants',
-            'destinationplace',
+            'stops',
+            'img_outbound',
+            'img_inbound',
             'originplace',
-            'outbounddate',
-            'inbounddate',
-        
+            'destinationplace',
+            'salida_outbound',
+            'llegada_outbound',
+            'salida_inbound',
+            'llegada_inbound',
+            'total',
         ];
+
+   
         
         protected $dates = [
-            'outbounddate',
-            'inbounddate',
+            'salida_outbound',
+            'llegada_outbound',
+            'salida_inbound',
+            'llegada_inbound',
         ];
         
         

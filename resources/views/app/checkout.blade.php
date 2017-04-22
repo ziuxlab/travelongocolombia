@@ -54,96 +54,106 @@
                     <div class="block-content block-content-mini block-content-narrow tab-content ">
                         <div class="tab-pane  push-30-t push-50 active" id="validation-classic-step1">
                             @for ($i = 0; $i < Session::get('adults'); $i++)
-                                <div class="block block-rounded block-bordered">
-                                    <div class="block-header bg-gray-lighter">
-                                        <h4 class="block-title">Adult {{$i + 1}}</h4>
-                                    </div>
-                                    <div class="block-content">
-                                        <div class="form-group">
-                                            <div class="col-sm-6">
-                                                <label>Name</label>
-                                                <input class="form-control" type="text" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
-                                                       name="adult[full_name][{{$i}}]"
-                                                       placeholder="Please enter your name">
+                                    <div class="block block-rounded block-bordered">
+                                        <div class="block-header bg-gray-lighter">
+                                            <h4 class="block-title">Adult {{$i + 1}}</h4>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="form-group">
+                                                <div class="col-sm-6">
+                                                    <label>Name</label>
+                                                    <input class="form-control" type="text"
+                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
+                                                           name="adult[full_name][{{$i}}]"
+                                                           placeholder="Please enter your name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Email</label>
+                                                    <input class="form-control" type="email" name="adult[email][{{$i}}]"
+                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
+                                                           placeholder="Please enter your email">
+                                                </div>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <label>Email</label>
-                                                <input class="form-control" type="email" name="adult[email][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
-                                                       placeholder="Please enter your email">
+                                            <div class="form-group">
+                                                <div class="col-sm-4">
+                                                    <label>Phone</label>
+                                                    <input class="form-control" type="text" name="adult[phone][{{$i}}]"
+                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
+                                                           placeholder="Please enter your phone">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label>City</label>
+                                                    <input class="form-control" type="text" name="adult[city][{{$i}}]"
+                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
+                                                           placeholder="Please enter your City">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label>Country</label>
+                                                    <input class="form-control" type="text"
+                                                           name="adult[country][{{$i}}]"
+                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
+                                                           placeholder="Please enter your Country">
+                                                    @if(!is_null($contacts['adult']))
+                                                        {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
+                                                    @endif
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-4">
-                                                <label>Phone</label>
-                                                <input class="form-control" type="text" name="adult[phone][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
-                                                       placeholder="Please enter your phone">
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label>City</label>
-                                                <input class="form-control" type="text" name="adult[city][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
-                                                       placeholder="Please enter your City">
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label>Country</label>
-                                                <input class="form-control" type="text" name="adult[country][{{$i}}]" value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
-                                                       placeholder="Please enter your Country">
-                                                @if(!is_null($contacts['adult']))
-                                                    {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
-                                                @endif
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
                             @endfor
                             @for ($i = 0; $i < Session::get('children'); $i++)
-                                <div class="block block-rounded block-bordered">
-                                    <div class="block-header bg-gray-lighter">
-                                        <h4 class="block-title">Child {{$i + 1}}</h4>
-                                    </div>
-                                    <div class="block-content">
-                                        <div class="form-group">
-                                            <div class="col-sm-6">
-                                                <label>Name</label>
-                                                <input class="form-control" type="text"
-                                                       name="child[full_name][{{$i}}]" value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['name']}}"
-                                                       placeholder="Please enter your name">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label>Age</label>
-                                                <input class="form-control" type="number" name="child[age][{{$i}}]" value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['age']}}"
-                                                       placeholder="Please enter your age">
-                                                @if(!is_null($contacts['child']))
-                                                    {!! Form::hidden('child[contact_id]['.$i.']', $contacts['child'][$i]['id']) !!}
-                                                @endif
+                                    <div class="block block-rounded block-bordered">
+                                        <div class="block-header bg-gray-lighter">
+                                            <h4 class="block-title">Child {{$i + 1}}</h4>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="form-group">
+                                                <div class="col-sm-6">
+                                                    <label>Name</label>
+                                                    <input class="form-control" type="text"
+                                                           name="child[full_name][{{$i}}]"
+                                                           value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['name']}}"
+                                                           placeholder="Please enter your name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Age</label>
+                                                    <input class="form-control" type="number" name="child[age][{{$i}}]"
+                                                           value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['age']}}"
+                                                           placeholder="Please enter your age">
+                                                    @if(!is_null($contacts['child']))
+                                                        {!! Form::hidden('child[contact_id]['.$i.']', $contacts['child'][$i]['id']) !!}
+                                                    @endif
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             @endfor
                             @for ($i = 0; $i < Session::get('infants'); $i++)
-                                <div class="block block-rounded block-bordered">
-                                    <div class="block-header bg-gray-lighter">
-                                        <h4 class="block-title">Infant {{$i + 1}}</h4>
-                                    </div>
-                                    <div class="block-content">
-                                        <div class="form-group">
-                                            <div class="col-sm-6">
-                                                <label>Name</label>
-                                                <input class="form-control" type="text" value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['name']}}"
-                                                       name="infant[full_name][{{$i}}]"
-                                                       placeholder="Please enter your name">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label>Age</label>
-                                                <input class="form-control" type="number" name="infant[age][{{$i}}]" value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['age']}}"
-                                                       placeholder="Please enter your age">
-                                                @if(!is_null($contacts['infant']))
-                                                    {!! Form::hidden('infant[contact_id]['.$i.']', $contacts['infant'][$i]['id']) !!}
-                                                @endif
+                                    <div class="block block-rounded block-bordered">
+                                        <div class="block-header bg-gray-lighter">
+                                            <h4 class="block-title">Infant {{$i + 1}}</h4>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="form-group">
+                                                <div class="col-sm-6">
+                                                    <label>Name</label>
+                                                    <input class="form-control" type="text"
+                                                           value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['name']}}"
+                                                           name="infant[full_name][{{$i}}]"
+                                                           placeholder="Please enter your name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Age</label>
+                                                    <input class="form-control" type="number" name="infant[age][{{$i}}]"
+                                                           value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['age']}}"
+                                                           placeholder="Please enter your age">
+                                                    @if(!is_null($contacts['infant']))
+                                                        {!! Form::hidden('infant[contact_id]['.$i.']', $contacts['infant'][$i]['id']) !!}
+                                                    @endif
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             @endfor
                         </div>
                         <div class="tab-pane push-30-t push-50 " id="validation-classic-step2">
@@ -215,7 +225,6 @@
             
             </div>
         </div>
-    
     </div>
     <div class="content-boxed content">
         <div class="row">

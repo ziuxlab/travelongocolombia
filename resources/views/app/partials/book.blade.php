@@ -163,7 +163,7 @@
     </div>
 </div>
 @include('app.partials.needhelp')
-@include('app.partials._modal_book', ['type'=>3,'id'=>0])
+@include('app.partials._modal_book', ['type'=>$item->type,'id'=>0])
 
 
 
