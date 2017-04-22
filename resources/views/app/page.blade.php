@@ -26,8 +26,6 @@
 @section('contenido')
     @include('app.partials.banner')
     {!! $item->body !!}
-   
-
 @stop
 
 @section('scripts')

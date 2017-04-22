@@ -34,7 +34,7 @@
                 </span>
             @endforeach
             <a href="#product_{{$product->id}}" data-toggle="collapse" data-parent="#faq1"
-               class="accordion-toggle btn btn-default push-15-t">@lang('general.view details')</a>
+               class="accordion-toggle btn btn-default push-15-t text-capitalize">@lang('general.view details')</a>
         </div>
     </div>
     <div class="col-md-2 col-sm-3 col-xs-12 border-black-op-b content content-full text-center flex-center">
@@ -55,7 +55,7 @@
                     </button>
                     @include('app.partials._modal_book', ['type'=>1,'id'=>$product->id])
                 @else
-                    <button class="btn btn-primary btn-minw" type="submit">@lang('general.booking')</button>
+                    <button class="btn btn-primary btn-minw text-capitalize" type="submit">@lang('general.booking')</button>
                 @endif
             </div>
             {!! Form::close() !!}

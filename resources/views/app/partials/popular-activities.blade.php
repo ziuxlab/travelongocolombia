@@ -26,7 +26,7 @@
                         <div class="block-content block-content-mini">
                             <div class=" push-5 border-b ">
                                 <div class="flex-between">
-                                    <h2 class="h5 font-w600">{{$activity->tittle}}</h2>
+                                    <h2 class="h5 text-left font-w600">{{$activity->tittle}}</h2>
                                     <div class="h5 font-w600 text-primary">
                                         ${{number_format($activity->price_adults * ( 1 + ($activity->discount/100)))}}</div>
                                 </div>

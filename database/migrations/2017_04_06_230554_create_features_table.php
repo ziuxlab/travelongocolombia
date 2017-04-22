@@ -16,6 +16,7 @@ class CreateFeaturesTable extends Migration
         Schema::create('features', function (Blueprint $table) {
             $table->increments('id');
             $table->string('feature');
+            $table->string('feature_es');
             $table->string('icon')->nullable();
             $table->tinyInteger('type')->default(0); //0 = package, 1 = activity, 2 = hotel
             $table->timestamps();

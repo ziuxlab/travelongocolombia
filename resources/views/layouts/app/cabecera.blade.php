@@ -81,8 +81,8 @@
                             <a class="text-white" href="">@lang('cabecera.Hi',['name'=> Auth::user()->name])</a>
                         </div>
                     @endif
-                    <div class="push-15-r">
-                        <a class="text-white h5 flex-center " type="button" data-toggle="layout"
+                    <div class="push-20-r push-5-l">
+                        <a class="text-white h4 flex-center " type="button" data-toggle="layout"
                            data-action="side_overlay_toggle">
                             <i class="fa fa-shopping-cart"></i>
                             @if(!Cart::isEmpty())
@@ -91,7 +91,7 @@
                         </a>
                     </div>
                     <li class="hidden-xs hidden-sm flex-center">
-                        <span class="push-5-r">Lang</span>
+                        <span class="push-5-r">@lang('cabecera.Lang')</span>
                         <div class="btn-group ">
 
                             <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">

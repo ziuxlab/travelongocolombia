@@ -11,6 +11,7 @@ class Feature extends Model
     
     protected $fillable = [
         'feature',
+        'feature_es',
         'icon',
         'type', //0 = package, 1 = activity, 2 = hotel
     ];

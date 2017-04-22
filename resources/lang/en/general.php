@@ -77,5 +77,9 @@
         'image'                => 'image',
         'booking'              => 'Booking',
         'book now'             => 'Book now',
+        'city'                 => 'City',
+        'filter'               => 'Filter',
+        'help'               => 'Need Help?',
+    
     
     ];

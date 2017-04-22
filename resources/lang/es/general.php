@@ -77,5 +77,7 @@
         'image'                => 'imagen',
         'booking'              => 'Reservar',
         'book now'             => 'Reservar Ahora',
-    
+        'city'                 => 'Ciudad',
+        'filter'               => 'Filtrar',
+        'help'                 => '¿Necesitas Ayuda?',
     ];

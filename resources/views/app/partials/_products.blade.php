@@ -42,15 +42,15 @@
             <div>*@lang('general.person')</div>
             @if($product->type == 0)
                 <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}"
-                   class="btn btn-primary push-20-t ">@lang('general.view details')</a>
+                   class="btn btn-primary push-20-t text-capitalize">@lang('general.view details')</a>
             @endif
             @if($product->type == 1)
                 <a href="{{url(trans('general.activities').'/'.$product->slug_url)}}"
-                   class="btn btn-primary push-20-t ">@lang('general.view details')</a>
+                   class="btn btn-primary push-20-t text-capitalize">@lang('general.view details')</a>
             @endif
             @if($product->type == 2)
                 <a href="{{url(trans('general.hotels').'/'.$product->slug_url)}}"
-                   class="btn btn-primary push-20-t ">@lang('general.view details')</a>
+                   class="btn btn-primary push-20-t text-capitalize ">@lang('general.view details')</a>
             @endif
         </div>
     </div>
