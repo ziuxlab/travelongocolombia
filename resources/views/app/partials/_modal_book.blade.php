@@ -6,7 +6,7 @@
                     <h3 class="text-center push-20">¿Qué deseas hacer ahora?</h3>
                     <div class="row push-20">
                         <div class="col-xs-6 text-center border-r">
-                            @if($type==1)
+                            @if($type==1 or $type ==2)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                     <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
                                          alt="airplane">
@@ -18,14 +18,14 @@
                                     </button>
                                 </div>
                             @endif
-                            @if($type==3)
+                            @if($type==0)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                     <img class="img-responsive" src="{{asset('img/icons/airplane.svg')}}"
                                          alt="airplane">
                                 </div>
                                 <p>Escoger un vuelo para este paquete</p>
                                 <div class="text-center">
-                                    <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(1)"
+                                    <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(3)"
                                             data-dismiss="modal">Buscar Vuelos
                                     </button>
                                 </div>

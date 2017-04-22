@@ -1,5 +1,5 @@
 <div class="book">
-    <div class="bg-white ">
+    <div class="bg-white">
         <div class="block">
             <div class="block-header bg-primary text-center h3 text-white">
                 - Booking -

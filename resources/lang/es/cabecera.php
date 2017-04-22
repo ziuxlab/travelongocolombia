@@ -14,7 +14,7 @@
         */
         
         'Pick'                 => 'Escoger un Plan',
-        'Design'               => 'Diseña tu Plan',
+        'Design'               => 'arma tu plan',
         'Hi'                   => 'Hola, :name',
         'Profile'              => 'Perfil',
         'Settings'             => 'Configuraciones',

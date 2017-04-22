@@ -5,6 +5,7 @@
     use App\Product;
     use Cart;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Session;
     
     class CartController extends Controller
@@ -87,8 +88,35 @@
                 return redirect('cart');
             }
             
+            //activities
             if ($request->choice == 1) {
-                return redirect('flight');
+                if (App::isLocale('en')) {
+                    //
+                    return redirect('activities');
+                }else{
+                    return redirect('actividades');
+                }
+                
+            }
+    
+            if ($request->choice == 2) {
+                if (App::isLocale('en')) {
+                    //
+                    return redirect('hotels');
+                }else{
+                    return redirect('hoteles');
+                }
+        
+            }
+    
+            if ($request->choice == 3) {
+    
+                if (App::isLocale('en')) {
+                    //
+                    return redirect('flight');
+                }else{
+                    return redirect('vuelos');
+                }
             }
             
             

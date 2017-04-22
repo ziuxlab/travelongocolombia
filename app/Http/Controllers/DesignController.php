@@ -46,7 +46,7 @@
         public function store(Request $request)
         {
             //
-            
+          
             
             if ($request->step == 1) {
                 

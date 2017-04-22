@@ -34,7 +34,7 @@
                                 <span class="badge">{{$item->quantity}}</span>
                             </td>
                             <td class="text-right">
-                                <div class="h3 font-w700 text-success">${{number_format($item->price) }}</div>
+                                <div class="h3 font-w700 text-success">${{number_format($item->price * $item->quantity) }}</div>
                             </td>
                             <td class="text-center">
                                 {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}
