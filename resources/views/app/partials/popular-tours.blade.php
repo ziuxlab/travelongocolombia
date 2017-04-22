@@ -22,17 +22,17 @@
                         <div class="block-content  text-center bg-black-op">
                             <div class="row ">
                                 <div class="col-sm-12  push-15 text-white">
-                                    <span class="pull-left  font-w600 h5">{{$package->tittle}}</span>
+                                    <h2 class="pull-left  font-w600 h5">{{$package->tittle}}</h2>
                                     <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> {{$package->days}} @lang('general.days')</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="block-content">
+                    <div class="block-content block-content-mini">
                         <div class="row">
                             <div class="col-sm-12">
                                 <p class="text-justify">
-                                    {{substr($package->meta_description,0,170)}} [...]
+                                    {{substr($package->description,0,100)}}...
                                 </p>
                                 <button class="btn push-20 btn-minw text-white btn-primary ">@lang('general.view details')</button>
                             </div>

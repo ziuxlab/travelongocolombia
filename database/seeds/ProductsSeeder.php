@@ -27,7 +27,7 @@
                 'price_children'   => '50',
                 'local'            => 'en',
                 'type'             => 1,
-                'discount'         => 0, //porcentaje
+                'discount'         => 10, //porcentaje
                 'city_id'          => 1,
                 'meta_description' => 'The Coffee Park',
                 'keywords'         => 'The Coffee Park',
@@ -44,7 +44,7 @@
                 'price_children'   => '50',
                 'local'            => 'es',
                 'type'             => 1,
-                'discount'         => 0, //porcentaje
+                'discount'         => 10, //porcentaje
                 'city_id'          => 1,
                 'meta_description' => 'Parque del café',
                 'keywords'         => 'Parque del café',
@@ -61,7 +61,7 @@
                 'days'             => '8 hours',
                 'local'            => 'en',
                 'type'             => 1,
-                'discount'         => 0, //porcentaje
+                'discount'         => 20, //porcentaje
                 'city_id'          => 1,
                 'meta_description' => 'Panaca',
                 'keywords'         => 'Panaca',
@@ -78,7 +78,7 @@
                 'days'             => '8 horas',
                 'local'            => 'es',
                 'type'             => 1,
-                'discount'         => 0, //porcentaje
+                'discount'         => 20, //porcentaje
                 'city_id'          => 2,
                 'meta_description' => 'Panaca',
                 'keywords'         => 'Panaca',

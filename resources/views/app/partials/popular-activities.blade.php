@@ -14,25 +14,35 @@
                         <div class="bg-image img-rounded-t "
                              style="background-image: url('{{asset($activity->photos->sortBy('order')->first()->img)}}');">
                             <div class="mheight-200">
+                                @if($activity->discount > 0 or $activity->discount <> null)
+                                    <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                                        <div class="ribbon-box font-w600">
+                                            {{$activity->discount}}% Off
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                         </div>
-                        <div class="block-content">
-                            <div class="row items-push text-center">
-                                <div class="col-xs-8">
-                                    <div class=" text-left">
-                                        <h2 class="h4 font-w600 text-info">{{$activity->tittle}}</h2>
-                                        <p class="text-gray-dark remove-margin">[...]
-                                        </p>
+                        <div class="block-content block-content-mini">
+                            <div class=" push-5 border-b ">
+                                <div class="flex-between">
+                                    <h2 class="h5 font-w600">{{$activity->tittle}}</h2>
+                                    <div class="h5 font-w600 text-primary">
+                                        ${{number_format($activity->price_adults * ( 1 + ($activity->discount/100)))}}</div>
+                                </div>
+                                <div class="flex-between push-5">
+                                    <div>
+                                        <p class="text-gray-dark remove-margin">{{$activity->city->city}} </p>
+                                    </div>
+                                    <div class="text-gray-dark remove-margin">
+                                        <span class="si si-clock"></span> {{$activity->days}}
                                     </div>
                                 </div>
-                                <div class="col-xs-4">
-                                    <div class=" text-right">
-                                        <div class="h4 font-w600 text-primary">
-                                            ${{number_format($activity->price_adults * ( 1 + ($activity->discount/100)))}}</div>
-                                        <b class="text-gray-dark remove-margin">
-                                            <span class="si si-clock"></span> {{$activity->days}} day
-                                        </b>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <p class="text-justify ">{{substr($activity->description,0,120)}}...</p>
+                                    <button class="btn push-20  text-white btn-primary">@lang('general.view details')</button>
                                 </div>
                             </div>
                         </div>
