@@ -35,6 +35,5 @@
 
 @section('scripts')
     {{$Config->scripts_footer}}
-    @include('layouts.app.partials._list', ['type'=> 1])
     @include('admin.flights._scripts_flights')
 @stop

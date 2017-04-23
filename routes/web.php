@@ -131,5 +131,4 @@
           Route::post('account/store-password', 'DashboardController@storePassword');
           Route::get('bookings/booking-history', 'DashboardController@indexBookingHistory');
           Route::get('bookings/payments', 'DashboardController@indexPaymentHistory');
-          
     });

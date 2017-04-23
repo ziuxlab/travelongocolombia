@@ -46,7 +46,6 @@
          */
         public function list(Request $request, $type)
         {
-            
             if (isset($request->feature)) {
                 
                 $products = Product::with('features')
