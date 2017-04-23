@@ -67,7 +67,7 @@
                         @endif
                     </div>
                     <div class="push-20 text-right">
-                        <a href="{{'/'}}" type="button" class="btn btn-default push-15-r">Continue Shopping</a>
+                        <a href="{{url(trans('general.activities'))}}" type="button" class="btn btn-default push-15-r">Continue Shopping</a>
                         <button type="submit" class="btn btn-primary">Proceed payment</button>
                     </div>
                     {!! Form::close() !!}

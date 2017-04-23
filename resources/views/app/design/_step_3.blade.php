@@ -18,15 +18,10 @@
         </div>
     </div>
 </div>
-
-
-
-
 @section('scripts')
-    {{$Config->scripts_footer}}
     @include('layouts.app.partials._list', ['type'=> 1])
     <script>
-        function enviar_formulario_book(choice, id = 0) {
+        function enviar_formulario_book(choice, id) {
             console.log(choice);
             //choice es la opcion 0 o 1 si es 0 va al checkout y si escoge 1 va a buscar vuelos
             if(choice == 0){

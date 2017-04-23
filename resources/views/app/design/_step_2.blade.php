@@ -16,8 +16,6 @@
         </div>
     </div>
 </div>
-
-@section('scripts')
-    {{$Config->scripts_footer}}
+@push('scripts')
     @include('layouts.app.partials._list', ['type'=> 2])
-@stop
+@endpush

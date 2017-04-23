@@ -29,7 +29,7 @@
     @if(Session::get('step') == null)
         @include('app.design._step_1')
     @else
-        @include('app.design._step_'.Session::get('step')))
+        @include('app.design._step_'.Session::get('step'))
     @endif
 @stop
 
