@@ -237,7 +237,7 @@
             ]);
             Feature::create([
                 'id'            => 31,
-                'feature'       => 'Country Side',
+                'feature'       => 'Countryside',
                 'feature_es'    => 'Campestre',
                 'in_categories' => 1,
                 'icon'          => 'icon icon-tourism-icons-fitness',

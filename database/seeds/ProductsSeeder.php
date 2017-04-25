@@ -333,7 +333,7 @@
                 'id'               => 19,
                 'tittle'           => 'Plan a less Physically Taxing',
                 'slug_url'         => str_slug('Plan a less Physically Taxing', '-'),
-                'days'             => '9 Days',
+                'days'             => '10 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
@@ -341,7 +341,7 @@
                 'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -369,11 +369,11 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CITY TOUR </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm COFFEE TASTING</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER</li>
 </ul>                           
 </div>
 </div>
@@ -387,10 +387,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am PARQUE DEL CAFE (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am PARQUE DEL CAFE (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -404,10 +404,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am RANCHO CALIFORNIA ENJOY SINCE EXTREME SPORTS TO NATURE WALKS OR FISHING (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am LA TIERRA PROMETIDA (THE PROMISSED LAND)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -421,12 +421,12 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>10am TOUR BUENAVISTA -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH AT CONCORDE RESTAURANT</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR PIJAO -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am TOUR BUENAVISTA</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm TOUR PIJAO</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -440,12 +440,13 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am BOTANICAL GARDEN</li>
-<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH AT ROBLE RESTAURANT</li>
-<li><i class="fa fa-clock-o fa-li"></i>4pm PARQUE DE LA VIDA</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 am BREAKFAST AT ACCOMMODATION
+</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am JARDIN BOTÁNICO (BOTANICAL GARDEN)</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm LUNCH </li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm PARQUE DE LA VIDA  (LIFE PARK)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -459,11 +460,11 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am SALENTO, VALLE DEL COCORA</li>
-<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am SALENTO, VALLE DEL COCORA </li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -477,10 +478,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am RECUCA LUNCH INCLUDED-  </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm BARCELONA  (TRY FORCHA, KUMIS, SIROPE, PANDEBONOS AND TRADITIONAL FOOD) </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am RECUCA LUNCH INCLUDED</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm BARCELONA  (TRY FORCHA, KUMIS, SIROPE, PANDEBONOS AND TRADITIONAL FOOD) </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm RETURN ACCOMMODATIONS </li>
 </ul>                           
 </div>
 </div>
@@ -494,12 +495,26 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>10am MUSEO QUIMBAYA, FILANDIA</li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH IN FILANDIA</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR IN FILANDIA AND LOOK OUT</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm DINNER IN FILANDIA </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am MUSEO QUIMBAYA, FILANDIA (QUIMBAYA MUSEUM)</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm LUNCH IN FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm TOUR IN FILANDIA AND LOOK OUT</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm DINNER IN FILANDIA </li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 10</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>PICK UP AT THE HOTEL TO AIRPORT</li>
+<li><i class="fa fa-clock-o fa-li"></i>FAREWELL BREAKFAST  (TRADITIONAL SOUVENIR) </li>
 </ul>                           
 </div>
 </div>
@@ -513,7 +528,7 @@
                 'id'               => 20,
                 'tittle'           => 'Plan B Most Physically',
                 'slug_url'         => str_slug('Plan B Most Physicallyg', '-'),
-                'days'             => '7 Days',
+                'days'             => '9 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
@@ -521,7 +536,7 @@
                 'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -549,9 +564,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am WATERFALLS IN CORDOBA (LUNCH INCLUDED) DINNER IN BALBOA</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am WATERFALLS IN CORDOBA (LUNCH INCLUDED) </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm COFFEE TASTING AND TRADITIONAL FOOD</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm RETURN ACCOMMODATIONS </li>
 </ul>                           
 </div>
 </div>
@@ -565,10 +581,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am PANACA  (LUNCH INCLUDED)  ACCOMMODATION IN PEREIRA</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am PANACA  (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATION</li>
 </ul>                           
 </div>
 </div>
@@ -582,10 +598,12 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am BALSAJE ACROSS A RIVER CALLED "La Vieja"  (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am BALSAJE ACROSS A RIVER CALLED "La Vieja"  (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm PICK UP TO PEREIRA</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 pm CHECK IN AT HOTEL IN PEREIRA</li>
 </ul>                           
 </div>
 </div>
@@ -599,10 +617,15 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am MONTAIN CLIMBING  SANTA ISABEL  RISARALDA (LONG DAY - LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:00 am PICK UP TO START THE ADVENTURE</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT A FARM ON THE WAY</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CONTINUE THE TRANSPORT</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am STARTING THE HIKING FOR 2.5 HOURS</li>
+<li><i class="fa fa-clock-o fa-li"></i>12:30 pm REACH THE NEVADO SANTA ISABEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm STARTING THE DESCENT FOR 2 HOURS THEN BY CAR</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm LUNCH AT A FARM ON THE WAY</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:00 pm CHECK IN AT A FARM</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT A FARM</li>
 </ul>                           
 </div>
 </div>
@@ -616,10 +639,15 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGOON  OF  OTUN RISARALDA   (LUNCH INCLUDED) ACCOMMODATION IN TERMALES</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 am START THE ADVENTURE TO THE OTUN LAGOON</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT A FARM ON THE WAY</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CONTINUE THE TRANSPORT</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am STARTING THE HIKING FOR 2.5 HOURS</li>
+<li><i class="fa fa-clock-o fa-li"></i>12:00 m  REACH THE OTUN LAGOON</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm STARTING THE DESCENT FOR 2 HOURS THEN BY CAR</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm LUNCH AT A FARM ON THE WAY</li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm START TRAVELING TO SANTA ROSA, RISARALDA</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CHECK IN AT THE HOTEL (SPRING WATER)</li>
 </ul>                           
 </div>
 </div>
@@ -633,10 +661,7 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS SAN VICENTE RISARALDA ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE WONDERFUL SPRING WATERS ALL DAY  (BREAKFAST, LUNCH AND DINNER INCLUDED)</li>
 </ul>                           
 </div>
 </div>
@@ -650,10 +675,26 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS DE SAN VICENTE RISARALDA (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE PLACE FREELY UNTIL CHECK OUT AT 1 PM</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:30 pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm TRAVEL TO ARMENIA </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CHECK IN AT THE HOTEL IN ARMENIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER ACCOMMODATIONS</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 9</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR)</li>
 </ul>                           
 </div>
 </div>
@@ -667,7 +708,7 @@
                 'id'               => 21,
                 'tittle'           => 'Plan C Outdoors Tour',
                 'slug_url'         => str_slug('Plan C Outdoors Tour', '-'),
-                'days'             => '7 Days',
+                'days'             => '9 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
@@ -675,7 +716,7 @@
                 'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -703,9 +744,12 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am JEEP PANORAMICO</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am PANORAMIC JEEP AROUND TOWNS </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm LUNCH </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm PANORAMIC JEEP AROUND TOWNS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER ON THE WAY</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm RETURN ACCOMMODATION</li>
 </ul>                           
 </div>
 </div>
@@ -719,14 +763,16 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am NATURE WALK CALARCA (PICNIC LUNCH  IN PLATANO OR CONGO LEAVES)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am NATURE WALK CALARCA </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm PICNIC LUNCH IN PLATANO OR CONGO LEAVES</li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm RETURN ACCOMMODATIONS</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
 </div>
+
 <div class="panel-group">
 <div class="panel panel-default">
 <div class="panel-heading">
@@ -736,8 +782,15 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 am CHECK OUT</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 am EL PALACIO DEL BARBAS </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am BREAKFAST AT EL PALACIO DEL BARBAS</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am STARTING THE HIKING TO LOOK FOR MONKEYS</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm RETURN TO FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:30 pm LUNCH </li>
+<li><i class="fa fa-clock-o fa-li"></i>04:30 pm WALKING AROUND FILANDIA AND CUP OF COFFEE </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm TRAVEL TO CAMPING MONTEROCA </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:45 pm CHECK IN AT MONTEROCA AND DINNER</li>
 </ul>                           
 </div>
 </div>
@@ -751,8 +804,7 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE DAY WITH THE DIFFERENT ACTIVITIES IN MONTEROCA, BREAKFAST,LUNCH AND DINNER INCLUDED</li>
 </ul>                           
 </div>
 </div>
@@ -766,10 +818,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am Natural park Barbas Bremen </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE MORNING AT MONTEROCA. BREAKFAST AND LUNCH INCLUDED. CHECK OUT AT 1
+</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm TRAVELING TO CALIMA LAKE</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:30 pm CHECK IN AT CALIMA LAKE HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -783,8 +835,7 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE DAY WITH THE DIFFERENT ACTIVITIES AT CALIMA LAKE, BREAKFAST,LUNCH AND DINNER INCLUDED</li>
 </ul>                           
 </div>
 </div>
@@ -798,8 +849,10 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+<li><i class="fa fa-clock-o fa-li"></i>ENJOY THE MORNING AT CALIMA LAKE. BREAKFAST AND LUNCH INCLUDED. CHECK OUT AT 1</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm  RETURN ACCOMMODATIONS TO ARMENIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:30 pm  CHECK IN AT THE HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm DINNER AT THE ACCOMMODATIONS</li>
 </ul>                           
 </div>
 </div>
@@ -808,12 +861,12 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day </span> 
+<span class="text-primary">Day 9</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>PICK UP AT THE HOTEL TO AIRPORT  FAREWELL  (TRADITIONAL SOUVENIR)</li>
 </ul>                           
 </div>
 </div>
