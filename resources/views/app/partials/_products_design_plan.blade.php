@@ -88,16 +88,18 @@
                     </h3>
                     <p class="text-muted text-justify">{{$product->description}}</p>
                 </div>
-                <div class="row content-mini content-mini-full border-t">
-                    <h4 class=" h5 col-sm-6">Duration:</h4>
-                    <div class="text-muted col-sm-6">
-                        <ul class="fa-ul ">
-                            <li class="text-capitalize">
-                                <i class="fa text-primary fa-clock-o fa-li"></i>{{$product->days}}
-                            </li>
-                        </ul>
+                @if($product->type !== 2)
+                    <div class="row content-mini content-mini-full border-t">
+                        <h4 class=" h5 col-sm-6">Duration:</h4>
+                        <div class="text-muted col-sm-6">
+                            <ul class="fa-ul ">
+                                <li class="text-capitalize">
+                                    <i class="fa text-primary fa-clock-o fa-li"></i>{{$product->days}}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                @endif
                 @if($product->include !== null)
                     <div class="row content-mini content-mini-full border-t">
                         <h4 class=" h5 col-sm-6">Price Include:</h4>
@@ -126,7 +128,6 @@
                         </div>
                     </div>
                 @endif
-            </div>
                 <div class="push-30">
                     <h3 class="h3 text-capitalize push-15 "><i
                                 class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
@@ -140,10 +141,12 @@
                         </div>
                     @endif
                 </div>
-            
             </div>
+        
+        
         </div>
     </div>
+</div>
 </div>
 @include('layouts.app.partials._tooltip')
 

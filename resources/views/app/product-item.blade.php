@@ -58,6 +58,7 @@
                             </h3>
                             <p class="text-muted text-justify">{{$item->description}}</p>
                         </div>
+                        @if($item->type !== 2)
                         <div class="row content-mini content-mini-full border-t">
                             <h4 class=" h5 col-sm-6">Duration:</h4>
                             <div class="text-muted col-sm-6">
@@ -68,6 +69,7 @@
                                 </ul>
                             </div>
                         </div>
+                        @endif
                         @if($item->include !== null)
                             <div class="row content-mini content-mini-full border-t">
                                 <h4 class=" h5 col-sm-6">Price Include:</h4>
