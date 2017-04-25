@@ -22,7 +22,7 @@
                              alt="{{$flight["Outbound"]['Carrier']}} "></td>
                     <td>
                         <div class="h5 text-muted "> Duration</div>
-                        <div class="h4"> {{gmdate('H:i', $flight['Outbound']['Duration'] * 60)}}
+                        <div class="h4"> {{gmdate('H:i', $flight['Outbound']['Duration'] * 60)}}h
                         </div>
                         <div class="h5 text-muted ">
                             {{$flight['Outbound']['Stops']}} Stops
@@ -75,7 +75,7 @@
                     </td>
                     <td>
                         <div class="h5 text-muted "> Duration</div>
-                        <div class="h4"> {{gmdate('H:i', $flight['Inbound']['Duration'] * 60)}}</div>
+                        <div class="h4"> {{gmdate('H:i', $flight['Inbound']['Duration'] * 60)}}h</div>
                         <div class="h5 text-muted ">{{$flight['Inbound']['Stops']}} Stops</div>
                     </td>
                     <td>

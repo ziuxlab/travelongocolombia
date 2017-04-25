@@ -44,23 +44,18 @@
                     </ul>
                 </div>
                 <div class="bg-white content content-narrow">
-                    <div class=" push-20  ">
+                    <div class="">
                         <div class="">
-                            @if($item->type == 0)
-                                <h3 class="h3 push-15 "><i
-                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.packages')
-                                    Details</h3>
-                            @endif
-                            @if($item->type == 1)
-                                <h3 class="h3 push-15 "><i
-                                            class=" text-primary fa fa-file-text-o"></i> @lang('general.activities')
-                                    Details</h3>
-                            @endif
-                            @if($item->type == 2)
-                                <h3 class="h3 push-15 "><i
-                                            class="text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
-                                </h3>
-                            @endif
+                            <h3 class="h3 text-capitalize push-15 ">
+                                <i class=" text-primary  fa fa-file-text-o"></i>
+                                @if($item->type == 0)
+                                    @lang('general.details_resumen',['name'=> trans('general.packages')])
+                                @elseif($item->type == 1)
+                                    @lang('general.details_resumen',['name'=> trans('general.activities')])
+                                @elseif($item->type == 2)
+                                    @lang('general.details_resumen',['name'=> trans('general.hotels')])
+                                @endif
+                            </h3>
                             <p class="text-muted text-justify">{{$item->description}}</p>
                         </div>
                         <div class="row content-mini content-mini-full border-t">
@@ -82,85 +77,41 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row content-mini content-mini-full border-t border-b">
-                            <h4 class=" h5 col-sm-6">Price exclude</h4>
-                            <div class="text-muted col-sm-6">
-                                <ul class="fa-ul">
-                                    <li><i class="fa text-danger fa-close fa-li"></i>First item</li>
-                                    <li><i class="fa text-danger fa-close fa-li"></i>Second item</li>
-                                    <li><i class="fa text-danger fa-close fa-li"></i>Sublist</li>
-                                    <li><i class="fa  text-danger fa-close fa-li"></i>Third item</li>
-                                </ul>
-                            </div>
-                        </div>
-                
                     </div>
-                    <div class="   ">
-                        <div>
-                            <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
-                        </div>
-                    
-                        <div class="panel-group">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title ">
-                                        <span class="text-primary">Day 1</span> Arrive in Zürich, Switzerland
-                                    </h3>
-                                </div>
-                                <div class="panel-body text-muted">
-                                    <p>welcome at the airport with fresh juice and cookies
-                                       transportation to accommodations
-                                       check into accommodations and rest for the night
-                                       dinner/drinks at accommodation 7pm
-                                    </p>
+                    <div class="push-30">
+                        <h3 class="h3 text-capitalize push-15 "><i class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
+                        @if(count($item->photos)>0)
+                            <div class="">
+                                <!-- Slider -->
+                                <div class="js-slider">
+                                    @foreach($item->photos as $photo)
+                                        <div>
+                                            <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
-                        </div>
-                        <div class="panel-group">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">
-                                        <span class="text-primary">Day 1</span> Arrive in Zürich, Switzerland
-                                    </h3>
-                                </div>
-                                <div class="panel-body text-muted">
-                                    <ul class="fa-ul">
-                                        <li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-                                        <li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
-                                        <li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
-                                        <li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
-                                        <li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
-                                    </ul>
-                            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white content content-full content-narrow">
-                    <h3 class="h3 push-15 "><i class=" text-primary fa fa-camera-retro"></i> Photos</h3>
-                    @if(count($item->photos)>0)
-                        <div class="">
-                            <!-- Slider -->
-                            <div class="js-slider">
-                                @foreach($item->photos as $photo)
-                                    <div>
+                            <div class="">
+                                <div class="slider-nav">
+                                    @foreach($item->photos as $photo)
+                                        
                                         <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
-                                    </div>
-                                @endforeach
+                                    
+                                    @endforeach
+                                </div>
                             </div>
-                        </div>
+                        @endif
+                    </div>
+                    @if($item->type == 0)
                         <div class="">
-                            <div class="slider-nav">
-                                @foreach($item->photos as $photo)
-                                
-                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
-                            
-                                @endforeach
+                            <div>
+                                <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
                             </div>
+                            {!! $item->itinerary !!}
                         </div>
                     @endif
                 </div>
+            
             </div>
             <div class="col-md-4 ">
                 @include('app.partials.book')

@@ -17,6 +17,7 @@ class CreateFeaturesTable extends Migration
             $table->increments('id');
             $table->string('feature');
             $table->string('feature_es');
+            $table->boolean('in_categories')->default(1);
             $table->string('icon')->nullable();
             $table->tinyInteger('type')->default(0); //0 = package, 1 = activity, 2 = hotel
             $table->timestamps();

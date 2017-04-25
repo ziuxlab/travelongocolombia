@@ -34,6 +34,7 @@
                                ->get()
             ;
             
+            
             return view('admin.packages.packages_index', compact('packages'));
         }
         
@@ -189,7 +190,7 @@
             $item = Product::where('slug_url', $url)
                            ->firstOrFail()
             ;
-            
+          
             return view('app.product-item', compact('item'));
             
             

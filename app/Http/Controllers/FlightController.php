@@ -66,9 +66,9 @@
             Session::put('checkin', $request->checkin);
             Session::put('checkout', $request->checkout);
             
-            
-            if ($request->option == 'onlyHotel') {
-                return redirect('design');
+          
+            if ($request->options == 'onlyHotel') {
+                return redirect(str_slug(trans('cabecera.Design')).'?step=2');
             }
             
             //$api = 'AIzaSyAZ1Nh5fI00J9-FS_Ufo2{{Nkd4L1IqL6xB4';

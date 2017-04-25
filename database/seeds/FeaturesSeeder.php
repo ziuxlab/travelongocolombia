@@ -156,74 +156,124 @@
             ]);
             
             Feature::create([
-                'id'         => 21,
-                'feature'    => 'Parking',
-                'feature_es' => 'Parqueadero',
-                'icon'       => 'fa fa-car',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 21,
+                'feature'       => 'Parking',
+                'feature_es'    => 'Parqueadero',
+                'in_categories' => 0,
+                'icon'          => 'fa fa-car',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 22,
-                'feature'    => 'Pool',
-                'feature_es' => 'Piscina',
-                'icon'       => 'icon icon-tourism-icons-swimming',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 22,
+                'feature'       => 'Pool',
+                'feature_es'    => 'Piscina',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-swimming',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 23,
-                'feature'    => 'TV',
-                'feature_es' => 'TV',
-                'icon'       => 'icon icon-tourism-icons-tv',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 23,
+                'feature'       => 'TV',
+                'feature_es'    => 'TV',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-tv',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 24,
-                'feature'    => 'Translator',
-                'feature_es' => 'Traductor',
-                'icon'       => 'fa fa-language',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 24,
+                'feature'       => 'Translator',
+                'feature_es'    => 'Traductor',
+                'in_categories' => 0,
+                'icon'          => 'fa fa-language',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 25,
-                'feature'    => 'wifi',
-                'feature_es' => 'Wifi',
-                'icon'       => 'icon icon-tourism-icons-free-wifi',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 25,
+                'feature'       => 'wifi',
+                'feature_es'    => 'Wifi',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-free-wifi',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 26,
-                'feature'    => 'Breakfast',
-                'feature_es' => 'Desayuno',
-                'icon'       => 'icon icon-tourism-icons-toast',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 26,
+                'feature'       => 'Breakfast',
+                'feature_es'    => 'Desayuno',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-toast',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 27,
-                'feature'    => 'Air Conditioner',
-                'feature_es' => 'Aire Acondicionado',
-                'icon'       => 'fa fa-snowflake-o',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 27,
+                'feature'       => 'Air Conditioner',
+                'feature_es'    => 'Aire Acondicionado',
+                'in_categories' => 0,
+                'icon'          => 'fa fa-snowflake-o',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 28,
-                'feature'    => 'Minibar',
-                'feature_es' => 'Minibar',
-                'icon'       => 'icon icon-tourism-icons-lemonade',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 28,
+                'feature'       => 'Minibar',
+                'feature_es'    => 'Minibar',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-lemonade',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 29,
-                'feature'    => 'SPA',
-                'feature_es' => 'SPA',
-                'icon'       => 'icon icon icon-tourism-icons-sun',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 29,
+                'feature'       => 'SPA',
+                'feature_es'    => 'SPA',
+                'in_categories' => 0,
+                'icon'          => 'icon icon icon-tourism-icons-sun',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
-                'id'         => 30,
-                'feature'    => 'Gym',
-                'feature_es' => 'Gimnasio',
-                'icon'       => 'icon icon-tourism-icons-fitness',
-                'type'       => 2, //0 = package, 1 = activity, 2 = hotel
+                'id'            => 30,
+                'feature'       => 'Gym',
+                'feature_es'    => 'Gimnasio',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+            Feature::create([
+                'id'            => 31,
+                'feature'       => 'Country Side',
+                'feature_es'    => 'Campestre',
+                'in_categories' => 1,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+            Feature::create([
+                'id'            => 32,
+                'feature'       => 'In The City',
+                'feature_es'    => 'En la Ciudad',
+                'in_categories' => 1,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+            Feature::create([
+                'id'            => 33,
+                'feature'       => 'Farm Hotel',
+                'feature_es'    => 'Finca Hotel',
+                'in_categories' => 1,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+            Feature::create([
+                'id'            => 34,
+                'feature'       => 'Resort Hotel',
+                'feature_es'    => 'Hotel de Lujo',
+                'in_categories' => 1,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+            Feature::create([
+                'id'            => 35,
+                'feature'       => 'Furnished Apartment',
+                'feature_es'    => 'Apartamento Amoblado',
+                'in_categories' => 1,
+                'icon'          => 'icon icon-tourism-icons-fitness',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
         }
     }

@@ -331,109 +331,989 @@
             
             Product::create([
                 'id'               => 19,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title4', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan a less Physically Taxing',
+                'slug_url'         => str_slug('Plan a less Physically Taxing', '-'),
+                'days'             => '9 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan a less Physically Taxing',
+                'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am PARQUE DEL CAFE (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am RANCHO CALIFORNIA ENJOY SINCE EXTREME SPORTS TO NATURE WALKS OR FISHING (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10am TOUR BUENAVISTA -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH AT CONCORDE RESTAURANT</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR PIJAO -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am BOTANICAL GARDEN</li>
+<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH AT ROBLE RESTAURANT</li>
+<li><i class="fa fa-clock-o fa-li"></i>4pm PARQUE DE LA VIDA</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am SALENTO, VALLE DEL COCORA</li>
+<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am RECUCA LUNCH INCLUDED-  </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm BARCELONA  (TRY FORCHA, KUMIS, SIROPE, PANDEBONOS AND TRADITIONAL FOOD) </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 9</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10am MUSEO QUIMBAYA, FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH IN FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR IN FILANDIA AND LOOK OUT</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm DINNER IN FILANDIA </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-            
+    
             Product::create([
                 'id'               => 20,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title5', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan B Most Physically',
+                'slug_url'         => str_slug('Plan B Most Physicallyg', '-'),
+                'days'             => '7 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan B Most Physically',
+                'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am WATERFALLS IN CORDOBA (LUNCH INCLUDED) DINNER IN BALBOA</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am PANACA  (LUNCH INCLUDED)  ACCOMMODATION IN PEREIRA</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am BALSAJE ACROSS A RIVER CALLED "La Vieja"  (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am MONTAIN CLIMBING  SANTA ISABEL  RISARALDA (LONG DAY - LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGOON  OF  OTUN RISARALDA   (LUNCH INCLUDED) ACCOMMODATION IN TERMALES</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS SAN VICENTE RISARALDA ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS DE SAN VICENTE RISARALDA (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
-                'city_id'          => 3
+                'city_id'          => 2
             ]);
-            
+    
             Product::create([
                 'id'               => 21,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title6', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan C Outdoors Tour',
+                'slug_url'         => str_slug('Plan C Outdoors Tour', '-'),
+                'days'             => '7 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan C Outdoors Tour',
+                'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
                 'local'            => 'en',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am JEEP PANORAMICO</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am NATURE WALK CALARCA (PICNIC LUNCH  IN PLATANO OR CONGO LEAVES)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am Natural park Barbas Bremen </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day </span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
-                'city_id'          => 4
+                'city_id'          => 2
             ]);
-            
-            
+    
+    
             Product::create([
                 'id'               => 22,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title10', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan a less Physically Taxing',
+                'slug_url'         => str_slug('Plan a less Physically Taxing es', '-'),
+                'days'             => '9 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan a less Physically Taxing',
+                'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'es',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am PARQUE DEL CAFE (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am RANCHO CALIFORNIA ENJOY SINCE EXTREME SPORTS TO NATURE WALKS OR FISHING (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10am TOUR BUENAVISTA -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH AT CONCORDE RESTAURANT</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR PIJAO -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am BOTANICAL GARDEN</li>
+<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH AT ROBLE RESTAURANT</li>
+<li><i class="fa fa-clock-o fa-li"></i>4pm PARQUE DE LA VIDA</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am SALENTO, VALLE DEL COCORA</li>
+<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am RECUCA LUNCH INCLUDED-  </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm BARCELONA  (TRY FORCHA, KUMIS, SIROPE, PANDEBONOS AND TRADITIONAL FOOD) </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 9</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>10am MUSEO QUIMBAYA, FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH IN FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR IN FILANDIA AND LOOK OUT</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm DINNER IN FILANDIA </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
-                'city_id'          => 1
+                'city_id'          => 2
             ]);
-            
+    
             Product::create([
                 'id'               => 23,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title11', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan B Most Physically',
+                'slug_url'         => str_slug('Plan B Most Physicallyg es', '-'),
+                'days'             => '7 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan B Most Physically',
+                'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
                 'local'            => 'es',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am WATERFALLS IN CORDOBA (LUNCH INCLUDED) DINNER IN BALBOA</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am PANACA  (LUNCH INCLUDED)  ACCOMMODATION IN PEREIRA</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am BALSAJE ACROSS A RIVER CALLED "La Vieja"  (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am MONTAIN CLIMBING  SANTA ISABEL  RISARALDA (LONG DAY - LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGOON  OF  OTUN RISARALDA   (LUNCH INCLUDED) ACCOMMODATION IN TERMALES</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS SAN VICENTE RISARALDA ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS DE SAN VICENTE RISARALDA (LUNCH INCLUDED)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
-                'city_id'          => 1
+                'city_id'          => 2
             ]);
-            
+    
             Product::create([
                 'id'               => 24,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title12', '-'),
-                'days'             => 9,
+                'tittle'           => 'Plan C Outdoors Tour',
+                'slug_url'         => str_slug('Plan C Outdoors Tour es', '-'),
+                'days'             => '7 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'meta_description' => 'Plan C Outdoors Tour',
+                'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
                 'local'            => 'es',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'itinerary'        => '
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 1</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
+<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
+<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 2</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am JEEP PANORAMICO</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 3</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am NATURE WALK CALARCA (PICNIC LUNCH  IN PLATANO OR CONGO LEAVES)</li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 4</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 5</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 6</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am Natural park Barbas Bremen </li>
+<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
+<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 7</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day 8</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
+<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Day </span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+</ul>                           
+</div>
+</div>
+</div>
+',
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
@@ -528,6 +1408,29 @@
             ]);
             
             //========== Fin de los Hoteles ==============//
+            
+            
+            //========== Inicio de servicios adicionales ==============//
+            
+            Product::create([
+                'id'               => 30,
+                'tittle'           => 'prueba tittle',
+                'slug_url'         => str_slug('prueba title30', '-'),
+                'days'             => 9,
+                'price_adults'     => 100,
+                'price_children'   => 100,
+                'discount'         => 10, //porcentaje
+                'meta_description' => 'prueba tittle',
+                'keywords'         => 'prueba tittle',
+                'status'           => 1,
+                'local'            => 'es',
+                'description'      => '',
+                'itinerary'        => 'prueba tittle',
+                'type'             => 4, //package,activity
+                'city_id'          => 3
+            ]);
+            
+            //========== Fin de servicios adicionales ==============//
             
             /*
             

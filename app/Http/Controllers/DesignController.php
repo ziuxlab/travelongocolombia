@@ -5,6 +5,7 @@
     use App\city;
     use App\Flight;
     use App\Product;
+    use Carbon\Carbon;
     use Cart;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Session;
@@ -46,7 +47,6 @@
         public function store(Request $request)
         {
             //
-          
             
             if ($request->step == 1) {
                 
@@ -70,7 +70,7 @@
                 
                 Cart::add([
                     'id'         => $flight->id + 2000,
-                    'name'       => 'Flight to',
+                    'name'       => 'Flight to '. Session::get('destination'),
                     'price'      => $flight->total,
                     'quantity'   => 1,
                     'attributes' => [
@@ -90,18 +90,21 @@
             if ($request->step == 2 or $request->agregate == 1) {
                 
                 $item = Product::findorfail($request->product_id);
-                
+                $nights = Carbon::parse(Session::get('checkout'))->diffInDays(Carbon::parse(Session::get('checkin')));
+               
                 Cart::add([
                     'id'         => $item->id,
                     'name'       => $item->tittle,
-                    'price'      => (Session::get('adults') * $item->price_adults * (1 - ($item->discount / 100))) +
-                                    (Session::get('children') * $item->price_children * (1 - ($item->discount / 100))),
+                    'price'      => (Session::get('adults') * $item->price_adults * $nights * (1 - ($item->discount / 100))) +
+                                    (Session::get('children') * $item->price_children * $nights * (1 - ($item->discount / 100))),
                     'quantity'   => 1,
                     'attributes' => [
                         'adults'   => Session::get('adults'),
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
+                        'nights'   => $nights,
+                        'bed'      => (isset($request->bed) ? $request->bed : 0),
                         'img'      => $item->photos->sortBy('order')
                                                    ->first()->img
                     ]

@@ -5,7 +5,8 @@
                 <table class="table table-header-bg table-vcenter">
                     <thead>
                     <tr>
-                        <th colspan="2">producto</th>
+                        <th class="hidden-xs"></th>
+                        <th>producto</th>
                         <th class="text-center">cantidad</th>
                         <th class="text-right">precio</th>
                         <th></th>
@@ -14,7 +15,7 @@
                     <tbody class="content">
                     @foreach(Cart::getContent() as $key => $item)
                         <tr>
-                            <td class="text-center" style="width: 100px">
+                            <td class="text-center hidden-xs" style="width: 100px">
                                 <img class="img-thumbnail img-responsive" src="{{asset($item->attributes->img)}}"
                                      alt="{{$item->name}}">
                             </td>
@@ -45,7 +46,8 @@
                         </tr>
                     @endforeach
                     <tr class="active">
-                        <td class="text-right" colspan="3">
+                        <td class="hidden-xs"></td>
+                        <td class="text-right" colspan="2">
                             <span class="h3 font-w600">Total</span>
                         </td>
                         <td class="text-right">
@@ -55,26 +57,25 @@
                     </tr>
                     </tbody>
                 </table>
-                <div class="content">
-                    {!! Form::open(['action'=> ['CheckoutController@store']]) !!}
-                    <div class="form-group {{ $errors->has('note') ? ' has-error' : '' }}">
-                        {!! Form::label('Aditional Information:', null, ['class' => 'control-label']) !!}
-                        {!! Form::textarea('note', old('note'), ['class' => 'form-control','placeholder'=>'Ingrese cualquier informacion adicional que desee','rows'=>3]) !!}
-                        @if ($errors->has('note'))
-                            <span class="help-block">
+            </div>
+            <div class="content">
+                {!! Form::open(['action'=> ['CheckoutController@store']]) !!}
+                <div class="form-group {{ $errors->has('note') ? ' has-error' : '' }}">
+                    {!! Form::label('Aditional Information:', null, ['class' => 'control-label']) !!}
+                    {!! Form::textarea('note', old('note'), ['class' => 'form-control','placeholder'=>'Ingrese cualquier informacion adicional que desee','rows'=>3]) !!}
+                    @if ($errors->has('note'))
+                        <span class="help-block">
                                     <strong>{{ $errors->first('note') }}</strong>
                                 </span>
-                        @endif
-                    </div>
-                    <div class="push-20 text-right">
-                        <a href="{{url(trans('general.activities'))}}" type="button" class="btn btn-default push-15-r">Continue Shopping</a>
-                        <button type="submit" class="btn btn-primary">Proceed payment</button>
-                    </div>
-                    {!! Form::close() !!}
+                    @endif
                 </div>
-            
+                <div class="push-20 text-right">
+                    <a href="{{Session::get('plan') == 'pick' ? url(trans('general.activities')) : url(str_slug(trans('cabecera.Design')).'?step=3')}}"
+                       type="button" class="btn btn-default push-15-r">Continue Shopping</a>
+                    <button type="submit" class="btn btn-primary">Proceed payment</button>
+                </div>
+                {!! Form::close() !!}
             </div>
-        
         </div>
     </div>
 </div>

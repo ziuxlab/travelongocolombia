@@ -71,11 +71,11 @@ class Feature_Products_seeder extends Seeder
     
         //==========  Hoteles ==============//
     
-        Product::find(25)->features()->attach([21,22,23,24,25,26,27,28,29,30]);
-        Product::find(26)->features()->attach([21,22,23,24,25,26,27,28,29,30]);
-        Product::find(27)->features()->attach([21,22,23,24,25,26,27,28,29,30]);
-        Product::find(28)->features()->attach([21,22,23,24,25,26,27,28,29,30]);
-        Product::find(29)->features()->attach([21,22,23,24,25,26,27,28,29,30]);
+        Product::find(25)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,33]);
+        Product::find(26)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,34]);
+        Product::find(27)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,33]);
+        Product::find(28)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,34]);
+        Product::find(29)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,35]);
     
     }
 }

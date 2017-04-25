@@ -25,17 +25,39 @@
                class="accordion-toggle btn btn-default push-15-t text-capitalize">@lang('general.view details')</a>
         </div>
     </div>
-    <div class="col-md-2 col-sm-3 col-xs-12 border-black-op-b content content-full text-center flex-center">
+    <div class="col-md-2 col-sm-3 col-xs-12 border-black-op-b content-mini content-mini-full text-center flex-center">
         <div>
             <div class="h1 font-w700 ">
-                ${{number_format($product->price_adults * ( 1 + ($product->discount/100)))}}*
+                ${{number_format($product->price_adults * ( 1 - ($product->discount/100)))}}*
             </div>
-            <div>*@lang('general.person')</div>
+            <div>*@lang('general.person'){{$product->type == 2 ? '|*'.trans('general.night'):''}}</div>
             {!! Form::open(['action'=> ['DesignController@store'], 'id'=>'formulario_book_'.$product->id]) !!}
+            @if($product->type == 2)
+                <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
+                    {!! Form::label('Beds:', null, ['class' => 'push-10-t control-label']) !!}
+                    <div class="input-group">
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs btn-default value-control"
+                                        data-action="minus" data-target="bed">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                        {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center','id'=>'bed','min'=>0,'max'=>10]) !!}
+                        <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs  btn-default value-control"
+                                        data-action="plus" data-target="bed">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                    </div>
+                    @if ($errors->has('bed'))
+                        <span class="help-block"><strong>{{ $errors->first('bed') }}</strong></span>
+                    @endif
+                </div>
+            @endif
             {!! Form::hidden('step', Session::get('step')) !!}
             {!! Form::hidden('agregate', 0,['id'=>'agregate_'.$product->id]) !!}
             {!! Form::hidden('product_id', $product->id) !!}
-            
             <div class="text-center push-10-t">
                 @if(Session::get('step') == 3)
                     <button class="btn btn-primary btn-minw" type="button" data-toggle="modal"
@@ -43,7 +65,8 @@
                     </button>
                     @include('app.partials._modal_book', ['type'=>1,'id'=>$product->id])
                 @else
-                    <button class="btn btn-primary btn-minw text-capitalize" type="submit">@lang('general.booking')</button>
+                    <button class="btn btn-primary btn-minw text-capitalize"
+                            type="submit">@lang('general.booking')</button>
                 @endif
             </div>
             {!! Form::close() !!}
@@ -52,24 +75,36 @@
     <div id="product_{{$product->id}}" class="col-sm-12 panel-collapse collapse">
         <div class="panel-body">
             <div class="content content-narrow">
-                @if($product->type == 0)
-                    <h3 class="h3 push-15 "><i
-                                class=" text-primary fa fa-file-text-o"></i> @lang('general.packages')
-                        Details</h3>
-                @endif
-                @if($product->type == 1)
-                    <h3 class="h3 push-15 "><i
-                                class=" text-primary fa fa-file-text-o"></i> @lang('general.activities')
-                        Details</h3>
-                @endif
-                @if($product->type == 2)
-                    <h3 class="h3 push-15 "><i
-                                class="text-primary fa fa-file-text-o"></i> @lang('general.hotels') Details
+                <div>
+                    <h3 class="h3 text-capitalize push-15 ">
+                        <i class=" text-primary  fa fa-file-text-o"></i>
+                        @if($product->type == 0)
+                            @lang('general.details_resumen',['name'=> trans('general.packages')])
+                        @elseif($product->type == 1)
+                            @lang('general.details_resumen',['name'=> trans('general.activities')])
+                        @elseif($product->type == 2)
+                            @lang('general.details_resumen',['name'=> trans('general.hotels')])
+                        @endif
                     </h3>
-                @endif
-                <p class="text-muted text-justify">{{$product->description}}</p>
+                    <p class="text-muted text-justify">{{$product->description}}</p>
+                </div>
+                <div class="push-30">
+                    <h3 class="h3 text-capitalize push-15 "><i
+                                class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
+                    @if(count($product->photos)>0)
+                        <div class="row">
+                            @foreach($product->photos as $photo)
+                                <div class="col-sm-4">
+                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
+                </div>
+            
             </div>
         </div>
     </div>
 </div>
 @include('layouts.app.partials._tooltip')
+

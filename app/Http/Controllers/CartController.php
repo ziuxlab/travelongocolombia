@@ -47,14 +47,15 @@
             Cart::add([
                 'id'         => $item->id,
                 'name'       => $item->tittle,
-                'price'      => ($request->adults * $item->price_adults * (1 - ($item->discount / 100))) +
-                                ($request->children * $item->price_children * (1 - ($item->discount / 100))),
+                'price'      => $request->total,
                 'quantity'   => 1,
                 'attributes' => [
                     'adults'   => $request->adults,
                     'children' => $request->children,
-                    'infants' => $request->infants,
+                    'infants'  => $request->infants,
                     'type'     => $request->type,
+                    'nights'   => (isset($request->nights) ? $request->nights : 0),
+                    'bed'      => (isset($request->bed) ? $request->bed : 0),
                     'img'      => $item->photos->sortBy('order')
                                                ->first()->img
                 ]
@@ -75,7 +76,7 @@
             } else {
                 Session::put('children', $request->children);
             }
-    
+            
             if (Session::has('infants')) {
                 if (Session::get('infants') < $request->infants) {
                     Session::put('infants', $request->infants);
@@ -93,28 +94,28 @@
                 if (App::isLocale('en')) {
                     //
                     return redirect('activities');
-                }else{
+                } else {
                     return redirect('actividades');
                 }
                 
             }
-    
+            
             if ($request->choice == 2) {
                 if (App::isLocale('en')) {
                     //
                     return redirect('hotels');
-                }else{
+                } else {
                     return redirect('hoteles');
                 }
-        
+                
             }
-    
+            
             if ($request->choice == 3) {
-    
+                
                 if (App::isLocale('en')) {
                     //
                     return redirect('flight');
-                }else{
+                } else {
                     return redirect('vuelos');
                 }
             }

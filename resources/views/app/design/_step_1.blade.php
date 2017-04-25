@@ -18,15 +18,15 @@
                       @include('admin.flights._flights_formulario')
                         <div class="row">
                             <div class="form-group">
-                                <label class="col-xs-12">Incluir en el Paquete</label>
+                                <label class="col-xs-12">@lang('general.Include in package')</label>
                                  <div class="col-md-2 col-sm-4 col-xs-6">
                                      <label class="css-input css-radio css-radio-primary">
-                                         <input type="radio" name="options" value="vueloHotel" checked="true" ><span></span> Hotel + vuelo
+                                         <input type="radio" name="options" value="vueloHotel" checked="true" ><span></span> @lang('general.hotel') + @lang('general.flight')
                                      </label>
                                  </div>
                                 <div class="col-md-2 col-sm-4 col-xs-6">
                                     <label class="css-input css-radio css-radio-primary">
-                                        <input type="radio" name="options" value="onlyHotel" id="only_hotel" ><span></span> Hotel
+                                        <input type="radio" name="options" value="onlyHotel" id="only_hotel" ><span></span> @lang('general.hotel')
                                     </label>
                                 </div>
                             </div>

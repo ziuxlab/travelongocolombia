@@ -123,6 +123,8 @@
                     //Si el type del producto es vuelo (3) se debe descontar 2000
                     'product_id' =>  $item->attributes->type <> 3 ? $item->id : $item->id - 2000,
                     'type'=> $item->attributes->type,
+                    'nights'=> (isset($item->attributes->nights) ? $item->attributes->nights : 0) ,
+                    'bed'=> (isset($item->attributes->bed) ? $item->attributes->bed : 0),
                     'booking_id' => $booking->id,
                 ]);
             }

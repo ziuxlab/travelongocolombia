@@ -9,9 +9,9 @@
                 <div class=" form-group">
                     <div class="form-group {{ $errors->has('checkout') || $errors->has('checkin') ? ' has-error' : '' }}">
                         @if($item->type==0)
-                            <span>{!! Form::label('Fecha de Ida y de Regreso:', null, ['class' => 'control-label']) !!}</span>
-                        @elseif($item->type==1)
-                            {!! Form::label('Date:', null, ['class' => 'control-label']) !!}
+                            <span>{!! Form::label(trans('general.between_dates').':', null, ['class' => 'control-label']) !!}</span>
+                        @elseif($item->type > 0)
+                            {!! Form::label(trans('general.date').':', null, ['class' => 'control-label']) !!}
                         @endif
                         <div class="input-daterange input-group" data-date-format="mm/dd/yyyy">
                             {!! Form::text('checkin', Carbon\Carbon::tomorrow()->format('m/d/Y'), ['class' => 'js-datepicker form-control','required','id'=>'checkin']) !!}
@@ -33,27 +33,54 @@
                     </div>
                 </div>
                 @if($item->type == 2)
-                    <div class=" form-group">
-                        <div class="form-group {{ $errors->has('nights') ? ' has-error' : '' }}">
-                            {!! Form::label('Nights:', null, ['class' => 'control-label']) !!}
-                            <div class="input-group">
-                            <span class="input-group-btn">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group {{ $errors->has('nights') ? ' has-error' : '' }}">
+                                {!! Form::label('Nights:', null, ['class' => 'control-label']) !!}
+                                <div class="input-group">
+                                    <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"
                                         data-action="minus" data-target="nights">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </span>
-                                {!! Form::text('nights', old('nights'), ['class' => 'form-control','placeholder'=>'Ingrese el Número de noches','id'=>'nights','min'=>0,'max'=>10]) !!}
-                                <span class="input-group-btn">
+                                    {!! Form::text('nights', old('nights') or 1, ['class' => 'form-control text-center','id'=>'nights','min'=>0,'max'=>10]) !!}
+                                    <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs  btn-default value-control"
                                         data-action="plus" data-target="nights">
                                     <span class="glyphicon glyphicon-plus"></span>
                                 </button>
                             </span>
+                                </div>
                                 @if ($errors->has('nights'))
                                     <span class="help-block">
                             <strong>{{ $errors->first('nights') }}</strong>
                         </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
+                                {!! Form::label('Beds:', null, ['class' => 'control-label']) !!}
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs btn-default value-control"
+                                        data-action="minus" data-target="bed">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                                    {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center','id'=>'bed','min'=>0,'max'=>10]) !!}
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs  btn-default value-control"
+                                        data-action="plus" data-target="bed">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                                </div>
+                                @if ($errors->has('bed'))
+                                    <span class="help-block">
+                                    <strong>{{ $errors->first('bed') }}</strong>
+                                </span>
                                 @endif
                             </div>
                         </div>
@@ -62,7 +89,7 @@
                 <div class="row">
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('adults')  ? ' has-error' : '' }}">
-                            {!! Form::label('Adultos:', null, ['class' => 'control-label']) !!}
+                            {!! Form::label(trans('general.Adults').':', null, ['class' => 'control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -86,9 +113,8 @@
                         </div>
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4">
-                        
                         <div class="form-group {{ $errors->has('children') ? ' has-error' : '' }}">
-                            {!! Form::label('Niños:', null, ['class' => 'control-label']) !!}
+                            {!! Form::label(trans('general.children').':', null, ['class' => 'control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -110,12 +136,10 @@
                                  </span>
                             @endif
                         </div>
-                    
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4">
-                        
                         <div class="form-group {{ $errors->has('infants') ? ' has-error' : '' }}">
-                            {!! Form::label('Bebés:', null, ['class' => 'text-center control-label']) !!}
+                            {!! Form::label(trans('general.infants').':', null, ['class' => 'text-center control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -137,15 +161,13 @@
                                  </span>
                             @endif
                         </div>
-                    
-                    
                     </div>
                 </div>
                 <div class="border-t ">
                     <div class="text-right bg-gray-lighter overflow-hidden content-mini content-mini-full ">
                         <label class="h3 font-w600 col-xs-6 control-label ">Total:</label>
                         <div class="col-xs-6 h3 text-left font-w700">
-                            $<span id="total">{{number_format($item->price_adults)}}</span>
+                            $<span class="total">{{number_format($item->price_adults * (1 - ($item->discount/100)))}}</span>
                         </div>
                     </div>
                 </div>
@@ -157,6 +179,7 @@
                 {!! Form::hidden('type',$item->type)!!}
                 {!! Form::hidden('id',$item->id)!!}
                 {!! Form::hidden('choice',0,['id'=>'choice'])!!}
+                {!! Form::hidden('total',($item->price_adults * (1 - ($item->discount/100))),['id'=>'total'])!!}
                 {!! Form::close() !!}
             </div>
         </div>
@@ -164,8 +187,6 @@
 </div>
 @include('app.partials.needhelp')
 @include('app.partials._modal_book', ['type'=>$item->type,'id'=>0])
-
-
 
 @push('scripts')
 <script>
@@ -183,14 +204,15 @@
         var price_children = '{{$item->price_children * (1 - ($item->discount/100))}}';
         var adults         = $('#adults').val();
         var children       = $('#children').val();
-        var total          = adults * price_adults + children * price_children;
-        $('#total').html(total);
+        var nights         = $('#nights').val() || 1;
+        var total          = adults * nights * price_adults + children * price_children;
+        $('.total').html(total);
+        $('#total').val(total);
         console.log(total)
     }
     
     
     $(document).on('click', '.value-control', function () {
-        console.log(1)
         var action = $(this).attr('data-action');
         var target = $(this).attr('data-target');
         var value  = parseFloat($('[id="' + target + '"]').val());

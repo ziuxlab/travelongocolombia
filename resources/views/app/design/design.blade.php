@@ -15,6 +15,8 @@
 @section('style')
     <link rel="stylesheet" href="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css')}}">
     <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/slick/slick.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/slick/slick-theme.min.css')}}">
     {{$Config->css}}
 @stop
 
@@ -34,6 +36,8 @@
 @stop
 
 @section('scripts')
+   
     {{$Config->scripts_footer}}
     @include('admin.flights._scripts_flights')
+   
 @stop

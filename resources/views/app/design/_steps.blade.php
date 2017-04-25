@@ -17,28 +17,28 @@
                 </div>
                 <div class="push-5-t text-primary-dark">@lang('general.enter information')</div>
             </a>
-            <a class="text-center " href="{{url(str_slug(trans('cabecera.Design')).'?step=2')}}">
+            <a class="text-center " href="{{ $step > 1 ? url(str_slug(trans('cabecera.Design')).'?step=2') : '#'}}">
                 <div class="item item-circle {{$step > 1 ? 'item-bg-primary' : ''}}
                 {{$step == 2 ? 'bg-secondary text-white' : 'bg-gray-lighter text-primary-dark'}}  ">
                     2
                 </div>
                 <div class="push-5-t text-primary-dark">@lang('general.search') @lang('general.hotels')</div>
             </a>
-            <a class="text-center " href="{{url(str_slug(trans('cabecera.Design')).'?step=3')}}">
+            <a class="text-center " href="{{ $step > 1 ? url(str_slug(trans('cabecera.Design')).'?step=3') : '#'}}">
                 <div class="item item-circle {{$step > 2 ? 'item-bg-primary' : ''}}
                 {{$step == 3 ? 'bg-secondary text-white' : 'bg-gray-lighter text-primary-dark'}}">
                     3
                 </div>
                 <div class="push-5-t text-primary-dark">@lang('general.search') @lang('general.activities')</div>
             </a>
-            <a class="text-center " href="{{url(str_slug(trans('cabecera.Design')).'?step=4')}}">
+            <a class="text-center " href="{{ $step > 1 ? url(str_slug(trans('cabecera.Design')).'?step=4') : '#'}}">
                 <div class="item item-circle {{$step > 3 ? 'item-bg-primary' : ''}}
                 {{$step == 4 ? 'bg-secondary text-white' : 'bg-gray-lighter text-primary-dark'}}">
                     4
                 </div>
                 <div class="push-5-t text-primary-dark">@lang('general.additional services')</div>
             </a>
-            <a class="text-center " href="{{url(str_slug(trans('cabecera.Design')).'?step=5')}}">
+            <a class="text-center " href="{{ $step > 1 ? url(str_slug(trans('cabecera.Design')).'?step=5') : '#'}}">
                 <div class="item item-circle {{$step > 4 ? 'item-bg-primary' : ''}}
                 {{$step == 5 ? 'bg-secondary text-white' : 'bg-gray-lighter text-primary-dark'}}">
                     5
@@ -47,25 +47,29 @@
             </a>
         </div>
         @if($step <> 1)
-        <div class="row text-center">
-            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                <div class="block block-rounded block-bordered bg-gray-lighter">
-                    <div class="block-content block-content-full bg-gray-lighter">
-                        <p class="h5 font-w400">@lang('general.step-skip')</p>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <a class="btn btn-minw btn-primary" href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step - 1))}}">
-                                    <i class="si si-arrow-left pull-left"></i>@lang('general.back')</a>
-                            </div>
-                            <div class="col-xs-6">
-                                <a class="btn btn-minw btn-primary" href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step + 1 ))}}">
-                                    @lang('general.skip')  <i class="si si-arrow-right pull-right"></i></a>
+            <div class="row text-center">
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                    <div class="block block-rounded block-bordered bg-gray-lighter">
+                        <div class="block-content block-content-full bg-gray-lighter">
+                            <p class="h5 font-w400">@lang('general.step-skip')</p>
+                            <div class="row flex-between">
+                                <div>
+                                    <a class="btn btn-minw btn-primary"
+                                       href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step - 1))}}">
+                                        <i class="si si-arrow-left pull-left"></i>@lang('general.back')</a>
+                                </div>
+                                @if($step <> 5)
+                                    <div>
+                                        <a class="btn btn-minw btn-primary"
+                                           href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step + 1 ))}}">
+                                            @lang('general.skip') <i class="si si-arrow-right pull-right"></i></a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         @endif
     </div>
 </div>

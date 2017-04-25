@@ -23,7 +23,7 @@
                                 <div class="col-sm-4 text-white animated fadeInDown">
                                     <div class="price-banner text-center content-mini content-mini-full">
                                         <h2 class="h1 font-w700">$ {{number_format($item->price_adults * (1 - ($item->discount/100)))}}*</h2>
-                                        <div class="h5">*Per Adult</div>
+                                        <div class="h5">*@lang('general.person'){{$item->type == 2 ? ' | *'.trans('general.night'):''}}</div>
                                     </div>
                                 </div>
                             </div>
