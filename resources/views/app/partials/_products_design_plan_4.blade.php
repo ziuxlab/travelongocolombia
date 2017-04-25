@@ -1,6 +1,6 @@
 <div class="block block-bordered  flex overflow-hidden">
     <div class="col-sm-3 col-xs-12  bg-image remove-padding"
-         style="background-image: url('{{asset($product->photos->sortBy('order')->first()->img)}}');">
+         style="background-image: url('{{asset($product->photos->sortBy('order')->first()->img)}}');background-position-x: 50%;">
         <div class="mheight-100">
         </div>
     </div>
