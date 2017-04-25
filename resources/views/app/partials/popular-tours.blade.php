@@ -19,11 +19,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="block-content  text-center bg-black-op">
+                        <div class="block-content block-content-full text-center bg-black-op">
                             <div class="row ">
-                                <div class="col-sm-12  push-15 text-white">
+                                <div class="col-sm-12 text-white">
                                     <h2 class="pull-left  font-w600 h5">{{$package->tittle}}</h2>
-                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> {{$package->days}} @lang('general.days')</span>
+                                    <span class="pull-right  font-w600 h5"><i class="fa fa-clock-o push-5-r"></i> {{$package->days}}</span>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                                 <p class="text-justify">
                                     {{substr($package->description,0,100)}}...
                                 </p>
-                                <button class="btn push-20 btn-minw text-white btn-primary ">@lang('general.view details')</button>
+                                <button class="btn push-20 btn-minw text-white btn-primary text-capitalize">@lang('general.view details')</button>
                             </div>
                         </div>
                     </div>

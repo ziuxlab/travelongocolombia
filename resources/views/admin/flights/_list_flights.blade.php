@@ -6,7 +6,7 @@
                     <td style="vertical-align: middle;" class="text-success padding-20">
                         <i class="fa fa-2x fa-plane"></i>
                         <div class="text-muted">
-                            Outbound
+                            @lang('general.Outbound')
                         </div>
                     </td>
                     <td>
@@ -21,12 +21,12 @@
                              src="{{url('img/carriers/' . $flight["Outbound"]['Carrier'] . '.png')}}"
                              alt="{{$flight["Outbound"]['Carrier']}} "></td>
                     <td>
-                        <div class="h5 text-muted "> Duration</div>
+                        <div class="h5 text-muted "> @lang('general.duration')</div>
                         <div class="h4"> {{gmdate('H:i', $flight['Outbound']['Duration'] * 60)}}h
                         </div>
                         <div class="h5 text-muted ">
-                            {{$flight['Outbound']['Stops']}} Stops
-                        </div>
+                            {{$flight['Outbound']['Stops']}} {{trans_choice('general.stops',$flight['Outbound']['Stops'])}}
+                         </div>
                     </td>
                     <td>
                         <div class="h5 text-muted ">{{Session::get('destination')}}
@@ -60,7 +60,7 @@
                     <td style="vertical-align: middle;" class="text-danger padding-20">
                         <i class="fa fa-2x fa-rotate-270 fa-plane"></i>
                         <div class="text-muted">
-                            Inbound
+                            @lang('general.Inbound')
                         </div>
                     </td>
                     <td>
@@ -74,9 +74,9 @@
                              alt="{{$flight['Inbound']['Carrier']}}">
                     </td>
                     <td>
-                        <div class="h5 text-muted "> Duration</div>
+                        <div class="h5 text-muted "> @lang('general.duration')</div>
                         <div class="h4"> {{gmdate('H:i', $flight['Inbound']['Duration'] * 60)}}h</div>
-                        <div class="h5 text-muted ">{{$flight['Inbound']['Stops']}} Stops</div>
+                        <div class="h5 text-muted ">{{$flight['Inbound']['Stops']}} {{trans_choice('general.stops',$flight['Outbound']['Stops'])}}</div>
                     </td>
                     <td>
                         <div class="h5 text-muted "> {{Session::get('departure')}}</div>

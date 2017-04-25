@@ -2,7 +2,7 @@
     <div class="bg-white">
         <div class="block">
             <div class="block-header bg-primary text-center h3 text-white">
-                - Booking -
+                - @lang('general.booking') -
             </div>
             <div class="block-content block-content-full ">
                 {!! Form::open(['action'=> ['CartController@store'],'id'=>'formulario_book']) !!}
@@ -36,7 +36,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group {{ $errors->has('nights') ? ' has-error' : '' }}">
-                                {!! Form::label('Nights:', null, ['class' => 'control-label']) !!}
+                                {!! Form::label(trans('general.night').':', null, ['class' => 'control-label']) !!}
                                 <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"
@@ -61,7 +61,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
-                                {!! Form::label('Beds:', null, ['class' => 'control-label']) !!}
+                                {!! Form::label(trans('general.beds').':', null, ['class' => 'control-label']) !!}
                                 <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"

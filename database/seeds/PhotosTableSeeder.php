@@ -750,61 +750,61 @@
             
             Photo::create([
                 'product_id' => 30,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/cousin.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 31,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/latin-dance.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 32,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/spanish.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 33,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/childcare.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 34,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/dancing-salsa.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 35,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/nurse.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 36,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/money.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 37,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/sim-card.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 38,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/car.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 39,
-                'img'        => 'img/activities/recuca1.jpg',
+                'img'        => 'img/services/laundry.jpg',
                 'order'      => 1,
             ]);
     

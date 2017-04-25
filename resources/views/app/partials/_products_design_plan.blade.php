@@ -34,7 +34,7 @@
             {!! Form::open(['action'=> ['DesignController@store'], 'id'=>'formulario_book_'.$product->id]) !!}
             @if($product->type == 2)
                 <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
-                    {!! Form::label('Beds:', null, ['class' => 'push-10-t control-label']) !!}
+                    {!! Form::label(trans('general.beds').':', null, ['class' => 'push-10-t control-label']) !!}
                     <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"
@@ -90,8 +90,8 @@
                 </div>
                 @if($product->type !== 2)
                     <div class="row content-mini content-mini-full border-t">
-                        <h4 class=" h5 col-sm-6">Duration:</h4>
-                        <div class="text-muted col-sm-6">
+                        <h4 class=" h5 col-xs-6">@lang('general.duration'):</h4>
+                        <div class="text-muted col-xs-6">
                             <ul class="fa-ul ">
                                 <li class="text-capitalize">
                                     <i class="fa text-primary fa-clock-o fa-li"></i>{{$product->days}}
@@ -102,8 +102,8 @@
                 @endif
                 @if($product->include !== null)
                     <div class="row content-mini content-mini-full border-t">
-                        <h4 class=" h5 col-sm-6">Price Include:</h4>
-                        <div class="text-muted col-sm-6">
+                        <h4 class=" h5 col-xs-6">@lang('general.price_include'):</h4>
+                        <div class="text-muted col-xs-6">
                             <ul class="fa-ul">
                                 @foreach(explode(',', $product->include) as $option)
                                     <li class="text-capitalize">
@@ -116,8 +116,8 @@
                 @endif
                 @if($product->suggestion !== null)
                     <div class="row content-mini content-mini-full border-t">
-                        <h4 class=" h5 col-sm-6">Suggestions:</h4>
-                        <div class="text-muted col-sm-6">
+                        <h4 class=" h5 col-xs-6">@lang('general.suggestions'):</h4>
+                        <div class="text-muted col-xs-6">
                             <ul class="fa-ul">
                                 @foreach(explode(',', $product->suggestion) as $option)
                                     <li class="text-capitalize">
@@ -130,7 +130,7 @@
                 @endif
                 <div class="push-30">
                     <h3 class="h3 text-capitalize push-15 "><i
-                                class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
+                                class=" text-primary fa fa-camera-retro"></i> @lang('general.photos')</h3>
                     @if(count($product->photos)>0)
                         <div class="row">
                             @foreach($product->photos as $photo)

@@ -35,10 +35,14 @@
             <div class="col-md-8 push-30 bg-white">
                 <div class="content-mini content-mini-full border-b text-center overflow-hidden">
                     <ul class="list-icon-item h3 text-muted flex-between">
-                        @foreach($item->features->where('type',$item->type)->take(6) as $feature)
+                        @foreach($item->features->where('type',$item->type)->take(5) as $feature)
                             <span class=" push-20-r">
                                 <i class="{{$feature->icon}}"></i>
-                                <div class="h5">{{$feature->feature}}</div>
+                                @if(App::isLocale('en'))
+                                    <div class="h5">{{$feature->feature}}</div>
+                                @else
+                                    <div class="h5">{{$feature->feature_es}}</div>
+                                @endif
                             </span>
                         @endforeach
                     </ul>
@@ -59,21 +63,21 @@
                             <p class="text-muted text-justify">{{$item->description}}</p>
                         </div>
                         @if($item->type !== 2)
-                        <div class="row content-mini content-mini-full border-t">
-                            <h4 class=" h5 col-sm-6">Duration:</h4>
-                            <div class="text-muted col-sm-6">
-                                <ul class="fa-ul ">
-                                    <li class="text-capitalize">
-                                        <i class="fa text-primary fa-clock-o fa-li"></i>{{$item->days}}
-                                    </li>
-                                </ul>
+                            <div class="row content-mini content-mini-full border-t">
+                                <h4 class=" h5 col-xs-6">@lang('general.duration'):</h4>
+                                <div class="text-muted col-xs-6">
+                                    <ul class="fa-ul ">
+                                        <li class="text-capitalize">
+                                            <i class="fa text-primary fa-clock-o fa-li"></i>{{$item->days}}
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         @endif
                         @if($item->include !== null)
                             <div class="row content-mini content-mini-full border-t">
-                                <h4 class=" h5 col-sm-6">Price Include:</h4>
-                                <div class="text-muted col-sm-6">
+                                <h4 class=" h5 col-xs-6">@lang('general.price_include'):</h4>
+                                <div class="text-muted col-xs-6">
                                     <ul class="fa-ul">
                                         @foreach(explode(',', $item->include) as $option)
                                             <li class="text-capitalize">
@@ -86,8 +90,8 @@
                         @endif
                         @if($item->suggestion !== null)
                             <div class="row content-mini content-mini-full border-t">
-                                <h4 class=" h5 col-sm-6">Suggestions:</h4>
-                                <div class="text-muted col-sm-6">
+                                <h4 class=" h5 col-xs-6">@lang('general.suggestions'):</h4>
+                                <div class="text-muted col-xs-6">
                                     <ul class="fa-ul">
                                         @foreach(explode(',', $item->suggestion) as $option)
                                             <li class="text-capitalize">
@@ -101,7 +105,7 @@
                     </div>
                     <div class="push-30">
                         <h3 class="h3 text-capitalize push-15 "><i
-                                    class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
+                                    class=" text-primary fa fa-camera-retro"></i> @lang('general.photos')</h3>
                         @if(count($item->photos)>0)
                             <div class="">
                                 <!-- Slider -->
@@ -127,7 +131,8 @@
                     @if($item->type == 0)
                         <div class="">
                             <div>
-                                <h3 class="h3 push-20 "><i class=" text-primary fa fa-bus"></i> Package Itinerary</h3>
+                                <h3 class="h3 push-20 "><i
+                                            class=" text-primary fa fa-bus"></i> @lang('general.package itinerary')</h3>
                             </div>
                             {!! $item->itinerary !!}
                         </div>
@@ -137,7 +142,13 @@
             </div>
             <div class="col-md-4 ">
                 @include('app.partials.book')
-                @include('app.partials.related_tours')
+                @if($item->type == 0)
+                    @include('app.partials.related_tours')
+                @elseif($item->type == 2)
+                    @include('app.partials.related_hotels')
+                @else
+                    @include('app.partials.related_activities')
+                @endif
             </div>
         </div>
     </div>

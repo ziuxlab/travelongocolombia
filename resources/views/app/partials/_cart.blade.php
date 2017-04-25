@@ -66,8 +66,8 @@
             <div class="content">
                 {!! Form::open(['action'=> ['CheckoutController@store']]) !!}
                 <div class="form-group {{ $errors->has('note') ? ' has-error' : '' }}">
-                    {!! Form::label('Aditional Information:', null, ['class' => 'control-label']) !!}
-                    {!! Form::textarea('note', old('note'), ['class' => 'form-control','placeholder'=>'Ingrese cualquier informacion adicional que desee','rows'=>3]) !!}
+                    {!! Form::label(trans('general.additional_information').':', null, ['class' => 'control-label']) !!}
+                    {!! Form::textarea('note', old('note'), ['class' => 'form-control','placeholder'=>trans('general.additional_information_text'),'rows'=>3]) !!}
                     @if ($errors->has('note'))
                         <span class="help-block">
                                     <strong>{{ $errors->first('note') }}</strong>
@@ -76,8 +76,8 @@
                 </div>
                 <div class="push-20 text-right">
                     <a href="{{Session::get('plan') == 'pick' ? url(trans('general.activities')) : url(str_slug(trans('cabecera.Design')).'?step=3')}}"
-                       type="button" class="btn btn-default push-15-r">Continue Shopping</a>
-                    <button type="submit" class="btn btn-primary">Proceed payment</button>
+                       type="button" class="btn btn-default push-15-r">@lang('general.continue_shopping')</a>
+                    <button type="submit" class="btn btn-primary">@lang('general.proceed_payment')</button>
                 </div>
                 {!! Form::close() !!}
             </div>

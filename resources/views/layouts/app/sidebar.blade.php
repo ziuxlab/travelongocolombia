@@ -31,7 +31,7 @@
                                     data-action-mode="demo"><i class="si si-refresh"></i></button>
                         </li>
                     </ul>
-                    <h3 class="block-title">Shopping Cart ({{Cart::getTotalQuantity()}})</h3>
+                    <h3 class="block-title">@lang('general.shopping_cart') ({{Cart::getTotalQuantity()}})</h3>
                 </div>
                 <div class="block-content">
                     <div class="pull-r-l">
@@ -79,10 +79,10 @@
                             <tr>
                                 <td class="text-center" colspan="4">
                                     <a class="btn btn-minw  btn-default push-10-r" href="{{url('cart/clear')}}">
-                                         Clear
+                                         @lang('general.clear')
                                     </a>
                                     <a class="btn  btn-minw btn-primary" href="{{url('cart')}}">
-                                        Checkout
+                                        @lang('general.checkout')
                                     </a>
                                 </td>
                             </tr>
