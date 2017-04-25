@@ -31,6 +31,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'The Coffee Park',
                 'keywords'         => 'The Coffee Park',
+                'include'          => 'Multiple ticket,  drinks and snacks ',        // price include
+                'suggestion'       => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
             ]);
             
             Product::create([
@@ -48,6 +50,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Parque del café',
                 'keywords'         => 'Parque del café',
+                'include'          => 'Pasaporte múltiple, bebidas y snacks',        // price include
+                'suggestion'       => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar ',
             ]);
             
             Product::create([
@@ -65,6 +69,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Panaca',
                 'keywords'         => 'Panaca',
+                'include'          => 'Terra ticket, drinks and snacks ',        // price include
+                'suggestion'       => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
             ]);
             
             Product::create([
@@ -82,6 +88,8 @@
                 'city_id'          => 2,
                 'meta_description' => 'Panaca',
                 'keywords'         => 'Panaca',
+                'include'          => 'Pasaporte Terra, bebidas y snacks ',        // price include
+                'suggestion'       => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
             ]);
             
             Product::create([
@@ -99,6 +107,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Recuca',
                 'keywords'         => 'Recuca',
+                'include'          => 'Ticket, coffee tasting, drinks and snacks ',        // price include
+                'suggestion'       => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
             ]);
             
             
@@ -117,6 +127,8 @@
                 'city_id'          => 2,
                 'meta_description' => 'Recuca',
                 'keywords'         => 'Recuca',
+                'include'          => 'Pasaporte, cata de café, bebidas y snacks ',        // price include
+                'suggestion'       => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
             ]);
             
             Product::create([
@@ -134,6 +146,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Las cascadas de Río Verde',
                 'keywords'         => 'Las cascadas de Río Verde',
+                'include'          => 'Lunch, Transport  from Armenia by JEEP, drinks, snacks ',        // price include
+                'suggestion'       => 'Almuerzo, ingreso, transporte desde Armenia en Jeep, bebidas y snacks ',
             
             ]);
             
@@ -152,6 +166,8 @@
                 'city_id'          => 2,
                 'meta_description' => 'The Río Verde Waterfalls',
                 'keywords'         => 'The Río Verde Waterfalls',
+                'include'          => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',        // price include
+                'suggestion'       => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
             ]);
             
             Product::create([
@@ -169,6 +185,8 @@
                 'city_id'          => 2,
                 'meta_description' => 'Nevado de santa Isable y laguna de otun',
                 'keywords'         => 'Nevado de santa Isable y laguna de otun',
+                'include'          => 'Guía Local, transporte por dos días (compartido),  2 desayunos, 2 almuerzos, 1 cena, hospedaje en finca o campamento, entrada alparque nacional, bebidas y snacks  ',        // price include
+                'suggestion'       => 'Ropa para clima frío, zapatos de agarre, guantes, bufanda, pasamontañas, impermeable, bloqueador, sleeping, shapstick, frutas, cereal en barra, otra muda de ropa por si llueve, gafas oscuras con protección UV, agua, cámara, documento identidad',
             ]);
             
             Product::create([
@@ -186,6 +204,8 @@
                 'city_id'          => 2,
                 'meta_description' => 'The Otun Lagoon and Santa Isabel Nevado',
                 'keywords'         => 'The Otun Lagoon and Santa Isabel Nevado',
+                'include'          => 'Local guide,  Transport for  2 Days  (Shared),  2 Breakfast, 2 lunch, 1 Dinner Accomodation at a farm or camping, ticket to the national park, drinks and snacks ',        // price include
+                'suggestion'       => 'Cold weather clothes, hiking shoes, gloves, scarf, wood cap, raining coat, sunblock, sleeping,  lips stick, fruits, cereal bars, clothes and shoes if it rains, sunglasses with uv protection, water, camera, ID ',
             ]);
             
             Product::create([
@@ -202,6 +222,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Quimbaya Museum',
                 'keywords'         => 'Quimbaya Museum',
+                'include'          => 'Free Entry',        // price include
+                'suggestion'       => 'Camera',
             ]);
             
             Product::create([
@@ -218,6 +240,8 @@
                 'city_id'          => 1,
                 'meta_description' => 'Museo Quimbaya',
                 'keywords'         => 'Museo Quimbaya',
+                'include'          => 'Entrada Libre',        // price include
+                'suggestion'       => 'Camera',
             ]);
             
             Product::create([
@@ -235,6 +259,8 @@
                 'city_id'          => 4,
                 'meta_description' => 'The Barbas´ palace',
                 'keywords'         => 'The Barbas´ palace',
+                'include'          => 'Jeep since the square of Filandia, entry, local guide, cup of coffee and natural limonade at the end of the hiking ',        // price include
+                'suggestion'       => 'Raincoat and hood, camera, sunblock, hiking shoes, sweater, repelent',
             ]);
             
             Product::create([
@@ -252,6 +278,8 @@
                 'city_id'          => 4,
                 'meta_description' => 'El palacio de barbas',
                 'keywords'         => 'El palacio de barbas',
+                'include'          => 'Jeep since the square of Filandia, entry, local guide, cup of coffee and natural limonade at the end of the hiking ',        // price include
+                'suggestion'       => 'Impermeable con capota, zapatos de agarre, saco y repelente',
             ]);
             
             Product::create([
@@ -269,6 +297,8 @@
                 'city_id'          => 4,
                 'meta_description' => 'The Promised land',
                 'keywords'         => 'The Promised land',
+                'include'          => 'Entry, sense path, smming in the river, beach voleyball, local guide ',        // price include
+                'suggestion'       => 'Comfortable shoes and clothes, hut or cap, sunblock, camera, clothes to go in the river, sweater',
             ]);
             
             Product::create([
@@ -286,6 +316,8 @@
                 'city_id'          => 4,
                 'meta_description' => 'La tierra prometida',
                 'keywords'         => 'La tierra prometida',
+                'include'          => '',        // price include
+                'suggestion'       => 'Zapatos y ropa comoda, sombrero o gorra, bloqueador solar,camara, ropa para entrar al rio, saco',
             ]);
             
             Product::create([
@@ -303,6 +335,8 @@
                 'city_id'          => 3,
                 'meta_description' => 'Towns',
                 'keywords'         => 'Towns',
+                'include'          => '',        // price include
+                'suggestion'       => 'Comfortable shoes, camera, cap or hut',
             ]);
             
             Product::create([
@@ -320,6 +354,8 @@
                 'city_id'          => 3,
                 'meta_description' => 'Pueblos',
                 'keywords'         => 'Pueblos',
+                'include'          => '',        // price include
+                'suggestion'       => 'Camara, zapatos comodos y gorra o sombrero',
             ]);
             
             
@@ -523,7 +559,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-    
+            
             Product::create([
                 'id'               => 20,
                 'tittle'           => 'Plan B Most Physically',
@@ -703,7 +739,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-    
+            
             Product::create([
                 'id'               => 21,
                 'tittle'           => 'Plan C Outdoors Tour',
@@ -875,8 +911,8 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-    
-    
+            
+            
             Product::create([
                 'id'               => 22,
                 'tittle'           => 'Plan a less Physically Taxing',
@@ -1056,7 +1092,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-    
+            
             Product::create([
                 'id'               => 23,
                 'tittle'           => 'Plan B Most Physically',
@@ -1210,7 +1246,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-    
+            
             Product::create([
                 'id'               => 24,
                 'tittle'           => 'Plan C Outdoors Tour',
@@ -1466,108 +1502,107 @@
             //========== Inicio de servicios adicionales ==============//
             
             Product::create([
-                'id'               => 30,
-                'tittle'           => 'Culinary (Colombian cuisine)',
-                'slug_url'         => str_slug('Culinary (Colombian cuisine)', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 31,
-                'tittle'           => 'Latin rhythms (Dance)',
-                'slug_url'         => str_slug('Latin rhythms (Dance)', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 32,
-                'tittle'           => 'Intensive Spanish ',
-                'slug_url'         => str_slug('Intensive Spanish ', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 33,
-                'tittle'           => 'Childcare services',
-                'slug_url'         => str_slug('Childcare services', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 34,
-                'tittle'           => 'Dancing salsa ',
-                'slug_url'         => str_slug('Dancing salsa ', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 35,
-                'tittle'           => 'Nursing or special medical attention',
-                'slug_url'         => str_slug('Nursing or special medical attention', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 36,
-                'tittle'           => 'Money exchange',
-                'slug_url'         => str_slug('Money exchange', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-    
-            Product::create([
-                'id'               => 37,
-                'tittle'           => 'Cell phone or SIM card and data ',
-                'slug_url'         => str_slug('Cell phone or SIM card and data ', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'               => 38,
-                'tittle'           => 'Renta car reservations',
-                'slug_url'         => str_slug('Renta car reservations', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
+                'id'          => 30,
+                'tittle'      => 'Culinary (Colombian cuisine)',
+                'slug_url'    => str_slug('Culinary (Colombian cuisine)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
             ]);
             
             Product::create([
-                'id'               => 39,
-                'tittle'           => 'Complete Laundry services ',
-                'slug_url'         => str_slug('Complete Laundry services ', '-'),
-                'status'           => 1,
-                'local'            => 'en',
-                'description'      => '',
-                'type'             => 4, //package,activity
+                'id'          => 31,
+                'tittle'      => 'Latin rhythms (Dance)',
+                'slug_url'    => str_slug('Latin rhythms (Dance)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
             ]);
             
-    
-           
+            Product::create([
+                'id'          => 32,
+                'tittle'      => 'Intensive Spanish ',
+                'slug_url'    => str_slug('Intensive Spanish ', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 33,
+                'tittle'      => 'Childcare services',
+                'slug_url'    => str_slug('Childcare services', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 34,
+                'tittle'      => 'Dancing salsa ',
+                'slug_url'    => str_slug('Dancing salsa ', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 35,
+                'tittle'      => 'Nursing or special medical attention',
+                'slug_url'    => str_slug('Nursing or special medical attention', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 36,
+                'tittle'      => 'Money exchange',
+                'slug_url'    => str_slug('Money exchange', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            
+            Product::create([
+                'id'          => 37,
+                'tittle'      => 'Cell phone or SIM card and data ',
+                'slug_url'    => str_slug('Cell phone or SIM card and data ', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 38,
+                'tittle'      => 'Renta car reservations',
+                'slug_url'    => str_slug('Renta car reservations', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 39,
+                'tittle'      => 'Complete Laundry services ',
+                'slug_url'    => str_slug('Complete Laundry services ', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            
             //========== Fin de servicios adicionales ==============//
             
             /*

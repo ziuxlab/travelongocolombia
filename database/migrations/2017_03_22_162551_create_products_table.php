@@ -22,6 +22,8 @@ class CreateProductsTable extends Migration
             $table->Integer('price_children')->unsigned()->nullable();
             $table->tinyInteger('discount')->unsigned()->nullable()->default(0);
             $table->longText('itinerary')->nullable(); //contenido
+            $table->mediumText('include')->nullable(); //price include
+            $table->mediumText('suggestion')->nullable(); //price include
             $table->mediumText('meta_description')->nullable();
             $table->mediumText('description')->nullable(); // descripcion del sitio de la actividad <mientras tanto>
             $table->string('keywords')->nullable();

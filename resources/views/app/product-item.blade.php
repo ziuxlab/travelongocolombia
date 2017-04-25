@@ -59,27 +59,47 @@
                             <p class="text-muted text-justify">{{$item->description}}</p>
                         </div>
                         <div class="row content-mini content-mini-full border-t">
-                            <h4 class=" h5 col-sm-6">Duration</h4>
+                            <h4 class=" h5 col-sm-6">Duration:</h4>
                             <div class="text-muted col-sm-6">
                                 <ul class="fa-ul ">
-                                    <li><i class="fa text-primary fa-clock-o fa-li"></i>{{$item->days}}</li>
+                                    <li class="text-capitalize">
+                                        <i class="fa text-primary fa-clock-o fa-li"></i>{{$item->days}}
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="row content-mini content-mini-full border-t">
-                            <h4 class=" h5 col-sm-6">Price Include</h4>
-                            <div class="text-muted col-sm-6">
-                                <ul class="fa-ul">
-                                    <li><i class="fa text-success fa-check fa-li"></i>First item</li>
-                                    <li><i class="fa text-success fa-check fa-li"></i>Second item</li>
-                                    <li><i class="fa text-success fa-check fa-li"></i>Sublist</li>
-                                    <li><i class="fa text-success fa-check fa-li"></i>Third item</li>
-                                </ul>
+                        @if($item->include !== null)
+                            <div class="row content-mini content-mini-full border-t">
+                                <h4 class=" h5 col-sm-6">Price Include:</h4>
+                                <div class="text-muted col-sm-6">
+                                    <ul class="fa-ul">
+                                        @foreach(explode(',', $item->include) as $option)
+                                            <li class="text-capitalize">
+                                                <i class="fa text-success  fa-check fa-li"></i>{{$option}}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        @endif
+                        @if($item->suggestion !== null)
+                            <div class="row content-mini content-mini-full border-t">
+                                <h4 class=" h5 col-sm-6">Suggestions:</h4>
+                                <div class="text-muted col-sm-6">
+                                    <ul class="fa-ul">
+                                        @foreach(explode(',', $item->suggestion) as $option)
+                                            <li class="text-capitalize">
+                                                <i class="fa text-success fa-check fa-li"></i>{{$option}}
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                     <div class="push-30">
-                        <h3 class="h3 text-capitalize push-15 "><i class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
+                        <h3 class="h3 text-capitalize push-15 "><i
+                                    class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
                         @if(count($item->photos)>0)
                             <div class="">
                                 <!-- Slider -->

@@ -25,6 +25,8 @@
             'status',           // 0 => deshabilitado, 1 => habilitado
             'local',            // 'en' or 'es'
             'itinerary',        // Descripcion del hotel actividad o paquete
+            'include',        // price include
+            'suggestion',        // sugerencias
             'type',             // '0'=>package,'1'=>activity,'2'=>hotel,
             'description',      // breve resumen de la actividad, hotel o paquete
             'address',          // ubicacion de la actividad
@@ -35,17 +37,17 @@
         {
             return $this->hasMany('App\Photo', 'product_id');
         }
-    
+        
         public function features()
         {
-            return $this->belongsToMany('App\Feature','feature_products');
+            return $this->belongsToMany('App\Feature', 'feature_products');
         }
-    
+        
         public function city()
         {
             return $this->belongsTo(city::class);
         }
-
+        
         public function typeName()
         {
             $type = '';
@@ -53,10 +55,11 @@
                 case 0:
                     $type = trans('dashboard_user.package');
                     break;
-                 case 1:
+                case 1:
                     $type = trans('dashboard_user.activity');
                     break;
             }
+            
             return $type;
         }
     }

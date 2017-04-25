@@ -88,6 +88,45 @@
                     </h3>
                     <p class="text-muted text-justify">{{$product->description}}</p>
                 </div>
+                <div class="row content-mini content-mini-full border-t">
+                    <h4 class=" h5 col-sm-6">Duration:</h4>
+                    <div class="text-muted col-sm-6">
+                        <ul class="fa-ul ">
+                            <li class="text-capitalize">
+                                <i class="fa text-primary fa-clock-o fa-li"></i>{{$product->days}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                @if($product->include !== null)
+                    <div class="row content-mini content-mini-full border-t">
+                        <h4 class=" h5 col-sm-6">Price Include:</h4>
+                        <div class="text-muted col-sm-6">
+                            <ul class="fa-ul">
+                                @foreach(explode(',', $product->include) as $option)
+                                    <li class="text-capitalize">
+                                        <i class="fa text-success  fa-check fa-li"></i>{{$option}}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
+                @if($product->suggestion !== null)
+                    <div class="row content-mini content-mini-full border-t">
+                        <h4 class=" h5 col-sm-6">Suggestions:</h4>
+                        <div class="text-muted col-sm-6">
+                            <ul class="fa-ul">
+                                @foreach(explode(',', $product->suggestion) as $option)
+                                    <li class="text-capitalize">
+                                        <i class="fa text-success fa-check fa-li"></i>{{$option}}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
+            </div>
                 <div class="push-30">
                     <h3 class="h3 text-capitalize push-15 "><i
                                 class=" text-primary fa fa-camera-retro"></i> @lang('photos')</h3>
