@@ -48,8 +48,20 @@
                                     <span class="badge">{{$item->quantity}}</span>
                                 </td>
                                 <td>
-                                    <span class="h5" >{{$item->name}}</span>
-                                    <div class="font-s12 text-muted">Package Tour</div>
+                                    <span class="h5 text-capitalize" >{{$item->name}}</span>
+                                    <div class="font-s12 text-muted text-capitalize">
+                                        @if($item->attributes->type == 0)
+                                            @lang('general.packages')
+                                        @elseif($item->attributes->type == 1)
+                                            @lang('general.activities')
+                                        @elseif($item->attributes->type == 2)
+                                            @lang('general.hotel')
+                                        @elseif($item->attributes->type == 3)
+                                            @lang('general.flight')
+                                        @elseif($item->attributes->type == 4)
+                                            @lang('general.additional services')
+                                        @endif
+                                    </div>
                                 </td>
                                 <td class="text-right">
                                     <div class="font-w600 text-success">${{number_format($item->price) }}</div>

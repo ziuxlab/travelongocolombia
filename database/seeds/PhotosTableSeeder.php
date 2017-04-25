@@ -744,6 +744,73 @@
                 'img'        => 'img/activities/recuca1.jpg',
                 'order'      => 1,
             ]);
+    
+    
+            //============= Servicios Adicionales =============//
+            
+            Photo::create([
+                'product_id' => 30,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 31,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 32,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 33,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 34,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 35,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 36,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 37,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 38,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 39,
+                'img'        => 'img/activities/recuca1.jpg',
+                'order'      => 1,
+            ]);
+    
+           
+    
+           
             
             
         }

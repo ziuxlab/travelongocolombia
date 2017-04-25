@@ -100,6 +100,7 @@
         'since'                => 'Since',
         'Include in package'   => 'Include in package',
         'date'                 => 'Date',
+        'add'                 => 'Add',
     
     
     ];

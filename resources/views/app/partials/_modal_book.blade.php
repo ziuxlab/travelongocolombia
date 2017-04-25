@@ -30,6 +30,18 @@
                                     </button>
                                 </div>
                             @endif
+                                @if($type==4)
+                                    <div class="item item-2x item-circle push-20  bg-gray-lighter">
+                                        <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
+                                             alt="airplane">
+                                    </div>
+                                    <p>Seguir agregando Servicios Adicionales</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-minw btn-primary text-capitalize" onclick="enviar_formulario_book(4,{{$id}})"
+                                                data-dismiss="modal">Agregar Servicios
+                                        </button>
+                                    </div>
+                                @endif
                         </div>
                         <div class="col-xs-6 text-center">
                             <div class="item item-2x item-circle push-20  bg-gray-lighter">

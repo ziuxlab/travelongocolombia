@@ -1414,22 +1414,107 @@
             
             Product::create([
                 'id'               => 30,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title30', '-'),
-                'days'             => 9,
-                'price_adults'     => 100,
-                'price_children'   => 100,
-                'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
+                'tittle'           => 'Culinary (Colombian cuisine)',
+                'slug_url'         => str_slug('Culinary (Colombian cuisine)', '-'),
                 'status'           => 1,
-                'local'            => 'es',
+                'local'            => 'en',
                 'description'      => '',
-                'itinerary'        => 'prueba tittle',
                 'type'             => 4, //package,activity
-                'city_id'          => 3
+            ]);
+    
+            Product::create([
+                'id'               => 31,
+                'tittle'           => 'Latin rhythms (Dance)',
+                'slug_url'         => str_slug('Latin rhythms (Dance)', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 32,
+                'tittle'           => 'Intensive Spanish ',
+                'slug_url'         => str_slug('Intensive Spanish ', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 33,
+                'tittle'           => 'Childcare services',
+                'slug_url'         => str_slug('Childcare services', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 34,
+                'tittle'           => 'Dancing salsa ',
+                'slug_url'         => str_slug('Dancing salsa ', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 35,
+                'tittle'           => 'Nursing or special medical attention',
+                'slug_url'         => str_slug('Nursing or special medical attention', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 36,
+                'tittle'           => 'Money exchange',
+                'slug_url'         => str_slug('Money exchange', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+    
+            Product::create([
+                'id'               => 37,
+                'tittle'           => 'Cell phone or SIM card and data ',
+                'slug_url'         => str_slug('Cell phone or SIM card and data ', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'               => 38,
+                'tittle'           => 'Renta car reservations',
+                'slug_url'         => str_slug('Renta car reservations', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
             ]);
             
+            Product::create([
+                'id'               => 39,
+                'tittle'           => 'Complete Laundry services ',
+                'slug_url'         => str_slug('Complete Laundry services ', '-'),
+                'status'           => 1,
+                'local'            => 'en',
+                'description'      => '',
+                'type'             => 4, //package,activity
+            ]);
+            
+    
+           
             //========== Fin de servicios adicionales ==============//
             
             /*

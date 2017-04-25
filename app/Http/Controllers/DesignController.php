@@ -87,7 +87,7 @@
                 return redirect(str_slug(trans('cabecera.Design')) . '?step=2');
             }
             
-            if ($request->step == 2 or $request->agregate == 1) {
+            if ($request->step == 2) {
                 
                 $item = Product::findorfail($request->product_id);
                 $nights = Carbon::parse(Session::get('checkout'))->diffInDays(Carbon::parse(Session::get('checkin')));
@@ -112,8 +112,35 @@
                 
                 return redirect(str_slug(trans('cabecera.Design')) . '?step=3');
             }
+    
+            if ($request->agregate == 1) {
+        
+                $item = Product::findorfail($request->product_id);
+        
+                Cart::add([
+                    'id'         => $item->id,
+                    'name'       => $item->tittle,
+                    'price'      => (Session::get('adults') * $item->price_adults  * (1 - ($item->discount / 100))) +
+                                    (Session::get('children') * $item->price_children  * (1 - ($item->discount / 100))),
+                    'quantity'   => 1,
+                    'attributes' => [
+                        'adults'   => Session::get('adults'),
+                        'children' => Session::get('children'),
+                        'infants'  => Session::get('infants'),
+                        'type'     => $item->type,
+                        'img'      => $item->photos->sortBy('order')
+                                                   ->first()->img
+                    ]
+                ]);
+        
+                return redirect(str_slug(trans('cabecera.Design')) . '?step=3');
+            }
             
-            if ($request->step == 3) {
+            
+            
+            
+            
+            if ($request->step == 3 or $request->services_additional == 1) {
                 
                 $item = Product::findorfail($request->product_id);
                 

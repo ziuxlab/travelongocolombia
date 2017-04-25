@@ -20,22 +20,27 @@
                                      alt="{{$item->name}}">
                             </td>
                             <td>
-                                <span class="h5">{{$item->name}}</span>
-                                @if($item->attributes->type == 0)
-                                    <div class="font-s12 text-muted">Package Tour</div>
-                                @elseif($item->attributes->type == 1)
-                                    <div class="font-s12 text-muted">Activity</div>
-                                @elseif($item->attributes->type == 2)
-                                    <div class="font-s12 text-muted">Hotel</div>
-                                @else
-                                    <div class="font-s12 text-muted">Flight</div>
-                                @endif
+                                <span class="h5 text-capitalize">{{$item->name}}</span>
+                                <div class="font-s12 text-muted text-capitalize">
+                                    @if($item->attributes->type == 0)
+                                        @lang('general.packages')
+                                    @elseif($item->attributes->type == 1)
+                                        @lang('general.activities')
+                                    @elseif($item->attributes->type == 2)
+                                        @lang('general.hotel')
+                                    @elseif($item->attributes->type == 3)
+                                        @lang('general.flight')
+                                    @elseif($item->attributes->type == 4)
+                                        @lang('general.additional services')
+                                    @endif
+                                </div>
                             </td>
                             <td class="text-center">
                                 <span class="badge">{{$item->quantity}}</span>
                             </td>
                             <td class="text-right">
-                                <div class="h3 font-w700 text-success">${{number_format($item->price * $item->quantity) }}</div>
+                                <div class="h3 font-w700 text-success">
+                                    ${{number_format($item->price * $item->quantity) }}</div>
                             </td>
                             <td class="text-center">
                                 {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}

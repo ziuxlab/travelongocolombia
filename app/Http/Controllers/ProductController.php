@@ -55,20 +55,28 @@
                                    ->whereHas('features', function ($query) use ($request) {
                                        $query->where('feature_id', $request->feature);
                                    })
-                                   ->paginate(5)
+                                   ->paginate(6)
                 ;
             } elseif (isset($request->city)) {
                 $products = Product::with('city')
                                    ->where('type', $type)
                                    ->where('local', \Lang::getLocale())
                                    ->where('city_id', $request->city)
-                                   ->paginate(5)
+                                   ->paginate(6)
                 ;
             } else {
-                $products = Product::where('type', $type)
-                                   ->where('local', \Lang::getLocale())
-                                   ->paginate(5)
-                ;
+                if ($type == 4){
+                    $products = Product::where('type', $type)
+                                       ->where('local', \Lang::getLocale())
+                        ->paginate(30);
+                    
+                }else{
+                    $products = Product::where('type', $type)
+                                       ->where('local', \Lang::getLocale())
+                                       ->paginate(6)
+                    ;
+                }
+                
             }
             
             

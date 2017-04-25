@@ -100,5 +100,6 @@
         'since'                => 'Desde',
         'Include in package'   => 'Incluir en el Paquete',
         'date'                 => 'Fecha',
+        'add'                 => 'Agregar',
     
     ];
