@@ -10,7 +10,7 @@
                 {{ csrf_field() }}
                 
                 <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
-                    <label for="email" class="col-sm-12 text-left ">Correo electrónico</label>
+                    <label for="email" class="col-sm-12 text-left ">@lang('cabecera.form_email')</label>
                     
                     <div class="col-sm-12">
                         <input id="email" type="email" class="form-control" name="email"
@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-12 ">Contraseña</label>
+                    <label for="password" class="col-md-12 ">@lang('cabecera.form_password')</label>
                     
                     <div class="col-md-12">
                         <input id="password" type="password" class="form-control" name="password" required>
@@ -38,17 +38,15 @@
                     
                     <div class="col-sm-12 text-right">
                         <a class=" btn btn-link" href="{{ route('password.request') }}">
-                            ¿Recordar contraseña?
+                            @lang('cabecera.form_forgot')
                         </a>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="col-sm-12 text-center">
                         <button type="submit" class="btn btn-primary btn-minw">
-                            Ingresar
+                            @lang('general.Submit')
                         </button>
-                    
-                    
                     </div>
                 </div>
             </form>

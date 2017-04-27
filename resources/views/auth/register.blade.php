@@ -10,7 +10,7 @@
                 {{ csrf_field() }}
     
                 <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
-                    <label for="email" class="col-sm-12 text-left ">Nombre</label>
+                    <label for="email" class="col-sm-12 text-left ">@lang('cabecera.form_name'):</label>
         
                     <div class="col-sm-12">
                         <input id="name" type="text" class="form-control" name="name"
@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
-                    <label for="email" class="col-sm-12 text-left ">Correo electrónico</label>
+                    <label for="email" class="col-sm-12 text-left ">@lang('cabecera.form_email'):</label>
                     
                     <div class="col-sm-12">
                         <input id="email" type="email" class="form-control" name="email"
@@ -38,7 +38,7 @@
                 </div>
                 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-12 ">Contraseña</label>
+                    <label for="password" class="col-md-12 ">@lang('cabecera.form_password')</label>
                     
                     <div class="col-md-12">
                         <input id="password" type="password" class="form-control" name="password" required>
@@ -52,7 +52,7 @@
                 </div>
     
                 <div class="form-group">
-                    <label for="password-confirm" class="col-md-12 ">Confirm Password</label>
+                    <label for="password-confirm" class="col-md-12 ">@lang('cabecera.form_password_repeat'):</label>
         
                     <div class="col-md-12">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -62,7 +62,7 @@
                 <div class="form-group ">
                     <div class="col-sm-12 text-center">
                         <button type="submit" class="btn btn-primary btn-minw">
-                            Registrarse
+                            @lang('cabecera.Register')
                         </button>
                     </div>
                 </div>

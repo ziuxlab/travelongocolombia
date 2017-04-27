@@ -25,6 +25,15 @@
 
 @section('contenido')
     @include('app.partials.banner')
+    <div class="content-boxed">
+        <div class="content-mini content-mini-full bg-transparent">
+            <ol class="breadcrumb">
+                <li><a class="" href="{{url('/')}}">home</a></li>
+            
+                <li>{{$item->tittle}}</li>
+            </ol>
+        </div>
+    </div>
     {!! $item->body !!}
 @stop
 

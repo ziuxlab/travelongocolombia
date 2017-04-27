@@ -3,7 +3,12 @@
         <div class="modal-content modal-rounded">
             <div class="block block-rounded block-themed block-transparent ">
                 <div class="block-content block-content-full">
-                    <h3 class="text-center push-20">¿Qué deseas hacer ahora?</h3>
+                    <ul class="block-options">
+                        <li>
+                            <button data-dismiss="modal" type="button"><i class="si si-close"></i></button>
+                        </li>
+                    </ul>
+                    <h3 class="text-center push-20">@lang('general.What_do_you_want')</h3>
                     <div class="row push-20">
                         <div class="col-xs-6 text-center border-r">
                             @if($type==1 or $type ==2)
@@ -11,10 +16,11 @@
                                     <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
                                          alt="airplane">
                                 </div>
-                                <p>Seguir agregando actividades</p>
+                                <p>@lang('general.keep_adding_activities')</p>
                                 <div class="text-center">
-                                    <button class="btn btn-minw btn-primary text-capitalize" onclick="enviar_formulario_book(1,{{$id}})"
-                                            data-dismiss="modal">Agregar actividades
+                                    <button class="btn btn-minw btn-primary text-capitalize"
+                                            onclick="enviar_formulario_book(1,{{$id}})"
+                                            data-dismiss="modal">@lang('general.add_activities')
                                     </button>
                                 </div>
                             @endif
@@ -23,35 +29,36 @@
                                     <img class="img-responsive" src="{{asset('img/icons/airplane.svg')}}"
                                          alt="airplane">
                                 </div>
-                                <p>Escoger un vuelo para este paquete</p>
+                                <p>@lang('general.Choose_flight')</p>
                                 <div class="text-center">
                                     <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(3)"
-                                            data-dismiss="modal">Buscar Vuelos
+                                            data-dismiss="modal">@lang('general.Search_Flights')
                                     </button>
                                 </div>
                             @endif
-                                @if($type==4)
-                                    <div class="item item-2x item-circle push-20  bg-gray-lighter">
-                                        <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
-                                             alt="airplane">
-                                    </div>
-                                    <p>Seguir agregando Servicios Adicionales</p>
-                                    <div class="text-center">
-                                        <button class="btn btn-minw btn-primary text-capitalize" onclick="enviar_formulario_book(4,{{$id}})"
-                                                data-dismiss="modal">Agregar Servicios
-                                        </button>
-                                    </div>
-                                @endif
+                            @if($type==4)
+                                <div class="item item-2x item-circle push-20  bg-gray-lighter">
+                                    <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
+                                         alt="airplane">
+                                </div>
+                                <p>@lang('general.keep_adding_services')</p>
+                                <div class="text-center">
+                                    <button class="btn btn-minw btn-primary text-capitalize"
+                                            onclick="enviar_formulario_book(4,{{$id}})"
+                                            data-dismiss="modal">@lang('general.add_services')
+                                    </button>
+                                </div>
+                            @endif
                         </div>
                         <div class="col-xs-6 text-center">
                             <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                 <img class="img-responsive" src="{{asset('img/icons/cash.svg')}}" alt="cash">
                             
                             </div>
-                            <p>Ir directamente al sistema de pagos.</p>
+                            <p>@lang('general.Go_to_checkout')</p>
                             <div class="text-center">
                                 <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(0,{{$id}})"
-                                        data-dismiss="modal"> Pagar
+                                        data-dismiss="modal"> @lang('general.pay')
                                 </button>
                             </div>
                         </div>

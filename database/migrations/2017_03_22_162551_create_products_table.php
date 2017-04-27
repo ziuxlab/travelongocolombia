@@ -25,7 +25,8 @@ class CreateProductsTable extends Migration
             $table->mediumText('include')->nullable(); //price include
             $table->mediumText('suggestion')->nullable(); //price include
             $table->mediumText('meta_description')->nullable();
-            $table->mediumText('description')->nullable(); // descripcion del sitio de la actividad <mientras tanto>
+            $table->longText('description')->nullable(); // descripcion del sitio de la actividad <mientras tanto>
+            $table->longText('short_description')->nullable(); // descripcion del sitio de la actividad <mientras tanto>
             $table->string('keywords')->nullable();
             $table->boolean('status')->default(true);
             $table->tinyInteger('type')->unsigned()->default(0); //0 packages, 1 activities, 2 hotels

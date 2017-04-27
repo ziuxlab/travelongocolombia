@@ -117,6 +117,17 @@
         'proceed_payment'             => 'Proceed Payment',
         'additional_information'      => 'Additional Information',
         'additional_information_text' => 'Enter any additional information  that you wish',
+        'home'                        => 'home',
+        'What_do_you_want'            => 'What do You Want to do?',
+        'keep_adding_activities'      => 'keep adding activities',
+        'add_activities'              => 'add activities',
+        'Choose_flight'               => 'Choose a flight for this package',
+        'Search_Flights'              => 'Search Flights',
+        'keep_adding_services'        => 'keep adding additional services',
+        'add_services'                => 'add services',
+        'Go_to_checkout'              => 'Go to checkout',
+        'pay'                         => 'pay',
+        'footer'                         => 'pay',
     
     
     ];

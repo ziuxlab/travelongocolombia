@@ -117,5 +117,16 @@
         'proceed_payment'             => 'Proceder al Pgo',
         'additional_information'      => 'Información Adicional',
         'additional_information_text' => 'Ingrese cualquier informacion adicional que desee',
+        'home'                        => 'inicio',
+        'What_do_you_want'            => '¿Qué deseas hacer ahora?',
+        'keep_adding_activities'      => 'Seguir agregando actividades',
+        'add_activities'              => 'Agregar actividades',
+        'Choose_flight'               => 'Escoger un vuelo para este paquete',
+        'Search_Flights'              => 'Buscar Vuelos',
+        'keep_adding_services'        => 'Seguir agregando Servicios Adicionales',
+        'add_services'                => 'Agregar Servicios',
+        'Go_to_checkout'              => 'Ir directamente al sistema de pagos',
+        'pay'                         => 'pagar',
+        'footer'                      => 'Está comprometido con La prevención de la explotación sexual infantil, del turismo sexual y otras formas de abuso a los menores de edad (ley 1336 de 2009), de la explotación laboral infantil Código del Menor (ley 1098 de 2006). La prevención del tráfico de Patrimonio Cultural (ley 397 de 1997). La prevención del tráfico de especies como flora y fauna silvestre (ley 599 de 2000 y Decreto 1608 de 1978). Defendemos la igualdad de raza o género (ley 1482 de 2011, modificada por la ley 1752 de 2015).',
     
     ];

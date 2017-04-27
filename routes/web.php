@@ -44,6 +44,7 @@
     
     // Menu-related routes ==============================================.
     Route::get('/', 'HomeController@index');
+    Route::get('home', 'HomeController@home');
     Route::get('products/list/{type}', 'ProductController@list');
     
     // Design Plan related routes =======================================.

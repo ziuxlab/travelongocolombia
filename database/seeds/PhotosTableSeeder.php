@@ -501,180 +501,67 @@
                 'img'        => 'img/activities/tierra4.jpg',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 16,
                 'img'        => 'img/activities/tierra5.jpg',
                 'order'      => 1,
             ]);
-            
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/cordoba3.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/cordoba4.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/filandia1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/filandia2.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/filandia8.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/filandia10.jpg',
-                'order'      => 1,
-            ]);
+           
             Photo::create([
                 'product_id' => 17,
                 'img'        => 'img/activities/pijao1.jpg',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 17,
                 'img'        => 'img/activities/pijao2.jpg',
                 'order'      => 1,
             ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento5.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento6.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento11.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento19.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 17,
-                'img'        => 'img/activities/salento21.jpg',
-                'order'      => 1,
-            ]);
-            
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/cordoba3.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/cordoba4.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/filandia1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/filandia2.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/filandia8.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/filandia10.jpg',
-                'order'      => 1,
-            ]);
+           
             Photo::create([
                 'product_id' => 18,
                 'img'        => 'img/activities/pijao1.jpg',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 18,
                 'img'        => 'img/activities/pijao2.jpg',
                 'order'      => 1,
             ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento5.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento6.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento11.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento19.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 18,
-                'img'        => 'img/activities/salento21.jpg',
-                'order'      => 1,
-            ]);
-            
             
             Photo::create([
                 'product_id' => 19,
                 'img'        => 'img/packages/package1.png',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 20,
                 'img'        => 'img/packages/package2.png',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 21,
                 'img'        => 'img/packages/package3.png',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 22,
                 'img'        => 'img/packages/package1.png',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 23,
                 'img'        => 'img/packages/package2.png',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 24,
                 'img'        => 'img/packages/package3.png',
@@ -689,11 +576,13 @@
                 'img'        => 'img/hotels/ecohotel-paraiso.jpg',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 25,
                 'img'        => 'img/hotels/ecohotel-paraiso-1.jpg',
                 'order'      => 2,
             ]);
+            
             Photo::create([
                 'product_id' => 25,
                 'img'        => 'img/hotels/ecohotel-paraiso-2.jpg',
@@ -807,11 +696,197 @@
                 'img'        => 'img/services/laundry.jpg',
                 'order'      => 1,
             ]);
-    
-           
-    
-           
             
+            // actividades 2
+    
+            Photo::create([
+                'product_id' => 40,
+                'img'        => 'img/activities/filandia1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 40,
+                'img'        => 'img/activities/filandia2.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 40,
+                'img'        => 'img/activities/filandia8.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 40,
+                'img'        => 'img/activities/filandia10.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 41,
+                'img'        => 'img/activities/filandia1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 41,
+                'img'        => 'img/activities/filandia2.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 41,
+                'img'        => 'img/activities/filandia8.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 41,
+                'img'        => 'img/activities/filandia10.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 42,
+                'img'        => 'img/activities/cordoba3.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 42,
+                'img'        => 'img/activities/cordoba4.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 43,
+                'img'        => 'img/activities/cordoba3.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 43,
+                'img'        => 'img/activities/cordoba4.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento5.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento6.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento11.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento19.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento21.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento27.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 44,
+                'img'        => 'img/activities/salento28.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento1.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento5.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento6.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento11.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento19.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento21.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento27.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 45,
+                'img'        => 'img/activities/salento28.jpg',
+                'order'      => 1,
+            ]);
+    
+    
+            Photo::create([
+                'product_id' => 46,
+                'img'        => 'img/activities/salento28.jpg',
+                'order'      => 1,
+            ]);
+           
+            Photo::create([
+                'product_id' => 47,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 48,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 49,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 50,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 51,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 52,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 53,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
             
         }
     }

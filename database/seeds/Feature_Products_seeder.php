@@ -30,22 +30,29 @@ class Feature_Products_seeder extends Seeder
         Product::find(14)->features()->attach([7]);                     //natural park barbas
         Product::find(15)->features()->attach([7]);                     //tierra prometida
         Product::find(16)->features()->attach([7]);                     //land promise
-        Product::find(17)->features()->attach([8]);                     //Down Town
-        Product::find(18)->features()->attach([8]);                     //Down Town
+        Product::find(17)->features()->attach([8]);                     //Buenavista and Pijao
+        Product::find(18)->features()->attach([8]);                     //Buenavista and Pijao
         
+        Product::find(40)->features()->attach(8);                  //filandia
+        Product::find(41)->features()->attach(8);                  //filandia
+        Product::find(42)->features()->attach([8]);                //cordoba
+        Product::find(43)->features()->attach([8]);                //cordoba
+        Product::find(44)->features()->attach([7,8,11,15,16]);     //salento
+        Product::find(45)->features()->attach([7,8,11,15,16]);     //salento
+        Product::find(46)->features()->attach([7,8,9,15]);         //botanical
+        Product::find(47)->features()->attach([7,8,9,15]);         //botanical
+        Product::find(48)->features()->attach([7,13,19]);          //peñas blancas
+        Product::find(49)->features()->attach([7,13,19]);          //peñas blancas
+        Product::find(50)->features()->attach([7,13,18,19]);       //san vicente
+        Product::find(51)->features()->attach([7,13,18,19]);       //san vicente
+        Product::find(52)->features()->attach([7,11,13,20]);       //Calima
+        Product::find(53)->features()->attach([7,11,13,20]);       //Calima
         
         /*
-        Product::find(19)->features()->attach(8);                       //tour armenia
-        Product::find(20)->features()->attach([7,11,13,15,16]);         //rancho california
-        Product::find(21)->features()->attach(8);                       //tour buena vista
-        Product::find(22)->features()->attach([7,8,9,15]);              //botanical
-        Product::find(23)->features()->attach([7,8,11,15,16]);          //salento
-        Product::find(26)->features()->attach([7,13,18,19]);            //san vicente
-        Product::find(28)->features()->attach([8]);                     //shoping down town
-        Product::find(29)->features()->attach([7,13]);                  //lagoon otun
-        Product::find(30)->features()->attach([7]);                     //balsaje
-        Product::find(31)->features()->attach([7]);                     //calarca
-        Product::find(32)->features()->attach([13]);                    //paint ball
+        Product::find([54,55])->features()->attach([7,13]);                  //lagoon otun
+        Product::find([56,57])->features()->attach([7]);                     //balsaje
+        Product::find([58,59])->features()->attach([7]);                     //calarca
+        Product::find([60,61])->features()->attach([13]);                    //paint ball
         Product::find(33)->features()->attach([13]);                    //canopy
         Product::find(34)->features()->attach([7,8,9,11,13]);           //camping monterroca
         Product::find(35)->features()->attach([7,13,19]);               //peñas blancas
