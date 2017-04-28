@@ -39,7 +39,7 @@ class Page extends Model
         $inicial = strpos($page->body, '{') + 1;
         $final = strpos($page->body, '}');
         $view = 'app.'.substr($page->body, $inicial ,$final - $inicial);
-            if(View::exists($view)){
+        if(View::exists($view)){
                 return $view;
             }else{
                  abort(404);

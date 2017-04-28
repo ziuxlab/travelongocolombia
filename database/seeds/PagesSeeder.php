@@ -166,7 +166,7 @@
                 'local'      => 'es',
                 'tipo'       => 0,
             ]);
-            
+    
             Page::create([
                 'id'         => 15,
                 'slug_url'   => 'join-us',
@@ -178,7 +178,7 @@
                 'local'      => 'en',
                 'tipo'       => 1,
             ]);
-            
+    
             Page::create([
                 'id'         => 16,
                 'slug_url'   => 'trabaja-con-nosotros',
@@ -187,6 +187,30 @@
                 'body'       => '{join_us}',
                 'menu'       => 0,
                 'menu_order' => 1,
+                'local'      => 'es',
+                'tipo'       => 1,
+            ]);
+            
+            Page::create([
+                'id'         => 17,
+                'slug_url'   => 'contact-us',
+                'name'       => 'Contact Us',
+                'tittle'     => 'Contact Us',
+                'body'       => '{contact_us}',
+                'menu'       => 1,
+                'menu_order' => 9,
+                'local'      => 'en',
+                'tipo'       => 1,
+            ]);
+            
+            Page::create([
+                'id'         => 18,
+                'slug_url'   => 'contactanos',
+                'name'       => 'Contáctanos',
+                'tittle'     => 'Contáctanos',
+                'body'       => '{contact_us}',
+                'menu'       => 1,
+                'menu_order' => 9,
                 'local'      => 'es',
                 'tipo'       => 1,
             ]);

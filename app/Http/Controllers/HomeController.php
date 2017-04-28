@@ -3,10 +3,13 @@
     namespace App\Http\Controllers;
     
     use App\Config;
+    use App\Mail\Contact_form;
+    use App\message;
     use App\Page;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\App;
-    
+    use Illuminate\Support\Facades\Mail;
+
     class HomeController extends Controller
     {
         /**
@@ -54,6 +57,26 @@
         {
             return redirect('/');
             
+        }
+    
+        public function contact(Request $request)
+        {
+          
+            $message = message::create([
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'phone'=>$request->phone,
+                'country'=>$request->country,
+                'message'=>$request->text,
+            ]);
+            
+            
+            
+            Mail::to($request->email)->send(new Contact_form($message));
+            
+            //enviar correo obligatorio
+            return redirect('/');
+        
         }
         
     }
