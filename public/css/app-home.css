@@ -22,188 +22,7 @@ body {
 .text-black{
   color: black;
 }
-
-.licart{
-    margin-top: 8px;
-}
-
-.bg-orange {
-    background-color: #eb6212;
-    padding-top: 7px !important;
-    padding-bottom: 7px !important;
-}
-
-.rwby {
-    margin-bottom: 15px;
-}
-
-.rwsp {
-    margin: 15px;
-}
-
-.btn-orange {
-    color: #fff;
-    background-color: #EB6212;
-    border-color: #bc4e0e;
-}
-
-.btn-orange:hover, .btn-orange:focus, 
-.btn-orange.focus {
-    color: #fff !important;
-    text-decoration: none;
-}
-
-.btn-orange:hover, .btn-orange:active {
-    color: #fff !important;
-    background-color: #bc4e0e;
-    border-color: #bc4e0e;
-}
-
-.imgby {
-    padding-left: 10px;
-}
-
-.imgbg {
-    border: 2px solid #eee;
-    width: 120px !important;
-    height: 120px !important;
-}
-
-.pl {
-    border-left: 5px solid #eb6212 !important;
-}
-.thtb{
-    text-transform: initial !important;
-    background-color: #eee;
-}
-
-.swal2-modal .swal2-content {
-   font-size: 14px !important;
-   text-align: left !important;
-}
-
-.thactions{
-    width: 100px;
-}
-
-.headpl {
-    padding: 20px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 15px;
-}
-
-.headmodal{
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-}
-
-.titlepl {
-    font-weight: 600;
-    font-size: 14px;
-    color: #eb6212;
-}
-
-.crumb {
-    margin-top: 1px;
-    padding: 8px 8px 8px 40px;
-    /*border-top: 5px solid #eb6212 !important;*/
-    border-bottom: 1px solid #ddd;
-    /*background-color: #eee;*/
-}
-
-.crumb .breadcrumb {
-    text-transform: none;
-    font-weight: lighter;
-}
-
-.txtparent {
-    letter-spacing: 1px;
-    text-transform: initial;
-}
-
-@media (min-width: 780px) {
-    .lbpd {
-        padding-left: 0 !important;
-    }
-}
-
-.txtchild {
-    letter-spacing: 1px;
-    text-transform: initial;
-}
-
-.crumb .breadcrumb > li + li:before {
-    color: #eb6212;
-}
-.separate{
-  margin: 8px;
-  background-color: white;
-}
-.tittlesr {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    padding-left: 20px !important;
-    margin-bottom: 0 !important;
-    padding: 10px;
-}
-
-.btnorange {
-    color: #fff;
-    background-color: #EB6212;
-    border-color: #bc4e0e;
-}
-
-.sidea {
-  padding: 0px !important;
-    background-color: white !important;
-}
-
-.sidei {
-    padding: 15px 20px 15px 20px;
-    font-size: 16px;
-    vertical-align: middle;
-    margin-right: 0 !important;
-}
-
-.sides {
-    padding: 10px;
-    vertical-align: middle;
-}
-
-.active .sidea:before {
-    border-right: 22px solid #DDDDDD;
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-    content: "";
-    display: inline-block;
-    position: absolute;
-    right: 0;
-}
-
-.active .sidea:after {
-    content: "";
-    position: absolute;
-    border-right: 22px solid #f9f7fa;
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-    right: -1px !important;
-    display: inline-block;
-}
-
-.sideli.active .sidei {
-    background-color: #eb6212;
-    color: white;
-}
-
-.sideli.active .sides {
-    color: #eb6212;
-    font-weight: 600;
-}
-
-/*!---------- End customizations ----------*/
+/*!---------- End Customizations ------*/
 
 article,
 aside,
@@ -19902,6 +19721,14 @@ div.tagsinput span.tag a:hover {
 .placeholder {
   color: #aaa;
 }
+
+
+
+.swal2-modal .swal2-content {
+    font-size: 18px;
+    text-align: center;
+}
+
 
 input.loading {
     background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;

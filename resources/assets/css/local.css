@@ -1,3 +1,11 @@
+
+
+.swal2-modal .swal2-content {
+    font-size: 18px;
+    text-align: center;
+}
+
+
 input.loading {
     background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
 }

@@ -1,5 +1,6 @@
 <script src="{{ asset('js/plugins/sweetalert2/es6-promise.auto.min.js') }}"></script>
 <script src="{{ asset('js/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+@if(isset($name))
 <script type="text/javascript">
     $(document).ready(function () {
         jQuery(".js-swal-confirm").on("click", function (e) {
@@ -72,14 +73,14 @@
                     data: data + "&order=" + number,
                     success: function (msg) {
                         console.log(msg);
-                       
+                        
                         swal({
                             title: "Confirmado!",
                             text: "El orden de {{$name}} ha sido actualizado de la base de datos.",
                             type: "success",
                             confirmButtonColor: "#1b8bf9"
                         });
-                        $('#order_'+ id).html(msg)
+                        $('#order_' + id).html(msg)
                         
                     },
                     error: function (data) {
@@ -101,3 +102,18 @@
         })
     })
 </script>
+@endif
+@if(Session::has('mensaje'))
+    <script type="text/javascript">
+        $(document).ready(function () {
+            swal('Confirmado!', "{{Session::get('mensaje')}}", 'success')
+        });
+    </script>
+@endif
+@if(Session::has('error'))
+    <script type="text/javascript">
+        $(document).ready(function () {
+            swal('Error!', "{{Session::get('error')}}", 'error')
+        });
+    </script>
+@endif

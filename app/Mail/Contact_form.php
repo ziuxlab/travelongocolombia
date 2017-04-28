@@ -11,7 +11,9 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class Contact_form extends Mailable
 {
     use Queueable, SerializesModels;
-    public $message;
+    
+    
+    public $mensaje;
     /**
      * Create a new message instance.
      *
@@ -20,7 +22,7 @@ class Contact_form extends Mailable
     public function __construct(message $message)
     {
         //
-        $this->message = $message;
+        $this->mensaje = $message;
     }
 
     /**
@@ -30,6 +32,6 @@ class Contact_form extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact_form');
+        return $this->subject('Message: ' . $this->mensaje->name)->view('emails.contact_form');
     }
 }

@@ -9,6 +9,7 @@
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Mail;
+    use Illuminate\Support\Facades\Session;
 
     class HomeController extends Controller
     {
@@ -62,7 +63,7 @@
         public function contact(Request $request)
         {
           
-            $message = message::create([
+            $mensaje = message::create([
                 'name'=>$request->name,
                 'email'=>$request->email,
                 'phone'=>$request->phone,
@@ -71,11 +72,12 @@
             ]);
             
             
+            Mail::to($request->email)->send(new Contact_form($mensaje));
             
-            Mail::to($request->email)->send(new Contact_form($message));
+            Session::flash('mensaje','the message was send it correctly');
             
             //enviar correo obligatorio
-            return redirect('/');
+            return back();
         
         }
         

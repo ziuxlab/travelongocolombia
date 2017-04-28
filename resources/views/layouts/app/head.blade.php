@@ -31,8 +31,6 @@
 
 @yield('style')
 
-
-
 <!-- CSS Print -->
 <link rel="stylesheet" type="text/css" media="print" href="{{ asset(mix('/css/app-home.css')) }}">
 
