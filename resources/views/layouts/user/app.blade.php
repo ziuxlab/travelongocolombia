@@ -1,30 +1,33 @@
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
+    @include('layouts.app.head')
 
-    @include('layouts.user.head')
+    <link href="{{ url('user/css/sidebar.css') }}" rel="stylesheet">
+
     @yield('description')
     @yield('meta')
     @yield('style')
 
 </head>
 <body>
-<div id="page-container" class="enable-cookies sidebar-l sidebar-o side-scroll header-navbar-fixed">
-    <!-- Header -->
-
+    <div id="page-container" class="sidebar-l">
+     <!-- Header -->
+     <header id="header-navbar" class="">
+        @include('layouts.app.cabecera')
+    </header>
     <!-- END Header -->
-    <!--  aqui se inlcuye el sidebar static xenon -->
-    @include('layouts.user.sidebar')
-            <!-- fin del sidebar -->
-    @include('layouts.user.cabecera')
-            <!-- Main Container -->
+    <!-- Main Container -->
     <main id="main-container">
-        @yield('contenido')
+        <div class="col-md-3 side-r">@include('layouts.user.sidebar')</div>
+        <div class="col-md-9 side-l">@yield('contenido')</div>
     </main>
     <!-- END Main Container -->
 
     <!-- Footer -->
-
+    <footer id="page-footer" class="bg-secondary">
+        @include('layouts.app.footer')
+    </footer>
     <!-- END Footer -->
 </div>
 

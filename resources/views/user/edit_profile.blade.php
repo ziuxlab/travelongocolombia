@@ -20,7 +20,7 @@
     @include('layouts.user.breadcrumb',['parent'=>trans('dashboard_user.account'),'child'=>trans('dashboard_user.edit_profile')])
             <!-- user info -->
     <div class="content overflow-hidden">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
             <div class="panel panel-default pl">
                 <!-- panel tittle -->
                 <div class="headpl">
@@ -47,14 +47,14 @@
                     <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
                         {!! Form::label(trans('dashboard_user.name').':', null, ['class' => 'col-sm-3 control-label']) !!}
                         <div class="col-sm-6">
-                            {!! Form::text('name', Auth::user()->name, ['class' => 'form-control']) !!}
+                            {!! Form::text('name', Auth::user()->name, ['class' => 'form-control','placeholder'=>trans('cabecera.placeholder_name')] ) !!}
                             {!! $errors->first('name','<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
                     <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                         {!! Form::label(trans('dashboard_user.email').':', null, ['class' => 'col-sm-3 control-label lbpd ']) !!}
                         <div class="col-sm-6">
-                            {!! Form::text('email', Auth::user()->email, ['class' => 'form-control']) !!}
+                            {!! Form::text('email', Auth::user()->email, ['class' => 'form-control','placeholder'=>trans('cabecera.placeholder_email')]) !!}
                             {!! $errors->first('email','<span class="help-block">:message</span>') !!}
                         </div>
                     </div>

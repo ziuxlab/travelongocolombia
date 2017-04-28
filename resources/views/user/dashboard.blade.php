@@ -19,7 +19,7 @@
 @include('layouts.user.breadcrumb',['parent'=>trans('dashboard_user.account'),'child'=>trans('dashboard_user.dashboard')])
         <!-- user profile -->
 <div class="content overflow-hidden">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
         <div class="panel panel-default pl">
             <!-- panel tittle -->
             <div class="headpl">

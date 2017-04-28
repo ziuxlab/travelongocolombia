@@ -117,11 +117,9 @@
 
     /*
     |--------------------------------------------------------------------
-    | Traveler role user
+    | Dashboard routes
     |--------------------------------------------------------------------
     */
-      Route::group(['prefix' => 'user'], function () {
-
           Auth::routes();
           Route::get('bookings/list-bookings/{id?}', 'DashboardController@bookingsList');
           Route::get('bookings/list-payments/{id?}', 'DashboardController@paymentsList');
@@ -132,4 +130,3 @@
           Route::post('account/store-password', 'DashboardController@storePassword');
           Route::get('bookings/booking-history', 'DashboardController@indexBookingHistory');
           Route::get('bookings/payments', 'DashboardController@indexPaymentHistory');
-    });

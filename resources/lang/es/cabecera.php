@@ -32,8 +32,11 @@
         'Register_form'        => 'Registro',
         'placeholder_email'    => 'Introduce tu correo electrónico',
         'placeholder_password' => 'Introduce tu contraseña',
+        'placeholder_newpassword' => 'Introduce tu nueva contraseña',
+        'placeholder_currentpassword' => 'Introduce tu contraseña actual',
         'placeholder_name'     => 'Introduce tu nombre',
         'placeholder_repeat'   => 'Repite tu contraseña',
+        'placeholder_repeatpassword'   => 'Repite tu nueva contraseña',
         'Lang'                 => 'ES',
     
     ];

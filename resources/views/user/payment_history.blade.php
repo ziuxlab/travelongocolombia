@@ -21,7 +21,7 @@
     @include('layouts.user.breadcrumb',['parent'=>trans('dashboard_user.bookings'),'child'=>trans('dashboard_user.my_payments')])
 <!-- payment history -->
 <div class="content overflow-hidden">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
         <div class="panel panel-default pl">
             <!-- panel tittle -->
             <div class="headpl">

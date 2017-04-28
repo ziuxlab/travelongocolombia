@@ -32,7 +32,10 @@
         'Register_form'        => 'Register form',
         'placeholder_email'    => 'Enter your email',
         'placeholder_password' => 'Enter your password',
+        'placeholder_newpassword' => 'Enter your new password',
+        'placeholder_currentpassword' => 'Enter your current password',
         'placeholder_name'     => 'Enter your name',
         'placeholder_repeat'   => 'Repeat your password',
+        'placeholder_repeatpassword'   => 'Repeat your new password',
         'Lang'                 => 'EN',
     ];

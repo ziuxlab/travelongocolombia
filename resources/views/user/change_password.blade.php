@@ -20,7 +20,7 @@
 @include('layouts.user.breadcrumb',['parent'=>trans('dashboard_user.account'),'child'=>trans('dashboard_user.change_password')])
         <!-- user password -->
 <div class="content overflow-hidden">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
         <div class="panel panel-default pl">
             <!-- panel tittle -->
             <div class="headpl">
@@ -35,7 +35,7 @@
                 <div class="form-group {{ $errors->has('current') ? ' has-error' : '' }}">
                     {!! Form::label(trans('dashboard_user.current_password').':', null, ['class' => 'lbpd col-sm-3 control-label']) !!}
                     <div class="col-sm-6">
-                        <input type="password" class="form-control" name="current">
+                        <input type="password" class="form-control" name="current" placeholder="@lang('cabecera.placeholder_currentpassword')">
                         {!! $errors->first('current','<span class="help-block">:message</span>') !!}
                     </div>
 
@@ -43,14 +43,14 @@
                 <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
                     {!! Form::label(trans('dashboard_user.new_password').':', null, ['class' => 'col-sm-3 control-label']) !!}
                     <div class="col-sm-6">
-                        <input type="password" class="form-control" name="password">
+                        <input type="password" class="form-control" name="password" placeholder="@lang('cabecera.placeholder_newpassword')">
                         {!! $errors->first('password','<span class="help-block">:message</span>') !!}
                     </div>
                 </div>
                 <div class="form-group {{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                     {!! Form::label(trans('dashboard_user.repeat_password').':', null, ['class' => 'lbpd col-sm-3 control-label']) !!}
                     <div class="col-sm-6">
-                        <input type="password" class="form-control" name="password_confirmation">
+                        <input type="password" class="form-control" name="password_confirmation" placeholder="@lang('cabecera.placeholder_repeatpassword')">
                         {!! $errors->first('password_confirmation','<span class="help-block">:message</span>') !!}
                     </div>
 
