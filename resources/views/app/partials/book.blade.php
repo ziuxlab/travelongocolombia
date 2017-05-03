@@ -97,7 +97,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                                {!! Form::number('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
+                                {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
                                 <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control"
                                               data-action="plus" data-target="adults">
@@ -163,6 +163,7 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="border-t ">
                     <div class="text-right bg-gray-lighter overflow-hidden content-mini content-mini-full ">
                         <label class="h3 font-w600 col-xs-6 control-label ">Total:</label>
@@ -171,6 +172,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="text-center push-15-t">
                     <button class="btn btn-minw btn-primary " type="button" data-toggle="modal"
                             data-target="#book-modal-0">@lang('general.book now')

@@ -36,10 +36,12 @@
     </div>
     <div class="col-md-2 col-sm-3 col-xs-12  content content-full text-center flex-center">
         <div>
+            <!--
             <div class="h1 font-w700 ">
                 ${{number_format($product->price_adults * ( 1 - ($product->discount/100)))}}*
             </div>
             <div>*@lang('general.person'){{$product->type == 2 ? '|*'.trans('general.night'):''}}</div>
+            -->
             @if($product->type == 0)
                 <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}"
                    class="btn btn-primary push-20-t text-capitalize">@lang('general.view details')</a>

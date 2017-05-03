@@ -27,11 +27,8 @@
         <div class="col-md-6 push-10-t text-center">
             <img class="logo img-responsive" src="{{asset('img/logo-naranja.svg')}}">
             <p class="push-15-t text-justify">
-                Está comprometido con La prevención de la explotación sexual infantil, del turismo sexual y otras formas
-                de abuso a los menores de edad (ley 1336 de 2009), de la explotación laboral infantil Código del
-                Menor (ley 1098 de 2006). La prevención del tráfico de Patrimonio Cultural (ley 397 de 1997). La
-                prevención del tráfico de especies como flora y fauna silvestre (ley 599 de 2000 y Decreto 1608 de
-                1978). Defendemos la igualdad de raza o género (ley 1482 de 2011, modificada por la ley 1752 de 2015).
+                Travel<span class="text-primary">on</span>go
+                @lang('general.footer')
             </p>
             <div class="item-social">
                 <a class="item-circle-small push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">

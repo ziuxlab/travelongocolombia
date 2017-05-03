@@ -4,6 +4,7 @@
     
     use App\city;
     use App\Flight;
+    use App\Page;
     use App\Product;
     use Carbon\Carbon;
     use Cart;
@@ -23,8 +24,8 @@
             Session::put('plan', 'design');
             Session::put('step', $request->step);
             
-            
-            return view('app.design.design');
+            $item = Page::where('slug_url', str_slug(trans('cabecera.Design')))->first();
+            return view('app.design.design', compact('item'));
         }
         
         /**

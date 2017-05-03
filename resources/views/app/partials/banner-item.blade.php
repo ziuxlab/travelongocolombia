@@ -21,10 +21,15 @@
                                     @endif
                                 </div>
                                 <div class="col-sm-4 text-white animated fadeInDown">
+                                    @if($item->discount > 0)
                                     <div class="price-banner text-center content-mini content-mini-full">
+                                        <h2 class="h1 font-w700">{{$item->discount}}% Off</h2>
+                                        <!--
                                         <h2 class="h1 font-w700">$ {{number_format($item->price_adults * (1 - ($item->discount/100)))}}*</h2>
                                         <div class="h5">*@lang('general.person'){{$item->type == 2 ? ' | *'.trans('general.night'):''}}</div>
+                                        -->
                                     </div>
+                                        @endif
                                 </div>
                             </div>
                         </div>

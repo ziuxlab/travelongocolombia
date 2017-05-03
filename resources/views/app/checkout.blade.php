@@ -1,7 +1,7 @@
 @extends('layouts.app.app')
 
 @section('title')
-    {{ $Config->tittle}}
+    Checkout page
 @stop
 
 @section('keywords')
@@ -35,13 +35,29 @@
     <div class="content-boxed content">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 bg-white remove-padding">
+                @if (Auth::guest())
+                    <div>
+                        <div class="row content content-narrow content-full">
+                            <div class="col-sm-6 text-center border-r"><a href="" data-toggle="modal"
+                                                                          data-target="#loginModal"
+                                                                          class="btn btn-primary btn-minw ">@lang('cabecera.Login')</a>
+                            </div>
+                            <div class="col-sm-6 text-center"><a href="#" data-toggle="modal"
+                                                                 data-target="#registerModal"
+                                                                 class="btn btn-primary btn-minw ">@lang('cabecera.Register')</a>
+                            </div>
+                        </div>
+                    </div>
+                @endif
                 <div class="js-wizard-classic-validation block block-bordered remove-margin">
                     <ul class="nav nav-tabs nav-justified">
                         <li class="active">
-                            <a class="inactive" href="#validation-classic-step1" data-toggle="tab">1. Personal</a>
+                            <a class="inactive" href="#validation-classic-step1"
+                               data-toggle="tab">1. @lang('general.personal information')</a>
                         </li>
                         <li>
-                            <a class="inactive" href="#validation-classic-step2" data-toggle="tab">2. Details</a>
+                            <a class="inactive" href="#validation-classic-step2"
+                               data-toggle="tab">2. @lang('general.credit card')</a>
                         </li>
                     </ul>
                     {!! Form::open(['action'=> ['CheckoutController@store'],'class'=>'js-card-form js-form1 validation form-horizontal','novalidate','id'=>'form_stripe']) !!}
@@ -54,106 +70,106 @@
                     <div class="block-content block-content-mini block-content-narrow tab-content ">
                         <div class="tab-pane  push-30-t push-50 active" id="validation-classic-step1">
                             @for ($i = 0; $i < Session::get('adults'); $i++)
-                                    <div class="block block-rounded block-bordered">
-                                        <div class="block-header bg-gray-lighter">
-                                            <h4 class="block-title">Adult {{$i + 1}}</h4>
-                                        </div>
-                                        <div class="block-content">
-                                            <div class="form-group">
-                                                <div class="col-sm-6">
-                                                    <label>Name</label>
-                                                    <input class="form-control" type="text"
-                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
-                                                           name="adult[full_name][{{$i}}]"
-                                                           placeholder="Please enter your name">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>Email</label>
-                                                    <input class="form-control" type="email" name="adult[email][{{$i}}]"
-                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
-                                                           placeholder="Please enter your email">
-                                                </div>
+                                <div class="block block-rounded block-bordered">
+                                    <div class="block-header bg-gray-lighter">
+                                        <h4 class="block-title">@lang('general.adult') {{$i + 1}}</h4>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.name')</label>
+                                                <input class="form-control" type="text"
+                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
+                                                       name="adult[full_name][{{$i}}]"
+                                                       placeholder="@lang('cabecera.placeholder_name')">
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-4">
-                                                    <label>Phone</label>
-                                                    <input class="form-control" type="text" name="adult[phone][{{$i}}]"
-                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
-                                                           placeholder="Please enter your phone">
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label>City</label>
-                                                    <input class="form-control" type="text" name="adult[city][{{$i}}]"
-                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
-                                                           placeholder="Please enter your City">
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label>Country</label>
-                                                    <input class="form-control" type="text"
-                                                           name="adult[country][{{$i}}]"
-                                                           value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
-                                                           placeholder="Please enter your Country">
-                                                    @if(!is_null($contacts['adult']))
-                                                        {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
-                                                    @endif
-                                                </div>
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.email')</label>
+                                                <input class="form-control" type="email" name="adult[email][{{$i}}]"
+                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
+                                                       placeholder="@lang('cabecera.placeholder_email')">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label>@lang('general.phone')</label>
+                                                <input class="form-control" type="text" name="adult[phone][{{$i}}]"
+                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
+                                                       placeholder="@lang('general.placeholder phone')">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>@lang('general.city')</label>
+                                                <input class="form-control" type="text" name="adult[city][{{$i}}]"
+                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
+                                                       placeholder="@lang('general.enter_city')">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label>@lang('general.country')</label>
+                                                <input class="form-control" type="text"
+                                                       name="adult[country][{{$i}}]"
+                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
+                                                       placeholder="@lang('general.placeholder country')">
+                                                @if(!is_null($contacts['adult']))
+                                                    {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             @endfor
                             @for ($i = 0; $i < Session::get('children'); $i++)
-                                    <div class="block block-rounded block-bordered">
-                                        <div class="block-header bg-gray-lighter">
-                                            <h4 class="block-title">Child {{$i + 1}}</h4>
-                                        </div>
-                                        <div class="block-content">
-                                            <div class="form-group">
-                                                <div class="col-sm-6">
-                                                    <label>Name</label>
-                                                    <input class="form-control" type="text"
-                                                           name="child[full_name][{{$i}}]"
-                                                           value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['name']}}"
-                                                           placeholder="Please enter your name">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>Age</label>
-                                                    <input class="form-control" type="number" name="child[age][{{$i}}]"
-                                                           value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['age']}}"
-                                                           placeholder="Please enter your age">
-                                                    @if(!is_null($contacts['child']))
-                                                        {!! Form::hidden('child[contact_id]['.$i.']', $contacts['child'][$i]['id']) !!}
-                                                    @endif
-                                                </div>
+                                <div class="block block-rounded block-bordered">
+                                    <div class="block-header bg-gray-lighter">
+                                        <h4 class="block-title">@lang('general.child') {{$i + 1}}</h4>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.name')</label>
+                                                <input class="form-control" type="text"
+                                                       name="child[full_name][{{$i}}]"
+                                                       value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['name']}}"
+                                                       placeholder="@lang('cabecera.placeholder_name')">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.age')</label>
+                                                <input class="form-control" type="number" name="child[age][{{$i}}]"
+                                                       value="{{is_null($contacts['child']) ? '': $contacts['child'][$i]['age']}}"
+                                                       placeholder="@lang('general.placeholder age')">
+                                                @if(!is_null($contacts['child']))
+                                                    {!! Form::hidden('child[contact_id]['.$i.']', $contacts['child'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             @endfor
                             @for ($i = 0; $i < Session::get('infants'); $i++)
-                                    <div class="block block-rounded block-bordered">
-                                        <div class="block-header bg-gray-lighter">
-                                            <h4 class="block-title">Infant {{$i + 1}}</h4>
-                                        </div>
-                                        <div class="block-content">
-                                            <div class="form-group">
-                                                <div class="col-sm-6">
-                                                    <label>Name</label>
-                                                    <input class="form-control" type="text"
-                                                           value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['name']}}"
-                                                           name="infant[full_name][{{$i}}]"
-                                                           placeholder="Please enter your name">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>Age</label>
-                                                    <input class="form-control" type="number" name="infant[age][{{$i}}]"
-                                                           value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['age']}}"
-                                                           placeholder="Please enter your age">
-                                                    @if(!is_null($contacts['infant']))
-                                                        {!! Form::hidden('infant[contact_id]['.$i.']', $contacts['infant'][$i]['id']) !!}
-                                                    @endif
-                                                </div>
+                                <div class="block block-rounded block-bordered">
+                                    <div class="block-header bg-gray-lighter">
+                                        <h4 class="block-title">@lang('general.infant') {{$i + 1}}</h4>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.name')</label>
+                                                <input class="form-control" type="text"
+                                                       value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['name']}}"
+                                                       name="infant[full_name][{{$i}}]"
+                                                       placeholder="@lang('cabecera.placeholder_name')">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label>@lang('general.age')</label>
+                                                <input class="form-control" type="number" name="infant[age][{{$i}}]"
+                                                       value="{{is_null($contacts['infant']) ? '': $contacts['infant'][$i]['age']}}"
+                                                       placeholder="@lang('general.placeholder age')">
+                                                @if(!is_null($contacts['infant']))
+                                                    {!! Form::hidden('infant[contact_id]['.$i.']', $contacts['infant'][$i]['id']) !!}
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             @endfor
                         </div>
                         <div class="tab-pane push-30-t push-50 " id="validation-classic-step2">
@@ -163,22 +179,23 @@
                                 <div class="col-sm-6 col-sm-offset-3">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <label>Number</label>
-                                            <input class="form-control" id="number" data-stripe="number" name="number"
+                                            <label>@lang('general.number')</label>
+                                            <input class="form-control" id="number" data-stripe="number"
+                                                   name="number"
                                                    type="text" value="4242424242424242"
                                                    placeholder="**** **** **** ****">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <label>Full Name</label>
+                                            <label>@lang('general.name')</label>
                                             <input class="form-control" id="name" name="name" type="text"
                                                    placeholder="JOHN DOE" value="mauricio">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-xs-6">
-                                            <label>Expiration (MM/YY)</label>
+                                            <label>@lang('general.expiration') (MM/YY)</label>
                                             <div class="form-inline">
                                                 <input class="form-control" type="text" name="month" size="2"
                                                        data-stripe="exp_month" value="02">
@@ -207,14 +224,16 @@
                         <div class="row">
                             <div class="col-xs-6">
                                 <button class="wizard-prev btn btn-default btn-minw disabled" type="button"><i
-                                            class="fa fa-arrow-left"></i> Previous
+                                            class="fa fa-arrow-left"></i> @lang('general.previous')
                                 </button>
                             </div>
                             <div class="col-xs-6 text-right">
-                                <button class="wizard-next btn btn-default btn-minw" type="button">Next <i
+                                <button class="wizard-next btn btn-default btn-minw"
+                                        type="button">@lang('general.next')
+                                    <i
                                             class="fa fa-arrow-right"></i></button>
                                 <button id="submit" class="wizard-finish btn btn-primary btn-minw" type="submit"
-                                        style="display: none;"><i class="fa fa-check"></i> Submit
+                                        style="display: none;"><i class="fa fa-check"></i> @lang('general.Submit')
                                 </button>
                             </div>
                         </div>

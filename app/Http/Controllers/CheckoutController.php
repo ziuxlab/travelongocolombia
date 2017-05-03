@@ -221,7 +221,6 @@
                     ]);
                 }
                 
-                
                 $booking->contacts()
                         ->attach($infant->id)
                 ;
@@ -258,6 +257,7 @@
             Session::forget('adults');
             Session::forget('children');
             Session::forget('infants');
+            
             return view('app.payment.success', compact('booking'));
             
         }

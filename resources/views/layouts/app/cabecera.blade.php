@@ -15,15 +15,15 @@
             </div>
             <div class="col-sm-4 col-lg-6  v-center hidden-xs ">
                 <div class=" text-center">
-                    <form class=" ">
+                    {!! Form::open(['action'=> ['SearchController@index'],'id'=>'search']) !!}
                         <div class=" input-group">
-                            <input class="form-control">
+                            {!! Form::text('search', old('search'), ['class' => 'form-control search']) !!}
                             <span class="input-group-addon"><i class="si si-magnifier"></i></span>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                 </div>
             </div>
-            <div class="col-sm-4 col-lg-3 col-xs-5 v-center flex-right">
+            <div class="col-sm-4 col-lg-3 col-xs-5 v-center flex-center">
                 <ul class="nav-header v-center">
                     @if (Auth::guest())
                         <div class=" hidden-xs">
@@ -41,7 +41,7 @@
                                          src="{{url('img/default.png')}}"
                                          alt="Avatar" data-toggle="dropdown" width="36" height="36">
                                 @else
-
+                                    
                                     <img class="img-circle dropdown-toggle"
                                          src="{{url(Auth::user()->img)}}"
                                          alt="user travelongo" data-toggle="dropdown" width="36" height="36">
@@ -67,14 +67,14 @@
                                 document.getElementById('logout-form').submit();">
                                             @lang('cabecera.Logout')
                                         </a>
-
+                                        
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                               style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
                                 </ul>
-
+                            
                             </div>
                         </div>
                         <div class="push-10-r hidden-xs ">
@@ -93,7 +93,7 @@
                     <li class="hidden-xs hidden-sm flex-center">
                         <span class="push-5-r">@lang('cabecera.Lang')</span>
                         <div class="btn-group ">
-
+                            
                             <button class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret"></span>
                             </button>
@@ -113,7 +113,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </nav>
 
@@ -126,13 +125,25 @@
                     <i class="fa fa-times"></i>
                 </button>
             </li>
-            @foreach($menu->where('local',App::getLocale()) as $item)
+            @if(isset($item->type))
+                @if($item->type == 0)
+                    <?php $active = trans('general.packages') ?>
+                @elseif($item->type == 1)
+                    <?php $active = trans('general.activities') ?>
+                @elseif($item->type == 2)
+                    <?php $active = trans('general.hotels') ?>
+                @endif
+                
+            @else
+                <?php $active = 'no aplica'?>
+            @endif
+            @foreach($menu->where('local',App::getLocale()) as $sub_menu)
                 <li class="v-center">
-                    <a class="{{Request::is($item->slug_url ?: '/') ? 'active' : ''}} text-capitalize"
-                       href="{{url($item->slug_url)}}">{{$item->name}}</a>
+                    <a class="{{Request::is($sub_menu->slug_url ?: '/') ? 'active' : ($sub_menu->slug_url == $active ? 'active': '')}} text-capitalize"
+                       href="{{url($sub_menu->slug_url)}}">{{$sub_menu->name}}</a>
                 </li>
             @endforeach
-
+            
             @if (Auth::guest())
                 <li class="v-center hidden-md hidden-lg">
                     <a href="" data-toggle="modal" data-target="#loginModal"
@@ -152,7 +163,7 @@
                                          src="{{url('img/default.png')}}"
                                          alt="usuario travelongo">
                                 @else
-
+                                    
                                     <img class="img-avatar img-avatar48"
                                          src="{{url(Auth::user()->img)}}"
                                          alt="user travelongo">

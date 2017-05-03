@@ -844,7 +844,7 @@
                 'img'        => 'img/activities/salento28.jpg',
                 'order'      => 1,
             ]);
-    
+    /*
     
             Photo::create([
                 'product_id' => 46,
@@ -887,6 +887,8 @@
                 'img'        => 'img/services/laundry.jpg',
                 'order'      => 1,
             ]);
+    
+    */
             
         }
     }

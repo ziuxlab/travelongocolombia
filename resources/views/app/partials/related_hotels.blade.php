@@ -10,11 +10,16 @@
                         <div class="bg-image img-rounded-t"
                              style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}'); background-position-x: 50%">
                             <div class="mheight-150">
-                                <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
-                                    <div class="ribbon-box font-w600">
+                                @if($package->discount > 0)
+                                    <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                                        <div class="ribbon-box font-w600">
+                                            {{$package->discount}}% Off
+                                        <!--
                                         ${{number_format($package->price_adults * ( 1 + ($package->discount/100)))}}
+                                                -->
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                             </div>
                             <div class="block-content  text-center bg-black-op">
                                 <div class="row ">

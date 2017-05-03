@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\View;
@@ -10,6 +11,7 @@ class Page extends Model
 {
     //
     use SoftDeletes;
+    use Searchable;
     
     
     protected $table = 'pages';

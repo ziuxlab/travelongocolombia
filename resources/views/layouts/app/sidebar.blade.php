@@ -39,14 +39,8 @@
                             <tbody>
                             @foreach(Cart::getContent() as $item)
                             <tr>
-                                <td class="text-center">
-                                    {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}
-                                    <button class="btn btn-danger btn-xs" type="submit"><i class="fa fa-times"></i></button>
-                                    {!! Form::close() !!}
-                                      </td>
-                                <td class="text-center">
-                                    <span class="badge">{{$item->quantity}}</span>
-                                </td>
+                               
+                              
                                 <td>
                                     <span class="h5 text-capitalize" >{{$item->name}}</span>
                                     <div class="font-s12 text-muted text-capitalize">
@@ -63,13 +57,22 @@
                                         @endif
                                     </div>
                                 </td>
+                                <td class="text-center">
+                                    <span class="badge">{{$item->quantity}}</span>
+                                </td>
+                                <td class="text-center">
+                                    {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}
+                                    <button class="btn btn-danger btn-xs" type="submit"><i class="fa fa-times"></i></button>
+                                    {!! Form::close() !!}
+                                </td>
+                                <!--
                                 <td class="text-right">
                                     <div class="font-w600 text-success">${{number_format($item->price) }}</div>
-                                </td>
+                                </td>-->
                             </tr>
                             @endforeach
                             <tr class="success">
-                                <td class="text-right" colspan="3">
+                                <td class="text-right" colspan="2">
                                     <span class="h4 font-w600">Total</span>
                                 </td>
                                 <td class="text-right">

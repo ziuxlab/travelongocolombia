@@ -127,7 +127,21 @@
         'add_services'                => 'add services',
         'Go_to_checkout'              => 'Go to checkout',
         'pay'                         => 'pay',
-        'footer'                         => 'pay',
-    
+        'footer'                      => 'Colombia refuses and denounces all kind of exploitative child labor, every violent sexual act against children, also promotes respect and preservation of colombian flora and fauna and cultural goods',
+        'credit card'                 => 'Credit Card',
+        'personal information'        => 'Personal Information',
+        'adult'                       => 'Adult',
+        'child'                       => 'Child',
+        'infant'                      => 'Infant',
+        'country'                     => 'country',
+        'placeholder country'         => 'Enter your Country',
+        'phone'                       => 'phone',
+        'placeholder phone'           => 'Enter your Phone',
+        'age'                         => 'Age',
+        'placeholder age'             => 'Enter your age',
+        'previous'                    => 'Previous',
+        'next'                        => 'Next',
+        'number'                      => 'Number of CC',
+        'expiration'                  => 'Expiration',
     
     ];

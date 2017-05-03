@@ -1,4 +1,9 @@
-
+#results_search{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 10;
+}
 
 .swal2-modal .swal2-content {
     font-size: 18px;

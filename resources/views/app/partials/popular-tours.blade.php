@@ -15,7 +15,7 @@
                         <div class="mheight-150">
                             <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
                                 <div class="ribbon-box font-w600">
-                                   ${{number_format($package->price_adults * ( 1 + ($package->discount/100)))}}
+                                    {{$package->discount}}%
                                 </div>
                             </div>
                         </div>

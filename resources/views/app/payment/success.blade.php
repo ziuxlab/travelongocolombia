@@ -1,7 +1,7 @@
 @extends('layouts.app.app')
 
 @section('title')
-    {{ $Config->tittle}}
+    Success Payment
 @stop
 
 @section('keywords')

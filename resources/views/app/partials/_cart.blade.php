@@ -8,7 +8,8 @@
                         <th class="hidden-xs"></th>
                         <th>producto</th>
                         <th class="text-center">cantidad</th>
-                        <th class="text-right">precio</th>
+                        <!--
+                        <th class="text-right">precio</th>-->
                         <th></th>
                     </tr>
                     </thead>
@@ -38,9 +39,10 @@
                             <td class="text-center">
                                 <span class="badge">{{$item->quantity}}</span>
                             </td>
+                            <!--
                             <td class="text-right">
                                 <div class="h3 font-w700 text-success">
-                                    ${{number_format($item->price * $item->quantity) }}</div>
+                                    ${{number_format($item->price * $item->quantity) }}</div>-->
                             </td>
                             <td class="text-center">
                                 {!! Form::open(['action'=> ['CartController@destroy',$item->id],'method'=>'delete']) !!}
@@ -55,10 +57,10 @@
                         <td class="text-right" colspan="2">
                             <span class="h3 font-w600">Total</span>
                         </td>
-                        <td class="text-right">
+                        <td class="text-center">
                             <div class="h3 font-w600 text-success">${{number_format(Cart::getTotal())}}</div>
                         </td>
-                        <TD></TD>
+                       
                     </tr>
                     </tbody>
                 </table>

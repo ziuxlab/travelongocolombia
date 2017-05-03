@@ -175,6 +175,7 @@ return [
         Barryvdh\Cors\ServiceProvider::class,
         Darryldecode\Cart\CartServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
+        Laravel\Scout\ScoutServiceProvider::class,
 
         /*
          * Application Service Providers...
