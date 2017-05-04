@@ -1,6 +1,6 @@
 <div class="block block-bordered  flex overflow-hidden">
     <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
-         style="background-image: url('{{asset($product->photos->sortBy('order')->first()->img)}}');background-position-x: 50%;">
+          style="background-image: url('{{asset(count($product->photos)>0 ? $product->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
         <div class="mheight-150">
             @if($product->discount > 0 or $product->discount <> null)
                 <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
@@ -21,7 +21,6 @@
                 <i class="{{$feature->icon}}"></i>
                 </span>
             @endforeach
-           
         </div>
     </div>
     <div class="col-md-2 col-sm-3 col-xs-12 border-black-op-b content-mini content-mini-full text-center flex-center">

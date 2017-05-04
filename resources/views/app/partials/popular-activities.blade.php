@@ -12,7 +12,8 @@
                     <a class="block block-sombra block-rounded block-link-hover2"
                        href="{{url(trans('general.activities').'/'.$activity->slug_url)}}">
                         <div class="bg-image img-rounded-t "
-                             style="background-image: url('{{asset($activity->photos->sortBy('order')->first()->img)}}');">
+                              style="background-image: url('{{asset(count($activity->photos)>0 ? $activity->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
+    
                             <div class="mheight-200">
                                 @if($activity->discount > 0 or $activity->discount <> null)
                                     <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">

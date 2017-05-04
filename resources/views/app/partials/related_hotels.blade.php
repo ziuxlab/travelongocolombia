@@ -8,7 +8,7 @@
                 <div class=" ">
                     <a class="block  block-rounded" href="{{url(trans('general.packages').'/'.$package->slug_url)}}">
                         <div class="bg-image img-rounded-t"
-                             style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}'); background-position-x: 50%">
+                            style="background-image: url('{{asset(count($package->photos)>0 ? $package->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
                             <div class="mheight-150">
                                 @if($package->discount > 0)
                                     <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">

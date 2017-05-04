@@ -11,7 +11,8 @@
             <div class="col-md-4 col-sm-6 push-15">
                 <a class="block block-sombra block-rounded block-link-hover2" href="{{url(trans('general.packages').'/'.$package->slug_url)}}">
                     <div class="bg-image "
-                         style="background-image: url('{{asset($package->photos->sortBy('order')->first()->img)}}');">
+                        style="background-image: url('{{asset(count($package->photos)>0 ? $package->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
+    
                         <div class="mheight-150">
                             <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
                                 <div class="ribbon-box font-w600">

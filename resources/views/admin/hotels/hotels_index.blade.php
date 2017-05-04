@@ -15,7 +15,7 @@
 
 
 @section('contenido')
-    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Paquetes','h2'=>'Crear, Editar y Eliminar Hoteles'])
+    @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Hoteles','h2'=>'Crear, Editar y Eliminar Hoteles'])
     <div class="block">
         <div class="block-content">
             <a href="{{url('admin/hotels/create')}}" class="btn btn-primary push"> + @lang('general.create')</a>

@@ -8,7 +8,7 @@
                 <div class=" ">
                     <a class="block  block-rounded" href="{{url(trans('general.activities').'/'.$activity->slug_url)}}">
                         <div class="bg-image img-rounded-t"
-                             style="background-image: url('{{asset($activity->photos->sortBy('order')->first()->img)}}'); background-position-x: 50%">
+                             style="background-image: url('{{asset(count($activity->photos)>0 ? $activity->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
                             <div class="mheight-150">
                                 @if($activity->discount > 0)
                                     <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
