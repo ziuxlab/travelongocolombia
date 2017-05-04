@@ -10,6 +10,11 @@
     text-align: center;
 }
 
+.slick-slider .slick-next, .slick-slider .slick-prev {
+    opacity: .85;
+    margin-top: 0px;
+}
+
 
 input.loading {
     background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;

@@ -386,6 +386,7 @@
                 'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'en',
+                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
                 'itinerary'        => '
 <div class="panel-group">
@@ -580,6 +581,7 @@
                 'meta_description' => 'Plan B Most Physically',
                 'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
+                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'local'            => 'en',
                 'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
                 'itinerary'        => '
@@ -760,6 +762,7 @@
                 'meta_description' => 'Plan C Outdoors Tour',
                 'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
+                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'local'            => 'en',
                 'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
                 'itinerary'        => '
@@ -934,6 +937,7 @@
                 'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'es',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
                 'itinerary'        => '
 <div class="panel-group">
@@ -1114,6 +1118,7 @@
                 'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
                 'local'            => 'es',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
                 'itinerary'        => '
 <div class="panel-group">
@@ -1268,6 +1273,7 @@
                 'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
                 'local'            => 'es',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
                 'itinerary'        => '
 <div class="panel-group">
@@ -1532,8 +1538,8 @@
             
             Product::create([
                 'id'          => 32,
-                'tittle'      => 'Intensive Spanish ',
-                'slug_url'    => str_slug('Intensive Spanish ', '-'),
+                'tittle'      => 'Intensive Spanish',
+                'slug_url'    => str_slug('Intensive Spanish', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
@@ -1602,8 +1608,151 @@
             
             Product::create([
                 'id'          => 39,
-                'tittle'      => 'Complete Laundry services ',
-                'slug_url'    => str_slug('Complete Laundry services ', '-'),
+                'tittle'      => 'Complete Laundry services',
+                'slug_url'    => str_slug('Complete Laundry services', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 54,
+                'tittle'      => 'Purchases',
+                'slug_url'    => str_slug('Purchases', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 55,
+                'tittle'      => 'SPA',
+                'slug_url'    => str_slug('SPA', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            
+            Product::create([
+                'id'          => 56,
+                'tittle'      => 'Beauty',
+                'slug_url'    => str_slug('Beauty', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            
+            Product::create([
+                'id'          => 57,
+                'tittle'      => 'Grocery service',
+                'slug_url'    => str_slug('Grocery service', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 58,
+                'tittle'      => 'Room beauty & massages service',
+                'slug_url'    => str_slug('Room beauty & massages service', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 59,
+                'tittle'      => 'Pick up at airport by bilingual speaker',
+                'slug_url'    => str_slug('Pick up at airport by bilingual speaker', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 60,
+                'tittle'      => 'No luggage option (buy clothes/toiletries here)',
+                'slug_url'    => str_slug('No luggage option (buy clothes/toiletries here)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 61,
+                'tittle'      => 'Mercar shopping for fruits/vegetables',
+                'slug_url'    => str_slug('Mercar shopping for fruits vegetables', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 62,
+                'tittle'      => 'Investment (residential, commercial)',
+                'slug_url'    => str_slug('Investment (residential, commercial)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 63,
+                'tittle'      => 'Travelers insurance (liability, comprehensive, health, life)',
+                'slug_url'    => str_slug('Travelers insurance (liability, comprehensive, health, life)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 64,
+                'tittle'      => 'Airline reservations',
+                'slug_url'    => str_slug('Airline reservations', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 65,
+                'tittle'      => 'Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
+                'slug_url'    => str_slug('Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
+                    '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 66,
+                'tittle'      => 'Guía Turístico',
+                'slug_url'    => str_slug('Guía Turístico', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+            
+            Product::create([
+                'id'          => 67,
+                'tittle'      => 'Transporte Interno',
+                'slug_url'    => str_slug('Transporte Interno', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',

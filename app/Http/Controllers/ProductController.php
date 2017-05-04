@@ -48,7 +48,6 @@
         public function list(Request $request, $type)
         {
             if (isset($request->feature)) {
-                
                 $products = Product::with('features')
                                    ->where('type', $type)
                                    ->where('local', \Lang::getLocale())

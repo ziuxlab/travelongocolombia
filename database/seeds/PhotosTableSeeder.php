@@ -697,6 +697,90 @@
                 'order'      => 1,
             ]);
             
+            //desde qui poner las fotos corresponientes
+    
+            Photo::create([
+                'product_id' => 54,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 55,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 56,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 57,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 58,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 59,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 60,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 61,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 62,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 63,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 64,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 65,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+    
+            Photo::create([
+                'product_id' => 66,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            Photo::create([
+                'product_id' => 67,
+                'img'        => 'img/services/laundry.jpg',
+                'order'      => 1,
+            ]);
+            
             // actividades 2
     
             Photo::create([

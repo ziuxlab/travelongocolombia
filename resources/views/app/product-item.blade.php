@@ -147,7 +147,7 @@
                         @if($item->type == 0)
                             <div class="">
                                 <div>
-                                    <h3 class="h3 push-20 "><i
+                                    <h3 class="h3 push-20 text-capitalize "><i
                                                 class=" text-primary fa fa-bus"></i> @lang('general.package itinerary')
                                     </h3>
                                 </div>
@@ -179,7 +179,7 @@
         $('.js-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             fade: true,
             asNavFor: '.slider-nav'
         });
@@ -188,6 +188,7 @@
             slidesToScroll: 1,
             asNavFor: '.js-slider',
             focusOnSelect: true,
+            arrows: false,
         });
     </script>
 @stop
