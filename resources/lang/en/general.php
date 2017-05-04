@@ -145,5 +145,6 @@
         'next'                        => 'Next',
         'number'                      => 'Number of CC',
         'expiration'                  => 'Expiration',
+        'Signup for Newsletter'                  => 'Signup for Newsletter',
     
     ];

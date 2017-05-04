@@ -76,16 +76,8 @@
                     </li>
                    
                     <li>
-                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span
+                        <a href="{{Url('admin/components')}}"><i class="si si-grid"></i><span
                                     class="sidebar-mini-hide">Componentes</span></a>
-                        <ul>
-                            <li class="">
-                                <a href="{{Url('admin/components/banner')}}">Banner Home</a>
-                            </li>
-                            <li class="">
-                                <a href="{{Url('admin/components')}}">Components</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="{{url('admin/packages')}}"><i class="si si-docs"></i><span

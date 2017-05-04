@@ -2,9 +2,14 @@
     <div class="content-boxed overflow-hidden">
         <div class=" row content text-white">
             <div class="col-sm-6   ">
-                <h4 class="h3"> Signup for Newsletter</h4>
-                <p>Affronting everything discretion men now own did. Still round match we to. Frankbness
-                   pronounce daughters remainder extensive has but.</p>
+                <h4 class="h3"> @lang('general.Signup for Newsletter')</h4>
+                @if(App::isLocale('en'))
+                    <p>You would like to get discounts and know about our promotions, leave us your email and we will
+                       send you information.</p>
+                @else
+                    <p>Te interesaría obtener descuentos y saber sobre nuestras promociones, déjanos tu correo
+                       electrónico y te enviaremos información.</p>
+                @endif
             </div>
             <div class="col-sm-6 overflow-hidden">
                 <form class="form-horizontal push-20-t">

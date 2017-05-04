@@ -938,7 +938,7 @@
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1119,7 +1119,7 @@
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1274,7 +1274,7 @@
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'Each package includes a bilingual (English-Spanish) touristc informer, and transportation from Hotel to each place and going back, transport from and to the airport, snacks, drinks, souvenir ',
+                'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">

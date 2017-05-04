@@ -28,7 +28,7 @@
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('days') ? ' has-error' : '' }}">
             {!! Form::label('Días:', null, ['class' => 'control-label']) !!}
-            {!! Form::number('days', old('days'), ['class' => 'form-control','placeholder'=>'1']) !!}
+            {!! Form::text('days', old('days'), ['class' => 'form-control','placeholder'=>'10 Days']) !!}
             @if ($errors->has('days'))
                 <span class="help-block">
             <strong>{{ $errors->first('days') }}</strong>
@@ -84,6 +84,24 @@
         </div>
     </div>
 </div>
+<div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
+    {!! Form::label('Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::textarea('description', old('description'), ['class' => 'form-control','placeholder'=>'Ingrese su Descripción']) !!}
+    @if ($errors->has('description'))
+        <span class="help-block">
+            <strong>{{ $errors->first('description') }}</strong>
+        </span>
+    @endif
+</div>
+<div class="form-group {{ $errors->has('short_description') ? ' has-error' : '' }}">
+    {!! Form::label('Short Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::textarea('short_description', old('short_description'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese su Descripción Corta']) !!}
+    @if ($errors->has('short_description'))
+        <span class="help-block">
+            <strong>{{ $errors->first('short_description') }}</strong>
+        </span>
+    @endif
+</div>
 
 
 <div class="form-group {{ $errors->has('itinerary') ? ' has-error' : '' }}">
@@ -92,6 +110,24 @@
     @if ($errors->has('itinerary'))
         <span class="help-block">
             <strong>{{ $errors->first('itinerary') }}</strong>
+        </span>
+    @endif
+</div>
+<div class="form-group {{ $errors->has('include') ? ' has-error' : '' }}">
+    {!! Form::label('Include:', null, ['class' => 'control-label']) !!}
+    {!! Form::textarea('include', old('include'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese lo que incluye el paquete']) !!}
+    @if ($errors->has('include'))
+        <span class="help-block">
+            <strong>{{ $errors->first('include') }}</strong>
+        </span>
+    @endif
+</div>
+<div class="form-group {{ $errors->has('suggestion') ? ' has-error' : '' }}">
+    {!! Form::label('Suggestions:', null, ['class' => 'control-label']) !!}
+    {!! Form::textarea('suggestion', old('suggestion'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese lo que sugiere del paquete']) !!}
+    @if ($errors->has('suggestion'))
+        <span class="help-block">
+            <strong>{{ $errors->first('suggestion') }}</strong>
         </span>
     @endif
 </div>

@@ -145,4 +145,5 @@
         'next'                        => 'Siguiente',
         'number'                      => 'Número de CC',
         'expiration'                  => 'Expiración',
+        'Signup for Newsletter'       => 'Suscríbete al boletín',
     ];
