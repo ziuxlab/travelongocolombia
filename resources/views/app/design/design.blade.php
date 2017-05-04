@@ -1,7 +1,20 @@
 @extends('layouts.app.app')
 
 @section('title')
-    {{$item->tittle or $Config->tittle}}
+    @if(Session::get('step') == null)
+        {{$item->tittle}}
+    @elseif(Session::get('step') == 1)
+        @lang('general.enter information')
+    @elseif(Session::get('step') == 2)
+        @lang('general.search') @lang('general.hotels')
+    @elseif(Session::get('step') == 3)
+        @lang('general.search') @lang('general.activities')
+    @elseif(Session::get('step') == 4)
+        @lang('general.additional services')
+    @else
+        @lang('general.proceed checkout')
+    @endif
+
 @stop
 
 @section('keywords')
@@ -17,6 +30,8 @@
     <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
     <link rel="stylesheet" href="{{asset('js/plugins/slick/slick.min.css')}}">
     <link rel="stylesheet" href="{{asset('js/plugins/slick/slick-theme.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
+    
     {{$Config->css}}
 @stop
 
@@ -36,8 +51,7 @@
 @stop
 
 @section('scripts')
-   
     {{$Config->scripts_footer}}
     @include('admin.flights._scripts_flights')
-   
+    
 @stop

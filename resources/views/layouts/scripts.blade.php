@@ -12,8 +12,8 @@
         var data   = $('#search').serialize();
         var url    = $('#search').attr('action');
         var parent = $('#search').parent();
+        $('#results_search').remove();
         if (search.val().length > 2) {
-            $('#results_search').remove();
             $.ajax({
                 type: 'GET',
                 url: url,
@@ -25,4 +25,11 @@
             })
         }
     })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+<script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 </script>

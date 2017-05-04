@@ -15,6 +15,13 @@
     margin-top: 0px;
 }
 
+.ekko-lightbox .modal-dialog{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+}
+
 
 input.loading {
     background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;

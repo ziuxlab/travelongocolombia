@@ -18,7 +18,7 @@ class SearchController extends Controller
         //
         $productos = Product::search($request->search)->get();
         $productos = $productos->where('local', App::getLocale());
-        return  view('app.partials._search', compact('productos')) ;
+        return  view('app.partials._search', compact('productos'));
            
     }
 

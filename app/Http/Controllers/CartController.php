@@ -119,6 +119,16 @@
                     return redirect('vuelos');
                 }
             }
+    
+            if ($request->choice == 4) {
+        
+                if (App::isLocale('en')) {
+                    //
+                    return redirect('packages');
+                } else {
+                    return redirect('paquetes');
+                }
+            }
             
             
             return back();

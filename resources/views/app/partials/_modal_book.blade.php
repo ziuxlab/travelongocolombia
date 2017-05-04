@@ -11,7 +11,7 @@
                     <h3 class="text-center push-20">@lang('general.What_do_you_want')</h3>
                     <div class="row push-20">
                         <div class="col-xs-6 text-center border-r">
-                            @if($type==1 or $type ==2)
+                            @if($type==1 or $type ==2 )
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                     <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
                                          alt="airplane">
@@ -26,6 +26,10 @@
                             @endif
                             @if($type==0)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">
+                                    <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
+                                         alt="airplane">
+                                </div>
+                            <!-- <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                     <img class="img-responsive" src="{{asset('img/icons/airplane.svg')}}"
                                          alt="airplane">
                                 </div>
@@ -34,7 +38,13 @@
                                     <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(3)"
                                             data-dismiss="modal">@lang('general.Search_Flights')
                                     </button>
-                                </div>
+                                </div>-->
+                                    <p>@lang('general.keep_adding_packages')</p>
+                                    <div class="text-center">
+                                        <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(4)"
+                                                data-dismiss="modal">@lang('general.add_packages')
+                                        </button>
+                                    </div>
                             @endif
                             @if($type==4)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">

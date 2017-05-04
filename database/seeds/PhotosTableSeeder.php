@@ -701,83 +701,84 @@
     
             Photo::create([
                 'product_id' => 54,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/purchases.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 55,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/spa.jpeg',
                 'order'      => 1,
             ]);
+            
     
             Photo::create([
                 'product_id' => 56,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/beauty.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 57,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/grocery.png',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 58,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/room_beauty.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 59,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/pickup.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 60,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/no-luggage.png',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 61,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/grocery.png',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 62,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/investment.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 63,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/travel-insurance.svg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 64,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/airplane-reservation.jpg',
                 'order'      => 1,
             ]);
             Photo::create([
                 'product_id' => 65,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/accomodation.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 66,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/guide.jpg',
                 'order'      => 1,
             ]);
             Photo::create([
                 'product_id' => 67,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/services/car.jpg',
                 'order'      => 1,
             ]);
             

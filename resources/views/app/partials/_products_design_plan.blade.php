@@ -21,16 +21,16 @@
                 <i class="{{$feature->icon}}"></i>
                 </span>
             @endforeach
-            <a href="#product_{{$product->id}}" data-toggle="collapse" data-parent="#faq1"
-               class="accordion-toggle btn btn-default push-15-t text-capitalize">@lang('general.view details')</a>
+           
         </div>
     </div>
     <div class="col-md-2 col-sm-3 col-xs-12 border-black-op-b content-mini content-mini-full text-center flex-center">
         <div>
+        <!--
             <div class="h1 font-w700 ">
-                ${{number_format($product->price_adults * ( 1 - ($product->discount/100)))}}*
+             ${{number_format($product->price_adults * ( 1 - ($product->discount/100)))}}*
             </div>
-            <div>*@lang('general.person'){{$product->type == 2 ? '|*'.trans('general.night'):''}}</div>
+            <div>*@lang('general.person'){{$product->type == 2 ? '|*'.trans('general.night'):''}}</div>-->
             {!! Form::open(['action'=> ['DesignController@store'], 'id'=>'formulario_book_'.$product->id]) !!}
             @if($product->type == 2)
                 <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
@@ -70,6 +70,8 @@
                 @endif
             </div>
             {!! Form::close() !!}
+            <a href="#product_{{$product->id}}" data-toggle="collapse" data-parent="#faq1"
+               class="accordion-toggle btn-minw btn btn-default push-15-t text-capitalize">@lang('general.view details')</a>
         </div>
     </div>
     <div id="product_{{$product->id}}" class="col-sm-12 panel-collapse collapse">
@@ -134,8 +136,10 @@
                     @if(count($product->photos)>0)
                         <div class="row">
                             @foreach($product->photos as $photo)
-                                <div class="col-sm-4">
-                                    <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                <div class="col-sm-4" >
+                                    <a href="{{asset($photo->img)}}" data-toggle="lightbox">
+                                        <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                    </a>
                                 </div>
                             @endforeach
                         </div>
