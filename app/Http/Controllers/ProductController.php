@@ -178,7 +178,7 @@
                          ->save($path, 50)
                     ;
                     Photo::create([
-                        'package_id' => $package->id,
+                        'product_id' => $package->id,
                         'img'        => $path,
                         'order'      => $key,
                     ]);
@@ -271,8 +271,10 @@
                          ->fit(1200, 600)
                          ->save($path, 50)
                     ;
+                    
+                    
                     Photo::create([
-                        'package_id' => $id,
+                        'product_id' => $id,
                         'img'        => $path,
                         'order'      => $key,
                     ]);
