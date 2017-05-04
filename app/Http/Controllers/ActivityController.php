@@ -60,23 +60,24 @@ class ActivityController extends Controller
             'slug_url' => 'unique:products',
         ]);
 
-        $itinerary = '';
-        foreach ($request->itinerary as $i) {
-            $itinerary = $itinerary . $i . ',';
-        }
+       
         $activity = Product::create([
-            'tittle'           => $request->tittle,
-            'description'      => $request->description,
-            'slug_url'         => str_slug($request->slug_url, '-'),
-            'days'             => 1,
-            'price_adults'     => $request->price_adults,
-            'price_children'   => $request->price_children,
-            'discount'         => $request->discount,
-            'meta_description' => $request->meta_description,
-            'keywords'         => $request->keywords,
-            'status'           => $request->status,
-            'local'            => $request->local,
-            'itinerary'        => $itinerary,
+            'tittle'            => $request->tittle,
+            'slug_url'          => str_slug($request->slug_url, '-'),
+            'days'              => $request->days,
+            'price_adults'      => $request->price_adults,
+            'price_children'    => $request->price_children,
+            'discount'          => $request->discount,
+            'meta_description'  => $request->meta_description,
+            'keywords'          => $request->keywords,
+            'status'            => $request->status,
+            'local'             => $request->local,
+            'itinerary'         => $request->itinerary,
+            'include'           => $request->include,
+            'suggestion'        => $request->suggestion,
+            'description'       => $request->description,
+            'short_description' => $request->short_description,
+            'city_id'           => $request->city_id,
             'type'             => 1,
         ]);
 
@@ -139,27 +140,24 @@ class ActivityController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'days' => 'numeric|required'
-        ]);
-
-        $itinerary = '';
-        foreach ($request->itinerary as $i) {
-            $itinerary = $itinerary . $i . ',';
-        }
+        
         $activity = Product::find($id)->update([
-            'tittle'           => $request->tittle,
-            'description'      => $request->description,
-            'slug_url'         => str_slug($request->slug_url, '-'),
-            'days'             => 1,
-            'price_adults'     => $request->price_adults,
-            'price_children'   => $request->price_children,
-            'discount'         => $request->discount,
-            'meta_description' => $request->meta_description,
-            'keywords'         => $request->keywords,
-            'status'           => $request->status,
-            'local'            => $request->local,
-            'itinerary'        => $itinerary,
+            'tittle'            => $request->tittle,
+            'slug_url'          => str_slug($request->slug_url, '-'),
+            'days'              => $request->days,
+            'price_adults'      => $request->price_adults,
+            'price_children'    => $request->price_children,
+            'discount'          => $request->discount,
+            'meta_description'  => $request->meta_description,
+            'keywords'          => $request->keywords,
+            'status'            => $request->status,
+            'local'             => $request->local,
+            'itinerary'         => $request->itinerary,
+            'include'           => $request->include,
+            'suggestion'        => $request->suggestion,
+            'description'       => $request->description,
+            'short_description' => $request->short_description,
+            'city_id'           => $request->city_id,
         ]);
 
         if ($request->hasFile('img')) {

@@ -64,12 +64,13 @@
                                    ->paginate(6)
                 ;
             } else {
-                if ($type == 4){
+                if ($type == 4) {
                     $products = Product::where('type', $type)
                                        ->where('local', \Lang::getLocale())
-                        ->paginate(30);
+                                       ->paginate(30)
+                    ;
                     
-                }else{
+                } else {
                     $products = Product::where('type', $type)
                                        ->where('local', \Lang::getLocale())
                                        ->paginate(6)
@@ -77,8 +78,6 @@
                 }
                 
             }
-            
-            
             
             
             $view = 'app.partials.activities-list';
@@ -145,24 +144,30 @@
         {
             //
             $this->validate($request, [
-                'slug_url' => 'unique:packages',
-                'days'     => 'numeric|required'
+                'slug_url' => 'unique:packages'
             
             ]);
             
             $package = Product::create([
-                'tittle'           => $request->tittle,
-                'description'      => $request->description,
-                'slug_url'         => str_slug($request->slug_url, '-'),
-                'days'             => $request->days,
-                'price_adults'     => $request->price_adults,
-                'price_children'   => $request->price_children,
-                'discount'         => $request->discount,
-                'meta_description' => $request->meta_description,
-                'keywords'         => $request->keywords,
-                'status'           => $request->status,
-                'local'            => $request->local,
-                'itinerary'        => $request->itinerary,
+                'tittle'            => $request->tittle,
+                'slug_url'          => str_slug($request->slug_url, '-'),
+                'days'              => $request->days,
+                'price_adults'      => $request->price_adults,
+                'price_children'    => $request->price_children,
+                'discount'          => $request->discount,
+                'meta_description'  => $request->meta_description,
+                'keywords'          => $request->keywords,
+                'status'            => $request->status,
+                'local'             => $request->local,
+                'itinerary'         => $request->itinerary,
+                'include'           => $request->include,
+                'suggestion'        => $request->suggestion,
+                'description'       => $request->description,
+                'short_description' => $request->short_description,
+                'city_id'           => $request->city_id,
+                'type'              => 0,
+                //'address', TODO por hacer
+            
             ]);
             
             if ($request->hasFile('img')) {
@@ -197,7 +202,7 @@
             $item = Product::where('slug_url', $url)
                            ->firstOrFail()
             ;
-          
+            
             return view('app.product-item', compact('item'));
             
             
@@ -234,30 +239,35 @@
         public function update(Request $request, $id)
         {
             //
-            $this->validate($request, [
-                'days' => 'numeric|required'
-            ]);
             
             $package = Product::find($id)
                               ->update([
-                                  'tittle'           => $request->tittle,
-                                  'description'      => $request->description,
-                                  'slug_url'         => str_slug($request->slug_url, '-'),
-                                  'days'             => $request->days,
-                                  'price_adults'     => $request->price_adults,
-                                  'price_children'   => $request->price_children,
-                                  'discount'         => $request->discount,
-                                  'meta_description' => $request->meta_description,
-                                  'keywords'         => $request->keywords,
-                                  'status'           => $request->status,
-                                  'local'            => $request->local,
-                                  'itinerary'        => $request->itinerary,
+                                  'tittle'            => $request->tittle,
+                                  'slug_url'          => str_slug($request->slug_url, '-'),
+                                  'days'              => $request->days,
+                                  'price_adults'      => $request->price_adults,
+                                  'price_children'    => $request->price_children,
+                                  'discount'          => $request->discount,
+                                  'meta_description'  => $request->meta_description,
+                                  'keywords'          => $request->keywords,
+                                  'status'            => $request->status,
+                                  'local'             => $request->local,
+                                  'itinerary'         => $request->itinerary,
+                                  'include'           => $request->include,
+                                  'suggestion'        => $request->suggestion,
+                                  'description'       => $request->description,
+                                  'short_description' => $request->short_description,
+                                  'city_id'           => $request->city_id,
+                                  //'address', TODO por hacer
+            
                               ])
             ;
             
-            if ($request->hasFile('img')) {
+            
+            if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
+                    
                     Image::make($img)
                          ->fit(1200, 600)
                          ->save($path, 50)

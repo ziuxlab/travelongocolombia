@@ -22,7 +22,6 @@
         </div>
     </div>
 </div>
-
 <div class="row">
    
     <div class="col-sm-3">
@@ -102,8 +101,6 @@
         </span>
     @endif
 </div>
-
-
 <div class="form-group {{ $errors->has('itinerary') ? ' has-error' : '' }}">
     {!! Form::label('Itinerario:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('itinerary', old('itinerary'), ['class' => 'form-control','id'=>'js-ckeditor','placeholder'=>'Ingrese su itinerario']) !!}
@@ -168,6 +165,17 @@
             @if ($errors->has('local'))
                 <span class="help-block">
                 <strong>{{ $errors->first('local') }}</strong>
+            </span>
+            @endif
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group {{ $errors->has('city_id') ? ' has-error' : '' }}">
+            {!! Form::label('City:', null, ['class' => 'control-label']) !!}
+            {!! Form::select('city_id',$cities->pluck('city','id'), old('city_id'), ['class' => 'form-control']) !!}
+            @if ($errors->has('city_id'))
+                <span class="help-block">
+                <strong>{{ $errors->first('city_id') }}</strong>
             </span>
             @endif
         </div>
