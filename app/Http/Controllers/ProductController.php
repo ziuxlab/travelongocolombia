@@ -144,7 +144,7 @@
         {
             //
             $this->validate($request, [
-                'slug_url' => 'unique:packages'
+                'slug_url' => 'unique:products'
             
             ]);
             
@@ -170,7 +170,7 @@
             
             ]);
             
-            if ($request->hasFile('img')) {
+            if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';
                     Image::make($img)
@@ -259,7 +259,6 @@
                                   'short_description' => $request->short_description,
                                   'city_id'           => $request->city_id,
                                   //'address', TODO por hacer
-            
                               ])
             ;
             
