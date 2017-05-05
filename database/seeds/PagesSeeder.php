@@ -240,5 +240,29 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
                 'local'      => 'en',
                 'tipo'       => 1,
             ]);
+    
+            Page::create([
+                'id'         => 21,
+                'slug_url'   => 'Our-allies',
+                'name'       => 'Our Allies',
+                'tittle'     => 'Our Allies',
+                'body'       => '{allies}',
+                'menu'       => 1,
+                'menu_order' => 6,
+                'local'      => 'en',
+                'tipo'       => 1,
+            ]);
+    
+            Page::create([
+                'id'         => 22,
+                'slug_url'   => 'nuestros-aliados',
+                'name'       => 'Nuestros Aliados',
+                'tittle'     => 'Nuestros Aliados',
+                'body'       => '{allies}',
+                'menu'       => 1,
+                'menu_order' => 6,
+                'local'      => 'es',
+                'tipo'       => 1,
+            ]);
         }
     }
