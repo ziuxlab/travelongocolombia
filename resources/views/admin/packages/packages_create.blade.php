@@ -7,6 +7,7 @@
 @stop
 
 @section('style')
+    <link rel="stylesheet" href="{{asset('js/plugins/select2/select2.min.css')}}">
 @stop
 
 @section('breadcrumb')
@@ -40,4 +41,10 @@
 
 @section('scripts')
     @include('layouts.admin.partials._ckeditor')
+    <script src="{{asset('js/plugins/select2/select2.full.min.js')}}"></script>
+    <script>
+        $(function(){
+            App.initHelper('select2');
+        });
+    </script>
 @stop

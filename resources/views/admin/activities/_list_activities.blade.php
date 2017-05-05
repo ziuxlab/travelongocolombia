@@ -38,7 +38,7 @@
                class="glyphicon  {{ Session::get('product_field')=='slug_url'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
             </i>
         </th>
-        <th class="" style="width: 15%;">
+        <th class="" >
             <a href="javascript:ajaxLoad('products/list/1?field=status&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
                 @lang('general.status')
             </a>
@@ -47,7 +47,7 @@
             </i>
 
         </th>
-        <th class="" style="width: 15%;">
+        <th class="" >
             <a href="javascript:ajaxLoad('products/list/1?field=local&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
                 @lang('general.language')
             </a>
@@ -55,7 +55,6 @@
                class="glyphicon  {{ Session::get('product_field')=='local'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
             </i>
         </th>
-        <th class="hidden-xs">@lang('general.days')</th>
         <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
     </tr>
     </thead>
@@ -72,7 +71,6 @@
                 @endif
             </td>
             <td>{{$activity->local}}</td>
-            <td>{{$activity->days}}</td>
             <td class="text-center">
                 <div class="btn-group">
                     <a href="{{url('admin/activities/'. $activity->id . '/edit')}}"
@@ -91,7 +89,7 @@
     @endforeach
     </tbody>
 </table>
-<div>{!! str_replace('/?','?',$products->render()) !!}</div>
+<div class="text-center">{!! str_replace('/?','?',$products->render()) !!}</div>
 </div>
 <!-- end list activities -->
 @endif

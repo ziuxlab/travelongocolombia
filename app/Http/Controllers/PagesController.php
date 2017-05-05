@@ -2,15 +2,12 @@
     
     namespace App\Http\Controllers;
     
-    use App\Components;
+  
     use App\Page;
-    use App\Product;
-    use App\User;
-    use HttpOz\Roles\Models\Role;
+
+
     use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Session;
-    use Illuminate\Support\Facades\View;
     use Intervention\Image\Facades\Image;
     
     class PagesController extends Controller
@@ -31,8 +28,7 @@
         public function index()
         {
             //
-            $pages = Page::all();
-            
+            $pages = Page::paginate(10);
             return view('admin.pages.pages_index', compact('pages'));
             
         }

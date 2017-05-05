@@ -8,6 +8,7 @@
 
 @section('style')
     <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/select2/select2.min.css')}}">
 @stop
 
 @section('breadcrumb')
@@ -44,4 +45,10 @@
 @section('scripts')
     @include('layouts.admin.partials._ckeditor')
     @include('layouts.admin.partials._sweetalert', ['name'=>'La imagen'])
+    <script src="{{asset('js/plugins/select2/select2.full.min.js')}}"></script>
+    <script>
+        $(function(){
+            App.initHelper('select2');
+        });
+    </script>
 @stop

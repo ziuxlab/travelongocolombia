@@ -80,6 +80,8 @@ class ActivityController extends Controller
             'city_id'           => $request->city_id,
             'type'             => 1,
         ]);
+    
+        Product::find($activity->id)->features()->attach($request->features);
 
         if ($request->hasFile('img')) {
             foreach ($request->file('img') as $key => $img) {
@@ -140,7 +142,7 @@ class ActivityController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+       
         $activity = Product::find($id)->update([
             'tittle'            => $request->tittle,
             'slug_url'          => str_slug($request->slug_url, '-'),
@@ -159,6 +161,8 @@ class ActivityController extends Controller
             'short_description' => $request->short_description,
             'city_id'           => $request->city_id,
         ]);
+    
+        Product::find($id)->features()->sync($request->features);
 
         if ($request->hasFile('img')) {
             foreach ($request->file('img') as $key => $img) {

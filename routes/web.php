@@ -108,6 +108,11 @@
         Route::post('hotels/{id}', 'HotelController@update_order_photo');
         Route::resource('hotels', 'HotelController', ['except' => ['delete_photo', 'update_order_photo']]);
     
+        // Services-related routes ========================================.
+        Route::delete('services/{id}', 'ServicesController@delete_photo');
+        Route::post('services/{id}', 'ServicesController@update_order_photo');
+        Route::resource('services', 'ServicesController', ['except' => ['delete_photo', 'update_order_photo']]);
+    
         // System-related routes ========================================.
         Route::resource('settings', 'ConfigController');
         

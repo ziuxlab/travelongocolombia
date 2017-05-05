@@ -197,7 +197,7 @@
     });
     $('#checkin').change(function () {
         var today = $('#checkin').datepicker('getDate');
-        today.setDate(today.getDate() + parseInt('{{$item->days}}'));
+        today.setDate(today.getDate() + parseInt(('{{$item->days}}').replace( /\D+/g, '')));
         $('#checkout').datepicker('setDate', today);
     });
     

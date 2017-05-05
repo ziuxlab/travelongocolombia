@@ -1,9 +1,11 @@
-<div class="content-boxed content">
+<div class="content-boxed ">
     <div class="row steps">
         <div class="col-sm-12">
             @include('app.design._steps',['step'=>2])
         </div>
     </div>
+</div>
+<div class="content-boxed content remove-padding-t">
     <div class="row">
         <!-- sider -->
         <div class="col-md-3 push ">
@@ -17,7 +19,7 @@
     </div>
 </div>
 @push('scripts')
-    @include('layouts.app.partials._list', ['type'=> 2])
+@include('layouts.app.partials._list', ['type'=> 2])
 
 <script>
     $(document).on('click', '.value-control', function () {

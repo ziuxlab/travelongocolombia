@@ -156,7 +156,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4 {{$item->discount > 0 ? 'book_column' : ''}} " >
                     @include('app.partials.book')
                     @if($item->type == 0)
                         @include('app.partials.related_tours')

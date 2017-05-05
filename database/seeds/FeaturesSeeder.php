@@ -240,7 +240,7 @@
                 'feature'       => 'Countryside',
                 'feature_es'    => 'Campestre',
                 'in_categories' => 1,
-                'icon'          => 'icon icon-tourism-icons-fitness',
+                'icon'          => 'icon icon-tourism-icons-mountain-track',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
@@ -248,7 +248,7 @@
                 'feature'       => 'In The City',
                 'feature_es'    => 'En la Ciudad',
                 'in_categories' => 1,
-                'icon'          => 'icon icon-tourism-icons-fitness',
+                'icon'          => 'icon icon-tourism-icons-monument',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
@@ -256,7 +256,7 @@
                 'feature'       => 'Farm Hotel',
                 'feature_es'    => 'Finca Hotel',
                 'in_categories' => 1,
-                'icon'          => 'icon icon-tourism-icons-fitness',
+                'icon'          => 'icon icon-tourism-icons-house',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
@@ -264,7 +264,7 @@
                 'feature'       => 'Resort Hotel',
                 'feature_es'    => 'Hotel de Lujo',
                 'in_categories' => 1,
-                'icon'          => 'icon icon-tourism-icons-fitness',
+                'icon'          => 'icon icon-tourism-icons-beach-house',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
@@ -272,7 +272,7 @@
                 'feature'       => 'Furnished Apartment',
                 'feature_es'    => 'Apartamento Amoblado',
                 'in_categories' => 1,
-                'icon'          => 'icon icon-tourism-icons-fitness',
+                'icon'          => 'icon icon-tourism-icons-monument-2',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
         }

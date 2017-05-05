@@ -1,4 +1,4 @@
-<div class="content-boxed content">
+<div class="content-boxed content remove-padding-t">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 col-sm-12 bg-white remove-padding">
             <div class="table-responsive">

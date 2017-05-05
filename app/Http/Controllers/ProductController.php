@@ -67,7 +67,7 @@
                 if ($type == 4) {
                     $products = Product::where('type', $type)
                                        ->where('local', \Lang::getLocale())
-                                       ->paginate(30)
+                                       ->paginate(10)
                     ;
                     
                 } else {
@@ -104,7 +104,7 @@
             $products = Product::where('type', $type)
                                ->where('tittle', 'like', '%' . Session::get('product_search') . '%')
                                ->orderBy(Session::get('product_field'), Session::get('product_sort'))
-                               ->paginate(5)
+                               ->paginate(10)
             ;
             
             $view = '';
@@ -169,6 +169,8 @@
                 //'address', TODO por hacer
             
             ]);
+    
+            Product::find($package->id)->features()->attach($request->features);
             
             if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
@@ -219,7 +221,7 @@
         public function edit($id)
         {
             //
-            $package = Product::with('photos')
+            $package = Product::with('photos','features')
                               ->whereId($id)
                               ->first()
             ;
@@ -239,7 +241,6 @@
         public function update(Request $request, $id)
         {
             //
-            
             $package = Product::find($id)
                               ->update([
                                   'tittle'            => $request->tittle,
@@ -261,8 +262,10 @@
                                   //'address', TODO por hacer
                               ])
             ;
-            
-            
+    
+            Product::find($id)->features()->sync($request->features);
+    
+    
             if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/packages/' . str_random(10) . '.png';

@@ -18,7 +18,7 @@
         <h3 class="h5">@lang('general.categories')</h3>
     </div>
     <div class="list-group">
-        @foreach($features->where('type',$type) as $item)
+        @foreach($features->where('type',$type)->where('in_categories',1) as $item)
             @if(App::isLocale('en'))
             <a href="{{url('products/list/'.$type.'?feature='.$item->id)}}" class="list-group-item  h5"><i
                         class="{{$item->icon}} push-10-r"></i>{{$item->feature}}</a>
@@ -29,5 +29,4 @@
                 @endif
         @endforeach
     </div>
-
 </div>

@@ -92,8 +92,12 @@
                                     class="sidebar-mini-hide">@lang('general.hotels')</span></a>
                     </li>
                     <li>
+                        <a href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
+                                    class="sidebar-mini-hide">Services</span></a>
+                    </li>
+                    <li>
                         <a href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
-                                    class="sidebar-mini-hide">Vuelos</span></a>
+                                    class="sidebar-mini-hide">@lang('general.flights')</span></a>
                     </li>
                     <li>
                         <a href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span

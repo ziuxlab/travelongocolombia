@@ -19782,9 +19782,9 @@ nav {
     background-color: rgba(204, 86, 18, 0.9) /*#c35413*/;
 }
 
-.book{
+.book_column{
     top: -47px;
-    position: relative;
+   
 }
 
 .modal {
@@ -20367,7 +20367,7 @@ footer {
 
 @media (max-width: 992px) {
     /********* medium **********/
-    .book{
+    .book_column{
         top: 0px;
     }
     

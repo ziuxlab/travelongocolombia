@@ -13,15 +13,13 @@
     @endif
 @endforeach
 
-@if(count($products) > 5)
         <div class="col-sm-12">
-            <div class="block">
+            <div class="block block-rounded block-bordered">
                 <div class="block-content-mini text-center">
                     {{ $products->links() }}
                 </div>
             </div>
         </div>
-@endif
 
 <script>
     $('.pagination a').on('click', function (event) {

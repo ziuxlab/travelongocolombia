@@ -1,11 +1,11 @@
-<div class="content-boxed content">
+<div class="content-boxed ">
     <div class="row steps">
         <div class="col-sm-12">
-            <div class="block">
                 @include('app.design._steps',['step'=>3])
-            </div>
         </div>
     </div>
+</div>
+<div class="content-boxed content remove-padding-t">
     <div class="row">
         <!-- sider -->
         <div class="col-md-3 push ">

@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
-   
+    @yield('style')
     @include('layouts.admin.head')
     @yield('title')
     @yield('description')
     @yield('meta')
-    @yield('style')
+   
    
 </head>
 <body>

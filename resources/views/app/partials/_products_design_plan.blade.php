@@ -150,6 +150,5 @@
         </div>
     </div>
 </div>
-</div>
 @include('layouts.app.partials._tooltip')
 

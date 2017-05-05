@@ -173,6 +173,29 @@
     </div>
 </div>
 <div class="row">
+    <div class="col-md-12">
+        <div class="form-group {{ $errors->has('features[]') ? ' has-error' : '' }}">
+            {!! Form::label('Features:', null, ['class' => 'control-label']) !!}
+            <select class="form-control js-select2 " multiple="multiple" name="features[]" style="width: 100%;"
+                    data-placeholder="Choose many...">
+                <option></option>
+                @foreach($features->where('type',1) as $feature)
+                    @if(isset($activity))
+                        <option value="{{$feature->id}}" {{count($activity->features->where('id',$feature->id)) > 0 ?'selected':''}}>{{$feature->feature}}</option>
+                    @else
+                        <option value="{{$feature->id}}">{{$feature->feature}}</option>
+                    @endif
+                @endforeach
+            </select>
+            @if ($errors->has('features[]'))
+                <span class="help-block">
+                <strong>{{ $errors->first('features[]') }}</strong>
+            </span>
+            @endif
+        </div>
+    </div>
+</div>
+<div class="row">
     <div class="col-sm-4">
         <div class="form-group {{ $errors->has('img') ? ' has-error' : '' }}">
             {!! Form::label('Imagen Principal:', null, ['class' => 'control-label']) !!}

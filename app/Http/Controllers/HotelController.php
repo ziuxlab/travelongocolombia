@@ -81,8 +81,10 @@
                 'city_id'           => $request->city_id,
                 'type'              => 2,
             ]);
+    
+            Product::find($activity->id)->features()->attach($request->features);
             
-            if ($request->hasFile('img')) {
+            if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/hotels/' . str_random(10) . '.png';
                     Image::make($img)
@@ -167,7 +169,9 @@
                 'city_id'           => $request->city_id,
             ]);
     
-            if ($request->hasFile('img')) {
+            Product::find($id)->features()->sync($request->features);
+    
+            if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {
                     $path = 'img/hotels/' . str_random(10) . '.png';
                     Image::make($img)->fit(1200, 600)->save($path, 50);

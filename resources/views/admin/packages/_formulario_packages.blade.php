@@ -23,7 +23,7 @@
     </div>
 </div>
 <div class="row">
-   
+    
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('days') ? ' has-error' : '' }}">
             {!! Form::label('Días:', null, ['class' => 'control-label']) !!}
@@ -41,7 +41,7 @@
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-usd"></i></span>
                 {!! Form::number('price_adults', old('price_adults'), ['class' => 'form-control','placeholder'=>'99']) !!}
-    
+                
                 <span class="input-group-addon">.00</span>
             </div>
             @if ($errors->has('price_adults'))
@@ -57,10 +57,10 @@
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-usd"></i></span>
                 {!! Form::number('price_children', old('price_children'), ['class' => 'form-control','placeholder'=>'99']) !!}
-    
+                
                 <span class="input-group-addon">.00</span>
             </div>
-             @if ($errors->has('price_children'))
+            @if ($errors->has('price_children'))
                 <span class="help-block">
             <strong>{{ $errors->first('price_children') }}</strong>
         </span>
@@ -72,10 +72,10 @@
             {!! Form::label('Descuento:', null, ['class' => 'control-label']) !!}
             <div class="input-group">
                 {!! Form::number('discount', old('discount'), ['class' => 'form-control','placeholder'=>'10']) !!}
-    
+                
                 <span class="input-group-addon"><i class="fa fa-percent"></i></span>
             </div>
-             @if ($errors->has('discount'))
+            @if ($errors->has('discount'))
                 <span class="help-block">
             <strong>{{ $errors->first('discount') }}</strong>
         </span>
@@ -176,6 +176,29 @@
             @if ($errors->has('city_id'))
                 <span class="help-block">
                 <strong>{{ $errors->first('city_id') }}</strong>
+            </span>
+            @endif
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group {{ $errors->has('features[]') ? ' has-error' : '' }}">
+            {!! Form::label('Features:', null, ['class' => 'control-label']) !!}
+            <select class="form-control js-select2 " multiple="multiple" name="features[]" style="width: 100%;"
+                    data-placeholder="Choose many...">
+                <option></option>
+                @foreach($features->where('type',0) as $feature)
+                    @if(isset($package))
+                        <option value="{{$feature->id}}" {{count($package->features->where('id',$feature->id)) > 0 ?'selected':''}}>{{$feature->feature}}</option>
+                    @else
+                        <option value="{{$feature->id}}">{{$feature->feature}}</option>
+                    @endif
+                @endforeach
+            </select>
+            @if ($errors->has('features[]'))
+                <span class="help-block">
+                <strong>{{ $errors->first('features[]') }}</strong>
             </span>
             @endif
         </div>
