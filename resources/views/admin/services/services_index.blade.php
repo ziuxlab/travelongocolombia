@@ -24,7 +24,6 @@
                     <th>@lang('general.tittle')</th>
                     <th class="hidden-xs">Url</th>
                     <th class="" style="width: 15%;">@lang('general.status')</th>
-                    <th class="">@lang('general.days')</th>
                     <th class="">@lang('general.language')</th>
                     <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
                 </tr>
@@ -41,7 +40,6 @@
                                     <span class="label label-success">Habilitado</span>
                                 @endif
                         </td>
-                        <td>{{$package->days}}</td>
                         <td>{{$package->local}}</td>
                         <td class="text-center">
                             <div class="btn-group">

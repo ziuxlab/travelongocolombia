@@ -91,6 +91,7 @@
         'back'                        => 'Back',
         'skip'                        => 'Skip',
         'step-skip'                   => 'Do you want to skip this step?',
+        'step-back'                   => 'Do you want back to design your plan?',
         'photos'                      => 'Photos',
         'details_resumen'             => ' :name Details',
         'beds'                        => 'Beds',
@@ -145,6 +146,6 @@
         'next'                        => 'Next',
         'number'                      => 'Number of CC',
         'expiration'                  => 'Expiration',
-        'Signup for Newsletter'                  => 'Signup for Newsletter',
+        'Signup for Newsletter'       => 'Signup for Newsletter',
     
     ];

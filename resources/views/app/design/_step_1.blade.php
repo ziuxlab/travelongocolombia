@@ -11,7 +11,7 @@
             <div class="block block-bordered block-rounded block-themed ">
                 {!! Form::open(['action'=> ['FlightController@store'],'id' => 'flights']) !!}
                 <div class="block-header bg-primary">
-                    <h3 class="h4">Información básica</h3>
+                    <h3 class="h4">@lang('general.personal information')</h3>
                 </div>
                 <div class="block-content block-content-full ">
                     @include('admin.flights._flights_formulario')

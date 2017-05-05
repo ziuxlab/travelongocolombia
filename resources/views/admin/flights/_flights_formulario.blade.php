@@ -51,7 +51,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                        {!! Form::number('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
+                        {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
                         <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control"
                                               data-action="plus" data-target="adults">

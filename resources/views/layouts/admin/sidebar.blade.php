@@ -100,6 +100,14 @@
                                     class="sidebar-mini-hide">@lang('general.flights')</span></a>
                     </li>
                     <li>
+                        <a href="{{url('admin/messages')}}"><i class="fa fa-envelope-o"></i><span
+                                    class="sidebar-mini-hide">Mensajes</span></a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/sales')}}"><i class="fa fa-dollar"></i><span
+                                    class="sidebar-mini-hide">Ventas</span></a>
+                    </li>
+                    <li>
                         <a href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span
                                     class="sidebar-mini-hide">Multimedia</span></a>
                     </li>

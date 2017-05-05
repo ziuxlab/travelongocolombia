@@ -32,6 +32,26 @@
             </h1>
         </div>
     </div>
+    @if(Session::get('plan') == 'design')
+        <div class="content-boxed content">
+            <div class="row text-center">
+                <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                    <div class="block block-rounded block-bordered remove-margin-b">
+                        <div class="block-content block-content-full ">
+                            <p class="h5 font-w400">@lang('general.step-back')</p>
+                            <div class="row flex-between">
+                                <div>
+                                    <a class="btn btn-minw btn-primary"
+                                       href="{{url(str_slug(trans('cabecera.Design')).'?step=5')}}">
+                                        <i class="si si-arrow-left pull-left"></i>@lang('general.back')</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
     <div class="content-boxed content">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 bg-white remove-padding">
@@ -63,7 +83,8 @@
                     {!! Form::open(['action'=> ['CheckoutController@store'],'class'=>'js-card-form js-form1 validation form-horizontal','novalidate','id'=>'form_stripe']) !!}
                     <div class="block-content block-content-mini block-content-full border-b">
                         <div class="wizard-progress progress active progress-mini remove-margin-b">
-                            <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="100"
+                            <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar"
+                                 aria-valuenow="100"
                                  aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                         </div>
                     </div>

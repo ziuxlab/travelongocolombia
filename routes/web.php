@@ -88,6 +88,9 @@
         
         // Users-related routes =========================================.
         Route::resource('users', 'UsersController');
+    
+        // Messages-related routes =========================================.
+        Route::resource('messages', 'MessagesController');
         
         // Pages-related routes =========================================.
         Route::resource('pages', 'PagesController');

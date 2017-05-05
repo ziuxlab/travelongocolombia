@@ -91,6 +91,7 @@
         'back'                        => 'Regresar',
         'skip'                        => 'Omitir',
         'step-skip'                   => '¿Deseas omitir este paso?',
+        'step-back'                   => '¿Deseas regresar a armar tu plan?',
         'photos'                      => 'Fotos',
         'details_resumen'             => 'resumen de :name',
         'beds'                        => 'Camas',

@@ -1,7 +1,7 @@
 @extends('layouts.app.app')
 
 @section('title')
-Home
+    Home
 @stop
 
 @section('description')
@@ -17,8 +17,15 @@ Home
     @foreach($item->components()->orderBy('order_component')->get() as $component)
         {!! $component->body !!}
     @endforeach
-    @include('app.partials.popular-tours')
-    @include('app.partials.popular-activities')
+    @if(count($products->where('local',App::getLocale())->where('type',0))>0)
+        @include('app.partials.popular-tours')
+    @endif
+    @if(count($products->where('local',App::getLocale())->where('type',2))>0)
+        @include('app.partials.popular-activities')
+    @endif
+    @if(count($products->where('local',App::getLocale())->where('type',4))>0)
+        @include('app.partials.popular-services')
+    @endif
 @stop
 
 @section('scripts')
