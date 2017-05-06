@@ -104,7 +104,7 @@
                                     class="sidebar-mini-hide">Mensajes</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/sales')}}"><i class="fa fa-dollar"></i><span
+                        <a href="{{url('admin/booking')}}"><i class="fa fa-dollar"></i><span
                                     class="sidebar-mini-hide">Ventas</span></a>
                     </li>
                     <li>

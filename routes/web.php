@@ -91,6 +91,9 @@
     
         // Messages-related routes =========================================.
         Route::resource('messages', 'MessagesController');
+    
+        // Messages-related routes =========================================.
+        Route::resource('booking', 'BookingController');
         
         // Pages-related routes =========================================.
         Route::resource('pages', 'PagesController');
