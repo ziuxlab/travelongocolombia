@@ -19,7 +19,7 @@
                 url: url,
                 data: data,
                 success: function (msg) {
-                    parent.append('<div id="results_search" style=" position: absolute;top: 50px;right: 0px;z-index: 10;"></div>')
+                    parent.append('<div id="results_search" style=" position: absolute;top: 50px;right: 0px;z-index: 10000;"></div>')
                     $('#results_search').html(msg)
                 }
             })

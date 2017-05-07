@@ -12,7 +12,7 @@ class booking extends Model
     protected $fillable = [
         'price',
         'user_id',
-        'status',
+        'status', //['paid','declined','pending']
     ];
     
     public function user()

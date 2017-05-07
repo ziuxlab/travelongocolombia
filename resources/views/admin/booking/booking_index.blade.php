@@ -30,12 +30,13 @@
                 @foreach($bookings as $package)
                     <tr id="{{$package->id}}">
                         <td class="text-capitalize">{{$package->user->name}}</td>
-                        <td class="hidden-xs">{{$package->price}}</td>
+                        <td class="hidden-xs">${{number_format($package->price) }}</td>
                         <td class="">
-                            @if($package->status == false)
-                                <span class="label label-danger">Deshabilitado</span>
+                            @if($package->status == 'paid')
+                                <span class="label label-success">Pagado</span>
                             @else
-                                <span class="label label-success">Habilitado</span>
+                               
+                                <span class="label label-danger">Pendiente</span>
                             @endif
                         </td>
                         <td class="text-center">

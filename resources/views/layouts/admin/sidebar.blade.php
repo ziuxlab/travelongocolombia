@@ -67,52 +67,52 @@
             <div class="side-content">
                 <ul class="nav-main">
                     <li>
-                        <a class="active tutorial-dashboard" href="{{Url('/')}}"><i class="si si-speedometer"></i><span
+                        <a class="{{Request::is('admin/home') ? 'active' :''}}tutorial-dashboard" href="{{Url('admin/home')}}"><i class="si si-speedometer"></i><span
                                     class="sidebar-mini-hide">Dashboard</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/pages')}}"><i class="si si-docs"></i><span
+                        <a class="{{Request::is('admin/pages') ? 'active' :''}}" href="{{url('admin/pages')}}"><i class="si si-docs"></i><span
                                     class="sidebar-mini-hide">Páginas</span></a>
                     </li>
                    
                     <li>
-                        <a href="{{Url('admin/components')}}"><i class="si si-grid"></i><span
+                        <a class="{{Request::is('admin/components') ? 'active' :''}}" href="{{Url('admin/components')}}"><i class="si si-grid"></i><span
                                     class="sidebar-mini-hide">Componentes</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/packages')}}"><i class="si si-docs"></i><span
+                        <a class="{{Request::is('admin/packages') ? 'active' :''}}"  href="{{url('admin/packages')}}"><i class="si si-docs"></i><span
                                     class="sidebar-mini-hide">Paquetes</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/activities')}}"><i class="fa fa-bicycle"></i><span
+                        <a class="{{Request::is('admin/activities') ? 'active' :''}}" href="{{url('admin/activities')}}"><i class="fa fa-bicycle"></i><span
                                     class="sidebar-mini-hide">Actividades</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/hotels')}}"><i class="fa fa-building-o"></i><span
+                        <a class="{{Request::is('admin/hotels') ? 'active' :''}}" href="{{url('admin/hotels')}}"><i class="fa fa-building-o"></i><span
                                     class="sidebar-mini-hide">@lang('general.hotels')</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
+                        <a class="{{Request::is('admin/services') ? 'active' :''}}" href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
                                     class="sidebar-mini-hide">Services</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
+                        <a class="{{Request::is('admin/flights') ? 'active' :''}}" href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
                                     class="sidebar-mini-hide">@lang('general.flights')</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/messages')}}"><i class="fa fa-envelope-o"></i><span
+                        <a class="{{Request::is('admin/messages') ? 'active' :''}}" href="{{url('admin/messages')}}"><i class="fa fa-envelope-o"></i><span
                                     class="sidebar-mini-hide">Mensajes</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/booking')}}"><i class="fa fa-dollar"></i><span
+                        <a class="{{Request::is('admin/booking') ? 'active' :''}}" href="{{url('admin/booking')}}"><i class="fa fa-dollar"></i><span
                                     class="sidebar-mini-hide">Ventas</span></a>
                     </li>
                     <li>
-                        <a href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span
+                        <a class="{{Request::is('laravel-filemanager?type=Images') ? 'active' :''}}" href="{{url('laravel-filemanager?type=Images')}}"><i class="si si-camera"></i><span
                                     class="sidebar-mini-hide">Multimedia</span></a>
                     </li>
                     <li>
-                        <a href="{{url('admin/users')}}"><i class="si si-users"></i><span
+                        <a class="{{Request::is('admin/users') ? 'active' :''}}" href="{{url('admin/users')}}"><i class="si si-users"></i><span
                                     class="sidebar-mini-hide">Usuarios</span></a>
                     </li>
                     

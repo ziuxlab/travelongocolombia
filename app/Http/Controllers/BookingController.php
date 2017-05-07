@@ -57,6 +57,8 @@ class BookingController extends Controller
     public function show($id)
     {
         //
+        $booking = booking::with('details.product','user','payments','contacts')->whereId($id)->first();
+        return view('admin.booking.booking_show', compact('booking'));
     }
 
     /**

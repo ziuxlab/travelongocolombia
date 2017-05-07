@@ -100,14 +100,14 @@
                                             <div class="col-sm-6">
                                                 <label>@lang('general.name')</label>
                                                 <input class="form-control" type="text"
-                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['name']}}"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['name'])}}"
                                                        name="adult[full_name][{{$i}}]"
                                                        placeholder="@lang('cabecera.placeholder_name')">
                                             </div>
                                             <div class="col-sm-6">
                                                 <label>@lang('general.email')</label>
                                                 <input class="form-control" type="email" name="adult[email][{{$i}}]"
-                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['email']}}"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['email'])}}"
                                                        placeholder="@lang('cabecera.placeholder_email')">
                                             </div>
                                         </div>
@@ -115,22 +115,22 @@
                                             <div class="col-sm-4">
                                                 <label>@lang('general.phone')</label>
                                                 <input class="form-control" type="text" name="adult[phone][{{$i}}]"
-                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['phone']}}"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['phone'])}}"
                                                        placeholder="@lang('general.placeholder phone')">
                                             </div>
                                             <div class="col-sm-4">
                                                 <label>@lang('general.city')</label>
                                                 <input class="form-control" type="text" name="adult[city][{{$i}}]"
-                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['city']}}"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['city'])}}"
                                                        placeholder="@lang('general.enter_city')">
                                             </div>
                                             <div class="col-sm-4">
                                                 <label>@lang('general.country')</label>
                                                 <input class="form-control" type="text"
                                                        name="adult[country][{{$i}}]"
-                                                       value="{{is_null($contacts['adult']) ? '': $contacts['adult'][$i]['country']}}"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['country'])}}"
                                                        placeholder="@lang('general.placeholder country')">
-                                                @if(!is_null($contacts['adult']))
+                                                @if(!is_null($contacts['adult']) and !empty($contacts['adult'][$i]))
                                                     {!! Form::hidden('adult[contact_id]['.$i.']', $contacts['adult'][$i]['id']) !!}
                                                 @endif
                                             </div>

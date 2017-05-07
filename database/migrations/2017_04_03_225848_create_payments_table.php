@@ -18,7 +18,7 @@
                 $table->float('value')
                       ->defaul(0)
                 ;
-                $table->enum('status', ['accept', 'decline', 'pending']);
+                $table->enum('status',['paid','declined','pending'])->nullable();
                 $table->string('stripe')
                       ->nullable()
                 ;

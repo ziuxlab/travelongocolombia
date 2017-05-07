@@ -50,7 +50,7 @@
                                    data-original-title="Editar Página"><i class="fa fa-pencil"></i></a>
                                <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                                         data-toggle="tooltip" data-id="{{ $page->id }}" title=""
-                                        data-original-title="Eliminar usuario"><i class="fa fa-times"></i>
+                                        data-original-title="Eliminar Página"><i class="fa fa-times"></i>
                                    {!! Form::open(['action'=> ['PagesController@destroy',$page->id],'method'=>'delete','id'=>'item_'.$page->id]) !!}
                                    {!! Form::close() !!}
                                </button>

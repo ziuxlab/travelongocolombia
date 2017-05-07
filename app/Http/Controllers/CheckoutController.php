@@ -5,6 +5,7 @@
     use App\booking;
     use App\booking_detail;
     use App\Contact;
+    use App\payment;
     use App\User;
     use Cart;
     use Illuminate\Http\Request;
@@ -17,15 +18,12 @@
     class CheckoutController extends Controller
     {
         
-    
-       
         
         /**
          * Display a listing of the resource.
          *
          * @return \Illuminate\Http\Response
          */
-        
         
         
         public function index()
@@ -39,7 +37,7 @@
                                             ->toArray()
                 ;
                 
-                if (count($contacts['adult']) == 0){
+                if (count($contacts['adult']) == 0) {
                     $contacts['adult'] = null;
                 }
                 $contacts['child'] = Contact::where('user_id', Auth::user()->id)
@@ -47,16 +45,15 @@
                                             ->get()
                                             ->toArray()
                 ;
-                if (count($contacts['child']) == 0){
+                if (count($contacts['child']) == 0) {
                     $contacts['child'] = null;
                 }
                 $contacts['infant'] = Contact::where('user_id', Auth::user()->id)
                                              ->whereType(2)
                                              ->get()
                                              ->toArray()
-                    
                 ;
-                if (count($contacts['infant']) == 0){
+                if (count($contacts['infant']) == 0) {
                     $contacts['infant'] = null;
                 }
             } else {
@@ -64,7 +61,6 @@
                 $contacts['child'] = null;
                 $contacts['infant'] = null;
             }
-            
             
             
             return view('app.checkout', compact('contacts'));
@@ -94,14 +90,17 @@
             //si el usuario agrega una nota redirige al checkout de lo contrario sigue al proceso de pago
             if (array_has($request, 'note')) {
                 Session::put('note', $request->note);
+                
                 return redirect('checkout');
             }
             
             //Si el usuario no esta logueado creamos uno con los datos y lo logueamos
             if (Auth::guest()) {
                 //verificamos si el correo existe como usuario, si no lo creamos
-                $user = User::whereEmail($request->adult['email'][0])->first();
-                if(!isset($user->email)){
+                $user = User::whereEmail($request->adult['email'][0])
+                            ->first()
+                ;
+                if ( ! isset($user->email)) {
                     $user = User::create([
                         'name'     => $request->adult['full_name'][0],
                         'email'    => $request->adult['email'][0],
@@ -128,10 +127,13 @@
                 booking_detail::create([
                     
                     //Si el type del producto es vuelo (3) se debe descontar 2000
-                    'product_id' =>  $item->attributes->type <> 3 ? $item->id : $item->id - 2000,
-                    'type'=> $item->attributes->type,
-                    'nights'=> (isset($item->attributes->nights) ? $item->attributes->nights : 0) ,
-                    'bed'=> (isset($item->attributes->bed) ? $item->attributes->bed : 0),
+                    'product_id' => $item->attributes->type <> 3 ? $item->id : $item->id - 2000,
+                    'type'       => $item->attributes->type,
+                    'name'       => $item->name,
+                    'price'      => $item->price,
+                    'quantity'   => $item->quantity,
+                    'nights'     => (isset($item->attributes->nights) ? $item->attributes->nights : 0),
+                    'bed'        => (isset($item->attributes->bed) ? $item->attributes->bed : 0),
                     'booking_id' => $booking->id,
                 ]);
             }
@@ -169,7 +171,9 @@
                     ]);
                 }
                 
-                $booking->contacts()->attach($adult->id);
+                $booking->contacts()
+                        ->attach($adult->id)
+                ;
             }
             
             //creamos los contactos para niños
@@ -241,7 +245,7 @@
                     "amount"      => (Cart::getTotal() * 100),
                     "currency"    => "usd",
                     "description" => "Shop in Travelongo by " . Cart::getTotal(),
-                    "source"    => $request->stripeToken,
+                    "source"      => $request->stripeToken,
                     "metadata"    => [
                         "order_id" => $booking->id,
                         'name'     => Auth::user()->name,
@@ -250,16 +254,33 @@
                 ]);
                 
             } catch (Card $e) {
-               
+                
                 $body = $e->getJsonBody();
-                $error  = $body['error'];
+                $error = $body['error'];
                 $booking->status = 'declined';
                 $booking->save();
+                payment::create([
+                    'value'      => $booking->price,
+                    'status'     => $booking->status,
+                    'stripe'     =>'error',
+                    'booking_id' => $booking->id
+                ]);
+                
                 return view('app.payment.declinade', compact('error'));
             }
             
             $booking->status = 'paid';
             $booking->save();
+            
+            
+            //guardar el pago
+            payment::create([
+                'value'          => $booking->price,
+                'status'         => $booking->status,
+                'stripe'         =>$charge->id,
+                    'booking_id' => $booking->id
+                ]);
+            
             Cart::clear();
             Session::forget('adults');
             Session::forget('children');
@@ -268,7 +289,6 @@
             return view('app.payment.success', compact('booking'));
             
         }
-        
         
         
         /**

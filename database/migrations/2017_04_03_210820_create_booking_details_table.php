@@ -20,6 +20,9 @@ class CreateBookingDetailsTable extends Migration
             $table->integer('booking_id')->unsigned();
             $table->foreign('booking_id')->references('id')->on('bookings');
             $table->tinyInteger('type')->unsigned()->default(1); //1 para productos, 2 para vuelos
+            $table->Integer('price')->unsigned();
+            $table->tinyInteger('quantity')->unsigned();
+            $table->string('name');
             $table->timestamps();
         });
     }
