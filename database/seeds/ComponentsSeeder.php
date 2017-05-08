@@ -75,7 +75,20 @@
             
             Components::create([
                 'name'            => 'Goodbye Pariah State, Hello Garden Of Eden',
-                'body'            => '<div class="content-boxed content"><div class="col-sm-12"><div class="block block-themed"><div class="block-header bg-primary-darkest"><h3 class="block-title">Goodbye Pariah State, Hello Garden Of Eden: How Colombia Became Not Just Safe To Visit, But A South American Must-See</h3></div><div class="block-content"><p class="text-justify font-w700">&quot;By MailOnline 28 August 2014 | UPDATED: 16:00 GMT, 2 September 2014&quot;</p><p class="text-justify">With 1,880 bird species and a rich biodiversity it&#39;s bliss for wildlife lovers Enjoy abundant natural beauty and arguably the best coffee in the world No longer famed for drugs and violence, awe-inspiring Colombia is calling</p><p class="text-justify">To talk of a safer Colombia for tourists is a tiresome clich&eacute;. Backpackers have plodded through its lush jungles, hit its sweet Caribbean beaches and partied in Bogota for over a decade.What is apparent now is that Colombians, too, have fallen for their country. Head&not; over heels. Like teenagers in the first throes of passion, discovering every beautiful quirk and stomach flip - after years of being locked into an era where the very idea of tourism in their country was anathema. Colombia has more bird species than any other country, including the striking Emerald Toucanet</p><p class="text-justify">There are over 3000 orchid species in Colombia, including its national flower (right), the Cattleya trianae Birding continues to be big news here. This is no surprise. There are more bird species in Colombia than anywhere else in the world &ndash; 1,880 and counting (including 87 endemics). Even to the avian-ignorant, to see a bright Green-Crested Quetzal swoop through the cloud forest with purpose and freedom is quite transcendental. The end to Colombia&rsquo;s troubles could be the unclipping of her wings &ndash; and if you&rsquo;re up for adventure, she is ready to soar.</p></div></div></div></div>',
+                'body'            => '<div class="content-boxed content">
+<div class="col-sm-12"><div class="block block-themed">
+<div class="block-header bg-primary-darkest"><h3 class="block-title">Goodbye Pariah State, Hello Garden Of Eden: How Colombia Became Not Just Safe To Visit, But A South American Must-See</h3></div>
+<div class="block-content flex-between">
+<div><img class="img-responsive" src="//travelongocolombia.com.co/img/articulos/articulos-1.jpg"></div>
+<div>
+<p class="text-justify font-w700">&quot;By MailOnline 28 August 2014 | UPDATED: 16:00 GMT, 2 September 2014&quot;</p>
+<p class="text-justify">With 1,880 bird species and a rich biodiversity it&#39;s bliss for wildlife lovers Enjoy abundant natural beauty and arguably the best coffee in the world No longer famed for drugs and violence, awe-inspiring Colombia is calling</p>
+<p class="text-justify">To talk of a safer Colombia for tourists is a tiresome clich&eacute;. Backpackers have plodded through its lush jungles, hit its sweet Caribbean beaches and partied in Bogota for over a decade.What is apparent now is that Colombians, too, have fallen for their country. Head&not; over heels. Like teenagers in the first throes of passion, discovering every beautiful quirk and stomach flip - after years of being locked into an era where the very idea of tourism in their country was anathema. Colombia has more bird species than any other country, including the striking Emerald Toucanet</p>
+<p class="text-justify">There are over 3000 orchid species in Colombia, including its national flower (right), the Cattleya trianae Birding continues to be big news here. This is no surprise. There are more bird species in Colombia than anywhere else in the world &ndash; 1,880 and counting (including 87 endemics). Even to the avian-ignorant, to see a bright Green-Crested Quetzal swoop through the cloud forest with purpose and freedom is quite transcendental. The end to Colombia&rsquo;s troubles could be the unclipping of her wings &ndash; and if you&rsquo;re up for adventure, she is ready to soar.</p>
+</div>
+</div>
+</div>
+</div></div>',
                 'page_id'         => 11,
                 'order_component' => 1,
                 'local'           => 'en',
