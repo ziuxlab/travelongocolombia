@@ -15,6 +15,8 @@
             'quantity',
             'price',
             'name',
+            'nights',
+            'bed',
             'booking_id',
         ];
         

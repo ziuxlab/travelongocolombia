@@ -50,6 +50,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group ">
+                                {!! Form::label('Nota:', null, ['class' => 'control-label']) !!}
+                                {!! Form::textarea('note', $booking->note, ['class' => 'form-control','rows'=>3]) !!}
+                            </div>
+                        </div>
+                    </div>
                 
                 </div>
                 <div class="block-content  block-content-narrow">
@@ -64,6 +72,8 @@
                                 <th class="text-center">Cantidad</th>
                                 <th class="text-center">valor</th>
                                 <th class="text-center">tipo</th>
+                                <th class="text-center">Noches</th>
+                                <th class="text-center">Camas</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -72,11 +82,10 @@
                                     <td class="font-w600">{{$item->name}}</td>
                                     <td class="font-w600 text-center">{{$item->quantity}}</td>
                                     <td class="font-w600 text-center">${{number_format($item->price)}}</td>
-                                    
                                     <td class=" text-center">
                                         @if($item->type == 0)
                                             <span class="badge badge-primary">Paquete</span>
-                                            @elseif($item->type == 1)
+                                        @elseif($item->type == 1)
                                             <span class="badge badge-success">Actividad</span>
                                         @elseif($item->type == 2)
                                             <span class="badge badge-danger">Hotel</span>
@@ -84,7 +93,8 @@
                                             <span class="badge badge-default">Servicio Adicional</span>
                                         @endif
                                     </td>
-                                
+                                    <td class="text-center"><span class="badge badge-danger">{{$item->nights}}</span></td>
+                                    <td class="text-center"><span class="badge badge-success">{{$item->bed}}</span></td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -112,7 +122,8 @@
                                     <td class="font-w600">{{$item->name}}</td>
                                     <td class=" text-center">{{$item->email}}</td>
                                     <td class=" text-center">{{($item->age)}}</td>
-                                    <td class="text-center">{{($item->country)}}</th>
+                                    <td class="text-center">
+                                    {{($item->country)}}</th>
                                     <td class=" text-center">
                                         @if($item->type == 0)
                                             <span class="badge badge-primary">Adulto</span>
@@ -122,7 +133,7 @@
                                             <span class="badge badge-danger">Infante</span>
                                         @endif
                                     </td>
-                    
+                                
                                 </tr>
                             @endforeach
                             </tbody>
@@ -148,11 +159,7 @@
                                     <td class="font-w600">{{$item->value}}</td>
                                     <td class=" text-center">{{$item->stripe}}</td>
                                     <td class=" text-center">
-                                        @if($item->status == 0)
-                                            <span class="badge badge-primary">Adulto</span>
-                                        @else
-                                            <span class="badge badge-success">Niño</span>
-                                        @endif
+                                        <span class="badge badge-primary">{{$item->status}}</span>
                                     </td>
                                 </tr>
                             @endforeach

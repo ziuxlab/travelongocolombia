@@ -13,6 +13,7 @@ class booking extends Model
         'price',
         'user_id',
         'status', //['paid','declined','pending']
+        'note', //['paid','declined','pending']
     ];
     
     public function user()

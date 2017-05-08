@@ -207,7 +207,7 @@
         var adults         = $('#adults').val();
         var children       = $('#children').val();
         var nights         = $('#nights').val() || 1;
-        var total          = adults * nights * price_adults + children * price_children;
+        var total          = adults * nights * price_adults + children * price_children * nights;
         $('.total').html(total);
         $('#total').val(total);
         console.log(total)

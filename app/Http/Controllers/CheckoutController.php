@@ -90,7 +90,6 @@
             //si el usuario agrega una nota redirige al checkout de lo contrario sigue al proceso de pago
             if (array_has($request, 'note')) {
                 Session::put('note', $request->note);
-                
                 return redirect('checkout');
             }
             
@@ -119,7 +118,9 @@
             $booking = booking::create([
                 'user_id' => Auth::user()->id,
                 'price'   => Cart::getTotal(),
+                'note' => Session::get('note'),
             ]);
+            
             
             //añadimos la informacion al booking detail
             foreach (Cart::getContent() as $item) {
@@ -132,11 +133,15 @@
                     'name'       => $item->name,
                     'price'      => $item->price,
                     'quantity'   => $item->quantity,
-                    'nights'     => (isset($item->attributes->nights) ? $item->attributes->nights : 0),
-                    'bed'        => (isset($item->attributes->bed) ? $item->attributes->bed : 0),
+                    'nights'     => (($item->attributes->nights <> null) ? $item->attributes->nights : 0),
+                    'bed'        => (($item->attributes->bed <> null) ? $item->attributes->bed : 0),
                     'booking_id' => $booking->id,
                 ]);
+                
             }
+            
+           
+            
             //creamos los contactos para adultos
             for ($i = 0; $i < count($request->adult['full_name']); $i++) {
                 

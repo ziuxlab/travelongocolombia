@@ -22,6 +22,8 @@ class CreateBookingDetailsTable extends Migration
             $table->tinyInteger('type')->unsigned()->default(1); //1 para productos, 2 para vuelos
             $table->Integer('price')->unsigned();
             $table->tinyInteger('quantity')->unsigned();
+            $table->tinyInteger('nights')->unsigned()->nullable();
+            $table->tinyInteger('bed')->unsigned()->nullable();
             $table->string('name');
             $table->timestamps();
         });

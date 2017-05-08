@@ -61,6 +61,7 @@
                 ]
             ]);
             
+            
             if (Session::has('adults')) {
                 if (Session::get('adults') < $request->adults) {
                     Session::put('adults', $request->adults);

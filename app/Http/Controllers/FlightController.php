@@ -227,7 +227,7 @@
         {
             $client = new \GuzzleHttp\Client();
             $url = "http://partners.api.skyscanner.net/apiservices/autosuggest/v1.0/US/USD/en-US/?query=" . $term .
-                   "&apiKey=prtl6749387986743898559646983194";
+                   "&apiKey=zi818817858522553364254685816263";
             $response = $client->get($url);
             $respuesta = json_decode($response->getBody()
                                               ->getContents(), true);

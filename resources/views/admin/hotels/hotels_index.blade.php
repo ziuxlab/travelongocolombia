@@ -7,7 +7,7 @@
 @stop
 
 @section('style')
-<link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
 @stop
 
 @section('breadcrumb')
@@ -44,7 +44,8 @@
                         <td>{{$package->local}}</td>
                         <td class="text-center">
                             <div class="btn-group">
-                                <a href="{{url('admin/hotels/'. $package->id . '/edit')}}" class="btn btn-xs btn-default"
+                                <a href="{{url('admin/hotels/'. $package->id . '/edit')}}"
+                                   class="btn btn-xs btn-default"
                                    type="button" data-toggle="tooltip" title=""
                                    data-original-title="Editar Hotel"><i class="fa fa-pencil"></i></a>
                                 <button class="js-swal-confirm btn btn-xs btn-default" type="button"
@@ -61,7 +62,9 @@
                 @endforeach
                 </tbody>
             </table>
-            {{ $packages->links() }}
+            <div class="text-center">
+                {{ $packages->links() }}
+            </div>
         </div>
     </div>
 @stop
