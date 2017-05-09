@@ -27,6 +27,7 @@
 
 <!-- carga de css mientras entra a produccion, eliminar despues -->
 <link href="{{ asset(mix('/css/app-home.css')) }}" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
 <link href="https://file.myfontastic.com/yCCPuyfvUjUbet8RsGQ43W/icons.css" rel="stylesheet">
 
 @yield('style')

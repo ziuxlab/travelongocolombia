@@ -20,7 +20,6 @@
                     <i class="fa fa-image"></i>
                 </button>
             </li>
-            
             <li>
                 <button type="button" onclick="javascript:resizeImage('{{ $file_name }}')">
                     <i class="fa fa-arrows"></i></button>

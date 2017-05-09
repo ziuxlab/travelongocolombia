@@ -2,7 +2,7 @@
 <script src="{{ asset('js/oneui.min.js') }}"></script>
 @yield('scripts')
 @stack('scripts')
-
+@include('layouts.admin.partials._sweetalert')
 <script>
     $('.search').keyup(function (event) {
         if (event.which == 13) {

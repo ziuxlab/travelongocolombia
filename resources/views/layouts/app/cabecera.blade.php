@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="push-10-r hidden-xs ">
-                            <a class="text-white" href="">@lang('cabecera.Hi',['name'=> Auth::user()->name])</a>
+                            <a class="text-white" href="{{url('account/dashboard')}}">@lang('cabecera.Hi',['name'=> Auth::user()->name])</a>
                         </div>
                     @endif
                     <div class="push-20-r push-5-l">

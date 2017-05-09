@@ -13,7 +13,6 @@
 @stop
 
 @section('style')
-    <link rel="stylesheet" href="{{asset('js/plugins/sweetalert2/sweetalert2.css')}}">
     {{$Config->css}}
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet'/>
@@ -191,5 +190,5 @@
     
     
     </script>
-    @include('layouts.admin.partials._sweetalert')
+   
 @stop

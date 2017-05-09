@@ -28,7 +28,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('user.dashboard');
+        $vista = 'app.user.dashboard';
+        return view('app.user', compact('vista'));
     }
 
 
@@ -40,7 +41,8 @@ class DashboardController extends Controller
      */
     public function editProfile()
     {
-        return view('user.edit_profile');
+        $vista = 'app.user.edit_profile';
+        return view('app.user', compact('vista'));
     }
 
 
@@ -70,10 +72,11 @@ class DashboardController extends Controller
             Image::make($request->file('image'))->fit(256, 256)->save($path, 50);
             $auth_user->img = $path;
         }
-
+        Session::flash('mensaje','the personal information was changed correctly');
         $auth_user->save();
-
-        return view('user.edit_profile');
+    
+     
+        return redirect('account/edit-profile');
     }
 
 
@@ -85,7 +88,8 @@ class DashboardController extends Controller
      */
     public function changePassword()
     {
-        return view('user.change_password');
+        $vista = 'app.user.change_password';
+        return view('app.user', compact('vista'));
     }
 
 
@@ -110,11 +114,14 @@ class DashboardController extends Controller
 
         if (Hash::check($request->current, $auth_user->password)) {
             $auth_user->password = bcrypt($request->password);
+            Session::flash('mensaje','the password changed correctly');
+        }else{
+            Session::flash('error','the password don´t changed try again');
         }
 
         $auth_user->save();
 
-        return view('user.change_password');
+        return redirect('account/change-password');
     }
 
 
