@@ -66,10 +66,10 @@
             <!-- Side Content -->
             <div class="side-content">
                 <ul class="nav-main">
-                    <li>
+                <!-- <li>
                         <a class="{{Request::is('admin/home') ? 'active' :''}}tutorial-dashboard" href="{{Url('admin/home')}}"><i class="si si-speedometer"></i><span
                                     class="sidebar-mini-hide">Dashboard</span></a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="{{Request::is('admin/pages') ? 'active' :''}}" href="{{url('admin/pages')}}"><i class="si si-docs"></i><span
                                     class="sidebar-mini-hide">Páginas</span></a>

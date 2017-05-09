@@ -21,6 +21,9 @@
                 <thead>
                 <tr>
                     <th>@lang('general.name')</th>
+                    <th class="text-center">@lang('general.Adults')</th>
+                    <th class="text-center">@lang('general.children')</th>
+                    <th class="text-center">@lang('general.infants')</th>
                     <th class="">Price</th>
                     <th class="" style="width: 15%;">@lang('general.status')</th>
                     <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
@@ -30,6 +33,9 @@
                 @foreach($bookings as $package)
                     <tr id="{{$package->id}}">
                         <td class="text-capitalize">{{$package->user->name}}</td>
+                        <td class="text-center">{{count($package->contacts->where('type',0))}}</td>
+                        <td class="text-center">{{count($package->contacts->where('type',1))}}</td>
+                        <td class="text-center">{{count($package->contacts->where('type',2))}}</td>
                         <td class="hidden-xs">${{number_format($package->price) }}</td>
                         <td class="">
                             @if($package->status == 'paid')

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -132,8 +133,11 @@ class DashboardController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function indexBookingHistory()
-    {        
-        return view('user.booking_history');
+    {
+        $vista = 'app.user.booking_history';
+        $bookings = booking::with('contacts','details')->where('user_id',Auth::user()->id)->paginate(5);
+        return view('app.user', compact('vista','bookings'));
+       
     }
 
 
@@ -145,39 +149,12 @@ class DashboardController extends Controller
      */
     public function indexPaymentHistory()
     {
-        return view('user.payment_history');
+    
+        $vista = 'app.user.payment_history';
+        $bookings_payments = Auth::user()->bookingsPayments()->paginate(5);
+        return view('app.user', compact('vista','bookings_payments'));
+        
     }
-
-     /**
-     * Display the listing of the booking history.
-     * Muestra the lista del historial de reservas.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function bookingsList($id=null)
-    {
-        if($id!=null){
-           Session::put('booking_id', $id);
-       }
-
-       $bookings = Auth::user()->bookings()->paginate(5);
-       return view('user._list_bookings', compact('bookings'));
-   }
-
-    /**
-     * Display the listing of the payment history.
-     * Muestra the lista del historial de pagos.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function paymentsList($id=null)
-    {
-        if($id!=null){
-           Session::put('payment_id', $id);
-       }
-
-       $bookings_payments = Auth::user()->bookingsPayments()->paginate(5); 
-       return view('user._list_payments', compact('bookings_payments'));
-   }
+    
 
 }

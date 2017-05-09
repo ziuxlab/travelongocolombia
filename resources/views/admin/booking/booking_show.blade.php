@@ -58,7 +58,6 @@
                             </div>
                         </div>
                     </div>
-                
                 </div>
                 <div class="block-content  block-content-narrow">
                     <div CLASS="block block-bordered block-rounded block-themed ">
