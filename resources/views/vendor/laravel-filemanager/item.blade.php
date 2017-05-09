@@ -1,3 +1,4 @@
+<?php $file = json_decode(json_encode($file),true) ; ?>
 <?php $file_name = $file['name']; ?>
 <?php $thumb_src = $file['thumb']; ?>
 
@@ -52,7 +53,7 @@
         
         <h4 class="font-w300 push-5">  {{ str_limit($file_name, $limit = 20, $end = '...') }}</h4>
         <span class="text-gray">{{ $file['type'] }} | {{ $file['size'] }}</span>
-        
+    
     </div>
 </div>
 

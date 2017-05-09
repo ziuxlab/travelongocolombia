@@ -96,8 +96,7 @@ With 1,880 bird species and a rich biodiversity it&#39;s bliss for wildlife love
             Components::create([
                 'name'            => 'Get A Global Caffeine Fix With These Coffee-Inspired Tours',
                 'body'            => '<div class="content-boxed content"><div class="col-sm-12"><div class="block block-themed"><div class="block-header bg-primary-darkest"><h3 class="block-title">Get A Global Caffeine Fix With These Coffee-Inspired Tours</h3></div>
-<div class="block-content"><p class="font-w700">&quot;By Frommers&quot;</p><p class="text-justify">
-<div class="row col-sm-6 push-5-r"><img align="left" class=" img-responsive img-thumb " src="//travelongocolombia.com/img/articulos/articulo-2.jpg"></div>
+<div class="block-content"><p class="font-w700">&quot;By Frommers&quot;</p><p class="text-justify"><div class="row col-sm-6 push-5-r"><img align="left" class=" img-responsive img-thumb " src="//travelongocolombia.com/img/articulos/articulo-2.jpg"></div>
 The Quind&iacute;o region of Colombia -- the Zona Cafetera - is the heartland of the country&#39;s coffee growing industry &hellip;which lists a number of fincas, traditional country houses/farms that are located on working coffee plantations. Some are quite basic, while others feature swimming pools and antique furniture. Prices are quite low, starting at less than $20 per person per night and will often include breakfast, unlimited fresh coffee and a tour of the coffee plantation. The region is also home to a coffee theme park - Parque Nacional del Caf&eacute; which features a coffee process museum, coffee-based food stands and a plaza highlighting traditional Colombian architecture.</p></div></div></div></div>',
                 'page_id'         => 11,
                 'order_component' => 2,
