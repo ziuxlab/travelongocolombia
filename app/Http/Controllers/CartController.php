@@ -44,10 +44,27 @@
             //
             $item = Product::findorfail($request->id);
             
+            //si es hotel deben verificar los tipos de habitaciones
+            
+           $total = 0;
+            
+            if ($request->type == 2){
+                $hotel = Product::with('kindsHotel')->where('id',$request->id)->first()->kindsHotel;
+                foreach ($request->rooms as $room){
+                    $kind_room = $hotel->where('id', $room['id'])->first();
+                    $total = $total + ($kind_room->pivot->price)  ;
+                }
+               
+                dd($hotel);
+                $total = $request->nights * ($request->adults + $request->children);
+            }else{
+                $total = $request->total;
+            }
+            
             Cart::add([
                 'id'         => $item->id,
                 'name'       => $item->tittle,
-                'price'      => $request->total,
+                'price'      => $total,
                 'quantity'   => 1,
                 'attributes' => [
                     'adults'   => $request->adults,
@@ -56,8 +73,7 @@
                     'type'     => $request->type,
                     'nights'   => (isset($request->nights) ? $request->nights : 0),
                     'bed'      => (isset($request->bed) ? $request->bed : 0),
-                    'img'      => $item->photos->sortBy('order')
-                                               ->first()->img
+                    'img'      => $item->photos == null ? $item->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg'
                 ]
             ]);
             

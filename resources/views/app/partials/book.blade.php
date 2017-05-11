@@ -32,60 +32,7 @@
                         @endif
                     </div>
                 </div>
-                @if($item->type == 2)
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group {{ $errors->has('nights') ? ' has-error' : '' }}">
-                                {!! Form::label(trans('general.night').':', null, ['class' => 'control-label']) !!}
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                <button type="button" class="btn btn-xs btn-default value-control"
-                                        data-action="minus" data-target="nights">
-                                    <span class="glyphicon glyphicon-minus"></span>
-                                </button>
-                            </span>
-                                    {!! Form::text('nights', old('nights') or 1, ['class' => 'form-control text-center','id'=>'nights','min'=>0,'max'=>10]) !!}
-                                    <span class="input-group-btn">
-                                <button type="button" class="btn btn-xs  btn-default value-control"
-                                        data-action="plus" data-target="nights">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                </button>
-                            </span>
-                                </div>
-                                @if ($errors->has('nights'))
-                                    <span class="help-block">
-                            <strong>{{ $errors->first('nights') }}</strong>
-                        </span>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
-                                {!! Form::label(trans('general.rooms').':', null, ['class' => 'control-label']) !!}
-                                <div class="input-group">
-                                    <span class="input-group-btn">
-                                <button type="button" class="btn btn-xs btn-default value-control"
-                                        data-action="minus" data-target="bed">
-                                    <span class="glyphicon glyphicon-minus"></span>
-                                </button>
-                            </span>
-                                    {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center','id'=>'bed','min'=>0,'max'=>10]) !!}
-                                    <span class="input-group-btn">
-                                <button type="button" class="btn btn-xs  btn-default value-control"
-                                        data-action="plus" data-target="bed">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                </button>
-                            </span>
-                                </div>
-                                @if ($errors->has('bed'))
-                                    <span class="help-block">
-                                    <strong>{{ $errors->first('bed') }}</strong>
-                                </span>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                @endif
+                
                 <div class="row">
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('adults')  ? ' has-error' : '' }}">
@@ -163,7 +110,69 @@
                         </div>
                     </div>
                 </div>
-                <!--
+                @if($item->type == 2)
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group {{ $errors->has('nights') ? ' has-error' : '' }}">
+                                {!! Form::label(trans('general.night').':', null, ['class' => 'control-label']) !!}
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs btn-default value-control"
+                                        data-action="minus" data-target="nights">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                                    {!! Form::text('nights', old('nights') or 1, ['class' => 'form-control text-center','id'=>'nights','min'=>0,'max'=>10]) !!}
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs  btn-default value-control"
+                                        data-action="plus" data-target="nights">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                                </div>
+                                @if ($errors->has('nights'))
+                                    <span class="help-block">
+                            <strong>{{ $errors->first('nights') }}</strong>
+                        </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
+                                {!! Form::label(trans('general.rooms').':', null, ['class' => 'control-label']) !!}
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs btn-default value-control"
+                                        data-action="minus" data-target="bed">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                                    {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center rooms','id'=>'bed','min'=>0,'max'=>10]) !!}
+                                    <span class="input-group-btn">
+                                <button type="button" class="btn btn-xs  btn-default value-control"
+                                        data-action="plus" data-target="bed">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                                </div>
+                                @if ($errors->has('bed'))
+                                    <span class="help-block">
+                                    <strong>{{ $errors->first('bed') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="rooms">
+                        <div class="col-sm-6" id="room_1">
+                            <div class="form-group">
+                                {!! Form::label(trans('general.rooms').' 1:', null, ['class' => 'control-label']) !!}
+                                {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control']) !!}
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            <!--
                 <div class="border-t ">
                     <div class="text-right bg-gray-lighter overflow-hidden content-mini content-mini-full ">
                         <label class="h3 font-w600 col-xs-6 control-label ">Total:</label>
@@ -197,9 +206,11 @@
     });
     $('#checkin').change(function () {
         var today = $('#checkin').datepicker('getDate');
-        today.setDate(today.getDate() + parseInt(('{{$item->days}}').replace( /\D+/g, '')));
+        today.setDate(today.getDate() + parseInt(('{{$item->days}}').replace(/\D+/g, '')));
         $('#checkout').datepicker('setDate', today);
     });
+    
+    
     
     function costos() {
         var price_adults   = '{{$item->price_adults * (1 - ($item->discount/100))}}';
@@ -207,23 +218,55 @@
         var adults         = $('#adults').val();
         var children       = $('#children').val();
         var nights         = $('#nights').val() || 1;
-        var total          = adults * nights * price_adults + children * price_children * nights;
+        var total = adults * price_adults + children * price_children;
+        
         $('.total').html(total);
         $('#total').val(total);
         console.log(total)
     }
     
+     function agregar_rooms(value,action) {
+         
+         var kinds_room = <?php echo json_encode($item->kindsHotel); ?>;
+         if (action == "minus" && value > 0) {
+             $('#room_'+ (value)).remove()
+         }
+    
+         if (action == "plus") {
+             value = parseInt(value) + 1;
+             html = '<div class="col-sm-6" id="room_1"><div class="form-group">'+
+                             '<label class="control-label">Rooms ' + value +':</label>' +
+                     '<select class="form-control" name="rooms[' + value + '][id]">';
+             $.each(kinds_room, function (i, elem) {
+                 // do your stuff
+                 html = html +  '<option value="'+ elem.id+'">'+ elem.kind_room +'</option>'
+                 
+             });
+             html = html + '</select></div></div>'
+             
+             $('#rooms').append(html)
+         }
+        
+    }
     
     $(document).on('click', '.value-control', function () {
         var action = $(this).attr('data-action');
         var target = $(this).attr('data-target');
         var value  = parseFloat($('[id="' + target + '"]').val());
+    
+        if(target == 'bed'){
+            agregar_rooms(value,action)
+        }
+        
         if (action == "plus") {
             value++;
         }
         if (action == "minus" && value > 0) {
             value--;
         }
+    
+       
+        
         $('[id="' + target + '"]').val(value);
         costos()
     });

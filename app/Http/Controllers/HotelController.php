@@ -127,6 +127,7 @@
                            ->firstOrFail()
             ;
             
+            
             return view('app.product-item', compact('item'));
         }
         
