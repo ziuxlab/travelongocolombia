@@ -636,18 +636,20 @@
     
     
             //============= Servicios Adicionales =============//
-            
-            Photo::create([
-                'product_id' => 30,
-                'img'        => 'img/services/cousin.jpg',
-                'order'      => 1,
-            ]);
     
             Photo::create([
-                'product_id' => 31,
-                'img'        => 'img/services/latin-dance.jpg',
+                'product_id' => 30,
+                'img'        => 'img/services/guide.jpg',
                 'order'      => 1,
             ]);
+            
+            
+            Photo::create([
+                'product_id' => 31,
+                'img'        => 'img/services/car.jpg',
+                'order'      => 1,
+            ]);
+            
     
             Photo::create([
                 'product_id' => 32,
@@ -760,27 +762,26 @@
                 'order'      => 1,
             ]);
     
+           
             Photo::create([
                 'product_id' => 64,
-                'img'        => 'img/services/airplane-reservation.jpg',
+                'img'        => 'img/services/accomodation.jpg',
                 'order'      => 1,
             ]);
+            
             Photo::create([
                 'product_id' => 65,
-                'img'        => 'img/services/accomodation.jpg',
+                'img'        => 'img/services/cousin.jpg',
                 'order'      => 1,
             ]);
     
             Photo::create([
                 'product_id' => 66,
-                'img'        => 'img/services/guide.jpg',
+                'img'        => 'img/services/latin-dance.jpg',
                 'order'      => 1,
             ]);
-            Photo::create([
-                'product_id' => 67,
-                'img'        => 'img/services/car.jpg',
-                'order'      => 1,
-            ]);
+    
+           
             
             // actividades 2
     

@@ -35,7 +35,7 @@
                                         <td class="font-w700 text-center">Quantity</td>
                                         <td class="font-w700 text-center">type</td>
                                         <td class="text-center">@lang('general.night')</td>
-                                        <td class="text-center">@lang('general.beds')</td>
+                                        <td class="text-center">@lang('general.rooms')</td>
                                     </tr>
                                     </thead>
                                     <tbody>

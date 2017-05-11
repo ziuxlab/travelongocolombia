@@ -77,6 +77,34 @@
                                 </h3>
                                 <p class="text-muted text-justify">{{$item->description}}</p>
                             </div>
+                        </div>
+                        <div class="push-30">
+                            <h3 class="h3 text-capitalize push-15 "><i
+                                        class=" text-primary fa fa-camera-retro"></i> @lang('general.photos')</h3>
+                            @if(count($item->photos)>0)
+                                <div class="">
+                                    <!-- Slider -->
+                                    <div class="js-slider">
+                                        @foreach($item->photos as $photo)
+                                            <div>
+                                                <img class="img-responsive border img-thumb"
+                                                     src="{{asset($photo->img)}}">
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="slider-nav">
+                                        @foreach($item->photos as $photo)
+                                            
+                                            <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                        
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        <div>
                             @if($item->type !== 2)
                                 <div class="row content-mini content-mini-full border-t">
                                     <h4 class=" h5 col-xs-6">@lang('general.duration'):</h4>
@@ -118,32 +146,6 @@
                                 </div>
                             @endif
                         </div>
-                        <div class="push-30">
-                            <h3 class="h3 text-capitalize push-15 "><i
-                                        class=" text-primary fa fa-camera-retro"></i> @lang('general.photos')</h3>
-                            @if(count($item->photos)>0)
-                                <div class="">
-                                    <!-- Slider -->
-                                    <div class="js-slider">
-                                        @foreach($item->photos as $photo)
-                                            <div>
-                                                <img class="img-responsive border img-thumb"
-                                                     src="{{asset($photo->img)}}">
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="slider-nav">
-                                        @foreach($item->photos as $photo)
-                                            
-                                            <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
-                                        
-                                        @endforeach
-                                    </div>
-                                </div>
-                            @endif
-                        </div>
                         @if($item->type == 0)
                             <div class="">
                                 <div>
@@ -180,6 +182,7 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            autoplay: true,
             fade: true,
             asNavFor: '.slider-nav'
         });

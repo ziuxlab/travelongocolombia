@@ -8,6 +8,8 @@
 @stop
 
 @section('style')
+    <link rel="stylesheet" href="{{asset('js/plugins/slick/slick.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/slick/slick-theme.min.css')}}">
 @stop
 
 @section('breadcrumb')
@@ -29,4 +31,10 @@
 @stop
 
 @section('scripts')
+    <script src="{{asset('js/plugins/slick/slick.min.js')}}"></script>
+    <script>
+        $(function(){
+            App.initHelper('slick');
+        });
+    </script>
 @stop

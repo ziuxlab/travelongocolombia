@@ -52,6 +52,11 @@
 
 @section('scripts')
     {{$Config->scripts_footer}}
-    @include('admin.flights._scripts_flights')
+    <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+    <script>
+        $(function () {
+            App.initHelper('datepicker');
+        });
+    </script>
     
 @stop

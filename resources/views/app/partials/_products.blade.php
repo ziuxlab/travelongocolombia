@@ -25,8 +25,9 @@
             <a href="{{url(trans('general.hotels').'/'.$product->slug_url)}}">
                 <h2 class="text-capitalize h3">{{$product->tittle}}</h2></a>
         @endif
-        <p class="push-15">{{substr($product->description,0,171)}}...</p>
+        <p class="push-10">{{substr($product->description,0,171)}}...</p>
         @if($product->features)
+            <p class="font-w600 push-5">@lang('general.facilities'):</p>
             <div class="push-20">
                 @foreach($product->features->where('type',$product->type)->take(5) as $feature)
                     <span style="cursor: default" class="btn bg-gray-lighter border push-10-r"

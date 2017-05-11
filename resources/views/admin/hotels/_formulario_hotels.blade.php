@@ -21,67 +21,36 @@
             @endif
         </div>
     </div>
+    
 </div>
 <div class="row">
-    
-    <div class="col-sm-3">
-        <div class="form-group {{ $errors->has('days') ? ' has-error' : '' }}">
-            {!! Form::label('Días:', null, ['class' => 'control-label']) !!}
-            {!! Form::text('days', old('days'), ['class' => 'form-control','placeholder'=>'10 Days']) !!}
-            @if ($errors->has('days'))
-                <span class="help-block">
-            <strong>{{ $errors->first('days') }}</strong>
-        </span>
-            @endif
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group {{ $errors->has('price_adults') ? ' has-error' : '' }}">
-            {!! Form::label('Precio Adultos:', null, ['class' => 'control-label']) !!}
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
-                {!! Form::number('price_adults', old('price_adults'), ['class' => 'form-control','placeholder'=>'99']) !!}
-                
-                <span class="input-group-addon">.00</span>
+    @foreach($kindshotel as $item)
+        <div class="col-sm-6">
+            <div class="form-group">
+                {!! Form::label($item->kind_room.':', null, ['class' => 'control-label']) !!}
+                <?php
+                $kind_room = isset($package) ? $package->kindsHotel->where('id', $item->id)
+                                                                        ->first() : null;
+                ?>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">Precio:</span>
+                            {!! Form::number('kindshotel['.$item->id.'][price]', $kind_room != null ? $kind_room->pivot->price : 0 , ['class' => 'form-control']) !!}
+                        </div>
+                    
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">cantidad:</span>
+                            {!! Form::number('kindshotel['.$item->id.'][quantity]',$kind_room != null ? $kind_room->pivot->quantity : 0, ['class' => 'form-control']) !!}
+                        </div>
+                    </div>
+                </div>
             </div>
-            @if ($errors->has('price_adults'))
-                <span class="help-block">
-            <strong>{{ $errors->first('price_adults') }}</strong>
-        </span>
-            @endif
         </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group {{ $errors->has('price_children') ? ' has-error' : '' }}">
-            {!! Form::label('Precio Niños:', null, ['class' => 'control-label']) !!}
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
-                {!! Form::number('price_children', old('price_children'), ['class' => 'form-control','placeholder'=>'99']) !!}
-                
-                <span class="input-group-addon">.00</span>
-            </div>
-            @if ($errors->has('price_children'))
-                <span class="help-block">
-            <strong>{{ $errors->first('price_children') }}</strong>
-        </span>
-            @endif
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group {{ $errors->has('discount') ? ' has-error' : '' }}">
-            {!! Form::label('Descuento:', null, ['class' => 'control-label']) !!}
-            <div class="input-group">
-                {!! Form::number('discount', old('discount'), ['class' => 'form-control','placeholder'=>'10']) !!}
-                
-                <span class="input-group-addon"><i class="fa fa-percent"></i></span>
-            </div>
-            @if ($errors->has('discount'))
-                <span class="help-block">
-            <strong>{{ $errors->first('discount') }}</strong>
-        </span>
-            @endif
-        </div>
-    </div>
+    @endforeach
+
 </div>
 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
     {!! Form::label('Description:', null, ['class' => 'control-label']) !!}

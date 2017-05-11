@@ -26,10 +26,10 @@
     <div class="col-sm-4">
         <div class="form-group text-center {{ $errors->has('checkout') || $errors->has('checkin') ? ' has-error' : '' }}">
             {!! Form::label(trans('general.between_dates').':', null, ['class' => ' control-label']) !!}
-            <div class="input-daterange input-group" data-date-format="mm/dd/yyyy">
-                {!! Form::text('checkin', old('checkin'), ['class' => 'js-datepicker form-control','required','placeholder'=> trans('general.since')]) !!}
+            <div class="input-daterange input-group" >
+                {!! Form::text('checkin', old('checkin'), ['class' => 'js-datepicker form-control','data-date-format'=>'mm-dd-yyyy','required','placeholder'=> trans('general.since')]) !!}
                 <span class="input-group-addon"><i class="fa fa-chevron-right"></i></span>
-                {!! Form::text('checkout', old('checkout'), ['class' => 'js-datepicker form-control','required','placeholder'=> trans('general.until')]) !!}
+                {!! Form::text('checkout', old('checkout'), ['class' => 'js-datepicker form-control','data-date-format'=>'mm-dd-yyyy','required','placeholder'=> trans('general.until')]) !!}
             </div>
             @if ($errors->has('checkout'))
                 <span class="help-block"><strong>{{ $errors->first('checkout') }}</strong></span>

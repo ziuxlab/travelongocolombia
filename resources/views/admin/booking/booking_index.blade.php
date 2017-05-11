@@ -20,18 +20,20 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
+                    <th>Fecha</th>
                     <th>@lang('general.name')</th>
                     <th class="text-center">@lang('general.Adults')</th>
                     <th class="text-center">@lang('general.children')</th>
                     <th class="text-center">@lang('general.infants')</th>
                     <th class="">Price</th>
-                    <th class="" style="width: 15%;">@lang('general.status')</th>
+                    <th class="">@lang('general.status')</th>
                     <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($bookings as $package)
                     <tr id="{{$package->id}}">
+                        <td class="">{{$package->created_at}}</td>
                         <td class="text-capitalize">{{$package->user->name}}</td>
                         <td class="text-center">{{count($package->contacts->where('type',0))}}</td>
                         <td class="text-center">{{count($package->contacts->where('type',1))}}</td>
@@ -41,7 +43,6 @@
                             @if($package->status == 'paid')
                                 <span class="label label-success">Pagado</span>
                             @else
-                               
                                 <span class="label label-danger">Pendiente</span>
                             @endif
                         </td>

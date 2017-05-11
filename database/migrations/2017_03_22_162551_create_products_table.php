@@ -18,8 +18,8 @@ class CreateProductsTable extends Migration
             $table->string('tittle'); //url de la pagina
             $table->string('slug_url')->unique(); //url de la pagina
             $table->string('days')->nullable(); //duracion de la actividad
-            $table->Integer('price_adults')->unsigned()->nullable();
-            $table->Integer('price_children')->unsigned()->nullable();
+            $table->Integer('price_adults')->unsigned()->nullable()->default(0);
+            $table->Integer('price_children')->unsigned()->nullable()->default(0);
             $table->tinyInteger('discount')->unsigned()->nullable()->default(0);
             $table->longText('itinerary')->nullable(); //contenido
             $table->mediumText('include')->nullable(); //price include

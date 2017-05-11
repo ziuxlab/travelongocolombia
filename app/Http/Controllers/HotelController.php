@@ -2,6 +2,7 @@
     
     namespace App\Http\Controllers;
     
+    use App\kindsHotel;
     use App\Photo;
     use App\Product;
     use Illuminate\Http\Request;
@@ -32,6 +33,7 @@
             $packages = Product::where('type', 2)
                                ->paginate(10)
             ;
+           
             
             return view('admin.hotels.hotels_index', compact('packages'));
         }
@@ -44,7 +46,8 @@
         public function create()
         {
             //
-            return view('admin.hotels.hotels_create');
+            $kindshotel = kindsHotel::all();
+            return view('admin.hotels.hotels_create', compact('kindshotel'));
         }
         
         /**
@@ -65,10 +68,6 @@
             $activity = Product::create([
                 'tittle'            => $request->tittle,
                 'slug_url'          => str_slug($request->slug_url, '-'),
-                'days'              => $request->days,
-                'price_adults'      => $request->price_adults,
-                'price_children'    => $request->price_children,
-                'discount'          => $request->discount,
                 'meta_description'  => $request->meta_description,
                 'keywords'          => $request->keywords,
                 'status'            => $request->status,
@@ -81,6 +80,18 @@
                 'city_id'           => $request->city_id,
                 'type'              => 2,
             ]);
+    
+            $kindshotel = collect($request->kindshotel);
+    
+            //descartamos los kindshotel que tengan cantidad 0
+            foreach ($kindshotel  as $key => $item) {
+        
+                if ($item['quantity'] == 0){
+                    $kindshotel->pull($key);
+                }
+            }
+            
+            Product::find($activity->id)->kindsHotel()->sync($kindshotel->toArray());
     
             Product::find($activity->id)->features()->attach($request->features);
             
@@ -129,12 +140,15 @@
         public function edit($id)
         {
             //
-            $package = Product::with('photos')
+            $package = Product::with('photos','kindsHotel')
                               ->whereId($id)
                               ->first()
             ;
+            
     
-            return view('admin.hotels.hotels_edit', compact('package'));
+            $kindshotel = kindsHotel::all();
+    
+            return view('admin.hotels.hotels_edit', compact('package','kindshotel'));
         }
         
         /**
@@ -148,15 +162,11 @@
         public function update(Request $request, $id)
         {
             //
-            
+           
             
             Product::find($id)->update([
                 'tittle'            => $request->tittle,
                 'slug_url'          => str_slug($request->slug_url, '-'),
-                'days'              => $request->days,
-                'price_adults'      => $request->price_adults,
-                'price_children'    => $request->price_children,
-                'discount'          => $request->discount,
                 'meta_description'  => $request->meta_description,
                 'keywords'          => $request->keywords,
                 'status'            => $request->status,
@@ -168,8 +178,20 @@
                 'short_description' => $request->short_description,
                 'city_id'           => $request->city_id,
             ]);
+            
+            $kindshotel = collect($request->kindshotel);
+            
+            //descartamos los kindshotel que tengan cantidad 0
+            foreach ($kindshotel  as $key => $item) {
+               
+                if ($item['quantity'] == 0){
+                    $kindshotel->pull($key);
+                }
+            }
     
             Product::find($id)->features()->sync($request->features);
+            Product::find($id)->kindsHotel()->sync($kindshotel->toArray());
+            
     
             if ($request->file('img')) {
                 foreach ($request->file('img') as $key => $img) {

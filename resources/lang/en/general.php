@@ -89,7 +89,7 @@
         'proceed checkout'            => 'Proceed To Checkout',
         'additional services'         => 'Additional Services',
         'back'                        => 'Back',
-        'skip'                        => 'Skip',
+        'skip'                        => 'Next',
         'step-skip'                   => 'Do you want to skip this step?',
         'step-back'                   => 'Do you want back to design your plan?',
         'photos'                      => 'Photos',
@@ -147,5 +147,8 @@
         'number'                      => 'Number of CC',
         'expiration'                  => 'Expiration',
         'Signup for Newsletter'       => 'Signup for Newsletter',
+        'facilities'                  => 'Facilities',
+        'rooms'                  => 'Rooms',
+        
     
     ];

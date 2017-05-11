@@ -1515,26 +1515,28 @@
             
             
             //========== Inicio de servicios adicionales ==============//
-            
+    
             Product::create([
                 'id'          => 30,
-                'tittle'      => 'Culinary (Colombian cuisine)',
-                'slug_url'    => str_slug('Culinary (Colombian cuisine)', '-'),
+                'tittle'      => 'Guía Turístico',
+                'slug_url'    => str_slug('Guía Turístico', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+    
+            Product::create([
+                'id'          => 31,
+                'tittle'      => 'Transporte Interno',
+                'slug_url'    => str_slug('Transporte Interno', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
-                'id'          => 31,
-                'tittle'      => 'Latin rhythms (Dance)',
-                'slug_url'    => str_slug('Latin rhythms (Dance)', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
+            
             
             Product::create([
                 'id'          => 32,
@@ -1718,18 +1720,9 @@
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
-                'id'          => 64,
-                'tittle'      => 'Airline reservations',
-                'slug_url'    => str_slug('Airline reservations', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
             
             Product::create([
-                'id'          => 65,
+                'id'          => 64,
                 'tittle'      => 'Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
                 'slug_url'    => str_slug('Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
                     '-'),
@@ -1738,26 +1731,27 @@
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
-            
+    
+            Product::create([
+                'id'          => 65,
+                'tittle'      => 'Culinary (Colombian cuisine)',
+                'slug_url'    => str_slug('Culinary (Colombian cuisine)', '-'),
+                'status'      => 1,
+                'local'       => 'en',
+                'description' => '',
+                'type'        => 4, //package,activity
+            ]);
+    
             Product::create([
                 'id'          => 66,
-                'tittle'      => 'Guía Turístico',
-                'slug_url'    => str_slug('Guía Turístico', '-'),
+                'tittle'      => 'Latin rhythms (Dance)',
+                'slug_url'    => str_slug('Latin rhythms (Dance)', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
-                'id'          => 67,
-                'tittle'      => 'Transporte Interno',
-                'slug_url'    => str_slug('Transporte Interno', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
             
             
             //========== Fin de servicios adicionales ==============//

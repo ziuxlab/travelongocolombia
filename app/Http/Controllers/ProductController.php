@@ -47,6 +47,16 @@
          */
         public function list(Request $request, $type)
         {
+            
+            if (isset($request->page)){
+                Session::put('page',$request->page);
+                Session::put('type',$type);
+            }else{
+                Session::forget('page');
+                Session::forget('type');
+            }
+            
+            
             if (isset($request->feature)) {
                 $products = Product::with('features')
                                    ->where('type', $type)

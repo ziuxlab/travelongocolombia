@@ -13,8 +13,9 @@
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
         <h2 class="text-capitalize h3">{{$product->tittle}}</h2>
-        <p class="push-5">{{substr($product->description,0,171)}}...</p>
-        <div class="push-20 text-center">
+        <p class="push-10">{{substr($product->description,0,171)}}...</p>
+        <span class="font-w600">@lang('general.facilities'):</span>
+        <div class="push-20">
             @foreach($product->features->where('type',$product->type)->take(5) as $feature)
                 <span style="cursor: default" class="btn bg-gray-lighter border push-15-t push-10-r"
                       data-original-title="{{$feature->feature}}" data-toggle="tooltip" data-placement="top">
@@ -33,7 +34,7 @@
             {!! Form::open(['action'=> ['DesignController@store'], 'id'=>'formulario_book_'.$product->id]) !!}
             @if($product->type == 2)
                 <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
-                    {!! Form::label(trans('general.beds').':', null, ['class' => 'push-10-t control-label']) !!}
+                    {!! Form::label(trans('general.rooms').':', null, ['class' => 'push-10-t control-label']) !!}
                     <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"

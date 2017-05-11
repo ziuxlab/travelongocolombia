@@ -61,7 +61,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group {{ $errors->has('bed') ? ' has-error' : '' }}">
-                                {!! Form::label(trans('general.beds').':', null, ['class' => 'control-label']) !!}
+                                {!! Form::label(trans('general.rooms').':', null, ['class' => 'control-label']) !!}
                                 <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"

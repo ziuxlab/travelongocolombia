@@ -72,7 +72,7 @@
                                 <th class="text-center">valor</th>
                                 <th class="text-center">tipo</th>
                                 <th class="text-center">Noches</th>
-                                <th class="text-center">Camas</th>
+                                <th class="text-center">Habitaciones</th>
                             </tr>
                             </thead>
                             <tbody>

@@ -5,6 +5,12 @@
     z-index: 10000;
 }
 
+.list-group-item-xs {
+    padding: 5px 10px;
+    border-color: #eee;
+    line-height: 1.2;
+}
+
 .swal2-modal .swal2-content {
     font-size: 18px;
     text-align: center;

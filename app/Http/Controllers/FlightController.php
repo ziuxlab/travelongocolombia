@@ -68,6 +68,7 @@
             
           
             if ($request->options == 'onlyHotel') {
+                
                 return redirect(str_slug(trans('cabecera.Design')).'?step=2');
             }
             

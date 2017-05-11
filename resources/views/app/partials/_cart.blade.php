@@ -39,7 +39,7 @@
                             <td class="text-center">
                                 <span class="badge">{{$item->quantity}}</span>
                             </td>
-                            <!--
+                        <!--
                             <td class="text-right">
                                 <div class="h3 font-w700 text-success">
                                     ${{number_format($item->price * $item->quantity) }}</div>-->
@@ -60,12 +60,30 @@
                         <td class="text-center">
                             <div class="h3 font-w600 text-success">${{number_format(Cart::getTotal())}}</div>
                         </td>
-                       
                     </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="content">
+            <div class="content content-mini">
+                @if(Session::get('plan') != 'design')
+                    <div>
+                        <h2 class="h4">@lang('general.additional services'):</h2>
+                        <p>Si deseas alguno de estos servicios adicionales, puedes incluirlos en un mensaje en la parte inferior</p>
+                        <div class="row">
+                            @foreach($products->where('local',App::getLocale())->where('type',4)->split(3) as $items)
+                                <div class="col-sm-4">
+                                    <ul class="list-group">
+                                        @foreach($items as $item)
+                                            <li class="list-group-item list-group-item-xs">
+                                                <small>{{$item->tittle}}</small>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
                 {!! Form::open(['action'=> ['CheckoutController@store']]) !!}
                 <div class="form-group {{ $errors->has('note') ? ' has-error' : '' }}">
                     {!! Form::label(trans('general.additional_information').':', null, ['class' => 'control-label']) !!}

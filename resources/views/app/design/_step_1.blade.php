@@ -15,6 +15,8 @@
                 </div>
                 <div class="block-content block-content-full ">
                     @include('admin.flights._flights_formulario')
+                    {!! Form::hidden('options', 'onlyHotel') !!}
+                    <!--
                     <div class="row">
                         <div class="form-group">
                             <label class="col-xs-12">@lang('general.Include in package')</label>
@@ -31,7 +33,7 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="block-content border-t text-center">
                     <div class="form-group">
