@@ -82,15 +82,18 @@
             ]);
     
             $kindshotel = collect($request->kindshotel);
+
+
     
             //descartamos los kindshotel que tengan cantidad 0
             foreach ($kindshotel  as $key => $item) {
-        
                 if ($item['quantity'] == 0){
                     $kindshotel->pull($key);
                 }
             }
-            
+
+
+            //sincronizamos los tipos de cama con el hotel
             Product::find($activity->id)->kindsHotel()->sync($kindshotel->toArray());
     
             Product::find($activity->id)->features()->attach($request->features);

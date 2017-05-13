@@ -11,7 +11,7 @@
     {
         //
         use SoftDeletes;
-        use Searchable;
+        //use Searchable;
         
         protected $table = 'products';
         
@@ -44,6 +44,11 @@
         public function features()
         {
             return $this->belongsToMany('App\Feature', 'feature_products');
+        }
+
+        public function kindsHotel()
+        {
+            return $this->belongsToMany('App\kindsHotel', 'kindhotel_products')->withPivot('price', 'quantity');
         }
         
         public function city()

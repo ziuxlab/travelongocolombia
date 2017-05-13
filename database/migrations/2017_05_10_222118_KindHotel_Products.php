@@ -21,7 +21,7 @@ class KindHotelProducts extends Migration
             $table->integer('product_id')->unsigned()->index();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->integer('price')->unsigned();
-            $table->integer('quantity')->unsigned();
+            $table->integer('quantity');
             $table->timestamps();
         });
     }
