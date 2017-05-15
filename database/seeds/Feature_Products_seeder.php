@@ -79,15 +79,17 @@ class Feature_Products_seeder extends Seeder
         Product::find(22)->features()->attach([1,2,3]);
         Product::find(23)->features()->attach([1,2,3]);
         Product::find(24)->features()->attach([1,2,3]);
-        
     
         //==========  Hoteles ==============//
     
-        Product::find(25)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,33]);
-        Product::find(26)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,34]);
-        Product::find(27)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,33]);
-        Product::find(28)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,34]);
-        Product::find(29)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,35]);
-    
+        Product::find(25)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //la floresta
+        Product::find(26)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //la floresta
+        Product::find(27)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
+        Product::find(28)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
+        Product::find(29)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Armenia Hotel
+        Product::find(67)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Armenia Hotel
+        Product::find(68)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
+        Product::find(69)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
+
     }
 }

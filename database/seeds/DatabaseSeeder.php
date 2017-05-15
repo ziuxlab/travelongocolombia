@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(Feature_Products_seeder::class);
         $this->call(citiesSeeder::class);
         $this->call(kindhotelSeeder::class);
+        $this->call(Kindrooms_hotelSeeder::class);
     }
 }

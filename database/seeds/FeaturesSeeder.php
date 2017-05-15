@@ -237,16 +237,16 @@
             ]);
             Feature::create([
                 'id'            => 31,
-                'feature'       => 'Countryside',
-                'feature_es'    => 'Campestre',
+                'feature'       => 'Countryside Hotel',
+                'feature_es'    => 'Hotel Campestre',
                 'in_categories' => 1,
                 'icon'          => 'icon icon-tourism-icons-mountain-track',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([
                 'id'            => 32,
-                'feature'       => 'In The City',
-                'feature_es'    => 'En la Ciudad',
+                'feature'       => 'Cityside Hotel',
+                'feature_es'    => 'Hotel Ciudad',
                 'in_categories' => 1,
                 'icon'          => 'icon icon-tourism-icons-monument',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
@@ -273,6 +273,15 @@
                 'feature_es'    => 'Apartamento Amoblado',
                 'in_categories' => 1,
                 'icon'          => 'icon icon-tourism-icons-monument-2',
+                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
+            ]);
+
+            Feature::create([
+                'id'            => 36,
+                'feature'       => 'Restaurant',
+                'feature_es'    => 'restaurante',
+                'in_categories' => 0,
+                'icon'          => 'icon icon-tourism-icons-toast',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
         }

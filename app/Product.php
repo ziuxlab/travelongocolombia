@@ -34,6 +34,7 @@
             'short_description',      // breve resumen de la actividad, hotel o paquete
             'address',          // ubicacion de la actividad
             'city_id',        // ciudad donde se realiza la actividad o paquete
+            'address',        // ciudad donde se realiza la actividad o paquete
         ];
         
         public function photos()

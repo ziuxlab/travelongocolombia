@@ -1428,26 +1428,30 @@
             Product::create([
                 'id'               => 25,
                 'tittle'           => 'La Floresta',
-                'slug_url'         => str_slug('La Floresta', '-'),
+                'slug_url'         => str_slug('La Floresta es', '-'),
+                'price_children'   => 18,
                 'meta_description' => 'Hotel La Floresta',
                 'keywords'         => 'Hotel La Floresta',
-                'local'            => 'en',
+                'local'            => 'es',
                 'description'      => 'En la Floresta Finca Hotel  usted podrá disfrutar y explorar la exótica naturaleza del Quindío con un sendero ecológico; nacimientos de agua, diversidad de flora y fauna.',
                 'type'             => 2, //package,activity
-                'city_id'          => 4
+                'city_id'          => 1,
+                'address'          => 'Kilómetro 3 Vía al Aeropuerto El Edén, Vereda Santana'
             ]);
 
             //la floresta español
             Product::create([
                 'id'               => 26,
                 'tittle'           => 'La Floresta',
-                'slug_url'         => str_slug('La Floresta es', '-'),
+                'slug_url'         => str_slug('La Floresta', '-'),
+                'price_children'   => 18,
                 'meta_description' => 'Hotel La Floresta',
                 'keywords'         => 'Hotel La Floresta',
-                'local'            => 'es',
-                'description'      => 'At La Floresta Farm Hotel you will enjoy the exotic nature of Quindío through a nature path aside winding streams and diverse fauna and flora  ',
+                'local'            => 'en',
+                'description'      => 'At La Floresta Farm Hotel you will enjoy the exotic nature of Quindío through a nature path aside winding streams and diverse fauna and flora.',
                 'type'             => 2, //package,activity
-                'city_id'          => 4
+                'city_id'          => 1,
+                'address'          => 'Three km from the airport in village of.  Vereda Santana'
             ]);
 
             //Isa Victory Hotel Boutique
@@ -1455,47 +1459,89 @@
                 'id'               => 27,
                 'tittle'           => 'Isa Victory Hotel Boutique',
                 'slug_url'         => str_slug('Isa Victory Hotel Boutique', '-'),
+                'price_children'   => 15,
                 'meta_description' => 'Isa Victory Hotel Boutique',
                 'keywords'         => 'Isa Victory Hotel Boutique',
-                'local'            => 'en',
+                'local'            => 'es',
                 'description'      => 'Isa Victory, único hotel boutique en Armenia que Impacta, Sorprende y Atrae, está ubicado en uno de los más exclusivos sectores de la ciudad.  En la tranquilidad y elegancia de Isa Victory Hotel Boutique podrá descubrir nuevas formas de confort y atención personalizada.',
                 'type'             => 2, //package,activity
-                'city_id'          => 3
+                'city_id'          => 1,
+                'address'          => 'Avenida Bolívar 21 Norte 47'
             ]);
 
+            //Isa Victory Hotel Boutique
             Product::create([
                 'id'               => 28,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title16', '-'),
-                'days'             => 9,
-                'price_adults'     => 100,
-                'price_children'   => 100,
-                'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
-                'status'           => 1,
-                'local'            => 'es',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'tittle'           => 'Isa Victory Boutique Hotel',
+                'slug_url'         => str_slug('Isa Victory Boutique Hotel', '-'),
+                'price_children'   => 15,
+                'meta_description' => 'Isa Victory Boutique Hotel',
+                'keywords'         => 'Isa Victory Boutique Hotel',
+                'local'            => 'en',
+                'description'      => 'Isa Victory is the only ‘boutique hotel’ in the area and located in one of the more exclusive parts of Armenia.  A distinctive combination of tranquility and elegance, at the Isa Victory you will discover the comforts of home as well as excellent customer service.',
                 'type'             => 2, //package,activity
-                'city_id'          => 3
+                'city_id'          => 1,
+                'address'          => 'Avenida Bolívar 21 Norte 47'
             ]);
+
+            //Armenia Hotel
             Product::create([
                 'id'               => 29,
-                'tittle'           => 'prueba tittle',
-                'slug_url'         => str_slug('prueba title17', '-'),
-                'days'             => 9,
-                'price_adults'     => 100,
-                'price_children'   => 100,
-                'discount'         => 10, //porcentaje
-                'meta_description' => 'prueba tittle',
-                'keywords'         => 'prueba tittle',
-                'status'           => 1,
+                'tittle'           => 'Armenia Hotel',
+                'slug_url'         => str_slug('Armenia Hotel es', '-'),
+                'price_children'   => 25,
+                'meta_description' => 'Armenia Hotel',
+                'keywords'         => 'Armenia Hotel',
                 'local'            => 'es',
-                'description'      => '',
-                'itinerary'        => 'prueba tittle',
+                'description'      => 'El Armenia Hotel está ubicado en una exclusiva y estratégica zona de Armenia.  Su moderna arquitectura se combina con el auténtico mobiliario diseñado en guadua y las piezas precolombinas de la Cultura Quimbaya que decoran sus espacios.',
                 'type'             => 2, //package,activity
-                'city_id'          => 3
+                'city_id'          => 1,
+                'address'          => 'Av. Bolivar Calle 8 Norte – Esquina. Armenia'
+            ]);
+
+            //Armenia Hotel
+            Product::create([
+                'id'               => 67,
+                'tittle'           => 'Armenia Hotel',
+                'slug_url'         => str_slug('Armenia Hotel', '-'),
+                'price_children'   => 25,
+                'meta_description' => 'Armenia Hotel',
+                'keywords'         => 'Armenia Hotel',
+                'local'            => 'en',
+                'description'      => 'The Armenia Hotel is strategically located in one of the more exclusive areas of Armenia.  Its modern architecture contrasts with furnishings made of guadua (bamboo) and Precolumbian relics of Quimbaya culture.',
+                'type'             => 2, //package,activity
+                'city_id'          => 1,
+                'address'          => 'Av. Bolivar Calle 8 Norte – Esquina. Armenia'
+            ]);
+
+            //Hotel Palma Verde
+            Product::create([
+                'id'               => 68,
+                'tittle'           => 'Hotel Palma Verde',
+                'slug_url'         => str_slug('Hotel Palma Verde', '-'),
+                'price_children'   => 40,
+                'meta_description' => 'Hotel Palma Verde',
+                'keywords'         => 'Hotel Palma Verde',
+                'local'            => 'en',
+                'description'      => 'The Palma Verde is an excellent option for an unforgettable stay with the comforts of home, quietude and bliss all thanks to its remarkable service and facility design .',
+                'type'             => 2, //package,activity
+                'city_id'          => 1,
+                'address'          => 'On the roundabout of Club Campestre golf, one km from the airport of Armenia Quindío'
+            ]);
+
+            //Hotel Palma Verde
+            Product::create([
+                'id'               => 69,
+                'tittle'           => 'Hotel Palma Verde',
+                'slug_url'         => str_slug('Hotel Palma Verde es', '-'),
+                'price_children'   => 40,
+                'meta_description' => 'Hotel Palma Verde',
+                'keywords'         => 'Hotel Palma Verde',
+                'local'            => 'es',
+                'description'      => 'El Hotel Campestre Palma Verde es una excelente opción de confort, tranquilidad y diversión, dado que  cuenta con una excelente infraestructura, servicio y facilidades que hacen de la estadía de nuestros clientes una experiencia inolvidable.',
+                'type'             => 2, //package,activity
+                'city_id'          => 1,
+                'address'          => 'Glorieta Club Campestre Via Aeropuerto de Armenia - Quindío'
             ]);
             
             //========== Fin de los Hoteles ==============//
