@@ -952,11 +952,7 @@
                 'img'        => 'img/hotels/palma_verde/16.jpg',
                 'order'      => 1,
             ]);
-            Photo::create([
-                'product_id' => 68,
-                'img'        => 'img/hotels/palma_verde/17.jpg',
-                'order'      => 1,
-            ]);
+
             Photo::create([
                 'product_id' => 68,
                 'img'        => 'img/hotels/palma_verde/18.jpg',
@@ -1073,11 +1069,7 @@
                 'img'        => 'img/hotels/palma_verde/16.jpg',
                 'order'      => 1,
             ]);
-            Photo::create([
-                'product_id' => 69,
-                'img'        => 'img/hotels/palma_verde/17.jpg',
-                'order'      => 1,
-            ]);
+
             Photo::create([
                 'product_id' => 69,
                 'img'        => 'img/hotels/palma_verde/18.jpg',

@@ -38,14 +38,14 @@
                     <div class="input-group">
                                     <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs btn-default value-control"
-                                        data-action="minus" data-target="bed">
+                                        data-action="minus" data-target="bed_{{$product->id}}">
                                     <span class="glyphicon glyphicon-minus"></span>
                                 </button>
                             </span>
-                        {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center','id'=>'bed','min'=>0,'max'=>10]) !!}
+                        {!! Form::text('bed', old('bed') or 1, ['class' => 'form-control text-center','id'=>'bed_'.$product->id,'min'=>0,'max'=>10]) !!}
                         <span class="input-group-btn">
                                 <button type="button" class="btn btn-xs  btn-default value-control"
-                                        data-action="plus" data-target="bed">
+                                        data-action="plus" data-target="bed_{{$product->id}}">
                                     <span class="glyphicon glyphicon-plus"></span>
                                 </button>
                             </span>
@@ -60,10 +60,15 @@
             {!! Form::hidden('product_id', $product->id) !!}
             <div class="text-center push-10-t">
                 @if(Session::get('step') == 3)
-                    <button class="btn btn-primary btn-minw" type="button" data-toggle="modal"
+                    <button class="btn btn-primary btn-minw text-capitalize" type="button" data-toggle="modal"
                             data-target="#book-modal-{{$product->id}}">@lang('general.booking')
                     </button>
                     @include('app.partials._modal_book', ['type'=>1,'id'=>$product->id])
+                @elseif(Session::get('step') == 2)
+                    <button class="btn btn-primary btn-minw text-capitalize" type="button" data-toggle="modal"
+                            data-target="#book-modal-{{$product->id}}">@lang('general.booking')
+                    </button>
+                    @include('app.partials._modal_book_hotel', ['type'=>1,'id'=>$product->id])
                 @else
                     <button class="btn btn-primary btn-minw text-capitalize"
                             type="submit">@lang('general.booking')</button>
