@@ -43,6 +43,8 @@
 			$item = Product::findorfail( $request->id );
 			
 			$total = 0;
+			$adults = 0;
+			$children = 0;
 			//verificamos si el tipo hotel
 			if ( $request->type == 2 ) {
 				//si es hotel deben verificar los tipos de habitaciones
@@ -53,7 +55,9 @@
 				foreach ( $request->rooms as $room ) {
 					$kind_room = Product::find( $request->id )->kindsHotel->where( 'id', $room[ 'id' ] )->first();
 					$rooms[] = $kind_room->kind_room;
-					$total = $total + ( $kind_room->pivot->price * $request->nights );
+					$total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] ) + ($hotel->price_children * $room[ 'children' ]);
+					$adults = $adults + $room[ 'adults' ];
+					$children = $children + $room[ 'children' ];
 					Product::find( $request->id )
 					       ->kindsHotel()
 					       ->updateExistingPivot( $room[ 'id' ],
@@ -71,9 +75,9 @@
 				'price'      => $total,
 				'quantity'   => 1,
 				'attributes' => [
-					'adults'   => $request->adults,
-					'children' => $request->children,
-					'infants'  => $request->infants,
+					'adults'   => $request->adults ? $request->adults : $adults,
+					'children' => $request->children ? $request->children : $children,
+					'infants'  => $request->infants ? $request->infants : 0,
 					'type'     => $request->type,
 					'nights'   => ( isset( $request->nights ) ? $request->nights : 0 ),
 					'bed'      => ( isset( $request->bed ) ? $request->bed : 0 ),
@@ -85,19 +89,19 @@
 			
 			
 			if ( Session::has( 'adults' ) ) {
-				if ( Session::get( 'adults' ) < $request->adults ) {
-					Session::put( 'adults', $request->adults );
+				if ( Session::get( 'adults' ) < $request->adults  ? $request->adults : $adults) {
+					Session::put( 'adults', $request->adults  ? $request->adults : $adults );
 				}
 			} else {
-				Session::put( 'adults', $request->adults );
+				Session::put( 'adults', $request->adults  ? $request->adults : $adults);
 			}
 			
 			if ( Session::has( 'children' ) ) {
-				if ( Session::get( 'children' ) < $request->children ) {
-					Session::put( 'children', $request->children );
+				if ( Session::get( 'children' ) < $request->children ? $request->children : $children ) {
+					Session::put( 'children', $request->children ? $request->children : $children );
 				}
 			} else {
-				Session::put( 'children', $request->children );
+				Session::put( 'children', $request->children ? $request->children : $children );
 			}
 			
 			if ( Session::has( 'infants' ) ) {

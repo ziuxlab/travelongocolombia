@@ -32,7 +32,7 @@
                         @endif
                     </div>
                 </div>
-                
+                @if($item->type <> 2)
                 <div class="row">
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('adults')  ? ' has-error' : '' }}">
@@ -110,6 +110,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
                 @if($item->type == 2)
                     <div class="row">
                         <div class="col-sm-6">
@@ -164,10 +165,52 @@
                         </div>
                     </div>
                     <div class="row" id="rooms">
-                        <div class="col-sm-6" id="room_1">
-                            <div class="form-group">
-                                {!! Form::label(trans('general.rooms').' 1:', null, ['class' => 'control-label']) !!}
-                                {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control']) !!}
+                        <div id="room_1">
+                            <div class="col-sm-4" >
+                                <div class="form-group">
+                                    {!! Form::label(trans('general.rooms').' 1:', null, ['class' => 'control-label']) !!}
+                                    {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control']) !!}
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    {!! Form::label(trans('general.Adults').':', null, ['class' => 'control-label']) !!}
+                                    <div class="input-group">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-xs btn-default value-control"
+                                                  data-action="minus" data-target="adults_1">
+                                              <span class="glyphicon glyphicon-minus"></span>
+                                          </button>
+                                      </span>
+                                        {!! Form::text('rooms[1][adults]', 1, ['class' => 'text-center form-control','required','id'=>'adults_1','min'=>0,'max'=>10]) !!}
+                                        <span class="input-group-btn">
+                                          <button type="button" class="btn btn-xs  btn-default value-control"
+                                                  data-action="plus" data-target="adults_1">
+                                              <span class="glyphicon glyphicon-plus"></span>
+                                          </button>
+                                      </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    {!! Form::label(trans('general.children').':', null, ['class' => 'control-label']) !!}
+                                    <div class="input-group">
+                                      <span class="input-group-btn">
+                                          <button type="button" class="btn btn-xs btn-default value-control"
+                                                  data-action="minus" data-target="children_1">
+                                              <span class="glyphicon glyphicon-minus"></span>
+                                          </button>
+                                      </span>
+                                        {!! Form::text('rooms[1][children]', 0, ['class' => 'text-center form-control','id'=>'children_1','min'=>0,'max'=>10]) !!}
+                                        <span class="input-group-btn">
+                                          <button type="button" class="btn btn-xs  btn-default value-control"
+                                                  data-action="plus" data-target="children_1">
+                                              <span class="glyphicon glyphicon-plus"></span>
+                                          </button>
+                                      </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,15 +277,34 @@
     
          if (action == "plus") {
              value = parseInt(value) + 1;
-             html = '<div class="col-sm-6" id="room_1"><div class="form-group">'+
-                             '<label class="control-label">Rooms ' + value +':</label>' +
+             html = '<div id="room_'+ value +'"><div class="col-sm-4" ><div class="form-group">'+
+                             '<label class="control-label">@lang('general.rooms') ' + value +':</label>' +
                      '<select class="form-control" name="rooms[' + value + '][id]">';
              $.each(kinds_room, function (i, elem) {
                  // do your stuff
                  html = html +  '<option value="'+ elem.id+'">'+ elem.kind_room +'</option>'
                  
              });
-             html = html + '</select></div></div>'
+             html = html + '</select></div></div>' +
+                 '<div class="col-sm-4" ><div class="form-group">' +
+                 '<label class="control-label">@lang('general.Adults'):</label>'+
+                 '<div class="input-group"><span class="input-group-btn">' +
+                 '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="adults_' + value + '">' +
+                 '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
+                 '<input class="text-center form-control"  id="adults_'+ value +'" min="0" max="10" name="rooms['+ value +'][adults]" type="text" value="1">' +
+                 '<span class="input-group-btn">' +
+                 '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + value + '">'+
+                 '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
+                 '<div class="col-sm-4" ><div class="form-group">' +
+                 '<label class="control-label">@lang('general.children'):</label>'+
+                 '<div class="input-group"><span class="input-group-btn">' +
+                 '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + value + '">' +
+                 '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
+                 '<input class="text-center form-control"  id="children_'+ value +'" min="0" max="10" name="rooms['+ value +'][children]" type="text" value="0">' +
+                 '<span class="input-group-btn">' +
+                 '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="children_' + value + '">'+
+                 '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
+                 '</div>';
              
              $('#rooms').append(html)
          }

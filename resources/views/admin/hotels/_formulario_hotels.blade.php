@@ -24,6 +24,24 @@
     
 </div>
 <div class="row">
+    <div class="col-sm-3">
+        <div class="form-group {{ $errors->has('price_children') ? ' has-error' : '' }}">
+            {!! Form::label('Precio Niños:', null, ['class' => 'control-label']) !!}
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                {!! Form::number('price_children', old('price_children'), ['class' => 'form-control','placeholder'=>'99']) !!}
+
+                <span class="input-group-addon">.00</span>
+            </div>
+            @if ($errors->has('price_children'))
+                <span class="help-block">
+            <strong>{{ $errors->first('price_children') }}</strong>
+        </span>
+            @endif
+        </div>
+    </div>
+</div>
+<div class="row">
     @foreach($kindshotel as $item)
         <div class="col-sm-6">
             <div class="form-group">
