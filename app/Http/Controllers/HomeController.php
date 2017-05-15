@@ -72,7 +72,7 @@
             ]);
             
             
-            Mail::to($request->email)->send(new Contact_form($mensaje));
+            Mail::to(env('MAIL_TO'))->send(new Contact_form($mensaje));
             
             Session::flash('mensaje','the message was send it correctly');
             

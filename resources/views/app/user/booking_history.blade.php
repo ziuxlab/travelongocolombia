@@ -8,7 +8,7 @@
         @else
             <div class="table-responsive">
                 @foreach($bookings as $booking)
-                    <table class="table  table-bordered">
+                    <table class="table remove-margin-b  table-bordered">
                         <thead>
                         <th class="">@lang('dashboard_user.date')</th>
                         <th class="text-center">@lang('general.Adults')</th>

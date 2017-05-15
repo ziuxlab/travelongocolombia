@@ -92,8 +92,13 @@
                                             <span class="badge badge-default">Servicio Adicional</span>
                                         @endif
                                     </td>
-                                    <td class="text-center"><span class="badge badge-danger">{{$item->nights}}</span></td>
-                                    <td class="text-center"><span class="badge badge-success">{{$item->bed}}</span></td>
+                                    <td class="text-center"><span class="badge badge-danger">{{$item->nights}}</span>
+                                    </td>
+                                    <td class="text-center">
+                                        @foreach(explode(',', $item->rooms) as $rooms)
+                                            <span class="badge badge-primary">{{$rooms}}</span>
+                                        @endforeach
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>

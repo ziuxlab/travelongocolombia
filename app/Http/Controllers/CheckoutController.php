@@ -5,11 +5,13 @@
     use App\booking;
     use App\booking_detail;
     use App\Contact;
+    use App\Mail\Booking_New;
     use App\payment;
     use App\User;
     use Cart;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
+    use Illuminate\Support\Facades\Mail;
     use Illuminate\Support\Facades\Session;
     use Stripe\Charge;
     use Stripe\Error\Card;
@@ -135,6 +137,7 @@
                     'quantity'   => $item->quantity,
                     'nights'     => (($item->attributes->nights <> null) ? $item->attributes->nights : 0),
                     'bed'        => (($item->attributes->bed <> null) ? $item->attributes->bed : 0),
+                    'rooms'        => (($item->attributes->rooms <> null) ? $item->attributes->rooms : ''),
                     'booking_id' => $booking->id,
                 ]);
                 
@@ -285,11 +288,18 @@
                 'stripe'         =>$charge->id,
                     'booking_id' => $booking->id
                 ]);
+	
+	        $booking = booking::with('user','details','contacts','payments')->whereId($booking->id)->first();
+	
+	        //enviar el correo al cliente y una notificacion al usuario
+	        Mail::to(Auth::user()->email)->bcc(env('MAIL_TO'))->send(new Booking_New($booking));
             
             Cart::clear();
             Session::forget('adults');
             Session::forget('children');
             Session::forget('infants');
+	        
+	       
             
             return view('app.payment.success', compact('booking'));
             

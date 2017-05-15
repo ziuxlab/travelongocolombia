@@ -17,6 +17,7 @@
             'name',
             'nights',
             'bed',
+            'rooms',
             'booking_id',
         ];
         
