@@ -9,13 +9,11 @@
                         </li>
                     </ul>
                     <h3 class="text-center push-20">@lang('general.rooms')</h3>
-                    <div class="row push-20">
-
+                    <div class="row" id="rooms-{{$id}}">
 
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-minw btn-primary" type="submit"
-                                data-dismiss="modal"> @lang('general.pay')
+                        <button class="btn btn-minw btn-primary" type="submit"> @lang('general.pay')
                         </button>
                     </div>
                 </div>
@@ -27,7 +25,11 @@
 
     $( "#book-modal-{{$id}}" ).on('show.bs.modal', function(){
         var id = '{{$id}}';
-console.log(id);
+        var quantity = $('#bed_'+id).val();
+        var kinds_room = <?php echo json_encode($product->kindsHotel); ?>;
+        agregar_rooms(quantity,id,kinds_room);
     });
+
+
 </script>
 

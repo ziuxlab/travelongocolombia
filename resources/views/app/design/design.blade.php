@@ -58,5 +58,45 @@
             App.initHelper('datepicker');
         });
     </script>
+    <script>
+        function agregar_rooms(value,id,kinds_room) {
+            console.log(value);
+            for (i = 1; i < (parseInt(value) + 1); i++) {
+                html = '<div id="room_'+ i +'"><div class="col-sm-4" ><div class="form-group">'+
+                    '<label class="control-label">@lang('general.rooms') ' + i +':</label>' +
+                    '<select class="form-control" name="rooms[' + i + '][id]">';
+                $.each(kinds_room, function (i, elem) {
+                    // do your stuff
+                    html = html +  '<option value="'+ elem.id+'">'+ elem.kind_room +'</option>'
+
+                });
+                html = html + '</select></div></div>' +
+                    '<div class="col-sm-4" ><div class="form-group">' +
+                    '<label class="control-label">@lang('general.Adults'):</label>'+
+                    '<div class="input-group"><span class="input-group-btn">' +
+                    '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="adults_' + i + '">' +
+                    '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
+                    '<input class="text-center form-control"  id="adults_'+ i +'" min="0" max="10" name="rooms['+ value +'][adults]" type="text" value="1">' +
+                    '<span class="input-group-btn">' +
+                    '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + i + '">'+
+                    '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
+                    '<div class="col-sm-4" ><div class="form-group">' +
+                    '<label class="control-label">@lang('general.children'):</label>'+
+                    '<div class="input-group"><span class="input-group-btn">' +
+                    '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + i+ '">' +
+                    '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
+                    '<input class="text-center form-control"  id="children_'+ i +'" min="0" max="10" name="rooms['+ i +'][children]" type="text" value="0">' +
+                    '<span class="input-group-btn">' +
+                    '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="children_' + i + '">'+
+                    '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
+                    '</div>';
+
+                $('#rooms-'+id).append(html)
+            }
+
+
+
+        }
+    </script>
     
 @stop
