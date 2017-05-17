@@ -72,7 +72,7 @@
 			Cart::add( [
 				'id'         => $item->id,
 				'name'       => $item->tittle,
-				'price'      => $total,
+				'price'      => $total * $request->nights,
 				'quantity'   => 1,
 				'attributes' => [
 					'adults'   => $request->adults ? $request->adults : $adults,

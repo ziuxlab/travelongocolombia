@@ -107,11 +107,11 @@
                         'email'    => $request->adult['email'][0],
                         'password' => bcrypt(str_random(8))
                     ]);
+
+                    //asignamos el role de usuario
+                    $user->attachRole(2);
                 }
-                
-                //asignamos el role de usuario
-                $user->attachRole(2);
-                
+
                 //logueamos en sistema al usuario
                 Auth::loginUsingId($user->id);
             }
@@ -142,8 +142,7 @@
                 ]);
                 
             }
-            
-           
+
             
             //creamos los contactos para adultos
             for ($i = 0; $i < count($request->adult['full_name']); $i++) {

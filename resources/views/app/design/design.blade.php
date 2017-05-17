@@ -76,7 +76,7 @@
                     '<div class="input-group"><span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="adults_' + i + '">' +
                     '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
-                    '<input class="text-center form-control"  id="adults_'+ i +'" min="0" max="10" name="rooms['+ value +'][adults]" type="text" value="1">' +
+                    '<input class="text-center form-control"  id="adults_'+ i +'" min="0" max="10" name="rooms['+ i +'][adults]" type="text" value="1">' +
                     '<span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + i + '">'+
                     '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+

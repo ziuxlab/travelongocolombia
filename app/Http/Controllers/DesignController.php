@@ -89,25 +89,45 @@
             }
             
             if ($request->step == 2) {
-                
                 $item = Product::findorfail($request->product_id);
+
+                $total = 0;
+                $adults = 0;
+                $children = 0;
+                //si es hotel deben verificar los tipos de habitaciones
+                $hotel = $item;
+                //$rooms será un collect para utilizar los metodos implode()
+                $rooms = collect();
+
+                foreach ( $request->rooms as $room ) {
+                    $kind_room = Product::find( $request->product_id )->kindsHotel->where( 'id', $room[ 'id' ] )->first();
+                    $rooms[] = $kind_room->kind_room;
+                    $total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] ) + ($hotel->price_children * $room[ 'children' ]);
+                    $adults = $adults + $room[ 'adults' ];
+                    $children = $children + $room[ 'children' ];
+                    Product::find( $request->product_id )
+                        ->kindsHotel()
+                        ->updateExistingPivot( $room[ 'id' ],
+                            [ 'quantity' => ( $kind_room->pivot->quantity - 1 ) ] );
+                }
+
                 $nights = Carbon::parse(Session::get('checkout'))->diffInDays(Carbon::parse(Session::get('checkin')));
                
                 Cart::add([
                     'id'         => $item->id,
                     'name'       => $item->tittle,
-                    'price'      => (Session::get('adults') * $item->price_adults * $nights * (1 - ($item->discount / 100))) +
-                                    (Session::get('children') * $item->price_children * $nights * (1 - ($item->discount / 100))),
+                    'price'      => $total * $nights,
                     'quantity'   => 1,
                     'attributes' => [
-                        'adults'   => Session::get('adults'),
-                        'children' => Session::get('children'),
+                        'adults'   => $adults,
+                        'children' => $children,
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
                         'nights'   => $nights,
                         'bed'      => (isset($request->bed) ? $request->bed : 0),
-                        'img'      => $item->photos->sortBy('order')
-                                                   ->first()->img
+                        'rooms'    => ( isset( $request->rooms ) ? $rooms->implode( ',' ) : '' ),
+                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
+                                        ->first()->img : 'img/banner/about-us.jpg'
                     ]
                 ]);
                 
@@ -129,8 +149,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos->sortBy('order')
-                                                   ->first()->img
+                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
+                            ->first()->img : 'img/banner/about-us.jpg'
                     ]
                 ]);
         
@@ -154,8 +174,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos->sortBy('order')
-                                                   ->first()->img
+                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
+                            ->first()->img : 'img/banner/about-us.jpg'
                     ]
                 ]);
                 
@@ -178,8 +198,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos->sortBy('order')
-                                                   ->first()->img
+                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
+                            ->first()->img : 'img/banner/about-us.jpg'
                     ]
                 ]);
         
@@ -203,8 +223,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos->sortBy('order')
-                                                   ->first()->img
+                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
+                            ->first()->img : 'img/banner/about-us.jpg'
                     ]
                 ]);
         
