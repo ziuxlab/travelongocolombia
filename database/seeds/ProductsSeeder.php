@@ -1905,7 +1905,7 @@
                 'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
             ]);
             
-            /*
+
             
             Product::create([
                 'id'                => 46,
@@ -2061,7 +2061,7 @@
             ]);
             
             
-            */
+
             
             
         }

@@ -1404,51 +1404,343 @@
                 'img'        => 'img/activities/salento28.jpg',
                 'order'      => 1,
             ]);
-    /*
-    
-            Photo::create([
+            Photo::create( [
                 'product_id' => 46,
-                'img'        => 'img/activities/salento28.jpg',
+                'img'        => 'img/activities/jardin1.jpg',
                 'order'      => 1,
-            ]);
-           
-            Photo::create([
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin7.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin8.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin9.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin10.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 46,
+                'img'        => 'img/activities/jardin11.jpg',
+                'order'      => 1,
+            ] );
+
+
+            Photo::create( [
                 'product_id' => 47,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/jardin1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin7.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin8.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin9.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin10.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
+                'product_id' => 47,
+                'img'        => 'img/activities/jardin11.jpg',
+                'order'      => 1,
+            ] );
+
+
+            Photo::create( [
                 'product_id' => 48,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/blancas1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 48,
+                'img'        => 'img/activities/blancas7.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
                 'product_id' => 49,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/blancas1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 49,
+                'img'        => 'img/activities/blancas7.jpg',
+                'order'      => 1,
+            ] );
+
+
+            Photo::create( [
                 'product_id' => 50,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/vicente1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente7.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente8.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente9.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente10.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
+                'product_id' => 50,
+                'img'        => 'img/activities/vicente11.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
                 'product_id' => 51,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/vicente1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente4.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente5.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente6.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente7.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente8.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente9.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente10.jpg',
+                'order'      => 1,
+            ] );
+
+            Photo::create( [
+                'product_id' => 51,
+                'img'        => 'img/activities/vicente11.jpg',
+                'order'      => 1,
+            ] );
+
+
+            Photo::create( [
                 'product_id' => 52,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/calima1.jpg',
                 'order'      => 1,
-            ]);
-            Photo::create([
+            ] );
+            Photo::create( [
+                'product_id' => 52,
+                'img'        => 'img/activities/calima2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 52,
+                'img'        => 'img/activities/calima3.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
                 'product_id' => 53,
-                'img'        => 'img/services/laundry.jpg',
+                'img'        => 'img/activities/calima1.jpg',
                 'order'      => 1,
-            ]);
-    
-    */
+            ] );
+            Photo::create( [
+                'product_id' => 53,
+                'img'        => 'img/activities/calima2.jpg',
+                'order'      => 1,
+            ] );
+            Photo::create( [
+                'product_id' => 53,
+                'img'        => 'img/activities/calima3.jpg',
+                'order'      => 1,
+            ] );
             
         }
     }
