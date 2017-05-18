@@ -51,7 +51,7 @@
                                 <p class="push-10">Descargar formulario:</p>
                                 <a class="btn btn-primary btn-minw push-30" href="{{url('formulario.docx')}}" download="formulario.docx">Descargar</a>
                             @endif
-                            <div class="row push-20 flex-center">
+                            <div class="row  flex-center">
                                 <div class=" col-sm-8 border content  col-sm-offset-2">
                                     {!! Form::open(['action'=> ['HomeController@join'],'class'=>'form-horizontal','files' => 'true']) !!}
                                     <div class="row">
@@ -64,19 +64,18 @@
                                                 </span>
                                             @endif
                                         </div>
+                                        @if (App::isLocale('en'))
+                                            <p> We would like to know why you want to work with us.</p>
+                                        @else
+                                            <p>Déjanos un mensaje de porqué te gustaría trabajar con nosotros.</p>
+                                        @endif
                                         <div class="form-group text-center" >
                                             <button class="btn btn-primary btn-minw" type="submit">@lang('general.Submit')</button>
                                         </div>
                                     </div>
-
                                     {!! Form::close() !!}
                                 </div>
                             </div>
-                                @if (App::isLocale('en'))
-                                    <p> We would like to know why you want to work with us.</p>
-                                @else
-                                    <p>Déjanos un mensaje de porqué te gustaría trabajar con nosotros.</p>
-                                @endif
                         </div>
                     </div>
                </div>
