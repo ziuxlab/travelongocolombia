@@ -44,14 +44,14 @@
                         <div class="block-content block-content-narrow block-content-full text-center">
                             @if (App::isLocale('en'))
                                 <p>Would you like to work with us? Download the next form, fill in and upload it again, we will be in touch with you as soon as possible</p>
-                                <p>Download the form: </p>
-                                <a class="btn btn-primary btn-minw push-30" href="">form.co</a>
+                                <p class="push-10">Download the form: </p>
+                                <a class="btn btn-primary btn-minw push-30" href="{{url('formulario.docx')}}" download="form.docx">Downlaod</a>
                                 @else
                                 <p>Te interesaría trabajar con nosotros?, descarga el siguiente formulario, diligéncialo y súbelo nuevamente, nos pondremos en contacto contigo a la menor brevedad posible.</p>
-                                <p>Descargar formulario:</p>
-                                <a class="btn btn-primary btn-minw push-30" href="">Formulario.doc</a>
+                                <p class="push-10">Descargar formulario:</p>
+                                <a class="btn btn-primary btn-minw push-30" href="{{url('formulario.docx')}}" download="formulario.docx">Descargar</a>
                             @endif
-                            <div class="row flex-center">
+                            <div class="row push-20 flex-center">
                                 <div class=" col-sm-8 border content  col-sm-offset-2">
                                     {!! Form::open(['action'=> ['HomeController@join'],'class'=>'form-horizontal','files' => 'true']) !!}
                                     <div class="row">
@@ -72,9 +72,12 @@
                                     {!! Form::close() !!}
                                 </div>
                             </div>
-
+                                @if (App::isLocale('en'))
+                                    <p> We would like to know why you want to work with us.</p>
+                                @else
+                                    <p>Déjanos un mensaje de porqué te gustaría trabajar con nosotros.</p>
+                                @endif
                         </div>
-
                     </div>
                </div>
            </div>

@@ -150,7 +150,8 @@
         'facilities'                  => 'Facilities',
         'rooms'                       => 'Rooms',
         'join-us'                     => 'Join us',
-        'upload-form '                    => 'Upload Form',
+        'upload-form '                => 'Upload Form',
+        'about-us'                    => 'About Us',
+        'sustainability-policy'       => 'Sustainability Policy',
 
-    
     ];

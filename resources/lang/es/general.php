@@ -151,4 +151,6 @@
         'rooms'                       => 'Habitaciones',
         'join-us'                     => 'Trabaja con nosotros',
         'upload-form '                => 'Subir Formulario',
+        'about-us'                    => 'Nosotros',
+        'sustainability-policy'       => 'Política de Sostenibilidad',
     ];
