@@ -1689,6 +1689,7 @@
 				'order'      => 1,
 			] );
 			
+			
 			Photo::create( [
 				'product_id' => 52,
 				'img'        => 'img/activities/calima1.jpg',
@@ -1719,6 +1720,7 @@
 				'img'        => 'img/activities/calima3.jpg',
 				'order'      => 1,
 			] );
+			
 			
 		}
 	}
