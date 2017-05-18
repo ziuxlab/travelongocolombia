@@ -47,6 +47,7 @@
     Route::get('search', 'SearchController@index');
     Route::get('home', 'HomeController@home');
     Route::post('contact', 'HomeController@contact');
+    Route::post('join', 'HomeController@join');
     Route::get('products/list/{type}', 'ProductController@list');
     
     // Design Plan related routes =======================================.

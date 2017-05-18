@@ -60,7 +60,7 @@
             <ul class="list-unstyled">
                 <li><a>About us</a></li>
                 <li><a>Resposability Child</a></li>
-                <li><a>FAQ</a></li>
+                <li><a href="{{url(str_slug(trans('general.join-us')))}}">@lang('general.join-us')</a></li>
                 <li><a>Login</a></li>
                 <li><a>Register</a></li>
                 <li><a>Terms and conditions</a></li>

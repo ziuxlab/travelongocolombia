@@ -149,4 +149,6 @@
         'Signup for Newsletter'       => 'Suscríbete al boletín',
         'facilities'                  => 'Servicios',
         'rooms'                       => 'Habitaciones',
+        'join-us'                     => 'Trabaja con nosotros',
+        'upload-form '                => 'Subir Formulario',
     ];
