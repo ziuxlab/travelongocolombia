@@ -153,5 +153,6 @@
         'upload-form '                => 'Upload Form',
         'about-us'                    => 'About Us',
         'sustainability-policy'       => 'Sustainability Policy',
+        'details'                     => 'Details',
 
     ];

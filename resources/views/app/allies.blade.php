@@ -43,78 +43,66 @@
                     <div class="col-sm-6">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
-                                <h3 class="block-title">Dar papaya</h3>
+                                <h3 class="block-title">Camino Real Parrilla Bar</h3>
                             </div>
                             <div class="">
                                 <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/darpapaya-4.jpg')}}">
                                     </div>
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/darpapaya.jpg')}}">
                                     </div>
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/darpapaya-2.jpg')}}">
                                     </div>
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/darpapaya-3.jpg')}}">
                                     </div>
                                 </div>
                             </div>
                             <div class="block-content">
-                                <div class="h5 text-capitalize">tipo de comida:</div>
-                                <p class="text-justify">Latina, De Amèrica del Sur, Armenia, Fusión, Apto para
-                                                        vegetarianos.</p>
-                                <div class="h5 text-capitalize">Caracteristícas:</div>
-                                <p class="text-justify">Estacionamiento disponible, Estacionamiento para clientes,
-                                                        Estacionamiento
-                                                        privado gratis, Sillitas altas disponibles, Acceso para silla de
-                                                        ruedas,
-                                                        Sirve alcohol, Bar completo, Vino y cerveza, Acepta American
-                                                        Express, Acepta
-                                                        Mastercard, Acepta Visa, Solo pago en efectivo, Comida para
-                                                        llevar,
-                                                        Reservaciones, Asientos al aire libre, Asiento, Meseros, Wi-Fi
-                                                        gratis.</p>
-                            
+                                <div class="h5 text-capitalize">@lang('general.details'):</div>
+                                <p class="text-justify"> Allí podrás deleitar tu paladar con los deliciosos sabores que te ofrece el salmón oriental, la cazuela de mariscos, langostinos al ajillo, las carnes a la parrilla, y las truchas en sus diferentes presentaciones, platos vegetarianos, y los típicos patacones para acompañar.</p>
+                                <div class="h5 text-capitalize">@lang('general.address'):</div>
+                                <p class="text-justify">Carrera 6 # 1-35 Salento, Quindío.</p>
+                                <div class="h5 text-capitalize">@lang('dashboard_user.price'):</div>
+                                <p class="text-justify">comidas oscilan entre los $4.000 pesos hasta los $50.000 pesos. Las bebidas no alcohólicas tienen precios entre $2.000 pesos y $9.000 pesos.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
-                                <h3 class="block-title">La Fogata</h3>
+                                <h3 class="block-title">Helena adentro
+                                </h3>
                             </div>
                             <div class="">
                                 <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/fogata-1.jpg')}}">
                                     </div>
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/fogata-2.jpg')}}">
                                     </div>
                                 </div>
                             </div>
                             <div class="block-content">
-                                <div class="h5 text-capitalize">tipo de comida:</div>
-                                <p class="text-justify">Churrasquería, Latina, Parrillada.</p>
-                                <div class="h5 text-capitalize">Caracteristícas:</div>
-                                <p class="text-justify">Comida para llevar, Asientos al aire libre, Asiento, Meseros,
-                                                        Estacionamiento disponible, Estacionamiento en la calle,
-                                                        Estacionamiento para clientes, Televisión, Sillitas altas
-                                                        disponibles, Acceso para silla de ruedas, Sirve alcohol, Bar
-                                                        completo, Vino y cerveza, Acepta American Express, Acepta
-                                                        Mastercard, Acepta Visa, Solo pago en efectivo, Wi-Fi gratis,
-                                                        Reservaciones.</p>
-                            
+                                <div class="h5 text-capitalize">@lang('general.details'):</div>
+                                <p class="text-justify">Aquí disfrutaras de la esencia de la comida Colombiana, deleitandote con alimentos 100% naturales.</p>
+                                <div class="h5 text-capitalize">@lang('general.address'):</div>
+                                <p class="text-justify">Cra. 7 #8-1, Filandia, Quindío, Colombia.</p>
+                                <div class="h5 text-capitalize">@lang('dashboard_user.price'):</div>
+                                <p class="text-justify">paquete 1. Almuerzo o cena compartiendo lo mejor de Helena $47.500
+                                    <br>  Paquete 2. Tarde de café y postre $12.000.</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +120,7 @@
                                 <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies" class="img-responsive "
                                              src="{{asset('img/restaurants/taxi.jpg')}}">
                                     </div>
                                 </div>
@@ -140,7 +128,6 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">tipo de vehiculos:</div>
                                 <p class="text-justify">camionetas, carros 4 puertas, vehiculo familiar.</p>
-                    
                             </div>
                         </div>
                     </div>
@@ -153,10 +140,9 @@
                                 <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
-                                        <img class="img-responsive "
+                                        <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/uber.jpg')}}">
                                     </div>
-                                   
                                 </div>
                             </div>
                             <div class="block-content">

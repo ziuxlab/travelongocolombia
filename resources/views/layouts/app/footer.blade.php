@@ -30,7 +30,7 @@
 <div class="content-boxed">
     <div class="col-sm-12 text-gray">
         <div class="col-md-6 push-10-t text-center">
-            <img class="logo img-responsive" src="{{asset('img/logo-naranja.svg')}}">
+            <img alt="logo travelongo colombia" class="logo img-responsive" src="{{asset('img/logo-naranja.svg')}}">
             <p class="push-15-t text-justify">
                 Travel<span class="text-primary">on</span>go
                 @lang('general.footer')

@@ -1,10 +1,15 @@
 @extends('layouts.app.app')
 
 @section('title')
-    Home
+    {{$item->tittle or $Config->tittle}}
+@stop
+
+@section('keywords')
+    {{$item->keywords or $Config->keywords}}
 @stop
 
 @section('description')
+    {{$item->meta_description or $Config->meta_description}}
 @stop
 
 @section('style')

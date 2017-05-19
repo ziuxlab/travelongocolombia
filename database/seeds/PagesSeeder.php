@@ -22,10 +22,15 @@
                 'menu_order' => 1,
                 'local'      => 'en',
                 'tipo'       => 1,
+                'meta_description' => 'ONE STOP PLANNING FOR VACATION TO COLOMBIA, Discover a rich Latin Culture with English language guidance throughout your stay, all inclusive.',
+                'keywords'         => 'travel to colombia, hotels armenia quindio, activities in quindio, all inclusive in colombia',
+
             ]);
             
             Page::create([
                 'id'         => 2,
+                'meta_description' => 'ONE STOP PLANNING FOR VACATION TO COLOMBIA, Discover a rich Latin Culture with English language guidance throughout your stay, all inclusive.',
+                'keywords'         => 'travel to colombia, hotels armenia quindio, activities in quindio, all inclusive in colombia',
                 'slug_url'   => 'inicio',
                 'name'       => 'inicio',
                 'tittle'     => 'inicio',

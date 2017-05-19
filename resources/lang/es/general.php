@@ -153,4 +153,5 @@
         'upload-form '                => 'Subir Formulario',
         'about-us'                    => 'Nosotros',
         'sustainability-policy'       => 'Política de Sostenibilidad',
+        'details'                     => 'Detalles',
     ];
