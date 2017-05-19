@@ -176,7 +176,7 @@ return [
         Darryldecode\Cart\CartServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
-        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
+        //Spatie\ResponseCache\ResponseCacheServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -239,7 +239,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
-        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
+        //'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
     ],
 
 ];
