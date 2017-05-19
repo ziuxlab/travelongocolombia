@@ -377,16 +377,7 @@
                 'order'      => 1,
             ]);
             
-            Photo::create([
-                'product_id' => 13,
-                'img'        => 'img/activities/barbas1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 13,
-                'img'        => 'img/activities/barbas2.jpg',
-                'order'      => 1,
-            ]);
+
             Photo::create([
                 'product_id' => 13,
                 'img'        => 'img/activities/barbas3.jpg',
@@ -413,16 +404,7 @@
                 'order'      => 1,
             ]);
             
-            Photo::create([
-                'product_id' => 14,
-                'img'        => 'img/activities/barbas1.jpg',
-                'order'      => 1,
-            ]);
-            Photo::create([
-                'product_id' => 14,
-                'img'        => 'img/activities/barbas2.jpg',
-                'order'      => 1,
-            ]);
+
             Photo::create([
                 'product_id' => 14,
                 'img'        => 'img/activities/barbas3.jpg',

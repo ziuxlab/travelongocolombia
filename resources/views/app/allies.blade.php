@@ -30,8 +30,8 @@
     <div class="content-boxed">
         <div class="content-mini content-mini-full bg-transparent">
             <ol class="breadcrumb">
-                <li><a class="" href="{{url(trans('general.home'))}}">@lang('general.home')</a></li>
-                <li>{{$item->tittle}}</li>
+                <li class="h6"><a class="" href="{{url(trans('general.home'))}}">@lang('general.home')</a></li>
+                <li class="h6">{{$item->tittle}}</li>
             </ol>
         </div>
     </div>
