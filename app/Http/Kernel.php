@@ -37,7 +37,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Spatie\ResponseCache\Middlewares\CacheResponse::class,
-            \GrahamCampbell\HTMLMin\Http\Middleware\MinifyMiddleware::class,
+            //\GrahamCampbell\HTMLMin\Http\Middleware\MinifyMiddleware::class,
    
         ],
 

@@ -22,7 +22,7 @@ return [
     | Default: false
     |
     */
-    'blade' => true,
+    'blade' => false,
     /*
     |--------------------------------------------------------------------------
     | Force Blade Optimizations
