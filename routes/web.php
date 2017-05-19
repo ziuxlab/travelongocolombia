@@ -32,15 +32,7 @@
     });*/
     
     // Languaje-related routes ==========================================.
-    Route::get('language/{locale}', function ($locale) {
-        App::setLocale($locale);
-        session(['locale' => $locale]);
-        
-        if ($locale == 'es') {
-            return redirect('inicio');
-        }
-        return redirect('/');
-    });
+    Route::get('language/{locale}', 'HomeController@language');
     
     // Menu-related routes ==============================================.
     Route::get('/', 'HomeController@index');

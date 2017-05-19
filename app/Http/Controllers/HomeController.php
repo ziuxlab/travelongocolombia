@@ -96,5 +96,17 @@
             return back();
 
         }
+
+        public function language($locale){
+
+                App::setLocale($locale);
+                session(['locale' => $locale]);
+
+                if ($locale == 'es') {
+                    return redirect('inicio');
+                }
+                return redirect('/');
+
+        }
         
     }
