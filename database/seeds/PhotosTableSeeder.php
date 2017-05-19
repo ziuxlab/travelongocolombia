@@ -1095,7 +1095,7 @@
     
             Photo::create([
                 'product_id' => 30,
-                'img'        => 'img/services/guide.jpg',
+                'img'        => 'img/banner/guide.jpg',
                 'order'      => 1,
             ]);
             
