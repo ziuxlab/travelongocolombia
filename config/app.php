@@ -177,6 +177,7 @@ return [
         Laravel\Cashier\CashierServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
+        GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -240,6 +241,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
         'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
+        'HTMLMin' => GrahamCampbell\HTMLMin\Facades\HTMLMin::class,
     ],
 
 ];

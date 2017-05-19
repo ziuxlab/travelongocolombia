@@ -13,6 +13,7 @@
     "barryvdh/laravel-cors": "^0.8.6",
     "darryldecode/cart": "~3.0",
     "doctrine/dbal": "^2.5",
+    "graham-campbell/htmlmin": "^4.5",
     "guzzlehttp/guzzle": "^6.2",
     "httpoz/roles": "^2.0",
     "intervention/image": "^2.3",
