@@ -37,7 +37,7 @@
                 </div>
                 <div class="block-content border-t text-center">
                     <div class="form-group">
-                        <button class="btn btn-success btn-minw" type="submit">Buscar</button>
+                        <button class="btn btn-success btn-minw" type="submit">@lang('general.search')</button>
                     </div>
                 </div>
                 {!! Form::close() !!}

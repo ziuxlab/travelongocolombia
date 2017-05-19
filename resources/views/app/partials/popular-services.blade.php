@@ -10,9 +10,9 @@
             <?php $services = $products->where('local', App::getLocale())
                                        ->where('type', 4)
                                        ->chunk(8) ?>
-            <div class="js-slider col-sm-12" data-slider-autoplay="true" data-slider-arrows="true" >
+            <div class="js-slider border  col-sm-12" data-slider-autoplay="true" data-slider-arrows="true" >
                 @foreach($services as $productos_8)
-                    <div class="">
+                    <div class="content">
                         @foreach($productos_8->split(2) as $productos)
                             <div class="col-sm-6">
                                 @foreach($productos as $product)

@@ -31,7 +31,7 @@
                 <div class="block-content border-t text-center">
                     <div class="form-group">
                         <a class="btn btn-danger btn-minw" href="{{ url()->previous() }}">Cancelar</a>
-                        <button class="btn btn-success btn-minw" type="submit">Buscar</button>
+                        <button class="btn btn-success btn-minw" type="submit">@lang('general.search')</button>
                     </div>
                 </div>
                 {!! Form::close() !!}

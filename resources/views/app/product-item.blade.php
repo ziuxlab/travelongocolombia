@@ -35,13 +35,13 @@
             <div class="content-mini content-mini-full bg-transparent">
                 <ol class="breadcrumb">
                     @if($item->type == 0)
-                        <li><a class="" href="{{url(trans('general.packages'))}}">@lang('general.packages')</a></li>
+                        <li class="h6"><a  href="{{url(trans('general.packages'))}}">@lang('general.packages')</a></li>
                     @elseif($item->type == 2)
-                        <li><a class="" href="{{url(trans('general.hotels'))}}">@lang('general.hotels')</a></li>
+                        <li class="h6"> <a  href="{{url(trans('general.hotels'))}}">@lang('general.hotels')</a></li>
                     @else
-                        <li><a class="" href="{{url(trans('general.activities'))}}">@lang('general.activities')</a></li>
+                        <li class="h6"><a  href="{{url(trans('general.activities'))}}">@lang('general.activities')</a></li>
                     @endif
-                    <li>{{$item->tittle}}</li>
+                    <li class="h6">{{$item->tittle}}</li>
                 </ol>
             </div>
         </div>

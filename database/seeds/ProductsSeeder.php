@@ -1905,7 +1905,7 @@
                 'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
             ]);
             
-           
+
             
             Product::create([
                 'id'                => 46,
@@ -2060,6 +2060,10 @@
                 'suggestion'        => 'Zapato cerrado. Ropa a color, larga y comoda. No fumar. Evitar el licor y drogas alucinogenas. No llevar machetes, cuchillos o navajas. No dejar basura',
             ]);
 	        
+            
+            
+
+            
             
         }
     }

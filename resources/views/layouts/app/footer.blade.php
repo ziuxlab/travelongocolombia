@@ -58,12 +58,11 @@
             <p class="h3 text-white "> @lang('general.about')</p>
             <br>
             <ul class="list-unstyled">
-                <li><a>About us</a></li>
-                <li><a>Resposability Child</a></li>
-                <li><a>FAQ</a></li>
-                <li><a>Login</a></li>
-                <li><a>Register</a></li>
-                <li><a>Terms and conditions</a></li>
+                <li><a href="{{url(str_slug(trans('general.about-us')))}}">@lang('general.about-us')</li>
+                <li><a href="{{url(str_slug(trans('general.sustainability-policy')))}}">@lang('general.sustainability-policy')</a></li>
+                <li><a href="{{url(str_slug(trans('general.join-us')))}}">@lang('general.join-us')</a></li>
+                <li><a href="" data-toggle="modal" data-target="#loginModal">@lang('cabecera.Login')</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#registerModal" >@lang('cabecera.Register')</a></li>
             </ul>
         </div>
         <div class="col-md-4 col-sm-6 text-center push-20-t">

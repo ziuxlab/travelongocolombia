@@ -4,6 +4,7 @@
     
     use App\Config;
     use App\Mail\Contact_form;
+    use App\Mail\joinmail;
     use App\message;
     use App\Page;
     use Illuminate\Http\Request;
@@ -79,6 +80,21 @@
             //enviar correo obligatorio
             return back();
         
+        }
+
+        public function join(Request $request)
+        {
+
+
+            $file = $request->file('form');
+
+            Mail::to(env('MAIL_TO'))->send(new joinmail($file));
+
+            Session::flash('mensaje','the message was send it correctly');
+
+            //enviar correo obligatorio
+            return back();
+
         }
         
     }

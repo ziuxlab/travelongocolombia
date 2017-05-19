@@ -1,3 +1,10 @@
+.ekko-lightbox .modal-dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
 #results_search{
     position: absolute;
     top: 50px;

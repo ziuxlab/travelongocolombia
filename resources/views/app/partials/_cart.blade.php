@@ -1,8 +1,8 @@
 <div class="content-boxed content remove-padding-t">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12 bg-white remove-padding">
+        <div class="col-md-8 col-md-offset-2 border col-sm-12 bg-white remove-padding">
             <div class="table-responsive">
-                <table class="table table-header-bg table-vcenter">
+                <table class="table border-b table-header-bg table-vcenter">
                     <thead>
                     <tr>
                         <th class="hidden-xs"></th>

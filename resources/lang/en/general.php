@@ -148,7 +148,10 @@
         'expiration'                  => 'Expiration',
         'Signup for Newsletter'       => 'Signup for Newsletter',
         'facilities'                  => 'Facilities',
-        'rooms'                  => 'Rooms',
-        
-    
+        'rooms'                       => 'Rooms',
+        'join-us'                     => 'Join us',
+        'upload-form '                => 'Upload Form',
+        'about-us'                    => 'About Us',
+        'sustainability-policy'       => 'Sustainability Policy',
+
     ];

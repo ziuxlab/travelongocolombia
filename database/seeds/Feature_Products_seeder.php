@@ -33,20 +33,23 @@ class Feature_Products_seeder extends Seeder
         Product::find(17)->features()->attach([8]);                     //Buenavista and Pijao
         Product::find(18)->features()->attach([8]);                     //Buenavista and Pijao
         
-        Product::find(40)->features()->attach(8);                       //filandia
-        Product::find(41)->features()->attach(8);                       //filandia
-        Product::find(42)->features()->attach([8]);                     //cordoba
-        Product::find(43)->features()->attach([8]);                     //cordoba
-        Product::find(44)->features()->attach([7,8,11,15,16]);          //salento
-        Product::find(45)->features()->attach([7,8,11,15,16]);          //salento
-        Product::find(46)->features()->attach([7,8,9,15]);              //jardin botanico
-        Product::find(47)->features()->attach([7,8,9,15]);              //jardin botanico
-        Product::find(48)->features()->attach([7,19]);                  //peña blancas
-        Product::find(49)->features()->attach([7,19]);                  //peña blancas
-        Product::find(50)->features()->attach([3,7,19,18]);             //san vicente
-        Product::find(51)->features()->attach([3,7,19,18]);             //san vicente
-        Product::find(52)->features()->attach([7,11,3,13,20]);          //calima
-        Product::find(53)->features()->attach([7,11,3,13,20]);          //calima
+        Product::find(40)->features()->attach(8);                  //filandia
+        Product::find(41)->features()->attach(8);                  //filandia
+        Product::find(42)->features()->attach([8]);                //cordoba
+        Product::find(43)->features()->attach([8]);                //cordoba
+        Product::find(44)->features()->attach([7,8,11,15,16]);     //salento
+        Product::find(45)->features()->attach([7,8,11,15,16]);     //salento
+
+        Product::find(46)->features()->attach([7,8,9,15]);         //botanical
+        Product::find(47)->features()->attach([7,8,9,15]);         //botanical
+        Product::find(48)->features()->attach([7,13,19]);          //peñas blancas
+        Product::find(49)->features()->attach([7,13,19]);          //peñas blancas
+        Product::find(50)->features()->attach([7,13,18,19]);       //san vicente
+        Product::find(51)->features()->attach([7,13,18,19]);       //san vicente
+        Product::find(52)->features()->attach([7,11,13,20]);       //Calima
+        Product::find(53)->features()->attach([7,11,13,20]);       //Calima
+        
+
         
         /*
         Product::find([54,55])->features()->attach([7,13]);                  //lagoon otun

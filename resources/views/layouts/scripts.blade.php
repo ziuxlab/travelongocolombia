@@ -30,6 +30,9 @@
 <script>
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
-        $(this).ekkoLightbox();
+        $(this).ekkoLightbox({
+            alwaysShowClose: true,
+            showArrows:true,
+        });
     });
 </script>

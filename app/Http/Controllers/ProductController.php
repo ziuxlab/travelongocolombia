@@ -270,7 +270,7 @@
                                   'short_description' => $request->short_description,
                                   'city_id'           => $request->city_id,
                                   'address'           => $request->address,
-                                  //'address', TODO por hacer
+
                               ])
             ;
     
