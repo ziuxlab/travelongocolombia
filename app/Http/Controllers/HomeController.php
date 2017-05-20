@@ -2,7 +2,7 @@
     
     namespace App\Http\Controllers;
 
-    use Spatie\Sitemap\SitemapGenerator;
+
     use App\Config;
     use App\Mail\Contact_form;
     use App\Mail\joinmail;
@@ -12,6 +12,7 @@
     use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Mail;
     use Illuminate\Support\Facades\Session;
+
 
     class HomeController extends Controller
     {
@@ -32,8 +33,7 @@
          */
         public function index()
         {
-            SitemapGenerator::create('https://travelongocolombia.com')->writeToFile(public_path('sitemap.xml'));
-            
+
             $config = Config::findorfail(1);
             if ($config->status == 1) {
                 
