@@ -2,6 +2,7 @@
   "/mix.js": "/mix.js",
   "/admin/css/main.css": "/admin/css/main.css",
   "/css/main.css": "/css/main.css",
+  "/css/app.css": "/css/app.css",
   "/admin/css/app-admin.css": "/admin/css/app-admin.css",
   "/css/app-home.css": "/css/app-home.css"
 }
