@@ -41,7 +41,7 @@
                             <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <p class="text-justify ">{{substr($activity->description,0,120)}}...</p>
-                                    <button class="btn push-20  text-white btn-primary">@lang('general.view details')</button>
+                                    <p class="btn push-20  text-white btn-primary">@lang('general.view details')</p>
                                 </div>
                             </div>
                         </div>

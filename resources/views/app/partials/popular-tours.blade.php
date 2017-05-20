@@ -35,7 +35,7 @@
                                 <p class="text-justify">
                                     {{substr($package->description,0,100)}}...
                                 </p>
-                                <button class="btn push-20 btn-minw text-white btn-primary text-capitalize">@lang('general.view details')</button>
+                                <p class="btn push-20 btn-minw text-white btn-primary text-capitalize">@lang('general.view details')</p>
                             </div>
                         </div>
                     </div>

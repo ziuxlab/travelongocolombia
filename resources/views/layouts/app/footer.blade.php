@@ -58,7 +58,7 @@
             <p class="h3 text-white "> @lang('general.about')</p>
             <br>
             <ul class="list-unstyled">
-                <li><a href="{{url(str_slug(trans('general.about-us')))}}">@lang('general.about-us')</li>
+                <li><a href="{{url(str_slug(trans('general.about-us')))}}">@lang('general.about-us')</a></li>
                 <li><a href="{{url(str_slug(trans('general.sustainability-policy')))}}">@lang('general.sustainability-policy')</a></li>
                 <li><a href="{{url(str_slug(trans('general.join-us')))}}">@lang('general.join-us')</a></li>
                 <li><a href="" data-toggle="modal" data-target="#loginModal">@lang('cabecera.Login')</a></li>

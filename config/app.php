@@ -178,6 +178,7 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
+        Spatie\Sitemap\SitemapServiceProvider::class,
 
         /*
          * Application Service Providers...

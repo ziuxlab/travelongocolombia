@@ -1,4 +1,4 @@
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" hidden="true">
+<div class="modal fade" id="loginModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="block block-themed block-transparent ">
@@ -12,7 +12,7 @@
             </div>
             <br>
             <div class="block-content block-content-narrow block-content-full ">
-                <form class="form-horizontal " role="form" method="POST" action="{{ route('login')  }}">
+                <form class="form-horizontal " method="POST" action="{{ route('login')  }}">
                     {{ csrf_field() }}
         
                     <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">

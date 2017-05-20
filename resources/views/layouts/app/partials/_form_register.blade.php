@@ -1,4 +1,4 @@
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" hidden="true">
+<div class="modal fade" id="registerModal" >
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="block block-themed block-transparent ">
@@ -12,7 +12,7 @@
                 </div>
                 <br>
                 <div class="block-content block-content-narrow block-content-full ">
-                    <form class="form-horizontal " role="form" method="POST" action="{{ route('register')  }}">
+                    <form class="form-horizontal"  method="POST" action="{{ route('register')  }}">
                         {{ csrf_field() }}
             
                         <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
@@ -28,7 +28,7 @@
                                 @endif
                             </div>
                         </div>
-            
+            foo
                         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-sm-12 text-left ">@lang('cabecera.form_email'):</label>
                 
