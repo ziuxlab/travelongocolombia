@@ -17,6 +17,7 @@
     "guzzlehttp/guzzle": "^6.2",
     "httpoz/roles": "^2.0",
     "intervention/image": "^2.3",
+    "krisawzm/critical-css": "^2.1",
     "laravel/cashier": "~7.0",
     "laravel/framework": "5.4.*",
     "laravel/scout": "^3.0",

@@ -179,6 +179,7 @@ return [
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
+	    Alfheim\CriticalCss\CriticalCssServiceProvider::class,
 
         /*
          * Application Service Providers...

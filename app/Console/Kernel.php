@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+	    \Alfheim\CriticalCss\Console\CriticalCssMake::class,
+	    \Alfheim\CriticalCss\Console\CriticalCssClear::class,
     ];
 
     /**
