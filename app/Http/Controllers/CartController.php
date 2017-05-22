@@ -9,7 +9,15 @@
 	use Illuminate\Support\Facades\Session;
 	
 	class CartController extends Controller {
-		/**
+
+
+
+        public function __construct()
+        {
+            $this->middleware('doNotCacheResponse', ['only' => ['index', 'store','destroy','clear']]);
+        }
+
+	    /**
 		 * Display a listing of the resource.
 		 *
 		 * @return \Illuminate\Http\Response
@@ -206,8 +214,6 @@
 		public function destroy( $id ) {
 			//
 			Cart::remove( $id );
-			
-			
 			return back();
 		}
 		

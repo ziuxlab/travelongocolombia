@@ -11,6 +11,7 @@
     "php": ">=5.6.4",
     "algolia/algoliasearch-client-php": "^1.17",
     "barryvdh/laravel-cors": "^0.8.6",
+    "barryvdh/laravel-debugbar": "^2.3",
     "darryldecode/cart": "~3.0",
     "doctrine/dbal": "^2.5",
     "graham-campbell/htmlmin": "^4.5",

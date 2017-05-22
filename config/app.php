@@ -180,6 +180,7 @@ return [
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
 	    Alfheim\CriticalCss\CriticalCssServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 
         /*
          * Application Service Providers...
