@@ -112,7 +112,6 @@
                 Session::put('plan','pick');
 
                 $view = Page::extract_views($item);
-                dd($view);
                 return view($view, compact('item'));
             }
         }
