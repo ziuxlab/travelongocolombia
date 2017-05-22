@@ -24,7 +24,6 @@
 
 @section('scripts_header')
     {{$Config->scripts_header}}
-
 @stop
 
 @section('breadcrumb')
