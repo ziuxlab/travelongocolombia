@@ -368,7 +368,7 @@
     </script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script>
-        Stripe.setPublishableKey("<?php echo env('STRIPE_KEY') ?>");
+        Stripe.setPublishableKey("pk_test_P0EjYfOJsYofkY5AMGlWt4gh");
         jQuery(function ($) {
             $('#form_stripe').submit(function (event) {
                 var $form = $(this);

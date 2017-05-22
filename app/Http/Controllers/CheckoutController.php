@@ -19,7 +19,10 @@
     
     class CheckoutController extends Controller
     {
-        
+        public function __construct()
+        {
+            $this->middleware('doNotCacheResponse', ['only' => ['index', 'store']]);
+        }
         
         /**
          * Display a listing of the resource.
@@ -245,7 +248,7 @@
             }
             
             //aca lo del pago
-            Stripe::setApiKey(env('STRIPE_SECRET'));
+            Stripe::setApiKey('sk_test_ZyIU6tPXTy3ZYBPO2zxZXB1k');
             
             try {
                 $charge = Charge::create([
