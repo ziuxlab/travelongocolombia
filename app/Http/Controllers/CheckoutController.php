@@ -34,7 +34,6 @@
         public function index()
         {
             //
-            
             if ( ! Auth::guest()) {
                 $contacts['adult'] = Contact::where('user_id', Auth::user()->id)
                                             ->whereType(0)
