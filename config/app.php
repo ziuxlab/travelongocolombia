@@ -176,7 +176,6 @@ return [
         Darryldecode\Cart\CartServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
-        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
 	    Alfheim\CriticalCss\CriticalCssServiceProvider::class,
@@ -243,7 +242,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
-        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
         'HTMLMin' => GrahamCampbell\HTMLMin\Facades\HTMLMin::class,
     ],
 

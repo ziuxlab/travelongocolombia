@@ -15,9 +15,6 @@
             $this->middleware('auth')
                  ->except(['buscar', 'store'])
             ;
-
-            $this->middleware('doNotCacheResponse', ['only' => ['index', 'store']]);
-       
         }
         
         /**

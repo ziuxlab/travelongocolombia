@@ -14,8 +14,7 @@
 
         public function __construct()
         {
-            $this->middleware('doNotCacheResponse', ['only' => ['index', 'store','destroy','clear']]);
-        }
+             }
 
 	    /**
 		 * Display a listing of the resource.
