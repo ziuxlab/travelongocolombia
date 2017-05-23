@@ -176,6 +176,7 @@ return [
         Darryldecode\Cart\CartServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
+        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
 	    Alfheim\CriticalCss\CriticalCssServiceProvider::class,
