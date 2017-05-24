@@ -48,7 +48,7 @@
 			
 			//buscamos el item por el id
 			$item = Product::findorfail( $request->id );
-			
+
 			$total = 0;
 			$adults = 0;
 			$children = 0;
@@ -70,6 +70,8 @@
 					       ->updateExistingPivot( $room[ 'id' ],
 						       [ 'quantity' => ( $kind_room->pivot->quantity - 1 ) ] );
 				}
+
+				$total = $total * $request->nights;
 				
 			} else {
 				$total = $request->total;
@@ -79,7 +81,7 @@
 			Cart::add( [
 				'id'         => $item->id,
 				'name'       => $item->tittle,
-				'price'      => $total * $request->nights,
+				'price'      => $total ,
 				'quantity'   => 1,
 				'attributes' => [
 					'adults'   => $request->adults ? $request->adults : $adults,
