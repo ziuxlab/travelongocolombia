@@ -154,5 +154,6 @@
         'about-us'                    => 'About Us',
         'sustainability-policy'       => 'Sustainability Policy',
         'details'                     => 'Details',
+        'terms'                     => 'Terms and Conditions',
 
     ];

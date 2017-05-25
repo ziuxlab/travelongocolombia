@@ -154,4 +154,5 @@
         'about-us'                    => 'Nosotros',
         'sustainability-policy'       => 'Política de Sostenibilidad',
         'details'                     => 'Detalles',
+        'terms'                     => 'Terminos y Condiciones',
     ];

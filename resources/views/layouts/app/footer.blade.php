@@ -61,6 +61,7 @@
                 <li><a href="{{url(str_slug(trans('general.about-us')))}}">@lang('general.about-us')</a></li>
                 <li><a href="{{url(str_slug(trans('general.sustainability-policy')))}}">@lang('general.sustainability-policy')</a></li>
                 <li><a href="{{url(str_slug(trans('general.join-us')))}}">@lang('general.join-us')</a></li>
+                <li><a href="{{url(str_slug(trans('general.terms')))}}">@lang('general.terms')</a></li>
                 <li><a href="" data-toggle="modal" data-target="#loginModal">@lang('cabecera.Login')</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#registerModal" >@lang('cabecera.Register')</a></li>
             </ul>
