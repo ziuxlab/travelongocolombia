@@ -126,8 +126,8 @@
                         'nights'   => $nights,
                         'bed'      => (isset($request->bed) ? $request->bed : 0),
                         'rooms'    => ( isset( $request->rooms ) ? $rooms->implode( ',' ) : '' ),
-                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-                                        ->first()->img : 'img/banner/about-us.jpg'
+                        'img'      => $item->photos == null ? 'img/banner/about-us.jpg'  : $item->photos->sortBy( 'order' )
+                                                                                                        ->first()->img
                     ]
                 ]);
                 
@@ -149,8 +149,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-                            ->first()->img : 'img/banner/about-us.jpg'
+                        'img'      => $item->photos == null ? 'img/banner/about-us.jpg'  : $item->photos->sortBy( 'order' )
+                                                                                                        ->first()->img
                     ]
                 ]);
         
@@ -174,8 +174,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-                            ->first()->img : 'img/banner/about-us.jpg'
+                        'img'      => $item->photos == null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )
+                                                                                                       ->first()->img
                     ]
                 ]);
                 
@@ -198,8 +198,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-                            ->first()->img : 'img/banner/about-us.jpg'
+                        'img'      => $item->photos == null ? 'img/banner/about-us.jpg'  : $item->photos->sortBy( 'order' )
+                                                                                                        ->first()->img
                     ]
                 ]);
         
@@ -223,8 +223,8 @@
                         'children' => Session::get('children'),
                         'infants'  => Session::get('infants'),
                         'type'     => $item->type,
-                        'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-                            ->first()->img : 'img/banner/about-us.jpg'
+                        'img'      => $item->photos == null ? 'img/banner/about-us.jpg'  : $item->photos->sortBy( 'order' )
+                                                                                                        ->first()->img
                     ]
                 ]);
         

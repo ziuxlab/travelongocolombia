@@ -91,8 +91,8 @@
 					'nights'   => ( isset( $request->nights ) ? $request->nights : 0 ),
 					'bed'      => ( isset( $request->bed ) ? $request->bed : 0 ),
 					'rooms'    => ( isset( $request->rooms ) ? $rooms->implode( ',' ) : '' ),
-					'img'      => $item->photos == null ? $item->photos->sortBy( 'order' )
-					                                                   ->first()->img : 'img/banner/about-us.jpg'
+					'img'      => $item->photos == null ? 'img/banner/about-us.jpg' :  $item->photos->sortBy( 'order' )
+					                                                                                ->first()->img
 				]
 			] );
 			

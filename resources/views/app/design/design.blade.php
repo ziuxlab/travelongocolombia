@@ -62,6 +62,9 @@
         $(function () {
             App.initHelper('datepicker');
         });
+        $('.js-datepicker').datepicker({
+            dateFormat: 'dd/mm/yyyy'
+        });
     </script>
     <script>
         function agregar_rooms(value,id,kinds_room) {

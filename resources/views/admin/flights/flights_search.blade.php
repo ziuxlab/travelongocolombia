@@ -31,12 +31,13 @@
                 <div class="block-content border-t text-center">
                     <div class="form-group">
                         <a class="btn btn-danger btn-minw" href="{{ url()->previous() }}">Cancelar</a>
-                        <button class="btn btn-success btn-minw" type="submit">@lang('general.search')</button>
+                        <button class="btn btn-success btn-minw" type="submit">@lang('general.save')</button>
                     </div>
                 </div>
                 {!! Form::close() !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-12">
             <div class="block block-bordered block-rounded block-themed " id="results">
                 <div class="block-header bg-primary">
@@ -48,6 +49,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
 @stop
 
