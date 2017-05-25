@@ -301,7 +301,7 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
                         <li><h2 class="h3 font-w600">Restrictions</h2></li>
                     </ol>
                     <p>You are specifically restricted from all of the following</p>
-                    <ul>
+                    <ul class="push-20">
                         <li>publishing any Website material in any other media;</li>
                         <li>selling, sublicensing and/or otherwise commercializing any Website material;</li>
                         <li>publicly performing and/or showing any Website material;</li>

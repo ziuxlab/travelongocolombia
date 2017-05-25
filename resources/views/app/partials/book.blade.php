@@ -14,10 +14,10 @@
                             {!! Form::label(trans('general.date').':', null, ['class' => 'control-label']) !!}
                         @endif
                         <div class="input-daterange input-group" data-date-format="mm/dd/yyyy">
-                            {!! Form::text('checkin', Carbon\Carbon::tomorrow()->format('m/d/Y'), ['class' => 'js-datepicker form-control','required','id'=>'checkin']) !!}
+                            {!! Form::text('checkin', Carbon\Carbon::tomorrow()->format('d-m-Y'), ['class' => 'js-datepicker form-control','data-date-format'=>'dd-mm-yyyy','required','id'=>'checkin']) !!}
                             @if($item->type==0)
                                 <span class="input-group-addon"><i class="fa fa-chevron-right"></i></span>
-                                {!! Form::text('checkout', Carbon\Carbon::tomorrow()->addDays($item->days)->format('m/d/Y'), ['class' => 'js-datepicker form-control','required','disabled','id'=>'checkout']) !!}
+                                {!! Form::text('checkout', Carbon\Carbon::tomorrow()->addDays($item->days)->format('d-m-Y'), ['class' => 'js-datepicker form-control','data-date-format'=>'dd-mm-yyyy','required','disabled','id'=>'checkout']) !!}
                             @endif
                         </div>
                         @if ($errors->has('checkout'))
@@ -246,6 +246,9 @@
 <script>
     $(function () {
         App.initHelper('datepicker');
+    });
+    $('.js-datepicker').datepicker({
+        dateFormat: 'dd-mm-yyyy'
     });
     $('#checkin').change(function () {
         var today = $('#checkin').datepicker('getDate');

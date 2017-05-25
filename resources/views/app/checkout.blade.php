@@ -236,6 +236,13 @@
                                                    type="text" placeholder="***" value="345">
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <label class="css-input css-checkbox css-checkbox-success">
+                                                <input type="checkbox" ><span></span> Accept this <a href="{{url(str_slug(trans('general.terms')))}}" target="_blank">terms and conditions?</a>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
