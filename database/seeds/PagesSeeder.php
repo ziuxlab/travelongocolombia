@@ -274,7 +274,7 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
 		        'slug_url'   => 'terms-and-conditions',
 		        'name'       => 'Terms and Conditions',
 		        'tittle'     => 'Terms and Conditions',
-		        'body'       => ' <div class="bg-white">
+		        'body'       => '<div class="bg-white">
         <div class="content  content-boxed content-full">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12">
@@ -414,7 +414,7 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
 		        'slug_url'   => 'terminos-y-condiciones',
 		        'name'       => 'Terminos y Condiciones',
 		        'tittle'     => 'Terminos y Condiciones',
-		        'body'       => ' <div class="bg-white">
+		        'body'       => '<div class="bg-white">
         <div class="content  content-boxed content-full">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12">
@@ -548,5 +548,6 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
 		        'local'      => 'es',
 		        'tipo'       => 0,
 	        ]);
+	        
         }
     }
