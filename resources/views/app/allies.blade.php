@@ -74,10 +74,7 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 <p class="text-justify"> Allí podrás deleitar tu paladar con los deliciosos sabores que te ofrece el salmón oriental, la cazuela de mariscos, langostinos al ajillo, las carnes a la parrilla, y las truchas en sus diferentes presentaciones, platos vegetarianos, y los típicos patacones para acompañar.</p>
-                                <div class="h5 text-capitalize">@lang('general.address'):</div>
-                                <p class="text-justify">Carrera 6 # 1-35 Salento, Quindío.</p>
-                                <div class="h5 text-capitalize">@lang('dashboard_user.price'):</div>
-                                <p class="text-justify">comidas oscilan entre los $4.000 pesos hasta los $50.000 pesos. Las bebidas no alcohólicas tienen precios entre $2.000 pesos y $9.000 pesos.</p>
+
                             </div>
                         </div>
                     </div>
@@ -106,17 +103,16 @@
                                         <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/helena4.jpg')}}">
                                     </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya1.jpg')}}">
+                                    </div>
                                 </div>
                                
                             </div>
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 <p class="text-justify">Aquí disfrutaras de la esencia de la comida Colombiana, deleitandote con alimentos 100% naturales.</p>
-                                <div class="h5 text-capitalize">@lang('general.address'):</div>
-                                <p class="text-justify">Cra. 7 #8-1, Filandia, Quindío, Colombia.</p>
-                                <div class="h5 text-capitalize">@lang('dashboard_user.price'):</div>
-                                <p class="text-justify">paquete 1. Almuerzo o cena compartiendo lo mejor de Helena $47.500
-                                    <br>  Paquete 2. Tarde de café y postre $12.000.</p>
                             </div>
                         </div>
                     </div>
@@ -131,14 +127,7 @@
                             <div class="">
                             <!-- Slider -->
                                 <div class="js-slider">
-                                    <div>
-                                        <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/papaya1.jpg')}}">
-                                    </div>
-                                    <div>
-                                        <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/papaya2.jpg')}}">
-                                    </div>
+
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
                                              src="{{asset('img/restaurants/papaya3.jpg')}}">
@@ -173,8 +162,7 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 <p class="text-justify">Aquí disfrutaras del primer restaurante-bar de cocina latino asiática del eje cafetero.</p>
-                                <div class="h5 text-capitalize">@lang('general.address'):</div>
-                                <p class="text-justify">Av Centenario (Frente al CC Calima). Armenia, Quindío, Colombia.</p>
+
                             </div>
                         </div>
                     </div>
