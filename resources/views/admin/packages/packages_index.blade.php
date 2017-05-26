@@ -50,7 +50,7 @@
                                    data-original-title="Editar Paquete"><i class="fa fa-pencil"></i></a>
                                <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                                         data-toggle="tooltip" data-id="{{ $package->id }}" title=""
-                                        data-original-title="Eliminar usuario"><i class="fa fa-times"></i>
+                                        data-original-title="Eliminar Paquete"><i class="fa fa-times"></i>
                                    {!! Form::open(['action'=> ['ProductController@destroy',$package->id],'method'=>'delete','id'=>'item_'.$package->id]) !!}
                                    {!! Form::close() !!}
                                </button>
