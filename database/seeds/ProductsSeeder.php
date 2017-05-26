@@ -337,7 +337,7 @@
                 'days'              => '8 horas',
                 'price_adults'      => '125',
                 'price_children'    => '62',
-                'local'             => 'es',
+                'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
                 'city_id'           => 3,
@@ -350,8 +350,8 @@
             Product::create([
                 'id'                => 18,
                 'tittle'            => 'Buenavista y Pijao',
-                'description'       => 'Buenavista: Located within the mountain range stretching along the east of Armenia, and from which you can appreciate the most beautiful panoramas and sunsets, is BuenaVista. This picturesque village is surrounded by verdent coffee plantations, and invites you to enjoy the majesty of the landscapes below while sipping a rich iced coffee. This historical Quindiano town is home to San Alberto’s, an international award winning grower of its famous strain of bold but smooth Arabica bean. PIJAO:  Over the crest of the range, nestled low among three or four mountain peaks, you can also discover Pijao, another beautiful little higher altitude town (and former regional guerilla stronghold in ages past). Rather ironically, it is the quietest (dare we say sleepiest) village of the entire Quindío department, but ranks nationally among the highest in quality of ‘stress free’ Colombian living. There is one café, owned by a local coffee grower, next to the church on the square that serves up the best granizado  (frozen coffee) in the Quindío department. And if you are lucky, toward dusk, thousands of large squawking white birds (Gaviotas) take flight for a couple minutes and then roost in a huge tree clearly visible in the distance.',
-                'short_description' => 'This picturesque villages are surrounded by verdent coffee plantations, and invites you to enjoy the majesty of the landscapes below while sipping a rich iced coffee',
+                'description'       => 'Buenavista:  Situado en la cordillera que se extiende a lo largo del lado este de Armenia desde donde se aprecian los más bellos panoramas y puestas de sol, se encuentra Buenavista. Este pintoresco pueblo está rodeado de verdes plantaciones de café e invita a disfrutar de la majestuosidad de los paisajes que se divisan en la parte baja mientras tomas un rico café helado. Este pueblo histórico del Quindío es el hogar del Café San Alberto, ganador de premios internacionales por su famoso grano Arabica y su suave sabor.                                                                                                                                                           PIJAO: A lo largo de la cima de la cordillera, enclavada entre las tres o cuatro cumbres de las montañas, se encuentra Pijao, otro hermoso y pequeño pueblo de altura (y antigua fortaleza guerrillera en épocas pasadas). Irónicamente, es la aldea más silenciosa de todo el departamento del Quindío, pero se ubica a nivel nacional entre las más altas en calidad de vida, libre de estrés en Colombia.  Hay una cafetería, propiedad de un cafetalero local, junto a la iglesia en la plaza principal que sirve el mejor granizado en el departamento. Y quizás, hacia el anochecer, podrás presenciar cómo miles de grandes gaviotas emprenden vuelo durante un par de minutos y luego descansan en un enorme árbol de fácil visibilidad en la distancia.                                                                                                                                                                                                                        ',
+                'short_description' => 'Pintorescos pueblos están rodeados de verdes plantaciones de café e invita a disfrutar de la majestuosidad de los paisajes que se divisan en la parte baja mientras tomas un rico café helado.',
                 'slug_url'          => str_slug('Buenavista y Pijao', '-'),
                 'days'              => '8 horas',
                 'price_adults'      => '125',
@@ -360,10 +360,10 @@
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
                 'city_id'           => 3,
-                'meta_description'  => 'Buenavista and Pijao',
-                'keywords'          => 'Buenavista and Pijao',
+                'meta_description'  => 'Buenavista y Pijao',
+                'keywords'          => 'Buenavista y Pijao',
                 'include'           => '',        // price include
-                'suggestion'        => 'Comfortable shoes, camera, cap or hut',
+                'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
             ]);
             
             //========== Fin de las actividades ==============//
