@@ -218,6 +218,8 @@
             $item = Product::where('slug_url', $url)
                            ->firstOrFail()
             ;
+
+            Session::put('url','packages');
             
             return view('app.product-item', compact('item'));
             

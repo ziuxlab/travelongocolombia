@@ -6,6 +6,7 @@ use App\Photo;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 use Intervention\Image\Facades\Image;
 
 class ActivityController extends Controller
@@ -110,7 +111,7 @@ class ActivityController extends Controller
     public function show($url)
     {
         $item = Product::where('slug_url', $url)->firstOrFail();
-
+        Session::put('url','activity');
         return view('app.product-item', compact('item'));
     }
 

@@ -7,6 +7,7 @@
     use App\Product;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\File;
+    use Illuminate\Support\Facades\Session;
     use Intervention\Image\Facades\Image;
     
     class HotelController extends Controller
@@ -129,7 +130,7 @@
             $item = Product::where('slug_url', $url)
                            ->firstOrFail()
             ;
-            
+            Session::put('url','hotel');
             
             return view('app.product-item', compact('item'));
         }

@@ -54,8 +54,6 @@
                                    {!! Form::open(['action'=> ['ProductController@destroy',$package->id],'method'=>'delete','id'=>'item_'.$package->id]) !!}
                                    {!! Form::close() !!}
                                </button>
-                               
-                               
                             </div>
                         </td>
                     </tr>

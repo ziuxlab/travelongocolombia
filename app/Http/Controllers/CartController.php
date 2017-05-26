@@ -45,11 +45,13 @@
 		 */
 		public function store( Request $request ) {
 			
-			
-			$this->validate($request, [
-				'adults' => 'required|numeric|min:1',
-			]);
-			
+            if ($request->type <> 2  ){
+                $this->validate($request, [
+                    'adults' => 'required|min:1',
+                ]);
+            }
+
+
 			
 			//buscamos el item por el id
 			$item = Product::findorfail( $request->id );

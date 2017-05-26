@@ -44,7 +44,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                                {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>1,'max'=>10]) !!}
+                                {!! Form::number('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>1,'max'=>10]) !!}
                                 <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control"
                                               data-action="plus" data-target="adults">
@@ -182,7 +182,7 @@
                                               <span class="glyphicon glyphicon-minus"></span>
                                           </button>
                                       </span>
-                                        {!! Form::text('rooms[1][adults]', 1, ['class' => 'text-center form-control','required','id'=>'adults_1','min'=>0,'max'=>10]) !!}
+                                        {!! Form::text('rooms[1][adults]', 1, ['class' => 'text-center form-control','required','id'=>'adults_1','min'=>1,'max'=>10]) !!}
                                         <span class="input-group-btn">
                                           <button type="button" class="btn btn-xs  btn-default value-control"
                                                   data-action="plus" data-target="adults_1">
