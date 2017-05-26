@@ -10,10 +10,14 @@
     use Illuminate\Support\Facades\Input;
     use Illuminate\Support\Facades\Session;
     use Intervention\Image\Facades\Image;
+
     
     class ProductController extends Controller
     {
-        
+	
+	
+	    
+    	
         public function __construct()
         {
             $this->middleware('auth')

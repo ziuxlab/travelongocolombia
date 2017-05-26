@@ -11,7 +11,7 @@
     {
         //
         use SoftDeletes;
-        //use Searchable;
+        use Searchable;
         
         protected $table = 'products';
         
