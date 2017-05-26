@@ -50,26 +50,26 @@
                                 <h3 class="block-title">Camino Real Parrilla Bar</h3>
                             </div>
                             <div class="">
-                                <!-- Slider
+                                <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/darpapaya-4.jpg')}}">
+                                             src="{{asset('img/restaurants/camino1.jpg')}}">
                                     </div>
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/darpapaya.jpg')}}">
+                                             src="{{asset('img/restaurants/camino2.jpg')}}">
                                     </div>
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/darpapaya-2.jpg')}}">
+                                             src="{{asset('img/restaurants/camino3.jpg')}}">
                                     </div>
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/darpapaya-3.jpg')}}">
+                                             src="{{asset('img/restaurants/camino4.jpg')}}">
                                     </div>
                                 </div>
-                                -->
+                              
                             </div>
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
@@ -88,18 +88,26 @@
                                 </h3>
                             </div>
                             <div class="">
-                                <!-- Slider
+                                <!-- Slider -->
                                 <div class="js-slider">
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/fogata-1.jpg')}}">
+                                             src="{{asset('img/restaurants/helena1.jpg')}}">
                                     </div>
                                     <div>
                                         <img alt="travelongo allies"  class="img-responsive "
-                                             src="{{asset('img/restaurants/fogata-2.jpg')}}">
+                                             src="{{asset('img/restaurants/helena2.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/helena3.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/helena4.jpg')}}">
                                     </div>
                                 </div>
-                                -->
+                               
                             </div>
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
@@ -109,6 +117,64 @@
                                 <div class="h5 text-capitalize">@lang('dashboard_user.price'):</div>
                                 <p class="text-justify">paquete 1. Almuerzo o cena compartiendo lo mejor de Helena $47.500
                                     <br>  Paquete 2. Tarde de café y postre $12.000.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="block block-rounded block-bordered">
+                            <div class="block-header ">
+                                <h3 class="block-title">Dar Papaya
+                                </h3>
+                            </div>
+                            <div class="">
+                            <!-- Slider -->
+                                <div class="js-slider">
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya1.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya2.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya3.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya4.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya5.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya6.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya7.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya8.jpg')}}">
+                                    </div>
+                                    <div>
+                                        <img alt="travelongo allies"  class="img-responsive "
+                                             src="{{asset('img/restaurants/papaya9.jpg')}}">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="block-content">
+                                <div class="h5 text-capitalize">@lang('general.details'):</div>
+                                <p class="text-justify">Aquí disfrutaras del primer restaurante-bar de cocina latino asiática del eje cafetero.</p>
+                                <div class="h5 text-capitalize">@lang('general.address'):</div>
+                                <p class="text-justify">Av Centenario (Frente al CC Calima). Armenia, Quindío, Colombia.</p>
                             </div>
                         </div>
                     </div>
