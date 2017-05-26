@@ -27,7 +27,7 @@
     <div class="col-sm-6">
         <div class="form-group {{ $errors->has('slug_url') ? ' has-error' : '' }}">
             {!! Form::label('Url:', null, ['class' => 'control-label']) !!}
-            {!! Form::text('slug_url', old('slug_url'), ['class' => 'form-control','placeholder'=>'Ingrese su Url']) !!}
+            {!! Form::text('slug_url', old('slug_url'), ['class' => 'form-control','placeholder'=>'Ingrese su Url','required']) !!}
             @if ($errors->has('slug_url'))
                 <span class="help-block">
             <strong>{{ $errors->first('slug_url') }}</strong>

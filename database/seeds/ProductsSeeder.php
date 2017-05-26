@@ -177,8 +177,8 @@
             Product::create([
                 'id'                => 9,
                 'tittle'            => 'Nevado de santa Isable y laguna de otun',
-                'description'       => 'En este recorrido tenemos la oportunidad de conocer 2 lugares fantásticos del Parque Nacional los Nevados; la Laguna del Otún y el Nevado de Santa Isabel. Laguna del Otún: es el humedal más importante del Parque Nacional los Nevados, ubicada a una altura de 3.950 m.s.n.m. allí nace el rio Otún, fuente de agua para los habitantes de Pereira. Nevado de Santa Isabel: fue llamado por los indígenas Poleka Kasue que significa “doncella de la montaña” es uno de los últimos 6 glaciares de Colombia, tiene una altura de 4.750 m.s.n.m. ',
-                'short_description' => 'En este recorrido tenemos la oportunidad de conocer 2 lugares fantásticos del Parque Nacional los Nevados; la Laguna del Otún  y el Nevado de Santa Isabel que es uno de los últimos glaciares de Colombia                                                                         ',
+                'description'       => 'En este recorrido tenemos la oportunidad de conocer 2 lugares fantásticos del Parque Nacional los Nevados la Laguna del Otún y el Nevado de Santa Isabel. Laguna del Otún: es el humedal más importante del Parque Nacional los Nevados, ubicada a una altura de 3.950 m.s.n.m. allí nace el rio Otún, fuente de agua para los habitantes de Pereira. Nevado de Santa Isabel: fue llamado por los indígenas Poleka Kasue que significa “doncella de la montaña” es uno de los últimos 6 glaciares de Colombia, tiene una altura de 4.750 m.s.n.m. ',
+                'short_description' => 'En este recorrido tenemos la oportunidad de conocer 2 lugares fantásticos del Parque Nacional los Nevados; la Laguna del Otún  y el Nevado de Santa Isabel que es uno de los últimos glaciares de Colombia',
                 'slug_url'          => str_slug('Nevado de santa Isable y laguna de otun', '-'),
                 'days'              => '8 horas',
                 'price_adults'      => '125',
