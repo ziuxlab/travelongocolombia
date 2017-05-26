@@ -2,7 +2,11 @@
     <div class="content-boxed text-white">
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">@lang('general.Popular Activities')</h2>
-            <h3 class="h5 ">"We have a unique way at meeting your adventures expectational" </h3>
+            @if(App::isLocale('en'))
+                <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
+            @else
+                <h4 class="h5 ">"Tenemos una manera única de cumplir con sus expectativas" </h4>
+            @endif
         </div>
     </div>
     <div class="content-boxed content content-full">
@@ -41,7 +45,7 @@
                             <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <p class="text-justify ">{{substr($activity->description,0,120)}}...</p>
-                                    <p class="btn push-20  text-white btn-primary">@lang('general.view details')</p>
+                                    <p class="btn push-20  text-white btn-primary text-capitalize">@lang('general.view details')</p>
                                 </div>
                             </div>
                         </div>

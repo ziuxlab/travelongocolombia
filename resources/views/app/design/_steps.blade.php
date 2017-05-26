@@ -51,7 +51,7 @@
                 <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                     <div class="block block-rounded block-bordered bg-gray-lighter">
                         <div class="block-content block-content-full bg-gray-lighter">
-                            <p class="h5 font-w400">@lang('general.step-skip')</p>
+                           <!-- <p class="h5 font-w400">@lang('general.step-skip')</p>-->
                             <div class="row flex-between">
                                 <div>
                                     <a class="btn btn-minw btn-primary"

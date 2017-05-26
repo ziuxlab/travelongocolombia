@@ -13,7 +13,7 @@
 
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-minw btn-primary" type="submit"> @lang('general.pay')
+                        <button class="btn btn-minw btn-primary text-capitalize" type="submit"> @lang('general.pay')
                         </button>
                     </div>
                 </div>

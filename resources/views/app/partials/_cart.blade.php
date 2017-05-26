@@ -95,7 +95,7 @@
                     @endif
                 </div>
                 <div class="push-20 text-right">
-                    <a href="{{Session::get('plan') == 'pick' ? url(trans('general.activities')) : url(str_slug(trans('cabecera.Design')).'?step=3')}}"
+                    <a href="{{Session::get('plan') == 'pick' ? URL::previous() : url(str_slug(trans('cabecera.Design')).'?step=3')}}"
                        type="button" class="btn btn-default push-15-r">@lang('general.continue_shopping')</a>
                     <button type="submit" class="btn btn-primary">@lang('general.proceed_payment')</button>
                 </div>

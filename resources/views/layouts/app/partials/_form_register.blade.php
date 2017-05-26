@@ -28,7 +28,6 @@
                                 @endif
                             </div>
                         </div>
-            foo
                         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-sm-12 text-left ">@lang('cabecera.form_email'):</label>
                 

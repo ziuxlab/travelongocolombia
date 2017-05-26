@@ -187,6 +187,7 @@
             slidesToScroll: 1,
             arrows: true,
             autoplay: true,
+            autoplaySpeed: 1000,
             fade: true,
             asNavFor: '.slider-nav'
         });

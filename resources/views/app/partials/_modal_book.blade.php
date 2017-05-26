@@ -11,19 +11,7 @@
                     <h3 class="text-center push-20">@lang('general.What_do_you_want')</h3>
                     <div class="row push-20">
                         <div class="col-xs-6 text-center border-r">
-                            @if($type==1 or $type ==2 )
-                                <div class="item item-2x item-circle push-20  bg-gray-lighter">
-                                    <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
-                                         alt="airplane">
-                                </div>
-                                <p>@lang('general.keep_adding_activities')</p>
-                                <div class="text-center">
-                                    <button class="btn btn-minw btn-primary text-capitalize"
-                                            onclick="enviar_formulario_book(1,{{$id}})"
-                                            data-dismiss="modal">@lang('general.add_activities')
-                                    </button>
-                                </div>
-                            @endif
+                            
                             @if($type==0)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">
                                     <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
@@ -39,12 +27,38 @@
                                             data-dismiss="modal">@lang('general.Search_Flights')
                                     </button>
                                 </div>-->
-                                    <p>@lang('general.keep_adding_packages')</p>
-                                    <div class="text-center">
-                                        <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(4)"
-                                                data-dismiss="modal">@lang('general.add_packages')
-                                        </button>
-                                    </div>
+                                <p>@lang('general.keep_adding_packages')</p>
+                                <div class="text-center">
+                                    <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(4)"
+                                            data-dismiss="modal">@lang('general.add_packages')
+                                    </button>
+                                </div>
+                            @endif
+                            @if($type==1  )
+                                <div class="item item-2x item-circle push-20  bg-gray-lighter">
+                                    <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
+                                         alt="airplane">
+                                </div>
+                                <p>@lang('general.keep_adding_activities')</p>
+                                <div class="text-center">
+                                    <button class="btn btn-minw btn-primary text-capitalize"
+                                            onclick="enviar_formulario_book(1,{{$id}})"
+                                            data-dismiss="modal">@lang('general.add_activities')
+                                    </button>
+                                </div>
+                            @endif
+                            @if($type==2 )
+                                <div class="item item-2x item-circle push-20  bg-gray-lighter">
+                                    <img class="img-responsive" src="{{asset('img/icons/photo-camera.svg')}}"
+                                         alt="airplane">
+                                </div>
+                                <p>@lang('general.keep_adding_activities_hotels')</p>
+                                <div class="text-center">
+                                    <button class="btn btn-minw btn-primary text-capitalize"
+                                            onclick="enviar_formulario_book(1,{{$id}})"
+                                            data-dismiss="modal">@lang('general.add_activities')
+                                    </button>
+                                </div>
                             @endif
                             @if($type==4)
                                 <div class="item item-2x item-circle push-20  bg-gray-lighter">

@@ -44,7 +44,7 @@
                                           <span class="glyphicon glyphicon-minus"></span>
                                       </button>
                                   </span>
-                                {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>0,'max'=>10]) !!}
+                                {!! Form::text('adults', old('adults') or 1, ['class' => 'text-center form-control','required','id'=>'adults','min'=>1,'max'=>10]) !!}
                                 <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs  btn-default value-control"
                                               data-action="plus" data-target="adults">
@@ -168,7 +168,7 @@
                         <div id="room_1">
                             <div class="col-sm-4" >
                                 <div class="form-group">
-                                    {!! Form::label(trans('general.rooms').' 1:', null, ['class' => 'control-label']) !!}
+                                    {!! Form::label(trans('general.room').' 1:', null, ['class' => 'control-label']) !!}
                                     {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control']) !!}
                                 </div>
                             </div>
@@ -281,7 +281,7 @@
          if (action == "plus") {
              value = parseInt(value) + 1;
              html = '<div id="room_'+ value +'"><div class="col-sm-4" ><div class="form-group">'+
-                             '<label class="control-label">@lang('general.rooms') ' + value +':</label>' +
+                             '<label class="control-label">@lang('general.room') ' + value +':</label>' +
                      '<select class="form-control" name="rooms[' + value + '][id]">';
              $.each(kinds_room, function (i, elem) {
                  // do your stuff

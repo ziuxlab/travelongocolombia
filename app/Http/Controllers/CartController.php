@@ -46,6 +46,11 @@
 		public function store( Request $request ) {
 			
 			
+			$this->validate($request, [
+				'adults' => 'required|numeric|min:1',
+			]);
+			
+			
 			//buscamos el item por el id
 			$item = Product::findorfail( $request->id );
 

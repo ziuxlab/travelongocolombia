@@ -115,8 +115,7 @@
                 'include'           => 'Ticket, coffee tasting, drinks and snacks ',        // price include
                 'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
             ]);
-            
-            
+	        
             Product::create([
                 'id'                => 6,
                 'tittle'            => 'Recuca',
@@ -366,7 +365,6 @@
                 'include'           => '',        // price include
                 'suggestion'        => 'Comfortable shoes, camera, cap or hut',
             ]);
-            
             
             //========== Fin de las actividades ==============//
             
@@ -914,7 +912,8 @@
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>PICK UP AT THE HOTEL TO AIRPORT  FAREWELL  (TRADITIONAL SOUVENIR)</li>
+<li><i class="fa fa-clock-o fa-li"></i>PICK UP AT THE HOTEL TO AIRPORT</li>
+<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR)</li>
 </ul>                           
 </div>
 </div>
@@ -926,32 +925,32 @@
             
             Product::create([
                 'id'               => 22,
-                'tittle'           => 'Plan a less Physically Taxing',
-                'slug_url'         => str_slug('Plan a less Physically Taxing es', '-'),
-                'days'             => '9 Days',
+                'tittle'           => 'Plan A Menos Exigencia Física',
+                'slug_url'         => str_slug('Plan A Menos Exigencia Física', '-'),
+                'days'             => '10 Días',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan a less Physically Taxing',
-                'keywords'         => 'Plan a less Physically Taxing',
+                'meta_description' => 'Plan A Menos Exigencia Física',
+                'keywords'         => 'Plan A Menos Exigencia Física',
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
+                'description'      => 'Este es el plan perfecto para gente que desea conocer una de las más interesantes culturas latinas, su historia, producción de café, disfrutar el mejor café colombiano, suaves caminatas rodeado de hermosos paisajes, flora y fauna, patrimonio cultural, transportarse en el trasnporte tradicional de los caficultores, recoger café, vestirse con la ropa tradicional de los recolectores.  Niños y adultos se divertirán y aprenderán mucho',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 1</span> 
+<span class="text-primary">Día 1</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
-<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
-<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
-<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+<li><i class="fa fa-check fa-li"></i>BIENVENIDA EN EL AEROPUERTO CON JUGOS NATURALES Y GALLETAS</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTE AL ALOJAMIENTO</li>
+<li><i class="fa fa-check fa-li"></i>CHECK IN EN EL HOTEL</li>
+<li><i class="fa fa-check fa-li"></i>CENA / TRAGO EN EL HOTEL Y DESCANSO TODA LA NOCHE</li>
 </ul>                           
 </div>
 </div>
@@ -960,16 +959,16 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 2</span> 
+<span class="text-primary">Día 2</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am TOUR OF ARMENIA, MERCAR</li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm CAFÉ QUINDIO</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOP OF MOCAWA</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm PICK UP FOR DINNER AT GERANIOS</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CITY TOUR </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm ALMUERZO </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm CATA DE CAFÉ </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA</li>
 </ul>                           
 </div>
 </div>
@@ -978,15 +977,16 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 3</span> 
+<span class="text-primary">Día 3</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am PARQUE DEL CAFE (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL 
+</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am PARQUE DEL CAFE (ALMUERZO INCLUÍDO)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -995,15 +995,15 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 4</span> 
+<span class="text-primary">Día 4</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am RANCHO CALIFORNIA ENJOY SINCE EXTREME SPORTS TO NATURE WALKS OR FISHING (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am LA TIERRA PROMETIDA (ALMUERZO INCLUÍDO)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1012,17 +1012,17 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 5</span> 
+<span class="text-primary">Día 5</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>10am TOUR BUENAVISTA -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH AT CONCORDE RESTAURANT</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR PIJAO -  ENJOY THE MOST BEAUTIFUL VIEWS, CRAFTS AND DELICIOUS COFFEE </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am TOUR BUENAVISTA</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm ALMUERZO</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm TOUR PIJAO</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1031,17 +1031,17 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 6</span> 
+<span class="text-primary">Día 6</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am BOTANICAL GARDEN</li>
-<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH AT ROBLE RESTAURANT</li>
-<li><i class="fa fa-clock-o fa-li"></i>4pm PARQUE DE LA VIDA</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 am DESAYUNO EN EL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am JARDIN BOTÁNICO</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm ALMUERZO</li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm PARQUE DE LA VIDA  </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1050,16 +1050,16 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 7</span> 
+<span class="text-primary">Día 7</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am SALENTO, VALLE DEL COCORA</li>
-<li><i class="fa fa-clock-o fa-li"></i>2pm LUNCH</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am SALENTO, VALLE DEL COCORA</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm ALMUERZO </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1068,15 +1068,15 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 8</span> 
+<span class="text-primary">Día 8</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am RECUCA LUNCH INCLUDED-  </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm BARCELONA  (TRY FORCHA, KUMIS, SIROPE, PANDEBONOS AND TRADITIONAL FOOD) </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am RECUCA ALMUERZO INCLUIDO</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm BARCELONA  (PRUEBA FORCHA, KUMIS, SIROPE, PANDEBONOS Y COMIDA TRADICIONAL) </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm REGRESO AL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1085,17 +1085,31 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 9</span> 
+<span class="text-primary">Día 9</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>10am MUSEO QUIMBAYA, FILANDIA</li>
-<li><i class="fa fa-clock-o fa-li"></i>1pm LUNCH IN FILANDIA</li>
-<li><i class="fa fa-clock-o fa-li"></i>3pm TOUR IN FILANDIA AND LOOK OUT</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm DINNER IN FILANDIA </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am MUSEO QUIMBAYA Y FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm ALMUERZO EN FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm TOUR EN FILANDIA Y MIRADOR DE FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CENA IN FILANDIA</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Día 10</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>SALIR DEL HOTEL AL AEROPUERTO</li>
+<li><i class="fa fa-clock-o fa-li"></i>DESAYUNO DE DESPEDIDA (SOUVENIR TRADICIONAL)</li>
 </ul>                           
 </div>
 </div>
@@ -1107,32 +1121,32 @@
             
             Product::create([
                 'id'               => 23,
-                'tittle'           => 'Plan B Most Physically',
-                'slug_url'         => str_slug('Plan B Most Physicallyg es', '-'),
-                'days'             => '7 Days',
+                'tittle'           => 'Plan B Más actividad Física',
+                'slug_url'         => str_slug('Plan B Más actividad Física', '-'),
+                'days'             => '9 Días',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan B Most Physically',
-                'keywords'         => 'Plan B Most Physically',
+                'meta_description' => 'Plan B Más actividad Física',
+                'keywords'         => 'Plan B Más actividad Física',
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
+                'description'      => 'Si está buscando más aventura, estar en contacto con la naturaleza y ver algunos de los sitios más bellos en el área cafetera además disfruta caminar, este es el plan perfecto para usted',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 1</span> 
+<span class="text-primary">Día 1</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
-<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
-<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
-<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+<li><i class="fa fa-check fa-li"></i>BIENVENIDA EN EL AEROPUERTO CON JUGOS NATURALES Y GALLETAS</li>
+<li><i class="fa fa-check fa-li"></i>TRANSPORTE AL ALOJAMIENTO</li>
+<li><i class="fa fa-check fa-li"></i>CHECK IN EN EL HOTEL</li>
+<li><i class="fa fa-check fa-li"></i>CENA / TRAGO EN EL HOTEL Y DESCANSO TODA LA NOCHE</li>
 </ul>                           
 </div>
 </div>
@@ -1141,14 +1155,15 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 2</span> 
+<span class="text-primary">Día 2</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am WATERFALLS IN CORDOBA (LUNCH INCLUDED) DINNER IN BALBOA</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CASCADAS EN CORDOBA (ALMUERZO INCLUÍDO) </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CATA DE CAFÉ Y COMIDA TRADICIONAL</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm REGRESO AL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1157,15 +1172,15 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 3</span> 
+<span class="text-primary">Día 3</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am PANACA  (LUNCH INCLUDED)  ACCOMMODATION IN PEREIRA</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am PANACA  (ALMUERZO INCLUÍDO)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1174,15 +1189,17 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 4</span> 
+<span class="text-primary">Día 4</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am BALSAJE ACROSS A RIVER CALLED "La Vieja"  (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am BALSAJE EN EL RIVER "La Vieja" (ALMUERZO INCLUÍDO)</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm REGRESO AL HOTEL </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm SALIR DEL HOTEL DESTINO A PEREIRA</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 pm CHECK EN EL  HOTEL EN PEREIRA</li>
 </ul>                           
 </div>
 </div>
@@ -1191,15 +1208,20 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 5</span> 
+<span class="text-primary">Día 5</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am MONTAIN CLIMBING  SANTA ISABEL  RISARALDA (LONG DAY - LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:00 am SALIR DEL HOTEL PARA INICIAR LA AVENTURA </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO </li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CONTINUAR EN EL VEHÍCULO </li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am INICIAR LA CAMINADA POR 2.5 HORAS</li>
+<li><i class="fa fa-clock-o fa-li"></i>12:30 pm LLEGAMOS AL NEVADO SANTA ISABEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm INICIAR EL DESCENTO POR 2 HORAS, DESPUÉS EN VEHÍCULO </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm ALMORZAR EN UNA FINCA EN EL CAMINO</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:00 pm CHECK IN EN UNA FINCA </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN LA FINCA</li>
 </ul>                           
 </div>
 </div>
@@ -1208,15 +1230,20 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 6</span> 
+<span class="text-primary">Día 6</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGOON  OF  OTUN RISARALDA   (LUNCH INCLUDED) ACCOMMODATION IN TERMALES</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 am INICIAR LA AVENTURA HACIA LA LAGUNA DEL OTÚN</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN UNA FINCA EN EL CAMINO</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CONTINUAR EN TRANSPORTE </li>
+<li><i class="fa fa-clock-o fa-li"></i>10:00 am INICIAR LA CAMINADA POR 2.5 HORAS</li>
+<li><i class="fa fa-clock-o fa-li"></i>12:00 m  LLEGAR A LA LAGUNA DEL OTÚN</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm INICIAR EL DESCENSO POR 2 HORAS, DESPUÉS EN VEHÍCULO </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm ALMUERZO EN UNA FINCA EN LA CAMINO</li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm INICIAR EL VIAJE A SANTA ROSA, RISARALDA</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CHECK IN EN EL HOTEL (AGUAS TERMALES)</li>
 </ul>                           
 </div>
 </div>
@@ -1225,15 +1252,12 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 7</span> 
+<span class="text-primary">Día 7</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS SAN VICENTE RISARALDA ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>DISFRUTA LAS MARAVILLOSAS AGUAS TERMALES Y ACTIVIDADES (DESAYUNO, ALMUERZO Y CENA INCLUIDAS)</li>
 </ul>                           
 </div>
 </div>
@@ -1242,15 +1266,32 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 8</span> 
+<span class="text-primary">Día 8</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am HOT SPRINGS DE SAN VICENTE RISARALDA (LUNCH INCLUDED)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>8pm FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>DISFRUTA EL LUGAR HASTA LA 1PM (BREAKFAST)</li>
+<li><i class="fa fa-clock-o fa-li"></i>01:30 pm ALMUERZO </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm VIAJAR A ARMENIA </li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 pm CHECK IN EN EL  HOTEL EN ARMENIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
+</ul>                           
+</div>
+</div>
+</div>
+<div class="panel-group">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">
+<span class="text-primary">Día 9</span> 
+</h3>
+</div>
+<div class="panel-body text-muted">
+<ul class="fa-ul">
+<li><i class="fa fa-clock-o fa-li"></i>DSALIR DEL HOTEL AL AEROPUERTO  
+</li>
+<li><i class="fa fa-clock-o fa-li"></i>DESAYUNO DE DESPEDIDA (SOUVENIR TRADICIONAL)</li>
 </ul>                           
 </div>
 </div>
@@ -1262,32 +1303,32 @@
             
             Product::create([
                 'id'               => 24,
-                'tittle'           => 'Plan C Outdoors Tour',
-                'slug_url'         => str_slug('Plan C Outdoors Tour es', '-'),
-                'days'             => '7 Days',
+                'tittle'           => 'Plan C',
+                'slug_url'         => str_slug('Plan C', '-'),
+                'days'             => '9 Días',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan C Outdoors Tour',
-                'keywords'         => 'Plan C Outdoors Tour',
+                'meta_description' => 'Plan C',
+                'keywords'         => 'Plan C',
                 'status'           => 1,
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
+                'description'      => 'Este plan te permitirá tener más contacto con paisajes montañosos, disfrutar el mejor café pero también acampar en maravillosos y exóticos lugares además de difrutar deportes acuáticos alrededor de una de los más hermosos lagos en Colombia y no perderas la oportunidad de ver monos aulladores viviendo su vida natural ',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 1</span> 
+<span class="text-primary">Día 1</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-check fa-li"></i>WELCOME AT THE AIRPORT WITH FRESH JUICE AND COOKIES</li>
-<li><i class="fa fa-check fa-li"></i>TRANSPORTATION TO ACCOMMODATIONS</li>
-<li><i class="fa fa-check fa-li"></i>CHECK INTO ACCOMMODATIONS AND REST FOR THE NIGHT</li>
-<li><i class="fa fa-check fa-li"></i>DINNER/DRINKS AT ACCOMMODATION 7pm</li>
+<li><i class="fa fa-check fa-li"></i>BIENVENIDA EN EL AEROPUERTO CON JUGOS NATURALES Y GALLETAS</li>
+<li><i class="fa fa-check fa-li"></i>TTRANSPORTE AL ALOJAMIENTO</li>
+<li><i class="fa fa-check fa-li"></i>CHECK IN EN EL HOTEL</li>
+<li><i class="fa fa-check fa-li"></i>CENA / TRAGO EN EL HOTEL Y DESCANSO TODA LA NOCHE</li>
 </ul>                           
 </div>
 </div>
@@ -1296,14 +1337,17 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 2</span> 
+<span class="text-primary">Día 2</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am JEEP PANORAMICO</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am JEEP PANORÁMICO ALREDEDOR DE PUEBLOS </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm ALMUERZO </li>
+<li><i class="fa fa-clock-o fa-li"></i>03:00 pm JEEP PANORÁMICO ALREDEDOR DE PUEBLOS </li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL CAMINO </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 pm REGRESO AL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1312,15 +1356,16 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 3</span> 
+<span class="text-primary">Día 3</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am NATURE WALK CALARCA (PICNIC LUNCH  IN PLATANO OR CONGO LEAVES)</li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return</li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am CAMINATA ECOLOGICA EN CALARCÁ </li>
+<li><i class="fa fa-clock-o fa-li"></i>01:00 pm PICNIC, ALMUERZO EN HOJA DE PLATANO</li>
+<li><i class="fa fa-clock-o fa-li"></i>04:00 pm REGRESO AL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm CENA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1329,13 +1374,19 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 4</span> 
+<span class="text-primary">Día 4</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:00 am CHECK OUT</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 am EL PALACIO DEL BARBAS </li>
+<li><i class="fa fa-clock-o fa-li"></i>08:00 am DESAYUNO EN EL PALACIO DEL BARBAS</li>
+<li><i class="fa fa-clock-o fa-li"></i>09:00 am INICIA LA TRAVESÍA A BUSCAR LOS MONOS AULLADORES </li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm RETURN TO FILANDIA</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:30 pm ALMUERZO </li>
+<li><i class="fa fa-clock-o fa-li"></i>04:30 pm CAMINAR ALREDEDOR DE FILANDIA Y TOMAR UN CAFÉ</li>
+<li><i class="fa fa-clock-o fa-li"></i>06:45 pm CHECK IN EN MONTEROCA AND DINNER</li>
 </ul>                           
 </div>
 </div>
@@ -1344,13 +1395,12 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 5</span> 
+<span class="text-primary">Día 5</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am CAMPING MONTEROCA</li>
+<li><i class="fa fa-clock-o fa-li"></i>DISFRUTA EL DÍA CON LA DIFERENTES ACTIVIDADES EN MONTEROCA, DESAYUNO, ALMUERZO Y COMIDA INCLUIDAS</li>
 </ul>                           
 </div>
 </div>
@@ -1359,15 +1409,14 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 6</span> 
+<span class="text-primary">Día 6</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am Natural park Barbas Bremen </li>
-<li><i class="fa fa-clock-o fa-li"></i>6pm Return </li>
-<li><i class="fa fa-clock-o fa-li"></i>7pm Dinner at acommodations</li>
+<li><i class="fa fa-clock-o fa-li"></i>DIFRUTA DE LA MAÑANA EN MONTEROCA.  DESAYUNO Y ALMUERZO INCLUIDO.  CHECK OUT A LA 1PM</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm VIAJAR AL LAGO CALIMA</li>
+<li><i class="fa fa-clock-o fa-li"></i>05:30 pm CHECK IN EN EL HOTEL EN EL LAGO CALIMA</li>
 </ul>                           
 </div>
 </div>
@@ -1376,13 +1425,12 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 7</span> 
+<span class="text-primary">Día 7</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+<li><i class="fa fa-clock-o fa-li"></i>DISFRUTA EL DÍA CON LA DIFERENTES ACTIVIDADES EN EL LAGO CALIMA, DESAYUNO, ALMUERZO Y COMIDA INCLUIDOS </li>
 </ul>                           
 </div>
 </div>
@@ -1391,13 +1439,15 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day 8</span> 
+<span class="text-primary">Día 8</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>8am BREAKFAST AT ACCOMMODATION</li>
-<li><i class="fa fa-clock-o fa-li"></i>9am LAGO CALIMA </li>
+<li><i class="fa fa-clock-o fa-li"></i>DISFRUTA LA MAÑANA EN EL LAGO CALIMA.  DESAYUNO Y ALMUEZO INCLUIDOS.  CHECK OUT A LA 1 PM</li>
+<li><i class="fa fa-clock-o fa-li"></i>02:00 pm REGRESO AL HOTEL EN ARMENIA </li>
+<li><i class="fa fa-clock-o fa-li"></i>05:30 pm CHECK IN EN EL HOTEL</li>
+<li><i class="fa fa-clock-o fa-li"></i>07:00 pm COMIDA EN EL HOTEL</li>
 </ul>                           
 </div>
 </div>
@@ -1406,12 +1456,13 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-<span class="text-primary">Day </span> 
+<span class="text-primary">Día 9</span> 
 </h3>
 </div>
 <div class="panel-body text-muted">
 <ul class="fa-ul">
-<li><i class="fa fa-clock-o fa-li"></i>FAREWELL  (TRADITIONAL SOUVENIR) LUNCH ON THE WAY TO THE AIRPORT, PICK UP AT THE HOTEL TO AIRPORT </li>
+<li><i class="fa fa-clock-o fa-li"></i>SALIR AL AEROPUERTO </li>
+<li><i class="fa fa-clock-o fa-li"></i>DESAYUNO DE DESPEDIDA (SOUVENIR TRADICIONAL)</li>
 </ul>                           
 </div>
 </div>
