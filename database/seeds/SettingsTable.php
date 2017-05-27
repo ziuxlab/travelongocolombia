@@ -20,6 +20,9 @@
                 'email'            => 'info@travelongocolombia.com',
                 'phone'            => '+57-314-553-5632',
                 'address'          => 'Calle 23 #14-57 piso 3',
+                'address'          => 'Calle 23 #14-57 piso 3',
+                'instagram'=>'https://www.instagram.com/travelongocolombia/',
+                'facebook'=>'https://www.facebook.com/Travel-On-Go-Colombia-177651936092222/',
             ]);
         }
     }

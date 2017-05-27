@@ -36,22 +36,31 @@
                 @lang('general.footer')
             </p>
             <div class="item-social">
+                @if($Config->facebook <> null)
                 <a class="item-circle-small push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
                     <i class="fa fa-facebook text-gray-dark"></i>
                 </a>
-                
+                @endif
+                @if($Config->twitter <> null)
                 <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->twitter}}">
                     <i class="fa fa-twitter text-gray-dark"></i>
                 </a>
+                @endif
+                @if($Config->google <> null)
                 <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->google}}">
                     <i class="fa fa-google-plus text-gray-dark"></i>
                 </a>
-                <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->youtbe}}">
+                @endif
+                @if($Config->youtube <> null)
+                <a class="item-circle-small push-10-r bg-gray-lighter" href="{{$Config->youtube}}">
                     <i class="fa fa-youtube text-gray-dark"></i>
                 </a>
+                @endif
+                @if($Config->instagram <> null)
                 <a class="item-circle-small  bg-gray-lighter" href="{{$Config->instagram}}">
                     <i class="fa fa-instagram text-gray-dark"></i>
                 </a>
+                    @endif
             </div>
         </div>
         <div class="col-md-2 col-sm-6 text-left  push-20-t">
