@@ -24,8 +24,8 @@
             Schema::defaultStringLength(191);
             //*
             View::share('Config', Config::find(1));
-            View::share('menu', Page::whereMenu(1)->orderBy('menu_order')->get());
-            View::share('products', Product::with('photos','city')->get());
+            View::share('menu', Page::whereMenu(1)->where('status',1)->orderBy('menu_order')->get());
+            View::share('products', Product::with('photos','city')->where('status',1)->get());
             View::share('features', Feature::all());
             View::share('cities', city::with('products')->get());
             //*/

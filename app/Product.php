@@ -12,6 +12,9 @@
         //
         use SoftDeletes;
         use Searchable;
+	
+	
+	    protected $dates = ['deleted_at'];
         
         protected $table = 'products';
         

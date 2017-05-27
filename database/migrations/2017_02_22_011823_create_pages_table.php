@@ -29,6 +29,7 @@ class CreatePagesTable extends Migration
             $table->boolean('tipo')->default(false); // false = a pagina y true a componentes
             $table->softDeletes();
             $table->timestamps();
+	        
         });
     }
 

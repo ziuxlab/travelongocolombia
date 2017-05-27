@@ -64,7 +64,7 @@
             if (isset($request->feature)) {
                 $products = Product::with('features')
                                    ->where('type', $type)
-                                   ->where('local', \Lang::getLocale())
+                                   ->where('local', \Lang::getLocale())->where('status',1)
                                    ->whereHas('features', function ($query) use ($request) {
                                        $query->where('feature_id', $request->feature);
                                    })
@@ -73,20 +73,20 @@
             } elseif (isset($request->city)) {
                 $products = Product::with('city')
                                    ->where('type', $type)
-                                   ->where('local', \Lang::getLocale())
+                                   ->where('local', \Lang::getLocale())->where('status',1)
                                    ->where('city_id', $request->city)
                                    ->paginate(6)
                 ;
             } else {
                 if ($type == 4) {
                     $products = Product::where('type', $type)
-                                       ->where('local', \Lang::getLocale())
+                                       ->where('local', \Lang::getLocale())->where('status',1)
                                        ->paginate(10)
                     ;
                     
                 } else {
                     $products = Product::where('type', $type)
-                                       ->where('local', \Lang::getLocale())
+                                       ->where('local', \Lang::getLocale())->where('status',1)
                                        ->paginate(6)
                     ;
                 }

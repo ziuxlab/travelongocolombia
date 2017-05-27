@@ -12,7 +12,7 @@
     {
         public function __construct()
         {
-            $this->middleware('auth','doNotCacheResponse');
+            $this->middleware('auth');
         }
         
         /**

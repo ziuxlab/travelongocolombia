@@ -30,7 +30,7 @@
 @stop
 
 @section('contenido')
-    @foreach($item->components()->orderBy('order_component')->get() as $component)
+    @foreach($item->components()->where('status',1)->orderBy('order_component')->get() as $component)
         {!! $component->body !!}
     @endforeach
     @if(count($products->where('local',App::getLocale())->where('type',0))>0)

@@ -79,7 +79,7 @@
         public function show($id)
         {
             //
-            dd('aca');
+            
         }
         
         /**
@@ -134,5 +134,6 @@
         public function destroy($id)
         {
             //
+	        Components::find($id)->delete();
         }
     }

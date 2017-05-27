@@ -225,4 +225,37 @@
             //
             Product::destroy($id);
         }
+	
+	    /**
+	     * Delete the activity photo.
+	     * Elimina la foto de la actividad.
+	     *
+	     * @param $id
+	     */
+	    public function delete_photo($id)
+	    {
+		    $photo = Photo::findorfail($id);
+		    File::delete($photo->img);
+		
+		    $photo->delete();
+	    }
+	
+	
+	    /**
+	     * Update the order of activity photos.
+	     * Actualiza el orden de las fotos de la actividad.
+	     *
+	     * @param Request $request
+	     * @param         $id
+	     *
+	     * @return mixed
+	     */
+	    public function update_order_photo(Request $request, $id)
+	    {
+		    $photo        = Photo::find($id);
+		    $photo->order = $request->order;
+		    $photo->save();
+		
+		    return $request->order;
+	    }
     }

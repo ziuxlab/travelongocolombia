@@ -8,6 +8,7 @@
             id   = $(this).attr("data-id");
             data = $('#item_' + id).serialize();
             url  = $('#item_' + id).attr('action');
+            console.log(data,url);
             swal({
                 title: "¿Estás Seguro?",
                 text: "{{$name}} se eliminará de la base de datos!",

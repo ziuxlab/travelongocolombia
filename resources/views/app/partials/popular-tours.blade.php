@@ -12,7 +12,7 @@
     </div>
     <div class="content-boxed content content-full">
         <div class="row text-white text-center">
-            @foreach($products->where('local',App::getLocale())->where('type',0)->random(3) as $package)
+            @foreach($products->where('local',App::getLocale())->where('type',0)->random(count($products->where('local',App::getLocale())->where('type',0)) > 3 ? 3 : count($products->where('local',App::getLocale())->where('type',0))) as $package)
                 <div class="col-md-4 col-sm-6 push-15">
                     <a class="block block-sombra block-rounded block-link-hover2"
                        href="{{url(trans('general.packages').'/'.$package->slug_url)}}">

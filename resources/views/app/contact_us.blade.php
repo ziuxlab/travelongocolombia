@@ -1631,7 +1631,7 @@
     </div>
     <div class="bg-secondary">
         <div class="content-boxed">
-            <div class="content  content-full">
+            <div class="content content-narrow  content-full">
                 <div class="row flex push-30-t push-30">
                     <div class="col-sm-6 remove-padding">
                         <div id='map' style='position: relative; top: 0; bottom: 0;width: 100%; height: 100%;'></div>

@@ -94,23 +94,27 @@
         
         // Packages-related routes ======================================.
         Route::delete('packages/{id}', 'ProductController@delete_photo');
+        Route::delete('packages/{id}/delete', 'ProductController@destroy');
         Route::post('packages/{id}', 'ProductController@update_order_photo');
-        Route::resource('packages', 'ProductController', ['except' => ['delete_photo', 'update_order_photo']]);
+        Route::resource('packages', 'ProductController', ['except' => ['delete_photo','destroy', 'update_order_photo']]);
         
         // Activities-related routes ====================================.
         Route::delete('activities/{id}', 'ActivityController@delete_photo');
+        Route::delete('activities/{id}/delete', 'ActivityController@destroy');
         Route::post('activities/{id}', 'ActivityController@update_order_photo');
-        Route::resource('activities', 'ActivityController', ['except' => ['delete_photo', 'update_order_photo']]);
+        Route::resource('activities', 'ActivityController', ['except' => ['delete_photo','destroy', 'update_order_photo']]);
     
         // Hotels-related routes ========================================.
         Route::delete('hotels/{id}', 'HotelController@delete_photo');
         Route::post('hotels/{id}', 'HotelController@update_order_photo');
-        Route::resource('hotels', 'HotelController', ['except' => ['delete_photo', 'update_order_photo']]);
+        Route::delete('hotels/{id}/delete', 'HotelController@destroy');
+        Route::resource('hotels', 'HotelController', ['except' => ['delete_photo','destroy', 'update_order_photo']]);
     
         // Services-related routes ========================================.
         Route::delete('services/{id}', 'ServicesController@delete_photo');
+        Route::delete('services/{id}/delete', 'ServicesController@destroy');
         Route::post('services/{id}', 'ServicesController@update_order_photo');
-        Route::resource('services', 'ServicesController', ['except' => ['delete_photo', 'update_order_photo']]);
+        Route::resource('services', 'ServicesController', ['except' => ['delete_photo','destroy', 'update_order_photo']]);
     
         // System-related routes ========================================.
         Route::resource('settings', 'ConfigController');

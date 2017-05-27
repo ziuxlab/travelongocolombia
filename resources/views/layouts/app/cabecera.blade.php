@@ -137,7 +137,7 @@
             @else
                 <?php $active = 'no aplica'?>
             @endif
-            @foreach($menu->where('local',App::getLocale()) as $sub_menu)
+            @foreach($menu->where('local',App::getLocale())->where('status',1) as $sub_menu)
                 <li class="v-center">
                     <a class="{{Request::is($sub_menu->slug_url ?: '/') ? 'active' : ($sub_menu->slug_url == $active ? 'active': '')}} text-capitalize"
                        href="{{url($sub_menu->slug_url)}}">{{$sub_menu->name}}</a>
