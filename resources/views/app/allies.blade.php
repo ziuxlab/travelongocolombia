@@ -44,7 +44,7 @@
             <div class="content">
                 <h2 class="h2 push-30 text-center">@lang('general.restaurants')</h2>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
                                 <h3 class="block-title">Camino Real Parrilla Bar</h3>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
                                 <h3 class="block-title">Helena adentro
@@ -116,16 +116,14 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
                                 <h3 class="block-title">Dar Papaya
                                 </h3>
                             </div>
                             <div class="">
-                            <!-- Slider -->
+                                <!-- Slider -->
                                 <div class="js-slider">
 
                                     <div>
@@ -157,7 +155,7 @@
                                              src="{{asset('img/restaurants/papaya9.jpg')}}">
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
@@ -166,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
             <div class="content">
                 <h2 class="h2 push-30 text-center">@lang('general.Transport')</h2>
