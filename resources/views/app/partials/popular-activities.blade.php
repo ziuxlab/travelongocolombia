@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <p class="text-justify ">{{substr($activity->description,0,120)}}...</p>
-                                    <p class="btn push-20  text-white btn-primary text-capitalize">@lang('general.view details')</p>
+                                    <p class="btn push-20 btn-minw  text-white btn-primary text-capitalize">@lang('general.view details')</p>
                                 </div>
                             </div>
                         </div>

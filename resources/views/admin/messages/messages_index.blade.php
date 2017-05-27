@@ -20,10 +20,10 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>@lang('general.name')</th>
+                    <th>Nombre</th>
                     <th class="hidden-xs">mensaje</th>
                     <th class="" style="width: 15%;">Email</th>
-                    <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
+                    <th class="text-center" style="width: 100px;">Control</th>
                 </tr>
                 </thead>
                 <tbody>

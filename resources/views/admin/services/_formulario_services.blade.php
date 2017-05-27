@@ -72,7 +72,7 @@
     </div>
 </div>
 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
-    {!! Form::label('Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Descripción:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('description', old('description'), ['class' => 'form-control','placeholder'=>'Ingrese su Descripción']) !!}
     @if ($errors->has('description'))
         <span class="help-block">
@@ -81,7 +81,7 @@
     @endif
 </div>
 <div class="form-group {{ $errors->has('short_description') ? ' has-error' : '' }}">
-    {!! Form::label('Short Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Descripción Corta:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('short_description', old('short_description'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese su Descripción Corta']) !!}
     @if ($errors->has('short_description'))
         <span class="help-block">
@@ -132,7 +132,7 @@
     </div>
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('city_id') ? ' has-error' : '' }}">
-            {!! Form::label('City:', null, ['class' => 'control-label']) !!}
+            {!! Form::label('Ciudad:', null, ['class' => 'control-label']) !!}
             {!! Form::select('city_id',$cities->pluck('city','id'), old('city_id'), ['class' => 'form-control']) !!}
             @if ($errors->has('city_id'))
                 <span class="help-block">

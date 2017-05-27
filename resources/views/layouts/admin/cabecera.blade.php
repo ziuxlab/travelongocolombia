@@ -15,25 +15,19 @@
                          alt="Avatar" data-toggle="dropdown" width="36" height="36">
                 @endif
                 <ul class="dropdown-menu dropdown-menu-right">
-                    <li class="dropdown-header">Profile</li>
+                    <li class="dropdown-header">Perfil</li>
                     <li>
-                        <a tabindex="-1" href="{{url('/')}}">
+                        <a tabindex="-1" href="{{url('admin/users/'. Auth::user()->id .'/edit')}}">
                             <i class="si si-user pull-right"></i>
-                            <span class="badge badge-success pull-right">1</span>Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="{{url('/')}}">
-                            <i class="si si-settings pull-right"></i>Settings
+                            <span class="badge badge-success pull-right">1</span>Perfil
                         </a>
                     </li>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Actions</li>
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                            Logout
+                            Salir
                         </a>
         
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -43,11 +37,12 @@
                 </ul>
             </div>
         </li>
+        <!--
         <li>
             <button class="btn btn-primary" data-toggle="layout" data-action="side_overlay_toggle" type="button">
                 <i class="fa fa-tasks"></i>
             </button>
-        </li>
+        </li>-->
     </ul>
     <ul class="nav-header pull-left">
         <li class="hidden-md hidden-lg">

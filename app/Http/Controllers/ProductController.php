@@ -200,6 +200,8 @@
                     ]);
                 }
             }
+	
+	        Session::flash('mensaje','Paquete creado con exito');
             
             return redirect('admin/packages');
         }
@@ -300,6 +302,8 @@
                     ]);
                 }
             }
+	
+	        Session::flash('mensaje','Paquete Actualizado con exito');
             
             return redirect('admin/packages');
         }
@@ -316,6 +320,7 @@
         {
             //
             Product::destroy($id);
+	        
         }
         
         

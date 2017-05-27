@@ -21,13 +21,13 @@
                 <thead>
                 <tr>
                     <th>Fecha</th>
-                    <th>@lang('general.name')</th>
-                    <th class="text-center">@lang('general.Adults')</th>
-                    <th class="text-center">@lang('general.children')</th>
-                    <th class="text-center">@lang('general.infants')</th>
-                    <th class="">Price</th>
-                    <th class="">@lang('general.status')</th>
-                    <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
+                    <th>Nombre</th>
+                    <th class="text-center">Adultos</th>
+                    <th class="text-center">Niños</th>
+                    <th class="text-center">Infantes</th>
+                    <th class="">Precio</th>
+                    <th class="">Estado</th>
+                    <th class="text-center" style="width: 100px;">Control</th>
                 </tr>
                 </thead>
                 <tbody>

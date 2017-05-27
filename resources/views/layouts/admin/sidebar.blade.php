@@ -89,16 +89,16 @@
                     </li>
                     <li>
                         <a class="{{Request::is('admin/hotels') ? 'active' :''}}" href="{{url('admin/hotels')}}"><i class="fa fa-building-o"></i><span
-                                    class="sidebar-mini-hide">@lang('general.hotels')</span></a>
+                                    class="sidebar-mini-hide">Hoteles</span></a>
                     </li>
                     <li>
                         <a class="{{Request::is('admin/services') ? 'active' :''}}" href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
-                                    class="sidebar-mini-hide">Services</span></a>
+                                    class="sidebar-mini-hide">Servicios</span></a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="{{Request::is('admin/flights') ? 'active' :''}}" href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
                                     class="sidebar-mini-hide">@lang('general.flights')</span></a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="{{Request::is('admin/messages') ? 'active' :''}}" href="{{url('admin/messages')}}"><i class="fa fa-envelope-o"></i><span
                                     class="sidebar-mini-hide">Mensajes</span></a>

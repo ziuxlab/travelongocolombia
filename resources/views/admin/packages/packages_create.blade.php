@@ -29,8 +29,8 @@
                 </div>
                 <div class="block-content border-t text-center">
                     <div class="form-group">
-                        <a class="btn btn-danger btn-minw" href="{{ url()->previous() }}" >@lang('general.cancel')</a>
-                        <button class="btn btn-success btn-minw" type="submit">@lang('general.create')</button>
+                        <a class="btn btn-danger btn-minw" href="{{ url()->previous() }}" >Cancelar</a>
+                        <button class="btn btn-success btn-minw" type="submit">Crear</button>
                     </div>
               </div>
               {!! Form::close() !!}

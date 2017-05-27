@@ -68,7 +68,19 @@
                 @if(Session::get('plan') != 'design')
                     <div>
                         <h2 class="h4">@lang('general.additional services'):</h2>
-                        <p>Si deseas alguno de estos servicios adicionales, puedes incluirlos en un mensaje en la parte inferior</p>
+                        @if (App::isLocale('en'))
+                            <p>Because we don´t want any barriers between colombian coffee area and our tourists, we have
+                            designed a group of services you may need to make your stay more enjoyable.  If you want one
+                            of these services, please select and describe what would you need.</p>
+                        @else
+                            <p>Porque queremos satisfacer diferentes necesidades que pueden presentarse durante su
+                               estadía
+                               en el Eje Cafetero Colombiano, y hacer que su estancia sea totalmente placentera hemos
+                               diseñado los siguientes servicios. Si usted desea adquirir uno de ellos o más, por favor
+                               diligencia el campo que corresponde.</p>
+                        @endif
+                        
+                        
                         <div class="row">
                             @foreach($products->where('local',App::getLocale())->where('type',4)->split(3) as $items)
                                 <div class="col-sm-4">

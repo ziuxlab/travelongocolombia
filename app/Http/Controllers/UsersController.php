@@ -5,6 +5,7 @@
     use App\User;
     use HttpOz\Roles\Models\Role;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Session;
     use Illuminate\Support\Facades\Storage;
     use Intervention\Image\Facades\Image;
 
@@ -80,6 +81,8 @@
             ]);
             
             $user->attachRole($request->role);
+	
+	        Session::flash('mensaje','Usuario creado con exito');
             
             return redirect('admin/users');
             
@@ -152,6 +155,8 @@
             $user->syncRoles([$request->role]);
             
             $user->save();
+	
+	        Session::flash('mensaje','Usuario actualizado con exito');
             
             return redirect('admin/users');
             

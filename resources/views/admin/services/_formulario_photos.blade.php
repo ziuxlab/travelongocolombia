@@ -9,9 +9,9 @@
                     <thead>
                     <tr>
                         <th>imagen</th>
-                        <th>@lang('general.name')</th>
-                        <th class="hidden-xs" style="width: 15%;">@lang('general.order')</th>
-                        <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
+                        <th>Nombre</th>
+                        <th class="hidden-xs" style="width: 15%;">Orden</th>
+                        <th class="text-center" style="width: 100px;">Control</th>
                     </tr>
                     </thead>
                     <tbody>

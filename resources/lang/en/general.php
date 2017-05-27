@@ -38,7 +38,7 @@
 		'Adults'                        => 'Adults',
 		'children'                      => 'Children',
 		'infants'                       => 'Infants',
-		'form'                          => 'formulario de :name',
+		'form'                          => 'Formulario de :name',
 		'keywords'                      => 'Keywords',
 		'description'                   => 'Description',
 		'menu'                          => 'Menu',

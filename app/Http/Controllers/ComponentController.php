@@ -5,7 +5,8 @@
     use App\Components;
     use App\Page;
     use Illuminate\Http\Request;
-    
+    use Illuminate\Support\Facades\Session;
+
     class ComponentController extends Controller
     {
         public function __construct()
@@ -65,6 +66,8 @@
                 'order_component' => $request->order_component,
                 'local'           => $request->local,
             ]);
+	
+	        Session::flash('mensaje','Componente creado con exito');
             
             return redirect('admin/components');
         }
@@ -119,6 +122,8 @@
             $component->local = $request->local;
     
             $component->save();
+	
+	        Session::flash('mensaje','Componente actualizado con exito');
     
             return redirect('admin/components');
     

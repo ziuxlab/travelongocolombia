@@ -1,13 +1,13 @@
 <!-- options -->
 <div class="row">
  <div class="col-lg-6">
-    <a href="{{url('admin/activities/create')}}" class="btn btn-primary push"> + @lang('general.create')</a>
+    <a href="{{url('admin/activities/create')}}" class="btn btn-primary push"> + Crear Actividades</a>
  </div>
-<div class="col-lg-6">
+<div class="col-lg-6 push-20">
     <div class="input-group">  
-      <span class="input-group-addon" id="basic-addon2"><i
-            class="glyphicon glyphicon-search"></i></span>
-      <input type="text" class="form-control" placeholder="@lang('general.tittle')" value="{{ Session::get('product_search')}}" onkeydown="if (event.keyCode == 13) ajaxLoad('products/list/1?ok=1&search='+this.value)">
+      <span class="input-group-addon" id="basic-addon2">
+          <i class="glyphicon glyphicon-search"></i></span>
+      <input type="text" class="form-control" placeholder="Buscar por Nombre" value="{{ Session::get('product_search')}}" onkeydown="if (event.keyCode == 13) ajaxLoad('products/list/1?ok=1&search='+this.value)">
     </div>
 </div>
 </div>
@@ -24,7 +24,7 @@
     <tr>
         <th>
             <a href="javascript:ajaxLoad('products/list/1?field=tittle&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
-                @lang('general.tittle')
+                TÍtulo
             </a>
             <i style="font-size: 12px"
                class="glyphicon  {{ Session::get('product_field')=='tittle'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
@@ -40,7 +40,7 @@
         </th>
         <th class="" >
             <a href="javascript:ajaxLoad('products/list/1?field=status&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
-                @lang('general.status')
+                Estado
             </a>
             <i style="font-size: 12px"
                class="glyphicon  {{ Session::get('product_field')=='status'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
@@ -49,13 +49,13 @@
         </th>
         <th class="" >
             <a href="javascript:ajaxLoad('products/list/1?field=local&sort={{Session::get('product_sort')=='asc'?'desc':'asc'}}')">
-                @lang('general.language')
+                Lenguaje
             </a>
             <i style="font-size: 12px"
                class="glyphicon  {{ Session::get('product_field')=='local'?(Session::get('product_sort')=='asc'?'glyphicon-sort-by-alphabet':'glyphicon-sort-by-alphabet-alt'):'' }}">
             </i>
         </th>
-        <th class="text-center" style="width: 100px;">@lang('general.actions')</th>
+        <th class="text-center" style="width: 100px;">Control</th>
     </tr>
     </thead>
     <tbody>

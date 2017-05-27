@@ -71,7 +71,7 @@
 
 </div>
 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
-    {!! Form::label('Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Descripción:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('description', old('description'), ['class' => 'form-control','placeholder'=>'Ingrese su Descripción']) !!}
     @if ($errors->has('description'))
         <span class="help-block">
@@ -80,7 +80,7 @@
     @endif
 </div>
 <div class="form-group {{ $errors->has('short_description') ? ' has-error' : '' }}">
-    {!! Form::label('Short Description:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Descripción Corta:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('short_description', old('short_description'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese su Descripción Corta']) !!}
     @if ($errors->has('short_description'))
         <span class="help-block">
@@ -89,7 +89,7 @@
     @endif
 </div>
 <div class="form-group {{ $errors->has('include') ? ' has-error' : '' }}">
-    {!! Form::label('Include:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Incluye:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('include', old('include'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese lo que incluye el paquete']) !!}
     @if ($errors->has('include'))
         <span class="help-block">
@@ -98,7 +98,7 @@
     @endif
 </div>
 <div class="form-group {{ $errors->has('suggestion') ? ' has-error' : '' }}">
-    {!! Form::label('Suggestions:', null, ['class' => 'control-label']) !!}
+    {!! Form::label('Sugerencias:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('suggestion', old('suggestion'), ['class' => 'form-control','rows'=>3,'placeholder'=>'Ingrese lo que sugiere del paquete']) !!}
     @if ($errors->has('suggestion'))
         <span class="help-block">
@@ -149,7 +149,7 @@
     </div>
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('city_id') ? ' has-error' : '' }}">
-            {!! Form::label('City:', null, ['class' => 'control-label']) !!}
+            {!! Form::label('Ciudad:', null, ['class' => 'control-label']) !!}
             {!! Form::select('city_id',$cities->pluck('city','id'), old('city_id'), ['class' => 'form-control']) !!}
             @if ($errors->has('city_id'))
                 <span class="help-block">
@@ -162,9 +162,9 @@
 <div class="row">
     <div class="col-md-12">
         <div class="form-group {{ $errors->has('features[]') ? ' has-error' : '' }}">
-            {!! Form::label('Features:', null, ['class' => 'control-label']) !!}
+            {!! Form::label('Características:', null, ['class' => 'control-label']) !!}
             <select class="form-control js-select2 " multiple="multiple" name="features[]" style="width: 100%;"
-                    data-placeholder="Choose many...">
+                    data-placeholder="Escoge una o varias...">
                 <option></option>
                 @foreach($features->where('type',2) as $feature)
                     @if(isset($package))

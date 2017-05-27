@@ -79,6 +79,8 @@
 			
 			] );
 			
+			Session::flash('mensaje','Página creada con exito');
+			
 			return redirect( 'admin/pages' );
 			
 		}
@@ -171,6 +173,8 @@
 			$page->tipo = $request->tipo;
 			
 			$page->save();
+			
+			Session::flash('mensaje','Página Actualizada con exito');
 			
 			return redirect( 'admin/pages' );
 			

@@ -95,6 +95,8 @@ class ActivityController extends Controller
                 ]);
             }
         }
+	
+	    Session::flash('mensaje','Actividad creada con exito');
 
         return redirect('admin/activities');
     }
@@ -176,6 +178,8 @@ class ActivityController extends Controller
                 ]);
             }
         }
+	
+	    Session::flash('mensaje','Actividad actualizada con exito');
 
         return redirect('admin/activities');
     }

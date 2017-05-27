@@ -114,6 +114,8 @@
                 }
             }
             
+            Session::flash('mensaje','Hotel creado con exito');
+            
             return redirect('admin/hotels');
         }
         
@@ -209,6 +211,8 @@
                     ]);
                 }
             }
+	
+	        Session::flash('mensaje','Hotel Actualizado con exito');
     
             return redirect('admin/hotels');
         }
