@@ -22,6 +22,7 @@
         </div>
     </div>
 </div>
+<!--
 <div class="row">
     <div class="col-sm-4">
         <div class="form-group {{ $errors->has('price_adults') ? ' has-error' : '' }}">
@@ -71,6 +72,7 @@
         </div>
     </div>
 </div>
+-->
 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
     {!! Form::label('Descripción:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('description', old('description'), ['class' => 'form-control','placeholder'=>'Ingrese su Descripción']) !!}
@@ -89,6 +91,7 @@
         </span>
     @endif
 </div>
+<!--
 <div class="form-group {{ $errors->has('meta_description') ? ' has-error' : '' }}">
     {!! Form::label('Resumen:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('meta_description', old('meta_description'), ['class' => 'form-control','placeholder'=>'Ingrese su resumen (SEO)','rows'=>'3']) !!}
@@ -107,6 +110,7 @@
         </span>
     @endif
 </div>
+-->
 <div class="row">
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('status') ? ' has-error' : '' }}">
@@ -130,6 +134,7 @@
             @endif
         </div>
     </div>
+    <!--
     <div class="col-sm-3">
         <div class="form-group {{ $errors->has('city_id') ? ' has-error' : '' }}">
             {!! Form::label('Ciudad:', null, ['class' => 'control-label']) !!}
@@ -141,6 +146,7 @@
             @endif
         </div>
     </div>
+    -->
 </div>
 <div class="row">
     <div class="col-sm-4">

@@ -493,31 +493,31 @@
 				'img'        => 'img/activities/otun9.jpg',
 				'order'      => 1,
 			] );
-			Photo::create([
+			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun10.jpg',
 				'order'      => 2,
-			]);
-			Photo::create([
+			] );
+			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun11.jpg',
 				'order'      => 2,
-			]);
-			Photo::create([
+			] );
+			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun12.jpg',
 				'order'      => 2,
-			]);
-			Photo::create([
+			] );
+			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun13.jpg',
 				'order'      => 2,
-			]);
-			Photo::create([
+			] );
+			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun14.jpg',
 				'order'      => 2,
-			]);
+			] );
 			
 			Photo::create( [
 				'product_id' => 11,
@@ -548,11 +548,13 @@
 				'product_id' => 11,
 				'img'        => 'img/activities/museo6.jpg',
 				'order'      => 2,
-			] );Photo::create( [
+			] );
+			Photo::create( [
 				'product_id' => 11,
 				'img'        => 'img/activities/museo7.jpg',
 				'order'      => 2,
-			] );Photo::create( [
+			] );
+			Photo::create( [
 				'product_id' => 11,
 				'img'        => 'img/activities/museo8.jpg',
 				'order'      => 2,
@@ -588,11 +590,13 @@
 				'product_id' => 12,
 				'img'        => 'img/activities/museo6.jpg',
 				'order'      => 2,
-			] );Photo::create( [
+			] );
+			Photo::create( [
 				'product_id' => 12,
 				'img'        => 'img/activities/museo7.jpg',
 				'order'      => 2,
-			] );Photo::create( [
+			] );
+			Photo::create( [
 				'product_id' => 12,
 				'img'        => 'img/activities/museo8.jpg',
 				'order'      => 2,
@@ -822,37 +826,610 @@
 			
 			Photo::create( [
 				'product_id' => 19,
-				'img'        => 'img/packages/package1.png',
+				'img'        => 'img/activities/paqueteA1.jpg',
 				'order'      => 1,
 			] );
-			
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA4.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA6.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA13.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA14.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA15.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA16.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA17.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA18.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA19.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA20.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA21.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA22.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA23.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA24.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA25.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA26.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 19,
+				'img'        => 'img/activities/paqueteA27.jpg',
+				'order'      => 1,
+			] );
 			Photo::create( [
 				'product_id' => 20,
-				'img'        => 'img/packages/package2.png',
+				'img'        => 'img/activities/paqueteA1.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' =>20,
+				'img'        => 'img/activities/paqueteA3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA4.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA6.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA13.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA14.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA15.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA16.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA17.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA18.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA19.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA20.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA21.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA22.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA23.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA24.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA25.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA26.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 20,
+				'img'        => 'img/activities/paqueteA27.jpg',
 				'order'      => 1,
 			] );
 			
 			Photo::create( [
 				'product_id' => 21,
-				'img'        => 'img/packages/package3.png',
+				'img'        => 'img/activities/paqueteB1.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB4.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB6.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB13.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB14.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB15.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB16.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB17.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB18.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB19.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB20.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB21.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => 21,
+				'img'        => 'img/activities/paqueteB1.jpg',
+				'order'      => 2,
+			] );
+			$id = 22;
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB4.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB6.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB13.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB14.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB15.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB16.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB17.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB18.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB19.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB20.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteB21.jpg',
+				'order'      => 1,
+			] );
+			$id = 23;
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC1.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC3.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC4.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC5.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC6.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC13.jpg',
 				'order'      => 1,
 			] );
 			
-			Photo::create( [
-				'product_id' => 22,
-				'img'        => 'img/packages/package1.png',
-				'order'      => 1,
-			] );
+			$id=24;
 			
 			Photo::create( [
-				'product_id' => 23,
-				'img'        => 'img/packages/package2.png',
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC1.jpg',
 				'order'      => 1,
 			] );
-			
 			Photo::create( [
-				'product_id' => 24,
-				'img'        => 'img/packages/package3.png',
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC2.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC3.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC4.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC5.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC6.jpg',
+				'order'      => 1,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC7.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC8.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC9.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC10.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC11.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC12.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/paqueteC13.jpg',
 				'order'      => 1,
 			] );
 			
@@ -1711,7 +2288,7 @@
 				'img'        => 'img/activities/jardin8.jpg',
 				'order'      => 2,
 			] );
-
+			
 			
 			Photo::create( [
 				'product_id' => 47,
@@ -1869,7 +2446,7 @@
 				'img'        => 'img/activities/vicente8.jpg',
 				'order'      => 2,
 			] );
-
+			
 			
 			Photo::create( [
 				'product_id' => 51,
@@ -1929,27 +2506,27 @@
 				'img'        => 'img/activities/calima3.jpg',
 				'order'      => 2,
 			] );
-            Photo::create( [
-                'product_id' => 52,
-                'img'        => 'img/activities/calima4.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 52,
-                'img'        => 'img/activities/calima5.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 52,
-                'img'        => 'img/activities/calima6.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 52,
-                'img'        => 'img/activities/calima7.jpg',
-                'order'      => 2,
-            ] );
-
+			Photo::create( [
+				'product_id' => 52,
+				'img'        => 'img/activities/calima4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 52,
+				'img'        => 'img/activities/calima5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 52,
+				'img'        => 'img/activities/calima6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 52,
+				'img'        => 'img/activities/calima7.jpg',
+				'order'      => 2,
+			] );
+			
 			Photo::create( [
 				'product_id' => 53,
 				'img'        => 'img/activities/calima1.jpg',
@@ -1965,25 +2542,25 @@
 				'img'        => 'img/activities/calima3.jpg',
 				'order'      => 2,
 			] );
-            Photo::create( [
-                'product_id' => 53,
-                'img'        => 'img/activities/calima4.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 53,
-                'img'        => 'img/activities/calima5.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 53,
-                'img'        => 'img/activities/calima6.jpg',
-                'order'      => 2,
-            ] );
-            Photo::create( [
-                'product_id' => 53,
-                'img'        => 'img/activities/calima7.jpg',
-                'order'      => 2,
-            ] );
+			Photo::create( [
+				'product_id' => 53,
+				'img'        => 'img/activities/calima4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 53,
+				'img'        => 'img/activities/calima5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 53,
+				'img'        => 'img/activities/calima6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => 53,
+				'img'        => 'img/activities/calima7.jpg',
+				'order'      => 2,
+			] );
 		}
 	}

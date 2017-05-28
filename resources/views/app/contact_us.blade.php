@@ -1641,18 +1641,23 @@
                             <div class="">
                                 <div class="row content content-narrow">
                                     <h3 class="push-15">{{$item->tittle}}</h3>
-                                    <div class="col-sm-6">
-                                        <h4>@lang('general.address'):</h4>
-                                        <i class="si si-pointer"></i> {{$Config->address}}
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h4>@lang('general.address'):</h4>
+                                            <i class="si si-pointer"></i> {{$Config->address}}
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h4>@lang('general.phone'):</h4>
+                                            <i class="fa fa-phone"></i> {{$Config->phone}}
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <h4>@lang('general.phone'):</h4>
-                                        <i class="fa fa-phone"></i> {{$Config->phone}}
+                                    <div class="row">
+                                        <div class=" push-15-t col-sm-12">
+                                            <h4>Email:</h4>
+                                            <i class="si si-envelope"></i> {{$Config->email}}
+                                        </div>
                                     </div>
-                                    <div class=" push-15-t col-sm-12">
-                                        <h4>Email:</h4>
-                                        <i class="si si-envelope"></i> {{$Config->email}}
-                                    </div>
+                                    
                                 </div>
                                 <div class="content content-narrow">
                                     {!! Form::open(['action'=> ['HomeController@contact']]) !!}
