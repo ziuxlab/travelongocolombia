@@ -142,7 +142,7 @@
                         <div class="row">
                             @foreach($product->photos as $photo)
                                 <div class="col-sm-4" >
-                                    <a href="{{asset($photo->img)}}" data-toggle="lightbox" data-title="{{$photo->img}}" data-gallery="example-gallery">
+                                    <a href="{{asset($photo->img)}}" data-toggle="lightbox" data-title="{{$product->tittle}}" data-gallery="example-gallery">
                                         <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
                                     </a>
                                 </div>
