@@ -15,6 +15,7 @@
             'quantity',
             'price',
             'name',
+            'checkin',
             'nights',
             'bed',
             'rooms',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class BookingController extends Controller
 {
@@ -93,5 +94,6 @@ class BookingController extends Controller
     public function destroy($id)
     {
         //
+	    booking::find($id)->delete();
     }
 }

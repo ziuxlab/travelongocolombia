@@ -9,14 +9,12 @@
 	use Illuminate\Support\Facades\Session;
 	
 	class CartController extends Controller {
-
-
-
-        public function __construct()
-        {
-             }
-
-	    /**
+		
+		
+		public function __construct() {
+		}
+		
+		/**
 		 * Display a listing of the resource.
 		 *
 		 * @return \Illuminate\Http\Response
@@ -45,20 +43,18 @@
 		 */
 		public function store( Request $request ) {
 			
-            if ($request->type <> 2  ){
-                $this->validate($request, [
-                    'adults' => 'required|min:1',
-                ]);
-            }
-
-
+			if ( $request->type <> 2 ) {
+				$this->validate( $request, [
+					'adults' => 'required|min:1',
+				] );
+			}
 			
 			//buscamos el item por el id
 			$item = Product::findorfail( $request->id );
-
 			$total = 0;
 			$adults = 0;
 			$children = 0;
+			
 			//verificamos si el tipo hotel
 			if ( $request->type == 2 ) {
 				//si es hotel deben verificar los tipos de habitaciones
@@ -67,9 +63,11 @@
 				$rooms = collect();
 				
 				foreach ( $request->rooms as $room ) {
-					$kind_room = Product::find( $request->id )->kindsHotel->where( 'id', $room[ 'id' ] )->first();
+					$kind_room = Product::find( $request->id )->kindsHotel->where( 'id', $room[ 'id' ] )
+					                                                      ->first();
 					$rooms[] = $kind_room->kind_room;
-					$total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] ) + ($hotel->price_children * $room[ 'children' ]);
+					$total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] ) +
+					         ( $hotel->price_children * $room[ 'children' ] );
 					$adults = $adults + $room[ 'adults' ];
 					$children = $children + $room[ 'children' ];
 					Product::find( $request->id )
@@ -77,7 +75,7 @@
 					       ->updateExistingPivot( $room[ 'id' ],
 						       [ 'quantity' => ( $kind_room->pivot->quantity - 1 ) ] );
 				}
-
+				
 				$total = $total * $request->nights;
 				
 			} else {
@@ -88,28 +86,29 @@
 			Cart::add( [
 				'id'         => $item->id,
 				'name'       => $item->tittle,
-				'price'      => $total ,
+				'price'      => $total,
 				'quantity'   => 1,
 				'attributes' => [
 					'adults'   => $request->adults ? $request->adults : $adults,
 					'children' => $request->children ? $request->children : $children,
 					'infants'  => $request->infants ? $request->infants : 0,
 					'type'     => $request->type,
+					'checkin'  => $request->checkin,
 					'nights'   => ( isset( $request->nights ) ? $request->nights : 0 ),
 					'bed'      => ( isset( $request->bed ) ? $request->bed : 0 ),
 					'rooms'    => ( isset( $request->rooms ) ? $rooms->implode( ',' ) : '' ),
-					'img'      => $item->photos == null ? 'img/banner/about-us.jpg' :  $item->photos->sortBy( 'order' )
-					                                                                                ->first()->img
+					'img'      => $item->photos == null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )
+					                                                                               ->first()->img
 				]
 			] );
 			
 			
 			if ( Session::has( 'adults' ) ) {
-				if ( Session::get( 'adults' ) < $request->adults  ? $request->adults : $adults) {
-					Session::put( 'adults', $request->adults  ? $request->adults : $adults );
+				if ( Session::get( 'adults' ) < $request->adults ? $request->adults : $adults ) {
+					Session::put( 'adults', $request->adults ? $request->adults : $adults );
 				}
 			} else {
-				Session::put( 'adults', $request->adults  ? $request->adults : $adults);
+				Session::put( 'adults', $request->adults ? $request->adults : $adults );
 			}
 			
 			if ( Session::has( 'children' ) ) {
@@ -222,6 +221,7 @@
 		public function destroy( $id ) {
 			//
 			Cart::remove( $id );
+			
 			return back();
 		}
 		

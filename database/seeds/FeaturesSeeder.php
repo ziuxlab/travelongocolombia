@@ -208,7 +208,7 @@
                 'feature'       => 'Air Conditioner',
                 'feature_es'    => 'Aire Acondicionado',
                 'in_categories' => 0,
-                'icon'          => 'fa fa-snowflake-o',
+                'icon'          => 'fa fa-empire',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
             Feature::create([

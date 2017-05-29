@@ -50,7 +50,7 @@
                             <div class="btn-group">
                                 <a href="{{url('admin/booking/'. $package->id )}}" class="btn btn-xs btn-default"
                                    type="button" data-toggle="tooltip" title=""
-                                   data-original-title="Ver Reserva"><i class="fa fa-pencil"></i></a>
+                                   data-original-title="Ver Reserva"><i class="fa fa-eye"></i></a>
                                 <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                                         data-toggle="tooltip" data-id="{{ $package->id }}" title=""
                                         data-original-title="Eliminar Reserva"><i class="fa fa-times"></i>

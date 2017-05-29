@@ -51,9 +51,15 @@
          */
         public function store(Request $request)
         {
-           
-            //buscamos el destino con el id
-            $destino = city::whereCity_code($request->destination)->first();
+	        
+        	//validamos las fechas
+        	$this->validate($request, [
+		        'checkin'  => 'required|date|after:today',
+		        'checkout' => 'required|date|after:checkin'
+	        ]);
+        	
+        	//buscamos el destino con el id
+            //$destino = city::whereCity_code($request->destination)->first();
           
             
             //Guardamos los datos en la session
@@ -65,9 +71,10 @@
             Session::put('departure', $request->departure);
             Session::put('checkin', $request->checkin);
             Session::put('checkout', $request->checkout);
+	
+	        return redirect(str_slug(trans('cabecera.Design')).'?step=2');
             
-          
-            if ($request->options == 'onlyHotel') {
+	        /*if ($request->options == 'onlyHotel') {
                 
                 return redirect(str_slug(trans('cabecera.Design')).'?step=2');
             }
@@ -76,10 +83,7 @@
             $api = 'AIzaSyClRpqAUiaeS8XP5hibiaEQ9_2PGgOI2iQ';
             
             
-            $this->validate($request, [
-                'checkin'  => 'required|date|after:today',
-                'checkout' => 'required|date'
-            ]);
+          
             
             $postData = [
                 "request" => [
@@ -172,7 +176,7 @@
                 return response('Error no se encontraron vuelos, intentelo mas tarde', 404);
             }
             
-            
+            */
         }
         
         /**

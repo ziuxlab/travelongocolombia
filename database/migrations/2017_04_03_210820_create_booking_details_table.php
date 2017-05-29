@@ -18,10 +18,11 @@ class CreateBookingDetailsTable extends Migration
             $table->integer('product_id')->unsigned();
             $table->foreign('product_id')->references('id')->on('products');
             $table->integer('booking_id')->unsigned();
-            $table->foreign('booking_id')->references('id')->on('bookings');
+            $table->foreign('booking_id')->references('id')->on('bookings')->onDelete('cascade');
             $table->tinyInteger('type')->unsigned()->default(1); //1 para productos, 2 para vuelos
             $table->Integer('price')->unsigned();
             $table->tinyInteger('quantity')->unsigned();
+            $table->date('checkin')->nullable();
             $table->tinyInteger('nights')->unsigned()->nullable();
             $table->tinyInteger('bed')->unsigned()->nullable();
             $table->string('rooms')->nullable();

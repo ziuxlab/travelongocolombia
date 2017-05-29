@@ -71,6 +71,7 @@
                                 <th class="text-center">Cantidad</th>
                                 <th class="text-center">valor</th>
                                 <th class="text-center">tipo</th>
+                                <th class="text-center">Checkin</th>
                                 <th class="text-center">Noches</th>
                                 <th class="text-center">Habitaciones</th>
                             </tr>
@@ -92,8 +93,8 @@
                                             <span class="badge badge-default">Servicio Adicional</span>
                                         @endif
                                     </td>
-                                    <td class="text-center"><span class="badge badge-danger">{{$item->nights}}</span>
-                                    </td>
+                                    <td class="text-center">{{Carbon\Carbon::parse($item->checkin)->format('d-m-Y')}}</td>
+                                    <td class="text-center"><span class="badge badge-danger">{{$item->nights}}</span></td>
                                     <td class="text-center">
                                         @foreach(explode(',', $item->rooms) as $rooms)
                                             <span class="badge badge-primary">{{$rooms}}</span>

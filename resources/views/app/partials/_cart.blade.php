@@ -7,7 +7,7 @@
                     <tr>
                         <th class="hidden-xs"></th>
                         <th>producto</th>
-                        <th class="text-center">cantidad</th>
+                        <th class="text-center hidden-xs">cantidad</th>
                         <!--
                         <th class="text-right">precio</th>-->
                         <th></th>
@@ -36,7 +36,7 @@
                                     @endif
                                 </div>
                             </td>
-                            <td class="text-center">
+                            <td class="text-center hidden-xs">
                                 <span class="badge">{{$item->quantity}}</span>
                             </td>
                         <!--
@@ -54,7 +54,8 @@
                     @endforeach
                     <tr class="active">
                         <td class="hidden-xs"></td>
-                        <td class="text-right" colspan="2">
+                        <td class="hidden-xs"></td>
+                        <td class="text-right" >
                             <span class="h3 font-w600">Total</span>
                         </td>
                         <td class="text-center">
