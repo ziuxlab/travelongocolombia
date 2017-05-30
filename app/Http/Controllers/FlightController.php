@@ -59,7 +59,7 @@
 	        ]);
         	
         	//buscamos el destino con el id
-            //$destino = city::whereCity_code($request->destination)->first();
+            $destino = city::whereCity_code($request->destination)->first();
           
             
             //Guardamos los datos en la session
