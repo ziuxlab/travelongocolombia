@@ -247,7 +247,6 @@
 
 			//aca lo del pago
 			Stripe::setApiKey( 'sk_test_ZyIU6tPXTy3ZYBPO2zxZXB1k' );
-            dd($request->stripeToken);
 			try {
 				$charge = Charge::create( [
 					"amount"      => ( Cart::getTotal() * 100 ),
