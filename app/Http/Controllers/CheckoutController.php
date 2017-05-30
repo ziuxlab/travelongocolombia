@@ -114,6 +114,8 @@
 				//logueamos en sistema al usuario
 				Auth::loginUsingId( $user->id );
 			}
+
+
 			
 			//creamos la reserva
 			$booking = booking::create( [
@@ -240,10 +242,12 @@
 				$booking->contacts()
 				        ->attach( $infant->id );
 			}
-			
+
+
+
 			//aca lo del pago
 			Stripe::setApiKey( 'sk_test_ZyIU6tPXTy3ZYBPO2zxZXB1k' );
-			
+            dd($request->stripeToken);
 			try {
 				$charge = Charge::create( [
 					"amount"      => ( Cart::getTotal() * 100 ),
@@ -275,8 +279,8 @@
 			
 			$booking->status = 'paid';
 			$booking->save();
-			
-			
+
+
 			//guardar el pago
 			payment::create( [
 				'value'      => $booking->price,

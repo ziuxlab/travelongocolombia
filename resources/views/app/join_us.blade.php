@@ -49,11 +49,11 @@
                             @if (App::isLocale('en'))
                                 <p>Would you like to work with us? Download the next form, fill in and upload it again, we will be in touch with you as soon as possible</p>
                                 <p class="push-10">Download the form: </p>
-                                <a class="btn btn-primary btn-minw push-30" href="{{url('formulario.docx')}}" download="form.docx">Downlaod</a>
+                                <a class="btn btn-primary btn-minw push-30" href="{{url('Formulario.docx')}}" download="Formulario.docx">Downlaod</a>
                                 @else
                                 <p>Te interesaría trabajar con nosotros?, descarga el siguiente formulario, diligéncialo y súbelo nuevamente, nos pondremos en contacto contigo a la menor brevedad posible.</p>
                                 <p class="push-10">Descargar formulario:</p>
-                                <a class="btn btn-primary btn-minw push-30" href="{{url('formulario.docx')}}" download="formulario.docx">Descargar</a>
+                                <a class="btn btn-primary btn-minw push-30" href="{{url('Formulario.docx')}}" download="Formulario.docx">Descargar</a>
                             @endif
                             <div class="row  flex-center">
                                 <div class=" col-sm-8 border content  col-sm-offset-2">

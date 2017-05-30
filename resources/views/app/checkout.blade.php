@@ -1849,7 +1849,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <label class="css-input css-checkbox css-checkbox-success">
-                                                <input type="checkbox" required><span></span> Accept this <a
+                                                <input type="checkbox" id="terms" name="terms"><span></span> Accept this <a
                                                         href="{{url(str_slug(trans('general.terms')))}}"
                                                         target="_blank">terms and conditions?</a>
                                             </label>
@@ -1876,12 +1876,11 @@
                                         type="button">@lang('general.next')
                                     <i
                                             class="fa fa-arrow-right"></i></button>
-                                <button id="submit" class="wizard-finish btn btn-primary btn-minw" type="submit"
+                                <button id="submit" disabled="true" class="wizard-finish btn btn-primary btn-minw" type="submit"
                                         style="display: none;"><i class="fa fa-check"></i> @lang('general.Submit')
                                 </button>
                             </div>
                         </div>
-                    
                     </div>
                     {!! Form::close() !!}
                 </div>
@@ -1922,7 +1921,8 @@
                         "adult[email][0]": {required: !0, email: !0},
                         "adult[country][0]": {required: !0},
                         "adult[city][0]": {required: !0},
-                        
+                        "terms": {required: !0},
+
                     },
                     messages: {
                         "adult[full_name][0]": {
@@ -1935,7 +1935,8 @@
                         },
                         "adult[email][0]": "Please enter a valid email address",
                         "adult[country][0]": "Please enter a Country",
-                        "adult[city][0]": "Please enter a City"
+                        "adult[city][0]": "Please enter a City",
+                        "terms": "Please accept the terms and conditions",
                     }
                 });
                 jQuery(".js-wizard-classic-validation").bootstrapWizard({
@@ -1953,19 +1954,7 @@
                         return a ? void 0 : (i.focusInvalid(), !1)
                     },
                     onTabClick: function () {return !1}
-                }), jQuery(".js-wizard-validation").bootstrapWizard({
-                    tabClass: "",
-                    previousSelector: ".wizard-prev",
-                    nextSelector: ".wizard-next",
-                    onTabShow: function (e, a, i) {
-                        var r = a.find("li").length, s = i + 1, t = a.parents(".block"), n = t.find(".wizard-next"), l = t.find(".wizard-finish");
-                        s >= r ? (n.hide(), l.show()) : (n.show(), l.hide())
-                    },
-                    onNext: function () {
-                        var e = a.valid();
-                        return e ? void 0 : (r.focusInvalid(), !1)
-                    },
-                    onTabClick: function () {return !1}
+
                 })
             };
             return {init: function () { a()}}
@@ -1989,6 +1978,14 @@
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script>
         Stripe.setPublishableKey("pk_test_P0EjYfOJsYofkY5AMGlWt4gh");
+        $('#terms').click(function() {
+            if ($(this).is(':checked')) {
+                // Do stuff
+                $('#form_stripe').find('#submit').prop('disabled', false);
+            }else{
+                $('#form_stripe').find('#submit').prop('disabled', true);
+            }
+        });
         jQuery(function ($) {
             $('#form_stripe').submit(function (event) {
                 var $form = $(this);
