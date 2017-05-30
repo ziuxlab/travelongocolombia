@@ -1838,7 +1838,6 @@
                                                 <span> / </span>
                                                 <input class="form-control" type="text" name="year" size="4"
                                                        data-stripe="exp_year" value="2020">
-                                            
                                             </div>
                                         </div>
                                         <div class="col-xs-6">
@@ -1850,7 +1849,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <label class="css-input css-checkbox css-checkbox-success">
-                                                <input type="checkbox"><span></span> Accept this <a
+                                                <input type="checkbox" required><span></span> Accept this <a
                                                         href="{{url(str_slug(trans('general.terms')))}}"
                                                         target="_blank">terms and conditions?</a>
                                             </label>

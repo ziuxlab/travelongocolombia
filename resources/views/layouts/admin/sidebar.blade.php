@@ -104,6 +104,10 @@
                                     class="sidebar-mini-hide">Mensajes</span></a>
                     </li>
                     <li>
+                        <a class="{{Request::is('admin/subscription') ? 'active' :''}}" href="{{url('admin/subscription')}}"><i class="fa fa-envelope-o"></i><span
+                                    class="sidebar-mini-hide">Suscriptores</span></a>
+                    </li>
+                    <li>
                         <a class="{{Request::is('admin/booking') ? 'active' :''}}" href="{{url('admin/booking')}}"><i class="fa fa-dollar"></i><span
                                     class="sidebar-mini-hide">Reservas</span></a>
                     </li>

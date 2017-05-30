@@ -22,9 +22,9 @@
                                             <div class="mheight-100">
                                             </div>
                                         </div>
-                                        <div class=" col-sm-9 col-xs-12  border-black-op-r border-black-op-b  content-mini content-mini-full">
-                                            <h2 class="text-capitalize h4">{{$product->tittle}}</h2>
-                                            <p class="push-5">{{substr($product->description,0,171)}}...</p>
+                                        <div class=" col-sm-9 col-xs-12  border-black-op-r border-black-op-b flex-center  content-mini content-mini-full">
+                                            <h2 class="text-left text-capitalize h4">{{$product->tittle}}</h2>
+                                            <!--<p class="push-5">{{substr($product->description,0,171)}}...</p>-->
                                         </div>
                                     </div>
                                 @endforeach

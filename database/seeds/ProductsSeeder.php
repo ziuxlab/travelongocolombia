@@ -371,7 +371,7 @@
             
             //========== Inicio de Paquetes ==============//
             
-            
+            //Plan a less Physically Taxing
             Product::create([
                 'id'               => 19,
                 'tittle'           => 'Plan a less Physically Taxing',
@@ -567,7 +567,8 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-            
+	        
+            //Plan B Most Physically
             Product::create([
                 'id'               => 20,
                 'tittle'           => 'Plan B Most Physically',
@@ -749,7 +750,8 @@
                 'city_id'          => 2
             ]);
             
-            Product::create([
+            //Plan C Outdoors Tour
+	        Product::create([
                 'id'               => 21,
                 'tittle'           => 'Plan C Outdoors Tour',
                 'slug_url'         => str_slug('Plan C Outdoors Tour', '-'),
@@ -1599,39 +1601,41 @@
             
             
             //========== Inicio de servicios adicionales ==============//
-    
-            Product::create([
+	
+	        //Tourist Guide - 30
+	        Product::create([
                 'id'          => 30,
-                'tittle'      => 'Guía Turístico',
-                'slug_url'    => str_slug('Guía Turístico', '-'),
+                'tittle'      => 'Tourist Guide',
+                'slug_url'    => str_slug('Tourist Guide', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
     
-            Product::create([
+            //Inland Transport - 31
+	        Product::create([
                 'id'          => 31,
-                'tittle'      => 'Transporte Interno',
-                'slug_url'    => str_slug('Transporte Interno', '-'),
+                'tittle'      => 'Inland Transport',
+                'slug_url'    => str_slug('Inland Transport', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
-            
-            
-            
-            Product::create([
+	
+	        //Spanish Classes - 32
+	        Product::create([
                 'id'          => 32,
-                'tittle'      => 'Intensive Spanish',
-                'slug_url'    => str_slug('Intensive Spanish', '-'),
+                'tittle'      => 'Spanish Classes',
+                'slug_url'    => str_slug('Spanish Classes', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
             
+	        //Childcare services - 33
             Product::create([
                 'id'          => 33,
                 'tittle'      => 'Childcare services',
@@ -1642,17 +1646,19 @@
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
+            //Dancing classes; latin Rhythms - 34
+	        Product::create([
                 'id'          => 34,
-                'tittle'      => 'Dancing salsa ',
-                'slug_url'    => str_slug('Dancing salsa ', '-'),
+                'tittle'      => 'Dancing classes; latin Rhythms',
+                'slug_url'    => str_slug('Dancing classes latin Rhythms', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
+            //Nursing - 35
+	        Product::create([
                 'id'          => 35,
                 'tittle'      => 'Nursing or special medical attention',
                 'slug_url'    => str_slug('Nursing or special medical attention', '-'),
@@ -1662,7 +1668,8 @@
                 'type'        => 4, //package,activity
             ]);
             
-            Product::create([
+            //Money exchange - 36
+	        Product::create([
                 'id'          => 36,
                 'tittle'      => 'Money exchange',
                 'slug_url'    => str_slug('Money exchange', '-'),
@@ -1672,9 +1679,10 @@
                 'type'        => 4, //package,activity
             ]);
             
+	        //Cell phone or SIM card and data - 37
             Product::create([
                 'id'          => 37,
-                'tittle'      => 'Cell phone or SIM card and data ',
+                'tittle'      => 'Cell phone or SIM card and data',
                 'slug_url'    => str_slug('Cell phone or SIM card and data ', '-'),
                 'status'      => 1,
                 'local'       => 'en',
@@ -1682,17 +1690,19 @@
                 'type'        => 4, //package,activity
             ]);
             
+	        //Rental car reservations - 38
             Product::create([
                 'id'          => 38,
-                'tittle'      => 'Renta car reservations',
-                'slug_url'    => str_slug('Renta car reservations', '-'),
+                'tittle'      => 'Rental car reservations',
+                'slug_url'    => str_slug('Rental car reservations', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
-            
-            Product::create([
+	
+	        //Complete Laundry services - 39
+	        Product::create([
                 'id'          => 39,
                 'tittle'      => 'Complete Laundry services',
                 'slug_url'    => str_slug('Complete Laundry services', '-'),
@@ -1701,39 +1711,42 @@
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
+	
+	        //Culinary (Colombian cuisine) - 54
+	        Product::create([
+		        'id'          => 54,
+		        'tittle'      => 'Culinary (Colombian cuisine)',
+		        'slug_url'    => str_slug('Culinary (Colombian cuisine)', '-'),
+		        'status'      => 1,
+		        'local'       => 'en',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
             
-            Product::create([
-                'id'          => 54,
-                'tittle'      => 'Purchases',
-                'slug_url'    => str_slug('Purchases', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-            
-            Product::create([
+            //SPA & Beauty reservation - 55
+	        Product::create([
                 'id'          => 55,
-                'tittle'      => 'SPA',
-                'slug_url'    => str_slug('SPA', '-'),
+                'tittle'      => 'SPA & Beauty reservation',
+                'slug_url'    => str_slug('SPA & Beauty reservation', '-'),
                 'status'      => 1,
                 'local'       => 'en',
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
+	
+	        //Accommodation reservations - 56
+	        Product::create([
+		        'id'          => 56,
+		        'tittle'      => 'Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
+		        'slug_url'    => str_slug('Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
+			        '-'),
+		        'status'      => 1,
+		        'local'       => 'en',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
             
-            
-            Product::create([
-                'id'          => 56,
-                'tittle'      => 'Beauty',
-                'slug_url'    => str_slug('Beauty', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-            
-            
+	        //Grocery service
             Product::create([
                 'id'          => 57,
                 'tittle'      => 'Grocery service',
@@ -1743,27 +1756,30 @@
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
+	
+	        //Travelers insurance
+	        Product::create([
+		        'id'          => 58,
+		        'tittle'      => 'Travelers insurance (liability, comprehensive, health, life)',
+		        'slug_url'    => str_slug('Travelers insurance (liability, comprehensive, health, life)', '-'),
+		        'status'      => 1,
+		        'local'       => 'en',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Investment (residential, commercial)
+	        Product::create([
+		        'id'          => 59,
+		        'tittle'      => 'Investment (residential, commercial)',
+		        'slug_url'    => str_slug('Investment (residential, commercial)', '-'),
+		        'status'      => 1,
+		        'local'       => 'en',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
             
-            Product::create([
-                'id'          => 58,
-                'tittle'      => 'Room beauty & massages service',
-                'slug_url'    => str_slug('Room beauty & massages service', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-            
-            Product::create([
-                'id'          => 59,
-                'tittle'      => 'Pick up at airport by bilingual speaker',
-                'slug_url'    => str_slug('Pick up at airport by bilingual speaker', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-            
+	        //No luggage option
             Product::create([
                 'id'          => 60,
                 'tittle'      => 'No luggage option (buy clothes/toiletries here)',
@@ -1774,6 +1790,7 @@
                 'type'        => 4, //package,activity
             ]);
             
+	        //Mercar shopping for fruits/vegetables
             Product::create([
                 'id'          => 61,
                 'tittle'      => 'Mercar shopping for fruits/vegetables',
@@ -1783,60 +1800,213 @@
                 'description' => '',
                 'type'        => 4, //package,activity
             ]);
+	
+	        //Guía Turístico - 62
+	        Product::create([
+		        'id'          => 62,
+		        'tittle'      => 'Guía Turístico',
+		        'slug_url'    => str_slug('Guía Turístico', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Transporte Interno - 63
+	        Product::create([
+		        'id'          => 63,
+		        'tittle'      => 'Transporte Interno',
+		        'slug_url'    => str_slug('Transporte Interno', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Intensive Spanish - 64
+	        Product::create([
+		        'id'          => 64,
+		        'tittle'      => 'Clases de Español',
+		        'slug_url'    => str_slug('Clases de Español', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Childcare services - 65
+	        Product::create([
+		        'id'          => 65,
+		        'tittle'      => 'Ciudado de niños',
+		        'slug_url'    => str_slug('Ciudado de niños', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Clases de baile; Ritmos Latinos - 66
+	        Product::create([
+		        'id'          => 66,
+		        'tittle'      => 'Clases de baile; Ritmos Latinos',
+		        'slug_url'    => str_slug('Clases de baile Ritmos Latinos', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Enfermería o atención médica especial - 70
+	        Product::create([
+		        'id'          => 70,
+		        'tittle'      => 'Enfermería o atención médica especial',
+		        'slug_url'    => str_slug('Enfermería o atención médica especial', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Cambio de divisas - 71
+	        Product::create([
+		        'id'          => 71,
+		        'tittle'      => 'Cambio de divisas',
+		        'slug_url'    => str_slug('Cambio de divisas', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Celulares, tarjetas SIM y datos - 72
+	        Product::create([
+		        'id'          => 72,
+		        'tittle'      => 'Celulares, tarjetas SIM y datos',
+		        'slug_url'    => str_slug('Celulares, tarjetas SIM y datos', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Reservaciones renta de vehiculos - 73
+	        Product::create([
+		        'id'          => 73,
+		        'tittle'      => 'Reservaciones renta de vehiculos',
+		        'slug_url'    => str_slug('Reservaciones renta de vehiculos', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Servicio de lavandería - 74
+	        Product::create([
+		        'id'          => 74,
+		        'tittle'      => 'Servicio de lavandería',
+		        'slug_url'    => str_slug('Servicio de lavandería', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Clase de culinaria (Comida Colombiana) - 75
+	        Product::create([
+		        'id'          => 75 ,
+		        'tittle'      => 'Clase de culinaria (Comida Colombiana)',
+		        'slug_url'    => str_slug('Clase de culinaria (Comida Colombiana)', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Reservaciones de SPA y Belleza - 76
+	        Product::create([
+		        'id'          => 76,
+		        'tittle'      => 'Reservaciones de SPA y Belleza',
+		        'slug_url'    => str_slug('Reservaciones de SPA y Belleza', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Reservaciones para Hospedaje - 77
+	        Product::create([
+		        'id'          => 77,
+		        'tittle'      => 'Reservaciones para Hospedaje',
+		        'slug_url'    => str_slug('Reservaciones para Hospedaje',
+			        '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Servicio a domicilio - 78
+	        Product::create([
+		        'id'          => 78,
+		        'tittle'      => 'Servicio a domicilio',
+		        'slug_url'    => str_slug('Servicio a domicilio', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Seguro de Viajeros - 79
+	        Product::create([
+		        'id'          => 79,
+		        'tittle'      => 'Seguro de Viajeros',
+		        'slug_url'    => str_slug('Seguro de Viajeros', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Inversión de Bienes Raices - 80
+	        Product::create([
+		        'id'          => 80,
+		        'tittle'      => 'Inversión de Bienes Raices',
+		        'slug_url'    => str_slug('Inversión de Bienes Raices', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Opción de No equipaje - 81
+	        Product::create([
+		        'id'          => 81,
+		        'tittle'      => 'Opción de No equipaje (Compra de ropa y articulos de aseo)',
+		        'slug_url'    => str_slug('Opción de No equipaje', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
+	
+	        //Compra de frutas y vegetales - 82
+	        Product::create([
+		        'id'          => 82,
+		        'tittle'      => 'Compra de frutas y vegetales',
+		        'slug_url'    => str_slug('Compra de frutas y vegetales', '-'),
+		        'status'      => 1,
+		        'local'       => 'es',
+		        'description' => '',
+		        'type'        => 4, //package,activity
+	        ]);
             
-            Product::create([
-                'id'          => 62,
-                'tittle'      => 'Investment (residential, commercial)',
-                'slug_url'    => str_slug('Investment (residential, commercial)', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
             
-            Product::create([
-                'id'          => 63,
-                'tittle'      => 'Travelers insurance (liability, comprehensive, health, life)',
-                'slug_url'    => str_slug('Travelers insurance (liability, comprehensive, health, life)', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
+           
             
             
-            Product::create([
-                'id'          => 64,
-                'tittle'      => 'Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
-                'slug_url'    => str_slug('Accommodation reservations (City Hotels, Apartments, Side-trip accommodations)',
-                    '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
     
-            Product::create([
-                'id'          => 65,
-                'tittle'      => 'Culinary (Colombian cuisine)',
-                'slug_url'    => str_slug('Culinary (Colombian cuisine)', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-    
-            Product::create([
-                'id'          => 66,
-                'tittle'      => 'Latin rhythms (Dance)',
-                'slug_url'    => str_slug('Latin rhythms (Dance)', '-'),
-                'status'      => 1,
-                'local'       => 'en',
-                'description' => '',
-                'type'        => 4, //package,activity
-            ]);
-            
-            
+	        
+	        
             
             //========== Fin de servicios adicionales ==============//
             

@@ -962,7 +962,7 @@
 			Photo::create( [
 				'product_id' => 20,
 				'img'        => 'img/activities/paqueteA1.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 20,
@@ -2041,7 +2041,7 @@
 			
 			Photo::create( [
 				'product_id' => 54,
-				'img'        => 'img/services/purchases.jpg',
+				'img'        => 'img/services/cousin.jpg',
 				'order'      => 1,
 			] );
 			
@@ -2051,10 +2051,9 @@
 				'order'      => 1,
 			] );
 			
-			
 			Photo::create( [
 				'product_id' => 56,
-				'img'        => 'img/services/beauty.jpg',
+				'img'        => 'img/services/accomodation.jpg',
 				'order'      => 1,
 			] );
 			
@@ -2066,15 +2065,16 @@
 			
 			Photo::create( [
 				'product_id' => 58,
-				'img'        => 'img/services/room_beauty.jpg',
+				'img'        => 'img/services/travel-insurance.svg',
 				'order'      => 1,
 			] );
 			
 			Photo::create( [
 				'product_id' => 59,
-				'img'        => 'img/services/pickup.jpg',
+				'img'        => 'img/services/investment.jpg',
 				'order'      => 1,
 			] );
+			
 			
 			Photo::create( [
 				'product_id' => 60,
@@ -2090,34 +2090,121 @@
 			
 			Photo::create( [
 				'product_id' => 62,
-				'img'        => 'img/services/investment.jpg',
+				'img'        => 'img/banner/guide.jpg',
 				'order'      => 1,
 			] );
+			
 			
 			Photo::create( [
 				'product_id' => 63,
-				'img'        => 'img/services/travel-insurance.svg',
+				'img'        => 'img/services/car.jpg',
 				'order'      => 1,
 			] );
 			
-			
 			Photo::create( [
 				'product_id' => 64,
-				'img'        => 'img/services/accomodation.jpg',
+				'img'        => 'img/services/spanish.jpg',
 				'order'      => 1,
 			] );
 			
 			Photo::create( [
 				'product_id' => 65,
-				'img'        => 'img/services/cousin.jpg',
+				'img'        => 'img/services/childcare.jpg',
 				'order'      => 1,
 			] );
 			
 			Photo::create( [
 				'product_id' => 66,
-				'img'        => 'img/services/latin-dance.jpg',
+				'img'        => 'img/services/dancing-salsa.jpg',
 				'order'      => 1,
 			] );
+			
+			Photo::create( [
+				'product_id' => 70,
+				'img'        => 'img/services/nurse.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 71,
+				'img'        => 'img/services/money.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 72,
+				'img'        => 'img/services/sim-card.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 73,
+				'img'        => 'img/services/car.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 74,
+				'img'        => 'img/services/laundry.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 75,
+				'img'        => 'img/services/cousin.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 76,
+				'img'        => 'img/services/spa.jpeg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 77,
+				'img'        => 'img/services/accomodation.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 78,
+				'img'        => 'img/services/grocery.png',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 79,
+				'img'        => 'img/services/travel-insurance.svg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 80,
+				'img'        => 'img/services/investment.jpg',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 81,
+				'img'        => 'img/services/no-luggage.png',
+				'order'      => 1,
+			] );
+			
+			Photo::create( [
+				'product_id' => 82,
+				'img'        => 'img/services/grocery.png',
+				'order'      => 1,
+			] );
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			// actividades 2
