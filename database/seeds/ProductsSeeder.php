@@ -2000,14 +2000,6 @@
 		        'type'        => 4, //package,activity
 	        ]);
             
-            
-           
-            
-            
-    
-	        
-	        
-            
             //========== Fin de servicios adicionales ==============//
             
             //========== Inicio 2 de las actividades ==============//

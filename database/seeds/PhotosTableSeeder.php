@@ -315,11 +315,7 @@
 				'order'      => 2,
 			] );
 			
-			Photo::create( [
-				'product_id' => 7,
-				'img'        => 'img/activities/cascada7.jpg',
-				'order'      => 2,
-			] );
+		
 			Photo::create( [
 				'product_id' => 7,
 				'img'        => 'img/activities/cascada8.jpg',
@@ -361,11 +357,7 @@
 				'order'      => 2,
 			] );
 			
-			Photo::create( [
-				'product_id' => 8,
-				'img'        => 'img/activities/cascada7.jpg',
-				'order'      => 2,
-			] );
+			
 			Photo::create( [
 				'product_id' => 8,
 				'img'        => 'img/activities/cascada8.jpg',
