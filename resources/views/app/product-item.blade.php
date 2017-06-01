@@ -91,7 +91,7 @@
                                     <div class="js-slider">
                                         @foreach($item->photos as $photo)
                                             <div>
-                                                <img class="img-responsive border img-thumb"
+                                                <img alt="{{$item->tittle}}" class="img-responsive border img-thumb"
                                                      src="{{asset($photo->img)}}">
                                             </div>
                                         @endforeach
@@ -101,7 +101,7 @@
                                     <div class="slider-nav">
                                         @foreach($item->photos as $photo)
                                             
-                                            <img class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                            <img alt="{{$item->tittle}}" class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
                                         
                                         @endforeach
                                     </div>
