@@ -369,16 +369,7 @@
 				'img'        => 'img/activities/otun1.jpg',
 				'order'      => 1,
 			] );
-			Photo::create( [
-				'product_id' => 9,
-				'img'        => 'img/activities/otun2.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 9,
-				'img'        => 'img/activities/otun3.jpg',
-				'order'      => 2,
-			] );
+			
 			Photo::create( [
 				'product_id' => 9,
 				'img'        => 'img/activities/otun4.jpg',
@@ -445,16 +436,7 @@
 				'img'        => 'img/activities/otun1.jpg',
 				'order'      => 1,
 			] );
-			Photo::create( [
-				'product_id' => 10,
-				'img'        => 'img/activities/otun2.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 10,
-				'img'        => 'img/activities/otun3.jpg',
-				'order'      => 1,
-			] );
+			
 			Photo::create( [
 				'product_id' => 10,
 				'img'        => 'img/activities/otun4.jpg',
