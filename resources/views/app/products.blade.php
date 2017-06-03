@@ -38,7 +38,7 @@
                         @if(App::isLocale('en'))
                             <span>Choose one, two or three packages at the same time if you want, we will be happy to attend you as longer as you can.</span>
                         @else
-                            <span>Eliga uno, dos o tres paquetes al mismo tiempo si desea, nosotros estaremos felices de atenderlo tanto tiempo como usted tenga disponible.</span>
+                            <span>Eliga uno, dos o tres paquetes al mismo tiempo si así lo desea, nosotros estaremos felices de asesorar y coordinar de manera especial sus vacaciones en el eje cafetero colombiano.</span>
                         @endif
                     </div>
                 </div>

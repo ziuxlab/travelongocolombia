@@ -32,8 +32,8 @@
                 'city_id'           => 1,
                 'meta_description'  => 'The Coffee Park',
                 'keywords'          => 'The Coffee Park',
-                'include'           => 'Multiple ticket,  drinks and snacks ',        // price include
-                'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
+                'include'           => 'Multiple ticket,  Drinks and snacks ',        // price include
+                'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock ',
             ]);
             
             Product::create([
@@ -52,8 +52,8 @@
                 'city_id'           => 1,
                 'meta_description'  => 'Parque del café',
                 'keywords'          => 'Parque del café',
-                'include'           => 'Pasaporte múltiple, bebidas y snacks',        // price include
-                'suggestion'        => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar ',
+                'include'           => 'Pasaporte múltiple, Bebidas y snacks',        // price include
+                'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar ',
             ]);
             
             Product::create([
@@ -72,8 +72,8 @@
                 'city_id'           => 1,
                 'meta_description'  => 'Panaca',
                 'keywords'          => 'Panaca',
-                'include'           => 'Terra ticket, drinks and snacks ',        // price include
-                'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
+                'include'           => 'Terra ticket, Drinks and snacks ',        // price include
+                'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock ',
             ]);
             
             Product::create([
@@ -92,8 +92,8 @@
                 'city_id'           => 2,
                 'meta_description'  => 'Panaca',
                 'keywords'          => 'Panaca',
-                'include'           => 'Pasaporte Terra, bebidas y snacks ',        // price include
-                'suggestion'        => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
+                'include'           => 'Pasaporte Terra, Bebidas y snacks ',        // price include
+                'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
             ]);
             
             Product::create([
@@ -112,8 +112,8 @@
                 'city_id'           => 1,
                 'meta_description'  => 'Recuca',
                 'keywords'          => 'Recuca',
-                'include'           => 'Ticket, coffee tasting, drinks and snacks ',        // price include
-                'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
+                'include'           => 'Ticket, Coffee tasting, Drinks and snacks ',        // price include
+                'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock ',
             ]);
 	        
             Product::create([
@@ -131,8 +131,8 @@
                 'city_id'           => 2,
                 'meta_description'  => 'Recuca',
                 'keywords'          => 'Recuca',
-                'include'           => 'Pasaporte, cata de café, bebidas y snacks ',        // price include
-                'suggestion'        => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
+                'include'           => 'Pasaporte, Cata de café, Bebidas y snacks ',        // price include
+                'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
             ]);
             
             Product::create([
@@ -150,8 +150,8 @@
                 'city_id'           => 1,
                 'meta_description'  => 'Las cascadas de Río Verde',
                 'keywords'          => 'Las cascadas de Río Verde',
-                'include'           => 'Almuerzo, ingreso, transporte desde Armenia en Jeep, bebidas y snacks ',
-                'suggestion'        => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
+                'include'           => 'Almuerzo, Ingreso, Transporte desde Armenia en Jeep, Bebidas y snacks ',
+                'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
             
             ]);
             
@@ -170,8 +170,8 @@
                 'city_id'           => 2,
                 'meta_description'  => 'The Río Verde Waterfalls',
                 'keywords'          => 'The Río Verde Waterfalls',
-                'include'           => 'Lunch, Transport  from Armenia by JEEP, drinks, snacks ',
-                'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
+                'include'           => 'Lunch, Transport  from Armenia by JEEP, Drinks and snacks ',
+                'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera',
             ]);
             
             Product::create([
@@ -189,8 +189,8 @@
                 'city_id'           => 2,
                 'meta_description'  => 'Nevado de santa Isable y laguna de otun',
                 'keywords'          => 'Nevado de santa Isable y laguna de otun',
-                'include'           => 'Guía Local, transporte por dos días (compartido),  2 desayunos, 2 almuerzos, 1 cena, hospedaje en finca o campamento, entrada alparque nacional, bebidas y snacks  ',
-                'suggestion'        => 'Ropa para clima frío, zapatos de agarre, guantes, bufanda, pasamontañas, impermeable, bloqueador, sleeping, shapstick, frutas, cereal en barra, otra muda de ropa por si llueve, gafas oscuras con protección UV, agua, cámara, documento identidad',
+                'include'           => 'Guía Local, Transporte por dos días (compartido),  2 Desayunos, 2 Almuerzos, 1 Cena, Hospedaje en finca o campamento, Entrada al parque nacional, Nebidas y snacks  ',
+                'suggestion'        => 'Ropa para clima frío, Zapatos de agarre, Guantes, Bufanda, Pasamontañas, Impermeable, Bloqueador, Sleeping, Shapstick, Frutas o cereal en barra, Otra muda de ropa por si llueve, Gafas oscuras con protección UV, Agua, Cámara, Documento identidad',
             ]);
             
             Product::create([
@@ -208,8 +208,8 @@
                 'city_id'           => 2,
                 'meta_description'  => 'The Otun Lagoon and Santa Isabel Nevado',
                 'keywords'          => 'The Otun Lagoon and Santa Isabel Nevado',
-                'include'           => 'Local guide,  Transport for  2 Days  (Shared),  2 Breakfast, 2 lunch, 1 Dinner Accomodation at a farm or camping, ticket to the national park, drinks and snacks ',
-                'suggestion'        => 'Cold weather clothes, hiking shoes, gloves, scarf, wood cap, raining coat, sunblock, sleeping,  lips stick, fruits, cereal bars, clothes and shoes if it rains, sunglasses with uv protection, water, camera, ID ',
+                'include'           => 'Local guide,  Transport for  2 Days  (Shared),  2 Breakfast, 2 Lunch, 1 Dinner Accomodation at a farm or camping, Ticket to the national park, Drinks and snacks ',
+                'suggestion'        => 'Cold weather clothes, Hiking shoes, Gloves, Scarf, Wood cap, Raining coat, Sunblock, Sleeping, Lips stick, Fruits or Cereal bars, Clothes and shoes if it rains, Sunglasses with UV protection, Water, Camera, ID ',
             ]);
             
             Product::create([
@@ -247,7 +247,7 @@
                 'meta_description'  => 'Museo Quimbaya',
                 'keywords'          => 'Museo Quimbaya',
                 'include'           => 'Entrada Libre',        // price include
-                'suggestion'        => 'Camera',
+                'suggestion'        => 'Cámara',
             ]);
             
             Product::create([
@@ -266,8 +266,8 @@
                 'city_id'           => 4,
                 'meta_description'  => 'The Barbas´ palace',
                 'keywords'          => 'The Barbas´ palace',
-                'include'           => 'Jeep since the square of Filandia, entry, local guide, cup of coffee and natural limonade at the end of the hiking ',
-                'suggestion'        => 'Raincoat and hood, camera, sunblock, hiking shoes, sweater, repelent',
+                'include'           => 'Jeep since the square of Filandia, Entry, Local guide, Cup of coffee and natural limonade at the end of the hiking ',
+                'suggestion'        => 'Raincoat and hood, Camera, Sunblock, Hiking shoes, Sweater, Repelent',
             ]);
             
             Product::create([
@@ -285,8 +285,8 @@
                 'city_id'           => 4,
                 'meta_description'  => 'El palacio de barbas',
                 'keywords'          => 'El palacio de barbas',
-                'include'           => 'Jeep since the square of Filandia, entry, local guide, cup of coffee and natural limonade at the end of the hiking ',
-                'suggestion'        => 'Impermeable con capota, zapatos de agarre, saco y repelente',
+                'include'           => 'Jeep since the square of Filandia, Entry, Local guide, Cup of coffee and natural limonade at the end of the hiking ',
+                'suggestion'        => 'Impermeable con capota, Zapatos de agarre, Saco y repelente',
             ]);
             
             Product::create([
@@ -304,8 +304,8 @@
                 'city_id'           => 4,
                 'meta_description'  => 'The Promised land',
                 'keywords'          => 'The Promised land',
-                'include'           => 'Entry, sense path, smming in the river, beach voleyball, local guide ',
-                'suggestion'        => 'Comfortable shoes and clothes, hut or cap, sunblock, camera, clothes to go in the river, sweater',
+                'include'           => 'Entry, Sense path, Smming in the river, Beach voleyball, Local guide ',
+                'suggestion'        => 'Comfortable shoes and clothes, Hut or cap, Sunblock, Camera, Clothes to go in the river, Sweater',
             ]);
             
             Product::create([
@@ -324,7 +324,7 @@
                 'meta_description'  => 'La tierra prometida',
                 'keywords'          => 'La tierra prometida',
                 'include'           => '',        // price include
-                'suggestion'        => 'Zapatos y ropa comoda, sombrero o gorra, bloqueador solar,camara, ropa para entrar al rio, saco',
+                'suggestion'        => 'Zapatos y ropa cómoda, Sombrero o gorra, Bloqueador solar,Cámara, Ropa para entrar al río, Saco',
             ]);
             
             Product::create([
@@ -344,7 +344,7 @@
                 'meta_description'  => 'Buenavista and Pijao',
                 'keywords'          => 'Buenavista and Pijao',
                 'include'           => '',        // price include
-                'suggestion'        => 'Comfortable shoes, camera, cap or hut',
+                'suggestion'        => 'Comfortable shoes, Camera, Cap or hut',
             ]);
             
             Product::create([
@@ -363,7 +363,7 @@
                 'meta_description'  => 'Buenavista y Pijao',
                 'keywords'          => 'Buenavista y Pijao',
                 'include'           => '',        // price include
-                'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
+                'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
             ]);
             
             //========== Fin de las actividades ==============//
@@ -384,7 +384,7 @@
                 'keywords'         => 'Plan a less Physically Taxing',
                 'status'           => 1,
                 'local'            => 'en',
-                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
+                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 Meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
                 'itinerary'        => '
 <div class="panel-group">
@@ -580,7 +580,7 @@
                 'meta_description' => 'Plan B Most Physically',
                 'keywords'         => 'Plan B Most Physically',
                 'status'           => 1,
-                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
+                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'local'            => 'en',
                 'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
                 'itinerary'        => '
@@ -762,7 +762,7 @@
                 'meta_description' => 'Plan C Outdoors Tour',
                 'keywords'         => 'Plan C Outdoors Tour',
                 'status'           => 1,
-                'include'          => 'Domestic transport since your arrive until your departure at airport in  armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
+                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
                 'local'            => 'en',
                 'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
                 'itinerary'        => '
@@ -937,8 +937,8 @@
                 'keywords'         => 'Plan A Menos Exigencia Física',
                 'status'           => 1,
                 'local'            => 'es',
-                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
-                'description'      => 'Este es el plan perfecto para gente que desea conocer una de las más interesantes culturas latinas, su historia, producción de café, disfrutar el mejor café colombiano, suaves caminatas rodeado de hermosos paisajes, flora y fauna, patrimonio cultural, transportarse en el trasnporte tradicional de los caficultores, recoger café, vestirse con la ropa tradicional de los recolectores.  Niños y adultos se divertirán y aprenderán mucho',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
+                'description'      => 'Este es el plan perfecto para gente que desea conocer una de las más interesantes culturas latinas, su historia, producción de café, disfrutar el mejor café colombiano, suaves caminatas rodeado de hermosos paisajes, flora y fauna, patrimonio cultural, trasnporte tradicional de los caficultores, recoger café, vestirse con la ropa tradicional de los recolectores.  Niños y adultos se divertirán y aprenderán mucho',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1133,7 +1133,7 @@
                 'keywords'         => 'Plan B Más actividad Física',
                 'status'           => 1,
                 'local'            => 'es',
-                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Si está buscando más aventura, estar en contacto con la naturaleza y ver algunos de los sitios más bellos en el área cafetera además disfruta caminar, este es el plan perfecto para usted',
                 'itinerary'        => '
 <div class="panel-group">
@@ -1315,7 +1315,7 @@
                 'keywords'         => 'Plan C',
                 'status'           => 1,
                 'local'            => 'es',
-                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto armenia hasta su salida en armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
+                'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Este plan te permitirá tener más contacto con paisajes montañosos, disfrutar el mejor café pero también acampar en maravillosos y exóticos lugares además de difrutar deportes acuáticos alrededor de una de los más hermosos lagos en Colombia y no perderas la oportunidad de ver monos aulladores viviendo su vida natural ',
                 'itinerary'        => '
 <div class="panel-group">
@@ -2020,7 +2020,7 @@
                 'meta_description'  => 'Filandia',
                 'keywords'          => 'Filandia',
                 'include'           => '',        // price include
-                'suggestion'        => 'Comfortable shoes, camera, cap or hut',
+                'suggestion'        => 'Comfortable shoes, Camera, Cap or hut',
             ]);
             
             Product::create([
@@ -2039,13 +2039,13 @@
                 'meta_description'  => 'Filandia',
                 'keywords'          => 'Filandia',
                 'include'           => '',        // price include
-                'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
+                'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
             ]);
             
             Product::create([
                 'id'                => 42,
                 'tittle'            => 'Cordoba',
-                'description'       => 'CORDOBA Fifteen minutes drive to the south over rather steep terrain and narrow road is a distinctly more modest town, pinned to the slope of the foothills is Cordoba (no attempt was ever made to create a level spot in the entire village). Like Pijao, Cordoba was once a guerilla stronghold, and is now simply noted for its quietude and bliss. Several excellent cafes, and serve up high quality beverage from home grown coffee fields. It is from this town that a jeep can carry you up to the Rio Verde waterfalls. <br> BARCELONA/RIO VERDE Barcelona and Rio Verde are twin towns, both small but renowned collectively as a gastronomic destination of Quindío. These modest villages are the best locations to become familiar with the large variety of “platos tIpicos” or traditional foods of the region. Lining the banks of the rapidly flowing “Rio Verde” river (and therefore without the stunning high point vistas of the other towns), are at least 15 small restaurants and taverns. Here you can challenge your palate and discover an endless number of flavors and most of the foods and combinations that comprise Colombian cuisine. Here also is featured a most delicious alcoholic beverage called “kumis”. Before we tell you what it is, you must try it first (fermented milk). Most agreeable.',
+                'description'       => 'CORDOBA Fifteen minutes drive to the south over rather steep terrain and narrow road is a distinctly more modest town, pinned to the slope of the foothills is Cordoba (no attempt was ever made to create a level spot in the entire village). Like Pijao, Cordoba was once a guerilla stronghold, and is now simply noted for its quietude and bliss. Several excellent cafes, and serve up high quality beverage from home grown coffee fields. It is from this town that a jeep can carry you up to the Rio Verde waterfalls. <br> BARCELONA/RIO VERDE Barcelona and Rio Verde are twin towns, both small but renowned collectively as a gastronomic destination of Quindío. These modest villages are the best locations to become familiar with the large variety of “platos típicos” or traditional foods of the region. Lining the banks of the rapidly flowing “Rio Verde” river (and therefore without the stunning high point vistas of the other towns), are at least 15 small restaurants and taverns. Here you can challenge your palate and discover an endless number of flavors and most of the foods and combinations that comprise Colombian cuisine. Here also is featured a most delicious alcoholic beverage called “kumis”. Before we tell you what it is, you must try it first (fermented milk). Most agreeable.',
                 'short_description' => 'It was once a guerilla stronghold, and is now simply noted for its quietude and bliss… and  a renowned collectively as a gastronomic destination of Quindío',
                 'slug_url'          => str_slug('Cordoba', '-'),
                 'days'              => '6 hours',
@@ -2058,7 +2058,7 @@
                 'meta_description'  => 'Cordoba',
                 'keywords'          => 'Cordoba',
                 'include'           => '',        // price include
-                'suggestion'        => 'Comfortable shoes, camera, cap or hut',
+                'suggestion'        => 'Comfortable shoes, Camera, Cap or hut',
             ]);
             
             Product::create([
@@ -2077,7 +2077,7 @@
                 'meta_description'  => 'Cordoba',
                 'keywords'          => 'Cordoba',
                 'include'           => '',        // price include
-                'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
+                'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
             ]);
             
             Product::create([
@@ -2096,7 +2096,7 @@
                 'meta_description'  => 'Salento, Cocora Valley, Craftsman Village',
                 'keywords'          => 'Salento, Cocora Valley, Craftsman Village',
                 'include'           => '',        // price include
-                'suggestion'        => 'Comfortable shoes, camera, cap or hut, sweater',
+                'suggestion'        => 'Comfortable shoes, Camera, Cap or hut, Sweater',
             ]);
             
             Product::create([
@@ -2115,7 +2115,7 @@
                 'meta_description'  => 'Salento, Valle del Cocora, la Aldea del Artesano',
                 'keywords'          => 'Salento, Valle del Cocora, la Aldea del Artesano',
                 'include'           => '',        // price include
-                'suggestion'        => 'Camara, zapatos comodos y gorra o sombrero',
+                'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
             ]);
             
 
@@ -2135,8 +2135,8 @@
                 'city_id'           => 3,
                 'meta_description'  => 'Botanical Garden',
                 'keywords'          => 'Botanical Garden',
-                'include'           => 'Entry, local guide, drinks & snacks',        // price include
-                'suggestion'        => 'Comfortable shoes, No sandals, cap or hat, sunblock, Drink, camera, sunblock ',
+                'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
+                'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock',
             ]);
             
             Product::create([
@@ -2155,7 +2155,7 @@
                 'meta_description'  => 'Jardín Botánico',
                 'keywords'          => 'Jardín Botánico',
                 'include'           => '',        // price include
-                'suggestion'        => 'Zapatos cómodos, no usar sandalias,  gorra o sombrero, bebida, cámara fotográfica, bloqueador solar',
+                'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
             ]);
             
             Product::create([
@@ -2173,8 +2173,8 @@
                 'city_id'           => 3,
                 'meta_description'  => 'Peñas Blancas Eco-Park',
                 'keywords'          => 'Peñas Blancas Eco-Park',
-                'include'           => 'Entry, local guide, drinks & snacks',        // price include
-                'suggestion'        => 'comfortable shoes, color clothes, long pants, don´t smoke, or alcohol eihter drugs, no knives, ',
+                'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
+                'suggestion'        => 'comfortable shoes, Color clothes, Long pants, Don´t smoke or alcohol eihter drugs, No knives',
             ]);
             
             Product::create([
@@ -2193,7 +2193,7 @@
                 'meta_description'  => 'Eco-Parque Peñas Blancas',
                 'keywords'          => 'Eco-Parque Peñas Blancas',
                 'include'           => '',        // price include
-                'suggestion'        => 'Zapato cerrado. Ropa a color, larga y comoda. No fumar. Evitar el licor y drogas alucinogenas. No llevar machetes, cuchillos o navajas. No dejar basura',
+                'suggestion'        => 'Zapato cerrado, Ropa a color larga y cómoda, No fumar, Evitar el licor y drogas alucinogenas, No llevar machetes cuchillos o navajas, No dejar basura',
             ]);
             
             
@@ -2212,8 +2212,8 @@
                 'city_id'           => 3,
                 'meta_description'  => 'Spring Water San Vicente',
                 'keywords'          => 'Spring Water San Vicente',
-                'include'           => 'Entry, local guide, drinks & snacks',        // price include
-                'suggestion'        => 'comfortable shoes, color clothes, long pants, don´t smoke, or alcohol eihter drugs, no knives, ',
+                'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
+                'suggestion'        => 'comfortable shoes, Color clothes, Long pants, Don´t smoke or alcohol eihter drugs, No knives, ',
             ]);
             
             Product::create([
@@ -2232,7 +2232,7 @@
                 'meta_description'  => 'Aguas Termales San Vicente',
                 'keywords'          => 'Aguas Termales San Vicente',
                 'include'           => '',        // price include
-                'suggestion'        => 'Zapato cerrado. Ropa a color, larga y comoda. No fumar. Evitar el licor y drogas alucinogenas. No llevar machetes, cuchillos o navajas. No dejar basura',
+                'suggestion'        => 'Zapato cerrado, Ropa a color larga y cómoda, No fumar, Evitar el licor y drogas alucinogenas, No llevar machetes cuchillos o navajas, No dejar basura',
             ]);
             
             Product::create([
@@ -2250,8 +2250,8 @@
                 'city_id'           => 3,
                 'meta_description'  => 'Calima lake',
                 'keywords'          => 'Calima lake',
-                'include'           => 'Entry, local guide, drinks & snacks',        // price include
-                'suggestion'        => 'comfortable shoes, color clothes, long pants, don´t smoke, or alcohol eihter drugs, no knives, ',
+                'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
+                'suggestion'        => 'comfortable shoes, Color clothes, Long pants, Don´t smoke or alcohol eihter drugs, No knives, ',
             ]);
             
             Product::create([
@@ -2270,7 +2270,7 @@
                 'meta_description'  => 'Lago Calima',
                 'keywords'          => 'Lago Calima',
                 'include'           => '',        // price include
-                'suggestion'        => 'Zapato cerrado. Ropa a color, larga y comoda. No fumar. Evitar el licor y drogas alucinogenas. No llevar machetes, cuchillos o navajas. No dejar basura',
+                'suggestion'        => 'Zapato cerrado, Ropa a color larga y cómoda, No fumar, Evitar el licor y drogas alucinogenas, No llevar machetes cuchillos o navajas, No dejar basura',
             ]);
 	        
             

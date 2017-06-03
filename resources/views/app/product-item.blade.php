@@ -127,7 +127,7 @@
                                     <div class="text-muted col-xs-6">
                                         <ul class="fa-ul">
                                             @foreach(explode(',', $item->include) as $option)
-                                                <li class="text-capitalize">
+                                                <li class="">
                                                     <i class="fa text-success  fa-check fa-li"></i>{{$option}}
                                                 </li>
                                             @endforeach
@@ -141,7 +141,7 @@
                                     <div class="text-muted col-xs-6">
                                         <ul class="fa-ul">
                                             @foreach(explode(',', $item->suggestion) as $option)
-                                                <li class="text-capitalize">
+                                                <li class="">
                                                     <i class="fa text-success fa-check fa-li"></i>{{$option}}
                                                 </li>
                                             @endforeach
