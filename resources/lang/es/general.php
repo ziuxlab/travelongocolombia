@@ -155,6 +155,7 @@
 		'join-us'                       => 'Trabaja con nosotros',
 		'upload-form '                  => 'Subir Formulario',
 		'about-us'                      => 'Nosotros',
+		'our-allies'                    => 'Nuestros Aliados',
 		'sustainability-policy'         => 'Política de Sostenibilidad',
 		'details'                       => 'Detalles',
 		'terms'                         => 'Terminos y Condiciones',
@@ -162,4 +163,6 @@
 		'Transport'                     => 'Transporte Interno',
 		'message'                       => 'Mensaje',
 		'placeholder message'           => '¿Qué te gustaría disfrutar?',
+		'follow-us'                     => 'Encuéntranos en',
+		'services-cart'                 => '"Los servicios adicionales serán pagados en Armenia. Usted puede indicar con qué frecuencia, qué tipo y requerimientos especiales."',
 	];

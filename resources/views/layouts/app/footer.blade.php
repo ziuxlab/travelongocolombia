@@ -12,17 +12,17 @@
                 @endif
             </div>
             <div class="col-sm-6 overflow-hidden">
-                <form class="form-horizontal push-20-t">
+                {!! Form::open(['action'=> ['SubscriptionController@store'],'class'=>'form-horizontal push-20-t']) !!}
                     <div class="form-group  ">
                         <div class="input-group">
                             <input class="form-control" type="email" name="email" placeholder="Email">
                             <span class="input-group-btn">
                                 <button class="btn btn-minw btn-primary-darkest"
-                                        type="button">@lang('general.Submit')</button>
+                                        type="submit">@lang('general.Submit')</button>
                             </span>
                         </div>
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
@@ -35,6 +35,7 @@
                 Travel<span class="text-primary">on</span>go
                 @lang('general.footer')
             </p>
+            <p>@lang('general.follow-us'):</p>
             <div class="item-social">
                 @if($Config->facebook <> null)
                 <a class="item-circle-small push-10-r item-circle bg-gray-lighter" href="{{$Config->facebook}}">
@@ -67,7 +68,7 @@
             <p class="h3 text-white "> @lang('general.about')</p>
             <br>
             <ul class="list-unstyled">
-                <li><a href="{{url(str_slug(trans('general.about-us')))}}">@lang('general.about-us')</a></li>
+                <li><a href="{{url(str_slug(trans('general.our-allies')))}}">@lang('general.our-allies')</a></li>
                 <li><a href="{{url(str_slug(trans('general.sustainability-policy')))}}">@lang('general.sustainability-policy')</a></li>
                 <li><a href="{{url(str_slug(trans('general.join-us')))}}">@lang('general.join-us')</a></li>
                 <li><a href="{{url(str_slug(trans('general.terms')))}}">@lang('general.terms')</a></li>

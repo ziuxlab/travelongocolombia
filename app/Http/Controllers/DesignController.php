@@ -168,6 +168,8 @@
 				
 				$item = Product::findorfail( $request->product_id );
 				
+				//dd($item);
+				
 				Cart::add( [
 					'id'         => $item->id,
 					'name'       => $item->tittle,

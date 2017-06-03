@@ -95,6 +95,10 @@
                         <a class="{{Request::is('admin/services') ? 'active' :''}}" href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
                                     class="sidebar-mini-hide">Servicios</span></a>
                     </li>
+                    <li>
+                        <a class="{{Request::is('admin/categories') ? 'active' :''}}" href="{{url('admin/categories')}}"><i class="si si-folder-alt"></i><span
+                                    class="sidebar-mini-hide">Categorías</span></a>
+                    </li>
                     <!--<li>
                         <a class="{{Request::is('admin/flights') ? 'active' :''}}" href="{{url('admin/flights')}}"><i class="si si-plane"></i><span
                                     class="sidebar-mini-hide">@lang('general.flights')</span></a>

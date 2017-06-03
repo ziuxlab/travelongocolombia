@@ -40,6 +40,7 @@
     Route::get('home', 'HomeController@home');
     Route::post('contact', 'HomeController@contact');
     Route::post('join', 'HomeController@join');
+    Route::post('subscription', 'Subscription@store');
     Route::get('products/list/{type}', 'ProductController@list');
     
     // Design Plan related routes =======================================.
@@ -115,7 +116,13 @@
         Route::delete('services/{id}/delete', 'ServicesController@destroy');
         Route::post('services/{id}', 'ServicesController@update_order_photo');
         Route::resource('services', 'ServicesController', ['except' => ['delete_photo','destroy', 'update_order_photo']]);
-    
+	
+	    // Categories-related routes ========================================.
+	    Route::resource('categories', 'FeaturesController');
+	
+	    // Categories-related routes ========================================.
+	    Route::resource('subscription', 'SubscriptionController');
+	    
         // System-related routes ========================================.
         Route::resource('settings', 'ConfigController');
         

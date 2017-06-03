@@ -24,11 +24,12 @@
                         :</label>
                     <div class="col-xs-8">{{Auth::user()->email}}</div>
                 </div>
+                <!--
                 <div class="row">
                     <label class="col-xs-4 control-label">@lang('dashboard_user.last_connection')
                         :</label>
                     <div class="col-xs-8">11/01/2017 22:08</div>
-                </div>
+                </div>-->
                 {!! Form::close() !!}
             </div>
             <!-- end user info -->

@@ -154,6 +154,7 @@
 		'join-us'                       => 'Join us',
 		'upload-form '                  => 'Upload Form',
 		'about-us'                      => 'About Us',
+		'our-allies'                    => 'Our Allies',
 		'sustainability-policy'         => 'Sustainability Policy',
 		'details'                       => 'Details',
 		'terms'                         => 'Terms and Conditions',
@@ -161,5 +162,7 @@
 		'Transport'                     => 'Inland Transport',
 		'message'                       => 'Message',
 		'placeholder message'           => 'What would you like to enjoy?',
+		'follow-us'                     => 'Follow us on',
+		'services-cart'                 => '"Additional services will be paid in Armenia.  You can indicate how often, what kind and special requirements."',
 	
 	];
