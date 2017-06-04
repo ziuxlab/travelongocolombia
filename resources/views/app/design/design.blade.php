@@ -63,7 +63,8 @@
             App.initHelper('datepicker');
         });
         $('.js-datepicker').datepicker({
-            dateFormat: 'dd/mm/yyyy'
+            dateFormat: 'dd/mm/yyyy',
+            autoclose: true,
         });
     </script>
     <script>
@@ -89,7 +90,7 @@
                     '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + i + '">'+
                     '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
                     '<div class="col-sm-4" ><div class="form-group">' +
-                    '<label class="control-label">@lang('general.children'):</label>'+
+                    '<label class="control-label">@lang('general.children') (3-12):</label>'+
                     '<div class="input-group"><span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + i+ '">' +
                     '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+

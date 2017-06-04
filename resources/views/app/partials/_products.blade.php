@@ -1,7 +1,9 @@
 <div class="block block-bordered  flex overflow-hidden">
+    
     <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
          style="background-image: url('{{asset(count($product->photos)>0 ? $product->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
-        <div class="mheight-150">
+        <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}">
+        <div class="mheight-200">
             @if($product->discount > 0 or $product->discount <> null)
                 <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
                     <div class="ribbon-box font-w600">
@@ -10,7 +12,9 @@
                 </div>
             @endif
         </div>
+        </a>
     </div>
+   
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
         @if($product->type == 0)
             <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}">

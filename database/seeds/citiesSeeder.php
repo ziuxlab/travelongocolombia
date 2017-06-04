@@ -15,13 +15,13 @@
             //
             city::create([
                 'id'   => 1,
-                'city' => 'Armenia',
+                'city' => 'Quindío',
                 'city_code'=>'AXM'
             ]);
     
             city::create([
                 'id'   => 2,
-                'city' => 'Pereira',
+                'city' => 'Risaralda',
                 'city_code'=>'PEI'
             ]);
     
@@ -30,10 +30,11 @@
                 'city' => 'Manizales',
                 'city_code'=>'MZL'
             ]);
-    
-            city::create([
-                'id'   => 4,
-                'city' => 'Salento'
-            ]);
+	        
+	        city::create([
+		        'id'   => 4,
+		        'city' => 'Valle del Cauca',
+		        'city_code'=>'CAL'
+	        ]);
         }
     }

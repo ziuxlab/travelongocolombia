@@ -37,7 +37,7 @@
                 </div>
                 <div class="block-content border-t text-center">
                     <div class="form-group">
-                        <button class="btn btn-success btn-minw" type="submit">@lang('general.save')</button>
+                        <button class="btn btn-primary btn-minw" type="submit">@lang('general.save')</button>
                     </div>
                 </div>
                 {!! Form::close() !!}

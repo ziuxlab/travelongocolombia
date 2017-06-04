@@ -89,7 +89,7 @@
                 'local'             => 'es',
                 'type'              => 1,
                 'discount'          => 20, //porcentaje
-                'city_id'           => 2,
+                'city_id'           => 1,
                 'meta_description'  => 'Panaca',
                 'keywords'          => 'Panaca',
                 'include'           => 'Pasaporte Terra, Bebidas y snacks ',        // price include
@@ -128,7 +128,7 @@
                 'local'             => 'es',
                 'type'              => 1,
                 'discount'          => 0, //porcentaje
-                'city_id'           => 2,
+                'city_id'           => 1,
                 'meta_description'  => 'Recuca',
                 'keywords'          => 'Recuca',
                 'include'           => 'Pasaporte, Cata de café, Bebidas y snacks ',        // price include
@@ -167,7 +167,7 @@
                 'local'             => 'en',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 2,
+                'city_id'           => 1,
                 'meta_description'  => 'The Río Verde Waterfalls',
                 'keywords'          => 'The Río Verde Waterfalls',
                 'include'           => 'Lunch, Transport  from Armenia by JEEP, Drinks and snacks ',
@@ -186,7 +186,7 @@
                 'local'             => 'es',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 2,
+                'city_id'           => 1,
                 'meta_description'  => 'Nevado de santa Isable y laguna de otun',
                 'keywords'          => 'Nevado de santa Isable y laguna de otun',
                 'include'           => 'Guía Local, Transporte por dos días (compartido),  2 Desayunos, 2 Almuerzos, 1 Cena, Hospedaje en finca o campamento, Entrada al parque nacional, Nebidas y snacks  ',
@@ -205,7 +205,7 @@
                 'local'             => 'en',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 2,
+                'city_id'           => 1,
                 'meta_description'  => 'The Otun Lagoon and Santa Isabel Nevado',
                 'keywords'          => 'The Otun Lagoon and Santa Isabel Nevado',
                 'include'           => 'Local guide,  Transport for  2 Days  (Shared),  2 Breakfast, 2 Lunch, 1 Dinner Accomodation at a farm or camping, Ticket to the national park, Drinks and snacks ',
@@ -263,7 +263,7 @@
                 'local'             => 'en',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 4,
+                'city_id'           => 1,
                 'meta_description'  => 'The Barbas´ palace',
                 'keywords'          => 'The Barbas´ palace',
                 'include'           => 'Jeep since the square of Filandia, Entry, Local guide, Cup of coffee and natural limonade at the end of the hiking ',
@@ -282,7 +282,7 @@
                 'local'             => 'es',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 4,
+                'city_id'           => 1,
                 'meta_description'  => 'El palacio de barbas',
                 'keywords'          => 'El palacio de barbas',
                 'include'           => 'Jeep since the square of Filandia, Entry, Local guide, Cup of coffee and natural limonade at the end of the hiking ',
@@ -301,7 +301,7 @@
                 'local'             => 'en',
                 'type'              => 1,
                 'discount'          => 0,
-                'city_id'           => 4,
+                'city_id'           => 1,
                 'meta_description'  => 'The Promised land',
                 'keywords'          => 'The Promised land',
                 'include'           => 'Entry, Sense path, Smming in the river, Beach voleyball, Local guide ',
@@ -320,7 +320,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 4,
+                'city_id'           => 1,
                 'meta_description'  => 'La tierra prometida',
                 'keywords'          => 'La tierra prometida',
                 'include'           => '',        // price include
@@ -340,7 +340,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Buenavista and Pijao',
                 'keywords'          => 'Buenavista and Pijao',
                 'include'           => '',        // price include
@@ -359,7 +359,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Buenavista y Pijao',
                 'keywords'          => 'Buenavista y Pijao',
                 'include'           => '',        // price include
@@ -371,7 +371,7 @@
             
             //========== Inicio de Paquetes ==============//
             
-            //Plan a less Physically Taxing
+            //Plan a less Physically Taxing 19
             Product::create([
                 'id'               => 19,
                 'tittle'           => 'Plan a less Physically Taxing',
@@ -568,7 +568,7 @@
                 'city_id'          => 2
             ]);
 	        
-            //Plan B Most Physically
+            //Plan B Most Physically 20
             Product::create([
                 'id'               => 20,
                 'tittle'           => 'Plan B Most Physically',
@@ -750,7 +750,7 @@
                 'city_id'          => 2
             ]);
             
-            //Plan C Outdoors Tour
+            //Plan C Outdoors Tour 21
 	        Product::create([
                 'id'               => 21,
                 'tittle'           => 'Plan C Outdoors Tour',
@@ -925,6 +925,7 @@
                 'city_id'          => 2
             ]);
             
+	        //22
             Product::create([
                 'id'               => 22,
                 'tittle'           => 'Plan A Menos Exigencia Física',
@@ -1120,7 +1121,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-            
+            //23
             Product::create([
                 'id'               => 23,
                 'tittle'           => 'Plan B Más actividad Física',
@@ -1302,7 +1303,7 @@
                 'type'             => 0, //package,activity
                 'city_id'          => 2
             ]);
-            
+            //24
             Product::create([
                 'id'               => 24,
                 'tittle'           => 'Plan C',
@@ -2016,7 +2017,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Filandia',
                 'keywords'          => 'Filandia',
                 'include'           => '',        // price include
@@ -2035,7 +2036,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Filandia',
                 'keywords'          => 'Filandia',
                 'include'           => '',        // price include
@@ -2054,7 +2055,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Cordoba',
                 'keywords'          => 'Cordoba',
                 'include'           => '',        // price include
@@ -2073,7 +2074,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Cordoba',
                 'keywords'          => 'Cordoba',
                 'include'           => '',        // price include
@@ -2092,7 +2093,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Salento, Cocora Valley, Craftsman Village',
                 'keywords'          => 'Salento, Cocora Valley, Craftsman Village',
                 'include'           => '',        // price include
@@ -2111,7 +2112,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Salento, Valle del Cocora, la Aldea del Artesano',
                 'keywords'          => 'Salento, Valle del Cocora, la Aldea del Artesano',
                 'include'           => '',        // price include
@@ -2132,7 +2133,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Botanical Garden',
                 'keywords'          => 'Botanical Garden',
                 'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
@@ -2151,7 +2152,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Jardín Botánico',
                 'keywords'          => 'Jardín Botánico',
                 'include'           => '',        // price include
@@ -2170,7 +2171,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Peñas Blancas Eco-Park',
                 'keywords'          => 'Peñas Blancas Eco-Park',
                 'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
@@ -2189,7 +2190,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 1,
                 'meta_description'  => 'Eco-Parque Peñas Blancas',
                 'keywords'          => 'Eco-Parque Peñas Blancas',
                 'include'           => '',        // price include
@@ -2209,7 +2210,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 2,
                 'meta_description'  => 'Spring Water San Vicente',
                 'keywords'          => 'Spring Water San Vicente',
                 'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
@@ -2228,7 +2229,7 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 2,
                 'meta_description'  => 'Aguas Termales San Vicente',
                 'keywords'          => 'Aguas Termales San Vicente',
                 'include'           => '',        // price include
@@ -2247,7 +2248,7 @@
                 'local'             => 'en',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 4,
                 'meta_description'  => 'Calima lake',
                 'keywords'          => 'Calima lake',
                 'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
@@ -2266,17 +2267,11 @@
                 'local'             => 'es',
                 'type'              => 1, //activity
                 'discount'          => 0, //porcentaje
-                'city_id'           => 3,
+                'city_id'           => 4,
                 'meta_description'  => 'Lago Calima',
                 'keywords'          => 'Lago Calima',
                 'include'           => '',        // price include
                 'suggestion'        => 'Zapato cerrado, Ropa a color larga y cómoda, No fumar, Evitar el licor y drogas alucinogenas, No llevar machetes cuchillos o navajas, No dejar basura',
             ]);
-	        
-            
-            
-
-            
-            
         }
     }

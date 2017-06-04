@@ -61,7 +61,7 @@
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('children') ? ' has-error' : '' }}">
-                            {!! Form::label(trans('general.children').':', null, ['class' => 'control-label']) !!}
+                            {!! Form::label(trans('general.children').' (3-12):', null, ['class' => 'control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('infants') ? ' has-error' : '' }}">
-                            {!! Form::label(trans('general.infants').':', null, ['class' => 'text-center control-label']) !!}
+                            {!! Form::label(trans('general.infants').' (0-3):', null, ['class' => 'text-center control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -194,7 +194,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    {!! Form::label(trans('general.children').':', null, ['class' => 'control-label']) !!}
+                                    {!! Form::label(trans('general.children').' (3-12):', null, ['class' => 'control-label']) !!}
                                     <div class="input-group">
                                       <span class="input-group-btn">
                                           <button type="button" class="btn btn-xs btn-default value-control"
@@ -248,15 +248,15 @@
         App.initHelper('datepicker');
     });
     $('.js-datepicker').datepicker({
-        dateFormat: 'dd-mm-yyyy'
+        dateFormat: 'dd-mm-yyyy',
+        autoclose: true,
+        
     });
     $('#checkin').change(function () {
         var today = $('#checkin').datepicker('getDate');
         today.setDate(today.getDate() + parseInt(('{{$item->days}}').replace(/\D+/g, '')));
         $('#checkout').datepicker('setDate', today);
     });
-    
-    
     
     function costos() {
         var price_adults   = '{{$item->price_adults * (1 - ($item->discount/100))}}';
@@ -299,7 +299,7 @@
                  '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + value + '">'+
                  '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
                  '<div class="col-sm-4" ><div class="form-group">' +
-                 '<label class="control-label">@lang('general.children'):</label>'+
+                 '<label class="control-label">@lang('general.children') (3-12):</label>'+
                  '<div class="input-group"><span class="input-group-btn">' +
                  '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + value + '">' +
                  '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+

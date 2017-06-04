@@ -68,7 +68,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group {{ $errors->has('children') ? ' has-error' : '' }}">
-                    {!! Form::label(trans('general.children').':', null, ['class' => 'control-label']) !!}
+                    {!! Form::label(trans('general.children').' (3-12):', null, ['class' => 'control-label']) !!}
                     <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"
@@ -93,7 +93,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group {{ $errors->has('infants') ? ' has-error' : '' }}">
-                    {!! Form::label(trans('general.infants').':', null, ['class' => 'text-center control-label']) !!}
+                    {!! Form::label(trans('general.infants').' (0-3):', null, ['class' => 'text-center control-label']) !!}
                     <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"

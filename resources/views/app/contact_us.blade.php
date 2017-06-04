@@ -1642,11 +1642,11 @@
                                 <div class="row content content-narrow">
                                     <h3 class="push-15">{{$item->tittle}}</h3>
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-7">
                                             <h4>@lang('general.address'):</h4>
                                             <i class="si si-pointer"></i> {{$Config->address}}
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-5">
                                             <h4>@lang('general.phone'):</h4>
                                             <i class="fa fa-phone"></i> {{$Config->phone}}
                                         </div>
@@ -1749,7 +1749,7 @@
         var map              = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v10',
-            center: [-79.4512, 43.6568],
+            center: [-75.7375506, 4.4946359],
             zoom: 12
         });
         
@@ -1766,7 +1766,7 @@
                             "type": "Feature",
                             "geometry": {
                                 "type": "Point",
-                                "coordinates": [-79.4512, 43.6568]
+                                "coordinates": [-75.7375506, 4.4946359]
                             },
                             "properties": {
                                 "title": "Travelongo",

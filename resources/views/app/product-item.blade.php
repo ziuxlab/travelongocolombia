@@ -72,12 +72,13 @@
                                 <h3 class="h3 text-capitalize push-15 ">
                                     <i class=" text-primary  fa fa-file-text-o"></i>
                                     @if($item->type == 0)
-                                        @lang('general.details_resumen',['name'=> trans('general.packages')])
+                                        @lang('general.details_resumen',['name'=> trans('general.package')])
                                     @elseif($item->type == 1)
-                                        @lang('general.details_resumen',['name'=> trans('general.activities')])
+                                        @lang('general.details_resumen',['name'=> trans('general.activity')])
                                     @elseif($item->type == 2)
-                                        @lang('general.details_resumen',['name'=> trans('general.hotels')])
+                                        @lang('general.details_resumen',['name'=> trans('general.hotel')])
                                     @endif
+                                    {{$item->tittle}}
                                 </h3>
                                 <p class="text-muted text-justify">{{$item->description}}</p>
                             </div>
