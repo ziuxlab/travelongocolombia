@@ -16,13 +16,13 @@ class Feature_Products_seeder extends Seeder
     
         Product::find(1)->features()->attach([6,7,8,9,10,11,12,13,14]); //parque del cafe english
         Product::find(2)->features()->attach([6,7,8,9,10,11,12,13,14]); //parque del cafe eespañol
-        Product::find(3)->features()->attach([7,8,10,13,15,17]);        //panaca
-        Product::find(4)->features()->attach([7,8,10,13,15,17]);        //panaca
-        Product::find(5)->features()->attach([7,8,10,14,15]);           //recuca
-        Product::find(6)->features()->attach([7,8,10,14,15]);           //recuca
+        Product::find(3)->features()->attach([6,7,8,10,13,15,17]);        //panaca
+        Product::find(4)->features()->attach([6,7,8,10,13,15,17]);        //panaca
+        Product::find(5)->features()->attach([6,7,8,10,14,15]);           //recuca
+        Product::find(6)->features()->attach([6,7,8,10,14,15]);           //recuca
         Product::find(7)->features()->attach([7,13]);                   //waterfall in cordoba
         Product::find(8)->features()->attach([7,13]);                   //waterfall in cordoba
-        Product::find(9)->features()->attach([7,13]);                   //santa isable
+        Product::find(9)->features()->attach([7,13]);                    //santa isable
         Product::find(10)->features()->attach([7,13]);                  //santa isable
         Product::find(11)->features()->attach([8,9]);                   //museo quimbay
         Product::find(12)->features()->attach([8,9]);                   //museo quimbay

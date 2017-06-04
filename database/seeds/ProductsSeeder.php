@@ -2214,7 +2214,7 @@
                 'meta_description'  => 'Spring Water San Vicente',
                 'keywords'          => 'Spring Water San Vicente',
                 'include'           => 'Entry, Local guide, Drinks & snacks',        // price include
-                'suggestion'        => 'comfortable shoes, Color clothes, Long pants, Don´t smoke or alcohol eihter drugs, No knives, ',
+                'suggestion'        => 'Comfortable shoes, Color clothes, Long pants, Don´t smoke or alcohol eihter drugs, No knives',
             ]);
             
             Product::create([
