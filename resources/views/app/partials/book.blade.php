@@ -169,7 +169,7 @@
                             <div class="col-sm-4" >
                                 <div class="form-group">
                                     {!! Form::label(trans('general.room').' 1:', null, ['class' => 'control-label']) !!}
-                                    {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control']) !!}
+                                    {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control room']) !!}
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -182,7 +182,7 @@
                                               <span class="glyphicon glyphicon-minus"></span>
                                           </button>
                                       </span>
-                                        {!! Form::text('rooms[1][adults]', 1, ['class' => 'text-center form-control','required','id'=>'adults_1','min'=>1,'max'=>10]) !!}
+                                        {!! Form::text('rooms[1][adults]', 1, ['class' => 'text-center form-control','required','id'=>'adults_1','min'=>1,'max'=>4]) !!}
                                         <span class="input-group-btn">
                                           <button type="button" class="btn btn-xs  btn-default value-control"
                                                   data-action="plus" data-target="adults_1">
@@ -202,7 +202,7 @@
                                               <span class="glyphicon glyphicon-minus"></span>
                                           </button>
                                       </span>
-                                        {!! Form::text('rooms[1][children]', 0, ['class' => 'text-center form-control','id'=>'children_1','min'=>0,'max'=>10]) !!}
+                                        {!! Form::text('rooms[1][children]', 0, ['class' => 'text-center form-control','id'=>'children_1','min'=>0,'max'=>4]) !!}
                                         <span class="input-group-btn">
                                           <button type="button" class="btn btn-xs  btn-default value-control"
                                                   data-action="plus" data-target="children_1">
@@ -234,6 +234,7 @@
                 {!! Form::hidden('id',$item->id)!!}
                 {!! Form::hidden('choice',0,['id'=>'choice'])!!}
                 {!! Form::hidden('total',($item->price_adults * (1 - ($item->discount/100))),['id'=>'total'])!!}
+                {!! Form::hidden('descuento',($item->price_adults *  ($item->discount/100)),['id'=>'descuento'])!!}
                 {!! Form::close() !!}
             </div>
         </div>
@@ -265,15 +266,18 @@
         var children       = $('#children').val();
         var nights         = $('#nights').val() || 1;
         var total = adults * price_adults + children * price_children;
-        
+        var descuento = adults * '{{$item->price_adults * ($item->discount/100)}}' + children * '{{$item->price_children * ($item->discount/100)}}';
+
         $('.total').html(total);
         $('#total').val(total);
+        $('#descuento').val(descuento);
         console.log(total)
     }
     
      function agregar_rooms(value,action) {
          
          var kinds_room = <?php echo json_encode($item->kindsHotel); ?>;
+
          if (action == "minus" && value > 0) {
              $('#room_'+ (value)).remove()
          }
@@ -282,7 +286,7 @@
              value = parseInt(value) + 1;
              html = '<div id="room_'+ value +'"><div class="col-sm-4" ><div class="form-group">'+
                              '<label class="control-label">@lang('general.room') ' + value +':</label>' +
-                     '<select class="form-control" name="rooms[' + value + '][id]">';
+                     '<select class="form-control room" name="rooms[' + value + '][id]">';
              $.each(kinds_room, function (i, elem) {
                  // do your stuff
                  html = html +  '<option value="'+ elem.id+'">'+ elem.kind_room +'</option>'
@@ -294,7 +298,7 @@
                  '<div class="input-group"><span class="input-group-btn">' +
                  '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="adults_' + value + '">' +
                  '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
-                 '<input class="text-center form-control"  id="adults_'+ value +'" min="0" max="10" name="rooms['+ value +'][adults]" type="text" value="1">' +
+                 '<input class="text-center form-control"  id="adults_'+ value +'" min="0" max="4" name="rooms['+ value +'][adults]" type="text" value="1">' +
                  '<span class="input-group-btn">' +
                  '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + value + '">'+
                  '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
@@ -303,7 +307,7 @@
                  '<div class="input-group"><span class="input-group-btn">' +
                  '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + value + '">' +
                  '<span class="glyphicon glyphicon-minus"></span> </button> </span>'+
-                 '<input class="text-center form-control"  id="children_'+ value +'" min="0" max="10" name="rooms['+ value +'][children]" type="text" value="0">' +
+                 '<input class="text-center form-control"  id="children_'+ value +'" min="0" max="4" name="rooms['+ value +'][children]" type="text" value="0">' +
                  '<span class="input-group-btn">' +
                  '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="children_' + value + '">'+
                  '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
@@ -318,19 +322,37 @@
         var action = $(this).attr('data-action');
         var target = $(this).attr('data-target');
         var value  = parseFloat($('[id="' + target + '"]').val());
+        var type   = '{{$item->type}}';
     
         if(target == 'bed'){
             agregar_rooms(value,action)
         }
+
+        //TODO toca cambiar y poner en 0 lo de la habitacion por si cmabia de tipo de habitacion
         
         if (action == "plus") {
-            value++;
+            if(type == '2'){
+                if ((target.indexOf("adults") >= 0) || (target.indexOf("children") >= 0 )){
+                    var kind_room = $('#'+target).parent().parent().parent().parent().find(".room").val();
+                    if (kind_room == 1 && value < 1){
+                        value++;
+                    }
+                    if (kind_room == 2 && value < 4){
+                        value++;
+                    }
+                    if (kind_room == 3 && value < 2){
+                        value++;
+                    }
+                }else{
+                    value++;
+                }
+            }else{
+                value++;
+            }
         }
         if (action == "minus" && value > 0) {
             value--;
         }
-    
-       
         
         $('[id="' + target + '"]').val(value);
         costos()

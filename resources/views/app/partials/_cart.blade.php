@@ -14,8 +14,12 @@
                     </tr>
                     </thead>
                     <tbody class="content">
+                    <?php $descuento = 0; ?>
                     @foreach(Cart::getContent() as $key => $item)
                         @if($item->attributes->type <> 4)
+                            @if($item->attributes->descuento > 0)
+                                <?php  $descuento = $descuento + $item->attributes->descuento  ?>
+                                @endif
                             <?php $services = 0 ?>
                             <tr>
                                 <td class="text-center hidden-xs" style="width: 100px">
@@ -103,6 +107,18 @@
                                 </tr>
                             @endif
                         @endforeach
+                    @endif
+                    @if($descuento > 0)
+                    <tr class="">
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="text-right">
+                            <span class="h4 font-w600">@lang('general.discount')</span>
+                        </td>
+                        <td class="text-center">
+                            <div class="h4 font-w600 text-danger">-${{number_format($descuento)}}</div>
+                        </td>
+                    </tr>
                     @endif
                     <tr class="active">
                         <td class="hidden-xs"></td>

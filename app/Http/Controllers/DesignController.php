@@ -89,6 +89,7 @@
 				$item = Product::findorfail( $request->product_id );
 				
 				$total = 0;
+				$descuento = 0;
 				$adults = 0;
 				$children = 0;
 				//si es hotel deben verificar los tipos de habitaciones
@@ -100,8 +101,10 @@
 					$kind_room = Product::find( $request->product_id )->kindsHotel->where( 'id', $room[ 'id' ] )
 					                                                              ->first();
 					$rooms[] = $kind_room->kind_room;
-					$total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] ) +
-					         ( $hotel->price_children * $room[ 'children' ] );
+                    $descuento= $descuento + ( $kind_room->pivot->price * $room[ 'adults' ] *  ( $kind_room->discount / 100 )) +
+                        ( $hotel->price_children * $room[ 'children' ] * ( $kind_room->discount / 100 ) );
+					$total = $total + ( $kind_room->pivot->price * $room[ 'adults' ] * ( 1 - ( $kind_room->discount / 100 ) ) ) +
+					         ( $hotel->price_children * $room[ 'children' ] * ( 1 - ( $kind_room->discount / 100 ) ));
 					$adults = $adults + $room[ 'adults' ];
 					$children = $children + $room[ 'children' ];
 					Product::find( $request->product_id )
@@ -125,6 +128,7 @@
 						'type'     => $item->type,
 						'checkin'  => Session::get( 'checkin' ),
 						'nights'   => $nights,
+						'descuento'   => $descuento,
 						'bed'      => ( isset( $request->bed ) ? $request->bed : 0 ),
 						'rooms'    => ( isset( $request->rooms ) ? $rooms->implode( ',' ) : '' ),
 						'img'      => $item->photos ==
@@ -153,6 +157,8 @@
 						'children' => Session::get( 'children' ),
 						'infants'  => Session::get( 'infants' ),
 						'type'     => $item->type,
+                        'descuento'      => ( Session::get( 'adults' ) * $item->price_adults * ( $item->discount / 100 )  ) +
+                            ( Session::get( 'children' ) * $item->price_children * ( $item->discount / 100 )  ),
 						'checkin'  => Session::get( 'checkin' ),
 						'img'      => $item->photos ==
 						              null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )
@@ -183,6 +189,8 @@
 						'children' => Session::get( 'children' ),
 						'infants'  => Session::get( 'infants' ),
 						'type'     => $item->type,
+                        'descuento'      => ( Session::get( 'adults' ) * $item->price_adults * ( $item->discount / 100 )  ) +
+                            ( Session::get( 'children' ) * $item->price_children * ( $item->discount / 100 )  ),
 						'checkin'  => Session::get( 'checkin' ),
 						'img'      => $item->photos ==
 						              null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )
@@ -211,6 +219,8 @@
 						'children' => Session::get( 'children' ),
 						'infants'  => Session::get( 'infants' ),
 						'type'     => $item->type,
+                        'descuento'      => ( Session::get( 'adults' ) * $item->price_adults * ( $item->discount / 100 )  ) +
+                            ( Session::get( 'children' ) * $item->price_children * ( $item->discount / 100 )  ),
 						'checkin'  => Session::get( 'checkin' ),
 						'img'      => $item->photos ==
 						              null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )
@@ -240,6 +250,8 @@
 						'children' => Session::get( 'children' ),
 						'infants'  => Session::get( 'infants' ),
 						'type'     => $item->type,
+                        'descuento'      => ( Session::get( 'adults' ) * $item->price_adults * ( $item->discount / 100 )  ) +
+                            ( Session::get( 'children' ) * $item->price_children * ( $item->discount / 100 )  ),
 						'checkin'  => Session::get( 'checkin' ),
 						'img'      => $item->photos ==
 						              null ? 'img/banner/about-us.jpg' : $item->photos->sortBy( 'order' )

@@ -27,7 +27,7 @@
     
             city::create([
                 'id'   => 3,
-                'city' => 'Manizales',
+                'city' => 'Caldas',
                 'city_code'=>'MZL'
             ]);
 	        

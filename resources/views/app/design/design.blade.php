@@ -73,7 +73,7 @@
             for (i = 1; i < (parseInt(value) + 1); i++) {
                 html = '<div id="room_'+ i +'"><div class="col-sm-4" ><div class="form-group">'+
                     '<label class="control-label">@lang('general.room') ' + i +':</label>' +
-                    '<select class="form-control" name="rooms[' + i + '][id]">';
+                    '<select class="form-control room" name="rooms[' + i + '][id]">';
                 $.each(kinds_room, function (i, elem) {
                     // do your stuff
                     html = html +  '<option value="'+ elem.id+'">'+ elem.kind_room +'</option>'
@@ -102,8 +102,6 @@
 
                 $('#rooms-'+id).append(html)
             }
-
-
 
         }
     </script>

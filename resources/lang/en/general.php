@@ -84,6 +84,7 @@
 		'booking'                       => 'Booking',
 		'book now'                      => 'Book now',
 		'city'                          => 'City',
+		'discount'                          => 'Discount',
 		'filter'                        => 'Filter',
 		'help'                          => 'Need Help?',
 		'step-by-step'                  => 'Step by Step Design Your Plan',

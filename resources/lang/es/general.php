@@ -84,6 +84,7 @@
 		'booking'                       => 'Reservar',
 		'book now'                      => 'Reservar Ahora',
 		'city'                          => 'Ciudad',
+        'discount'                          => 'Descuento',
 		'filter'                        => 'Filtrar',
 		'help'                          => '¿Necesitas Ayuda?',
 		'step-by-step'                  => 'Paso a Paso Arma tu Propio Plan',
