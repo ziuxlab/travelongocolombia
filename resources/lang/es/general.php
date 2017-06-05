@@ -166,5 +166,6 @@
 		'message'                       => 'Mensaje',
 		'placeholder message'           => 'Cuéntanos aquí tus inquietudes y/o sugerencias',
 		'follow-us'                     => 'Encuéntranos en',
+		'state'                     => 'Departamento',
 		'services-cart'                 => '"Los servicios adicionales serán pagados en Armenia. Usted puede indicar con qué frecuencia, qué tipo y requerimientos especiales."',
 	];

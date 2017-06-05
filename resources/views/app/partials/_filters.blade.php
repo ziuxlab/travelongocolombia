@@ -1,6 +1,6 @@
 <div class="block block-bordered block-rounded">
     <div class="block-header bg-gray-lighter">
-        <h3 class="h5">@lang('general.city')</h3>
+        <h3 class="h5">@lang('general.state')</h3>
     </div>
     <div class="block-content">
         <select class="form-control" name="city" placeholder="Select your destination" id="city">

@@ -165,6 +165,7 @@
 		'message'                       => 'Message',
 		'placeholder message'           => 'Tell us your concerns and/or suggestions here',
 		'follow-us'                     => 'Follow us on',
+		'state'                     => 'State',
 		'services-cart'                 => '"Additional services will be paid in Armenia.  You can indicate how often, what kind and special requirements."',
 	
 	];
