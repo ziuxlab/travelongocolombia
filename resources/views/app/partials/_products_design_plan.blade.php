@@ -1,15 +1,17 @@
 <div class="block block-bordered  flex overflow-hidden">
     <div class="col-md-4 col-sm-3 col-xs-12  bg-image remove-padding"
-          style="background-image: url('{{asset(count($product->photos)>0 ? $product->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
-        <div class="mheight-150">
-            @if($product->discount > 0 or $product->discount <> null)
-                <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
-                    <div class="ribbon-box font-w600">
-                        {{$product->discount}}% Off
+         style="background-image: url('{{asset(count($product->photos)>0 ? $product->photos->sortBy('order')->first()->img : 'img/banner/about-us.jpg')}}'); background-position-x: 50%;">
+        <a href="#product_{{$product->id}}" data-toggle="collapse" data-parent="#faq1">
+            <div class="mheight-200">
+                @if($product->discount > 0 or $product->discount <> null)
+                    <div class=" ribbon ribbon-bookmark ribbon-primary ribbon-left">
+                        <div class="ribbon-box font-w600">
+                            {{$product->discount}}% Off
+                        </div>
                     </div>
-                </div>
-            @endif
-        </div>
+                @endif
+            </div>
+        </a>
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
         <h2 class="text-capitalize h3">{{$product->tittle}}</h2>
@@ -93,7 +95,7 @@
                             @lang('general.details_resumen',['name'=> trans('general.hotel')])
                         @endif
                         {{$product->tittle}}
-                        
+                    
                     </h3>
                     <p class="text-muted text-justify">{{$product->description}}</p>
                 </div>
@@ -143,9 +145,11 @@
                     @if(count($product->photos)>0)
                         <div class="row">
                             @foreach($product->photos as $photo)
-                                <div class="col-sm-4" >
-                                    <a href="{{asset($photo->img)}}" data-toggle="lightbox" data-title="{{$product->tittle}}" data-gallery="example-gallery">
-                                        <img alt="{{$product->tittle}}" class="img-responsive border img-thumb" src="{{asset($photo->img)}}">
+                                <div class="col-sm-4">
+                                    <a href="{{asset($photo->img)}}" data-toggle="lightbox"
+                                       data-title="{{$product->tittle}}" data-gallery="example-gallery">
+                                        <img alt="{{$product->tittle}}" class="img-responsive border img-thumb"
+                                             src="{{asset($photo->img)}}">
                                     </a>
                                 </div>
                             @endforeach

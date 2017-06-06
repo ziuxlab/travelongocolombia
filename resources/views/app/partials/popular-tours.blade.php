@@ -3,7 +3,7 @@
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">@lang('general.Popular Tours')</h2>
             @if(App::isLocale('en'))
-                <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
+                <h4 class="h5 ">"For your convenience, we have compiled our most popular activities into several package options which may help you to more quickly organize your vacation experience in the Colombian coffee area" </h4>
             @else
                 <h4 class="h5 ">"Tenemos una manera única de cumplir con sus expectativas" </h4>
             @endif

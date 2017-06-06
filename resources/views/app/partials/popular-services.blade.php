@@ -2,7 +2,7 @@
     <div class="content-boxed ">
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2 text-capitalize">Popular additional Services</h2>
-            <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
+            <h4 class="h5 ">"We offer these additional services to make your vacation easier, more comfortable and even more enjoyable”</h4>
         </div>
     </div>
     <div class="content-boxed content content-full">

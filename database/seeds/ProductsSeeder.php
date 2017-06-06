@@ -374,18 +374,18 @@
             //Plan a less Physically Taxing 19
             Product::create([
                 'id'               => 19,
-                'tittle'           => 'Plan a less Physically Taxing',
-                'slug_url'         => str_slug('Plan a less Physically Taxing', '-'),
+                'tittle'           => 'Plan A (Less Physically Challenging)',
+                'slug_url'         => str_slug('Plan A (Less Physically Challenging)', '-'),
                 'days'             => '10 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan a less Physically Taxing',
-                'keywords'         => 'Plan a less Physically Taxing',
+                'meta_description' => 'Plan A (Less Physically Challenging)',
+                'keywords'         => 'Plan A (Less Physically Challenging)',
                 'status'           => 1,
                 'local'            => 'en',
-                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 Meals a day,Drinks ,Snacks,Souvenir,All the entrance',
-                'description'      => 'This is the perfect plan for people who want to know about one of the most interesting latin cultures, its history, coffee production, enjoy the best colombian coffee, smooth hiking surrounded of beautiful landscapes, flora, fauna, cultural heritage, riding traditional coffee growers transport,pick coffee up,  wearing coffee growers traditional clothes.  Children and adults will have fun and learn a lot',
+                'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
+                'description'      => 'This is the perfect plan for those who wish to know in depth about one of the most fascinating Latin cultures. In ten days you will learn of the rich Colombian history and heritage, coffee and tropical fruit production, and the finer points of tasting the highest grade Colombian café. You will casually hike through serene mountains, observe extensive flora/fauna, ride to your destination in classic “Willy” jeeps, and harvest your own coffee beans (in traditional garb if you like). Children as well as adults will have fun and gain direct knowledge of Quindío.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -571,18 +571,18 @@
             //Plan B Most Physically 20
             Product::create([
                 'id'               => 20,
-                'tittle'           => 'Plan B Most Physically',
-                'slug_url'         => str_slug('Plan B Most Physically', '-'),
+                'tittle'           => 'Plan B (Most Physically Challenging)',
+                'slug_url'         => str_slug('Plan B (Most Physically Challenging)', '-'),
                 'days'             => '9 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan B Most Physically',
-                'keywords'         => 'Plan B Most Physically',
+                'meta_description' => 'Plan B (Most Physically Challenging)',
+                'keywords'         => 'Plan B (Most Physically Challenging)',
                 'status'           => 1,
-                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide  (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
+                'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
                 'local'            => 'en',
-                'description'      => 'If you are looking for more adventure, be in touch with nature and see some of the most beautiful places in the coffee area and also you enjoy hiking this is the perfect one for you	',
+                'description'      => 'If you are looking for more adventure, to be in touch with nature, see some of the most beautiful places in Quindio, and also enjoy hiking above tree line (and in snow), this is the perfect package for you.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -753,18 +753,18 @@
             //Plan C Outdoors Tour 21
 	        Product::create([
                 'id'               => 21,
-                'tittle'           => 'Plan C Outdoors Tour',
-                'slug_url'         => str_slug('Plan C Outdoors Tour', '-'),
-                'days'             => '9 Days',
+                'tittle'           => 'Plan C (Outdoors Tour but less challenging)',
+                'slug_url'         => str_slug('Plan C (Outdoors Tour but less challenging)', '-'),
+                'days'             => '10 Days',
                 'price_adults'     => 100,
                 'price_children'   => 100,
                 'discount'         => 10, //porcentaje
-                'meta_description' => 'Plan C Outdoors Tour',
-                'keywords'         => 'Plan C Outdoors Tour',
+                'meta_description' => 'Plan C (Outdoors Tour but less challenging)',
+                'keywords'         => 'Plan C (Outdoors Tour but less challenging)',
                 'status'           => 1,
-                'include'          => 'Domestic transport since your arrive until your departure at airport in Armenia (hotel- all tourist places-hotel),Bilingual guide (spanish - english),Breakfast,2 meals a day,Drinks ,Snacks,Souvenir,All the entrance',
+                'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
                 'local'            => 'en',
-                'description'      => 'This plan will allow you to have more contact with landscapes, enjoy the best coffee in town but also to camp in wonderful and exotic places and also enjoy of water sport around one of the most beautiful lakes in Colombia and won´t lose the opportunity to see monkeys living their natural life ',
+                'description'      => 'This less strenuous plan will allow you to have the continual contact with natural landscapes, yet also enjoy the best coffee in the world, but also to camp out in exotic settings, enjoy water sports at one of the largest and more beautiful lakes in Colombia and not miss the opportunity to see monkeys living their natural habitat.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">

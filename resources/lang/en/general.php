@@ -135,7 +135,7 @@
 		'add_services'                  => 'Add services',
 		'Go_to_checkout'                => 'Go to checkout',
 		'pay'                           => 'Pay',
-		'footer'                        => 'Colombia refuses and denounces all kind of exploitative child labor, every violent sexual act against children, also promotes respect and preservation of colombian flora and fauna and cultural goods',
+		'footer'                        => 'Colombia refuses and denounces all kind of exploitative child labor, every violent sexual act against children, also promotes respect and preservation of colombian flora and fauna and cultural goods.',
 		'credit card'                   => 'Credit Card',
 		'personal information'          => 'Personal Information',
 		'adult'                         => 'Adult',
