@@ -37,6 +37,7 @@
     // Menu-related routes ==============================================.
     Route::get('/', 'HomeController@index');
     Route::get('search', 'SearchController@index');
+    Route::post('search', 'SearchController@show');
     Route::get('home', 'HomeController@home');
     Route::post('contact', 'HomeController@contact');
     Route::post('join', 'HomeController@join');

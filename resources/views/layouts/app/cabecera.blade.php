@@ -18,7 +18,7 @@
                     {!! Form::open(['action'=> ['SearchController@index'],'id'=>'search']) !!}
                         <div class=" input-group">
                             {!! Form::text('search', old('search'), ['class' => 'form-control search']) !!}
-                            <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                            <span onclick="buscar()" class="btn input-group-addon"><i class="si si-magnifier"></i></span>
                         </div>
                     {!! Form::close() !!}
                 </div>

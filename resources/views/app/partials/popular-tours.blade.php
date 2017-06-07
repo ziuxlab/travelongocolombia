@@ -5,9 +5,8 @@
             @if(App::isLocale('en'))
                 <h4 class="h5 ">"For your convenience, we have compiled our most popular activities into several package options which may help you to more quickly organize your vacation experience in the Colombian coffee area" </h4>
             @else
-                <h4 class="h5 ">"Tenemos una manera única de cumplir con sus expectativas" </h4>
+                <h4 class="h5 ">"Para su conveniencia, hemos compilado las actividades más populares en diferentes opciones de paquetes las cuales podrán ayudarle a organizar más rapidamente sus experiencia vacacional in el eje cafetero colombiano" </h4>
             @endif
-        
         </div>
     </div>
     <div class="content-boxed content content-full">
@@ -40,7 +39,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <p class="text-justify">
-                                        {{substr($package->description,0,100)}}...
+                                        {{substr($package->short_description,0,100)}}...
                                     </p>
                                     <p class="btn push-20 btn-minw text-white btn-primary text-capitalize">@lang('general.view details')</p>
                                 </div>

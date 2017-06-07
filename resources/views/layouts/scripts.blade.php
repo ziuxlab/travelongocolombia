@@ -8,6 +8,10 @@
         if (event.which == 13) {
             event.preventDefault();
         }
+        buscar()
+    })
+    
+    function buscar() {
         var search = $('.search');
         var data   = $('#search').serialize();
         var url    = $('#search').attr('action');
@@ -24,7 +28,7 @@
                 }
             })
         }
-    })
+    }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
 <script>

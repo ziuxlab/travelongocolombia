@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="form-group {{ $errors->has('infants') ? ' has-error' : '' }}">
-                            {!! Form::label(trans('general.infants').' (0-3):', null, ['class' => 'text-center control-label']) !!}
+                            {!! Form::label(trans('general.infants').' (0-2):', null, ['class' => 'text-center control-label']) !!}
                             <div class="input-group">
                                   <span class="input-group-btn">
                                       <button type="button" class="btn btn-xs btn-default value-control"

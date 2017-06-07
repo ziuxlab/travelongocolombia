@@ -19,17 +19,19 @@
         @if($product->type == 0)
             <a href="{{url(trans('general.packages').'/'.$product->slug_url)}}">
                 <h2 class="h3 text-capitalize">{{$product->tittle}}</h2>
+                <p class="push-10">{{mb_substr($product->short_description,0,171,'UTF-8')}}...</p>
             </a>
         @endif
         @if($product->type == 1)
             <a href="{{url(trans('general.activities').'/'.$product->slug_url)}}">
-                <h2 class="h4 text-capitalize">{{substr($product->tittle,0,36)}}</h2></a>
+                <h2 class="h4 text-capitalize">{{$product->tittle}}</h2></a>
+                <p class="push-10">{{mb_substr($product->short_description,0,171,'UTF-8')}}...</p>
         @endif
         @if($product->type == 2)
             <a href="{{url(trans('general.hotels').'/'.$product->slug_url)}}">
                 <h2 class="text-capitalize h3">{{$product->tittle}}</h2></a>
+                <p class="push-10">{{mb_substr($product->description,0,171,'UTF-8')}}...</p>
         @endif
-        <p class="push-10">{{mb_substr($product->description,0,171,'UTF-8')}}...</p>
         @if($product->features)
             <p class="font-w600 push-5">@lang('general.facilities'):</p>
             <div class="push-20">

@@ -15,7 +15,7 @@
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 border-black-op-r border-black-op-b  content">
         <h2 class="text-capitalize h3">{{$product->tittle}}</h2>
-        <p class="push-10">{{substr($product->description,0,171)}}...</p>
+        <p class="push-10">{{substr($product->short_description,0,171)}}...</p>
         <span class="font-w600">@lang('general.facilities'):</span>
         <div class="push-20">
             @foreach($product->features->where('type',$product->type)->take(5) as $feature)

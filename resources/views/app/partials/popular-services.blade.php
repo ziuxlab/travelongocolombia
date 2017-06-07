@@ -1,16 +1,23 @@
 <div class="bg-white">
     <div class="content-boxed ">
         <div class="col-sm-12 content content-full text-center">
-            <h2 class="h2 text-capitalize">Popular additional Services</h2>
-            <h4 class="h5 ">"We offer these additional services to make your vacation easier, more comfortable and even more enjoyable”</h4>
+            @if(App::isLocale('en'))
+                <h2 class="h2 text-capitalize">Popular additional Services</h2>
+                <h4 class="h5 ">"We offer these additional services to make your vacation easier, more comfortable and
+                                even more enjoyable”</h4>
+            @else
+                <h2 class="h2 text-capitalize">Servicios adicionales más populares</h2>
+                <h4 class="h5 ">"Servicios adicionales populares. Ofrecemos servicios adicionales para hacer sus
+                                vacaciones más fáciles, cómodas e incluso mas agradables ”</h4>
+            @endif
         </div>
     </div>
     <div class="content-boxed content content-full">
         <div class="row">
-            <?php $services = $products->where('local', App::getLocale())
-                                       ->where('type', 4)
-                                       ->chunk(8) ?>
-            <div class="js-slider border  col-sm-12" data-slider-autoplay="true" data-slider-arrows="true" >
+            <?php $services = $products->where( 'local', App::getLocale() )
+                                       ->where( 'type', 4 )
+                                       ->chunk( 8 ) ?>
+            <div class="js-slider border  col-sm-12" data-slider-autoplay="true" data-slider-arrows="true">
                 @foreach($services as $productos_8)
                     <div class="content">
                         @foreach($productos_8->split(2) as $productos)
@@ -24,7 +31,7 @@
                                         </div>
                                         <div class=" col-sm-9 col-xs-12  border-black-op-r border-black-op-b flex-center  content-mini content-mini-full">
                                             <h2 class="text-left text-capitalize h4">{{$product->tittle}}</h2>
-                                            <!--<p class="push-5">{{substr($product->description,0,171)}}...</p>-->
+                                        <!--<p class="push-5">{{substr($product->description,0,171)}}...</p>-->
                                         </div>
                                     </div>
                                 @endforeach
