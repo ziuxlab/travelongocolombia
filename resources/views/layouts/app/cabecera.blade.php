@@ -32,7 +32,6 @@
                             <a href="#" data-toggle="modal" data-target="#registerModal"
                                class=" text-white push-10-r">@lang('cabecera.Register')</a>
                         </div>
-
                     @else
                         <div class="push-10-r  hidden-xs">
                             <div class="btn-group">
