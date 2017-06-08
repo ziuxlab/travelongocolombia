@@ -2612,5 +2612,365 @@
 				'img'        => 'img/activities/calima7.jpg',
 				'order'      => 2,
 			] );
+			
+			$id = 83;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente1.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente1.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente1.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente4.jpg',
+				'order'      => 2,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente9.jpg',
+				'order'      => 2,
+			] );
+			$id = 84;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente1.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente4.jpg',
+				'order'      => 2,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/parapente9.jpg',
+				'order'      => 2,
+			] );
+			$id = 85;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje4.jpg',
+				'order'      => 2,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje5.jpg',
+				'order'      => 2,
+			] );
+			$id = 86;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje4.jpg',
+				'order'      => 2,
+			] );Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/balsaje5.jpg',
+				'order'      => 2,
+			] );
+			$id = 87;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas9.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas10.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas11.jpg',
+				'order'      => 2,
+			] );
+			$id = 88;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas9.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas10.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/bicicletas11.jpg',
+				'order'      => 2,
+			] );
+			
+			$id = 89;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds8.jpg',
+				'order'      => 2,
+			] );
+			$id = 90;
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds1.jpg',
+				'order'      => 2,
+			] );
+			
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds5.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/birds8.jpg',
+				'order'      => 2,
+			] );
 		}
 	}
