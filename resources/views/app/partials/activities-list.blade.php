@@ -15,9 +15,15 @@
 @if(Session::get('plan')<>'design')
     <div class="block block-bordered  flex overflow-hidden">
         <div class="block-content block-content-full text-center">
-            <p class="">¿No encuentras el plan perfecto para ti aún?<br>
-                                   No olvides que puedes armar tu plan como lo deseas.</p>
-            <a class="btn text-capitalize btn-minw btn-primary" href="{{url(trans('cabecera.Design'))}}">@lang('cabecera.Design')</a>
+            @if(App::isLocale('en'))
+                <p class="">Haven´t you find the perfect plan?<br>
+                            click the next botton and you will design your plan easier.</p>
+          
+            @else
+                <p class="">¿No encuentras el plan perfecto para ti aún?<br>
+                            No olvides que puedes armar tu plan como lo deseas.</p>
+                @endif
+            <a class="btn text-capitalize btn-minw btn-primary" href="{{url(str_slug(trans('cabecera.Design')))}}">@lang('cabecera.Design')</a>
         
         </div>
     </div>

@@ -250,9 +250,9 @@ A través de una lista de chequeo, con hospedajes deseados, diferentes actividad
 			
 			Page::create( [
 				'id'         => 19,
-				'slug_url'   => 'arma-tu-plan',
-				'name'       => 'Arma tu plan',
-				'tittle'     => 'Arma tu plan',
+				'slug_url'   => str_slug('diseña tu plan','-'),
+				'name'       => 'Diseña tu plan',
+				'tittle'     => 'Diseña tu plan',
 				'body'       => '{design}',
 				'menu'       => 1,
 				'menu_order' => 4,

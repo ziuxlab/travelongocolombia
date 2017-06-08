@@ -1625,7 +1625,7 @@
                         @if(App::isLocale('en'))
                             <span>But if you plan to stay with us longer than 7 or 10 days, feel free to choose one, two or three packages and we will be happy to combine them in tandem to meet your specific needs.</span>
                         @else
-                            <span>Eliga uno, dos o tres paquetes al mismo tiempo si así lo desea, nosotros estaremos felices de asesorar y coordinar de manera especial sus vacaciones en el eje cafetero colombiano.</span>
+                            <span>Si planea quedarse con nosotros más de 7 o 10 días, no dude en elegir uno, dos o tres paquetes;  nosotros estaremos felices de fusionarlos para satisfacer sus necesidades.</span>
                         @endif
                     </div>
                 </div>

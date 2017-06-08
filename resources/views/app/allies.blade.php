@@ -1782,7 +1782,31 @@
             <div class="content">
                 <h2 class="h2 push-30 text-center">@lang('general.Transport')</h2>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
+                        <div class="block block-rounded block-bordered">
+                            <div class="block-header ">
+                                <h3 class="block-title">B.S TRANSPORTES TURÍSTICO</h3>
+                            </div>
+                            <div class="">
+                                <!-- Slider -->
+                                <div class="js-slider">
+                                    <div>
+                                        <img alt="travelongo allies" class="img-responsive "
+                                             src="{{asset('img/restaurants/taxi.jpg')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-content">
+                                <div class="h5 text-capitalize">@lang('general.details'):</div>
+                                @if (App::isLocale('en'))
+                                    <p class="text-justify">With B.S. TRANSPORTES TURÍSTICOS  a transport turism company with 12 years of experience, you will travel around the colombian coffee area comfortably with a quality service, security, eficiency and a full range of vehicles.</p>
+                                @else
+                                    <p class="text-justify">B.S TRANSPORTES TURISTICOS te brinda la posibilidad de recorrer el Eje cafetero colombiano de la manera más confortable, ofreciendo a nuestros clientes un servicio de calidad gracias a la seguridad,   eficiencia y variedad en su gama de vehículos.</p>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
                                 <h3 class="block-title">Taxi</h3>
@@ -1802,7 +1826,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
                             <div class="block-header ">
                                 <h3 class="block-title">Uber</h3>
