@@ -1780,76 +1780,54 @@
                 </div>
             </div>
             <div class="content">
-                <h2 class="h2 push-30 text-center">@lang('general.Transport')</h2>
+                <div class="block">
+                    <div class="block-header ">
+                        <h2 class="h2 push-30 text-center">@lang('general.Transport')</h2>
+                        @if (App::isLocale('en'))
+                            <h5 class="text-justify">With B.S. TRANSPORTES TURÍSTICOS  a transport turism
+                                                     company with 12 years of experience, you will travel around
+                                                     the colombian coffee area comfortably with a quality
+                                                     service, security, eficiency and a full range of
+                                                     vehicles.</h5>
+                        @else
+                            <h5 class="text-justify">B.S TRANSPORTES TURISTICOS te brinda la posibilidad de
+                                                     recorrer el Eje cafetero colombiano de la manera más
+                                                     confortable, ofreciendo a nuestros clientes un servicio de
+                                                     calidad gracias a la seguridad,   eficiencia y variedad en
+                                                     su gama de vehículos.</h5>
+                        @endif
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="block block-rounded block-bordered">
-                            <div class="block-header ">
-                                <h3 class="block-title">B.S TRANSPORTES TURÍSTICO</h3>
-                            </div>
-                            <div class="">
-                                <!-- Slider -->
-                                <div class="js-slider">
-                                    <div>
-                                        <img alt="travelongo allies" class="img-responsive "
-                                             src="{{asset('img/restaurants/taxi.jpg')}}">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="h5 text-capitalize">@lang('general.details'):</div>
-                                @if (App::isLocale('en'))
-                                    <p class="text-justify">With B.S. TRANSPORTES TURÍSTICOS  a transport turism company with 12 years of experience, you will travel around the colombian coffee area comfortably with a quality service, security, eficiency and a full range of vehicles.</p>
-                                @else
-                                    <p class="text-justify">B.S TRANSPORTES TURISTICOS te brinda la posibilidad de recorrer el Eje cafetero colombiano de la manera más confortable, ofreciendo a nuestros clientes un servicio de calidad gracias a la seguridad,   eficiencia y variedad en su gama de vehículos.</p>
-                                @endif
+                    <div class="col-sm-12 flex">
+                        <div class="col-sm-4">
+                            <div class="block block-rounded block-bordered">
+                                <img alt="travelongo allies" class="img-responsive "
+                                     src="{{asset('img/restaurants/taxi.jpg')}}">
+                            
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="block block-rounded block-bordered">
-                            <div class="block-header ">
-                                <h3 class="block-title">Taxi</h3>
-                            </div>
-                            <div class="">
-                                <!-- Slider -->
-                                <div class="js-slider">
-                                    <div>
-                                        <img alt="travelongo allies" class="img-responsive "
-                                             src="{{asset('img/restaurants/taxi.jpg')}}">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="h5 text-capitalize">tipo de vehiculos:</div>
-                                <p class="text-justify">camionetas, carros 4 puertas, vehiculo familiar.</p>
+                        <div class="col-sm-4">
+                            <div class="block block-rounded block-bordered">
+                                <img alt="travelongo allies" class="img-responsive "
+                                     src="{{asset('img/restaurants/taxi.jpg')}}">
+                            
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="block block-rounded block-bordered">
-                            <div class="block-header ">
-                                <h3 class="block-title">Uber</h3>
-                            </div>
-                            <div class="">
-                                <!-- Slider -->
-                                <div class="js-slider">
-                                    <div>
-                                        <img alt="travelongo allies" class="img-responsive "
-                                             src="{{asset('img/restaurants/uber.jpg')}}">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="h5 text-capitalize">tipo de vehiculos:</div>
-                                <p class="text-justify">vehiculos de alta gama con aire acondicionado.</p>
+                        <div class="col-sm-4">
+                            <div class="block block-rounded block-bordered">
+                                <img alt="travelongo allies" class="img-responsive "
+                                     src="{{asset('img/restaurants/uber.jpg')}}">
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        
         </div>
     </div>
+
 @stop
 
 @section('scripts')
