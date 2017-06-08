@@ -566,7 +566,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
 	        
             //Plan B Most Physically 20
@@ -749,7 +749,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
             //Plan C Outdoors Tour 21
@@ -925,7 +925,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
 	        //22
@@ -1123,7 +1123,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             //23
             Product::create([
@@ -1306,7 +1306,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             //24
             Product::create([
@@ -1478,7 +1478,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
             
@@ -2301,7 +2301,7 @@
 		        'local'             => 'es',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Parapente',
 		        'keywords'          => 'Parapente',
 		        'include'           => 'Seguro de vida y accidentes, Video de la actividad en parapente  duración 4 minutos, 10 fotografías de la actividad, Transporte',        // price include
@@ -2320,7 +2320,7 @@
 		        'local'             => 'en',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Paragliding',
 		        'keywords'          => 'Paragliding',
 		        'include'           => 'Seguro de vida y accidentes, Video de la actividad en parapente  duración 4 minutos, 10 fotografías de la actividad, Transporte',        // price include
@@ -2339,7 +2339,7 @@
 		        'local'             => 'es',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Balsaje',
 		        'keywords'          => 'Balsaje',
 		        'include'           => 'Chalecos salvavidas durante el recorrido, Almuerzo tipo fiambre  acompañado de  gaseosa postobon y tinto',
@@ -2358,7 +2358,7 @@
 		        'local'             => 'en',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Balsaje The Balsaje is a tour of the gentle “La Vieja” ',
 		        'keywords'          => 'Balsaje',
 		        'include'           => 'Lifejacket, Typical lunch and coffee',
@@ -2377,7 +2377,7 @@
 		        'local'             => 'es',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Ciclo rutas',
 		        'keywords'          => 'Ciclo rutas',
 		        'include'           => 'Full equipo, Transporte, Guía, Refrigerio - agua - frutas - galletas, Seguros, Tour de pesca de trucha incluye caña de pescar  ',
@@ -2396,7 +2396,7 @@
 		        'local'             => 'en',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Mountain bike',
 		        'keywords'          => 'Mountain bike',
 		        'include'           => 'Cycling equipment, Guide, Snacks - Fruits - Water, Fishing rod',
@@ -2415,7 +2415,7 @@
 		        'local'             => 'es',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Avistamiento de aves',
 		        'keywords'          => 'Avistamiento de aves',
 		        'include'           => '',
@@ -2434,7 +2434,7 @@
 		        'local'             => 'en',
 		        'type'              => 1, //activity
 		        'discount'          => 0, //porcentaje
-		        'city_id'           => 4,
+		        'city_id'           => 1,
 		        'meta_description'  => 'Bird watching',
 		        'keywords'          => 'Bird watching',
 		        'include'           => '',
