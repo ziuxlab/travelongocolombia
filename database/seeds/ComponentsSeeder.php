@@ -162,7 +162,7 @@ With 1,880 bird species and a rich biodiversity it&#39;s bliss for wildlife love
 </div></div>',
 		        'page_id'         => 11,
 		        'order_component' => 1,
-		        'local'           => 'en',
+		        'local'           => 'es',
 	        ]);
 	
 	        Components::create([
