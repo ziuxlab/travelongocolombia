@@ -61,8 +61,8 @@
                                 @if($step <> 5)
                                     <div>
                                         <a class="btn btn-minw btn-primary"
-                                           href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step + 1 ))}}">
-                                            @lang('general.skip') <i class="si si-arrow-right pull-right"></i></a>
+                                           href="{{url(str_slug(trans('cabecera.Design')).'?step='.($step + 1 ))}}"><i class="si si-arrow-right pull-right"></i>
+                                            @lang('general.skip') </a>
                                     </div>
                                 @endif
                             </div>
