@@ -40,7 +40,17 @@
 				                              ->toArray();
 				
 				if ( count( $contacts[ 'adult' ] ) == 0 ) {
-					$contacts[ 'adult' ] = null;
+					Contact::create([
+						'email'   => Auth::user()->email,
+						'name'    => Auth::user()->name,
+						'type'    => 0,
+						'user_id' => Auth::user()->id,
+					]);
+					$contacts[ 'adult' ] = Contact::where( 'user_id', Auth::user()->id )
+					                              ->whereType( 0 )
+					                              ->get()
+					                              ->toArray();
+					
 				}
 				$contacts[ 'child' ] = Contact::where( 'user_id', Auth::user()->id )
 				                              ->whereType( 1 )
@@ -155,6 +165,7 @@
 						$adult->email = $request->adult[ 'email' ][ $i ];
 						$adult->phone = $request->adult[ 'phone' ][ $i ];
 						$adult->city = $request->adult[ 'city' ][ $i ];
+						$adult->state = $request->adult[ 'state' ][ $i ];
 						$adult->country = $request->adult[ 'country' ][ $i ];
 						$adult->save();
 					} else {
@@ -163,6 +174,7 @@
 							'name'    => $request->adult[ 'full_name' ][ $i ],
 							'phone'   => $request->adult[ 'phone' ][ $i ],
 							'city'    => $request->adult[ 'city' ][ $i ],
+							'state'    => $request->adult[ 'state' ][ $i ],
 							'country' => $request->adult[ 'country' ][ $i ],
 							'type'    => 0,
 							'user_id' => Auth::user()->id,
@@ -174,6 +186,7 @@
 						'name'    => $request->adult[ 'full_name' ][ $i ],
 						'phone'   => $request->adult[ 'phone' ][ $i ],
 						'city'    => $request->adult[ 'city' ][ $i ],
+						'state'    => $request->adult[ 'state' ][ $i ],
 						'country' => $request->adult[ 'country' ][ $i ],
 						'type'    => 0,
 						'user_id' => Auth::user()->id,

@@ -1671,12 +1671,12 @@
                     <div class="block block-bordered remove-margin">
                         <div class="block-content block-content-narrow  block-content-full">
                             <div class="row">
-                                <div class="col-sm-6 text-center border-r">
+                                <div class="col-sm-6 text-center push-10 border-r">
                                     <a href="" data-toggle="modal"
                                        data-target="#loginModal"
                                        class="btn btn-primary btn-minw ">@lang('cabecera.Login')</a>
                                 </div>
-                                <div class="col-sm-6 text-center">
+                                <div class="col-sm-6 text-center ">
                                     <a href="#" data-toggle="modal" data-target="#registerModal"
                                        class="btn btn-primary btn-minw ">@lang('cabecera.Register')</a>
                                 </div>
@@ -1685,14 +1685,14 @@
                     </div>
                 @endif
                 <div class="js-wizard-classic-validation block block-bordered remove-margin">
-                    <ul class="nav nav-tabs nav-justified">
-                        <li class="active">
+                    <ul class="nav nav-tabs text-center  flex-center">
+                        <li class="active col-xs-6 remove-padding">
                             <a class="inactive" href="#validation-classic-step1"
-                               data-toggle="tab">1. @lang('general.personal information')</a>
+                               data-toggle="tab">Step 1. @lang('general.personal information')</a>
                         </li>
-                        <li>
+                        <li class="col-xs-6">
                             <a class="inactive" href="#validation-classic-step2"
-                               data-toggle="tab">2. @lang('general.credit card')</a>
+                               data-toggle="tab">Step 2. @lang('general.credit card')</a>
                         </li>
                     </ul>
                     {!! Form::open(['action'=> ['CheckoutController@store'],'class'=>'js-card-form js-form1 validation form-horizontal','novalidate','id'=>'form_stripe']) !!}
@@ -1727,19 +1727,25 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-3">
                                                 <label>@lang('general.phone')</label>
                                                 <input class="form-control" type="text" name="adult[phone][{{$i}}]"
                                                        value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['phone'])}}"
                                                        placeholder="@lang('general.placeholder phone')">
                                             </div>
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-3">
                                                 <label>@lang('general.city')</label>
                                                 <input class="form-control" type="text" name="adult[city][{{$i}}]"
                                                        value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['city'])}}"
                                                        placeholder="@lang('general.enter_city')">
                                             </div>
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-3">
+                                                <label>@lang('general.state')</label>
+                                                <input class="form-control" type="text" name="adult[state][{{$i}}]"
+                                                       value="{{is_null($contacts['adult']) ? '': (empty($contacts['adult'][$i]) ? '':$contacts['adult'][$i]['state'])}}"
+                                                       placeholder="@lang('general.enter_state')">
+                                            </div>
+                                            <div class="col-sm-3">
                                                 <label>@lang('general.country')</label>
                                                 <input class="form-control" type="text"
                                                        name="adult[country][{{$i}}]"
@@ -1809,7 +1815,7 @@
                             @endfor
                         </div>
                         <div class="tab-pane push-30-t push-50 " id="validation-classic-step2">
-                            <div class="js-card-container hidden-xs push-50">
+                            <div tabindex="1" class="js-card-container hidden-xs push-50">
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 col-sm-offset-3">
@@ -1920,6 +1926,7 @@
                         "adult[phone][0]": {required: !0, minlength: 2},
                         "adult[email][0]": {required: !0, email: !0},
                         "adult[country][0]": {required: !0},
+                        "adult[state][0]": {required: !0},
                         "adult[city][0]": {required: !0},
                         "terms": {required: !0},
 
@@ -1951,9 +1958,10 @@
                     onNext: function () {
                         var a = e.valid();
                         $(".wizard-prev").removeClass("hidden");
+                        $(".js-card-container").focus();
                         return a ? void 0 : (i.focusInvalid(), !1)
                     },
-                    onTabClick: function () {return !1}
+                    onTabClick: function () {e.valid(); return !1}
 
                 })
             };

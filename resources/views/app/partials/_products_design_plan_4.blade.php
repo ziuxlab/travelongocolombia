@@ -4,9 +4,8 @@
         <div class="mheight-100">
         </div>
     </div>
-    <div class=" col-sm-6 col-xs-12  border-black-op-r border-black-op-b  content-mini content-mini-full">
-        <h2 class="text-capitalize h4">{{$product->tittle}}</h2>
-        <!--<p class="push-5">{{substr($product->description,0,171)}}...</p>-->
+    <div class=" col-sm-6 col-xs-12  border-black-op-r border-black-op-b text-center flex-center  content-mini content-mini-full">
+        <h2 class="text-capitalize h5">{{$product->tittle}}</h2>
     </div>
     <div class=" col-sm-3 col-xs-12 border-black-op-b content-mini content-mini-full text-center flex-center">
         <div>

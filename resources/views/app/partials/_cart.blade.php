@@ -1,12 +1,12 @@
 <div class="content-boxed content remove-padding-t">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 border col-sm-12 bg-white remove-padding">
-            <div class="table-responsive">
+            <div class="">
                 <table class="table border-b table-header-bg table-vcenter">
                     <thead>
                     <tr>
                         <th class="hidden-xs"></th>
-                        <th>producto</th>
+                        <th class="">producto</th>
                         <th class="text-center hidden-xs">cantidad</th>
                         <!--
                         <th class="text-right">precio</th>-->
@@ -15,12 +15,13 @@
                     </thead>
                     <tbody class="content">
                     <?php $descuento = 0; ?>
+                    <?php $services = 0 ?>
                     @foreach(Cart::getContent() as $key => $item)
                         @if($item->attributes->type <> 4)
                             @if($item->attributes->descuento > 0)
                                 <?php  $descuento = $descuento + $item->attributes->descuento  ?>
                                 @endif
-                            <?php $services = 0 ?>
+                            
                             <tr>
                                 <td class="text-center hidden-xs" style="width: 100px">
                                     <img class="img-thumbnail img-responsive" src="{{asset($item->attributes->img)}}"
@@ -62,6 +63,12 @@
                         @endif
                     @endforeach
                     @if($services == 1)
+                        <tr class="bg-primary"> <th class="hidden-xs"></th>
+                            <th class="">@lang('general.additional services')</th>
+                            <th class="text-center hidden-xs">cantidad</th>
+                            <!--
+                            <th class="text-right">precio</th>-->
+                            <th></th></tr>
                         <tr class="active">
                             <td class="text-center" colspan="4">@lang('general.services-cart')
                             </td>

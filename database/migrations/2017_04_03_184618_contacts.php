@@ -19,6 +19,7 @@ class Contacts extends Migration
             $table->string('name');
             $table->string('phone')->nullable();
             $table->string('city')->nullable();
+            $table->string('state')->nullable();
             $table->string('country')->nullable();
             $table->string('age')->nullable();
             $table->tinyInteger('type')->default(0); //0 = adults, 1 = children, 2 = infants

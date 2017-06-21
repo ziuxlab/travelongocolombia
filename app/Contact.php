@@ -14,6 +14,7 @@
             'name',
             'phone',
             'city',
+            'state',
             'country',
             'age',
             'type', //0 = adult, 1 = child, 2 = infant
