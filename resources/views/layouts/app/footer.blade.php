@@ -5,10 +5,12 @@
                 <h4 class="h3"> @lang('general.Signup for Newsletter')</h4>
                 @if(App::isLocale('en'))
                     <p>If you would like to receive discounts and be made aware of any special promotions, leave us your
-                       email address and we will forward you information from time to time.</p>
+                       email address and we will forward you information from time to time to have Latin America
+                       vacations and live coffee culture.</p>
                 @else
                     <p>Te interesaría obtener descuentos y saber sobre nuestras promociones, déjanos tu correo
-                       electrónico y te enviaremos información.</p>
+                       electrónico y te enviaremos información para que tengas vacaciones en Latinomérica y vivas la
+                       cultura cafera.</p>
                 @endif
             </div>
             <div class="col-sm-5 overflow-hidden">

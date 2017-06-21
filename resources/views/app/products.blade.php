@@ -1623,9 +1623,9 @@
                     <div class="block-content block-content-narrow block-content-full text-center">
                         <i class="si si-info push-15-r "></i>
                         @if(App::isLocale('en'))
-                            <span>But if you plan to stay with us longer than 7 or 10 days, feel free to choose one, two or three packages and we will be happy to combine them in tandem to meet your specific needs.</span>
+                            <span>But if you plan to stay with us longer than 7 or 10 days, feel free to choose one, two or three packages and we will be happy to combine them in tandem to meet your specific needs you will obtain One stop shop Colombia Vacation!</span>
                         @else
-                            <span>Si planea quedarse con nosotros más de 7 o 10 días, no dude en elegir uno, dos o tres paquetes;  nosotros estaremos felices de fusionarlos para satisfacer sus necesidades.</span>
+                            <span>Si planea quedarse con nosotros más de 7 o 10 días, no dude en elegir uno, dos o tres paquetes; nosotros estaremos felices de fusionarlos para satisfacer sus necesidades, usted obtendrá vacaciones completas en Colombia todo en uno.</span>
                         @endif
                     </div>
                 </div>

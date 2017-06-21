@@ -3,12 +3,10 @@
         <div class="col-sm-12 content content-full text-center">
             @if(App::isLocale('en'))
                 <h2 class="h2 text-capitalize">Popular additional Services</h2>
-                <h4 class="h5 ">"We offer these additional services to make your vacation easier, more comfortable and
-                                even more enjoyable”</h4>
+                <h4 class="h5 ">One stop shop Colombia Vacation "We offer these additional services to make your vacation easier, more comfortable and even more enjoyable”</h4>
             @else
                 <h2 class="h2 text-capitalize">Servicios adicionales más populares</h2>
-                <h4 class="h5 ">"Servicios adicionales populares. Ofrecemos servicios adicionales para hacer sus
-                                vacaciones más fáciles, cómodas e incluso mas agradables ”</h4>
+                <h4 class="h5 ">Vacaciones completas en Colombia todo en uno, pues ofrecemos servicios adicionales para hacer su estadía  más amigable, cómoda e incluso más agradable</h4>
             @endif
         </div>
     </div>

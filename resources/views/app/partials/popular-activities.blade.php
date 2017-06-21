@@ -3,9 +3,9 @@
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">@lang('general.Popular Activities')</h2>
             @if(App::isLocale('en'))
-                <h4 class="h5 ">"Know the places and activities we have selected for you" </h4>
+                <h4 class="h5 ">"For your convenience, we have compiled our most popular activities into several package options of  all inclusive vacation packages to Colombia, which may help you to more quickly organize your vacation experience in the Colombian coffee area" </h4>
             @else
-                <h4 class="h5 ">"Conozca los lugares y actividades que hemos seleccionado para usted" </h4>
+                <h4 class="h5 ">"Para su conveniencia, hemos compilado las actividades más populares en diferentes opciones de paquetes vacacionales todo incluido a Colombia, las cuales podrán ayudarle a organizar más rápidamente su experiencia vacacional en el eje cafetero colombiano" </h4>
             @endif
         </div>
     </div>
