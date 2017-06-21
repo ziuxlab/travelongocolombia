@@ -36,11 +36,6 @@
 }
 
 
-input.loading {
-    background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
-}
-
-
 .steps .progress{
     position: relative;
     top: 55px;
