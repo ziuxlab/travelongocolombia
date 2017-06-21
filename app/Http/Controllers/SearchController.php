@@ -30,6 +30,7 @@ class SearchController extends Controller
     public function create()
     {
         //
+	    
     }
 
     /**
@@ -49,9 +50,12 @@ class SearchController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request)
     {
         //
+	    $products = Product::search($request->search)->get()->where('local', App::getLocale())->where('status',1);
+	    
+	    return view('app.search', compact('products'));
     }
 
     /**

@@ -18,7 +18,7 @@
                     {!! Form::open(['action'=> ['SearchController@index'],'id'=>'search']) !!}
                         <div class=" input-group">
                             {!! Form::text('search', old('search'), ['class' => 'form-control search']) !!}
-                            <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                            <span onclick="buscar()" class="btn input-group-addon"><i class="si si-magnifier"></i></span>
                         </div>
                     {!! Form::close() !!}
                 </div>
@@ -32,7 +32,6 @@
                             <a href="#" data-toggle="modal" data-target="#registerModal"
                                class=" text-white push-10-r">@lang('cabecera.Register')</a>
                         </div>
-
                     @else
                         <div class="push-10-r  hidden-xs">
                             <div class="btn-group">

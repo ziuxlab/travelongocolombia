@@ -41,4 +41,11 @@
 
 @section('scripts')
     {{$Config->scripts_footer}}
+    <script>
+        $( "input[type=checkbox]" ).on( "click", function () {
+            var text = $(this).val();
+            console.log(text)
+            $('.note').val($('.note').val() + text + ', ')
+        } );
+    </script>
 @stop

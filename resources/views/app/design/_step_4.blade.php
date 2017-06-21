@@ -8,8 +8,12 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="block block-bordered block-rounded remove-margin">
                 <div class="block-content block-content-narrow block-content-full h5 text-center">
-                    Lessons and Other services you can get in Armenia (with additional cost) according with your
-                    necessities,
+                    @if(App::isLocale('en'))
+                        Lessons and Other services you can get in Armenia (with additional cost) according with your
+                        necessities.
+                        @else
+                        Clases y otros servicios que podrá obtener en Armenia  (con costo adicional) de acuerdo con tus necesidades.
+                    @endif
                 </div>
             </div>
         </div>

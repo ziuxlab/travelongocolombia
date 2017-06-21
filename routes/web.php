@@ -37,6 +37,7 @@
     // Menu-related routes ==============================================.
     Route::get('/', 'HomeController@index');
     Route::get('search', 'SearchController@index');
+    Route::post('search', 'SearchController@show');
     Route::get('home', 'HomeController@home');
     Route::post('contact', 'HomeController@contact');
     Route::post('join', 'HomeController@join');
@@ -45,7 +46,7 @@
     
     // Design Plan related routes =======================================.
     Route::resource('design-your-plan', 'DesignController');
-    Route::get('arma-tu-plan', 'DesignController@index');
+    Route::get('disena-tu-plan', 'DesignController@index');
     
     
     // Cart-related routes ==============================================.

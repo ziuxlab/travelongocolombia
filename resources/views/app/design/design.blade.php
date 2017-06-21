@@ -57,6 +57,7 @@
 
 @section('scripts')
     {{$Config->scripts_footer}}
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
     <script src="{{url('js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
     <script>
         $(function () {

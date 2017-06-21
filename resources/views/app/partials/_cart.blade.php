@@ -159,7 +159,7 @@
                                     <ul class="list-group">
                                         @foreach($items as $item)
                                             <li class="list-group-item list-group-item-xs">
-                                                <small>{{$item->tittle}}</small>
+                                                <input value="{{$item->tittle}}" class="push-5-r input-services" type="checkbox"><small>{{$item->tittle}}</small>
                                             </li>
                                         @endforeach
                                     </ul>
@@ -171,7 +171,7 @@
                 {!! Form::open(['action'=> ['CheckoutController@store']]) !!}
                 <div class="form-group {{ $errors->has('note') ? ' has-error' : '' }}">
                     {!! Form::label(trans('general.additional_information').':', null, ['class' => 'control-label']) !!}
-                    {!! Form::textarea('note', old('note'), ['class' => 'form-control','placeholder'=>trans('general.additional_information_text'),'rows'=>3]) !!}
+                    {!! Form::textarea('note', old('note'), ['class' => 'note form-control','placeholder'=>trans('general.additional_information_text'),'rows'=>3]) !!}
                     @if ($errors->has('note'))
                         <span class="help-block">
                                     <strong>{{ $errors->first('note') }}</strong>

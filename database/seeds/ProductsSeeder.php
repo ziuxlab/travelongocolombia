@@ -386,6 +386,7 @@
                 'local'            => 'en',
                 'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
                 'description'      => 'This is the perfect plan for those who wish to know in depth about one of the most fascinating Latin cultures. In ten days you will learn of the rich Colombian history and heritage, coffee and tropical fruit production, and the finer points of tasting the highest grade Colombian café. You will casually hike through serene mountains, observe extensive flora/fauna, ride to your destination in classic “Willy” jeeps, and harvest your own coffee beans (in traditional garb if you like). Children as well as adults will have fun and gain direct knowledge of Quindío.',
+                'short_description'      => 'This is the perfect plan for those who wish to know in depth about one of the most fascinating Latin cultures. In ten days you will learn of the rich Colombian history and heritage, coffee and tropical fruit production, and the finer points of tasting the highest grade Colombian café. You will casually hike through serene mountains, observe extensive flora/fauna, ride to your destination in classic “Willy” jeeps, and harvest your own coffee beans (in traditional garb if you like). Children as well as adults will have fun and gain direct knowledge of Quindío.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -565,7 +566,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
 	        
             //Plan B Most Physically 20
@@ -583,6 +584,7 @@
                 'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
                 'local'            => 'en',
                 'description'      => 'If you are looking for more adventure, to be in touch with nature, see some of the most beautiful places in Quindio, and also enjoy hiking above tree line (and in snow), this is the perfect package for you.',
+                'short_description'      => 'If you are looking for more adventure, to be in touch with nature, see some of the most beautiful places in Quindio, and also enjoy hiking above tree line (and in snow), this is the perfect package for you.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -747,7 +749,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
             //Plan C Outdoors Tour 21
@@ -765,6 +767,7 @@
                 'include'          => 'All road transportation within Colombia, English speaking guide anywhere/everywhere you wish, Daily Breakfast, Non alcoholic beverages, Souvenirs, All entrance fees for applicable activities',
                 'local'            => 'en',
                 'description'      => 'This less strenuous plan will allow you to have the continual contact with natural landscapes, yet also enjoy the best coffee in the world, but also to camp out in exotic settings, enjoy water sports at one of the largest and more beautiful lakes in Colombia and not miss the opportunity to see monkeys living their natural habitat.',
+                'short_description'      => 'This less strenuous plan will allow you to have the continual contact with natural landscapes, yet also enjoy the best coffee in the world, but also to camp out in exotic settings, enjoy water sports at one of the largest and more beautiful lakes in Colombia and not miss the opportunity to see monkeys living their natural habitat.',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -922,7 +925,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
 	        //22
@@ -940,6 +943,7 @@
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Este es el plan perfecto para gente que desea conocer una de las más interesantes culturas latinas, su historia, producción de café, disfrutar el mejor café colombiano, suaves caminatas rodeado de hermosos paisajes, flora y fauna, patrimonio cultural, trasnporte tradicional de los caficultores, recoger café, vestirse con la ropa tradicional de los recolectores.  Niños y adultos se divertirán y aprenderán mucho',
+                'short_description'      => 'Este es el plan perfecto para gente que desea conocer una de las más interesantes culturas latinas, su historia, producción de café, disfrutar el mejor café colombiano, suaves caminatas rodeado de hermosos paisajes, flora y fauna, patrimonio cultural, trasnporte tradicional de los caficultores, recoger café, vestirse con la ropa tradicional de los recolectores.  Niños y adultos se divertirán y aprenderán mucho',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1119,7 +1123,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             //23
             Product::create([
@@ -1136,6 +1140,7 @@
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Si está buscando más aventura, estar en contacto con la naturaleza y ver algunos de los sitios más bellos en el área cafetera además disfruta caminar, este es el plan perfecto para usted',
+                'short_description'      => 'Si está buscando más aventura, estar en contacto con la naturaleza y ver algunos de los sitios más bellos en el área cafetera además disfruta caminar, este es el plan perfecto para usted',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1301,7 +1306,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             //24
             Product::create([
@@ -1318,6 +1323,7 @@
                 'local'            => 'es',
                 'include'          => 'Transporte doméstico desde su arribo en el aeropuerto Armenia hasta su salida en Armenia (hotel- todos los sitios del plan-hotel),Guía bilingüe  (español - inglés),Desayunos,2 comidas por día,Bebidas,Aperitivos,Recuerdo,Todas las entradas',
                 'description'      => 'Este plan te permitirá tener más contacto con paisajes montañosos, disfrutar el mejor café pero también acampar en maravillosos y exóticos lugares además de difrutar deportes acuáticos alrededor de una de los más hermosos lagos en Colombia y no perderas la oportunidad de ver monos aulladores viviendo su vida natural ',
+                'short_description'      => 'Este plan te permitirá tener más contacto con paisajes montañosos, disfrutar el mejor café pero también acampar en maravillosos y exóticos lugares además de difrutar deportes acuáticos alrededor de una de los más hermosos lagos en Colombia y no perderas la oportunidad de ver monos aulladores viviendo su vida natural ',
                 'itinerary'        => '
 <div class="panel-group">
 <div class="panel panel-default">
@@ -1472,7 +1478,7 @@
 </div>
 ',
                 'type'             => 0, //package,activity
-                'city_id'          => 2
+                'city_id'          => 1
             ]);
             
             
@@ -1488,12 +1494,13 @@
                 'keywords'         => 'Hotel La Floresta',
                 'local'            => 'es',
                 'description'      => 'En la Floresta Finca Hotel  usted podrá disfrutar y explorar la exótica naturaleza del Quindío con un sendero ecológico; nacimientos de agua, diversidad de flora y fauna.',
+                'short_description'      => 'En la Floresta Finca Hotel  usted podrá disfrutar y explorar la exótica naturaleza del Quindío con un sendero ecológico; nacimientos de agua, diversidad de flora y fauna.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Kilómetro 3 Vía al Aeropuerto El Edén, Vereda Santana'
             ]);
 
-            //la floresta español
+            //la floresta español 26
             Product::create([
                 'id'               => 26,
                 'tittle'           => 'La Floresta',
@@ -1503,6 +1510,7 @@
                 'keywords'         => 'Hotel La Floresta',
                 'local'            => 'en',
                 'description'      => 'At La Floresta Farm Hotel you will enjoy the exotic nature of Quindío through a nature path aside winding streams and diverse fauna and flora.',
+                'short_description'      => 'At La Floresta Farm Hotel you will enjoy the exotic nature of Quindío through a nature path aside winding streams and diverse fauna and flora.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Three km from the airport in village of.  Vereda Santana'
@@ -1518,6 +1526,7 @@
                 'keywords'         => 'Isa Victory Hotel Boutique',
                 'local'            => 'es',
                 'description'      => 'Isa Victory, único hotel boutique en Armenia que Impacta, Sorprende y Atrae, está ubicado en uno de los más exclusivos sectores de la ciudad.  En la tranquilidad y elegancia de Isa Victory Hotel Boutique podrá descubrir nuevas formas de confort y atención personalizada.',
+                'short_description'      => 'Isa Victory, único hotel boutique en Armenia que Impacta, Sorprende y Atrae, está ubicado en uno de los más exclusivos sectores de la ciudad.  En la tranquilidad y elegancia de Isa Victory Hotel Boutique podrá descubrir nuevas formas de confort y atención personalizada.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Avenida Bolívar 21 Norte 47'
@@ -1533,6 +1542,7 @@
                 'keywords'         => 'Isa Victory Boutique Hotel',
                 'local'            => 'en',
                 'description'      => 'Isa Victory is the only ‘boutique hotel’ in the area and located in one of the more exclusive parts of Armenia.  A distinctive combination of tranquility and elegance, at the Isa Victory you will discover the comforts of home as well as excellent customer service.',
+                'short_description'      => 'Isa Victory is the only ‘boutique hotel’ in the area and located in one of the more exclusive parts of Armenia.  A distinctive combination of tranquility and elegance, at the Isa Victory you will discover the comforts of home as well as excellent customer service.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Avenida Bolívar 21 Norte 47'
@@ -1548,6 +1558,7 @@
                 'keywords'         => 'Armenia Hotel',
                 'local'            => 'es',
                 'description'      => 'El Armenia Hotel está ubicado en una exclusiva y estratégica zona de Armenia.  Su moderna arquitectura se combina con el auténtico mobiliario diseñado en guadua y las piezas precolombinas de la Cultura Quimbaya que decoran sus espacios.',
+                'short_description'      => 'El Armenia Hotel está ubicado en una exclusiva y estratégica zona de Armenia.  Su moderna arquitectura se combina con el auténtico mobiliario diseñado en guadua y las piezas precolombinas de la Cultura Quimbaya que decoran sus espacios.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Av. Bolivar Calle 8 Norte – Esquina. Armenia'
@@ -1563,6 +1574,7 @@
                 'keywords'         => 'Armenia Hotel',
                 'local'            => 'en',
                 'description'      => 'The Armenia Hotel is strategically located in one of the more exclusive areas of Armenia.  Its modern architecture contrasts with furnishings made of guadua (bamboo) and Precolumbian relics of Quimbaya culture.',
+                'short_description'      => 'The Armenia Hotel is strategically located in one of the more exclusive areas of Armenia.  Its modern architecture contrasts with furnishings made of guadua (bamboo) and Precolumbian relics of Quimbaya culture.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Av. Bolivar Calle 8 Norte – Esquina. Armenia'
@@ -1578,6 +1590,7 @@
                 'keywords'         => 'Hotel Palma Verde',
                 'local'            => 'en',
                 'description'      => 'The Palma Verde is an excellent option for an unforgettable stay with the comforts of home, quietude and bliss all thanks to its remarkable service and facility design .',
+                'short_description'      => 'The Palma Verde is an excellent option for an unforgettable stay with the comforts of home, quietude and bliss all thanks to its remarkable service and facility design .',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'On the roundabout of Club Campestre golf, one km from the airport of Armenia Quindío'
@@ -1593,6 +1606,7 @@
                 'keywords'         => 'Hotel Palma Verde',
                 'local'            => 'es',
                 'description'      => 'El Hotel Campestre Palma Verde es una excelente opción de confort, tranquilidad y diversión, dado que  cuenta con una excelente infraestructura, servicio y facilidades que hacen de la estadía de nuestros clientes una experiencia inolvidable.',
+                'short_description'      => 'El Hotel Campestre Palma Verde es una excelente opción de confort, tranquilidad y diversión, dado que  cuenta con una excelente infraestructura, servicio y facilidades que hacen de la estadía de nuestros clientes una experiencia inolvidable.',
                 'type'             => 2, //package,activity
                 'city_id'          => 1,
                 'address'          => 'Glorieta Club Campestre Via Aeropuerto de Armenia - Quindío'
@@ -2273,5 +2287,158 @@
                 'include'           => '',        // price include
                 'suggestion'        => 'Zapato cerrado, Ropa a color larga y cómoda, No fumar, Evitar el licor y drogas alucinogenas, No llevar machetes cuchillos o navajas, No dejar basura',
             ]);
+	
+	
+	        Product::create([
+		        'id'                => 83,
+		        'tittle'            => 'Parapente',
+		        'description'       => 'El parapentismo te permitirá vivir  una única  experiencia de volar y ver la panorámica del deslumbrante paisaje Quindiano, puede ser algo absolutamente inolvidable. Para las personas que disfrutan la adrenalina, los vuelos inductivos al parapente es la manera más segura, cómoda y divertida de pasear por las nubes. AnÍmate y ven a disfrutar de esta actividad extrema. ',
+		        'short_description' => 'El parapentismo te permitirá vivir  una única  experiencia de volar y ver la panorámica del deslumbrante paisaje Quindiano, puede ser algo absolutamente inolvidable.',
+		        'slug_url'          => str_slug('Parapente', '-'),
+		        'days'              => '1 hora',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'es',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Parapente',
+		        'keywords'          => 'Parapente',
+		        'include'           => 'Seguro de vida y accidentes, Video de la actividad en parapente  duración 4 minutos, 10 fotografías de la actividad, Transporte',        // price include
+		        'suggestion'        => 'Calzado deportivo En climas fríos y cálidos, Chaquetas livianas, Bloqueador solar, Gafas y gorra, Personas entre los 15-120 kilos de peso y con  discapacidades pueden volar',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 84,
+		        'tittle'            => 'Paragliding',
+		        'description'       => 'The paragliding will allow you to live a unique experience of flying and seeing the awesome landscape of Quindío, it could be something absolutely unforgettable.                                                       For people who enjoy adrenaline, the paragliding inductuve fligths are the safer, comfortable and nice way to travel closer to the sky.   Let´s come to live this extreme activity',
+		        'short_description' => 'The paragliding will allow you to live a unique experience of flying and seeing the awesome landscape of Quindío',
+		        'slug_url'          => str_slug('Paragliding', '-'),
+		        'days'              => '1 hour',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'en',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Paragliding',
+		        'keywords'          => 'Paragliding',
+		        'include'           => 'Seguro de vida y accidentes, Video de la actividad en parapente  duración 4 minutos, 10 fotografías de la actividad, Transporte',        // price include
+		        'suggestion'        => 'Calzado deportivo En climas fríos y cálidos, Chaquetas livianas, Bloqueador solar, Gafas y gorra, Personas entre los 15-120 kilos de peso y con  discapacidades pueden volar',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 85,
+		        'tittle'            => 'Balsaje',
+		        'description'       => 'El balsaje es un tour a lo largo del agradable Río la vieja en una balsa, construida de troncos de balsa cosechada localmente.  Antes y durante esta aventura pacífica y flotante serás sumergido entre la diversidad de flora y fauna de esta fértil región.    Adicionalmente escucharas los sonidos y el olor de los más ricos perfumes que expele la naturaleza, disfrutarás de un delicioso y tradicional almuerzo típico envuelto en una hoja verde de plátano servido con jugos naturales frescos.',
+		        'short_description' => 'El balsaje es un tour a lo largo del agradable Río la vieja en una balsa, construida de troncos de balsa cosechada localmente.',
+		        'slug_url'          => str_slug('Balsaje es', '-'),
+		        'days'              => '6 horas',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'es',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Balsaje',
+		        'keywords'          => 'Balsaje',
+		        'include'           => 'Chalecos salvavidas durante el recorrido, Almuerzo tipo fiambre  acompañado de  gaseosa postobon y tinto',
+		        'suggestion'        => 'Ropa comoda, Traje de baño, Llevar otra muda de ropa, Gorra y bloqueador solar, Repelente, Zapatos cómodos que se puedan mojar, Documento de identidad "',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 86,
+		        'tittle'            => 'Balsaje',
+		        'description'       => 'The Balsaje is a tour of the gentle “La Vieja”  (“Old Lady”) River by raft, constructed of locally harvested logs of lashed balsa. Before and during this peaceful floating adventure you will be introduced to the various fauna and flora of this particularly fertile region. In addition to hearing the sounds and smelling the rich scents of nature, you will enjoy a delicious traditional lunch wrapped in verdent banana leaves and served with fresh squeezed fruit juices.',
+		        'short_description' => 'The Balsaje is a tour of the gentle “La Vieja”  (“Old Lady”) River by raft, constructed of locally harvested logs of lashed balsa',
+		        'slug_url'          => str_slug('Balsaje', '-'),
+		        'days'              => '6 hours',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'en',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Balsaje The Balsaje is a tour of the gentle “La Vieja” ',
+		        'keywords'          => 'Balsaje',
+		        'include'           => 'Lifejacket, Typical lunch and coffee',
+		        'suggestion'        => 'Comfortable clothes, Change clothes, Swimming suit, Cap, Sunblock, Repelent, Shoes to water',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 87,
+		        'tittle'            => 'Ciclo rutas',
+		        'description'       => 'Rutas diseñadas por los hermosos senderos de Salento - Quindío,las cuales te permitiran vivir una experiencia inolvidable, gracias al goce de un deporte extremo  que te  brinda la posibilidad de  disfrutar de la invaluable naturaleza Quindiana, su aire puro y   tranquilidad inigualable.  Tenemos una ruta que incluye una hora de pesca',
+		        'short_description' => 'Rutas diseñadas por los hermosos senderos de Salento -Quindío, te permitiran disfrutar  del Mountain Bike,  un deporte extremo  que vas a querer repetir una o mil veces más',
+		        'slug_url'          => str_slug('Ciclo rutas', '-'),
+		        'days'              => '4 horas',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'es',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Ciclo rutas',
+		        'keywords'          => 'Ciclo rutas',
+		        'include'           => 'Full equipo, Transporte, Guía, Refrigerio - agua - frutas - galletas, Seguros, Tour de pesca de trucha incluye caña de pescar  ',
+		        'suggestion'        => 'Ropa comoda, Bloqueador ',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 88,
+		        'tittle'            => 'Mountain bike',
+		        'description'       => 'Designed routes through beautiful ways of Salento Quindío will give you the possibility to enjoy an extreme sport enjoying of colombian nature, its pure air and uncomparable tranquility.  We have a route which includes an hour of fishing',
+		        'short_description' => 'Designed routes through beautiful ways of Salento Quindío will give you the possibility to enjoy an extreme sport enjoying of colombian nature',
+		        'slug_url'          => str_slug('Mountain bike', '-'),
+		        'days'              => '4 hours',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'en',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Mountain bike',
+		        'keywords'          => 'Mountain bike',
+		        'include'           => 'Cycling equipment, Guide, Snacks - Fruits - Water, Fishing rod',
+		        'suggestion'        => 'Sun block, Comfortable clothes ',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 89,
+		        'tittle'            => 'Avistamiento de aves',
+		        'description'       => 'Colombia es reconocido mundialmente por su riqueza natural y a su vez  distinguido por ser un paìs con una gran cantidad de especies de aves (1.900 especies)  y el  Quindío cuenta con 415 especies de pájaros de las que seis son endémicas. Caminatas, binoculares,  silencio, calma  y un poco de concentración te permitirán disfrutar de la majestuosidad de las aves que cantan y aletean en nuestro territorio, sus intensos colores y su indescriptible belleza.',
+		        'short_description' => 'Caminatas, binoculares,  silencio, calma  y un poco de concentración te permitirán disfrutar de la majestuosidad de las aves que cantan y aletean en nuestro territorio',
+		        'slug_url'          => str_slug('Avistamiento de aves', '-'),
+		        'days'              => '10 horas',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'es',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Avistamiento de aves',
+		        'keywords'          => 'Avistamiento de aves',
+		        'include'           => '',
+		        'suggestion'        => 'Bloqueador solar, Zapatos de agarre, Sombrero, Gafas de sol, Cámara , Ropa y  elementos de colores sobrios',
+	        ]);
+	
+	        Product::create([
+		        'id'                => 90,
+		        'tittle'            => 'Bird watching',
+		        'description'       => 'Colombia is known internationally because of its natural wealth and its bird diversity (1900 species) and Quindío department has 415 of them and 6 of them are endemic. Between hikings, binoculars, silence, calm and a bit of concentration you will be amazed with the majesty of birds singing and fluttering in our territory; their intense colors and undescriptible beauty',
+		        'short_description' => 'Between hikings, binoculars, silence, calm and a bit of concentration you will be amazed with the majesty of birds singing and fluttering ',
+		        'slug_url'          => str_slug('Bird watching', '-'),
+		        'days'              => '10 horas',
+		        'price_adults'      => '125',
+		        'price_children'    => '62',
+		        'local'             => 'en',
+		        'type'              => 1, //activity
+		        'discount'          => 0, //porcentaje
+		        'city_id'           => 1,
+		        'meta_description'  => 'Bird watching',
+		        'keywords'          => 'Bird watching',
+		        'include'           => '',
+		        'suggestion'        => 'Sun block, Comfortable and no color clothes, Hiking shoes, Hat, Sunglasess',
+	        ]);
         }
     }

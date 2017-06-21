@@ -3,9 +3,9 @@
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">@lang('general.Popular Activities')</h2>
             @if(App::isLocale('en'))
-                <h4 class="h5 ">"We have a unique way at meeting your adventures expectational" </h4>
+                <h4 class="h5 ">"Know the places and activities we have selected for you" </h4>
             @else
-                <h4 class="h5 ">"Tenemos una manera única de cumplir con sus expectativas" </h4>
+                <h4 class="h5 ">"Conozca los lugares y actividades que hemos seleccionado para usted" </h4>
             @endif
         </div>
     </div>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 text-center">
-                                    <p class="text-justify ">{{mb_substr($activity->description,0,120,'UTF-8')}}...</p>
+                                    <p class="text-justify ">{{mb_substr($activity->short_description,0,120,'UTF-8')}}...</p>
                                     <p class="btn push-20 btn-minw  text-white btn-primary text-capitalize">@lang('general.view details')</p>
                                 </div>
                             </div>

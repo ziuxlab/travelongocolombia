@@ -179,14 +179,7 @@
                 'icon'          => 'icon icon-tourism-icons-tv',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
-            Feature::create([
-                'id'            => 24,
-                'feature'       => 'Translator',
-                'feature_es'    => 'Traductor',
-                'in_categories' => 0,
-                'icon'          => 'fa fa-language',
-                'type'          => 2, //0 = package, 1 = activity, 2 = hotel
-            ]);
+           
             Feature::create([
                 'id'            => 25,
                 'feature'       => 'wifi',
@@ -284,5 +277,32 @@
                 'icon'          => 'icon icon-tourism-icons-toast',
                 'type'          => 2, //0 = package, 1 = activity, 2 = hotel
             ]);
+	
+	        Feature::create([
+		        'id'            => 37,
+		        'feature'       => 'Mountain bike',
+		        'feature_es'    => 'Ciclo rutas',
+		        'in_categories' => 0,
+		        'icon'          => 'fa fa-bicycle',
+		        'type'          => 1, //0 = package, 1 = activity, 2 = hotel
+	        ]);
+	
+	        Feature::create([
+		        'id'            => 38,
+		        'feature'       => 'Balsaje',
+		        'feature_es'    => 'Balsaje',
+		        'in_categories' => 0,
+		        'icon'          => 'icon icon-man-in-canoe',
+		        'type'          => 1, //0 = package, 1 = activity, 2 = hotel
+	        ]);
+	
+	        Feature::create([
+		        'id'            => 39,
+		        'feature'       => 'Fishing',
+		        'feature_es'    => 'Pesca',
+		        'in_categories' => 0,
+		        'icon'          => 'icon icon-fishing-fish',
+		        'type'          => 1, //0 = package, 1 = activity, 2 = hotel
+	        ]);
         }
     }

@@ -48,6 +48,14 @@ class Feature_Products_seeder extends Seeder
         Product::find(51)->features()->attach([7,13,18,19]);       //san vicente
         Product::find(52)->features()->attach([7,11,13,20]);       //Calima
         Product::find(53)->features()->attach([7,11,13,20]);       //Calima
+        Product::find(83)->features()->attach([7,13]);       //parapente
+        Product::find(84)->features()->attach([7,13]);       //parapente
+        Product::find(85)->features()->attach([38,39]);       //balsaje
+        Product::find(86)->features()->attach([38,39]);       //balsaje
+        Product::find(87)->features()->attach([37]);       //ciclo rutas
+        Product::find(88)->features()->attach([37]);       //ciclo rutas
+        Product::find(89)->features()->attach([7]);       //ciclo rutas
+        Product::find(90)->features()->attach([7]);       //ciclo rutas
         
 
         
@@ -80,14 +88,14 @@ class Feature_Products_seeder extends Seeder
     
         //==========  Hoteles ==============//
     
-        Product::find(25)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //la floresta
-        Product::find(26)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //la floresta
-        Product::find(27)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
-        Product::find(28)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
-        Product::find(29)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Armenia Hotel
-        Product::find(67)->features()->attach([21,22,23,24,25,26,27,28,29,30,32,36]); //Armenia Hotel
-        Product::find(68)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
-        Product::find(69)->features()->attach([21,22,23,24,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
+        Product::find(25)->features()->attach([21,22,23,25,26,27,28,29,30,31,36]); //la floresta
+        Product::find(26)->features()->attach([21,22,23,25,26,27,28,29,30,31,36]); //la floresta
+        Product::find(27)->features()->attach([21,22,23,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
+        Product::find(28)->features()->attach([21,22,23,25,26,27,28,29,30,32,36]); //Isa Victory Hotel Boutique
+        Product::find(29)->features()->attach([21,22,23,25,26,27,28,29,30,32,36]); //Armenia Hotel
+        Product::find(67)->features()->attach([21,22,23,25,26,27,28,29,30,32,36]); //Armenia Hotel
+        Product::find(68)->features()->attach([21,22,23,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
+        Product::find(69)->features()->attach([21,22,23,25,26,27,28,29,30,31,36]); //Hotel Palma Verde
 
     }
 }
