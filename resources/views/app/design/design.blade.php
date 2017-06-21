@@ -70,8 +70,9 @@
     <script>
         function agregar_rooms(value,id,kinds_room) {
             console.log(value);
+            $('#rooms-'+id).html('')
             for (i = 1; i < (parseInt(value) + 1); i++) {
-                html = '<div id="room_'+ i +'"><div class="col-sm-4" ><div class="form-group">'+
+                html = '<div id="room_'+ i +'" class="form-group row col-sm-12"><div class="col-sm-4" ><div >'+
                     '<label class="control-label">@lang('general.room') ' + i +':</label>' +
                     '<select class="form-control room" name="rooms[' + i + '][id]">';
                 $.each(kinds_room, function (i, elem) {
@@ -80,7 +81,7 @@
 
                 });
                 html = html + '</select></div></div>' +
-                    '<div class="col-sm-4" ><div class="form-group">' +
+                    '<div class="col-sm-4" ><div>' +
                     '<label class="control-label">@lang('general.Adults'):</label>'+
                     '<div class="input-group"><span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="adults_' + i + '">' +
@@ -89,7 +90,7 @@
                     '<span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="adults_' + i + '">'+
                     '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
-                    '<div class="col-sm-4" ><div class="form-group">' +
+                    '<div class="col-sm-4" ><div>' +
                     '<label class="control-label">@lang('general.children') (3-12):</label>'+
                     '<div class="input-group"><span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs btn-default value-control" data-action="minus" data-target="children_' + i+ '">' +
@@ -98,11 +99,10 @@
                     '<span class="input-group-btn">' +
                     '<button type="button" class="btn btn-xs  btn-default value-control"  data-action="plus" data-target="children_' + i + '">'+
                     '<span class="glyphicon glyphicon-plus"></span></button></span></div></div></div>'+
-                    '</div>';
+                    '<div class="col-sm-12 error text-center"></div></div>';
 
                 $('#rooms-'+id).append(html)
             }
-
         }
     </script>
     

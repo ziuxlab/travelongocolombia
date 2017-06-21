@@ -169,4 +169,7 @@
 		'follow-us'                     => 'Encuéntranos en',
 		'state'                     => 'Departamento',
 		'services-cart'                 => '"Los servicios adicionales serán pagados en Armenia. Usted puede indicar con qué frecuencia, qué tipo y requerimientos especiales."',
-	];
+        'max-individual-room'=>'Solo puedes agregar 1 adulto o 1 niño en una habitacion individual',
+        	'max-multiple-room'=>'Solo puedes agregar maximo 4 adultos o 4 niños en una habitacion  multiple.',
+	'max-double-room'=>'Solo puedes agregar maximo 2 adultos o 2 niños en una habitacion  doble.',
+    ];

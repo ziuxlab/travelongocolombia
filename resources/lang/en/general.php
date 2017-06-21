@@ -168,5 +168,7 @@
 		'follow-us'                     => 'Follow us on',
 		'state'                     => 'State',
 		'services-cart'                 => '"Additional services will be paid in Armenia.  You can indicate how often, what kind and special requirements."',
-	
+	'max-individual-room'=>'You can only add 1 adult or 1 child in an individual room.',
+	'max-multiple-room'=>'You can only add  max 4 adults or 4 children in a multiple room.',
+	'max-double-room'=>'You can only add  max 2 adults or 2 children in a double room.',
 	];

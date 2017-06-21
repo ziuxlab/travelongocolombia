@@ -20,6 +20,16 @@
                                 {!! Form::text('checkout', Carbon\Carbon::tomorrow()->addDays($item->days)->format('d-m-Y'), ['class' => 'js-datepicker form-control','data-date-format'=>'dd-mm-yyyy','required','disabled','id'=>'checkout']) !!}
                             @endif
                         </div>
+                            @if($item->type==0)
+                                <div>
+                                    @if(App::isLocale('en'))
+                                        <span><small>This plan has a duration of {{$item->days}}, you can not change the date of return.</small></span>
+                                        @else
+                                        <span><small>Este plan tiene una duracion de {{$item->days}}, no puedes modificar la fecha de regreso.</small></span>
+                                    @endif
+                                </div>
+                            @endif
+
                         @if ($errors->has('checkout'))
                             <span class="help-block">
                          <strong>{{ $errors->first('checkout') }}</strong>
