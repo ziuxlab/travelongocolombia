@@ -18,7 +18,7 @@
         </div>
     </div>
 </div>
-@section('scripts')
+@push('scripts')
     @include('layouts.app.partials._list', ['type'=> 1])
     <script>
         function enviar_formulario_book(choice, id) {
@@ -35,4 +35,4 @@
             }
         }
     </script>
-@stop
+@endpush
