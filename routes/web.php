@@ -45,8 +45,8 @@
     Route::get('products/list/{type}', 'ProductController@list');
     
     // Design Plan related routes =======================================.
-    Route::resource('design-your-plan', 'DesignController');
-    Route::get('disena-tu-plan', 'DesignController@index');
+    Route::resource('design-your-trip', 'DesignController');
+    Route::get('disena-tu-viaje', 'DesignController@index');
     
     
     // Cart-related routes ==============================================.

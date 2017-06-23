@@ -107,7 +107,7 @@
                         <div class="col-xs-6 ">
                             <div class="text-center">
                                 <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(0,{{$id}})"
-                                        data-dismiss="modal"> @lang('general.pay')
+                                        data-dismiss="modal"> @lang('general.next')
                                 </button>
                             </div>
                         </div>

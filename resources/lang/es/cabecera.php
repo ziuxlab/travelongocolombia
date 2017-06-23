@@ -14,7 +14,7 @@
         */
         
         'Pick'                 => 'Escoger un Plan',
-        'Design'               => 'diseña tu plan',
+        'Design'               => 'diseña tu viaje',
         'Hi'                   => 'Hola, :name',
         'Profile'              => 'Perfil',
         'Settings'             => 'Configuraciones',

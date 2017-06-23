@@ -7,6 +7,7 @@
                     <tr>
                         <th class="hidden-xs"></th>
                         <th class="">producto</th>
+                        <th class="hidden-xs">checkin</th>
                         <th class="text-center hidden-xs">cantidad</th>
                         <!--
                         <th class="text-right">precio</th>-->
@@ -21,7 +22,6 @@
                             @if($item->attributes->descuento > 0)
                                 <?php  $descuento = $descuento + $item->attributes->descuento  ?>
                                 @endif
-                            
                             <tr>
                                 <td class="text-center hidden-xs" style="width: 100px">
                                     <img class="img-thumbnail img-responsive" src="{{asset($item->attributes->img)}}"
@@ -43,6 +43,7 @@
                                         @endif
                                     </div>
                                 </td>
+                                <td class="hidden-xs">{{$item->attributes->checkin}}</td>
                                 <td class="text-center hidden-xs">
                                     <span class="badge">{{$item->quantity}}</span>
                                 </td>
@@ -62,13 +63,39 @@
                             <?php $services = 1 ?>
                         @endif
                     @endforeach
+                    @if($descuento > 0)
+                    <tr class="">
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="text-right">
+                            <span class="h4 font-w600">@lang('general.discount')</span>
+                        </td>
+                        <td class="text-center">
+                            <div class="h4 font-w600 text-danger">-${{number_format($descuento)}}</div>
+                        </td>
+                    </tr>
+                    @endif
+                    <tr class="active">
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="text-right">
+                            <span class="h3 font-w600">Total</span>
+                        </td>
+                        <td class="text-center">
+                            <div class="h3 font-w600 text-success">${{number_format(Cart::getTotal())}}</div>
+                        </td>
+                    </tr>
                     @if($services == 1)
                         <tr class="bg-primary"> <th class="hidden-xs"></th>
                             <th class="">@lang('general.additional services')</th>
                             <th class="text-center hidden-xs">cantidad</th>
                             <!--
                             <th class="text-right">precio</th>-->
-                            <th></th></tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
                         <tr class="active">
                             <td class="text-center" colspan="4">@lang('general.services-cart')
                             </td>
@@ -97,6 +124,7 @@
                                             @endif
                                         </div>
                                     </td>
+                                    <td class="hidden-xs"></td>
                                     <td class="text-center hidden-xs">
                                         <span class="badge">{{$item->quantity}}</span>
                                     </td>
@@ -115,28 +143,6 @@
                             @endif
                         @endforeach
                     @endif
-                    @if($descuento > 0)
-                    <tr class="">
-                        <td class="hidden-xs"></td>
-                        <td class="hidden-xs"></td>
-                        <td class="text-right">
-                            <span class="h4 font-w600">@lang('general.discount')</span>
-                        </td>
-                        <td class="text-center">
-                            <div class="h4 font-w600 text-danger">-${{number_format($descuento)}}</div>
-                        </td>
-                    </tr>
-                    @endif
-                    <tr class="active">
-                        <td class="hidden-xs"></td>
-                        <td class="hidden-xs"></td>
-                        <td class="text-right">
-                            <span class="h3 font-w600">Total</span>
-                        </td>
-                        <td class="text-center">
-                            <div class="h3 font-w600 text-success">${{number_format(Cart::getTotal())}}</div>
-                        </td>
-                    </tr>
                     
                     </tbody>
                 </table>

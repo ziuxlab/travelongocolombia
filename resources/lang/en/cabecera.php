@@ -14,7 +14,7 @@
         */
         
         'Pick'                 => 'Pick a Plan',
-        'Design'               => 'Design your plan',
+        'Design'               => 'Design your trip',
         'Hi'                   => 'Hi, :name',
         'Profile'              => 'Profile',
         'Settings'             => 'Settings',

@@ -15,19 +15,19 @@
             //
             city::create([
                 'id'   => 1,
-                'city' => 'Quindío',
+                'city' => 'Armenia - Quindío',
                 'city_code'=>'AXM'
             ]);
     
             city::create([
                 'id'   => 2,
-                'city' => 'Risaralda',
+                'city' => 'Pereira - Risaralda',
                 'city_code'=>'PEI'
             ]);
     
             city::create([
                 'id'   => 3,
-                'city' => 'Caldas',
+                'city' => 'Manizales - Caldas',
                 'city_code'=>'MZL'
             ]);
 	        
