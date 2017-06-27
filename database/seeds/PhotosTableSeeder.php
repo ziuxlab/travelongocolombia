@@ -185,98 +185,49 @@
 				'order'      => 2,
 			] );
 			
-			
 			Photo::create( [
 				'product_id' => 5,
-				'img'        => 'img/activities/recuca1.jpg',
+				'img'        => 'img/activities/salento1.jpg',
 				'order'      => 1,
 			] );
 			Photo::create( [
 				'product_id' => 5,
-				'img'        => 'img/activities/recuca2.jpg',
+				'img'        => 'img/activities/salento2.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 5,
-				'img'        => 'img/activities/recuca3.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 5,
-				'img'        => 'img/activities/recuca4.jpg',
+				'img'        => 'img/activities/salento3.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 5,
-				'img'        => 'img/activities/recuca5.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 5,
-				'img'        => 'img/activities/recuca6.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 5,
-				'img'        => 'img/activities/recuca7.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 5,
-				'img'        => 'img/activities/recuca8.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 5,
-				'img'        => 'img/activities/recuca9.jpg',
+				'img'        => 'img/activities/salento4.jpg',
 				'order'      => 2,
 			] );
 			
 			Photo::create( [
 				'product_id' => 6,
-				'img'        => 'img/activities/recuca1.jpg',
+				'img'        => 'img/activities/salento1.jpg',
 				'order'      => 1,
 			] );
 			Photo::create( [
 				'product_id' => 6,
-				'img'        => 'img/activities/recuca2.jpg',
+				'img'        => 'img/activities/salento2.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 6,
-				'img'        => 'img/activities/recuca3.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 6,
-				'img'        => 'img/activities/recuca4.jpg',
+				'img'        => 'img/activities/salento3.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 6,
-				'img'        => 'img/activities/recuca5.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 6,
-				'img'        => 'img/activities/recuca6.jpg',
+				'img'        => 'img/activities/salento4.jpg',
 				'order'      => 2,
 			] );
-			Photo::create( [
-				'product_id' => 6,
-				'img'        => 'img/activities/recuca7.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 6,
-				'img'        => 'img/activities/recuca8.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 6,
-				'img'        => 'img/activities/recuca9.jpg',
-				'order'      => 2,
-			] );
+			
+
 			
 			
 			Photo::create( [
@@ -2256,47 +2207,100 @@
 				'order'      => 2,
 			] );
 			
+			$id = 44;
 			Photo::create( [
-				'product_id' => 44,
-				'img'        => 'img/activities/salento1.jpg',
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca1.jpg',
 				'order'      => 1,
 			] );
 			Photo::create( [
-				'product_id' => 44,
-				'img'        => 'img/activities/salento2.jpg',
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca2.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
-				'product_id' => 44,
-				'img'        => 'img/activities/salento3.jpg',
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca4.jpg',
 				'order'      => 2,
 			] );
 			Photo::create( [
-				'product_id' => 44,
-				'img'        => 'img/activities/salento4.jpg',
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca9.jpg',
+				'order'      => 2,
+			] );
+			$id = 45;
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca1.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca2.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca3.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca4.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca5.jpg',
+				'order'      => 1,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca6.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca7.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca8.jpg',
+				'order'      => 2,
+			] );
+			Photo::create( [
+				'product_id' => $id,
+				'img'        => 'img/activities/recuca9.jpg',
 				'order'      => 2,
 			] );
 			
-			Photo::create( [
-				'product_id' => 45,
-				'img'        => 'img/activities/salento1.jpg',
-				'order'      => 1,
-			] );
-			Photo::create( [
-				'product_id' => 45,
-				'img'        => 'img/activities/salento2.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 45,
-				'img'        => 'img/activities/salento3.jpg',
-				'order'      => 2,
-			] );
-			Photo::create( [
-				'product_id' => 45,
-				'img'        => 'img/activities/salento4.jpg',
-				'order'      => 2,
-			] );
+		
 			
 			Photo::create( [
 				'product_id' => 46,

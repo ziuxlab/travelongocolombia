@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-4 col-sm-6">
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group {{ $errors->has('departure') ? ' has-error' : '' }}">
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-3 col-sm-6">
         <div class="form-group text-center {{ $errors->has('checkout') || $errors->has('checkin') ? ' has-error' : '' }}">
             {!! Form::label(trans('general.between_dates').':', null, ['class' => ' control-label']) !!}
             <div class="input-daterange input-group" >
@@ -39,7 +39,7 @@
             @endif
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-5 col-xs-12">
         <div class="row">
             <div class="col-sm-4">
                 <div class="form-group {{ $errors->has('adults')  ? ' has-error' : '' }}">

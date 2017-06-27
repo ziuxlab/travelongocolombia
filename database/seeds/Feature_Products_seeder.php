@@ -18,8 +18,8 @@ class Feature_Products_seeder extends Seeder
         Product::find(2)->features()->attach([6,7,8,9,10,11,12,13,14]); //parque del cafe eespañol
         Product::find(3)->features()->attach([6,7,8,10,13,15,17]);        //panaca
         Product::find(4)->features()->attach([6,7,8,10,13,15,17]);        //panaca
-        Product::find(5)->features()->attach([6,7,8,10,14,15]);           //recuca
-        Product::find(6)->features()->attach([6,7,8,10,14,15]);           //recuca
+	    Product::find(5)->features()->attach([7,8,11,15,16]);     //salento
+	    Product::find(6)->features()->attach([7,8,11,15,16]);     //salento
         Product::find(7)->features()->attach([7,13]);                   //waterfall in cordoba
         Product::find(8)->features()->attach([7,13]);                   //waterfall in cordoba
         Product::find(9)->features()->attach([7,13]);                    //santa isable
@@ -37,9 +37,8 @@ class Feature_Products_seeder extends Seeder
         Product::find(41)->features()->attach(8);                  //filandia
         Product::find(42)->features()->attach([8]);                //cordoba
         Product::find(43)->features()->attach([8]);                //cordoba
-        Product::find(44)->features()->attach([7,8,11,15,16]);     //salento
-        Product::find(45)->features()->attach([7,8,11,15,16]);     //salento
-
+	    Product::find(44)->features()->attach([6,7,8,10,14,15]);           //recuca
+	    Product::find(45)->features()->attach([6,7,8,10,14,15]);           //recuca
         Product::find(46)->features()->attach([7,8,9,15]);         //botanical
         Product::find(47)->features()->attach([7,8,9,15]);         //botanical
         Product::find(48)->features()->attach([7,13,19]);          //peñas blancas
@@ -52,10 +51,10 @@ class Feature_Products_seeder extends Seeder
         Product::find(84)->features()->attach([7,13]);       //parapente
         Product::find(85)->features()->attach([38,39]);       //balsaje
         Product::find(86)->features()->attach([38,39]);       //balsaje
-        Product::find(87)->features()->attach([37]);       //ciclo rutas
-        Product::find(88)->features()->attach([37]);       //ciclo rutas
-        Product::find(89)->features()->attach([7]);       //ciclo rutas
-        Product::find(90)->features()->attach([7]);       //ciclo rutas
+        Product::find(87)->features()->attach([37,39]);       //ciclo rutas
+        Product::find(88)->features()->attach([37,39]);       //ciclo rutas
+        Product::find(89)->features()->attach([7]);       //avistamiento de aves
+        Product::find(90)->features()->attach([7]);       //avistamiento de aves
         
 
         

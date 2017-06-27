@@ -97,41 +97,40 @@ Panaca cuenta con los Shows más sorprendentes, las más impresionantes Estacion
 			
 			Product::create( [
 				'id'                => 5,
-				'tittle'            => 'Recuca',
-				'description'       => 'You can experience a wonderful Latin America vacations and the Coffee Culture in all its glory at RECUCA in the midst of thriving coffee and banana plantations. Recreate the role of the coffee growers past and present by actively participating in the cultivation work. The coffee beans are harvested and processed by hand with the garments currently used by the countrymen of the region. Experts will teach you to how to choose and pick properly ripened beans (granos) and husk, dry, roast and toast the grain, much as coffee ancestors have for hundreds of years (some things just cannot and should not change). Finally, ahhh, to taste the final product. Learn how to discriminate between the various bean qualities, aromas and of course flavors.',
-				'short_description' => 'You can experience the Coffee Culture in all its glory at RECUCA in the midst of thriving coffee and banana plantations. Recreate the role of the coffee growers past and present by actively participating in the cultivation work',
-				'itinerary'         => 'Breakfast,Park travel,Lunch,Atraction,Drink coffee,Dinner,',
-				'slug_url'          => str_slug( 'recuca', '-' ),
-				'days'              => '8 Hours',
+				'tittle'            => 'Salento, Cocora Valley, Craftsman Village',
+				'description'       => 'SALENTO, COCORA VALLEY, CRAFTSMAN VILLAGE The twisting mountain road leading to Salento reveals dramatic green valleys, lush jungle-layered peaks and banana and plantain covered foothills. After maybe five miles drive Salento is reached, a slightly larger town, with beautiful (often largely pedestrian) streets, frequently traversed by traditional coffee growers dressed in their standard garb (sombrero, light pants, colorful shawls and mustachioed visage) strolling to the main square for a cerveza fría, tomales, and traditional entertainment.  Among the quaint calles of Salento, you will find the Craftsman Village, a beehive of activity with gaily colorful shops where locally made handicrafts are sold (wine bottle holders made of bamboo or guadua, key chains of black cedar and small chests of eucalyptus. Lastly, undoubtedly the most special place of this region is the Cocora Valley, about seven miles beyond Salento, through some high grazing country that strikingly resembles Switzerland. At the very top of the valley is Cocora, heralded by thousands of wax palm, Colombia\'s national tree, dotting even the taller peaks. Off in the distance loom the highest snow covered peaks (volcanos actually) of Nevados National Park. Hiking and horseback riding trails abound. Deep in these jungles the puma roams free, likewise a national emblem.',
+				'short_description' => 'The twisting mountain road leading to Salento reveals dramatic green valleys, lush jungle-layered peaks and banana and plantain covered foothills. ',
+				'slug_url'          => str_slug( 'Salento, Cocora Valley, Craftsman Village', '-' ),
+				'days'              => '8 hours',
 				'price_adults'      => '125',
 				'price_children'    => '62',
 				'local'             => 'en',
-				'type'              => 1,
+				'type'              => 1, //activity
 				'discount'          => 0, //porcentaje
 				'city_id'           => 1,
-				'meta_description'  => 'Recuca',
-				'keywords'          => 'Recuca',
-				'include'           => 'Ticket, Coffee tasting, Drinks and snacks ',        // price include
-				'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock ',
+				'meta_description'  => 'Salento, Cocora Valley, Craftsman Village',
+				'keywords'          => 'Salento, Cocora Valley, Craftsman Village',
+				'include'           => '',        // price include
+				'suggestion'        => 'Comfortable shoes, Camera, Cap or hut, Sweater',
 			] );
 			
 			Product::create( [
 				'id'                => 6,
-				'tittle'            => 'Recuca',
-				'description'       => 'Podrás disfrutar de unas maravillosas vacaciones en Latinoamerica y experimentar la cultura cafetera en todo su esplendor en RECUCA en medio de los robustos cultivos de café y banano. Personificar a los tradicionales recolectores de café participando activamente en su trabajo. visitando plantaciones de café y  degustando este delicioso producto.  Los granos de café son cultivados y procesados a mano con la indumentaria que usan los campesinos de la región. Aprenderás de expertos a elegir y recoger apropiadamente los granos maduros, pelarlos, lavarlos, secarlos, tostarlos y seleccionarlos como los ancestros cafeteros lo han hecho por cientos de años (algunas cosas no pueden cambiar y no deberían cambiar). Degustarás el producto final aprendiendo a identificar las diversas calidades de grano, aromas y por su puesto sabores.',
-				'short_description' => 'Podrás experimentar la cultura cafetera en todo su esplendor en RECUCA, además   Personificarás a los tradicionales recolectores de café participando activamente en su trabajo.',
-				'slug_url'          => str_slug( 'recuca es', '-' ),
+				'tittle'            => 'Salento, Valle del Cocora, la Aldea del Artesano',
+				'description'       => 'SALENTO, VALLE DEL COCORA, LA ALDEA DEL ARTESANO El camino serpenteante en medio de la montaña que conduce a Salento revela los dramáticos valles verdes, los exuberantes picos de las montañas y colinas cubiertas por plantaciones de plátano y banano. Después de unos ocho kilómetros se llega en vehículo a Salento, un pueblo un poco más grande, con calles hermosas, frecuentadas por los cafeteros tradicionales vestidos con su atuendo típico (sombrero, pantalones ligeros, chales de colores y bigote) que llegan a la plaza del pueblo para tomar una cerveza fría y conversar con sus amigos.  Entre las pintorescas calles de Salento, se encuentra La Villa de los Artesanos, un conjunto de tiendas alegremente coloridas donde se venden artesanías hechas por los habitantes del lugar (botellas de vino de bambú o guadua, llaveros de cedro negro y pequeños cofres de eucalipto, entre otros). Por último, sin duda, el lugar más especial de esta región es el Valle de Cocora, a unos once kilómetros de Salento, a través de un campo de pastoreo alto que se asemeja sorprendentemente a Suiza. En lo más alto del valle está Cocora, anunciada por miles de palmas de cera, el árbol nacional de Colombia. En la distancia se divisan los picos nevados más altos (volcanes) del Parque Nacional los Nevados. Las rutas de senderismo y cabalgatas abundan. En el fondo de estas selvas el puma, también emblema nacional, pasea libremente por la zona.',
+				'short_description' => 'El camino serpenteante en medio de la montaña que conduce a Salento revela los dramáticos valles verdes, los exuberantes picos de las montañas y colinas cubiertas por plantaciones de plátano y banano. ',
+				'slug_url'          => str_slug( 'Salento, Valle del Cocora, la Aldea del Artesano', '-' ),
 				'days'              => '8 horas',
 				'price_adults'      => '125',
 				'price_children'    => '62',
 				'local'             => 'es',
-				'type'              => 1,
+				'type'              => 1, //activity
 				'discount'          => 0, //porcentaje
 				'city_id'           => 1,
-				'meta_description'  => 'Recuca',
-				'keywords'          => 'Recuca',
-				'include'           => 'Pasaporte, Cata de café, Bebidas y snacks ',        // price include
-				'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
+				'meta_description'  => 'Salento, Valle del Cocora, la Aldea del Artesano',
+				'keywords'          => 'Salento, Valle del Cocora, la Aldea del Artesano',
+				'include'           => '',        // price include
+				'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
 			] );
 			
 			Product::create( [
@@ -2093,43 +2092,47 @@ Panaca cuenta con los Shows más sorprendentes, las más impresionantes Estacion
 				'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
 			] );
 			
+			
 			Product::create( [
 				'id'                => 44,
-				'tittle'            => 'Salento, Cocora Valley, Craftsman Village',
-				'description'       => 'SALENTO, COCORA VALLEY, CRAFTSMAN VILLAGE The twisting mountain road leading to Salento reveals dramatic green valleys, lush jungle-layered peaks and banana and plantain covered foothills. After maybe five miles drive Salento is reached, a slightly larger town, with beautiful (often largely pedestrian) streets, frequently traversed by traditional coffee growers dressed in their standard garb (sombrero, light pants, colorful shawls and mustachioed visage) strolling to the main square for a cerveza fría, tomales, and traditional entertainment.  Among the quaint calles of Salento, you will find the Craftsman Village, a beehive of activity with gaily colorful shops where locally made handicrafts are sold (wine bottle holders made of bamboo or guadua, key chains of black cedar and small chests of eucalyptus. Lastly, undoubtedly the most special place of this region is the Cocora Valley, about seven miles beyond Salento, through some high grazing country that strikingly resembles Switzerland. At the very top of the valley is Cocora, heralded by thousands of wax palm, Colombia\'s national tree, dotting even the taller peaks. Off in the distance loom the highest snow covered peaks (volcanos actually) of Nevados National Park. Hiking and horseback riding trails abound. Deep in these jungles the puma roams free, likewise a national emblem.',
-				'short_description' => 'The twisting mountain road leading to Salento reveals dramatic green valleys, lush jungle-layered peaks and banana and plantain covered foothills. ',
-				'slug_url'          => str_slug( 'Salento, Cocora Valley, Craftsman Village', '-' ),
-				'days'              => '8 hours',
+				'tittle'            => 'Recuca',
+				'description'       => 'You can experience a wonderful Latin America vacations and the Coffee Culture in all its glory at RECUCA in the midst of thriving coffee and banana plantations. Recreate the role of the coffee growers past and present by actively participating in the cultivation work. The coffee beans are harvested and processed by hand with the garments currently used by the countrymen of the region. Experts will teach you to how to choose and pick properly ripened beans (granos) and husk, dry, roast and toast the grain, much as coffee ancestors have for hundreds of years (some things just cannot and should not change). Finally, ahhh, to taste the final product. Learn how to discriminate between the various bean qualities, aromas and of course flavors.',
+				'short_description' => 'You can experience the Coffee Culture in all its glory at RECUCA in the midst of thriving coffee and banana plantations. Recreate the role of the coffee growers past and present by actively participating in the cultivation work',
+				'itinerary'         => 'Breakfast,Park travel,Lunch,Atraction,Drink coffee,Dinner,',
+				'slug_url'          => str_slug( 'recuca', '-' ),
+				'days'              => '8 Hours',
 				'price_adults'      => '125',
 				'price_children'    => '62',
 				'local'             => 'en',
-				'type'              => 1, //activity
+				'type'              => 1,
 				'discount'          => 0, //porcentaje
 				'city_id'           => 1,
-				'meta_description'  => 'Salento, Cocora Valley, Craftsman Village',
-				'keywords'          => 'Salento, Cocora Valley, Craftsman Village',
-				'include'           => '',        // price include
-				'suggestion'        => 'Comfortable shoes, Camera, Cap or hut, Sweater',
+				'meta_description'  => 'Recuca',
+				'keywords'          => 'Recuca',
+				'include'           => 'Ticket, Coffee tasting, Drinks and snacks ',        // price include
+				'suggestion'        => 'Comfortable shoes, No sandals, Cap or hat, Sunblock, Drink, Camera, Sunblock ',
 			] );
 			
 			Product::create( [
 				'id'                => 45,
-				'tittle'            => 'Salento, Valle del Cocora, la Aldea del Artesano',
-				'description'       => 'SALENTO, VALLE DEL COCORA, LA ALDEA DEL ARTESANO El camino serpenteante en medio de la montaña que conduce a Salento revela los dramáticos valles verdes, los exuberantes picos de las montañas y colinas cubiertas por plantaciones de plátano y banano. Después de unos ocho kilómetros se llega en vehículo a Salento, un pueblo un poco más grande, con calles hermosas, frecuentadas por los cafeteros tradicionales vestidos con su atuendo típico (sombrero, pantalones ligeros, chales de colores y bigote) que llegan a la plaza del pueblo para tomar una cerveza fría y conversar con sus amigos.  Entre las pintorescas calles de Salento, se encuentra La Villa de los Artesanos, un conjunto de tiendas alegremente coloridas donde se venden artesanías hechas por los habitantes del lugar (botellas de vino de bambú o guadua, llaveros de cedro negro y pequeños cofres de eucalipto, entre otros). Por último, sin duda, el lugar más especial de esta región es el Valle de Cocora, a unos once kilómetros de Salento, a través de un campo de pastoreo alto que se asemeja sorprendentemente a Suiza. En lo más alto del valle está Cocora, anunciada por miles de palmas de cera, el árbol nacional de Colombia. En la distancia se divisan los picos nevados más altos (volcanes) del Parque Nacional los Nevados. Las rutas de senderismo y cabalgatas abundan. En el fondo de estas selvas el puma, también emblema nacional, pasea libremente por la zona.',
-				'short_description' => 'El camino serpenteante en medio de la montaña que conduce a Salento revela los dramáticos valles verdes, los exuberantes picos de las montañas y colinas cubiertas por plantaciones de plátano y banano. ',
-				'slug_url'          => str_slug( 'Salento, Valle del Cocora, la Aldea del Artesano', '-' ),
+				'tittle'            => 'Recuca',
+				'description'       => 'Podrás disfrutar de unas maravillosas vacaciones en Latinoamerica y experimentar la cultura cafetera en todo su esplendor en RECUCA en medio de los robustos cultivos de café y banano. Personificar a los tradicionales recolectores de café participando activamente en su trabajo. visitando plantaciones de café y  degustando este delicioso producto.  Los granos de café son cultivados y procesados a mano con la indumentaria que usan los campesinos de la región. Aprenderás de expertos a elegir y recoger apropiadamente los granos maduros, pelarlos, lavarlos, secarlos, tostarlos y seleccionarlos como los ancestros cafeteros lo han hecho por cientos de años (algunas cosas no pueden cambiar y no deberían cambiar). Degustarás el producto final aprendiendo a identificar las diversas calidades de grano, aromas y por su puesto sabores.',
+				'short_description' => 'Podrás experimentar la cultura cafetera en todo su esplendor en RECUCA, además   Personificarás a los tradicionales recolectores de café participando activamente en su trabajo.',
+				'slug_url'          => str_slug( 'recuca es', '-' ),
 				'days'              => '8 horas',
 				'price_adults'      => '125',
 				'price_children'    => '62',
 				'local'             => 'es',
-				'type'              => 1, //activity
+				'type'              => 1,
 				'discount'          => 0, //porcentaje
 				'city_id'           => 1,
-				'meta_description'  => 'Salento, Valle del Cocora, la Aldea del Artesano',
-				'keywords'          => 'Salento, Valle del Cocora, la Aldea del Artesano',
-				'include'           => '',        // price include
-				'suggestion'        => 'Cámara, Zapatos cómodos, Gorra o sombrero',
+				'meta_description'  => 'Recuca',
+				'keywords'          => 'Recuca',
+				'include'           => 'Pasaporte, Cata de café, Bebidas y snacks ',        // price include
+				'suggestion'        => 'Zapatos cómodos, No usar sandalias, Gorra o sombrero, Bebida, Cámara fotográfica, Bloqueador solar',
 			] );
+			
+			
 			
 			
 			Product::create( [
