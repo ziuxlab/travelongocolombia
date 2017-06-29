@@ -47,7 +47,7 @@
 
 <!-- CSS Print -->
 <link rel="stylesheet" type="text/css" media="print" href="{{ asset(mix('/css/app-home.css')) }}">
-<link rel="stylesheet" type="text/css" href="{{ asset(mix('/css/app-home.css')) }}">
+
 
 
 <!-- Scripts -->
