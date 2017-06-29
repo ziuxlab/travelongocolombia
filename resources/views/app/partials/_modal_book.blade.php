@@ -106,9 +106,15 @@
                         </div>
                         <div class="col-xs-6 ">
                             <div class="text-center">
+                                @if(Session::get('plan')=='design')
                                 <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(0,{{$id}})"
                                         data-dismiss="modal"> @lang('general.next')
                                 </button>
+                                    @else
+                                    <button class="btn btn-minw btn-primary" onclick="enviar_formulario_book(0,{{$id}})"
+                                            data-dismiss="modal"> @lang('general.pay')
+                                    </button>
+                                @endif
                             </div>
                         </div>
                     </div>

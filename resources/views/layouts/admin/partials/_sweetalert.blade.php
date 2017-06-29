@@ -10,14 +10,14 @@
             url  = $('#item_' + id).attr('action');
             console.log(data,url);
             swal({
-                title: "¿Estás Seguro?",
-                text: "{{$name}} se eliminará de la base de datos!",
+                title: "Are you sure?",
+                text: "{{$name}} will be removed from the database!",
                 type: "warning",
                 showCancelButton: !0,
                 confirmButtonColor: "#1b8bf9",
                 cancelButtonColor: '#f55',
-                confirmButtonText: "Sí, Eliminar!",
-                cancelButtonText: 'No, Cancelar!',
+                confirmButtonText: "Yes, Delete!",
+                cancelButtonText: 'No, Cancel!',
                 html: !1,
             }).then(function (n) {
                 $.ajax({
@@ -26,8 +26,8 @@
                     data: data,
                     success: function (msg) {
                         swal({
-                            title: "Confirmado!",
-                            text: "{{$name}} ha sido Borrada de la base de datos.",
+                            title: "Confirmed!",
+                            text: "{{$name}} was delete of the database.",
                             type: "success",
                             confirmButtonColor: "#1b8bf9"
                         });
@@ -37,7 +37,7 @@
                     error: function (data) {
                         swal({
                             title: "Error!",
-                            text: "{{$name}} no ha sido Borrada de la base de datos.",
+                            text: "{{$name}} wasn`t delete of the database.",
                             type: "error",
                             confirmButtonColor: "#1b8bf9"
                         })
@@ -47,7 +47,7 @@
                 // dismiss can be 'cancel', 'overlay',
                 // 'close', and 'timer'
                 if (dismiss == 'cancel') {
-                    swal('Cancelado', "{{$name}} No se eliminó de la base de datos!", 'error')
+                    swal('Cancel', "{{$name}} wasn`t delete of the database!", 'error')
                 }
             })
         })
@@ -57,14 +57,14 @@
             data = $('#update_' + id).serialize();
             url  = $('#update_' + id).attr('action');
             swal({
-                title: "Orden de presentacion de las imagenes",
+                title: "Order of presentation of the images",
                 input: 'number',
                 showLoaderOnConfirm: true,
                 showCancelButton: true,
                 confirmButtonColor: "#1b8bf9",
                 cancelButtonColor: '#f55',
-                confirmButtonText: "Enviar!",
-                cancelButtonText: 'No, Cancelar!',
+                confirmButtonText: "Send!",
+                cancelButtonText: 'No, Cancel!',
                 allowOutsideClick: false,
                 html: !1,
             }).then(function (number) {
@@ -76,8 +76,8 @@
                         console.log(msg);
                         
                         swal({
-                            title: "Confirmado!",
-                            text: "El orden de {{$name}} ha sido actualizado de la base de datos.",
+                            title: "Confirmed!",
+                            text: "El orden de {{$name}} was update in the database.",
                             type: "success",
                             confirmButtonColor: "#1b8bf9"
                         });
@@ -87,7 +87,7 @@
                     error: function (data) {
                         swal({
                             title: "Error!",
-                            text: "{{$name}} no ha sido Actualizada de la base de datos.",
+                            text: "{{$name}} wasn`t update in the database.",
                             type: "error",
                             confirmButtonColor: "#1b8bf9"
                         })
@@ -97,7 +97,7 @@
                 // dismiss can be 'cancel', 'overlay',
                 // 'close', and 'timer'
                 if (dismiss == 'cancel') {
-                    swal('Cancelado', "No se cambio nada de la base de datos!", 'error')
+                    swal('Canceled', "Nothing changed in the database!", 'error')
                 }
             })
         })
@@ -107,7 +107,7 @@
 @if(Session::has('mensaje'))
     <script type="text/javascript">
         $(document).ready(function () {
-            swal('Confirmado!', "{{Session::get('mensaje')}}", 'success')
+            swal('Confirmed!', "{{Session::get('mensaje')}}", 'success')
         });
     </script>
 @endif

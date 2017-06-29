@@ -88,16 +88,17 @@
                         </td>
                     </tr>
                     @if($services == 1)
-                        <tr class="bg-primary"> <th class="hidden-xs"></th>
+                        <tr class="bg-primary">
+                            <th class="hidden-xs"></th>
                             <th class="">@lang('general.additional services')</th>
+                            <th class="hidden-xs"></th>
                             <th class="text-center hidden-xs">cantidad</th>
                             <!--
                             <th class="text-right">precio</th>-->
                             <th></th>
-                            <th></th>
                         </tr>
                         <tr class="active">
-                            <td class="text-center" colspan="4">@lang('general.services-cart')
+                            <td class="text-center" colspan="5">@lang('general.services-cart')
                             </td>
                         </tr>
                         @foreach(Cart::getContent() as $key => $item)

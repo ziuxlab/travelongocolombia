@@ -1400,7 +1400,7 @@
 			Photo::create( [
 				'product_id' => 27,
 				'img'        => 'img/hotels/isavictory/1.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 27,
@@ -1415,7 +1415,7 @@
 			Photo::create( [
 				'product_id' => 27,
 				'img'        => 'img/hotels/isavictory/4.jpg',
-				'order'      => 3,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 27,
@@ -1466,7 +1466,7 @@
 			Photo::create( [
 				'product_id' => 28,
 				'img'        => 'img/hotels/isavictory/1.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 28,
@@ -1481,7 +1481,7 @@
 			Photo::create( [
 				'product_id' => 28,
 				'img'        => 'img/hotels/isavictory/4.jpg',
-				'order'      => 3,
+				'order'      => 1,
 			] );
 			Photo::create( [
 				'product_id' => 28,
@@ -1654,12 +1654,12 @@
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/1.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/2.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
@@ -1669,114 +1669,114 @@
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/4.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/5.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/6.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/7.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/8.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/9.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/10.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/11.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/12.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/13.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/14.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/15.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/16.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/18.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/19.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/20.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/21.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/22.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/23.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 68,
 				'img'        => 'img/hotels/palma_verde/24.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/1.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/2.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
@@ -1786,104 +1786,104 @@
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/4.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/5.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/6.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/7.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/8.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/9.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/10.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/11.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/12.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/13.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/14.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/15.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/16.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/18.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/19.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/20.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/21.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/22.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/23.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			Photo::create( [
 				'product_id' => 69,
 				'img'        => 'img/hotels/palma_verde/24.jpg',
-				'order'      => 1,
+				'order'      => 2,
 			] );
 			
 			

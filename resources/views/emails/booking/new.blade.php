@@ -1,10 +1,10 @@
 @component('mail::message')
 # Booking
 
-Name: {{$booking->user->name}}</br>
-email: {{$booking->user->email}}</br>
-Price: {{$booking->price}}</br>
-Status: {{$booking->status}}</br>
+Name: {{$booking->user->name}} </br>
+email: {{$booking->user->email}} </br>
+Price: {{$booking->price}} </br>
+Status: {{$booking->status}} </br>
 
 
 @if($booking->note <> '')
@@ -18,13 +18,26 @@ Status: {{$booking->status}}</br>
 # Booking details
 
 @component('mail::table')
-| Product     | Quantity    | Type  | Nigths | Rooms |
-| :---------: |:-----------:| :----:| :-----:| :----:|
-@foreach($booking->details as $item)
-    | {{$item->name}}  | {{$item->quantity}} | @if($item->type == 0)Paquete @elseif($item->type == 1)Actividad @elseif($item->type == 2)Hotel @elseif($item->type == 4)Servicio Adicional @endif | {{$item->nights}} | {{$item->nights}}
+| Product     | Quantity    | Type  | Nigths | Rooms | checkin |
+| :---------: |:-----------:| :----:| :-----:| :----:| :----:|
+@foreach($booking->details->where('type','<>',4) as $item)
+    | {{$item->name}}  | {{$item->quantity}} | @if($item->type == 0)Paquete @elseif($item->type == 1)Actividad @elseif($item->type == 2)Hotel @elseif($item->type == 4)Servicio Adicional @endif | {{$item->nights}} | {{$item->rooms}} | {{$item->checkin}}
 @endforeach
 
 @endcomponent
+
+@if(count($booking->details->where('type',4))>0)
+# Additional services
+#### Additional services will be paid in Armenia.
+@component('mail::table')
+| Product     | Quantity    | Type  | Nigths | Rooms |
+| :---------: |:-----------:| :----:| :-----:| :----:|
+@foreach($booking->details->where('type',4) as $item)
+    | {{$item->name}}  | {{$item->quantity}} | @if($item->type == 0)Paquete @elseif($item->type == 1)Actividad @elseif($item->type == 2)Hotel @elseif($item->type == 4)Servicio Adicional @endif | {{$item->nights}} | {{$item->rooms}} | {{$item->checkin}}
+@endforeach
+
+@endcomponent
+@endif
 
 # Contacts details
 
