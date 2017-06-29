@@ -18,7 +18,9 @@
     @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Hoteles','h2'=>'Crear, Editar y Eliminar Hoteles'])
     <div class="block">
         <div class="block-content">
+            @role('admin')
             <a href="{{url('admin/hotels/create')}}" class="btn btn-primary push"> + Crear Hotel</a>
+            @endrole
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -48,14 +50,14 @@
                                    class="btn btn-xs btn-default"
                                    type="button" data-toggle="tooltip" title=""
                                    data-original-title="Editar Hotel"><i class="fa fa-pencil"></i></a>
+                                @role('admin')
                                 <button class="js-swal-confirm btn btn-xs btn-default" type="button"
                                         data-toggle="tooltip" data-id="{{ $package->id }}" title=""
                                         data-original-title="Eliminar Hotel"><i class="fa fa-times"></i>
                                      {!! Form::open(['action'=> ['HotelController@destroy',$package->id],'method'=>'delete','id'=>'item_'.$package->id]) !!}
                                     {!! Form::close() !!}
                                 </button>
-                            
-                            
+                                @endrole
                             </div>
                         </td>
                     </tr>

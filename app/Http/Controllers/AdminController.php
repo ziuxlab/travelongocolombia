@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -26,7 +28,14 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return redirect('admin/pages');
+	    $user = User::find(Auth::user()->id);
+	   
+	    if ($user->isAdmin()){
+		    return redirect('admin/pages');
+	    }else{
+		    return redirect('admin/hotels');
+	    }
+        
         //return view('admin.pages');
     }
 

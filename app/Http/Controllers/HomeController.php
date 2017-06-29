@@ -46,7 +46,7 @@
                 $item = Page::where('slug_url', '')
                             ->firstOrFail()
                 ;
-                
+	            
                 return view('app.home', compact('item', 'menu'));
                 
             }

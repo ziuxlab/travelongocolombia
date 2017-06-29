@@ -17,6 +17,11 @@ class UserRolesSeeder extends Seeder
             'slug' => 'admin',
             'description' => 'Custodians of the system.', // optional
         ]);
+	
+	    \HttpOz\Roles\Models\Role::create([
+		    'name' => 'Hotel',
+		    'slug' => 'hotel',
+	    ]);
     
         \HttpOz\Roles\Models\Role::create([
             'name' => 'User',

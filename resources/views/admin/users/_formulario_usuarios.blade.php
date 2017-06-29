@@ -22,7 +22,12 @@
 </div>
 <div class="form-group">
     {!! Form::label('Rol:', null, ['class' => 'control-label']) !!}
-    {!! Form::select('role', $roles, $user_role, ['class' => 'form-control']) !!}
+    {!! Form::select('role', $roles, $user_role, ['class' => 'form-control','onchange'=>'role_hotel(this)']) !!}
+
+</div>
+<div class="form-group hidden" id="hotel">
+    {!! Form::label('Hotel Asignado:', null, ['class' => 'control-label']) !!}
+    {!! Form::select('hotel[]', $hotels, null, ['class' => 'form-control','placeholder'=>'Select the hotel','multiple']) !!}
 
 </div>
 <div class="form-group {{ $errors->has('img') ? ' has-error' : '' }}">
@@ -34,5 +39,14 @@
         </span>
     @endif
 </div>
+<script>
+    function role_hotel($item) {
+        if($item.value == 2){
+            $('#hotel').removeClass('hidden')
+        }else {
+            $('#hotel').addClass('hidden')
+        }
+    }
+</script>
    
 

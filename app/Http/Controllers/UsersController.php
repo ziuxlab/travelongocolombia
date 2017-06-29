@@ -2,9 +2,11 @@
     
     namespace App\Http\Controllers;
     
+    use App\Product;
     use App\User;
     use HttpOz\Roles\Models\Role;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\App;
     use Illuminate\Support\Facades\Session;
     use Illuminate\Support\Facades\Storage;
     use Intervention\Image\Facades\Image;
@@ -40,9 +42,10 @@
         {
             //
             $roles = Role::pluck('name', 'id');
+            $hotels = Product::where('type',2)->pluck('tittle', 'id');
             $user_role = null;
             
-            return view('admin.users.users_create', compact('roles', 'user_role'));
+            return view('admin.users.users_create', compact('roles', 'user_role','hotels'));
         }
         
         /**
@@ -55,7 +58,6 @@
         public function store(Request $request)
         {
             //
-            
             $this->validate($request, [
                 'email' => 'required|unique:users',
                 'img'=> 'mimes:jpeg,jpg,png'
@@ -77,7 +79,8 @@
                 'name'     => $request->name,
                 'email'    => $request->email,
                 'password' => bcrypt($request->password),
-                'img'      => $path
+                'img'      => $path,
+                'hotel'      => implode($request->hotel,',')
             ]);
             
             $user->attachRole($request->role);
@@ -111,13 +114,14 @@
         {
             //
             $roles = Role::pluck('name', 'id');
+	        $hotels = Product::where('type',2)->pluck('tittle', 'id');
             $user = User::with('roles')
                         ->whereId($id)
                         ->first()
             ;
             $user_role = $user->roles->first()->id;
             
-            return view('admin.users.users_edit', compact('roles', 'user', 'user_role'));
+            return view('admin.users.users_edit', compact('roles', 'user', 'user_role','hotels'));
         }
         
         /**
@@ -138,6 +142,7 @@
             $user = User::find($id);
             $user->name = $request->name;
             $user->email = $request->email;
+            $user->hotel = implode($request->hotel,',');
             
             //se verifica si tiene imagen y se sube al storage
             if ($request->hasFile('img')) {

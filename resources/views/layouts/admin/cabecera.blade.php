@@ -15,6 +15,7 @@
                          alt="Avatar" data-toggle="dropdown" width="36" height="36">
                 @endif
                 <ul class="dropdown-menu dropdown-menu-right">
+                    @role('admin')
                     <li class="dropdown-header">Perfil</li>
                     <li>
                         <a tabindex="-1" href="{{url('admin/users/'. Auth::user()->id .'/edit')}}">
@@ -23,13 +24,13 @@
                         </a>
                     </li>
                     <li class="divider"></li>
+                    @endrole
                     <li>
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                             Salir
                         </a>
-        
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
                         </form>

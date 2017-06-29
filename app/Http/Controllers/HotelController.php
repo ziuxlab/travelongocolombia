@@ -5,7 +5,9 @@
     use App\kindsHotel;
     use App\Photo;
     use App\Product;
+    use App\User;
     use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\File;
     use Illuminate\Support\Facades\Session;
     use Intervention\Image\Facades\Image;
@@ -31,9 +33,15 @@
         public function index()
         {
             //
-            $packages = Product::where('type', 2)
-                               ->paginate(10)
-            ;
+	        $user = User::find(Auth::user()->id);
+	        
+	        if ($user->isAdmin()) {
+		        $packages = Product::where( 'type', 2 )
+		                           ->paginate( 10 );
+	        }else{
+		        $packages = Product::where( 'type', 2 )->wherein('id',explode(',',$user->hotel))
+		                           ->paginate( 10 );
+	        }
            
             
             return view('admin.hotels.hotels_index', compact('packages'));

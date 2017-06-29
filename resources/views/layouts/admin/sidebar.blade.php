@@ -66,6 +66,7 @@
             <!-- Side Content -->
             <div class="side-content">
                 <ul class="nav-main">
+                @role('admin')
                 <!-- <li>
                         <a class="{{Request::is('admin/home') ? 'active' :''}}tutorial-dashboard" href="{{Url('admin/home')}}"><i class="si si-speedometer"></i><span
                                     class="sidebar-mini-hide">Dashboard</span></a>
@@ -87,10 +88,12 @@
                         <a class="{{Request::is('admin/activities') ? 'active' :''}}" href="{{url('admin/activities')}}"><i class="fa fa-bicycle"></i><span
                                     class="sidebar-mini-hide">Actividades</span></a>
                     </li>
+                    @endrole
                     <li>
                         <a class="{{Request::is('admin/hotels') ? 'active' :''}}" href="{{url('admin/hotels')}}"><i class="fa fa-building-o"></i><span
                                     class="sidebar-mini-hide">Hoteles</span></a>
                     </li>
+                    @role('admin')
                     <li>
                         <a class="{{Request::is('admin/services') ? 'active' :''}}" href="{{url('admin/services')}}"><i class="si si-equalizer"></i><span
                                     class="sidebar-mini-hide">Servicios</span></a>
@@ -139,6 +142,7 @@
                             </li>
                         </ul>
                     </li>
+                    @endrole
                 </ul>
             </div>
             <!-- END Side Content -->
