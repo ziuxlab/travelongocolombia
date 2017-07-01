@@ -47,6 +47,9 @@
 		 * @return \Illuminate\Http\Response
 		 */
 		public function store( Request $request ) {
+			
+			
+			
 			$this->validate( $request, [
 				'slug_url'   => 'unique:pages',
 				'img'        => 'mimes:jpeg,jpg,png',
@@ -62,6 +65,8 @@
 			} else {
 				$path = null;
 			}
+			
+			
 			
 			$page = Page::create( [
 				'slug_url'         => str_slug( $request->slug_url, '-' ),

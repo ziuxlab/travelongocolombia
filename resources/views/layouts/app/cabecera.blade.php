@@ -1,9 +1,9 @@
-<!-- Quitar cuendo este en prodcuccion -->
+<!-- Quitar cuendo este en prodcuccion
 <div class=" text-white-op bg-secondary">
     <div class="content-boxed h4 content-mini content-mini-full flex-center">
         -- We are building the Website --
     </div>
-</div>
+</div>-->
 
 <nav class="bg-primary v-center">
     <div class="content-boxed ">

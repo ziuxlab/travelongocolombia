@@ -157,6 +157,8 @@
         public function store(Request $request)
         {
             //
+	       
+	       
             $this->validate($request, [
                 'slug_url' => 'unique:products'
             
@@ -164,7 +166,7 @@
             
             $package = Product::create([
                 'tittle'            => $request->tittle,
-                'slug_url'          => str_slug($request->slug_url, '-'),
+                'slug_url'          => str_slug($request->slug_url == null ? $request->tittle :$request->slug_url, '-'),
                 'days'              => $request->days,
                 'price_adults'      => $request->price_adults,
                 'price_children'    => $request->price_children,
@@ -201,7 +203,7 @@
                 }
             }
 	
-	        Session::flash('mensaje','Paquete creado con exito');
+	        Session::flash('mensaje','Package created');
             
             return redirect('admin/packages');
         }
@@ -262,7 +264,7 @@
             $package = Product::find($id)
                               ->update([
                                   'tittle'            => $request->tittle,
-                                  'slug_url'          => str_slug($request->slug_url, '-'),
+                                  'slug_url'          => str_slug($request->slug_url == null ? $request->tittle :$request->slug_url, '-'),
                                   'days'              => $request->days,
                                   'price_adults'      => $request->price_adults,
                                   'price_children'    => $request->price_children,
@@ -303,7 +305,7 @@
                 }
             }
 	
-	        Session::flash('mensaje','Paquete Actualizado con exito');
+	        Session::flash('mensaje','Package update');
             
             return redirect('admin/packages');
         }
