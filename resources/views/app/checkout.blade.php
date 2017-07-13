@@ -1824,7 +1824,7 @@
                                             <label>@lang('general.number')</label>
                                             <input class="form-control" id="number" data-stripe="number"
                                                    name="number"
-                                                   type="text" value="4242424242424242"
+                                                   type="text"
                                                    placeholder="**** **** **** ****">
                                         </div>
                                     </div>
@@ -1832,7 +1832,7 @@
                                         <div class="col-xs-12">
                                             <label>@lang('general.name')</label>
                                             <input class="form-control" id="name" name="name" type="text"
-                                                   placeholder="JOHN DOE" value="mauricio">
+                                                   placeholder="JOHN DOE">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1840,7 +1840,7 @@
                                             <label>@lang('general.expiration') (MM/YY)</label>
                                             <div class="form-inline">
                                                 <input class="form-control" type="text" name="month" size="2"
-                                                       data-stripe="exp_month" value="02">
+                                                       data-stripe="exp_month" value="00">
                                                 <span> / </span>
                                                 <input class="form-control" type="text" name="year" size="4"
                                                        data-stripe="exp_year" value="2020">
@@ -1849,7 +1849,7 @@
                                         <div class="col-xs-6">
                                             <label for="checkout-cc-cvc">CVC</label>
                                             <input class="form-control" id="cvc" data-stripe="cvc" name="cvc"
-                                                   type="text" placeholder="***" value="345">
+                                                   type="text" placeholder="***">
                                         </div>
                                     </div>
                                     <div class="form-group">
