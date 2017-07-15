@@ -259,7 +259,8 @@
 
 
 			//aca lo del pago
-			Stripe::setApiKey( 'sk_test_ZyIU6tPXTy3ZYBPO2zxZXB1k' );
+			//Stripe::setApiKey( 'sk_test_ZyIU6tPXTy3ZYBPO2zxZXB1k' );
+			Stripe::setApiKey( 'sk_live_HDE3gtqThfXtiC0IQmVEdcd4' );
 			try {
 				$charge = Charge::create( [
 					"amount"      => ( Cart::getTotal() * 100 ),

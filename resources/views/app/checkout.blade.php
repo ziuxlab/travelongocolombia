@@ -1985,7 +1985,8 @@
     </script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script>
-        Stripe.setPublishableKey("pk_test_P0EjYfOJsYofkY5AMGlWt4gh");
+        //Stripe.setPublishableKey("pk_test_P0EjYfOJsYofkY5AMGlWt4gh");
+        Stripe.setPublishableKey("pk_live_PSDyOnH3d2qco06dSvbEk0yM");
         $('#terms').click(function() {
             if ($(this).is(':checked')) {
                 // Do stuff
