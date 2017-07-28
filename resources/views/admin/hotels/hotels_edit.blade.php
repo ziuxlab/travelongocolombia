@@ -17,8 +17,7 @@
 @section('contenido')
     @include('layouts.admin.partials._titulos_CRUD',['h1'=>'Hotel','h2'=>'Editar Hotel'])
     <div class="content overflow-hidden">
-        
-        <div class="col-sm-12">
+                <div class="col-sm-12">
             <div CLASS="block block-bordered block-rounded block-themed ">
                 {!! Form::model($package,['action'=> ['HotelController@update',$package->id],'method' => 'put','files' => 'true']) !!}
                 <div class="block-header bg-primary">
@@ -36,9 +35,9 @@
                 {!! Form::close() !!}
             </div>
         </div>
-        
+        @role('admin')
         @include('admin.hotels._formulario_photos')
-    
+    @endrole
     </div>
 @stop
 

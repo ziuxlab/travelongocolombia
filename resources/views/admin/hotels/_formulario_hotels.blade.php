@@ -1,3 +1,7 @@
+@role('hotel')
+{!! Form::hidden('hotel_role', 1) !!}
+@endrole
+@role('admin')
 <div class="row">
     <div class="col-sm-6">
         <div class="form-group {{ $errors->has('tittle') ? ' has-error' : '' }}">
@@ -21,7 +25,6 @@
             @endif
         </div>
     </div>
-    
 </div>
 <div class="row">
     <div class="col-sm-3">
@@ -41,23 +44,33 @@
         </div>
     </div>
 </div>
+@endrole
 <div class="row">
     @foreach($kindshotel as $item)
         <div class="col-sm-6">
             <div class="form-group">
-                {!! Form::label($item->kind_room.':', null, ['class' => 'control-label']) !!}
+                {!! Form::label('Habitación '.$item->kind_room.':', null, ['class' => 'control-label']) !!}
                 <?php
                 $kind_room = isset($package) ? $package->kindsHotel->where('id', $item->id)
                                                                         ->first() : null;
                 ?>
                 <div class="row">
+                    @role('admin')
                     <div class="col-sm-6">
                         <div class="input-group">
                             <span class="input-group-addon">Precio:</span>
+
                             {!! Form::number('kindshotel['.$item->id.'][price]', $kind_room != null ? $kind_room->pivot->price : 0 , ['class' => 'form-control']) !!}
+
+
                         </div>
                     
                     </div>
+                    @endrole
+                    @role('hotel')
+                    {!! Form::hidden('kindshotel['.$item->id.'][price]', $kind_room != null ? $kind_room->pivot->price : 0 ) !!}
+                    @endrole
+
                     <div class="col-sm-6">
                         <div class="input-group">
                             <span class="input-group-addon">cantidad:</span>
@@ -70,6 +83,7 @@
     @endforeach
 
 </div>
+@role('admin')
 <div class="form-group {{ $errors->has('description') ? ' has-error' : '' }}">
     {!! Form::label('Descripción:', null, ['class' => 'control-label']) !!}
     {!! Form::textarea('description', old('description'), ['class' => 'form-control','placeholder'=>'Ingrese su Descripción']) !!}
@@ -195,3 +209,4 @@
         </div>
     </div>
 </div>
+@endrole

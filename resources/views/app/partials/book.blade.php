@@ -179,7 +179,7 @@
                             <div class="col-sm-4" >
                                 <div class="form-group">
                                     {!! Form::label(trans('general.room').' 1:', null, ['class' => 'control-label']) !!}
-                                    {!! Form::select('rooms[1][id]', $item->kindsHotel->pluck('kind_room', 'id'), null, ['class' => 'form-control room']) !!}
+                                    {!! Form::select('rooms[1][id]', $item->kindsHotel()->where('quantity','>',0)->get()->pluck('kind_room', 'id'), null, ['class' => 'form-control room']) !!}
                                 </div>
                             </div>
                             <div class="col-sm-4">

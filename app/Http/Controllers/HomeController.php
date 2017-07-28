@@ -34,6 +34,7 @@
         public function index()
         {
 
+
             $config = Config::findorfail(1);
             if ($config->status == 1) {
                 
@@ -42,10 +43,13 @@
                             ->orderBy('menu_order')
                             ->get()
                 ;
+
                 
                 $item = Page::where('slug_url', '')
                             ->firstOrFail()
                 ;
+
+
 	            
                 return view('app.home', compact('item', 'menu'));
                 

@@ -141,7 +141,8 @@
                            ->firstOrFail()
             ;
             Session::put('url','hotel');
-            
+
+
             return view('app.product-item', compact('item'));
         }
         
@@ -177,52 +178,55 @@
         public function update(Request $request, $id)
         {
             //
-           
-            
-            Product::find($id)->update([
-                'tittle'            => $request->tittle,
-                'slug_url'          => str_slug($request->slug_url, '-'),
-                'meta_description'  => $request->meta_description,
-                'keywords'          => $request->keywords,
-                'status'            => $request->status,
-                'local'             => $request->local,
-                'itinerary'         => $request->itinerary,
-                'include'           => $request->include,
-                'suggestion'        => $request->suggestion,
-                'description'       => $request->description,
-                'short_description' => $request->short_description,
-                'city_id'           => $request->city_id,
+
+if ($request->hotel_role == 1){
+    $kindshotel = collect($request->kindshotel);
+
+
+    Product::find($id)->kindsHotel()->sync($kindshotel->toArray());
+    Session::flash('mensaje','Hotel Actualizado con exito');
+
+    return redirect('admin/hotels');
+}else{
+    Product::find($id)->update([
+        'tittle'            => $request->tittle,
+        'slug_url'          => str_slug($request->slug_url, '-'),
+        'meta_description'  => $request->meta_description,
+        'keywords'          => $request->keywords,
+        'status'            => $request->status,
+        'local'             => $request->local,
+        'itinerary'         => $request->itinerary,
+        'include'           => $request->include,
+        'suggestion'        => $request->suggestion,
+        'description'       => $request->description,
+        'short_description' => $request->short_description,
+        'city_id'           => $request->city_id,
+    ]);
+
+    $kindshotel = collect($request->kindshotel);
+
+    Product::find($id)->features()->sync($request->features);
+    Product::find($id)->kindsHotel()->sync($kindshotel->toArray());
+
+
+    if ($request->file('img')) {
+        foreach ($request->file('img') as $key => $img) {
+            $path = 'img/hotels/' . str_random(10) . '.png';
+            Image::make($img)->fit(1200, 600)->save($path, 50);
+            Photo::create([
+                'product_id' => $id,
+                'img'        => $path,
+                'order'      => $key,
             ]);
-            
-            $kindshotel = collect($request->kindshotel);
-            
-            //descartamos los kindshotel que tengan cantidad 0
-            foreach ($kindshotel  as $key => $item) {
-               
-                if ($item['quantity'] == 0){
-                    $kindshotel->pull($key);
-                }
-            }
-    
-            Product::find($id)->features()->sync($request->features);
-            Product::find($id)->kindsHotel()->sync($kindshotel->toArray());
-            
-    
-            if ($request->file('img')) {
-                foreach ($request->file('img') as $key => $img) {
-                    $path = 'img/hotels/' . str_random(10) . '.png';
-                    Image::make($img)->fit(1200, 600)->save($path, 50);
-                    Photo::create([
-                        'product_id' => $id,
-                        'img'        => $path,
-                        'order'      => $key,
-                    ]);
-                }
-            }
-	
-	        Session::flash('mensaje','Hotel Actualizado con exito');
-    
-            return redirect('admin/hotels');
+        }
+    }
+
+    Session::flash('mensaje','Hotel Actualizado con exito');
+
+    return redirect('admin/hotels');
+}
+
+
         }
         
         /**
