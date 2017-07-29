@@ -1803,21 +1803,21 @@
                         <div class="col-sm-4">
                             <div class="block block-rounded block-bordered">
                                 <img alt="travelongo allies" class="img-responsive "
-                                     src="{{asset('img/restaurants/taxi.jpg')}}">
+                                     src="{{asset('img/restaurants/transporte1.jpg')}}">
                             
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="block block-rounded block-bordered">
                                 <img alt="travelongo allies" class="img-responsive "
-                                     src="{{asset('img/restaurants/taxi.jpg')}}">
+                                     src="{{asset('img/restaurants/transporte2.jpg')}}">
                             
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="block block-rounded block-bordered">
                                 <img alt="travelongo allies" class="img-responsive "
-                                     src="{{asset('img/restaurants/uber.jpg')}}">
+                                     src="{{asset('img/restaurants/transporte3.jpg')}}">
                             
                             </div>
                         </div>
