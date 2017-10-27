@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group {{ $errors->has('destination') ? ' has-error' : '' }}">
-                    {!! Form::label(trans('general.destination').':', null, ['class' => 'control-label']) !!}
+                    {!! Form::label(trans('general.destination_airport').':', null, ['class' => 'control-label']) !!}
                     {!! Form::select('destination', $cities->where('city_code','<>',null)->pluck('city', 'city_code'), old('destination'), [ 'class' => 'form-control','placeholder'=>trans('general.select_destination'),'required']) !!}
                     @if ($errors->has('destination'))
                         <span class="help-block"><strong>{{ $errors->first('destination') }}</strong></span>
