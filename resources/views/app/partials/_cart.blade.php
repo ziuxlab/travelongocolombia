@@ -153,11 +153,7 @@
                     <div>
                         <h2 class="h4">@lang('general.additional services'):</h2>
                         @if (App::isLocale('en'))
-                            <p>Because we don´t want any barriers between colombian coffee area and our tourists, we
-                               have
-                               designed a group of services you may need to make your stay more enjoyable. If you want
-                               one
-                               of these services, please select and describe what would you need.</p>
+                            <p>In order to maximize your enjoyment in the coffee region, we offer ancillary services you may need during your stay. Please select and/or describe what you might need.</p>
                         @else
                             <p>Porque queremos satisfacer diferentes necesidades que pueden presentarse durante su
                                estadía

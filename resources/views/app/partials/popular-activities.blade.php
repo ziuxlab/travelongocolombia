@@ -3,7 +3,7 @@
         <div class="col-sm-12 content content-full text-center">
             <h2 class="h2">@lang('general.Popular Activities')</h2>
             @if(App::isLocale('en'))
-                <h4 class="h5 ">"For your convenience, we have compiled our most popular activities into several package options of  all inclusive vacation packages to Colombia, which may help you to more quickly organize your vacation experience in the Colombian coffee area" </h4>
+                <h4 class="h5 ">"Get to know the places and activities we have selected for you"</h4>
             @else
                 <h4 class="h5 ">"Para su conveniencia, hemos compilado las actividades más populares en diferentes opciones de paquetes vacacionales todo incluido a Colombia, las cuales podrán ayudarle a organizar más rápidamente su experiencia vacacional en el eje cafetero colombiano" </h4>
             @endif
@@ -52,6 +52,17 @@
                     </a>
                 </div>
             @endforeach
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h4>So, you haven´t found the perfect trip package?<br>
+                    Click the next button and you can easily design your own itinerary.</h4>
+                @if(App::isLocale('en'))
+                <a href="{{url('design-your-trip')}}" class="btn push-20 btn-minw  text-white btn-primary text-capitalize">Design your trip</a>
+                @else
+                    <a href="{{url('disena-tu-viaje')}}" class="btn push-20 btn-minw  text-white btn-primary text-capitalize">Diseñar tu viaje</a>
+                @endif
+            </div>
         </div>
     </div>
 </div>

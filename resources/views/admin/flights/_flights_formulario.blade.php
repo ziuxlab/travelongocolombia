@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group {{ $errors->has('departure') ? ' has-error' : '' }}">
-                    {!! Form::label(trans('general.departure').':', null, ['class' => 'control-label']) !!}
+                    {!! Form::label(trans('general.departure_airport').':', null, ['class' => 'control-label']) !!}
                     {!! Form::text('departure', old('departure'), ['id'=>'departure',
                     'class' => 'js-autocomplete form-control','placeholder'=>trans('general.enter_city'),'required','autocomplete'=>'off']) !!}
                     @if ($errors->has('departure'))

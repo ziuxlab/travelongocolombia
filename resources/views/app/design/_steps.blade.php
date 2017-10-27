@@ -22,7 +22,7 @@
                 {{$step == 2 ? 'bg-secondary text-white' : 'bg-gray-lighter text-primary-dark'}}  ">
                     2
                 </div>
-                <div class="push-5-t text-primary-dark">@lang('general.search') @lang('general.hotels')</div>
+                <div class="push-5-t text-primary-dark">@lang('general.search') @lang('general.accommodations')</div>
             </a>
             <a class="text-center " href="{{ $step > 1 ? url(str_slug(trans('cabecera.Design')).'?step=3') : '#'}}">
                 <div class="item item-circle {{$step > 2 ? 'item-bg-primary' : ''}}

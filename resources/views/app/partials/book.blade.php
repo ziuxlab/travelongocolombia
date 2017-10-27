@@ -23,7 +23,7 @@
                             @if($item->type==0)
                                 <div>
                                     @if(App::isLocale('en'))
-                                        <span><small>This plan has a duration of {{$item->days}}, you can not change the date of return.</small></span>
+                                        <span><small>This plan has a duration of {{$item->days}} ,The last day of package is automatically specified..</small></span>
                                         @else
                                         <span><small>Este plan tiene una duracion de {{$item->days}}, no puedes modificar la fecha de regreso.</small></span>
                                     @endif

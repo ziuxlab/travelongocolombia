@@ -1855,7 +1855,7 @@
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <label class="css-input css-checkbox css-checkbox-success">
-                                                <input type="checkbox" id="terms" name="terms"><span></span> Accept this <a
+                                                <input type="checkbox" id="terms" name="terms"><span></span> Accept these <a
                                                         href="{{url(str_slug(trans('general.terms')))}}"
                                                         target="_blank">terms and conditions?</a>
                                             </label>
