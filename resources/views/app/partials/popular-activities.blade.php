@@ -55,8 +55,8 @@
         </div>
         <div class="row text-center">
             <div class="col-sm-12">
-                <h4>So, you haven´t found the perfect trip package?<br>
-                    Click the next button and you can easily design your own itinerary.</h4>
+                <h4 class="push-20 text-white">"So, you haven´t found the perfect trip package?<br>
+                    Click the next button and you can easily design your own itinerary."</h4>
                 @if(App::isLocale('en'))
                 <a href="{{url('design-your-trip')}}" class="btn push-20 btn-minw  text-white btn-primary text-capitalize">Design your trip</a>
                 @else
