@@ -14,10 +14,6 @@
     
     class ProductController extends Controller
     {
-	
-	
-	    
-    	
         public function __construct()
         {
             $this->middleware('auth')
@@ -224,6 +220,7 @@
             ;
 
             Session::put('url','packages');
+  
             
             return view('app.product-item', compact('item'));
             

@@ -225,26 +225,54 @@
                         </div>
                     </div>
                 @endif
-            <!--
+
                 <div class="border-t ">
                     <div class="text-right bg-gray-lighter overflow-hidden content-mini content-mini-full ">
                         <label class="h3 font-w600 col-xs-6 control-label ">Total:</label>
                         <div class="col-xs-6 h3 text-left font-w700">
-                            $<span class="total">{{number_format($item->price_adults * (1 - ($item->discount/100)))}}</span>
-                        </div>
+                            @if($item->type <> 2)
+                                $<span class="total">{{number_format($item->price_adults * (1 - ($item->discount/100)))}}</span>
+                            @endif
+                            @if($item->type == 2)
+                                    @if($item->kindsHotel()->where('quantity','>',0)->first())
+                                        $
+                                        <span class="total">{{number_format($item->kindsHotel()->where('quantity','>',0)->first()->pivot->price * (1 - ($item->discount/100)))}}</span>
+                                    @else
+                                        <small>No Vacancy</small>
+                                    @endif
+                            @endif
+                            </div>
                     </div>
                 </div>
-                -->
+
                 <div class="text-center push-15-t">
-                    <button class="btn btn-minw btn-primary " type="button" data-toggle="modal"
-                            data-target="#book-modal-0">@lang('general.book now')
-                    </button>
+                    @if($item->type == 2 && !$item->kindsHotel()->where('quantity','>',0)->first() )
+
+                            <button class="btn btn-minw btn-primary disabled " type="button" data-toggle="modal"
+                                    data-target="#book-modal-0">@lang('general.book now')
+                            </button>
+                            @else
+                            <button class="btn btn-minw btn-primary " type="button" data-toggle="modal"
+                                    data-target="#book-modal-0">@lang('general.book now')
+                            </button>
+
+                    @endif
+
                 </div>
                 {!! Form::hidden('type',$item->type)!!}
                 {!! Form::hidden('id',$item->id)!!}
                 {!! Form::hidden('choice',0,['id'=>'choice'])!!}
-                {!! Form::hidden('total',($item->price_adults * (1 - ($item->discount/100))),['id'=>'total'])!!}
-                {!! Form::hidden('descuento',($item->price_adults *  ($item->discount/100)),['id'=>'descuento'])!!}
+                @if($item->type <> 2)
+                    {!! Form::hidden('total',($item->price_adults * (1 - ($item->discount/100))),['id'=>'total'])!!}
+                    {!! Form::hidden('descuento',($item->price_adults *  ($item->discount/100)),['id'=>'descuento'])!!}
+                @endif
+                @if($item->type == 2)
+                    @if($item->kindsHotel()->where('quantity','>',0)->first())
+                    {!! Form::hidden('total',($item->kindsHotel()->where('quantity','>',0)->first()->pivot->price * (1 - ($item->discount/100))),['id'=>'total'])!!}
+                    {!! Form::hidden('descuento',($item->kindsHotel()->where('quantity','>',0)->first()->pivot->price *  ($item->discount/100)),['id'=>'descuento'])!!}
+                    @endif
+                @endif
+
                 {!! Form::close() !!}
             </div>
         </div>
@@ -257,6 +285,7 @@
 <script>
     $(function () {
         App.initHelper('datepicker');
+        $('.room').on('change',costos_hotel)
     });
     $('.js-datepicker').datepicker({
         dateFormat: 'dd-mm-yyyy',
@@ -283,10 +312,39 @@
         $('#descuento').val(descuento);
         console.log(total)
     }
+
+    function costos_hotel() {
+        let kinds_room = <?= json_encode($item->kindsHotel()->where('quantity','>',0)->get()); ?>;
+        let hotel = <?= json_encode($item); ?>;
+        let descuento_room = '{{$item->discount/100}}';
+        let rooms = $('select[name^="rooms"]').map(function(){return $(this).val()}).get();
+        let nights         = $('#nights').val() || 1;
+        let total = 0;
+        let descuento = 0;
+
+        $.each(rooms, function (i, elem) {
+            function obtenerID(habitacion) {
+                return habitacion.id === parseInt(elem);
+            }
+
+            let room = kinds_room.find(obtenerID);
+            let adults = parseInt(document.getElementsByName("rooms["+(i+1)+"][adults]")[0].value);
+            let children = parseInt(document.getElementsByName("rooms["+(i+1)+"][children]")[0].value);
+
+            total += (adults * room.pivot.price * (1-descuento_room)) + (children * hotel.price_children * (1-descuento_room));
+            descuento +=  (adults * room.pivot.price * descuento_room) + (children * hotel.price_children * descuento_room);
+
+        });
+
+        $('.total').html(total * nights);
+        $('#total').val(total * nights);
+        $('#descuento').val(descuento * nights);
+
+    }
     
      function agregar_rooms(value,action) {
          
-         var kinds_room = <?php echo json_encode($item->kindsHotel); ?>;
+         let kinds_room = <?php echo json_encode($item->kindsHotel()->where('quantity','>',0)->get()); ?>;
 
          if (action == "minus" && value > 0) {
              $('#room_'+ (value)).remove()
@@ -324,7 +382,10 @@
                  '</div>';
              
              $('#rooms').append(html)
+
          }
+
+         $('.room').on('change',costos_hotel)
         
     }
     
@@ -365,7 +426,13 @@
         }
         
         $('[id="' + target + '"]').val(value);
-        costos()
+
+        if(type === '2'){
+            costos_hotel()
+        }else{
+            costos()
+        }
+
     });
     
     
