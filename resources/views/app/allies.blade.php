@@ -1630,6 +1630,19 @@
         <div class="content-boxed ">
             <div class="content">
                 <h2 class="h2 push-30 text-center">@lang('general.restaurants')</h2>
+                <div class="block">
+                    <div class="block-header">
+                        @if (App::isLocale('en'))
+                            <h5 class="text-justify">We have compiled a select group of restaurants around the
+                                department of Quindío that will offer you a deliciousvariety of Colombian cuisine
+                                (vegetarian as well):
+                            </h5>
+                        @else
+                            <h5>Hemos compilado un selecto grupo de restaurantes alrededor del departamento del Quindío
+                                que le ofrecerán una deliciosa variedad de cocina colombiana (también vegetariana)</h5>
+                        @endif
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="block block-rounded block-bordered">
@@ -1661,10 +1674,7 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 @if (App::isLocale('en'))
-                                    <p class="text-justify">Here you will delight your palade with the more wonderful
-                                                            tastes of Oriental salmon, seefood casserole, Shrimp Scampi,
-                                                            grilled meats and trout in different preparations,
-                                                            vegetarian food and "patacones" to accompany.</p>
+                                    <p class="text-justify">Your palate will be delighted with locally harvested salmon and trout, Carribbeanseafood casserole, shrimp scampi, and grilled beef, pork and chicken, as well as vegetarian dishes, all served with crunchy patacones (lightly fried flattened plantain).</p>
                                 @else
                                     <p class="text-justify"> Allí podrás deleitar tu paladar con los deliciosos sabores
                                                              que te ofrece el salmón oriental, la cazuela de mariscos,
@@ -1713,11 +1723,9 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 @if (App::isLocale('en'))
-                                    <p class="text-justify">At Helena Adentro you will enjoy of colombian food and
-                                                            delight with 100% natural food.</p>
+                                    <p class="text-justify">Located just off the main square of charming Filandia, at Helena Adentro you will enjoy natural fresh local juices and sumptuous food, served in the center of the table so as to facilitate the uniquely Colombian custom of taste sharing.</p>
                                 @else
-                                    <p class="text-justify">Aquí disfrutaras de la esencia de la comida Colombiana,
-                                                            deleitandote con alimentos 100% naturales.</p>
+                                    <p class="text-justify">Ubicado junto a la plaza principal de la encantadora Filandia, en Helena Adentro podrá disfrutar de jugos locales frescos y comida suntuosa, servida en el centro de la mesa para facilitar la costumbre única colombiana de compartir el gusto.</p>
                                 @endif
                             </div>
                         </div>
@@ -1766,11 +1774,9 @@
                             <div class="block-content">
                                 <div class="h5 text-capitalize">@lang('general.details'):</div>
                                 @if (App::isLocale('en'))
-                                    <p class="text-justify">If you want to enjoy of the first resturant of latino-asian
-                                                            food in the coffee area, you should come here.</p>
+                                    <p class="text-justify">This distinctive dining experience is the firstof latino-asian food in the coffee area For your traveling pleasure throughoutthe department of Quindio, we have engaged one of the highest quality transportation companies:</p>
                                 @else
-                                    <p class="text-justify">Aquí disfrutaras del primer restaurante-bar de cocina latino
-                                                            asiática del eje cafetero.</p>
+                                    <p class="text-justify">Para su placer de viajar en todo el departamento de Quindio, hemos contratado a una de las compañías de transporte de más alta calidad:</p>
                                 @endif
                             
                             
@@ -1784,17 +1790,9 @@
                     <div class="block-header ">
                         <h2 class="h2 push-30 text-center">@lang('general.Transport')</h2>
                         @if (App::isLocale('en'))
-                            <h5 class="text-justify">With B.S. TRANSPORTES TURÍSTICOS  a transport turism
-                                                     company with 12 years of experience, you will travel around
-                                                     the colombian coffee area comfortably with a quality
-                                                     service, security, eficiency and a full range of
-                                                     vehicles.</h5>
+                            <h5 class="text-justify">Offering a complete line of chauffeured cars, jeeps, and mini buses.</h5>
                         @else
-                            <h5 class="text-justify">B.S TRANSPORTES TURISTICOS te brinda la posibilidad de
-                                                     recorrer el Eje cafetero colombiano de la manera más
-                                                     confortable, ofreciendo a nuestros clientes un servicio de
-                                                     calidad gracias a la seguridad,   eficiencia y variedad en
-                                                     su gama de vehículos.</h5>
+                            <h5 class="text-justify">Ofreciendo una línea completa de autos con conductor, jeeps y minibuses.</h5>
                         @endif
                     </div>
                 </div>

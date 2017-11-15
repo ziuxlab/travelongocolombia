@@ -16,12 +16,12 @@
     <div class="block block-bordered  flex overflow-hidden">
         <div class="block-content block-content-full text-center">
             @if(App::isLocale('en'))
-                <p class="">Haven´t you find the perfect plan?<br>
-                            click the next botton and you will design your plan easier.</p>
+                <p class="">So, you haven´t found the perfect trip package?<br>
+                    Click the next button and you can easily design your own itinerary..</p>
           
             @else
-                <p class="">¿No encuentras el plan perfecto para ti aún?<br>
-                            No olvides que puedes armar tu plan como lo deseas.</p>
+                <p class="">Entonces, ¿no has encontrado el paquete de viaje perfecto?<br>
+                    Haga clic en el siguiente botón y podrá diseñar fácilmente su propio itinerario.</p>
                 @endif
             <a class="btn text-capitalize btn-minw btn-primary" href="{{url(str_slug(trans('cabecera.Design')))}}">@lang('cabecera.Design')</a>
         

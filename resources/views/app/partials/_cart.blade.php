@@ -155,11 +155,7 @@
                         @if (App::isLocale('en'))
                             <p>In order to maximize your enjoyment in the coffee region, we offer ancillary services you may need during your stay. Please select and/or describe what you might need.</p>
                         @else
-                            <p>Porque queremos satisfacer diferentes necesidades que pueden presentarse durante su
-                               estadía
-                               en el Eje Cafetero Colombiano, y hacer que su estancia sea totalmente placentera hemos
-                               diseñado los siguientes servicios. Si usted desea adquirir uno de ellos o más, por favor
-                               diligencia el campo que corresponde.</p>
+                            <p>Para maximizar su disfrute en la región cafetera, le ofrecemos los servicios auxiliares que podría necesitar o desear durante su estadía. Seleccione y / o describa lo que podría necesitar.</p>
                         @endif
                         
                         
