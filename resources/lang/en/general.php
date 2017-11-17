@@ -171,9 +171,9 @@
 		'message'                       => 'Message',
 		'placeholder message'           => 'Tell us your questions or suggestions',
 		'follow-us'                     => 'Follow us on',
-		'state'                     => 'State',
+		'state'                         => 'State',
 		'services-cart'                 => '"Additional services will summated and paid upon arrival in Armenia. You may indicate the type and frequency of services and any special requirements."',
-	'max-individual-room'=>'You can only add 1 adult or 1 child in an individual room.',
-	'max-multiple-room'=>'You can only add  max 4 adults or 4 children in a multiple room.',
-	'max-double-room'=>'You can only add  max 2 adults or 2 children in a double room.',
+	  'max-individual-room'=>'You can only add 1 adult or 1 child in an individual room.',
+	  'max-multiple-room'=>'You can only add  max 4 adults or 4 children in a multiple room.',
+	  'max-double-room'=>'You can only add  max 2 adults or 2 children in a double room.',
 	];
