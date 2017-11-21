@@ -153,9 +153,13 @@
                     <div>
                         <h2 class="h4">@lang('general.additional services'):</h2>
                         @if (App::isLocale('en'))
-                            <p>In order to maximize your enjoyment in the coffee region, we offer ancillary services you may need during your stay. Please select and/or describe what you might need.</p>
+                            <p>ActIn order to maximize your enjoyment in the coffee region, we offer ancillary services you may need during your stay. Please select and/or describe what you might need.
+                                <br>
+                                Additional services will summated and paid upon arrival in Armenia. You may indicate the type and frequency of services and any special requirements.".</p>
                         @else
-                            <p>Para maximizar su disfrute en la región cafetera, le ofrecemos los servicios auxiliares que podría necesitar o desear durante su estadía. Seleccione y / o describa lo que podría necesitar.</p>
+                            <p>Para maximizar su disfrute en la región cafetera, le ofrecemos  servicios auxiliares que podrá necesitar durante su estadía. Seleccione y / o describa los servicios que podría necesitar o desear
+                                <br>
+                                Los servicios auxiliares se sumarán y pagarán a su llegada a Armenia. Puede indicar el tipo y la frecuencia de los servicios y cualquier requisito especial..</p>
                         @endif
                         
                         
