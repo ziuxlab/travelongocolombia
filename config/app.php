@@ -1,5 +1,7 @@
 <?php
 
+use UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider;
+
 return [
 
     /*
@@ -171,7 +173,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
-        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        LaravelFilemanagerServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
         Darryldecode\Cart\CartServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
@@ -179,7 +181,7 @@ return [
         Spatie\ResponseCache\ResponseCacheServiceProvider::class,
         GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
         Spatie\Sitemap\SitemapServiceProvider::class,
-	    Alfheim\CriticalCss\CriticalCssServiceProvider::class,
+        Alfheim\CriticalCss\CriticalCssServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
 
         /*
